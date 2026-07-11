@@ -97,6 +97,16 @@
     "loadingLogoutSubtitle": "We're closing your session safely and clearing the stage for the next visit.",
     "close": "Close"
   },
+  "supporterBadges": {
+    "subscription": "{count, plural, one {# Month Subscriber} other {# Month Subscriber}}",
+    "gift": {
+      "supporter": "Gift Supporter",
+      "enthusiast": "Gift Enthusiast",
+      "champion": "Gift Champion",
+      "legend": "Gift Legend",
+      "rainbow": "Rainbow Gifter"
+    }
+  },
   "billingGift": {
     "senderDialog": {
       "eyebrow": "Send a gift",
@@ -682,6 +692,7 @@
         "WS_CHAT_RATE_LIMITED": "You sent chat messages too quickly. Try again in a moment.",
         "WS_VOTE_RATE_LIMITED": "You voted too quickly. Try again in a moment.",
         "WS_MESSAGE_REACTION_RATE_LIMITED": "You reacted to messages too quickly. Try again in a moment.",
+        "CHAT_CUSTOM_REACTION_FORBIDDEN": "This emote is not available for your account.",
         "WS_INVALID_JSON": "The websocket message format is invalid.",
         "WS_UNSUPPORTED_VERSION": "This websocket protocol version is not supported.",
         "WS_AUTH_REQUIRED": "Authentication is required.",
@@ -1929,7 +1940,11 @@
         "adLabel": "Advertisement",
         "previousPage": "Previous GIF page",
         "nextPage": "Next GIF page",
-        "pageLabelPrefix": "GIF page"
+        "pageLabelPrefix": "GIF page",
+        "attachedLabel": "Attached GIF",
+        "attachedReady": "Ready to send with your message.",
+        "attachedHint": "The GIF URL will be included in chat.",
+        "removeAttachment": "Remove GIF"
       },
       "stageEffectsPanel": {
         "title": "Room effects",
@@ -2190,7 +2205,7 @@
         "deliveryChat": "Chat",
         "deliveryPopup": "Popup",
         "userDeliveryTitle": "Popup delivery",
-        "userDeliveryHint": "Popup sends a private alert to the user. Chat posts a system alert in the current room marked for that person.",
+        "userDeliveryHint": "Popup opens a private alert for the user. Chat sends a private system message that only that user can see in the current room.",
         "ptBrSection": "PT-BR",
         "enUsSection": "English",
         "titleLabel": "Title (optional)",
@@ -2686,6 +2701,7 @@
       "DIAMOND_QUANTITY_INVALID": "The diamond quantity is invalid.",
       "DISPLAY_USERNAME_ALREADY_IN_USE": "This display name is already in use.",
       "INVALID_DISPLAY_USERNAME": "The display name must be between 3 and 50 characters.",
+      "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "The displayed level limit must be an integer between 1 and 500.",
       "INVALID_MISC_SHOP_ITEMS": "The Extras store configuration is invalid.",
       "SUBSCRIPTION_CHECKOUT_NOT_CONFIGURED": "Subscription checkout is not configured.",
       "SUBSCRIPTION_ALREADY_ACTIVE": "Your subscription is already active. Manage the current subscription instead of opening another checkout.",
@@ -2882,6 +2898,7 @@
       "WS_CHAT_RATE_LIMITED": "You sent chat messages too quickly. Try again in a moment.",
       "WS_VOTE_RATE_LIMITED": "You voted too quickly. Try again in a moment.",
       "WS_MESSAGE_REACTION_RATE_LIMITED": "You reacted to messages too quickly. Try again in a moment.",
+      "CHAT_CUSTOM_REACTION_FORBIDDEN": "This emote is not available for your account.",
       "WS_INVALID_JSON": "The websocket message format is invalid.",
       "WS_MESSAGE_TOO_LARGE": "The message you sent is too large.",
       "WS_RATE_LIMITED": "The room connection sent commands too quickly. Wait a moment and try again.",
@@ -2905,6 +2922,8 @@
       "filterCategoryLabel": "Category",
       "filterTypeLabel": "Type",
       "allCategories": "All categories",
+      "allTypes": "All",
+      "allTypesHint": "All item types available in this category.",
       "shopViewFilterPlaceholder": "Store products",
       "searchPlaceholder": "Search avatar, background, or badge...",
       "searchPlaceholderScoped": "Search within {category}...",
@@ -3551,6 +3570,8 @@
         "showOnlineRoomOnProfileHint": "When enabled, other people can see and join the room you are currently in.",
         "showLastSeenOnProfile": "Show last activity",
         "showLastSeenOnProfileHint": "When disabled, other people cannot see when you were last seen on the site.",
+        "showSupporterBadges": "Show automatic supporter badges",
+        "showSupporterBadgesHint": "Shows automatic subgift and subscription-tenure badges in your profile, chat, and quick profile.",
         "blockUnknownWhispers": "Block whispers from strangers",
         "blockUnknownWhispersHint": "When enabled, people who are not your superfans can only whisper you after you start the conversation.",
         "autoOpenIncomingWhispers": "Open incoming whispers",
@@ -4630,11 +4651,34 @@
           "giftMonthsHint": "Choose between 1 and 12 months. The time stacks on top of any subscription that is already active.",
           "giftAnnouncementLabel": "Show in room chat",
           "giftAnnouncementHint": "When enabled, the gift is announced in {room}'s chat.",
-          "giftAnnouncementUnavailable": "Open the admin panel inside a room if you want to show this gift in chat.",
+          "giftAnnouncementUnavailable": "The user must be in an active room to show this gift in chat.",
           "gifting": "Gifting subscription...",
           "giftAction": "Gift subscription",
           "giftSuccess": "{username} received {months} gifted subscription month(s).",
           "giftError": "We couldn't gift this subscription right now.",
+          "totalTenure": "Total accumulated tenure",
+          "currentBadge": "Current monthly badge",
+          "tenureMonths": "{count, plural, =0 {No completed months} one {# completed month} other {# completed months}}",
+          "history": {
+            "title": "Subscription history",
+            "subtitle": "Payments, gifts, and administrative changes recorded for this account.",
+            "loading": "Loading subscription history...",
+            "empty": "No subscription events have been recorded for this account.",
+            "loadError": "We couldn't load subscription history right now.",
+            "refresh": "Refresh",
+          "months": "{count, plural, one {# month} other {# months}}",
+          "grantedDuration": "Granted duration: {count, plural, one {# month} other {# months}}",
+            "sender": "Sent by {name}",
+            "types": {
+              "payment": "Subscription payment",
+              "gift": "Gifted subscription received",
+              "adminActivated": "Subscription activated by administration",
+              "adminDeactivated": "Subscription deactivated by administration",
+              "canceled": "Renewal canceled",
+              "resumed": "Renewal resumed",
+              "pending": "Subscription update pending"
+            }
+          },
           "saving": "Saving subscription...",
           "save": "Save subscription",
           "saveSuccess": "{username}'s subscription was updated.",
@@ -4649,7 +4693,7 @@
           "amountLabel": "Amount",
           "announceLabel": "Show in room chat",
           "announceHint": "When enabled, the gift appears in {room}'s chat.",
-          "announceUnavailable": "Open the admin panel inside a room to show this gift in chat.",
+          "announceUnavailable": "The user must be in an active room to show this gift in chat.",
           "action": "Send gift",
           "gifting": "Sending gift...",
           "success": "{username} received {amount} {currency}.",
@@ -4658,7 +4702,13 @@
         "walletAnnouncement": {
           "label": "Announce coins and diamonds in room chat",
           "hint": "If coins or diamonds change when you save, WavezFM will announce the update in {room}'s chat.",
-          "unavailable": "Open the admin panel inside a room if you want to announce these changes in chat."
+          "unavailable": "The user must be in an active room to announce these changes in chat."
+        },
+        "roomAnnouncementTarget": {
+          "label": "Announcement room",
+          "placeholder": "Choose a room",
+          "searchPlaceholder": "Search rooms...",
+          "empty": "No rooms found."
         },
         "profileSaving": "Saving profile...",
         "profileSave": "Save profile & avatar",
@@ -5349,6 +5399,10 @@
           "deleteConfirm": "Delete {username}'s response? This allows this person to submit the form again according to the configured limit.",
           "deleteSuccess": "Response deleted. The person can submit again if the form still accepts submissions.",
           "deleteError": "We could not delete this response right now.",
+          "exportXlsx": "Export XLSX",
+          "exportingXlsx": "Exporting...",
+          "exportSuccess": "XLSX exported.",
+          "exportError": "We could not export responses right now.",
           "unknownUser": "Unknown user",
           "pageLabel": "Page {page} of {total}",
           "previous": "Previous",
@@ -5656,6 +5710,7 @@
           "djTrackPlayedCoins": "Coins for finishing a DJ track",
           "levelUpCoinsBase": "Level-up base coins",
           "levelUpCoinsStep": "Level-up increment",
+          "levelRewardPreviewMaxLevel": "Displayed max level",
           "bonusNamePtBr": "Name (pt-BR)",
           "bonusNamePtBrPlaceholder": "Madrugada dobrada",
           "bonusNameEnUs": "Name (en-US)",
@@ -5672,6 +5727,7 @@
         "hints": {
           "rewardValues": "Use whole numbers. Woot and DJ completion rewards are applied at runtime immediately after saving.",
           "levelUp": "The level-up reward uses base + increment per level gained. Example: base 80 and increment 20 yields 80, 100, 120...",
+          "levelRewardPreviewMaxLevel": "Controls how far the progression page shows empty reward levels. Levels with achievements or unlocks still appear above this limit.",
           "overlap": "If two windows overlap, the system uses the highest XP multiplier and the highest coin multiplier among the active windows.",
           "timeWindow": "Set a real start and end date/time. It accepts 03/27/2026 2:40 PM, 27/03/2026 14:40, or 2026-03-27T14:40. Windows longer than one day work normally."
         },
@@ -6162,6 +6218,21 @@
         "subscriberPerksSubscriptionBadgeNone": "No automatic badges",
         "subscriberPerksSubscriptionBadgeNoneHint": "No extra badge will be granted by the subscription.",
         "subscriberPerksSubscriptionBadgeRemove": "Remove {badge}",
+        "supporterBadgesTitle": "Automatic supporter badges",
+        "supporterBadgesSubtitle": "Configure automatic cosmetic roles for users who gift subscriptions or keep a subscription active through completed cycles.",
+        "supporterBadgesEnabled": "Enable automatic supporter badges",
+        "supporterGiftBadgesTitle": "Subgifts sent",
+        "supporterGiftBadgesSubtitle": "The highest eligible tier appears when the account reaches the configured amount of delivered subgifts.",
+        "supporterSubscriptionBadgesTitle": "Subscription tenure",
+        "supporterSubscriptionBadgesSubtitle": "The badge advances at the end of each paid, gifted, or prepaid cycle.",
+        "supporterBadgeAddTier": "Add tier",
+        "supporterBadgeThreshold": "Goal",
+        "supporterBadgeLabel": "Name",
+        "supporterBadgeIcon": "Tabler icon",
+        "supporterBadgeColor": "Color",
+        "supporterBadgeRainbow": "Rainbow",
+        "supporterBadgeEnabled": "Enabled",
+        "supporterBadgeRemoveTier": "Remove tier",
         "subscriberPerksDisplayTitle": "Shop and subscription copy",
         "subscriberPerksDisplaySubtitle": "Edit the benefits shown on the subscribe page and in Settings > Subscription. When empty, the platform uses the generated list.",
         "subscriberPerksDisplayAdd": "Add benefit",
@@ -6747,6 +6818,8 @@
           "woots_received": "Woots received",
           "grabs": "Grabs made",
           "messages_sent": "Messages sent",
+          "chat_reactions_sent": "Reactions sent",
+          "chat_reactions_received": "Reactions received on messages",
           "site_active_hours": "Hours active on site",
           "days_registered": "Days registered",
           "day_streak": "Daily streak",
@@ -7400,7 +7473,9 @@
       "filters": {
         "all": "All categories"
       },
+      "filterTypeLabel": "Type",
       "type": {
+        "all": "All",
         "free": "Free",
         "level": "Coins",
         "premium": "Premium"
