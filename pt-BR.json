@@ -4366,7 +4366,12 @@
         "searchPlaceholder": "Buscar por ID, motivo, usuário ou sala...",
         "empty": "Nenhum chamado de ajuda encontrado.",
         "realtimeCreated": "Novo chamado de ajuda #{id} em {room}.",
-        "goToRoom": "Ir para sala"
+        "goToRoom": "Ir para sala",
+        "delete": "Deletar chamado de ajuda",
+        "deleting": "Deletando...",
+        "deleteConfirm": "Deseja deletar permanentemente o chamado de ajuda #{id}?",
+        "deleteSuccess": "O chamado de ajuda #{id} foi deletado.",
+        "deleteError": "Não foi possível deletar este chamado de ajuda."
       },
       "confirm": {
         "warnTitle": "Aplicar warn",
@@ -5303,7 +5308,12 @@
         "searchPlaceholder": "Buscar por ID, motivo, usuário ou sala...",
         "empty": "Nenhum chamado de ajuda encontrado.",
         "realtimeCreated": "Novo chamado de ajuda #{id} em {room}.",
-        "goToRoom": "Ir para sala"
+        "goToRoom": "Ir para sala",
+        "delete": "Deletar chamado de ajuda",
+        "deleting": "Deletando...",
+        "deleteConfirm": "Deseja deletar permanentemente o chamado de ajuda #{id}?",
+        "deleteSuccess": "O chamado de ajuda #{id} foi deletado.",
+        "deleteError": "Não foi possível deletar este chamado de ajuda."
       },
       "forms": {
         "listTitle": "Formulários",
@@ -6309,6 +6319,8 @@
         "supporterBadgeAddTier": "Adicionar nível",
         "supporterBadgeThreshold": "Meta",
         "supporterBadgeLabel": "Nome",
+        "supporterBadgeNameLanguage": "Idioma dos nomes",
+        "supporterBadgeNameFallback": "Vazio mantém a tradução padrão",
         "supporterBadgeIcon": "Ícone Tabler",
         "supporterBadgeColor": "Cor",
         "supporterBadgeRainbow": "Arco-íris",

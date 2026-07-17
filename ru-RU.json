@@ -4366,7 +4366,12 @@
         "searchPlaceholder": "Поиск по идентификатору, причине, пользователю или комнате...",
         "empty": "Звонков о помощи не найдено.",
         "realtimeCreated": "Новый вызов помощи #{id} в {room}.",
-        "goToRoom": "Перейти в комнату"
+        "goToRoom": "Перейти в комнату",
+        "delete": "Удалить вызов помощи",
+        "deleting": "Удаление...",
+        "deleteConfirm": "Вы хотите навсегда удалить вызов помощи #{id}?",
+        "deleteSuccess": "Вызов помощи #{id} удалён.",
+        "deleteError": "Не удалось удалить этот вызов помощи."
       },
       "confirm": {
         "warnTitle": "Выдать предупреждение",
@@ -5252,7 +5257,12 @@
         "searchPlaceholder": "Поиск по идентификатору, причине, пользователю или комнате...",
         "empty": "Звонков о помощи не найдено.",
         "realtimeCreated": "Новый вызов помощи #{id} в {room}.",
-        "goToRoom": "Перейти в комнату"
+        "goToRoom": "Перейти в комнату",
+        "delete": "Удалить вызов помощи",
+        "deleting": "Удаление...",
+        "deleteConfirm": "Вы хотите навсегда удалить вызов помощи #{id}?",
+        "deleteSuccess": "Вызов помощи #{id} удалён.",
+        "deleteError": "Не удалось удалить этот вызов помощи."
       },
       "events": {
         "createTitle": "Создать событие",
@@ -6258,6 +6268,8 @@
         "supporterBadgeAddTier": "Добавить уровень",
         "supporterBadgeThreshold": "Цель",
         "supporterBadgeLabel": "Название",
+        "supporterBadgeNameLanguage": "Язык названий",
+        "supporterBadgeNameFallback": "Оставьте пустым, чтобы сохранить стандартный перевод",
         "supporterBadgeIcon": "Иконка Tabler",
         "supporterBadgeColor": "Цвет",
         "supporterBadgeRainbow": "Rainbow",
