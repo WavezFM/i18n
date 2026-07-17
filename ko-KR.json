@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# 새 메시지} other {# 새 메시지}}",
         "loadError": "지금은 이 대화를 로드할 수 없습니다.",
         "editError": "지금은 이 귓속말을 수정할 수 없습니다.",
-        "sendError": "지금은 이 귓속말을 보낼 수 없습니다."
+        "sendError": "지금은 이 귓속말을 보낼 수 없습니다.",
+        "reactionError": "지금은 이 반응을 업데이트할 수 없습니다."
       },
       "mediaPreviewRestricted": "안전을 위해 미리보기가 숨겨졌습니다.",
       "mediaUnavailableTitle": "미디어를 사용할 수 없음",

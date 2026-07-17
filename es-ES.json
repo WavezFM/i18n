@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# Nuevo mensaje} other {# Nuevos mensajes}}",
         "loadError": "No pudimos cargar esta conversación ahora mismo.",
         "editError": "No pudimos editar este susurro ahora mismo.",
-        "sendError": "No pudimos enviar este susurro ahora mismo."
+        "sendError": "No pudimos enviar este susurro ahora mismo.",
+        "reactionError": "No pudimos actualizar esta reacción ahora mismo."
       },
       "mediaPreviewRestricted": "Vista previa oculta por seguridad",
       "mediaUnavailableTitle": "Medios no disponibles",

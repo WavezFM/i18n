@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# 新しいメッセージ} other {# 新しいメッセージ}}",
         "loadError": "今はこの会話を再生できませんでした。",
         "editError": "今はこのささやきを編集できません。",
-        "sendError": "今はこんなささやきを送れない。"
+        "sendError": "今はこんなささやきを送れない。",
+        "reactionError": "現在、このリアクションを更新できません。"
       },
       "mediaPreviewRestricted": "安全のためプレビューは隠されています",
       "mediaUnavailableTitle": "メディアは利用できません",

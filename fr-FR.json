@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# Nouveau message} other {# Nouveaux messages}}",
         "loadError": "On ne pouvait pas charger cette conversation maintenant.",
         "editError": "Nous ne pouvions pas modifier ce murmure pour l’instant.",
-        "sendError": "On ne pouvait pas envoyer ce murmure maintenant."
+        "sendError": "On ne pouvait pas envoyer ce murmure maintenant.",
+        "reactionError": "Impossible de mettre à jour cette réaction pour le moment."
       },
       "mediaPreviewRestricted": "Aperçu caché pour des raisons de sécurité",
       "mediaUnavailableTitle": "Médias indisponibles",

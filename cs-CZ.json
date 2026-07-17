@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# Nová zpráva} other {# Nové zprávy}}",
         "loadError": "Teď bychom nemohli načíst tento rozhovor.",
         "editError": "Teď bychom nemohli upravit tento šepot.",
-        "sendError": "Teď bychom nemohli poslat ten šepot."
+        "sendError": "Teď bychom nemohli poslat ten šepot.",
+        "reactionError": "Tuto reakci se teď nepodařilo aktualizovat."
       },
       "mediaPreviewRestricted": "Náhled skrytý pro bezpečnost",
       "mediaUnavailableTitle": "Média nejsou dostupná",

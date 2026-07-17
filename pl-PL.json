@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# Nowa wiadomość} other {# nowe wiadomości}}",
         "loadError": "Nie mogliśmy teraz załadować tej rozmowy.",
         "editError": "Nie mogliśmy teraz edytować tego szeptu.",
-        "sendError": "Nie mogliśmy teraz wysłać tego szeptu."
+        "sendError": "Nie mogliśmy teraz wysłać tego szeptu.",
+        "reactionError": "Nie udało się teraz zaktualizować tej reakcji."
       },
       "mediaPreviewRestricted": "Zapowiedź ukryta dla bezpieczeństwa",
       "mediaUnavailableTitle": "Materiały niedostępne",

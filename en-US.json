@@ -1866,7 +1866,8 @@
         "unreadMessages": "{count, plural, one {# new message} other {# new messages}}",
         "loadError": "We couldn't load this conversation right now.",
         "editError": "We couldn't edit this whisper right now.",
-        "sendError": "We couldn't send this whisper right now."
+        "sendError": "We couldn't send this whisper right now.",
+        "reactionError": "We couldn't update this reaction right now."
       },
       "mediaPreviewRestricted": "Preview hidden for safety",
       "mediaUnavailableTitle": "Media unavailable",
