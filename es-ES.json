@@ -100,11 +100,11 @@
   "supporterBadges": {
     "subscription": "{count, plural, one {Suscriptor desde hace # mes} other {Suscriptor desde hace # meses}}",
     "gift": {
-      "supporter": "Colaborador de regalos",
-      "enthusiast": "Entusiasta de regalos",
-      "champion": "Campeón de regalos",
-      "legend": "Leyenda de regalos",
-      "rainbow": "Regalador arcoíris"
+      "supporter": "Regalador",
+      "enthusiast": "Súper Regalador",
+      "champion": "Regalador de Élite",
+      "legend": "Regalador Legendario",
+      "rainbow": "Regalador Arcoíris"
     }
   },
   "billingGift": {
@@ -573,6 +573,8 @@
       "slug": "Slug",
       "slugPlaceholder": "Lo-Fi-After-Midnight",
       "slugHint": "Generado automáticamente a partir del nombre de la sala; Los alfabetos no latinos se transliteran a letras minúsculas y guiones.",
+      "slugSuggestions": "Enlaces disponibles",
+      "slugSuggestionHint": "Elige una opción para continuar.",
       "description": "Descripción",
       "descriptionPlaceholder": "Describe el ambiente, la dirección musical y el tipo de personas que quieres reunir aquí.",
       "descriptionHint": "Opcional. Una breve descripción de hasta 250 personajes ayuda a que la sala se sienta viva antes de que empiece la primera pista.",
@@ -3319,6 +3321,8 @@
         "targetPlaceholder": "Elige una lista de reproducción",
         "targetHint": "Elige qué lista de reproducción debe recibir las pistas importadas.",
         "autoCreateHint": "Si aún no tienes listas de reproducción, la importación creará una automáticamente.",
+        "autoSplitTitle": "División automática activada",
+        "autoSplitHint": "Si se llena el destino, las pistas restantes continuarán en listas numeradas como nombre-02 y nombre-03.",
         "selectTargetError": "Elige una lista de reproducción de destino.",
         "cancel": "Cancelar",
         "dismiss": "Destitución",
@@ -3336,6 +3340,8 @@
         "failed": "{count} fallado",
         "genericError": "No se pude importar esta lista de reproducción ahora mismo.",
         "emptyResultError": "No se encontraron canciones importables en esta lista.",
+        "splitCompleted": "Se importaron {count} pistas de {name} en {playlists} listas.",
+        "splitAcross": "{count} listas utilizadas",
         "spotifyQueued": "La Spotify importación ha sido puesta en cola.",
         "spotifyCompleted": "La lista de reproducción {name} fue importada de Spotify.",
         "spotifyPartial": "La lista de reproducción {name} fue parcialmente importada de Spotify.",
@@ -7603,6 +7609,24 @@
       "nextExtraDescription": "{count, plural, one {# configurado extra a este nivel.} other {# Extras configurados a este nivel.}}",
       "noNextExtra": "No hay extras próximos",
       "noNextExtraDescription": "No se encontró ningún extra configurado en el rango cargado.",
+      "supporter": {
+        "eyebrow": "Apoyo a la plataforma",
+        "title": "Suscripción y regalos",
+        "subtitle": "Consulta tus insignias de apoyo y el progreso hacia el siguiente nivel.",
+        "subscription": "Suscripción",
+        "gifts": "Regalos enviados",
+        "noActiveSubscription": "Sin suscripción activa",
+        "noGifts": "Ningún regalo enviado",
+        "nextTier": "Siguiente: {tier}",
+        "maximumTier": "Nivel máximo alcanzado",
+        "subscriptionProgress": "{current} / {target} meses",
+        "giftProgress": "{current} / {target} regalos",
+        "subscriptionTotal": "{count, plural, one {# mes contabilizado} other {# meses contabilizados}}",
+        "giftTotal": "{count, plural, one {# regalo enviado} other {# regalos enviados}}",
+        "subscriptionRemaining": "{count, plural, one {Falta # mes} other {Faltan # meses}}",
+        "giftRemaining": "{count, plural, one {Falta # regalo} other {Faltan # regalos}}",
+        "completed": "Completado"
+      },
       "showAll": "Todos",
       "showExtras": "Solo extras",
       "noExtra": "No hay extra",

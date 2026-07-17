@@ -100,11 +100,11 @@
   "supporterBadges": {
     "subscription": "{count, plural, one {Abonné depuis # mois} other {Abonné depuis # mois}}",
     "gift": {
-      "supporter": "Donateur de subs",
-      "enthusiast": "Passionné de cadeaux",
-      "champion": "Champion des cadeaux",
-      "legend": "Légende des cadeaux",
-      "rainbow": "Donateur arc-en-ciel"
+      "supporter": "Donateur",
+      "enthusiast": "Super Donateur",
+      "champion": "Donateur d’Élite",
+      "legend": "Donateur Légendaire",
+      "rainbow": "Donateur Arc-en-ciel"
     }
   },
   "billingGift": {
@@ -573,6 +573,8 @@
       "slug": "Slug",
       "slugPlaceholder": "Lo-Fi-After Midnight",
       "slugHint": "Généré automatiquement à partir du nom de la pièce ; Les écritures non latines sont translittérées en lettres minuscules et en traits d’union (tires).",
+      "slugSuggestions": "Liens disponibles",
+      "slugSuggestionHint": "Choisissez une option pour continuer.",
       "description": "Description",
       "descriptionPlaceholder": "Décrivez l’ambiance, la direction musicale et le type de personnes que vous souhaitez rassembler ici.",
       "descriptionHint": "Optionnel. Une courte description allant jusqu’à 250 personnages aide à donner une impression de vie dans la pièce avant le début du premier titre.",
@@ -3319,6 +3321,8 @@
         "targetPlaceholder": "Choisissez une playlist",
         "targetHint": "Choisissez quelle playlist doit recevoir les morceaux importés.",
         "autoCreateHint": "Si vous n’avez pas encore de playlists, l’importation en créera une automatiquement pour vous.",
+        "autoSplitTitle": "Répartition automatique activée",
+        "autoSplitHint": "Si la destination est pleine, les titres restants continueront dans des playlists numérotées comme nom-02 et nom-03.",
         "selectTargetError": "Choisissez une playlist de destination.",
         "cancel": "Annuler",
         "dismiss": "Libérez",
@@ -3336,6 +3340,8 @@
         "failed": "{count} échoué",
         "genericError": "Je n’ai pas pu importer cette playlist pour le moment.",
         "emptyResultError": "Aucune piste importable n’a été trouvée dans cette playlist.",
+        "splitCompleted": "{count} titres de {name} ont été importés dans {playlists} playlists.",
+        "splitAcross": "{count} playlists utilisées",
         "spotifyQueued": "L’importation Spotify a été mise en file d’attente.",
         "spotifyCompleted": "La playlist {name} a été importée depuis Spotify.",
         "spotifyPartial": "La playlist {name} a été partiellement importée de Spotify.",
@@ -7603,6 +7609,24 @@
       "nextExtraDescription": "{count, plural, one {# configuré supplémentaire à ce niveau.} other {# Des extras configurés à ce niveau.}}",
       "noNextExtra": "Aucun bonus à venir",
       "noNextExtraDescription": "Aucun extras configuré n’a été trouvé dans la plage chargée.",
+      "supporter": {
+        "eyebrow": "Soutien à la plateforme",
+        "title": "Abonnement et cadeaux",
+        "subtitle": "Suivez vos badges de soutien et votre progression vers le prochain niveau.",
+        "subscription": "Abonnement",
+        "gifts": "Cadeaux envoyés",
+        "noActiveSubscription": "Aucun abonnement actif",
+        "noGifts": "Aucun cadeau envoyé",
+        "nextTier": "Suivant : {tier}",
+        "maximumTier": "Niveau maximal atteint",
+        "subscriptionProgress": "{current} / {target} mois",
+        "giftProgress": "{current} / {target} cadeaux",
+        "subscriptionTotal": "{count, plural, one {# mois comptabilisé} other {# mois comptabilisés}}",
+        "giftTotal": "{count, plural, one {# cadeau envoyé} other {# cadeaux envoyés}}",
+        "subscriptionRemaining": "{count, plural, one {# mois restant} other {# mois restants}}",
+        "giftRemaining": "{count, plural, one {# cadeau restant} other {# cadeaux restants}}",
+        "completed": "Terminé"
+      },
       "showAll": "Tous",
       "showExtras": "Bonus uniquement",
       "noExtra": "Pas de supplément",

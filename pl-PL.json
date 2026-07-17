@@ -100,11 +100,11 @@
   "supporterBadges": {
     "subscription": "{count, plural, one {Subskrybent od # miesiąca} few {Subskrybent od # miesięcy} many {Subskrybent od # miesięcy} other {Subskrybent od # miesięcy}}",
     "gift": {
-      "supporter": "Darujący subskrypcje",
-      "enthusiast": "Entuzjasta prezentów",
-      "champion": "Mistrz prezentów",
-      "legend": "Legenda prezentów",
-      "rainbow": "Tęczowy darczyńca"
+      "supporter": "Darczyńca",
+      "enthusiast": "Superdarczyńca",
+      "champion": "Elitarny Darczyńca",
+      "legend": "Legendarny Darczyńca",
+      "rainbow": "Tęczowy Darczyńca"
     }
   },
   "billingGift": {
@@ -573,6 +573,8 @@
       "slug": "Slug",
       "slugPlaceholder": "lo-fi-po-północy",
       "slugHint": "Generowane automatycznie z nazwy pokoju; pisma niełacińskie są transliterowane na małe litery i łączniki.",
+      "slugSuggestions": "Dostępne linki",
+      "slugSuggestionHint": "Wybierz opcję, aby kontynuować.",
       "description": "Opis",
       "descriptionPlaceholder": "Opisz nastrój, kierunku muzyczny i ludzi, których chcesz tu zgromadzić.",
       "descriptionHint": "Opcjonalne. Krótki opis do 250 znaków sprawia, że pokój wydaje się żywy przed rozpoczęciem pierwszej ścieżki.",
@@ -3319,6 +3321,8 @@
         "targetPlaceholder": "Wybierz playlistę",
         "targetHint": "Wybierz, która playlista powinna otrzymywać importowane utwory.",
         "autoCreateHint": "Jeśli nie masz jeszcze żadnych playlist, import automatycznie utworzy jedną dla Ciebie.",
+        "autoSplitTitle": "Automatyczny podział jest aktywny",
+        "autoSplitHint": "Gdy docelowa playlista się zapełni, pozostałe utwory trafią do numerowanych playlist, takich jak nazwa-02 i nazwa-03.",
         "selectTargetError": "Wybierz playlistę docelową.",
         "cancel": "Anuluj",
         "dismiss": "Zwolnić",
@@ -3336,6 +3340,8 @@
         "failed": "{count} nieudane",
         "genericError": "Nie mogę teraz zaimportować tej playlisty.",
         "emptyResultError": "Na tej playliście nie znaleziono żadnych utworów do importowania.",
+        "splitCompleted": "Zaimportowano {count} utworów z {name} do {playlists} playlist.",
+        "splitAcross": "Użyte playlisty: {count}",
         "spotifyQueued": "Import Spotify został ustawiony w kolejce.",
         "spotifyCompleted": "Playlista {name} została zaimportowana z Spotify.",
         "spotifyPartial": "Playlista {name} została częściowo zaimportowana z Spotify.",
@@ -7603,6 +7609,24 @@
       "nextExtraDescription": "{count, plural, one {# na tym poziomie skonfigurowany dodatkowo.} other {# konfigurowane dodatki na tym poziomie.}}",
       "noNextExtra": "Brak nadchodzących dodatków",
       "noNextExtraDescription": "W załadowanym zakresie nie znaleziono żadnych skonfigurowanych dodatków.",
+      "supporter": {
+        "eyebrow": "Wsparcie platformy",
+        "title": "Subskrypcja i prezenty",
+        "subtitle": "Śledź odznaki wsparcia i postęp do następnego poziomu.",
+        "subscription": "Subskrypcja",
+        "gifts": "Wysłane prezenty",
+        "noActiveSubscription": "Brak aktywnej subskrypcji",
+        "noGifts": "Nie wysłano prezentów",
+        "nextTier": "Następny: {tier}",
+        "maximumTier": "Osiągnięto najwyższy poziom",
+        "subscriptionProgress": "{current} / {target} mies.",
+        "giftProgress": "{current} / {target} prezentów",
+        "subscriptionTotal": "Miesiące subskrypcji: {count}",
+        "giftTotal": "Wysłane prezenty: {count}",
+        "subscriptionRemaining": "Pozostało miesięcy: {count}",
+        "giftRemaining": "Pozostało prezentów: {count}",
+        "completed": "Ukończono"
+      },
       "showAll": "Wszyscy",
       "showExtras": "Tylko dodatki",
       "noExtra": "Brak dodatku",
