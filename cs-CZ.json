@@ -931,7 +931,7 @@
       },
       "settingsPanel": {
         "button": "Místnost",
-        "mobileButton": "Prostředí",
+        "mobileButton": "Nastavení",
         "title": "Místnost",
         "close": "Uzavřené prostředí místnosti",
         "save": "Nastavení ukládání",
@@ -1059,8 +1059,8 @@
             "roomIcon": "Ikony místnosti",
             "queueButtonAccent": "Tlačítko fronty",
             "voteButtonBackground": "Pozadí hlasování",
-            "voteWoot": "Jupí",
-            "voteGrab": "Chyť",
+            "voteWoot": "Woot",
+            "voteGrab": "Grab",
             "voteMeh": "Meh",
             "inventoryGrant": "Vyskakovací okno položky",
             "welcomeMessage": "Uvítací zpráva",
@@ -1560,7 +1560,7 @@
         "grabSavedToast": "\"{title}\" bylo přidáno k {playlist}.",
         "actions": {
           "preview": "Náhled",
-          "grab": "Chyť",
+          "grab": "Grab",
           "grabLoading": "Ukládám..."
         },
         "pagination": {
@@ -1654,10 +1654,10 @@
         "externalMedia": "Externí média",
         "locked": "Zamčeno",
         "turn": "Teď jsi na řadě ty.",
-        "eta": "Dodatek: {time}",
+        "eta": "Eta: {time}",
         "etaNow": "ETA: teď",
         "etaLive": "ETA: po živém přenosu",
-        "etaUnknown": "Dodatek: —"
+        "etaUnknown": "Eta: —"
       },
       "queueDialog": {
         "currentDjTitle": "Co chceš dělat?",
@@ -1670,8 +1670,8 @@
         "leaveDjQueue": "Nechte DJ frontě"
       },
       "votes": {
-        "woot": "Jupí",
-        "grab": "Chyť",
+        "woot": "Woot",
+        "grab": "Grab",
         "meh": "Meh"
       },
       "trackToast": {
@@ -1683,7 +1683,7 @@
         "message": "Vstoupil jsi do {roomName}."
       },
       "grabDialog": {
-        "eyebrowSave": "Chyť",
+        "eyebrowSave": "Grab",
         "eyebrowRemove": "Odstraňte úchop",
         "titleSave": "Vyberte si playlist",
         "titleRemove": "Odstranit z playlistu",
@@ -1827,17 +1827,17 @@
       "messageEditError": "Teď jsme tuto zprávu nemohli upravit.",
       "messageTooLong": "Zprávy mohou být maximálně {count} znaků dlouhé.",
       "whispers": {
-        "title": "Šeptání",
-        "open": "Otevřené šeptání",
-        "shortOpen": "Šeptání",
-        "minimize": "Minimalizujte šeptání",
+        "title": "DM",
+        "open": "Otevřené dm",
+        "shortOpen": "DM",
+        "minimize": "Minimalizujte DM",
         "closePanel": "Blízké šepoty",
         "refresh": "Refresh whispers",
         "searchPlaceholder": "Hledat lidi",
-        "panelLoading": "Načítavající šeptání...",
-        "panelEmpty": "Ještě žádné šeptání.",
+        "panelLoading": "Načítavající DM..",
+        "panelEmpty": "Ještě žádné DM.",
         "searchEmpty": "Žádná konverzace nalezena.",
-        "panelLoadError": "Teď bychom nemohli načíst šeptání.",
+        "panelLoadError": "Teď bychom nemohli načíst DM.",
         "youPrefix": "Vy:",
         "you": "Ty",
         "unknownUser": "Uživatel",
@@ -2160,7 +2160,7 @@
         "targetHint": "Zadejte @username pro ověření uživatele.",
         "targetSearching": "Kontroluji uživatele...",
         "targetLookupError": "Teď jsme toho uživatele nemohli najít.",
-        "targetMeta": "Úroveň {level} • {fans, plural, one {# fanoušek} other {# fanoušci}}",
+        "targetMeta": "Úroveň {level} • {fans, plural, one {# fanoušek} other {# fans}}",
         "bulkTargetHint": {
           "room": "Akce bude aplikována na oprávněné uživatele v aktuální místnosti.",
           "global": "Tato akce bude aplikována globálně na oprávněné uživatele."
@@ -2396,9 +2396,9 @@
         "subscriber": "Odběratel",
         "resident_dj": "Rezidentní DJ",
         "bouncer": "Vyhazovač",
-        "manager": "Trenér",
-        "cohost": "Spolumoderátor",
-        "host": "Moderátor"
+        "manager": "Manažer",
+        "cohost": "Spoluhost",
+        "host": "Host"
       },
       "mentionTargets": {
         "everyone": "Celá místnost",
@@ -2415,7 +2415,7 @@
       },
       "status": {
         "online": "Online",
-        "busy": "Rušné",
+        "busy": "Práce",
         "away": "Pryč",
         "invisible": "Neviditelný",
         "offline": "Offline"
@@ -2435,7 +2435,7 @@
         "becomeFan": "Staňte se fanouškem",
         "unfan": "Odstraňte fanoušek",
         "mention": "Zmínka",
-        "whisper": "Šeptání",
+        "whisper": "DM",
         "viewProfile": "Zobrazit profil",
         "reportUser": "Zpráva",
         "addToQueue": "Přidat do fronty",
@@ -2578,13 +2578,13 @@
     "sidebar": {
       "explore": "Prozkoumat",
       "playlists": "Playlisty",
-      "fans": "Fanoušci",
+      "fans": "Fans",
       "history": "Historie",
       "events": "Události",
       "expandSidebar": "Rozbalit postranní panel",
       "collapseSidebar": "Postranní panel pro skládání",
       "shop": "Obchod",
-      "settings": "Prostředí",
+      "settings": "Nastavení",
       "admin": "Správa",
       "ambassador": "Panel velvyslanců",
       "logout": "Odhlásit se",
@@ -2646,9 +2646,9 @@
       }
     },
     "user": {
-      "fans": "Fanoušci",
-      "fansCount": "{count, plural, one {# Fanoušek} other {# Fanoušci}}",
-      "fanLabel": "{count, plural, one {Fanoušek} other {Fanoušci}}",
+      "fans": "Fans",
+      "fansCount": "{count, plural, one {# Fanoušek} other {# Fans}}",
+      "fanLabel": "{count, plural, one {Fanoušek} other {Fans}}",
       "level": "Úroveň",
       "xpTo": "XP na další úroveň"
     },
@@ -3378,7 +3378,7 @@
     },
     "fans": {
       "eyebrow": "Sociální graf",
-      "title": "Fanoušci",
+      "title": "Fans",
       "headerSubtitle": "Lidé, které sledujete, a superfanoušci připravení na rozhovor.",
       "superfansCount": "{count, plural, one {# Superfan} other {# Superfanoušci}}",
       "pendingCount": "{count, plural, one {# Čeká na} other {# Čeká na}}",
@@ -3415,7 +3415,7 @@
       "superfansEyebrow": "Vzájemný fanoušek",
       "superfansTitle": "Superfanoušci",
       "superfansSubtitle": "Lidi, kteří jsou zároveň i tvými fanoušky.",
-      "whisper": "Šeptání",
+      "whisper": "DM",
       "removeSuperfan": "Odstranit",
       "removeSuccess": "{username} byl odstraněn z vašeho seznamu superfanoušků.",
       "removeSuccessToast": "Superfan odstraněn",
@@ -3493,7 +3493,7 @@
           "connections": "Discord, Last.fma integrace.",
           "password": "Přihlašovací údaje a obnova přístupu.",
           "twoFactor": "Druhý faktor a způsoby přihlášení.",
-          "privacy": "Veřejný profil a šeptání.",
+          "privacy": "Veřejný profil a DM.",
           "violations": "Aktivní varování a reputace účtu.",
           "notifications": "Přípitky, zmínky a zvuky.",
           "chat": "Rozložení a čitelnost zpráv.",
@@ -3635,7 +3635,7 @@
         "statusHint": "Vyberte si, jak se vaše přítomnost objevuje na vašem profilu a v místnostech, kdykoli zrovna nehrajete jako DJ.",
         "status": {
           "online": "Online",
-          "busy": "Rušné",
+          "busy": "Práce",
           "away": "Pryč",
           "invisible": "Neviditelný"
         },
@@ -3880,7 +3880,7 @@
         "fanToastsHint": "Je to přípitek, když se někdo stane vaším fanouškem.",
         "mentionSound": "Zahrajte zvuk, když je to zmíněno",
         "mentionSoundHint": "Přehraje zvukový signál, když vás dostane důležitá zmínka o něm.",
-        "whisperSound": "Zahraj zvuk pro šeptání",
+        "whisperSound": "Zahraj zvuk pro DM",
         "whisperSoundHint": "Přehraje krátký zvukový signál, když přijde nová soukromá zpráva.",
         "desktopTitle": "Oznámení na ploše",
         "desktopPermission": {
@@ -4271,7 +4271,7 @@
         "table": {
           "room": "Pokoj",
           "visibility": "Viditelnost",
-          "owner": "Moderátor",
+          "owner": "Host",
           "flags": "Vlajky",
           "online": "Online",
           "updatedAt": "Aktualizováno",
@@ -5040,8 +5040,8 @@
           "roles": {
             "resident_dj": "Rezidentní DJové",
             "bouncer": "Bouncers",
-            "manager": "Trenéři",
-            "cohost": "Spolumoderátoři"
+            "manager": "Manažeři",
+            "cohost": "Spoluhosti"
           }
         },
         "staffChatAccess": {
@@ -5053,8 +5053,8 @@
           "roles": {
             "resident_dj": "Rezidentní DJové",
             "bouncer": "Bouncers",
-            "manager": "Trenéři",
-            "cohost": "Spolumoderátoři"
+            "manager": "Manažeři",
+            "cohost": "Spoluhosti"
           }
         },
         "theme": {
@@ -5275,7 +5275,7 @@
         "reports": "Zprávy",
         "helpCalls": "Volání o pomoc",
         "forms": "Formy",
-        "privateMessages": "Šeptání",
+        "privateMessages": "DM",
         "emailBlocklist": "Registrační bloky",
         "progression": "Postup",
         "giveaways": "Soutěže",
@@ -5640,7 +5640,7 @@
         "saveError": "Teď jsme nemohli zachránit černou listinu."
       },
       "privateMessages": {
-        "title": "Soukromé šeptání",
+        "title": "Soukromé DM",
         "subtitle": "Prohlížejte soukromé zprávy, když personál potřebuje moderovat zneužívání nebo vyšetřovat hlášení.",
         "refresh": "Refresh whispers",
         "clearAll": "Vyjasněte všechny šeptandy",
@@ -5651,8 +5651,8 @@
         "clearAllSuccess": "{messages} zpráva a {conversations} soukromá konverzace byly smazány.",
         "clearAllError": "Teď jsme nemohli vyčistit všechny šeptandy.",
         "searchPlaceholder": "Hledejte podle uživatelského jména, zobrazovaného jména nebo ID...",
-        "loading": "Načítavající šeptání...",
-        "loadError": "Teď bychom nemohli načíst šeptání.",
+        "loading": "Načítavající DM...",
+        "loadError": "Teď bychom nemohli načíst DM.",
         "empty": "Nebyly nalezeny žádné soukromé rozhovory.",
         "conversationPageRange": "{start}-{end} {total} rozhovoru",
         "conversationPageStatus": "Strana {page} {total}",
@@ -5676,7 +5676,7 @@
         "deleteMessageError": "Teď bychom ten šepot nemohli smazat.",
         "deleteConversation": "Smazat konverzaci",
         "deleteConversationTitle": "Smazat soukromou konverzaci",
-        "deleteConversationDescription": "Smazat celou soukromou konverzaci kvůli {conversation}? Tím se odstraní celá historie šeptání a nelze ji vrátit zpět.",
+        "deleteConversationDescription": "Smazat celou soukromou konverzaci kvůli {conversation}? Tím se odstraní celá historie DM a nelze ji vrátit zpět.",
         "deleteConversationConfirm": "Smazat konverzaci",
         "deleteConversationSuccess": "Konverzace smazána {messages} zprávou.",
         "deleteConversationError": "Teď jsme nemohli tuhle konverzaci smazat.",
@@ -6258,8 +6258,8 @@
         "roomRoleAssignmentLimitRoles": {
           "resident_dj": "Rezidentní DJové",
           "bouncer": "Bouncers",
-          "manager": "Trenéři",
-          "cohost": "Spolumoderátoři"
+          "manager": "Manažeři",
+          "cohost": "Spoluhosti"
         },
         "roomRoleAssignmentLimitsSave": "Limity uložených pozic",
         "roomRoleAssignmentLimitsSaving": "Limity úspor...",
@@ -6273,15 +6273,15 @@
         "staffChatRoleAccessRoles": {
           "resident_dj": "Rezidentní DJové",
           "bouncer": "Bouncers",
-          "manager": "Trenéři",
-          "cohost": "Spolumoderátoři"
+          "manager": "Manažeři",
+          "cohost": "Spoluhosti"
         },
         "staffChatRoleAccessSave": "Uložit přístup",
         "staffChatRoleAccessSaving": "Ušetřením přístupu...",
         "staffChatRoleAccessSaveError": "Nemohli jsme aktualizovat přístup do chatu zaměstnanců.",
         "staffChatRoleAccessUpdated": "Přístup do chatu zaměstnanců byl aktualizován.",
-        "roomRoleLimitCohost": "Spolumoderátor",
-        "roomRoleLimitManager": "Trenér",
+        "roomRoleLimitCohost": "Spoluhost",
+        "roomRoleLimitManager": "Manažer",
         "roomRoleLimitBouncer": "Vyhazovač",
         "roomRoleLimitResidentDj": "Rezidentní DJ",
         "subscriberPerksTitle": "Výhody pro předplatitele",
@@ -7445,7 +7445,7 @@
       "suspendedReason": "Důvod: {reason}",
       "status": {
         "online": "Online",
-        "busy": "Rušné",
+        "busy": "Práce",
         "away": "Pryč",
         "offline": "Offline"
       },
@@ -7702,8 +7702,8 @@
       "open": "Otevřená místnost",
       "roles": {
         "host": "Moderátor",
-        "cohost": "Spolumoderátor",
-        "manager": "Trenér"
+        "cohost": "Spoluhost",
+        "manager": "Manažer"
       },
       "tabs": {
         "owned": "Pokoje, které vlastníte",
