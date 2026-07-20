@@ -2339,6 +2339,13 @@
           "link": "Link"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "Tylko bez subskrypcji",
+        "blockedButton": "Aktywna subskrypcja",
+        "blockedDescription": "Ten konkurs jest dostępny tylko dla użytkowników bez aktywnej subskrypcji.",
+        "toggleLabel": "Blokuj aktywnych subskrybentów",
+        "toggleHint": "Użytkownicy z aktywną subskrypcją nie będą mogli wziąć udziału w tym konkursie."
+      },
       "poll": {
         "badge": "Ankieta",
         "expiredBadge": "Głosowanie zamknięte",

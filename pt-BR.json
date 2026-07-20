@@ -2339,6 +2339,13 @@
           "link": "Link"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "Somente não assinantes",
+        "blockedButton": "Assinatura ativa",
+        "blockedDescription": "Este sorteio é exclusivo para quem ainda não possui uma assinatura ativa.",
+        "toggleLabel": "Bloquear assinantes ativos",
+        "toggleHint": "Quem já possui uma assinatura ativa não poderá entrar neste sorteio."
+      },
       "poll": {
         "badge": "Enquete",
         "expiredBadge": "Enquete encerrada",

@@ -2339,6 +2339,13 @@
           "link": "Link"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "Non-subscribers only",
+        "blockedButton": "Active subscription",
+        "blockedDescription": "This giveaway is only open to users without an active subscription.",
+        "toggleLabel": "Block active subscribers",
+        "toggleHint": "Users who already have an active subscription will not be able to enter this giveaway."
+      },
       "poll": {
         "badge": "Poll",
         "expiredBadge": "Poll closed",

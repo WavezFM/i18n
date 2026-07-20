@@ -2339,6 +2339,13 @@
           "link": "Enlace"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "Solo no suscriptores",
+        "blockedButton": "Suscripción activa",
+        "blockedDescription": "Este sorteo es exclusivo para usuarios sin una suscripción activa.",
+        "toggleLabel": "Bloquear suscriptores activos",
+        "toggleHint": "Los usuarios que ya tengan una suscripción activa no podrán participar en este sorteo."
+      },
       "poll": {
         "badge": "Encuesta",
         "expiredBadge": "Cierre de la encuesta",

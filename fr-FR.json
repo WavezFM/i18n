@@ -2339,6 +2339,13 @@
           "link": "Lien"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "Non-abonnés uniquement",
+        "blockedButton": "Abonnement actif",
+        "blockedDescription": "Ce concours est réservé aux utilisateurs sans abonnement actif.",
+        "toggleLabel": "Bloquer les abonnés actifs",
+        "toggleHint": "Les utilisateurs ayant déjà un abonnement actif ne pourront pas participer à ce concours."
+      },
       "poll": {
         "badge": "Sondage",
         "expiredBadge": "Clôture du scrutin",

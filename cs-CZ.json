@@ -2339,6 +2339,13 @@
           "link": "Odkaz"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "Pouze bez předplatného",
+        "blockedButton": "Aktivní předplatné",
+        "blockedDescription": "Tato soutěž je určena pouze uživatelům bez aktivního předplatného.",
+        "toggleLabel": "Blokovat aktivní předplatitele",
+        "toggleHint": "Uživatelé s aktivním předplatným se nebudou moci této soutěže zúčastnit."
+      },
       "poll": {
         "badge": "Anketa",
         "expiredBadge": "Hlasování uzavřeno",

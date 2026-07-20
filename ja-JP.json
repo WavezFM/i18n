@@ -2339,6 +2339,13 @@
           "link": "リンク"
         }
       },
+      "giveaway": {
+        "restrictionBadge": "未登録者のみ",
+        "blockedButton": "有効なサブスクリプション",
+        "blockedDescription": "この抽選は有効なサブスクリプションを持っていないユーザーのみ参加できます。",
+        "toggleLabel": "有効な登録者を除外",
+        "toggleHint": "すでに有効なサブスクリプションを持つユーザーは、この抽選に参加できません。"
+      },
       "poll": {
         "badge": "投票",
         "expiredBadge": "投票は締め切られました",
