@@ -306,7 +306,13 @@
       "unexpectedError": "Nie mogliśmy cię teraz zapisać.",
       "socialError": "Nie mogliśmy teraz rozpocząć rejestracji w społecznościach.",
       "socialCanceled": "Okno uwierzytelniania społecznego zostało zamknięte, zanim się skończyło.",
-      "userBanned": "To konto zostało zawieszone od WavezFM. Jeśli to wydaje się nie w porządku, prosimy o kontakt z zespołem."
+      "userBanned": "To konto zostało zawieszone od WavezFM. Jeśli to wydaje się nie w porządku, prosimy o kontakt z zespołem.",
+      "magicLink": "Zaloguj się linkiem z e-maila",
+      "magicLinkSending": "Wysyłanie linku...",
+      "magicLinkSent": "Wysłaliśmy link do logowania na {email}. Sprawdź swoją skrzynkę odbiorczą.",
+      "magicLinkError": "Nie udało się teraz wysłać linku do logowania.",
+      "magicLinkInvalid": "Ten link do logowania jest nieprawidłowy lub wygasł. Poproś o nowy link.",
+      "magicLinkRateLimited": "Poproszono o zbyt wiele linków. Poczekaj kilka minut i spróbuj ponownie."
     },
     "popup": {
       "title": "Zakończenie uwierzytelniania",
@@ -680,6 +686,7 @@
         "QUEUE_CURRENT_DJ_MOVE_FORBIDDEN": "Obecnego DJ nie można przesuwać podczas gry.",
         "PLAYBACK_TRACK_REQUIRED": "Nie ma żadnego odtwarzanego utworu.",
         "PLAYBACK_SKIP_FORBIDDEN": "Nie możesz pominąć obecnego utworu.",
+        "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "Aktualny DJ nie może głosować ani użyć Grab dla własnego utworu.",
         "VOTE_TYPE_INVALID": "Typ głosowania jest nieprawidłowy.",
         "ROOM_GRAB_DISABLED_EXTERNAL_MEDIA": "Chwyt jest wyłączony, gdy w tym pomieszczeniu są aktywne zewnętrzne nośniki.",
         "ROOM_MODERATION_SELF_FORBIDDEN": "Nie możesz się umiarkować.",
@@ -1430,7 +1437,7 @@
           },
           "mention_room": {
             "label": "Wspomnij o pokoju/roles",
-            "description": "Pozwala na używanie @todos i wzmianek o rolach, takich jak @residentdj i @manager."
+            "description": "Pozwala używać @wszyscy i wzmianek o rolach, takich jak @rezydentdj i @menedżer."
           },
           "manage_roles": {
             "label": "Zarządzanie rolami",
@@ -2347,6 +2354,16 @@
         "clearOption": "Usuń głos na {option}",
         "openLabel": "Otwórz ankietę: {question}",
         "modalTitle": "Ankieta pokoju",
+        "tabsLabel": "Widoki ankiety",
+        "pollTab": "Ankieta",
+        "votersTab": "Głosy",
+        "votersTitle": "Kto głosował",
+        "votersDescription": "Tylko Ty, jako autor ankiety, możesz zobaczyć głos każdej osoby.",
+        "votersLoading": "Ładowanie głosów...",
+        "votersLoadError": "Nie udało się wczytać głosów tej ankiety.",
+        "votersRetry": "Spróbuj ponownie",
+        "votersEmpty": "Nikt jeszcze nie zagłosował w tej ankiecie.",
+        "optionVotersEmpty": "Brak głosów na tę opcję.",
         "delete": "Zakończ ankietę",
         "deleteAria": "Zakończ ankietę i ogłoś ostateczny wynik",
         "dismiss": "Odrzuć ankietę",
@@ -2402,7 +2419,16 @@
       },
       "mentionTargets": {
         "everyone": "Cały pokój",
-        "djs": "DJ-e w kolejce"
+        "djs": "DJ-e w kolejce",
+        "aliases": {
+          "everyone": "wszyscy",
+          "djs": "djs",
+          "resident_dj": "rezydentdj",
+          "bouncer": "ochroniarz",
+          "manager": "menedżer",
+          "cohost": "współprowadzący",
+          "host": "prowadzący"
+        }
       },
       "platform": {
         "none": "Członek",
@@ -2718,6 +2744,7 @@
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "Ważność przesyłania obrazków czatu musi wynosić od 5 minut do 7 dni.",
       "INVALID_COLOR_THEME": "Wybrany motyw kolorystyczny jest nieprawidłowy.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "Preferencja widoczności profilu superfanów jest nieprawidłowa.",
+      "INVALID_SHOW_COUNTRY_FLAG": "Ustawienie widoczności flagi kraju jest nieprawidłowe.",
       "INVALID_CREDENTIALS": "Nie mogliśmy cię zarejestrować z tymi uprawnieniami.",
       "SIGN_UP_UNAVAILABLE": "Nie mogliśmy zakończyć rejestracji z tymi informacjami.",
       "CAPTCHA_REQUIRED": "Przejdź kontrolę bezpieczeństwa, aby kontynuować.",
@@ -2753,6 +2780,7 @@
       "INVALID_DISPLAY_USERNAME": "Nazwa wyświetlana musi mieć od 3 do 50 znaków.",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "Wyświetlany limit poziomu musi być całkowity między 1 a 500.",
       "INVALID_MISC_SHOP_ITEMS": "Konfiguracja sklepu Extras jest nieprawidłowa.",
+      "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "Ten Extra jest nadal objęty cooldownem. Spróbuj ponownie za {remainingHours} godz.",
       "SUBSCRIPTION_CHECKOUT_NOT_CONFIGURED": "płatność subskrypcji nie jest skonfigurowana.",
       "SUBSCRIPTION_ALREADY_ACTIVE": "Twoja subskrypcja jest już aktywna. Zarządzaj obecną subskrypcją zamiast otwierać kolejną płatność.",
       "SUBSCRIPTION_NOT_STRIPE_MANAGED": "Ta subskrypcja nie jest zarządzana przez Stripe.",
@@ -2944,6 +2972,7 @@
       "TWO_FACTOR_TOTP_REQUIRED": "Wprowadź kod aplikacji do uwierzytelniania.",
       "USER_ALREADY_OWNS_ITEM": "Ten użytkownik już posiada ten przedmiot.",
       "USER_BANNED": "To konto jest zbanowane.",
+      "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "Aktualny DJ nie może głosować ani użyć Grab dla własnego utworu.",
       "VOTE_TYPE_INVALID": "Typ głosowania jest nieprawidłowy.",
       "WS_AUTH_REQUIRED": "Wymagane jest uwierzytelnienie.",
       "WS_CHAT_RATE_LIMITED": "Wysyłałeś wiadomości na czacie zbyt szybko. Spróbuj ponownie za chwilę.",
@@ -3093,6 +3122,8 @@
         "xpBoostMeta": "{multiplier}x XP przez {minutes} minut",
         "displayNameMeta": "Natychmiast aktualizuje wyświetlaną nazwę",
         "usernameMeta": "Aktualizacje @username i natychmiast wyświetlanie nazwy",
+        "cooldownMetaDays": "Tę zmianę można wykonać raz na {days} dni.",
+        "cooldownMetaHours": "Tę zmianę można wykonać raz na {hours} godzin.",
         "roomThemePermanentMeta": "Odblokowuje trwałą, niestandardową edycję motywów dla wybranego pokoju",
         "roomThemeMonthlyMeta": "Odblokowuje edycję niestandardowego motywu na {days} dni w wybranym pokoju",
         "roomThemeRoomLocked": "Dotyczy tylko wybranego pokoju. Nie odblokowuje niestandardowych motywów w innych pokojach na koncie.",
@@ -3623,6 +3654,8 @@
         "showSuperfansOnProfileHint": "Pozwalamy ludziom zobaczyć waszą wspólną listę fanów na publicznym profilu.",
         "showOnlineRoomOnProfile": "Pokaż aktualny pokój podczas korzystania z sieci",
         "showOnlineRoomOnProfileHint": "Po włączeniu inni mogą widzieć i dołączać do pokoju, w którym się obecnie znajdujesz.",
+        "showCountryFlag": "Pokaż flagę kraju",
+        "showCountryFlagHint": "Po wyłączeniu flaga nie jest widoczna w profilu, szybkim profilu ani w pokojach.",
         "showLastSeenOnProfile": "Pokaż ostatnią aktywność",
         "showLastSeenOnProfileHint": "Gdy jesteś niepełnosprawny, inni nie widzą, kiedy ostatnio widziałeś się na stronie.",
         "showSupporterBadges": "Pokaż automatyczne odznaki kibica",
@@ -4494,6 +4527,12 @@
         "title": "Użytkownicy",
         "detailPanelTitle": "Panel administracyjny",
         "detailPanelSubtitle": "Stworzone {createdAt} · {warnings}Naruszenia",
+        "currentRoom": {
+          "label": "Obecny pokój",
+          "loading": "Sprawdzanie obecnego pokoju...",
+          "empty": "Nie znajduje się w żadnym pokoju",
+          "open": "Otwórz {room}"
+        },
         "subtitle": "Wyszukaj konta i dostosuj globalne role, salda oraz progresję od tego miejsca.",
         "refresh": "Odśwież użytkowników",
         "export": "Użytkownicy eksportowi",
@@ -6007,6 +6046,8 @@
         "miscShopColorHex": "Kolor ikony",
         "miscShopMultiplier": "XP mnożnik (%)",
         "miscShopDuration": "Czas trwania (minuty)",
+        "miscShopCooldownHours": "Cooldown (godziny)",
+        "miscShopCooldownHoursHint": "Wpisz 0, aby wyłączyć cooldown.",
         "miscShopSortOrder": "Zamówienie",
         "roomAppearanceTabTitle": "Zakładka wyglądu w Narzędziach Pokoju",
         "roomAppearanceTabSubtitle": "Pozwala gospodarzom i współgospodarzom z uprawnieniami do zarządzania pokojem korzystanie z zakładki Wygląd. Uprawnienia do klatki w tle i wideo nadal decydują o tym, które opcje się pojawiają.",
@@ -6726,6 +6767,12 @@
           "descriptionPtBrPlaceholder": "Emblema especial, para quem curte a vibe neon.",
           "descriptionEnUs": "Opis (en-US)",
           "descriptionEnUsPlaceholder": "Specjalna odznaka dla użytkowników uwielbiających neonowy klimat.",
+          "contentLanguage": "Język treści",
+          "localizedName": "Nazwa",
+          "localizedNamePlaceholder": "Nazwa odznaki",
+          "localizedDescription": "Opis",
+          "localizedDescriptionPlaceholder": "Opis odznaki",
+          "englishFallbackHint": "Język angielski jest wymagany i używany, gdy wybrany język nie ma tłumaczenia.",
           "imageUrl": "Zdjęcie URL",
           "imagePlaceholder": "/badges/neon-lover.png",
           "renderMode": "Typ odznaki",

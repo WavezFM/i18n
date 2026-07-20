@@ -306,7 +306,13 @@
       "unexpectedError": "Teď jsme vás nemohli zapsat.",
       "socialError": "Nemohli jsme teď začít s přihlašováním na sociální sítě.",
       "socialCanceled": "Okno pro sociální autentizaci bylo uzavřeno dřív, než skončilo.",
-      "userBanned": "Tento účet byl pozastaven z WavezFM. Pokud vám to přijde nesprávné, kontaktujte prosím tým."
+      "userBanned": "Tento účet byl pozastaven z WavezFM. Pokud vám to přijde nesprávné, kontaktujte prosím tým.",
+      "magicLink": "Přihlásit se odkazem v e-mailu",
+      "magicLinkSending": "Odesílání odkazu...",
+      "magicLinkSent": "Odeslali jsme přihlašovací odkaz na {email}. Zkontrolujte svou schránku.",
+      "magicLinkError": "Přihlašovací odkaz se teď nepodařilo odeslat.",
+      "magicLinkInvalid": "Tento přihlašovací odkaz je neplatný nebo vypršel. Požádejte o nový.",
+      "magicLinkRateLimited": "Požádali jste o příliš mnoho odkazů. Počkejte několik minut a zkuste to znovu."
     },
     "popup": {
       "title": "Dokončení autentizace",
@@ -680,6 +686,7 @@
         "QUEUE_CURRENT_DJ_MOVE_FORBIDDEN": "Současný DJ nelze během hraní přesouvat.",
         "PLAYBACK_TRACK_REQUIRED": "Žádná skladba nehraje.",
         "PLAYBACK_SKIP_FORBIDDEN": "Aktuální skladbu nelze přeskočit.",
+        "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "Aktuální DJ nemůže hlasovat ani použít Grab u vlastní skladby.",
         "VOTE_TYPE_INVALID": "Typ hlasování je neplatný.",
         "ROOM_GRAB_DISABLED_EXTERNAL_MEDIA": "Grab je deaktivován, dokud je v této místnosti aktivní externí médium.",
         "ROOM_MODERATION_SELF_FORBIDDEN": "Nemůžete se ovládat.",
@@ -1430,7 +1437,7 @@
           },
           "mention_room": {
             "label": "Zmínit/roles místnosti",
-            "description": "Umožňuje používat @todos a zmínky o rolích jako @residentdj a @manager."
+            "description": "Umožňuje používat @všichni a zmínky o rolích jako @rezidentnídj a @správce."
           },
           "manage_roles": {
             "label": "Řízení rolí",
@@ -1654,10 +1661,10 @@
         "externalMedia": "Externí média",
         "locked": "Zamčeno",
         "turn": "Teď jsi na řadě ty.",
-        "eta": "Eta: {time}",
+        "eta": "ETA: {time}",
         "etaNow": "ETA: teď",
         "etaLive": "ETA: po živém přenosu",
-        "etaUnknown": "Eta: —"
+        "etaUnknown": "ETA: —"
       },
       "queueDialog": {
         "currentDjTitle": "Co chceš dělat?",
@@ -1683,7 +1690,7 @@
         "message": "Vstoupil jsi do {roomName}."
       },
       "grabDialog": {
-        "eyebrowSave": "Grab",
+        "eyebrowSave": "Chyť",
         "eyebrowRemove": "Odstraňte úchop",
         "titleSave": "Vyberte si playlist",
         "titleRemove": "Odstranit z playlistu",
@@ -1828,13 +1835,13 @@
       "messageTooLong": "Zprávy mohou být maximálně {count} znaků dlouhé.",
       "whispers": {
         "title": "DM",
-        "open": "Otevřené dm",
+        "open": "Otevřené DM",
         "shortOpen": "DM",
         "minimize": "Minimalizujte DM",
         "closePanel": "Blízké šepoty",
         "refresh": "Refresh whispers",
         "searchPlaceholder": "Hledat lidi",
-        "panelLoading": "Načítavající DM..",
+        "panelLoading": "Načítavající DM...",
         "panelEmpty": "Ještě žádné DM.",
         "searchEmpty": "Žádná konverzace nalezena.",
         "panelLoadError": "Teď bychom nemohli načíst DM.",
@@ -2347,6 +2354,16 @@
         "clearOption": "Odebrat hlas pro {option}",
         "openLabel": "Otevřít anketu: {question}",
         "modalTitle": "Anketa místnosti",
+        "tabsLabel": "Zobrazení ankety",
+        "pollTab": "Anketa",
+        "votersTab": "Hlasy",
+        "votersTitle": "Kdo hlasoval",
+        "votersDescription": "Pouze vy jako autor ankety můžete vidět hlas každého uživatele.",
+        "votersLoading": "Načítání hlasů...",
+        "votersLoadError": "Hlasy této ankety se nepodařilo načíst.",
+        "votersRetry": "Zkusit znovu",
+        "votersEmpty": "V této anketě zatím nikdo nehlasoval.",
+        "optionVotersEmpty": "Pro tuto možnost nikdo nehlasoval.",
         "delete": "Ukončit anketu",
         "deleteAria": "Ukončit anketu a oznámit konečný výsledek",
         "dismiss": "Zahodit anketu",
@@ -2402,7 +2419,16 @@
       },
       "mentionTargets": {
         "everyone": "Celá místnost",
-        "djs": "DJové ve frontě"
+        "djs": "DJové ve frontě",
+        "aliases": {
+          "everyone": "všichni",
+          "djs": "djové",
+          "resident_dj": "rezidentnídj",
+          "bouncer": "vyhazovač",
+          "manager": "správce",
+          "cohost": "spoluhostitel",
+          "host": "hostitel"
+        }
       },
       "platform": {
         "none": "Člen",
@@ -2718,6 +2744,7 @@
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "Expirace nahrávání obrázků z chatu musí být mezi 5 minutami a 7 dny.",
       "INVALID_COLOR_THEME": "Zvolené barevné téma je neplatné.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "Preference viditelnosti profilu superfanoušků je neplatná.",
+      "INVALID_SHOW_COUNTRY_FLAG": "Nastavení viditelnosti vlajky země je neplatné.",
       "INVALID_CREDENTIALS": "Nemohli jsme tě přihlásit s těmito doklady.",
       "SIGN_UP_UNAVAILABLE": "S těmito informacemi jsme se nemohli registrovat.",
       "CAPTCHA_REQUIRED": "Dokončete bezpečnostní kontrolu pro pokračování.",
@@ -2753,6 +2780,7 @@
       "INVALID_DISPLAY_USERNAME": "Zobrazované jméno musí mít mezi 3 a 50 znaky.",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "Zobrazený limit úrovně musí být celé číslo mezi 1 a 500.",
       "INVALID_MISC_SHOP_ITEMS": "Konfigurace obchodu Extras je neplatná.",
+      "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "Tento Extra je stále v cooldownu. Zkuste to znovu za {remainingHours} h.",
       "SUBSCRIPTION_CHECKOUT_NOT_CONFIGURED": "Platba předplatného není nastavená.",
       "SUBSCRIPTION_ALREADY_ACTIVE": "Vaše předplatné je už aktivní. Spravujte aktuální předplatné místo otevírání další platby.",
       "SUBSCRIPTION_NOT_STRIPE_MANAGED": "Toto předplatné není spravováno Stripe.",
@@ -2944,6 +2972,7 @@
       "TWO_FACTOR_TOTP_REQUIRED": "Zadejte kód aplikace autentizátoru.",
       "USER_ALREADY_OWNS_ITEM": "Tento uživatel už tento předmět vlastní.",
       "USER_BANNED": "Tento účet je zabanován.",
+      "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "Aktuální DJ nemůže hlasovat ani použít Grab u vlastní skladby.",
       "VOTE_TYPE_INVALID": "Typ hlasování je neplatný.",
       "WS_AUTH_REQUIRED": "Je vyžadována autentizace.",
       "WS_CHAT_RATE_LIMITED": "Posílal jsi zprávy do chatu příliš rychle. Zkuste to za chvíli znovu.",
@@ -3093,6 +3122,8 @@
         "xpBoostMeta": "{multiplier}x XP {minutes} minut",
         "displayNameMeta": "Okamžitě aktualizuje zobrazené jméno",
         "usernameMeta": "Aktualizace @username a zobrazení jména okamžitě",
+        "cooldownMetaDays": "Tuto změnu lze provést jednou za {days} dní.",
+        "cooldownMetaHours": "Tuto změnu lze provést jednou za {hours} hodin.",
         "roomThemePermanentMeta": "Odemkne trvalé úpravy vlastního tématu pro vybranou místnost",
         "roomThemeMonthlyMeta": "Odemkne úpravu vlastního tématu na {days} dní ve vybrané místnosti",
         "roomThemeRoomLocked": "Aplikováno pouze na vybranou místnost. Neodemyká vlastní motivy v jiných místnostech na účtu.",
@@ -3623,6 +3654,8 @@
         "showSuperfansOnProfileHint": "Lidem umožňuje vidět váš společný seznam fanoušků na veřejném profilu.",
         "showOnlineRoomOnProfile": "Zobrazit aktuální místnost při online",
         "showOnlineRoomOnProfileHint": "Když je zapnutý, ostatní lidé mohou vidět a připojit se k místnosti, ve které se právě nacházíte.",
+        "showCountryFlag": "Zobrazit vlajku země",
+        "showCountryFlagHint": "Když je tato možnost vypnutá, vaše vlajka se nezobrazuje v profilu, rychlém profilu ani v místnostech.",
         "showLastSeenOnProfile": "Zobrazit poslední aktivitu",
         "showLastSeenOnProfileHint": "Když jste postiženi, ostatní lidé nevidí, kdy jste byli naposledy na stránce.",
         "showSupporterBadges": "Zobrazit automatické odznaky podporovatele",
@@ -4494,6 +4527,12 @@
         "title": "Uživatelé",
         "detailPanelTitle": "Administrativní panel",
         "detailPanelSubtitle": "Vytvořeno {createdAt} · {warnings}/3 porušení",
+        "currentRoom": {
+          "label": "Aktuální místnost",
+          "loading": "Kontrola aktuální místnosti...",
+          "empty": "Není v žádné místnosti",
+          "open": "Otevřít {room}"
+        },
         "subtitle": "Vyhledávejte účty a upravujte globální role, zůstatky a postup odtud.",
         "refresh": "Obnovit uživatele",
         "export": "Exportní uživatelé",
@@ -6007,6 +6046,8 @@
         "miscShopColorHex": "Barva ikony",
         "miscShopMultiplier": "XP násobitel (%)",
         "miscShopDuration": "Délka (minuty)",
+        "miscShopCooldownHours": "Cooldown (hodiny)",
+        "miscShopCooldownHoursHint": "Hodnota 0 cooldown vypne.",
         "miscShopSortOrder": "Řád",
         "roomAppearanceTabTitle": "Záložka vzhledu v Nástrojích místností",
         "roomAppearanceTabSubtitle": "Umožňuje hostitelům a spoluhostitelům s oprávněním správy místnosti používat záložku Vzhled. Oprávnění pro pozadí a videosnímky stále určují, které možnosti se objeví.",
@@ -6280,8 +6321,8 @@
         "staffChatRoleAccessSaving": "Ušetřením přístupu...",
         "staffChatRoleAccessSaveError": "Nemohli jsme aktualizovat přístup do chatu zaměstnanců.",
         "staffChatRoleAccessUpdated": "Přístup do chatu zaměstnanců byl aktualizován.",
-        "roomRoleLimitCohost": "Spoluhost",
-        "roomRoleLimitManager": "Manažer",
+        "roomRoleLimitCohost": "Spolumoderátor",
+        "roomRoleLimitManager": "Trenér",
         "roomRoleLimitBouncer": "Vyhazovač",
         "roomRoleLimitResidentDj": "Rezidentní DJ",
         "subscriberPerksTitle": "Výhody pro předplatitele",
@@ -6726,6 +6767,12 @@
           "descriptionPtBrPlaceholder": "Emblém je zvláštní pro quem curte a vibe neonový nádech.",
           "descriptionEnUs": "Popis (en-US)",
           "descriptionEnUsPlaceholder": "Speciální odznak pro uživatele, kteří milují neonovou atmosféru.",
+          "contentLanguage": "Jazyk obsahu",
+          "localizedName": "Název",
+          "localizedNamePlaceholder": "Název odznaku",
+          "localizedDescription": "Popis",
+          "localizedDescriptionPlaceholder": "Popis odznaku",
+          "englishFallbackHint": "Angličtina je povinná a použije se, když pro vybraný jazyk není překlad.",
           "imageUrl": "Obrázek URL",
           "imagePlaceholder": "/badges/neon-lover.png",
           "renderMode": "Typ odznaku",
@@ -7702,8 +7749,8 @@
       "open": "Otevřená místnost",
       "roles": {
         "host": "Moderátor",
-        "cohost": "Spoluhost",
-        "manager": "Manažer"
+        "cohost": "Spolumoderátor",
+        "manager": "Trenér"
       },
       "tabs": {
         "owned": "Pokoje, které vlastníte",

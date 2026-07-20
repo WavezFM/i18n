@@ -306,7 +306,13 @@
       "unexpectedError": "지금은 로그인할 수 없습니다.",
       "socialError": "지금은 소셜 로그인을 시작할 수 없습니다.",
       "socialCanceled": "완료되기 전에 소셜 인증 창이 닫혔습니다.",
-      "userBanned": "이 계정은 WavezFM에서 정지되었습니다. 이것이 잘못된 것 같으면 팀에 문의하세요."
+      "userBanned": "이 계정은 WavezFM에서 정지되었습니다. 이것이 잘못된 것 같으면 팀에 문의하세요.",
+      "magicLink": "이메일 링크로 로그인",
+      "magicLinkSending": "링크 보내는 중...",
+      "magicLinkSent": "{email} 주소로 로그인 링크를 보냈습니다. 받은편지함을 확인하세요.",
+      "magicLinkError": "지금은 로그인 링크를 보낼 수 없습니다.",
+      "magicLinkInvalid": "이 로그인 링크는 유효하지 않거나 만료되었습니다. 새 링크를 요청하세요.",
+      "magicLinkRateLimited": "너무 많은 링크를 요청했습니다. 몇 분 후 다시 시도하세요."
     },
     "popup": {
       "title": "인증완료",
@@ -680,6 +686,7 @@
         "QUEUE_CURRENT_DJ_MOVE_FORBIDDEN": "현재 DJ는 재생 중에 이동할 수 없습니다.",
         "PLAYBACK_TRACK_REQUIRED": "재생 중인 트랙이 없습니다.",
         "PLAYBACK_SKIP_FORBIDDEN": "현재 트랙을 건너뛸 수 없습니다.",
+        "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "현재 DJ는 자신의 트랙에 투표하거나 Grab할 수 없습니다.",
         "VOTE_TYPE_INVALID": "투표 유형이 잘못되었습니다.",
         "ROOM_GRAB_DISABLED_EXTERNAL_MEDIA": "이 방에서 외부 미디어가 활성화되어 있는 동안에는 그랩을 사용할 수 없습니다.",
         "ROOM_MODERATION_SELF_FORBIDDEN": "당신은 자신을 조절할 수 없습니다.",
@@ -1430,7 +1437,7 @@
           },
           "mention_room": {
             "label": "룸/roles 언급",
-            "description": "@todos 및 @residentdj 및 @manager.와 같은 역할 언급 사용을 허용합니다."
+            "description": "@모두 및 @레지던트DJ, @관리자와 같은 역할 멘션을 사용할 수 있습니다."
           },
           "manage_roles": {
             "label": "역할 관리",
@@ -2347,6 +2354,16 @@
         "clearOption": "{option}에 대한 투표 제거",
         "openLabel": "설문 열기: {question}",
         "modalTitle": "방 설문조사",
+        "tabsLabel": "설문 보기",
+        "pollTab": "설문",
+        "votersTab": "투표",
+        "votersTitle": "투표한 사람",
+        "votersDescription": "설문을 만든 본인만 각 사용자가 선택한 항목을 볼 수 있습니다.",
+        "votersLoading": "투표를 불러오는 중...",
+        "votersLoadError": "이 설문의 투표를 불러오지 못했습니다.",
+        "votersRetry": "다시 시도",
+        "votersEmpty": "아직 이 설문에 투표한 사람이 없습니다.",
+        "optionVotersEmpty": "이 항목에는 투표가 없습니다.",
         "delete": "설문 종료",
         "deleteAria": "설문을 종료하고 최종 결과 알리기",
         "dismiss": "설문 삭제",
@@ -2402,7 +2419,16 @@
       },
       "mentionTargets": {
         "everyone": "방 전체",
-        "djs": "대기열에 있는 DJ들"
+        "djs": "대기열에 있는 DJ들",
+        "aliases": {
+          "everyone": "모두",
+          "djs": "디제이",
+          "resident_dj": "레지던트DJ",
+          "bouncer": "바운서",
+          "manager": "관리자",
+          "cohost": "공동호스트",
+          "host": "호스트"
+        }
       },
       "platform": {
         "none": "회원",
@@ -2718,6 +2744,7 @@
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "채팅 이미지 업로드 만료 기간은 5분에서 7일 사이여야 합니다.",
       "INVALID_COLOR_THEME": "선택한 색상 테마가 잘못되었습니다.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "프로필 열성 팬 공개 설정이 잘못되었습니다.",
+      "INVALID_SHOW_COUNTRY_FLAG": "국가 깃발 공개 설정이 잘못되었습니다.",
       "INVALID_CREDENTIALS": "해당 자격 증명으로 로그인할 수 없습니다.",
       "SIGN_UP_UNAVAILABLE": "해당 정보로는 가입을 완료할 수 없습니다.",
       "CAPTCHA_REQUIRED": "계속하려면 보안 검사를 완료하세요.",
@@ -2753,6 +2780,7 @@
       "INVALID_DISPLAY_USERNAME": "표시 이름은 3~50자 사이여야 합니다.",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "표시되는 레벨 제한은 1에서 500 사이의 정수여야 합니다.",
       "INVALID_MISC_SHOP_ITEMS": "Extras 저장소 구성이 잘못되었습니다.",
+      "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "이 Extra는 아직 재사용 대기 중입니다. {remainingHours}시간 후 다시 시도하세요.",
       "SUBSCRIPTION_CHECKOUT_NOT_CONFIGURED": "구독 결제가 구성되지 않았습니다.",
       "SUBSCRIPTION_ALREADY_ACTIVE": "귀하의 구독은 이미 활성화되어 있습니다. 다른 결제를 시작하는 대신 현재 구독을 관리하세요.",
       "SUBSCRIPTION_NOT_STRIPE_MANAGED": "이 구독은 Stripe에서 관리하지 않습니다.",
@@ -2944,6 +2972,7 @@
       "TWO_FACTOR_TOTP_REQUIRED": "인증 앱 코드를 입력하세요.",
       "USER_ALREADY_OWNS_ITEM": "이 사용자는 이미 이 항목을 소유하고 있습니다.",
       "USER_BANNED": "이 계정은 금지되어 있습니다.",
+      "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "현재 DJ는 자신의 트랙에 투표하거나 Grab할 수 없습니다.",
       "VOTE_TYPE_INVALID": "투표 유형이 잘못되었습니다.",
       "WS_AUTH_REQUIRED": "인증이 필요합니다.",
       "WS_CHAT_RATE_LIMITED": "채팅 메시지를 너무 빨리 보냈습니다. 잠시 후에 다시 시도해 보세요.",
@@ -3093,6 +3122,8 @@
         "xpBoostMeta": "{minutes} 최소의 경우 {multiplier}x XP",
         "displayNameMeta": "표시된 이름을 즉시 업데이트합니다.",
         "usernameMeta": "@username 및 표시 이름을 즉시 업데이트합니다.",
+        "cooldownMetaDays": "이 변경은 {days}일마다 한 번 할 수 있습니다.",
+        "cooldownMetaHours": "이 변경은 {hours}시간마다 한 번 할 수 있습니다.",
         "roomThemePermanentMeta": "선택한 방에 대한 영구적인 사용자 정의 테마 편집을 잠금 해제합니다.",
         "roomThemeMonthlyMeta": "선택한 방에서 {days}일 동안 사용자 정의 테마 편집을 잠금 해제합니다.",
         "roomThemeRoomLocked": "선택한 방에만 적용됩니다. 계정의 다른 방에 있는 사용자 정의 테마는 잠금 해제되지 않습니다.",
@@ -3623,6 +3654,8 @@
         "showSuperfansOnProfileHint": "사람들이 공개 프로필에서 상호 팬 목록을 볼 수 있습니다.",
         "showOnlineRoomOnProfile": "온라인일 때 현재 방 표시",
         "showOnlineRoomOnProfileHint": "활성화되면 다른 사람들이 귀하가 현재 있는 방을 보고 참여할 수 있습니다.",
+        "showCountryFlag": "국가 깃발 표시",
+        "showCountryFlagHint": "비활성화하면 프로필, 빠른 프로필 및 방에서 깃발이 숨겨집니다.",
         "showLastSeenOnProfile": "마지막 활동 표시",
         "showLastSeenOnProfileHint": "비활성화되면 다른 사람들은 귀하가 사이트에 마지막으로 접속한 시간을 볼 수 없습니다.",
         "showSupporterBadges": "자동 서포터 배지 표시",
@@ -4494,6 +4527,12 @@
         "title": "사용자",
         "detailPanelTitle": "관리 패널",
         "detailPanelSubtitle": "{createdAt} · {warnings}/3 위반에 생성됨",
+        "currentRoom": {
+          "label": "현재 방",
+          "loading": "현재 방을 확인하는 중...",
+          "empty": "현재 참여 중인 방이 없습니다",
+          "open": "{room} 열기"
+        },
         "subtitle": "여기에서 계정을 검색하고 글로벌 역할, 잔액, 진행 상황을 조정하세요.",
         "refresh": "사용자 새로 고침",
         "export": "사용자 내보내기",
@@ -6007,6 +6046,8 @@
         "miscShopColorHex": "아이콘 색상",
         "miscShopMultiplier": "XP 승수(%)",
         "miscShopDuration": "기간(분)",
+        "miscShopCooldownHours": "재사용 대기시간(시간)",
+        "miscShopCooldownHoursHint": "0을 입력하면 재사용 대기시간이 비활성화됩니다.",
         "miscShopSortOrder": "주문",
         "roomAppearanceTabTitle": "방 도구의 모양 탭",
         "roomAppearanceTabSubtitle": "방 관리 권한이 있는 호스트 및 공동 호스트가 외모 탭을 사용할 수 있도록 허용합니다. 배경 및 비디오 프레임 권한은 여전히 ​​표시되는 옵션을 제어합니다.",
@@ -6726,6 +6767,12 @@
           "descriptionPtBrPlaceholder": "Emblema especial para quem curte a 바이브 네온.",
           "descriptionEnUs": "설명(en-US)",
           "descriptionEnUsPlaceholder": "네온 분위기를 좋아하는 사용자를 위한 특별 배지입니다.",
+          "contentLanguage": "콘텐츠 언어",
+          "localizedName": "이름",
+          "localizedNamePlaceholder": "배지 이름",
+          "localizedDescription": "설명",
+          "localizedDescriptionPlaceholder": "배지 설명",
+          "englishFallbackHint": "영어는 필수이며 선택한 언어에 번역이 없을 때 기본값으로 사용됩니다.",
           "imageUrl": "이미지 URL",
           "imagePlaceholder": "/badges/neon-lover.png",
           "renderMode": "배지 유형",

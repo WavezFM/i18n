@@ -306,7 +306,13 @@
       "unexpectedError": "今はサインインできません。",
       "socialError": "今はソーシャルサインインを始められなかった。",
       "socialCanceled": "ソーシャル認証ウィンドウは終わる前に閉じられてしまいました。",
-      "userBanned": "このアカウントは WavezFMから停止されています。もしこれが間違っていると感じるなら、チームに連絡してください。"
+      "userBanned": "このアカウントは WavezFMから停止されています。もしこれが間違っていると感じるなら、チームに連絡してください。",
+      "magicLink": "メールのリンクでログイン",
+      "magicLinkSending": "リンクを送信中...",
+      "magicLinkSent": "{email} にログインリンクを送信しました。受信トレイを確認してください。",
+      "magicLinkError": "現在ログインリンクを送信できません。",
+      "magicLinkInvalid": "このログインリンクは無効か、有効期限が切れています。新しいリンクをリクエストしてください。",
+      "magicLinkRateLimited": "リンクのリクエスト回数が多すぎます。数分待ってからもう一度お試しください。"
     },
     "popup": {
       "title": "認証の完了",
@@ -680,6 +686,7 @@
         "QUEUE_CURRENT_DJ_MOVE_FORBIDDEN": "現在の DJ はプレイ中は動かすことはできません。",
         "PLAYBACK_TRACK_REQUIRED": "トラックは流れていません。",
         "PLAYBACK_SKIP_FORBIDDEN": "現在のトラックをスキップすることはできません。",
+        "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "現在のDJは自分のトラックに投票したりGrabしたりできません。",
         "VOTE_TYPE_INVALID": "投票の種類は無効です。",
         "ROOM_GRAB_DISABLED_EXTERNAL_MEDIA": "この部屋で外部メディアが有効な間、グラブは無効です。",
         "ROOM_MODERATION_SELF_FORBIDDEN": "自分を抑えることはできません。",
@@ -1430,7 +1437,7 @@
           },
           "mention_room": {
             "label": "ルームの言及/roles",
-            "description": "@residentdjや@manager.などの@todosや役割言及を使えます。"
+            "description": "@全員や、@レジデントDJ、@マネージャーなどの役職メンションを使用できます。"
           },
           "manage_roles": {
             "label": "役割管理",
@@ -2347,6 +2354,16 @@
         "clearOption": "{option}への投票を取り消す",
         "openLabel": "投票を開く: {question}",
         "modalTitle": "ルームの投票",
+        "tabsLabel": "投票の表示",
+        "pollTab": "投票",
+        "votersTab": "投票者",
+        "votersTitle": "誰が投票したか",
+        "votersDescription": "各ユーザーの投票内容は、投票を作成したあなたにのみ表示されます。",
+        "votersLoading": "投票を読み込んでいます...",
+        "votersLoadError": "この投票の投票内容を読み込めませんでした。",
+        "votersRetry": "もう一度試す",
+        "votersEmpty": "この投票にはまだ誰も投票していません。",
+        "optionVotersEmpty": "この選択肢への投票はありません。",
         "delete": "投票を終了",
         "deleteAria": "投票を終了して最終結果を発表",
         "dismiss": "投票を破棄",
@@ -2402,7 +2419,16 @@
       },
       "mentionTargets": {
         "everyone": "部屋全体",
-        "djs": "DJの列に並ぶ"
+        "djs": "DJの列に並ぶ",
+        "aliases": {
+          "everyone": "全員",
+          "djs": "ディージェイ",
+          "resident_dj": "レジデントDJ",
+          "bouncer": "バウンサー",
+          "manager": "マネージャー",
+          "cohost": "共同ホスト",
+          "host": "ホスト"
+        }
       },
       "platform": {
         "none": "メンバー",
@@ -2718,6 +2744,7 @@
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "チャット画像のアップロード期限は5分から7日以内になければなりません。",
       "INVALID_COLOR_THEME": "選択したカラーテーマは無効です。",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "プロフィールのスーパーファンの可視性設定は無効です。",
+      "INVALID_SHOW_COUNTRY_FLAG": "国旗の表示設定が無効です。",
       "INVALID_CREDENTIALS": "その身分証ではサインインできませんでした。",
       "SIGN_UP_UNAVAILABLE": "その情報ではサインアップが完了できませんでした。",
       "CAPTCHA_REQUIRED": "セキュリティチェックを完了して続行してください。",
@@ -2753,6 +2780,7 @@
       "INVALID_DISPLAY_USERNAME": "表示名は3文字から50文字の間でなければなりません。",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "表示されるレベル制限は1から500の整数でなければなりません。",
       "INVALID_MISC_SHOP_ITEMS": "Extrasストアの設定は無効です。",
+      "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "このExtraはまだクールダウン中です。{remainingHours}時間後にもう一度お試しください。",
       "SUBSCRIPTION_CHECKOUT_NOT_CONFIGURED": "サブスクリプションチェックアウトは設定されていません。",
       "SUBSCRIPTION_ALREADY_ACTIVE": "あなたのサブスクリプションはすでに有効です。別のチェックアウトを開くのではなく、現在のサブスクリプションを管理しましょう。",
       "SUBSCRIPTION_NOT_STRIPE_MANAGED": "このサブスクリプションは Stripeによって管理されていません。",
@@ -2944,6 +2972,7 @@
       "TWO_FACTOR_TOTP_REQUIRED": "認証アプリのコードを入力します。",
       "USER_ALREADY_OWNS_ITEM": "このユーザーはすでにこのアイテムを所有しています。",
       "USER_BANNED": "このアカウントは禁止されています。",
+      "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "現在のDJは自分のトラックに投票したりGrabしたりできません。",
       "VOTE_TYPE_INVALID": "投票の種類は無効です。",
       "WS_AUTH_REQUIRED": "認証が必要です。",
       "WS_CHAT_RATE_LIMITED": "チャットメッセージを送るのが早すぎた。すぐにもう一度試してみて。",
@@ -3093,6 +3122,8 @@
         "xpBoostMeta": "{multiplier}x x 1 XP {minutes} 分",
         "displayNameMeta": "表示された名前を即座に更新します",
         "usernameMeta": "更新 @username 表示名はすぐに",
+        "cooldownMetaDays": "この変更は{days}日に1回行えます。",
+        "cooldownMetaHours": "この変更は{hours}時間に1回行えます。",
         "roomThemePermanentMeta": "選択した部屋の恒久的なカスタムテーマ編集がアンロックされます",
         "roomThemeMonthlyMeta": "選択した部屋で {days} 日間カスタムテーマ編集が解放されます",
         "roomThemeRoomLocked": "選択した部屋のみに適用。アカウント内の他の部屋のカスタムテーマはアンロックされません。",
@@ -3623,6 +3654,8 @@
         "showSuperfansOnProfileHint": "共通のファンリストを公開プロフィールで見ることができます。",
         "showOnlineRoomOnProfile": "オンライン時は現在の部屋を表示",
         "showOnlineRoomOnProfileHint": "有効にすると、他の人もあなたがいる部屋を見て参加できます。",
+        "showCountryFlag": "国旗を表示する",
+        "showCountryFlagHint": "無効にすると、プロフィール、クイックプロフィール、ルームで国旗が非表示になります。",
         "showLastSeenOnProfile": "最後の活動を表示",
         "showLastSeenOnProfileHint": "障害者の場合、他の人はあなたが最後にサイトに見られた日を知ることができません。",
         "showSupporterBadges": "自動サポーターバッジを表示する",
@@ -4494,6 +4527,12 @@
         "title": "ユーザー",
         "detailPanelTitle": "管理パネル",
         "detailPanelSubtitle": "{createdAt}日作成・{warnings}/3違反",
+        "currentRoom": {
+          "label": "現在のルーム",
+          "loading": "現在のルームを確認しています...",
+          "empty": "現在どのルームにも参加していません",
+          "open": "{room} を開く"
+        },
         "subtitle": "ここから口座を検索し、グローバルな役割、残高、昇進を調整しましょう。",
         "refresh": "ユーザーをリフレッシュしてください",
         "export": "エクスポートユーザー",
@@ -6007,6 +6046,8 @@
         "miscShopColorHex": "アイコンの色",
         "miscShopMultiplier": "XP 倍率(%)",
         "miscShopDuration": "持続時間(分)",
+        "miscShopCooldownHours": "クールダウン（時間）",
+        "miscShopCooldownHoursHint": "0にするとクールダウンが無効になります。",
         "miscShopSortOrder": "秩序",
         "roomAppearanceTabTitle": "ルームツールの外観タブ",
         "roomAppearanceTabSubtitle": "ルーム管理権限を持つホストおよび共同ホストが「Appearance」タブを使用できるようにします。バックグラウンドとビデオフレームの権限が、どのオプションが表示されるかを制御しています。",
@@ -6726,6 +6767,12 @@
           "descriptionPtBrPlaceholder": "エンブレマ・エスペシャル・パラ・ケム・カート・ア・ビーブネオン。",
           "descriptionEnUs": "説明(アメリカ)",
           "descriptionEnUsPlaceholder": "ネオンの雰囲気が好きなユーザー向けの特別なバッジ。",
+          "contentLanguage": "コンテンツの言語",
+          "localizedName": "名前",
+          "localizedNamePlaceholder": "バッジ名",
+          "localizedDescription": "説明",
+          "localizedDescriptionPlaceholder": "バッジの説明",
+          "englishFallbackHint": "英語は必須で、選択した言語の翻訳がない場合のフォールバックとして使用されます。",
           "imageUrl": "画像 URL",
           "imagePlaceholder": "/badges/neon-lover.png",
           "renderMode": "バッジの種類",

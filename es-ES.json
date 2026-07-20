@@ -306,7 +306,13 @@
       "unexpectedError": "No pudimos registrarte ahora mismo.",
       "socialError": "No pudimos empezar la sesión social ahora mismo.",
       "socialCanceled": "La ventana de autenticación social se cerró antes de terminar.",
-      "userBanned": "Esta cuenta ha sido suspendida de WavezFM. Si esto parece incorrecto, por favor contacta con el equipo."
+      "userBanned": "Esta cuenta ha sido suspendida de WavezFM. Si esto parece incorrecto, por favor contacta con el equipo.",
+      "magicLink": "Entrar con un enlace por correo",
+      "magicLinkSending": "Enviando enlace...",
+      "magicLinkSent": "Hemos enviado un enlace de acceso a {email}. Revisa tu bandeja de entrada.",
+      "magicLinkError": "No se pudo enviar el enlace de acceso ahora.",
+      "magicLinkInvalid": "Este enlace de acceso no es válido o ha caducado. Solicita uno nuevo.",
+      "magicLinkRateLimited": "Has solicitado demasiados enlaces. Espera unos minutos e inténtalo de nuevo."
     },
     "popup": {
       "title": "Finalización de la autenticación",
@@ -680,6 +686,7 @@
         "QUEUE_CURRENT_DJ_MOVE_FORBIDDEN": "La DJ actual no se puede mover mientras se juega.",
         "PLAYBACK_TRACK_REQUIRED": "No hay ninguna pista sonando.",
         "PLAYBACK_SKIP_FORBIDDEN": "No puedes saltarte la pista actual.",
+        "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "El DJ actual no puede votar ni usar Grab en su propia pista.",
         "VOTE_TYPE_INVALID": "El tipo de voto es inválido.",
         "ROOM_GRAB_DISABLED_EXTERNAL_MEDIA": "Grab está desactivado mientras el soporte externo está activo en esta sala.",
         "ROOM_MODERATION_SELF_FORBIDDEN": "No puedes moderarte.",
@@ -1430,7 +1437,7 @@
           },
           "mention_room": {
             "label": "Mención room/roles",
-            "description": "Permite usar @todos y menciones de roles como @residentdj y @manager."
+            "description": "Permite usar @todos y menciones de roles como @djresidente y @gerente."
           },
           "manage_roles": {
             "label": "Gestionar roles",
@@ -2347,6 +2354,16 @@
         "clearOption": "Eliminar voto de {option}",
         "openLabel": "Abrir encuesta: {question}",
         "modalTitle": "Encuesta de la sala",
+        "tabsLabel": "Vistas de la encuesta",
+        "pollTab": "Encuesta",
+        "votersTab": "Votos",
+        "votersTitle": "Quién ha votado",
+        "votersDescription": "Solo tú, como creador de la encuesta, puedes ver el voto de cada persona.",
+        "votersLoading": "Cargando votos...",
+        "votersLoadError": "No se han podido cargar los votos de esta encuesta.",
+        "votersRetry": "Intentar de nuevo",
+        "votersEmpty": "Nadie ha votado en esta encuesta todavía.",
+        "optionVotersEmpty": "Nadie ha votado por esta opción.",
         "delete": "Finalizar encuesta",
         "deleteAria": "Finalizar la encuesta y anunciar el resultado final",
         "dismiss": "Descartar encuesta",
@@ -2402,7 +2419,16 @@
       },
       "mentionTargets": {
         "everyone": "Toda la sala",
-        "djs": "DJs en cola"
+        "djs": "DJs en cola",
+        "aliases": {
+          "everyone": "todos",
+          "djs": "djs",
+          "resident_dj": "djresidente",
+          "bouncer": "portero",
+          "manager": "gerente",
+          "cohost": "coanfitrión",
+          "host": "anfitrión"
+        }
       },
       "platform": {
         "none": "Miembro",
@@ -2718,6 +2744,7 @@
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "La caducidad de la subida de imágenes del chat debe ser entre 5 minutos y 7 días.",
       "INVALID_COLOR_THEME": "El tema de color seleccionado no es válido.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "La preferencia de visibilidad de superfans del perfil no es válida.",
+      "INVALID_SHOW_COUNTRY_FLAG": "La preferencia de visibilidad de la bandera del país no es válida.",
       "INVALID_CREDENTIALS": "No pudimos registrarte con esas credenciales.",
       "SIGN_UP_UNAVAILABLE": "No pudimos completar la inscripción con esa información.",
       "CAPTCHA_REQUIRED": "Completa la comprobación de seguridad para continuar.",
@@ -2753,6 +2780,7 @@
       "INVALID_DISPLAY_USERNAME": "El nombre visible debe tener entre 3 y 50 caracteres.",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "El límite de nivel mostrado debe ser un entero entre 1 y 500.",
       "INVALID_MISC_SHOP_ITEMS": "La configuración de la tienda Extras es inválida.",
+      "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "Este Extra sigue en cooldown. Inténtalo de nuevo en {remainingHours, plural, one {# hora} other {# horas}}.",
       "SUBSCRIPTION_CHECKOUT_NOT_CONFIGURED": "El pago de suscripción no está configurado.",
       "SUBSCRIPTION_ALREADY_ACTIVE": "Tu suscripción ya está activa. Gestiona la suscripción actual en vez de abrir otro pago.",
       "SUBSCRIPTION_NOT_STRIPE_MANAGED": "Esta suscripción no es gestionada por Stripe.",
@@ -2944,6 +2972,7 @@
       "TWO_FACTOR_TOTP_REQUIRED": "Introduce el código de la app de autenticación.",
       "USER_ALREADY_OWNS_ITEM": "Este usuario ya posee este artículo.",
       "USER_BANNED": "Esta cuenta está baneada.",
+      "ROOM_CURRENT_DJ_VOTE_FORBIDDEN": "El DJ actual no puede votar ni usar Grab en su propia pista.",
       "VOTE_TYPE_INVALID": "El tipo de voto es inválido.",
       "WS_AUTH_REQUIRED": "Se requiere autenticación.",
       "WS_CHAT_RATE_LIMITED": "Enviaste mensajes de chat demasiado rápido. Inténtalo de nuevo en un momento.",
@@ -3093,6 +3122,8 @@
         "xpBoostMeta": "{multiplier}x XP por {minutes} min",
         "displayNameMeta": "Actualiza el nombre mostrado inmediatamente",
         "usernameMeta": "Actualizaciones @username y nombre de visualización inmediatamente",
+        "cooldownMetaDays": "Este cambio se puede realizar una vez cada {days, plural, one {# día} other {# días}}.",
+        "cooldownMetaHours": "Este cambio se puede realizar una vez cada {hours, plural, one {# hora} other {# horas}}.",
         "roomThemePermanentMeta": "Desbloquea la edición personalizada permanente de temas para la sala seleccionada",
         "roomThemeMonthlyMeta": "Desbloquea la edición de temas personalizada durante {days} días en la sala seleccionada",
         "roomThemeRoomLocked": "Aplicado solo a la sala seleccionada. No desbloquea temas personalizados en otras salas de la cuenta.",
@@ -3623,6 +3654,8 @@
         "showSuperfansOnProfileHint": "Permite que la gente vea vuestra lista de fans en común en el perfil público.",
         "showOnlineRoomOnProfile": "Mostrar la sala actual cuando esté conectado",
         "showOnlineRoomOnProfileHint": "Cuando estás activado, otras personas pueden ver y unirse a la sala en la que te encuentras.",
+        "showCountryFlag": "Mostrar la bandera del país",
+        "showCountryFlagHint": "Cuando está desactivado, tu bandera no aparece en tu perfil, perfil rápido ni en las salas.",
         "showLastSeenOnProfile": "Mostrar última actividad",
         "showLastSeenOnProfileHint": "Cuando están deshabilitados, otras personas no pueden ver cuándo fue la última vez que se te vio en el sitio.",
         "showSupporterBadges": "Mostrar insignias automáticas de apoyo",
@@ -4494,6 +4527,12 @@
         "title": "Usuarios",
         "detailPanelTitle": "Panel administrativo",
         "detailPanelSubtitle": "Creado en {createdAt} · {warnings}/3 infracciones",
+        "currentRoom": {
+          "label": "Sala actual",
+          "loading": "Comprobando la sala actual...",
+          "empty": "No está en ninguna sala",
+          "open": "Abrir {room}"
+        },
         "subtitle": "Busca cuentas y ajusta los roles globales, saldos y progresión desde aquí.",
         "refresh": "Actualizar usuarios",
         "export": "Usuarios de exportación",
@@ -6007,6 +6046,8 @@
         "miscShopColorHex": "Color de iconos",
         "miscShopMultiplier": "XP multiplicador (%)",
         "miscShopDuration": "Duración (minutos)",
+        "miscShopCooldownHours": "Cooldown (horas)",
+        "miscShopCooldownHoursHint": "Usa 0 para desactivar el cooldown.",
         "miscShopSortOrder": "Orden",
         "roomAppearanceTabTitle": "Pestaña de Apariencia en Herramientas de Sala",
         "roomAppearanceTabSubtitle": "Permite que los anfitriones y coanfitriones con permiso de gestión de salas usen la pestaña de Apariencia. Los permisos de segundo plano y de marcos de vídeo siguen controlando qué opciones aparecen.",
@@ -6726,6 +6767,12 @@
           "descriptionPtBrPlaceholder": "Emblema especial para quem curte a vibe neon.",
           "descriptionEnUs": "Descripción (EN-US)",
           "descriptionEnUsPlaceholder": "Insignia especial para usuarios que adoran el ambiente neón.",
+          "contentLanguage": "Idioma del contenido",
+          "localizedName": "Nombre",
+          "localizedNamePlaceholder": "Nombre de la insignia",
+          "localizedDescription": "Descripción",
+          "localizedDescriptionPlaceholder": "Descripción de la insignia",
+          "englishFallbackHint": "El inglés es obligatorio y se usa cuando el idioma seleccionado no tiene traducción.",
           "imageUrl": "Imagen URL",
           "imagePlaceholder": "/badges/neon-lover.png",
           "renderMode": "Tipo de insignia",
