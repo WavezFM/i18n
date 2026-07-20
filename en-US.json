@@ -4777,8 +4777,8 @@
             "empty": "No subscription events have been recorded for this account.",
             "loadError": "We couldn't load subscription history right now.",
             "refresh": "Refresh",
-          "months": "{count, plural, one {# month} other {# months}}",
-          "grantedDuration": "Granted duration: {count, plural, one {# month} other {# months}}",
+            "months": "{count, plural, one {# month} other {# months}}",
+            "grantedDuration": "Granted duration: {count, plural, one {# month} other {# months}}",
             "sender": "Sent by {name}",
             "types": {
               "payment": "Subscription payment",
@@ -7802,54 +7802,369 @@
     "privacy": {
       "back": "Back",
       "title": "Privacy Policy",
-      "intro": "This policy briefly describes how WavezFM handles information from your account and browsing activity to keep the platform safe, functional, and stable.",
+      "intro": "This Policy explains how WavezFM collects, uses, shares, stores, and protects personal data when you use the platform, including rooms, chat, playlists, profiles, payments, and connected services.",
+      "lastUpdated": "Last updated",
+      "effectiveDate": "Effective date",
       "sections": {
-        "collection": {
-          "title": "1. Information we collect",
-          "body": "We may collect account details, session data, preferences, platform usage, and information required for authentication, security, and moderation on WavezFM."
+        "introduction": {
+          "title": "1. Scope and acceptance",
+          "paragraphs": {
+            "p1": "This Privacy Policy applies to WavezFM websites, applications, authenticated areas, live rooms, and related services. By using the Service, you acknowledge the practices described here.",
+            "p2": "This Policy should be read together with the Terms of Service and Cookie Policy. If a feature provides a more specific privacy notice, that notice also applies to the feature."
+          }
         },
-        "usage": {
-          "title": "2. How we use this data",
-          "body": "We use this data to keep your account active, protect the service, personalize your experience, apply moderation, and improve platform stability."
+        "controller": {
+          "title": "2. Data controller",
+          "paragraphs": {
+            "p1": "WavezFM is responsible for deciding why and how personal data is processed in connection with the Service. Privacy requests may be sent to hi@wavez.fm."
+          }
         },
-        "cookies": {
-          "title": "3. Cookies",
-          "body": "Cookies help keep your session active, remember your preferences, and ensure authenticated areas of the site work correctly."
+        "provided": {
+          "title": "3. Information you provide",
+          "paragraphs": {
+            "p1": "We process information you provide when creating and using an account or communicating through the Service."
+          },
+          "items": {
+            "i1": "Account data, such as email address, username, display name, password hash, and authentication or two-factor details.",
+            "i2": "Profile data, such as avatar, biography, country flag, badges, social connections, preferences, and public profile settings.",
+            "i3": "Content and communications, including room chat, whispers, reactions, polls, giveaways, reports, support requests, uploaded media, room settings, and bot configurations.",
+            "i4": "Music and community activity, including playlists, imported tracks, room participation, DJ queue activity, votes, favorites, follows, and moderation actions.",
+            "i5": "Transaction details, such as purchases, subscriptions, gifts, donations, currency, amount, provider, and payment status. Full card details are handled by the payment provider, not stored by WavezFM."
+          }
+        },
+        "automatic": {
+          "title": "4. Information collected automatically",
+          "paragraphs": {
+            "p1": "When you access the Service, we may automatically record technical and usage information required to operate, secure, and improve it."
+          },
+          "items": {
+            "i1": "IP address, browser, operating system, device type, language, time zone, screen information, and approximate location inferred from IP.",
+            "i2": "Session identifiers, cookies, local storage, authentication state, security signals, and connection or WebSocket diagnostics.",
+            "i3": "Pages and features used, clicks, errors, performance information, room presence, playback events, and timestamps.",
+            "i4": "Security, moderation, and audit logs used to prevent abuse, investigate incidents, and enforce platform or room rules."
+          }
+        },
+        "thirdParties": {
+          "title": "5. Information from connected services",
+          "paragraphs": {
+            "p1": "If you connect or use an external service, we may receive the information needed to provide that integration."
+          },
+          "items": {
+            "i1": "Discord may provide an account identifier, username, avatar, and authorization information when used for login or account linking.",
+            "i2": "Last.fm may provide account and authorization information used for scrobbling when you enable the integration.",
+            "i3": "YouTube, SoundCloud, Spotify, Google Drive, and other media services may provide links, identifiers, metadata, artwork, availability, and playlist information.",
+            "i4": "Stripe and Mercado Pago provide transaction identifiers, payment status, billing cycle, currency, amount, and limited billing information required for support, accounting, and fraud prevention."
+          }
+        },
+        "purposes": {
+          "title": "6. How we use information",
+          "paragraphs": {
+            "p1": "We use personal data for the following purposes:"
+          },
+          "items": {
+            "i1": "Create, authenticate, secure, recover, and maintain accounts.",
+            "i2": "Operate rooms, synchronized playback, chat, whispers, playlists, profiles, social features, bots, polls, giveaways, and notifications.",
+            "i3": "Process purchases, subscriptions, gifts, virtual balances, and donations and provide transaction support.",
+            "i4": "Personalize language, appearance, accessibility, privacy, content, and notification preferences.",
+            "i5": "Moderate content, enforce rules, investigate reports, prevent fraud, spam, abuse, and unauthorized access, and protect users and the Service.",
+            "i6": "Diagnose failures, measure performance, develop features, and produce aggregated or de-identified statistics.",
+            "i7": "Meet legal, regulatory, accounting, tax, and dispute-resolution obligations and respond to lawful requests."
+          }
+        },
+        "legalBases": {
+          "title": "7. Legal bases",
+          "paragraphs": {
+            "p1": "Depending on the context and applicable law, processing may rely on one or more of the following bases:"
+          },
+          "items": {
+            "i1": "Performance of a contract, when data is necessary to create an account or provide a requested feature.",
+            "i2": "Legitimate interests, including service security, abuse prevention, product improvement, and community moderation, balanced against your rights.",
+            "i3": "Consent, when required for optional cookies, certain integrations, marketing, or other optional processing; consent may be withdrawn.",
+            "i4": "Compliance with legal or regulatory obligations, including financial records and valid authority requests.",
+            "i5": "Protection of rights, safety, and legal claims, where permitted by law."
+          }
         },
         "sharing": {
-          "title": "4. Sharing",
-          "body": "We do not sell your data. We may share information only with essential providers for login, infrastructure, security, and email delivery."
+          "title": "8. How information is shared",
+          "paragraphs": {
+            "p1": "WavezFM does not sell personal data. We disclose only what is reasonably necessary for the purposes described in this Policy."
+          },
+          "items": {
+            "i1": "Service providers that support hosting, storage, content delivery, email, authentication, anti-abuse controls, media integrations, and payment processing.",
+            "i2": "Room staff and platform staff when needed for moderation, support, safety, audit, or incident investigation.",
+            "i3": "Authorities, courts, or other parties when required by law or reasonably necessary to protect rights, safety, users, or the Service.",
+            "i4": "A successor organization in a merger, restructuring, financing, or transfer of the Service, subject to appropriate confidentiality and notice requirements."
+          }
+        },
+        "publicAreas": {
+          "title": "9. Public and social areas",
+          "paragraphs": {
+            "p1": "Usernames, display names, avatars, badges, public biographies, room activity, chat messages, reactions, playlist or room information, and other content you choose to publish may be visible to other users according to your settings and the feature used.",
+            "p2": "Do not publish personal or confidential information that you do not want others to see. Room privacy and profile controls reduce visibility but cannot prevent another person from recording or sharing content they can access."
+          }
+        },
+        "retention": {
+          "title": "10. Data retention",
+          "paragraphs": {
+            "p1": "We keep personal data only for as long as reasonably necessary to provide the Service, maintain security and moderation records, resolve disputes, and meet legal, tax, accounting, or regulatory duties. Retention varies by data type, room configuration, account status, and legal requirement.",
+            "p2": "After account deletion, data may remain for a limited period in backups, fraud-prevention records, transaction records, or logs that must be preserved. Public content may be deleted, anonymized, or retained when necessary to preserve conversation integrity, enforce rights, or comply with law."
+          }
+        },
+        "security": {
+          "title": "11. Security",
+          "paragraphs": {
+            "p1": "We use reasonable technical and organizational safeguards appropriate to the nature of the data. No online service can guarantee absolute security."
+          },
+          "items": {
+            "i1": "Encrypted transport for supported connections and secure password hashing.",
+            "i2": "Authentication, access controls, permission checks, and two-factor options.",
+            "i3": "Logging, rate limits, abuse detection, backups, and incident investigation procedures.",
+            "i4": "Restricted administrative access based on operational need."
+          }
+        },
+        "rights": {
+          "title": "12. Your privacy rights",
+          "paragraphs": {
+            "p1": "Depending on where you live, including under the LGPD or GDPR, you may have the following rights. We may request information necessary to verify identity and protect the account before fulfilling a request."
+          },
+          "items": {
+            "i1": "Confirmation that personal data is processed and access to that data.",
+            "i2": "Correction of incomplete, inaccurate, or outdated data.",
+            "i3": "Deletion, anonymization, or blocking where legally applicable.",
+            "i4": "Restriction of processing or objection to certain processing.",
+            "i5": "Portability of data in an applicable machine-readable format.",
+            "i6": "Information about entities with which data was shared.",
+            "i7": "Withdrawal of consent without affecting prior lawful processing.",
+            "i8": "Review of decisions based solely on automated processing, when applicable.",
+            "i9": "A complaint to the ANPD, an EU supervisory authority, or another competent local authority."
+          }
+        },
+        "transfers": {
+          "title": "13. International transfers",
+          "paragraphs": {
+            "p1": "WavezFM and its providers may process data in countries other than your own. Where required, we use recognized safeguards such as contractual protections, adequacy decisions, security measures, and data-minimization practices."
+          }
+        },
+        "cookies": {
+          "title": "14. Cookies and local storage",
+          "paragraphs": {
+            "p1": "We use essential technologies for authentication, security, session continuity, language, and core operation. Optional preference technologies are used according to your choices where consent is required.",
+            "p2": "You can manage supported choices through the cookie controls and your browser. Disabling essential storage may prevent authenticated or security-sensitive features from working. See the Cookie Policy for more details."
+          }
+        },
+        "children": {
+          "title": "15. Children",
+          "paragraphs": {
+            "p1": "The Service is not directed to children under 13, and we do not knowingly collect their personal data. If you believe a child under the applicable minimum age provided data to WavezFM, contact hi@wavez.fm so we can investigate and take appropriate action."
+          }
+        },
+        "changes": {
+          "title": "16. Changes to this Policy",
+          "paragraphs": {
+            "p1": "We may update this Policy as the Service, providers, or legal requirements change. Material changes may be announced on the site, in the application, or by email. The date above identifies the current version."
+          }
         },
         "contact": {
-          "title": "5. Contact",
-          "body": "If you want to request a data review, report an issue, or ask privacy-related questions, contact the WavezFM team through official channels."
+          "title": "17. Contact and complaints",
+          "paragraphs": {
+            "p1": "To ask a privacy question or exercise a data right, email hi@wavez.fm with enough information to identify your account and request. Do not send passwords or full payment-card details.",
+            "p2": "You may also contact the competent data protection or consumer authority in your jurisdiction, including Brazil's ANPD or the supervisory authority in your EU or EEA country, where applicable."
+          }
         }
       }
     },
     "terms": {
       "back": "Back",
       "title": "Terms of Service",
-      "intro": "These terms summarize the conditions for using WavezFM and help protect the community, the live experience, and the integrity of the platform.",
+      "intro": "These Terms form the agreement between you and WavezFM for access to and use of the platform, including rooms, chat, playlists, social features, integrations, subscriptions, purchases, and virtual items.",
+      "lastUpdated": "Last updated",
+      "effectiveDate": "Effective date",
       "sections": {
-        "usage": {
-          "title": "1. Platform usage",
-          "body": "By using WavezFM, you agree to respect community rules, site moderation, and the responsible use of available features."
+        "acceptance": {
+          "title": "1. Acceptance of the Terms",
+          "paragraphs": {
+            "p1": "By creating an account, accessing, or using WavezFM, you agree to these Terms, the Privacy Policy, the Cookie Policy, and applicable platform and room rules. If you do not agree, do not use the Service.",
+            "p2": "If you use the Service on behalf of an organization, you represent that you have authority to bind that organization to these Terms."
+          }
+        },
+        "service": {
+          "title": "2. The Service",
+          "paragraphs": {
+            "p1": "WavezFM is a social music platform that may allow users to:"
+          },
+          "items": {
+            "i1": "Create and join public or private listening rooms.",
+            "i2": "Synchronize playback from supported third-party media sources.",
+            "i3": "Create, import, organize, and share playlists.",
+            "i4": "Use chat, whispers, reactions, profiles, follows, polls, giveaways, and other community features.",
+            "i5": "Participate in DJ queues, votes, room moderation, and room bots according to permissions.",
+            "i6": "Purchase subscriptions, virtual items, extras, gifts, or make donations when available."
+          }
+        },
+        "eligibility": {
+          "title": "3. Eligibility",
+          "paragraphs": {
+            "p1": "You must be at least 13 years old and legally permitted to use the Service. If the law where you live requires a higher minimum age, that higher age applies.",
+            "p2": "If you are below the age of legal majority, you represent that a parent or legal guardian has reviewed and authorized your use of the Service and any purchase you make."
+          }
         },
         "account": {
-          "title": "2. Account and access",
-          "body": "You are responsible for your account information and for the use of sessions opened in your name. In cases of abuse, the team may limit, review, or suspend access."
+          "title": "4. Accounts and security",
+          "paragraphs": {
+            "p1": "You are responsible for your account and activity performed through it."
+          },
+          "items": {
+            "i1": "Provide accurate information and keep it reasonably current.",
+            "i2": "Protect your password, two-factor codes, sessions, recovery methods, and bot tokens.",
+            "i3": "Notify WavezFM promptly if you suspect unauthorized access or account compromise.",
+            "i4": "Do not sell, rent, transfer, impersonate, or share accounts in a way that compromises security or enforcement."
+          }
         },
-        "content": {
-          "title": "3. Content and behavior",
-          "body": "You may not use the platform for harassment, fraud, spam, evading punishments, illegal content, or any behavior that harms the community."
+        "conduct": {
+          "title": "5. Acceptable use",
+          "paragraphs": {
+            "p1": "You may not use the Service to:"
+          },
+          "items": {
+            "i1": "Break applicable law or promote illegal activity.",
+            "i2": "Harass, threaten, exploit, defraud, stalk, dox, or discriminate against another person.",
+            "i3": "Publish hateful, sexually exploitative, malicious, defamatory, or otherwise unlawful content.",
+            "i4": "Infringe copyright, trademark, privacy, publicity, or other rights.",
+            "i5": "Spam, manipulate engagement, evade sanctions, create abusive accounts, or impersonate people or organizations.",
+            "i6": "Distribute malware, phishing, harmful files, or deceptive links.",
+            "i7": "Probe, bypass, disrupt, reverse engineer, overload, scrape, or automate access beyond documented APIs and authorized bot features.",
+            "i8": "Abuse playback, voting, DJ queues, gifts, payments, reports, moderation tools, or any platform economy."
+          }
         },
-        "moderation": {
-          "title": "4. Moderation",
-          "body": "Administrators and moderators may apply actions such as room removal, account suspension, access restrictions, and other measures required to protect the service."
+        "rooms": {
+          "title": "6. Rooms and moderation",
+          "paragraphs": {
+            "p1": "Room owners and authorized staff may establish and enforce room-specific rules, provided those rules do not conflict with these Terms or platform policy. Users must follow legitimate moderation instructions and permission limits.",
+            "p2": "WavezFM and authorized staff may review reports and apply warnings, mutes, queue restrictions, removals, bans, content deletion, feature restrictions, or account suspension. Actions may be immediate where needed for safety, security, legal compliance, or service integrity."
+          }
+        },
+        "userContent": {
+          "title": "7. User content",
+          "paragraphs": {
+            "p1": "You retain the rights you hold in content you submit. You are responsible for ensuring that you have the rights and permissions needed to publish it.",
+            "p2": "You grant WavezFM a worldwide, non-exclusive, royalty-free license to host, store, reproduce, format, transmit, display, and moderate that content only as reasonably necessary to operate, secure, improve, and promote the Service. This license ends when the content is deleted, except for copies required by law, backups, enforcement records, or content shared with others that they retain."
+          }
+        },
+        "platformContent": {
+          "title": "8. Platform intellectual property",
+          "paragraphs": {
+            "p1": "The WavezFM name, branding, interface, software, documentation, original assets, and platform features are owned by WavezFM or its licensors. These Terms give you a limited, personal, revocable, non-exclusive right to use the Service; they do not transfer ownership or permit unauthorized commercial reuse."
+          }
+        },
+        "thirdParty": {
+          "title": "9. Third-party services and media",
+          "paragraphs": {
+            "p1": "The Service integrates or links to providers such as YouTube, SoundCloud, Spotify, Discord, Last.fm, Google Drive, Stripe, Mercado Pago, and other services. Their own terms and privacy policies govern your use of their services.",
+            "p2": "WavezFM does not control the availability, licensing, accuracy, safety, or continued operation of third-party content. Media may be removed, blocked, unavailable by region, interrupted, or changed by its provider."
+          }
+        },
+        "copyright": {
+          "title": "10. Copyright complaints",
+          "paragraphs": {
+            "p1": "If you believe content accessible through WavezFM infringes your rights, send a sufficiently detailed notice to hi@wavez.fm."
+          },
+          "items": {
+            "i1": "Identify the protected work and the allegedly infringing material.",
+            "i2": "Provide the relevant URL, room, message, profile, or other location.",
+            "i3": "Include your name and reliable contact information.",
+            "i4": "State in good faith why the use is unauthorized.",
+            "i5": "Confirm that the information is accurate and that you are the rights holder or authorized to act for them."
+          }
+        },
+        "payments": {
+          "title": "11. Payments, subscriptions, gifts, and donations",
+          "paragraphs": {
+            "p1": "Prices, currency, billing interval, taxes, renewal terms, and included benefits are shown before payment. Payments are processed by third-party providers such as Stripe or Mercado Pago and are also subject to their terms.",
+            "p2": "Recurring subscriptions renew until canceled through the available management flow. Cancellation normally prevents future renewal and does not retroactively undo the current paid period. One-time gifts, virtual items, extras, and donations do not renew unless the checkout expressly states otherwise."
+          },
+          "items": {
+            "i1": "You authorize the displayed charge and confirm you may use the selected payment method.",
+            "i2": "Benefits are applied after provider confirmation and may be delayed while a payment is pending or under review.",
+            "i3": "Refunds are provided where required by applicable law or expressly stated at purchase; completed digital delivery, gifts, and donations may otherwise be final.",
+            "i4": "Chargebacks, fraud, payment reversal, or abuse may result in removal of benefits, negative balances, restrictions, or account suspension.",
+            "i5": "Prices and future subscription terms may change with advance notice where required by law."
+          }
+        },
+        "virtualItems": {
+          "title": "12. Virtual items and balances",
+          "paragraphs": {
+            "p1": "Coins, diamonds, XP, badges, avatars, backgrounds, video frames, boosts, and other virtual benefits are limited licenses for use within WavezFM. They have no cash value, are not property, and may not be sold, exchanged, or transferred outside supported features. We may correct balances affected by error, fraud, reversal, or abuse."
+          }
+        },
+        "privacy": {
+          "title": "13. Privacy",
+          "paragraphs": {
+            "p1": "The Privacy Policy explains how personal data is processed, and the Cookie Policy explains the use of cookies and similar storage. By using the Service, you acknowledge those notices."
+          }
+        },
+        "availability": {
+          "title": "14. Availability and changes to the Service",
+          "paragraphs": {
+            "p1": "The Service may change, experience interruptions, enter maintenance, impose limits, or discontinue features. We may modify integrations, limits, benefits, rooms, catalogs, or supported providers to maintain security, legal compliance, performance, or product viability.",
+            "p2": "We do not guarantee that any room, track, playlist, username, item, integration, or feature will remain available permanently."
+          }
+        },
+        "disclaimers": {
+          "title": "15. Disclaimers",
+          "paragraphs": {
+            "p1": "To the extent permitted by law, the Service is provided as is and as available. We do not promise uninterrupted operation, error-free content, permanent data preservation, or compatibility with every device, browser, network, or third-party provider.",
+            "p2": "Nothing in these Terms excludes warranties, remedies, or consumer rights that cannot lawfully be excluded."
+          }
+        },
+        "liability": {
+          "title": "16. Limitation of liability",
+          "paragraphs": {
+            "p1": "To the maximum extent permitted by law, WavezFM is not liable for indirect, incidental, special, punitive, or consequential losses, or for lost profits, data, goodwill, opportunities, or third-party content arising from use of the Service.",
+            "p2": "Where liability cannot be excluded, WavezFM's aggregate liability relating to the Service will not exceed the amount you paid to WavezFM during the twelve months before the event giving rise to the claim. This limit does not apply where prohibited by law."
+          }
+        },
+        "indemnification": {
+          "title": "17. Responsibility for claims",
+          "paragraphs": {
+            "p1": "To the extent permitted by law, you are responsible for losses and reasonable costs resulting from your unlawful use of the Service, your content, your breach of these Terms, or your infringement of another person's rights."
+          }
+        },
+        "termination": {
+          "title": "18. Suspension and termination",
+          "paragraphs": {
+            "p1": "You may stop using the Service and request account deletion through available settings or support. Outstanding payment, moderation, legal, or security matters may need to be resolved first.",
+            "p2": "WavezFM may restrict, suspend, or terminate access for violations, risk, legal requirements, nonpayment, fraud, service discontinuation, or protection of users and infrastructure. Provisions concerning intellectual property, payments, liability, disputes, and necessary data retention survive termination."
+          }
         },
         "changes": {
-          "title": "5. Changes",
-          "body": "WavezFM may update these terms as the product evolves. Continued use of the platform after relevant changes means acceptance of the latest versions."
+          "title": "19. Changes to these Terms",
+          "paragraphs": {
+            "p1": "We may update these Terms as the Service or law changes. Material updates may be announced by email, in-app notice, or website posting. Continued use after the effective date means acceptance where allowed by law; if you do not agree, stop using the Service."
+          }
+        },
+        "law": {
+          "title": "20. Governing law and disputes",
+          "paragraphs": {
+            "p1": "These Terms are governed by the laws applicable to WavezFM's operation, without removing mandatory consumer or data-protection rights available where you live. Before filing a claim, contact hi@wavez.fm so the parties can attempt an informal resolution. Disputes will be submitted to the courts with jurisdiction under applicable law."
+          }
+        },
+        "miscellaneous": {
+          "title": "21. General provisions",
+          "paragraphs": {
+            "p1": "The following provisions also apply:"
+          },
+          "items": {
+            "i1": "If one provision is unenforceable, the remaining provisions continue in effect.",
+            "i2": "Failure to enforce a provision is not a waiver of the right to enforce it later.",
+            "i3": "You may not assign these Terms without prior written consent; WavezFM may assign them as part of a restructuring or transfer of the Service, subject to applicable law.",
+            "i4": "These Terms and incorporated policies form the agreement concerning the Service, except for terms expressly presented for a specific purchase or feature."
+          }
+        },
+        "contact": {
+          "title": "22. Contact",
+          "paragraphs": {
+            "p1": "Questions about these Terms, copyright, purchases, or legal matters may be sent to hi@wavez.fm. Include your account identifier and relevant details, but never send your password, two-factor code, or complete card information."
+          }
         }
       }
     },

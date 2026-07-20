@@ -7802,54 +7802,369 @@
     "privacy": {
       "back": "Zpět",
       "title": "Zásady ochrany osobních údajů",
-      "intro": "Tato politika stručně popisuje, jak WavezFM nakládá s informacemi z vašeho účtu a prohlížející aktivity, aby platforma zůstala bezpečná, funkční a stabilní.",
+      "intro": "Tyto zásady vysvětlují, jak WavezFM shromažďuje, používá, sdílí, ukládá a chrání osobní údaje, když používáte platformu, včetně místností, chatu, seznamů skladeb, profilů, plateb a připojených služeb.",
+      "lastUpdated": "Naposledy aktualizováno",
+      "effectiveDate": "Datum účinnosti",
       "sections": {
-        "collection": {
-          "title": "1. Informace, které shromažďujeme",
-          "body": "Můžeme shromažďovat údaje o účtu, data o relacích, preferencích, používání platformy a informace potřebné pro autentizaci, bezpečnost a moderaci na WavezFM."
+        "introduction": {
+          "title": "1. Rozsah a přijetí",
+          "paragraphs": {
+            "p1": "Tyto zásady ochrany osobních údajů se vztahují na webové stránky, aplikace, ověřené oblasti, živé místnosti a související služby WavezFM. Používáním služby berete na vědomí zde popsané postupy.",
+            "p2": "Tyto zásady je třeba číst společně s Podmínkami poskytování služeb a Zásadami používání souborů cookie. Pokud funkce poskytuje konkrétnější oznámení o ochraně osobních údajů, vztahuje se toto oznámení také na tuto funkci."
+          }
         },
-        "usage": {
-          "title": "2. Jak tato data využíváme",
-          "body": "Tato data využíváme k udržení vašeho účtu aktivního, ochraně služby, personalizaci vašeho zážitku, aplikaci moderování a zlepšení stability platformy."
+        "controller": {
+          "title": "2. Správce údajů",
+          "paragraphs": {
+            "p1": "WavezFM je odpovědná za rozhodnutí, proč a jak jsou osobní údaje zpracovávány v souvislosti se Službou. Žádosti o ochranu osobních údajů lze zasílat na adresu hi@wavez.fm."
+          }
         },
-        "cookies": {
-          "title": "3. Sušenky",
-          "body": "Cookies pomáhají udržovat vaši relaci aktivní, pamatovat si vaše preference a zajistit, že ověřené oblasti webu fungují správně."
+        "provided": {
+          "title": "3. Informace, které poskytnete",
+          "paragraphs": {
+            "p1": "Zpracováváme informace, které nám poskytnete při vytváření a používání účtu nebo při komunikaci prostřednictvím Služby."
+          },
+          "items": {
+            "i1": "Údaje o účtu, jako je e-mailová adresa, uživatelské jméno, zobrazované jméno, hash hesla a autentizační nebo dvoufaktorové podrobnosti.",
+            "i2": "Údaje o profilu, jako je avatar, biografie, vlajka země, odznaky, sociální kontakty, preference a nastavení veřejného profilu.",
+            "i3": "Obsah a komunikace, včetně chatu v místnosti, šeptání, reakcí, anket, dárků, zpráv, žádostí o podporu, nahraných médií, nastavení místností a konfigurací robotů.",
+            "i4": "Hudba a aktivita komunity, včetně seznamů skladeb, importovaných skladeb, účasti v místnosti, aktivity ve frontě DJ, hlasování, oblíbených položek, sledování a akcí moderování.",
+            "i5": "Podrobnosti transakce, jako jsou nákupy, předplatné, dary, dary, měna, částka, poskytovatel a stav platby. Úplné údaje o kartě zpracovává poskytovatel plateb, neukládá je WavezFM."
+          }
+        },
+        "automatic": {
+          "title": "4. Informace shromažďované automaticky",
+          "paragraphs": {
+            "p1": "Když ke Službě přistupujete, můžeme automaticky zaznamenávat technické informace a informace o používání potřebné k jejímu provozu, zabezpečení a zlepšování."
+          },
+          "items": {
+            "i1": "IP adresa, prohlížeč, operační systém, typ zařízení, jazyk, časové pásmo, informace na obrazovce a přibližná poloha odvozená z IP.",
+            "i2": "Identifikátory relací, soubory cookie, místní úložiště, stav ověřování, bezpečnostní signály a diagnostika připojení nebo WebSocket.",
+            "i3": "Použité stránky a funkce, kliknutí, chyby, informace o výkonu, přítomnost v místnosti, události přehrávání a časová razítka.",
+            "i4": "Protokoly zabezpečení, moderování a auditu používané k prevenci zneužití, vyšetřování incidentů a prosazování pravidel platformy nebo místnosti."
+          }
+        },
+        "thirdParties": {
+          "title": "5. Informace z připojených služeb",
+          "paragraphs": {
+            "p1": "Pokud se připojíte nebo použijete externí službu, můžeme obdržet informace potřebné k zajištění této integrace."
+          },
+          "items": {
+            "i1": "Discord může poskytnout identifikátor účtu, uživatelské jméno, avatar a informace o autorizaci při použití pro přihlášení nebo propojení účtu.",
+            "i2": "Last.fm může poskytnout informace o účtu a autorizaci používané pro scrobbling, když integraci povolíte.",
+            "i3": "YouTube, SoundCloud, Spotify, Disk Google a další mediální služby mohou poskytovat odkazy, identifikátory, metadata, umělecká díla, dostupnost a informace o seznamu skladeb.",
+            "i4": "Stripe a Mercado Pago poskytují identifikátory transakcí, stav platby, fakturační cyklus, měnu, částku a omezené fakturační údaje potřebné pro podporu, účetnictví a prevenci podvodů."
+          }
+        },
+        "purposes": {
+          "title": "6. Jak využíváme informace",
+          "paragraphs": {
+            "p1": "Osobní údaje používáme pro následující účely:"
+          },
+          "items": {
+            "i1": "Vytvářejte, ověřujte, zabezpečujte, obnovujte a udržujte účty.",
+            "i2": "Ovládání místností, synchronizované přehrávání, chat, šepot, seznamy skladeb, profily, sociální funkce, roboty, ankety, dárky a upozornění.",
+            "i3": "Zpracovávejte nákupy, předplatné, dary, virtuální zůstatky a dary a poskytujte transakční podporu.",
+            "i4": "Přizpůsobte si jazyk, vzhled, přístupnost, soukromí, obsah a předvolby oznámení.",
+            "i5": "Moderujte obsah, vynucujte pravidla, vyšetřujte hlášení, předcházejte podvodům, spamu, zneužití a neoprávněnému přístupu a chraňte uživatele a službu.",
+            "i6": "Diagnostikujte poruchy, měřte výkon, vyvíjejte funkce a vytvářejte agregované nebo neidentifikovatelné statistiky.",
+            "i7": "Plňte právní, regulační, účetní, daňové povinnosti a povinnosti týkající se řešení sporů a reagujte na zákonné požadavky."
+          }
+        },
+        "legalBases": {
+          "title": "7. Právní základy",
+          "paragraphs": {
+            "p1": "V závislosti na kontextu a platném právu se zpracování může opírat o jeden nebo více z následujících základů:"
+          },
+          "items": {
+            "i1": "Plnění smlouvy, kdy jsou údaje nezbytné k vytvoření účtu nebo poskytnutí požadované funkce.",
+            "i2": "Oprávněné zájmy, včetně zabezpečení služeb, prevence zneužití, zlepšování produktů a moderování komunity, vyvážené s vašimi právy.",
+            "i3": "Souhlas, pokud je vyžadován pro volitelné soubory cookie, určité integrace, marketing nebo jiné volitelné zpracování; souhlas lze odvolat.",
+            "i4": "Dodržování zákonných nebo regulačních povinností, včetně finančních záznamů a platných žádostí autority.",
+            "i5": "Ochrana práv, bezpečnosti a právních nároků, pokud to zákon umožňuje."
+          }
         },
         "sharing": {
-          "title": "4. Sdílení",
-          "body": "Neprodáváme vaše data. Informace můžeme sdílet pouze s nezbytnými poskytovateli pro přihlašování, infrastrukturu, bezpečnost a doručení e-mailů."
+          "title": "8. Jak jsou informace sdíleny",
+          "paragraphs": {
+            "p1": "WavezFM neprodává osobní údaje. Zveřejňujeme pouze to, co je přiměřeně nezbytné pro účely popsané v těchto Zásadách."
+          },
+          "items": {
+            "i1": "Poskytovatelé služeb, kteří podporují hosting, ukládání, doručování obsahu, e-mail, ověřování, kontroly proti zneužití, integrace médií a zpracování plateb.",
+            "i2": "Zaměstnanci místnosti a zaměstnanci platformy, když jsou potřeba pro moderování, podporu, bezpečnost, audit nebo vyšetřování incidentů.",
+            "i3": "Úřady, soudy nebo jiné strany, pokud to vyžaduje zákon nebo je to přiměřeně nutné k ochraně práv, bezpečnosti, uživatelů nebo služby.",
+            "i4": "Nástupnická organizace při fúzi, restrukturalizaci, financování nebo převodu Služby, s výhradou příslušných požadavků na důvěrnost a oznámení."
+          }
+        },
+        "publicAreas": {
+          "title": "9. Veřejná a společenská oblast",
+          "paragraphs": {
+            "p1": "Uživatelská jména, zobrazovaná jména, avatary, odznaky, veřejné životopisy, aktivita v místnosti, chatové zprávy, reakce, seznam skladeb nebo informace o místnosti a další obsah, který se rozhodnete publikovat, může být viditelný pro ostatní uživatele podle vašeho nastavení a použité funkce.",
+            "p2": "Nezveřejňujte osobní nebo důvěrné informace, které nechcete, aby ostatní viděli. Soukromí v místnosti a ovládací prvky profilu snižují viditelnost, ale nemohou zabránit jiné osobě v nahrávání nebo sdílení obsahu, ke kterému má přístup."
+          }
+        },
+        "retention": {
+          "title": "10. Uchovávání dat",
+          "paragraphs": {
+            "p1": "Osobní údaje uchováváme pouze po dobu, která je přiměřeně nezbytná k poskytování služby, vedení záznamů o zabezpečení a moderování, řešení sporů a plnění právních, daňových, účetních nebo regulačních povinností. Uchovávání se liší podle typu dat, konfigurace místnosti, stavu účtu a právních požadavků.",
+            "p2": "Po smazání účtu mohou data po omezenou dobu zůstat v zálohách, záznamech o prevenci podvodů, záznamech transakcí nebo protokolech, které je nutné zachovat. Veřejný obsah může být smazán, anonymizován nebo uchován, je-li to nutné k zachování integrity konverzace, vymáhání práv nebo souladu se zákonem."
+          }
+        },
+        "security": {
+          "title": "11. Bezpečnost",
+          "paragraphs": {
+            "p1": "Používáme přiměřená technická a organizační opatření odpovídající povaze údajů. Žádná online služba nemůže zaručit absolutní bezpečnost."
+          },
+          "items": {
+            "i1": "Šifrovaný přenos pro podporovaná připojení a bezpečné hashování hesel.",
+            "i2": "Autentizace, řízení přístupu, kontroly oprávnění a dvoufaktorové možnosti.",
+            "i3": "Protokolování, limity rychlosti, detekce zneužití, zálohování a postupy vyšetřování incidentů.",
+            "i4": "Omezený administrativní přístup na základě provozní potřeby."
+          }
+        },
+        "rights": {
+          "title": "12. Vaše práva na ochranu soukromí",
+          "paragraphs": {
+            "p1": "V závislosti na tom, kde žijete, včetně podle LGPD nebo GDPR, můžete mít následující práva. Před splněním požadavku můžeme požadovat informace nezbytné k ověření identity a ochraně účtu."
+          },
+          "items": {
+            "i1": "Potvrzení, že osobní údaje jsou zpracovávány a přístup k těmto údajům.",
+            "i2": "Oprava neúplných, nepřesných nebo zastaralých údajů.",
+            "i3": "Smazání, anonymizace nebo blokování tam, kde je to legální.",
+            "i4": "Omezení zpracování nebo vznesení námitky proti určitému zpracování.",
+            "i5": "Přenositelnost dat v použitelném strojově čitelném formátu.",
+            "i6": "Informace o entitách, se kterými byla data sdílena.",
+            "i7": "Odvolání souhlasu bez vlivu na předchozí zákonné zpracování.",
+            "i8": "Přezkoumání rozhodnutí založených výhradně na automatizovaném zpracování, je-li to relevantní.",
+            "i9": "Stížnost na ANPD, dozorčí orgán EU nebo jiný příslušný místní orgán."
+          }
+        },
+        "transfers": {
+          "title": "13. Mezinárodní převody",
+          "paragraphs": {
+            "p1": "WavezFM a její poskytovatelé mohou zpracovávat data v jiných zemích než ve vaší. V případě potřeby používáme uznávaná ochranná opatření, jako je smluvní ochrana, rozhodnutí o přiměřenosti, bezpečnostní opatření a postupy minimalizace dat."
+          }
+        },
+        "cookies": {
+          "title": "14. Soubory cookie a místní úložiště",
+          "paragraphs": {
+            "p1": "Používáme základní technologie pro ověřování, zabezpečení, kontinuitu relací, jazyk a základní provoz. Volitelné preferenční technologie se používají podle vašeho výběru tam, kde je vyžadován souhlas.",
+            "p2": "Podporované volby můžete spravovat prostřednictvím ovládacích prvků souborů cookie a vašeho prohlížeče. Zakázání základního úložiště může zabránit fungování ověřených funkcí nebo funkcí citlivých na zabezpečení. Další podrobnosti naleznete v Zásadách používání souborů cookie."
+          }
+        },
+        "children": {
+          "title": "15. Děti",
+          "paragraphs": {
+            "p1": "Služba není zaměřena na děti mladší 13 let a vědomě neshromažďujeme jejich osobní údaje. Pokud se domníváte, že údaje společnosti WavezFM poskytlo dítě mladší než příslušný minimální věk, kontaktujte hi@wavez.fm, abychom to mohli prošetřit a přijmout vhodná opatření."
+          }
+        },
+        "changes": {
+          "title": "16. Změny těchto Zásad",
+          "paragraphs": {
+            "p1": "Tyto zásady můžeme aktualizovat, když se změní služba, poskytovatelé nebo právní požadavky. Věcné změny mohou být oznámeny na webu, v aplikaci nebo e-mailem. Výše uvedené datum označuje aktuální verzi."
+          }
         },
         "contact": {
-          "title": "5. Kontakt",
-          "body": "Pokud chcete požádat o kontrolu dat, nahlásit problém nebo položit otázky týkající se soukromí, kontaktujte tým WavezFM oficiálními kanály."
+          "title": "17. Kontakt a reklamace",
+          "paragraphs": {
+            "p1": "Chcete-li položit otázku týkající se ochrany osobních údajů nebo uplatnit právo na data, zašlete e-mail na adresu hi@wavez.fm s dostatkem informací k identifikaci vašeho účtu a žádosti. Neposílejte hesla ani úplné údaje o platební kartě.",
+            "p2": "Můžete se také obrátit na příslušný úřad pro ochranu údajů nebo spotřebitele ve vaší jurisdikci, včetně brazilského ANPD nebo případně dozorčí úřad ve vaší zemi EU nebo EHP."
+          }
         }
       }
     },
     "terms": {
       "back": "Zpět",
       "title": "Podmínky služby",
-      "intro": "Tyto podmínky shrnují podmínky používání WavezFM a pomáhají chránit komunitu, živý zážitek a integritu platformy.",
+      "intro": "Tyto podmínky tvoří smlouvu mezi vámi a WavezFM o přístupu a používání platformy, včetně místností, chatu, seznamů skladeb, sociálních funkcí, integrací, předplatného, nákupů a virtuálních položek.",
+      "lastUpdated": "Naposledy aktualizováno",
+      "effectiveDate": "Datum účinnosti",
       "sections": {
-        "usage": {
-          "title": "1. Využití platformy",
-          "body": "Používáním WavezFMsouhlasíte s respektováním pravidel komunity, moderování stránek a odpovědným využíváním dostupných funkcí."
+        "acceptance": {
+          "title": "1. Přijetí podmínek",
+          "paragraphs": {
+            "p1": "Vytvořením účtu, přístupem nebo používáním WavezFM souhlasíte s těmito Podmínkami, Zásadami ochrany osobních údajů, Zásadami souborů cookie a platnými pravidly pro platformu a místnosti. Pokud nesouhlasíte, nepoužívejte Službu.",
+            "p2": "Pokud Službu používáte jménem organizace, prohlašujete, že máte oprávnění zavázat tuto organizaci těmito Podmínkami."
+          }
+        },
+        "service": {
+          "title": "2. Služba",
+          "paragraphs": {
+            "p1": "WavezFM je sociální hudební platforma, která uživatelům umožňuje:"
+          },
+          "items": {
+            "i1": "Vytvořte veřejné nebo soukromé poslechové místnosti a připojte se k nim.",
+            "i2": "Synchronizujte přehrávání z podporovaných zdrojů médií třetích stran.",
+            "i3": "Vytvářejte, importujte, organizujte a sdílejte seznamy skladeb.",
+            "i4": "Používejte chat, šeptání, reakce, profily, sledování, ankety, dárky a další funkce komunity.",
+            "i5": "Účastněte se DJ front, hlasování, moderování místností a robotů místností podle oprávnění.",
+            "i6": "Nakupujte předplatné, virtuální položky, doplňky, dárky nebo darujte, pokud jsou k dispozici."
+          }
+        },
+        "eligibility": {
+          "title": "3. Způsobilost",
+          "paragraphs": {
+            "p1": "Musíte být starší 13 let a musíte mít zákonné oprávnění používat Službu. Pokud zákon v místě vašeho bydliště vyžaduje vyšší minimální věk, platí tento vyšší věk.",
+            "p2": "Pokud nejste plnoletí, prohlašujete, že váš rodič nebo zákonný zástupce zkontroloval a povolil vaše používání služby a jakýkoli váš nákup."
+          }
         },
         "account": {
-          "title": "2. Účet a přístup",
-          "body": "Jste odpovědní za informace o svém účtu a za používání relací otevřených na vaše jméno. V případech zneužití může tým omezit, přezkoumat nebo pozastavit přístup."
+          "title": "4. Účty a zabezpečení",
+          "paragraphs": {
+            "p1": "Jste zodpovědní za svůj účet a činnost prováděnou prostřednictvím něj."
+          },
+          "items": {
+            "i1": "Poskytujte přesné informace a udržujte je přiměřeně aktuální.",
+            "i2": "Chraňte své heslo, dvoufaktorové kódy, relace, metody obnovy a tokeny botů.",
+            "i3": "Okamžitě informujte WavezFM, pokud máte podezření na neoprávněný přístup nebo kompromitaci účtu.",
+            "i4": "Neprodávejte, nepronajímajte, nepřevádějte, nevydávejte se za jinou identitu ani nesdílejte účty způsobem, který ohrožuje bezpečnost nebo vymáhání."
+          }
         },
-        "content": {
-          "title": "3. Obsah a chování",
-          "body": "Platformu nesmíte používat k obtěžování, podvodům, spamu, vyhýbání se trestům, nelegálnímu obsahu ani k jakémukoli chování, které by poškozovalo komunitu."
+        "conduct": {
+          "title": "5. Přijatelné použití",
+          "paragraphs": {
+            "p1": "Službu nesmíte používat k:"
+          },
+          "items": {
+            "i1": "Porušujte platné zákony nebo propagujte nezákonnou činnost.",
+            "i2": "Obtěžovat, vyhrožovat, využívat, podvádět, pronásledovat, doxovat nebo diskriminovat jinou osobu.",
+            "i3": "Publikovat nenávistný, sexuálně vykořisťující, škodlivý, pomlouvačný nebo jinak nezákonný obsah.",
+            "i4": "Porušovat autorská práva, ochranné známky, soukromí, publicitu nebo jiná práva.",
+            "i5": "Spamujte, manipulujte se zapojením, vyhýbejte se sankcím, vytvářejte hanlivé účty nebo se vydávejte za lidi nebo organizace.",
+            "i6": "Distribuujte malware, phishing, škodlivé soubory nebo klamavé odkazy.",
+            "i7": "Zkoumejte, přemosťujte, narušujte, zpětně analyzujte, přetěžujte, škrábejte nebo automatizujte přístup mimo zdokumentovaná rozhraní API a autorizované funkce botů.",
+            "i8": "Zneužívejte přehrávání, hlasování, DJ fronty, dárky, platby, zprávy, nástroje pro moderování nebo jakoukoli ekonomiku platformy."
+          }
         },
-        "moderation": {
-          "title": "4. Moderace",
-          "body": "Administrátoři a moderátoři mohou uplatnit opatření jako odstranění místnosti, pozastavení účtu, omezení přístupu a další opatření nezbytná k ochraně služby."
+        "rooms": {
+          "title": "6. Místnosti a moderování",
+          "paragraphs": {
+            "p1": "Vlastníci pokojů a oprávnění zaměstnanci mohou stanovit a prosazovat pravidla specifická pro místnosti za předpokladu, že tato pravidla nejsou v rozporu s těmito podmínkami nebo zásadami platformy. Uživatelé musí dodržovat legitimní pokyny pro moderování a omezení oprávnění.",
+            "p2": "WavezFM a pověření zaměstnanci mohou kontrolovat zprávy a aplikovat varování, ztlumení, omezení fronty, odstranění, zákazy, smazání obsahu, omezení funkcí nebo pozastavení účtu. Opatření mohou být okamžitá, pokud je to nutné pro bezpečnost, zabezpečení, soulad s právními předpisy nebo integritu služeb."
+          }
+        },
+        "userContent": {
+          "title": "7. Uživatelský obsah",
+          "paragraphs": {
+            "p1": "Zachováváte si práva, která máte k obsahu, který odešlete. Jste odpovědní za zajištění toho, že máte práva a oprávnění potřebná k jeho zveřejnění.",
+            "p2": "Společnosti WavezFM udělujete celosvětovou, nevýhradní, bezplatnou licenci k hostování, ukládání, reprodukování, formátování, přenášení, zobrazování a moderování tohoto obsahu pouze tak, jak je to přiměřeně nutné k provozování, zabezpečení, zlepšování a propagaci Služby. Tato licence končí, když je obsah smazán, s výjimkou kopií vyžadovaných zákonem, záloh, vynucovacích záznamů nebo obsahu sdíleného s ostatními, který si ponechávají."
+          }
+        },
+        "platformContent": {
+          "title": "8. Duševní vlastnictví platformy",
+          "paragraphs": {
+            "p1": "Název WavezFM, značka, rozhraní, software, dokumentace, původní aktiva a prvky platformy jsou majetkem společnosti WavezFM nebo jejích poskytovatelů licencí. Tyto podmínky vám dávají omezené, osobní, odvolatelné, nevýhradní právo používat Službu; nepřevádějí vlastnictví ani neumožňují neoprávněné komerční opětovné použití."
+          }
+        },
+        "thirdParty": {
+          "title": "9. Služby a média třetích stran",
+          "paragraphs": {
+            "p1": "Služba integruje nebo odkazuje na poskytovatele, jako je YouTube, SoundCloud, Spotify, Discord, Last.fm, Google Drive, Stripe, Mercado Pago a další služby. Používání jejich služeb se řídí jejich vlastními podmínkami a zásadami ochrany osobních údajů.",
+            "p2": "WavezFM nekontroluje dostupnost, licencování, přesnost, bezpečnost nebo nepřetržitý provoz obsahu třetích stran. Média mohou být odstraněna, zablokována, nedostupná podle regionu, přerušena nebo změněna jejich poskytovatelem."
+          }
+        },
+        "copyright": {
+          "title": "10. Stížnosti na autorská práva",
+          "paragraphs": {
+            "p1": "Pokud se domníváte, že obsah přístupný prostřednictvím WavezFM porušuje vaše práva, zašlete dostatečně podrobné upozornění na adresu hi@wavez.fm."
+          },
+          "items": {
+            "i1": "Identifikujte chráněné dílo a materiál, který údajně porušuje autorská práva.",
+            "i2": "Zadejte příslušnou adresu URL, místnost, zprávu, profil nebo jiné umístění.",
+            "i3": "Uveďte své jméno a spolehlivé kontaktní údaje.",
+            "i4": "V dobré víře uveďte, proč je použití neoprávněné.",
+            "i5": "Potvrďte, že jsou informace přesné a že jste držitelem práv nebo oprávněni za ně jednat."
+          }
+        },
+        "payments": {
+          "title": "11. Platby, předplatné, dárky a příspěvky",
+          "paragraphs": {
+            "p1": "Ceny, měna, interval účtování, daně, podmínky obnovení a zahrnuté výhody se zobrazují před platbou. Platby jsou zpracovávány poskytovateli třetích stran, jako je Stripe nebo Mercado Pago, a také podléhají jejich podmínkám.",
+            "p2": "Opakovaná předplatná se obnovují, dokud nejsou zrušena prostřednictvím dostupného postupu správy. Zrušení obvykle brání budoucímu obnovení a nevrací zpětně aktuální zaplacené období. Jednorázové dárky, virtuální předměty, doplňky a dary se neobnovují, pokud není v pokladně výslovně uvedeno jinak."
+          },
+          "items": {
+            "i1": "Autorizujete zobrazený poplatek a potvrzujete, že můžete použít vybranou platební metodu.",
+            "i2": "Výhody jsou uplatňovány po potvrzení poskytovatelem a mohou být zpožděny, zatímco platba probíhá nebo probíhá kontrola.",
+            "i3": "Vrácení peněz je poskytováno tam, kde to vyžadují platné zákony nebo je to výslovně uvedeno při nákupu; dokončené digitální doručení, dárky a dary mohou být jinak konečné.",
+            "i4": "Zpětná zúčtování, podvody, rušení plateb nebo zneužití mohou mít za následek odebrání výhod, záporné zůstatky, omezení nebo pozastavení účtu.",
+            "i5": "Ceny a budoucí podmínky předplatného se mohou po předchozím upozornění změnit tam, kde to vyžaduje zákon."
+          }
+        },
+        "virtualItems": {
+          "title": "12. Virtuální položky a zůstatky",
+          "paragraphs": {
+            "p1": "Mince, diamanty, XP, odznaky, avatary, pozadí, video snímky, vylepšení a další virtuální výhody jsou omezené licence pro použití v rámci WavezFM. Nemají žádnou peněžní hodnotu, nejsou majetkem a nelze je prodávat, vyměňovat ani převádět mimo podporované funkce. Můžeme opravit zůstatky ovlivněné chybou, podvodem, zrušením nebo zneužitím."
+          }
+        },
+        "privacy": {
+          "title": "13. Soukromí",
+          "paragraphs": {
+            "p1": "Zásady ochrany osobních údajů vysvětlují, jak jsou osobní údaje zpracovávány, a Zásady používání souborů cookie vysvětlují používání souborů cookie a podobná úložiště. Používáním služby tato upozornění berete na vědomí."
+          }
+        },
+        "availability": {
+          "title": "14. Dostupnost a změny Služby",
+          "paragraphs": {
+            "p1": "Služba se může změnit, může docházet k přerušením, vstupovat do údržby, ukládat limity nebo ukončit funkce. Můžeme upravit integrace, limity, výhody, místnosti, katalogy nebo podporované poskytovatele, abychom zachovali zabezpečení, soulad s právními předpisy, výkon nebo životaschopnost produktu.",
+            "p2": "Nezaručujeme, že jakákoli místnost, skladba, seznam skladeb, uživatelské jméno, položka, integrace nebo funkce zůstanou trvale dostupné."
+          }
+        },
+        "disclaimers": {
+          "title": "15. Vyloučení odpovědnosti",
+          "paragraphs": {
+            "p1": "V rozsahu povoleném zákonem je Služba poskytována tak, jak je a jak je dostupná. Neslibujeme nepřetržitý provoz, bezchybný obsah, trvalé uchování dat ani kompatibilitu s každým zařízením, prohlížečem, sítí nebo poskytovatelem třetí strany.",
+            "p2": "Nic v těchto podmínkách nevylučuje záruky, opravné prostředky nebo práva spotřebitelů, která nelze zákonně vyloučit."
+          }
+        },
+        "liability": {
+          "title": "16. Omezení odpovědnosti",
+          "paragraphs": {
+            "p1": "V maximálním rozsahu povoleném zákonem nenese WavezFM odpovědnost za nepřímé, náhodné, zvláštní, trestné nebo následné ztráty ani za ušlý zisk, data, dobré jméno, příležitosti nebo obsah třetích stran vyplývající z používání služby.",
+            "p2": "Pokud nelze odpovědnost vyloučit, celková odpovědnost společnosti WavezFM související se Službou nepřesáhne částku, kterou jste zaplatili společnosti WavezFM během dvanácti měsíců před událostí, která vedla ke vzniku nároku. Toto omezení neplatí tam, kde to zakazuje zákon."
+          }
+        },
+        "indemnification": {
+          "title": "17. Odpovědnost za reklamace",
+          "paragraphs": {
+            "p1": "V rozsahu povoleném zákonem odpovídáte za ztráty a přiměřené náklady vyplývající z vašeho nezákonného používání Služby, vašeho obsahu, vašeho porušení těchto Podmínek nebo vašeho porušení práv jiné osoby."
+          }
+        },
+        "termination": {
+          "title": "18. Pozastavení a ukončení",
+          "paragraphs": {
+            "p1": "Službu můžete přestat používat a požádat o smazání účtu prostřednictvím dostupných nastavení nebo podpory. Nejdříve může být nutné vyřešit neuhrazené platby, moderování, právní nebo bezpečnostní záležitosti.",
+            "p2": "WavezFM může omezit, pozastavit nebo ukončit přístup z důvodu porušení, rizik, právních požadavků, neplacení, podvodu, přerušení služeb nebo ochrany uživatelů a infrastruktury. Ustanovení týkající se duševního vlastnictví, plateb, odpovědnosti, sporů a nezbytného uchovávání dat zůstávají v platnosti."
+          }
         },
         "changes": {
-          "title": "5. Změny",
-          "body": "WavezFM mohou tyto pojmy aktualizovat, jak se produkt vyvíjí. Pokračování v používání platformy po relevantních změnách znamená přijetí nejnovějších verzí."
+          "title": "19. Změny těchto Podmínek",
+          "paragraphs": {
+            "p1": "Tyto podmínky můžeme aktualizovat, když se změní služba nebo zákon. Aktualizace materiálu mohou být oznámeny e-mailem, oznámením v aplikaci nebo zveřejněním na webu. Další používání po datu účinnosti znamená přijetí, pokud to zákon umožňuje; pokud nesouhlasíte, přestaňte Službu používat."
+          }
+        },
+        "law": {
+          "title": "20. Rozhodné právo a spory",
+          "paragraphs": {
+            "p1": "Tyto podmínky se řídí zákony platnými pro provoz společnosti WavezFM, aniž by byla odstraněna povinná práva spotřebitelů nebo práva na ochranu dat dostupná v místě vašeho bydliště. Před podáním nároku kontaktujte hi@wavez.fm, aby se strany mohly pokusit o neformální řešení. Spory budou předloženy soudům s jurisdikcí podle platného práva."
+          }
+        },
+        "miscellaneous": {
+          "title": "21. Obecná ustanovení",
+          "paragraphs": {
+            "p1": "Platí také tato ustanovení:"
+          },
+          "items": {
+            "i1": "Pokud je jedno ustanovení nevymahatelné, zůstávají zbývající ustanovení v platnosti.",
+            "i2": "Nevymáhání ustanovení neznamená vzdání se práva na jeho vymáhání později.",
+            "i3": "Tyto Podmínky nesmíte postoupit bez předchozího písemného souhlasu; WavezFM je může postoupit v rámci restrukturalizace nebo převodu Služby v souladu s platnými zákony.",
+            "i4": "Tyto podmínky a začleněné zásady tvoří smlouvu týkající se služby, s výjimkou podmínek výslovně uvedených pro konkrétní nákup nebo funkci."
+          }
+        },
+        "contact": {
+          "title": "22. Kontakt",
+          "paragraphs": {
+            "p1": "Otázky týkající se těchto podmínek, autorských práv, nákupů nebo právních záležitostí můžete zasílat na adresu hi@wavez.fm. Uveďte identifikátor svého účtu a příslušné údaje, ale nikdy neposílejte své heslo, dvoufaktorový kód ani úplné informace o kartě."
+          }
         }
       }
     },

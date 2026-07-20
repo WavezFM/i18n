@@ -7800,56 +7800,371 @@
   },
   "legal": {
     "privacy": {
-      "back": "Z powrotem",
+      "back": "Powrót",
       "title": "Polityka prywatności",
-      "intro": "Ta polityka krótko opisuje, jak WavezFM przetwarza informacje z Twojego konta oraz aktywność przeglądającą, aby utrzymać platformę bezpieczną, funkcjonalną i stabilną.",
+      "intro": "Niniejsza Polityka wyjaśnia, w jaki sposób WavezFM gromadzi, wykorzystuje, udostępnia, przechowuje i chroni dane osobowe podczas korzystania z platformy, w tym pokoi, czatu, list odtwarzania, profili, płatności i usług połączonych.",
+      "lastUpdated": "Ostatnia aktualizacja",
+      "effectiveDate": "Data wejścia w życie",
       "sections": {
-        "collection": {
-          "title": "1. Zbieramy informacje",
-          "body": "Możemy zbierać dane konta, dane sesji, preferencje, korzystanie z platformy oraz informacje niezbędne do uwierzytelniania, bezpieczeństwa i moderacji na WavezFM."
+        "introduction": {
+          "title": "1. Zakres i akceptacja",
+          "paragraphs": {
+            "p1": "Niniejsza Polityka prywatności dotyczy witryn internetowych, aplikacji, obszarów uwierzytelnionych, pokojów na żywo i powiązanych usług WavezFM. Korzystając z Usługi, akceptujesz praktyki opisane tutaj.",
+            "p2": "Niniejszą Politykę należy czytać łącznie z Regulaminem i Polityką dotyczącą plików cookies. Jeśli funkcja zawiera bardziej szczegółowe informacje o ochronie prywatności, informacja ta dotyczy również tej funkcji."
+          }
         },
-        "usage": {
-          "title": "2. Jak wykorzystujemy te dane",
-          "body": "Wykorzystujemy te dane, aby utrzymać Twoje konto aktywne, chronić usługę, personalizować Twoje doświadczenie, stosować moderację i poprawiać stabilność platformy."
+        "controller": {
+          "title": "2. Administrator danych",
+          "paragraphs": {
+            "p1": "WavezFM odpowiada za podjęcie decyzji o tym, dlaczego i w jaki sposób dane osobowe są przetwarzane w związku z Usługą. Żądania dotyczące prywatności można przesyłać na adres hi@wavez.fm."
+          }
         },
-        "cookies": {
-          "title": "3. Ciasteczka",
-          "body": "Pliki cookie pomagają utrzymać aktywność sesji, zapamiętywać Twoje preferencje oraz zapewniać, że zweryfikowane obszary strony działają prawidłowo."
+        "provided": {
+          "title": "3. Informacje, które podajesz",
+          "paragraphs": {
+            "p1": "Przetwarzamy informacje, które podajesz podczas tworzenia i korzystania z konta lub komunikacji za pośrednictwem Usługi."
+          },
+          "items": {
+            "i1": "Dane konta, takie jak adres e-mail, nazwa użytkownika, nazwa wyświetlana, skrót hasła i dane uwierzytelniające lub dane dwuskładnikowe.",
+            "i2": "Dane profilu, takie jak awatar, biografia, flaga kraju, odznaki, powiązania społecznościowe, preferencje i ustawienia profilu publicznego.",
+            "i3": "Treści i komunikacja, w tym czaty w pokojach, szepty, reakcje, ankiety, prezenty, raporty, prośby o pomoc, przesłane multimedia, ustawienia pokoju i konfiguracje botów.",
+            "i4": "Muzyka i aktywność społeczności, w tym playlisty, zaimportowane utwory, udział w pokojach, aktywność w kolejce DJ-ów, głosy, ulubione, obserwacje i działania moderacyjne.",
+            "i5": "Szczegóły transakcji, takie jak zakupy, subskrypcje, prezenty, darowizny, waluta, kwota, dostawca i status płatności. Pełne dane karty są obsługiwane przez dostawcę płatności, a nie przechowywane przez WavezFM."
+          }
+        },
+        "automatic": {
+          "title": "4. Informacje zbierane automatycznie",
+          "paragraphs": {
+            "p1": "Kiedy uzyskujesz dostęp do Usługi, możemy automatycznie rejestrować informacje techniczne i dotyczące użytkowania wymagane do jej obsługi, zabezpieczania i ulepszania."
+          },
+          "items": {
+            "i1": "Adres IP, przeglądarka, system operacyjny, typ urządzenia, język, strefa czasowa, informacje na ekranie i przybliżona lokalizacja wywnioskowana z adresu IP.",
+            "i2": "Identyfikatory sesji, pliki cookie, pamięć lokalna, stan uwierzytelnienia, sygnały bezpieczeństwa oraz diagnostyka połączenia lub protokołu WebSocket.",
+            "i3": "Wykorzystane strony i funkcje, kliknięcia, błędy, informacje o wydajności, obecność w pokoju, zdarzenia odtwarzania i sygnatury czasowe.",
+            "i4": "Dzienniki bezpieczeństwa, moderacji i audytu używane do zapobiegania nadużyciom, badania incydentów i egzekwowania zasad platformy lub pokoju."
+          }
+        },
+        "thirdParties": {
+          "title": "5. Informacje z usług połączonych",
+          "paragraphs": {
+            "p1": "Jeśli połączysz się lub skorzystasz z usługi zewnętrznej, możemy otrzymać informacje potrzebne do zapewnienia tej integracji."
+          },
+          "items": {
+            "i1": "Discord może udostępnić identyfikator konta, nazwę użytkownika, awatar i informacje autoryzacyjne, jeśli są używane do logowania lub łączenia kont.",
+            "i2": "Last.fm może udostępniać informacje o koncie i autoryzacji używane do scrobblingu, gdy włączysz integrację.",
+            "i3": "YouTube, SoundCloud, Spotify, Dysk Google i inne usługi multimedialne mogą udostępniać linki, identyfikatory, metadane, grafiki, dostępność i informacje o listach odtwarzania.",
+            "i4": "Stripe i Mercado Pago zapewniają identyfikatory transakcji, status płatności, cykl rozliczeniowy, walutę, kwotę i ograniczone informacje rozliczeniowe wymagane do wsparcia, księgowości i zapobiegania oszustwom."
+          }
+        },
+        "purposes": {
+          "title": "6. Jak wykorzystujemy informacje",
+          "paragraphs": {
+            "p1": "Dane osobowe wykorzystujemy w następujących celach:"
+          },
+          "items": {
+            "i1": "Twórz, uwierzytelniaj, zabezpieczaj, odzyskuj i zarządzaj kontami.",
+            "i2": "Obsługuj pokoje, zsynchronizowane odtwarzanie, czat, szepty, listy odtwarzania, profile, funkcje społecznościowe, boty, ankiety, prezenty i powiadomienia.",
+            "i3": "Przetwarzaj zakupy, subskrypcje, prezenty, salda wirtualne i darowizny oraz zapewniaj obsługę transakcji.",
+            "i4": "Spersonalizuj język, wygląd, dostępność, prywatność, treść i preferencje powiadomień.",
+            "i5": "Moderuj treści, egzekwuj zasady, sprawdzaj raporty, zapobiegaj oszustwom, spamowi, nadużyciom i nieautoryzowanemu dostępowi oraz chroń użytkowników i Usługę.",
+            "i6": "Diagnozuj awarie, mierz wydajność, rozwijaj funkcje i twórz zagregowane lub pozbawione danych statystycznych statystyki.",
+            "i7": "Spełniaj obowiązki prawne, regulacyjne, księgowe, podatkowe i związane z rozstrzyganiem sporów oraz odpowiadaj na zgodne z prawem żądania."
+          }
+        },
+        "legalBases": {
+          "title": "7. Podstawy prawne",
+          "paragraphs": {
+            "p1": "W zależności od kontekstu i obowiązującego prawa przetwarzanie może opierać się na jednej lub kilku z poniższych podstaw:"
+          },
+          "items": {
+            "i1": "Realizacji umowy, gdy dane są niezbędne do założenia konta lub zapewnienia żądanej funkcjonalności.",
+            "i2": "Uzasadnione interesy, w tym bezpieczeństwo usług, zapobieganie nadużyciom, ulepszanie produktów i moderowanie społeczności, zrównoważone z Twoimi prawami.",
+            "i3": "Zgoda, jeśli jest wymagana w przypadku opcjonalnych plików cookie, niektórych integracji, marketingu lub innego opcjonalnego przetwarzania; zgoda może zostać cofnięta.",
+            "i4": "Zgodność z obowiązkami prawnymi lub regulacyjnymi, w tym dokumentacją finansową i ważnymi żądaniami organów.",
+            "i5": "Ochrona praw, bezpieczeństwa i roszczeń prawnych, jeśli jest to dozwolone przez prawo."
+          }
         },
         "sharing": {
-          "title": "4. Dzielenie się",
-          "body": "Nie sprzedajemy Twoich danych. Możemy udostępniać informacje wyłącznie niezbędnym dostawcom w zakresie logowania, infrastruktury, bezpieczeństwa i dostarczania poczty elektronicznej."
+          "title": "8. Sposób udostępniania informacji",
+          "paragraphs": {
+            "p1": "WavezFM nie sprzedaje danych osobowych. Ujawniamy tylko to, co jest zasadnie konieczne do celów opisanych w niniejszej Polityce."
+          },
+          "items": {
+            "i1": "Dostawcy usług obsługujący hosting, pamięć masową, dostarczanie treści, pocztę e-mail, uwierzytelnianie, kontrolę przed nadużyciami, integrację multimediów i przetwarzanie płatności.",
+            "i2": "Personel pokoju i personel platformy, jeśli jest potrzebny do moderacji, wsparcia, bezpieczeństwa, audytu lub dochodzenia w sprawie incydentu.",
+            "i3": "Władze, sądy lub inne strony, jeśli jest to wymagane przez prawo lub jest to zasadnie konieczne w celu ochrony praw, bezpieczeństwa, użytkowników lub Usługi.",
+            "i4": "Organizacja będąca następcą w wyniku fuzji, restrukturyzacji, finansowania lub przeniesienia Usługi, z zastrzeżeniem odpowiednich wymogów dotyczących poufności i powiadamiania."
+          }
+        },
+        "publicAreas": {
+          "title": "9. Przestrzenie publiczne i społeczne",
+          "paragraphs": {
+            "p1": "Nazwy użytkowników, nazwy wyświetlane, awatary, odznaki, biografie publiczne, aktywność w pokojach, wiadomości na czacie, reakcje, listy odtwarzania lub informacje o pokojach oraz inne treści, które zdecydujesz się opublikować, mogą być widoczne dla innych użytkowników zgodnie z Twoimi ustawieniami i używaną funkcją.",
+            "p2": "Nie publikuj informacji osobistych ani poufnych, których nie chcesz, aby inni widzieli. Kontrola prywatności w pomieszczeniu i profili zmniejszają widoczność, ale nie mogą uniemożliwić innej osobie nagrywania lub udostępniania treści, do których mają dostęp."
+          }
+        },
+        "retention": {
+          "title": "10. Zatrzymywanie danych",
+          "paragraphs": {
+            "p1": "Przechowujemy dane osobowe tylko tak długo, jak jest to zasadnie konieczne do świadczenia Usługi, prowadzenia dokumentacji dotyczącej bezpieczeństwa i moderacji, rozwiązywania sporów oraz wypełniania obowiązków prawnych, podatkowych, księgowych lub regulacyjnych. Przechowywanie różni się w zależności od typu danych, konfiguracji pokoju, statusu konta i wymogów prawnych.",
+            "p2": "Po usunięciu konta dane mogą pozostać przez ograniczony czas w kopiach zapasowych, rejestrach dotyczących zapobiegania oszustwom, rejestrach transakcji lub dziennikach, które należy zachować. Treści publiczne mogą zostać usunięte, zanonimizowane lub zachowane, jeśli jest to konieczne, aby zachować integralność rozmowy, egzekwować prawa lub zachować zgodność z prawem."
+          }
+        },
+        "security": {
+          "title": "11. Bezpieczeństwo",
+          "paragraphs": {
+            "p1": "Stosujemy rozsądne zabezpieczenia techniczne i organizacyjne, odpowiednie do charakteru danych. Żadna usługa online nie gwarantuje całkowitego bezpieczeństwa."
+          },
+          "items": {
+            "i1": "Szyfrowany transport dla obsługiwanych połączeń i bezpieczne hashowanie haseł.",
+            "i2": "Uwierzytelnianie, kontrola dostępu, sprawdzanie uprawnień i opcje dwuskładnikowe.",
+            "i3": "Rejestrowanie, limity szybkości, wykrywanie nadużyć, kopie zapasowe i procedury badania incydentów.",
+            "i4": "Ograniczony dostęp administracyjny w zależności od potrzeb operacyjnych."
+          }
+        },
+        "rights": {
+          "title": "12. Twoje prawa do prywatności",
+          "paragraphs": {
+            "p1": "W zależności od tego, gdzie mieszkasz, w tym na mocy LGPD lub RODO, możesz mieć następujące prawa. Przed realizacją żądania możemy poprosić o informacje niezbędne do weryfikacji tożsamości i ochrony konta."
+          },
+          "items": {
+            "i1": "Potwierdzenie przetwarzania danych osobowych i dostęp do tych danych.",
+            "i2": "Korekta niekompletnych, niedokładnych lub nieaktualnych danych.",
+            "i3": "Usuwanie, anonimizacja lub blokowanie, jeśli ma to zastosowanie prawnie.",
+            "i4": "Ograniczenie przetwarzania lub sprzeciw wobec określonego przetwarzania.",
+            "i5": "Możliwość przenoszenia danych w odpowiednim formacie nadającym się do odczytu maszynowego.",
+            "i6": "Informacje o podmiotach, którym udostępniono dane.",
+            "i7": "Wycofanie zgody bez wpływu na wcześniejsze przetwarzanie zgodne z prawem.",
+            "i8": "W stosownych przypadkach weryfikacja decyzji opartych wyłącznie na zautomatyzowanym przetwarzaniu.",
+            "i9": "Skarga do ANPD, organu nadzorczego UE lub innego właściwego organu lokalnego."
+          }
+        },
+        "transfers": {
+          "title": "13. Międzynarodowe przekazywanie danych",
+          "paragraphs": {
+            "p1": "WavezFM i jego dostawcy mogą przetwarzać dane w krajach innych niż Twój kraj. Tam, gdzie jest to wymagane, stosujemy uznane zabezpieczenia, takie jak zabezpieczenia umowne, decyzje stwierdzające odpowiedni poziom, środki bezpieczeństwa i praktyki minimalizacji danych."
+          }
+        },
+        "cookies": {
+          "title": "14. Pliki cookie i pamięć lokalna",
+          "paragraphs": {
+            "p1": "Używamy niezbędnych technologii do uwierzytelniania, bezpieczeństwa, ciągłości sesji, języka i podstawowego działania. Opcjonalne technologie preferencji są wykorzystywane zgodnie z Twoimi wyborami, gdy wymagana jest zgoda.",
+            "p2": "Możesz zarządzać obsługiwanymi opcjami za pomocą kontroli plików cookie i przeglądarki. Wyłączenie niezbędnej pamięci może uniemożliwić działanie funkcji uwierzytelnianych lub wrażliwych na bezpieczeństwo. Więcej szczegółów znajdziesz w Polityce plików cookies."
+          }
+        },
+        "children": {
+          "title": "15. Dzieci",
+          "paragraphs": {
+            "p1": "Serwis nie jest skierowany do dzieci poniżej 13 roku życia i nie zbieramy świadomie ich danych osobowych. Jeśli uważasz, że dane WavezFM przekazało dziecko poniżej obowiązującego minimalnego wieku, napisz na adres hi@wavez.fm, abyśmy mogli zbadać sprawę i podjąć odpowiednie działania."
+          }
+        },
+        "changes": {
+          "title": "16. Zmiany niniejszej Polityki",
+          "paragraphs": {
+            "p1": "Możemy aktualizować niniejszą Politykę w przypadku zmiany Usługi, dostawców lub wymagań prawnych. O istotnych zmianach można informować na stronie, w aplikacji lub drogą mailową. Powyższa data wskazuje aktualną wersję."
+          }
         },
         "contact": {
-          "title": "5. Kontakt",
-          "body": "Jeśli chcesz zgłosić przegląd danych, zgłosić problem lub zadać pytania dotyczące prywatności, skontaktuj się z zespołem WavezFM oficjalnymi kanałami."
+          "title": "17. Kontakt i reklamacje",
+          "paragraphs": {
+            "p1": "Aby zadać pytanie dotyczące prywatności lub skorzystać z prawa do danych, wyślij e-mail na adres hi@wavez.fm, podając informacje wystarczające do zidentyfikowania Twojego konta i żądania. Nie wysyłaj haseł ani pełnych danych karty płatniczej.",
+            "p2": "Możesz także skontaktować się z właściwym organem ds. ochrony danych lub organem ds. ochrony konsumentów w Twojej jurysdykcji, w tym z brazylijskim ANPD lub organem nadzorczym w Twoim kraju UE lub EOG, jeśli ma to zastosowanie."
+          }
         }
       }
     },
     "terms": {
-      "back": "Z powrotem",
-      "title": "Regulamin",
-      "intro": "Warunki te podsumowują warunki korzystania z WavezFM i pomagają chronić społeczność, doświadczenie na żywo oraz integralność platformy.",
+      "back": "Powrót",
+      "title": "Warunki świadczenia usług",
+      "intro": "Niniejsze Warunki stanowią umowę pomiędzy Tobą a WavezFM dotyczącą dostępu i korzystania z platformy, w tym pokojów, czatu, list odtwarzania, funkcji społecznościowych, integracji, subskrypcji, zakupów i przedmiotów wirtualnych.",
+      "lastUpdated": "Ostatnia aktualizacja",
+      "effectiveDate": "Data wejścia w życie",
       "sections": {
-        "usage": {
-          "title": "1. Wykorzystanie platformy",
-          "body": "Korzystając z WavezFM, zgadzasz się na przestrzeganie zasad społeczności, moderację strony oraz odpowiedzialne korzystanie z dostępnych funkcji."
+        "acceptance": {
+          "title": "1. Akceptacja Regulaminu",
+          "paragraphs": {
+            "p1": "Tworząc konto, uzyskując dostęp lub korzystając z WavezFM, wyrażasz zgodę na niniejsze Warunki, Politykę prywatności, Politykę dotyczącą plików cookie oraz obowiązujące zasady dotyczące platformy i pokoju. Jeśli nie wyrażasz zgody, nie korzystaj z Usługi.",
+            "p2": "Jeśli korzystasz z Usługi w imieniu organizacji, oświadczasz, że masz uprawnienia do związania tej organizacji niniejszymi Warunkami."
+          }
+        },
+        "service": {
+          "title": "2. Usługa",
+          "paragraphs": {
+            "p1": "WavezFM to społecznościowa platforma muzyczna, która umożliwia użytkownikom:"
+          },
+          "items": {
+            "i1": "Twórz i dołączaj do publicznych lub prywatnych pokoi odsłuchowych.",
+            "i2": "Synchronizuj odtwarzanie z obsługiwanych źródeł multimediów innych firm.",
+            "i3": "Twórz, importuj, organizuj i udostępniaj listy odtwarzania.",
+            "i4": "Korzystaj z czatu, szeptów, reakcji, profili, obserwowania, ankiet, rozdań i innych funkcji społecznościowych.",
+            "i5": "Weź udział w kolejkach DJ-ów, głosach, moderowaniu pokoi i botach pokojowych zgodnie z uprawnieniami.",
+            "i6": "Kupuj subskrypcje, wirtualne przedmioty, dodatki, prezenty lub przekazuj darowizny, jeśli są dostępne."
+          }
+        },
+        "eligibility": {
+          "title": "3. Kwalifikowalność",
+          "paragraphs": {
+            "p1": "Aby móc korzystać z Usługi, musisz mieć ukończone 13 lat i posiadać legalne uprawnienia. Jeśli prawo obowiązujące w miejscu zamieszkania wymaga wyższego minimalnego wieku, obowiązuje ten wyższy wiek.",
+            "p2": "Jeśli nie jesteś pełnoletni, oświadczasz, że rodzic lub opiekun prawny sprawdził i autoryzował Twoje korzystanie z Usługi oraz wszelkich dokonanych przez Ciebie zakupów."
+          }
         },
         "account": {
-          "title": "2. Konto i dostęp",
-          "body": "Jesteś odpowiedzialny za informacje o swoim koncie oraz za korzystanie z sesji otwartych na Twoje nazwisko. W przypadku nadużyć zespół może ograniczyć, przejrzeć lub zawiesić dostęp."
+          "title": "4. Konta i bezpieczeństwo",
+          "paragraphs": {
+            "p1": "Ponosisz odpowiedzialność za swoje konto i czynności wykonywane za jego pośrednictwem."
+          },
+          "items": {
+            "i1": "Podaj dokładne informacje i dbaj o to, aby były w miarę aktualne.",
+            "i2": "Chroń swoje hasło, kody dwuskładnikowe, sesje, metody odzyskiwania i tokeny botów.",
+            "i3": "Jeśli podejrzewasz nieautoryzowany dostęp lub naruszenie konta, natychmiast powiadom WavezFM.",
+            "i4": "Nie sprzedawaj, nie wynajmuj, nie przekazuj, nie podszywaj się ani nie udostępniaj kont w sposób zagrażający bezpieczeństwu lub egzekwowaniu prawa."
+          }
         },
-        "content": {
-          "title": "3. Treść i zachowania",
-          "body": "Nie wolno używać platformy do nękania, oszustw, spamu, unikania kar, nielegalnych treści ani żadnych zachowań szkodzących społeczności."
+        "conduct": {
+          "title": "5. Dopuszczalne użycie",
+          "paragraphs": {
+            "p1": "Nie możesz korzystać z Usługi w celu:"
+          },
+          "items": {
+            "i1": "Łamać obowiązujące prawo lub promować nielegalną działalność.",
+            "i2": "Nękanie, grożenie, wykorzystywanie, oszukiwanie, prześladowanie, dox lub dyskryminowanie innej osoby.",
+            "i3": "Publikuj treści nienawistne, wykorzystujące seksualnie, złośliwe, zniesławiające lub w inny sposób niezgodne z prawem.",
+            "i4": "Naruszaj prawa autorskie, znaki towarowe, prywatność, reklamę lub inne prawa.",
+            "i5": "Spamuj, manipuluj zaangażowaniem, unikaj sankcji, twórz konta wprowadzające w błąd lub podszywaj się pod osoby lub organizacje.",
+            "i6": "Rozpowszechniaj złośliwe oprogramowanie, phishing, szkodliwe pliki lub zwodnicze linki.",
+            "i7": "Sonduj, omijaj, zakłócaj, odtwarzaj kody źródłowe, przeciążaj, usuwaj lub automatyzuj dostęp poza udokumentowanymi interfejsami API i autoryzowanymi funkcjami botów.",
+            "i8": "Nadużywaj odtwarzania, głosowania, kolejek DJ-skich, prezentów, płatności, raportów, narzędzi moderacyjnych lub jakiejkolwiek ekonomii platformy."
+          }
         },
-        "moderation": {
-          "title": "4. Moderacja",
-          "body": "Administratorzy i moderatorzy mogą stosować takie działania jak usunięcie pokoju, zawieszenie konta, ograniczenia dostępu oraz inne środki niezbędne do ochrony usługi."
+        "rooms": {
+          "title": "6. Pokoje i umiar",
+          "paragraphs": {
+            "p1": "Właściciele pokoi i upoważnieni pracownicy mogą ustanawiać i egzekwować zasady dotyczące poszczególnych pokoi, pod warunkiem, że zasady te nie są sprzeczne z niniejszymi Warunkami lub polityką platformy. Użytkownicy muszą przestrzegać zgodnych z prawem instrukcji moderacji i ograniczeń uprawnień.",
+            "p2": "WavezFM i upoważniony personel mogą przeglądać raporty i stosować ostrzeżenia, wyciszenia, ograniczenia kolejek, usunięcia, bany, usunięcie treści, ograniczenia funkcji lub zawieszenie konta. Działania mogą być natychmiastowe, jeśli jest to konieczne ze względu na bezpieczeństwo, ochronę, zgodność z prawem lub integralność usług."
+          }
+        },
+        "userContent": {
+          "title": "7. Treści użytkownika",
+          "paragraphs": {
+            "p1": "Zachowujesz prawa, które posiadasz do przesyłanych treści. Jesteś odpowiedzialny za upewnienie się, że masz prawa i pozwolenia potrzebne do jego opublikowania.",
+            "p2": "Użytkownik udziela firmie WavezFM ogólnoświatowej, niewyłącznej, bezpłatnej licencji na hostowanie, przechowywanie, reprodukowanie, formatowanie, przesyłanie, wyświetlanie i moderowanie tych treści wyłącznie w zakresie niezbędnym do obsługi, zabezpieczania, ulepszania i promowania Usługi. Licencja wygasa w momencie usunięcia treści, z wyjątkiem kopii wymaganych przez prawo, kopii zapasowych, zapisów dotyczących egzekwowania prawa lub treści udostępnianych innym osobom, które przechowują."
+          }
+        },
+        "platformContent": {
+          "title": "8. Własność intelektualna Platformy",
+          "paragraphs": {
+            "p1": "Nazwa WavezFM, marka, interfejs, oprogramowanie, dokumentacja, oryginalne zasoby i funkcje platformy są własnością WavezFM lub jej licencjodawców. Niniejsze Warunki przyznają Ci ograniczone, osobiste, odwołalne i niewyłączne prawo do korzystania z Usługi; nie przenoszą własności ani nie pozwalają na nieuprawnione ponowne wykorzystanie komercyjne."
+          }
+        },
+        "thirdParty": {
+          "title": "9. Usługi i media stron trzecich",
+          "paragraphs": {
+            "p1": "Usługa integruje lub łączy z dostawcami takimi jak YouTube, SoundCloud, Spotify, Discord, Last.fm, Google Drive, Stripe, Mercado Pago i innymi usługami. Ich własne warunki i polityka prywatności regulują korzystanie z ich usług.",
+            "p2": "WavezFM nie kontroluje dostępności, licencjonowania, dokładności, bezpieczeństwa ani ciągłego działania treści stron trzecich. Media mogą zostać usunięte, zablokowane, niedostępne w zależności od regionu, przerwane lub zmienione przez dostawcę."
+          }
+        },
+        "copyright": {
+          "title": "10. Reklamacje dotyczące praw autorskich",
+          "paragraphs": {
+            "p1": "Jeśli uważasz, że treści dostępne za pośrednictwem WavezFM naruszają Twoje prawa, wyślij wystarczająco szczegółowe powiadomienie na adres hi@wavez.fm."
+          },
+          "items": {
+            "i1": "Wskaż utwór chroniony i materiał rzekomo naruszający prawa autorskie.",
+            "i2": "Podaj odpowiedni adres URL, pokój, wiadomość, profil lub inną lokalizację.",
+            "i3": "Podaj swoje imię i nazwisko oraz wiarygodne dane kontaktowe.",
+            "i4": "Podaj w dobrej wierze powód, dla którego użycie jest niedozwolone.",
+            "i5": "Potwierdź, że informacje są dokładne i że jesteś posiadaczem praw lub upoważniony do działania w ich imieniu."
+          }
+        },
+        "payments": {
+          "title": "11. Płatności, subskrypcje, prezenty i darowizny",
+          "paragraphs": {
+            "p1": "Ceny, waluta, okresy rozliczeniowe, podatki, warunki odnowienia i zawarte korzyści są wyświetlane przed dokonaniem płatności. Płatności są przetwarzane przez zewnętrznych dostawców, takich jak Stripe lub Mercado Pago i również podlegają ich warunkom.",
+            "p2": "Subskrypcje cykliczne odnawiają się do momentu anulowania w ramach dostępnego procesu zarządzania. Anulowanie zazwyczaj uniemożliwia przyszłe odnowienie i nie powoduje cofania z mocą wsteczną aktualnie opłaconego okresu. Jednorazowe prezenty, przedmioty wirtualne, dodatki i darowizny nie są odnawiane, chyba że w kasie wyraźnie wskazano inaczej."
+          },
+          "items": {
+            "i1": "Autoryzujesz wyświetloną opłatę i potwierdzasz, że możesz skorzystać z wybranej metody płatności.",
+            "i2": "Korzyści są stosowane po potwierdzeniu przez dostawcę i mogą zostać opóźnione w związku z oczekiwaniem lub sprawdzaniem płatności.",
+            "i3": "Zwroty środków są zapewniane, jeśli jest to wymagane przez obowiązujące prawo lub wyraźnie określone przy zakupie; w przeciwnym razie ukończona dostawa cyfrowa, prezenty i darowizny mogą być ostateczne.",
+            "i4": "Obciążenia zwrotne, oszustwa, cofnięcie płatności lub nadużycia mogą skutkować usunięciem korzyści, ujemnym saldem, ograniczeniami lub zawieszeniem konta.",
+            "i5": "Ceny i przyszłe warunki subskrypcji mogą ulec zmianie po uprzednim powiadomieniu, jeśli jest to wymagane przez prawo."
+          }
+        },
+        "virtualItems": {
+          "title": "12. Przedmioty i salda wirtualne",
+          "paragraphs": {
+            "p1": "Monety, diamenty, XP, odznaki, awatary, tła, klatki wideo, bonusy i inne wirtualne korzyści to ograniczone licencje do wykorzystania w WavezFM. Nie mają one wartości pieniężnej, nie stanowią własności i nie można ich sprzedawać, wymieniać ani przenosić poza obsługiwane funkcje. Możemy skorygować salda dotknięte błędem, oszustwem, cofnięciem lub nadużyciem."
+          }
+        },
+        "privacy": {
+          "title": "13. Prywatność",
+          "paragraphs": {
+            "p1": "Polityka prywatności wyjaśnia, w jaki sposób przetwarzane są dane osobowe, a Polityka plików cookie wyjaśnia wykorzystanie plików cookie i podobnego przechowywania. Korzystając z Usługi, akceptujesz te powiadomienia."
+          }
+        },
+        "availability": {
+          "title": "14. Dostępność i zmiany w Serwisie",
+          "paragraphs": {
+            "p1": "Usługa może ulec zmianie, wystąpić przerwy, rozpocząć prace konserwacyjne, nałożyć ograniczenia lub zaprzestać udostępniania funkcji. Możemy modyfikować integracje, limity, korzyści, pokoje, katalogi lub obsługiwanych dostawców w celu utrzymania bezpieczeństwa, zgodności z prawem, wydajności lub żywotności produktu.",
+            "p2": "Nie gwarantujemy, że jakikolwiek pokój, utwór, playlista, nazwa użytkownika, element, integracja lub funkcja pozostaną stale dostępne."
+          }
+        },
+        "disclaimers": {
+          "title": "15. Zastrzeżenia",
+          "paragraphs": {
+            "p1": "W zakresie dozwolonym przez prawo Usługa jest świadczona w stanie i w miarę dostępności. Nie obiecujemy nieprzerwanego działania, zawartości wolnej od błędów, trwałego przechowywania danych ani zgodności z każdym urządzeniem, przeglądarką, siecią lub dostawcą zewnętrznym.",
+            "p2": "Żadne z postanowień niniejszych Warunków nie wyłącza gwarancji, środków zaradczych ani praw konsumenckich, których nie można zgodnie z prawem wyłączyć."
+          }
+        },
+        "liability": {
+          "title": "16. Ograniczenie odpowiedzialności",
+          "paragraphs": {
+            "p1": "W maksymalnym zakresie dozwolonym przez prawo WavezFM nie ponosi odpowiedzialności za straty pośrednie, przypadkowe, szczególne, karne lub wtórne ani za utracone zyski, dane, reputację, możliwości lub treści stron trzecich powstałe w wyniku korzystania z Usługi.",
+            "p2": "Jeżeli nie można wykluczyć odpowiedzialności, łączna odpowiedzialność WavezFM związana z Usługą nie przekroczy kwoty zapłaconej na rzecz WavezFM w ciągu dwunastu miesięcy przed zdarzeniem stanowiącym podstawę roszczenia. Limit ten nie ma zastosowania tam, gdzie jest to zabronione przez prawo."
+          }
+        },
+        "indemnification": {
+          "title": "17. Odpowiedzialność za roszczenia",
+          "paragraphs": {
+            "p1": "W zakresie dozwolonym przez prawo odpowiadasz za straty i uzasadnione koszty wynikające z niezgodnego z prawem korzystania z Usługi, Twoich treści, naruszenia przez Ciebie niniejszych Warunków lub naruszenia praw innej osoby."
+          }
+        },
+        "termination": {
+          "title": "18. Zawieszenie i zakończenie",
+          "paragraphs": {
+            "p1": "Możesz zaprzestać korzystania z Usługi i poprosić o usunięcie konta, korzystając z dostępnych ustawień lub pomocy technicznej. W pierwszej kolejności konieczne może być rozwiązanie zaległych kwestii związanych z płatnościami, moderacją, kwestiami prawnymi lub bezpieczeństwem.",
+            "p2": "WavezFM może ograniczyć, zawiesić lub zakończyć dostęp z powodu naruszeń, ryzyka, wymogów prawnych, braku płatności, oszustwa, zaprzestania świadczenia usług lub ochrony użytkowników i infrastruktury. Postanowienia dotyczące własności intelektualnej, płatności, odpowiedzialności, sporów i niezbędnego przechowywania danych obowiązują po rozwiązaniu umowy."
+          }
         },
         "changes": {
-          "title": "5. Zmiany",
-          "body": "WavezFM mogą aktualizować te terminy w miarę rozwoju produktu. Dalsze korzystanie z platformy po odpowiednich zmianach oznacza akceptację najnowszych wersji."
+          "title": "19. Zmiany niniejszego Regulaminu",
+          "paragraphs": {
+            "p1": "Możemy aktualizować niniejsze Warunki w miarę zmiany Usługi lub prawa. Istotne aktualizacje mogą być ogłaszane za pośrednictwem poczty elektronicznej, powiadomień w aplikacji lub publikacji na stronie internetowej. Dalsze używanie po dacie wejścia w życie oznacza akceptację, jeśli jest to dozwolone przez prawo; jeśli nie wyrażasz zgody, zaprzestań korzystania z Usługi."
+          }
+        },
+        "law": {
+          "title": "20. Obowiązujące prawo i spory",
+          "paragraphs": {
+            "p1": "Niniejsze Warunki podlegają prawu mającemu zastosowanie do działalności WavezFM, bez uchylania obowiązkowych praw konsumentów lub praw do ochrony danych dostępnych w miejscu zamieszkania użytkownika. Przed złożeniem roszczenia skontaktuj się z hi@wavez.fm, aby strony mogły podjąć próbę nieformalnego rozwiązania. Spory będą kierowane do sądów właściwych na mocy obowiązującego prawa."
+          }
+        },
+        "miscellaneous": {
+          "title": "21. Postanowienia ogólne",
+          "paragraphs": {
+            "p1": "Obowiązują również następujące postanowienia:"
+          },
+          "items": {
+            "i1": "Jeżeli jedno postanowienie okaże się niewykonalne, pozostałe postanowienia nadal obowiązują.",
+            "i2": "Niewykonanie postanowienia nie oznacza zrzeczenia się prawa do jego późniejszej egzekucji.",
+            "i3": "Nie możesz cedować niniejszych Warunków bez uprzedniej pisemnej zgody; WavezFM może je scedować w ramach restrukturyzacji lub przeniesienia Usługi, z zastrzeżeniem obowiązujących przepisów prawa.",
+            "i4": "Niniejsze Warunki i zawarte w nich zasady stanowią umowę dotyczącą Usługi, z wyjątkiem warunków wyraźnie przedstawionych dla konkretnego zakupu lub funkcji."
+          }
+        },
+        "contact": {
+          "title": "22. Kontakt",
+          "paragraphs": {
+            "p1": "Pytania dotyczące niniejszych Warunków, praw autorskich, zakupów lub kwestii prawnych można przesyłać na adres hi@wavez.fm. Dołącz identyfikator konta i odpowiednie szczegóły, ale nigdy nie wysyłaj hasła, kodu dwuskładnikowego ani pełnych informacji o karcie."
+          }
         }
       }
     },
