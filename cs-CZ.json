@@ -2370,6 +2370,7 @@
         "votersLoadError": "Hlasy této ankety se nepodařilo načíst.",
         "votersRetry": "Zkusit znovu",
         "votersEmpty": "V této anketě zatím nikdo nehlasoval.",
+        "votersOptionEmpty": "Pro tuto možnost zatím nikdo nehlasoval.",
         "optionVotersEmpty": "Pro tuto možnost nikdo nehlasoval.",
         "delete": "Ukončit anketu",
         "deleteAria": "Ukončit anketu a oznámit konečný výsledek",

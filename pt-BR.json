@@ -2370,6 +2370,7 @@
         "votersLoadError": "Não foi possível carregar os votos desta enquete.",
         "votersRetry": "Tentar novamente",
         "votersEmpty": "Ninguém votou nesta enquete ainda.",
+        "votersOptionEmpty": "Ninguém votou nesta opção ainda.",
         "optionVotersEmpty": "Nenhum voto nesta opção.",
         "delete": "Encerrar enquete",
         "deleteAria": "Encerrar enquete e anunciar o resultado final",

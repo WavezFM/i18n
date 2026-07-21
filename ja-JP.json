@@ -2370,6 +2370,7 @@
         "votersLoadError": "この投票の投票内容を読み込めませんでした。",
         "votersRetry": "もう一度試す",
         "votersEmpty": "この投票にはまだ誰も投票していません。",
+        "votersOptionEmpty": "この選択肢にはまだ投票がありません。",
         "optionVotersEmpty": "この選択肢への投票はありません。",
         "delete": "投票を終了",
         "deleteAria": "投票を終了して最終結果を発表",

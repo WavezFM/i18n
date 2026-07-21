@@ -2370,6 +2370,7 @@
         "votersLoadError": "Impossible de charger les votes de ce sondage.",
         "votersRetry": "Réessayer",
         "votersEmpty": "Personne n'a encore voté dans ce sondage.",
+        "votersOptionEmpty": "Personne n'a encore voté pour cette option.",
         "optionVotersEmpty": "Aucun vote pour cette option.",
         "delete": "Terminer le sondage",
         "deleteAria": "Terminer le sondage et annoncer le résultat final",

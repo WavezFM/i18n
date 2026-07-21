@@ -2370,6 +2370,7 @@
         "votersLoadError": "No se han podido cargar los votos de esta encuesta.",
         "votersRetry": "Intentar de nuevo",
         "votersEmpty": "Nadie ha votado en esta encuesta todavía.",
+        "votersOptionEmpty": "Nadie ha votado por esta opción todavía.",
         "optionVotersEmpty": "Nadie ha votado por esta opción.",
         "delete": "Finalizar encuesta",
         "deleteAria": "Finalizar la encuesta y anunciar el resultado final",

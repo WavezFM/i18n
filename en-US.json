@@ -2370,6 +2370,7 @@
         "votersLoadError": "We couldn't load the votes for this poll.",
         "votersRetry": "Try again",
         "votersEmpty": "Nobody has voted in this poll yet.",
+        "votersOptionEmpty": "Nobody has voted for this option yet.",
         "optionVotersEmpty": "No votes for this option.",
         "delete": "End poll",
         "deleteAria": "End poll and announce the final result",

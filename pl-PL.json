@@ -2370,6 +2370,7 @@
         "votersLoadError": "Nie udało się wczytać głosów tej ankiety.",
         "votersRetry": "Spróbuj ponownie",
         "votersEmpty": "Nikt jeszcze nie zagłosował w tej ankiecie.",
+        "votersOptionEmpty": "Nikt jeszcze nie zagłosował na tę opcję.",
         "optionVotersEmpty": "Brak głosów na tę opcję.",
         "delete": "Zakończ ankietę",
         "deleteAria": "Zakończ ankietę i ogłoś ostateczny wynik",
