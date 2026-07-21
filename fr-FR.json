@@ -7956,7 +7956,7 @@
         "children": {
           "title": "15. Enfants",
           "paragraphs": {
-            "p1": "Le Service n'est pas destiné aux enfants de moins de 13 ans et nous ne collectons pas sciemment leurs données personnelles. Si vous pensez qu'un enfant n'ayant pas atteint l'âge minimum applicable a fourni des données à WavezFM, contactez hi@wavez.fm afin que nous puissions enquêter et prendre les mesures appropriées."
+            "p1": "Le Service n'est pas destiné aux personnes de moins de 16 ans et nous ne collectons pas sciemment leurs données personnelles. Si vous pensez qu'une personne n'ayant pas atteint l'âge minimum applicable a fourni des données à WavezFM, contactez hi@wavez.fm afin que nous puissions enquêter et prendre les mesures appropriées."
           }
         },
         "changes": {
@@ -8005,7 +8005,7 @@
         "eligibility": {
           "title": "3. Éligibilité",
           "paragraphs": {
-            "p1": "Vous devez avoir au moins 13 ans et être légalement autorisé à utiliser le Service. Si la loi de votre pays de résidence exige un âge minimum plus élevé, cet âge plus élevé s'applique.",
+            "p1": "Vous devez avoir au moins 16 ans et être légalement autorisé à utiliser le Service. Si la loi de votre pays de résidence exige un âge minimum plus élevé, cet âge plus élevé s'applique.",
             "p2": "Si vous n'avez pas atteint l'âge de la majorité légale, vous déclarez qu'un parent ou un tuteur légal a examiné et autorisé votre utilisation du Service et tout achat que vous effectuez."
           }
         },
