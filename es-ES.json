@@ -4881,7 +4881,7 @@
         "unverifyEmailSuccess": "El correo de {username} estaba marcado como no verificado.",
         "verifyEmailError": "No pudimos actualizar el estado del correo electrónico de este usuario.",
         "neverActive": "No hay actividad registrada",
-        "active": "Activo",
+        "online": "En línea",
         "offline": "Desconectado",
         "warn": "Aviso de problema",
         "warnHint": "3 advertencias resultan en un baneo permanente.",

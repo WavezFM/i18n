@@ -4881,7 +4881,7 @@
         "unverifyEmailSuccess": "E-mail {username}został oznaczony jako niezweryfikowany.",
         "verifyEmailError": "Nie mogliśmy zaktualizować statusu e-mail tego użytkownika.",
         "neverActive": "Brak zarejestrowanej aktywności",
-        "active": "Aktywny",
+        "online": "Online",
         "offline": "Offline",
         "warn": "Ostrzeżenie o problemie",
         "warnHint": "3 ostrzeżenia skutkują trwałym banem.",

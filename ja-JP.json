@@ -4881,7 +4881,7 @@
         "unverifyEmailSuccess": "{username}のメールは未確認とマークされていました。",
         "verifyEmailError": "このユーザーのメール状況を更新できませんでした。",
         "neverActive": "記録された活動はありません",
-        "active": "現役",
+        "online": "オンライン",
         "offline": "オフライン",
         "warn": "問題警告",
         "warnHint": "3回警告すると永久BANとなります。",

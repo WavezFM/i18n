@@ -4881,7 +4881,7 @@
         "unverifyEmailSuccess": "{username}의 이메일은 확인되지 않은 것으로 표시되었습니다.",
         "verifyEmailError": "이 사용자의 이메일 상태를 업데이트할 수 없습니다.",
         "neverActive": "기록된 활동 없음",
-        "active": "활성",
+        "online": "온라인",
         "offline": "오프라인",
         "warn": "문제 경고",
         "warnHint": "경고 3회는 영구 정지 조치됩니다.",

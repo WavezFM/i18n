@@ -4881,7 +4881,7 @@
         "unverifyEmailSuccess": "{username}e-mail byl označen jako neověřený.",
         "verifyEmailError": "Nemohli jsme aktualizovat e-mailový status tohoto uživatele.",
         "neverActive": "Žádná zaznamenaná aktivita",
-        "active": "Aktivní",
+        "online": "Online",
         "offline": "Offline",
         "warn": "Varování před problémem",
         "warnHint": "3 varování vedou k trvalému zákazu.",
