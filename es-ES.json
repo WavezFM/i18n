@@ -5026,6 +5026,7 @@
         },
         "modalTabs": {
           "overview": "Resumen",
+          "members": "Personas",
           "access": "Personal",
           "theme": "Tema",
           "donations": "Donaciones",
@@ -5059,6 +5060,20 @@
           "actions": "Acciones"
         },
         "activeUsers": "En línea",
+        "members": {
+          "title": "Personas en la sala",
+          "subtitle": "Consulta quién está conectado y quién está reproduciendo o esperando en la cola.",
+          "count": "{count} en línea",
+          "refresh": "Actualizar lista",
+          "refreshing": "Actualizando lista",
+          "loading": "Cargando personas...",
+          "loadError": "No pudimos cargar las personas de esta sala.",
+          "updatedAt": "Actualizado el {date}",
+          "currentDj": "DJ actual",
+          "queuePosition": "Cola #{position}",
+          "listener": "Escuchando",
+          "empty": "No hay nadie conectado a esta sala ahora mismo."
+        },
         "fields": {
           "name": "Nombre de la sala",
           "slug": "Slug de sala",
@@ -5508,6 +5523,7 @@
           "emailMissing": "No se ha proporcionado",
           "filteredCount": "{count} de {total} respuesta(s)",
           "noSearchResults": "Ninguna respuesta coincide con esta búsqueda.",
+          "emptyStatus": "No hay respuestas con el estado {status}.",
           "collapse": "Colapso",
           "expand": "Ampliar",
           "delete": "Eliminar respuesta",

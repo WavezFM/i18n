@@ -5026,6 +5026,7 @@
         },
         "modalTabs": {
           "overview": "개요",
+          "members": "참여자",
           "access": "직원",
           "theme": "테마",
           "donations": "기부",
@@ -5059,6 +5060,20 @@
           "actions": "작업"
         },
         "activeUsers": "온라인",
+        "members": {
+          "title": "방에 있는 참여자",
+          "subtitle": "현재 접속한 참여자와 재생 중인 DJ, 대기열의 참여자를 확인하세요.",
+          "count": "{count}명 온라인",
+          "refresh": "목록 새로고침",
+          "refreshing": "목록 새로고침 중",
+          "loading": "참여자 불러오는 중...",
+          "loadError": "이 방의 참여자를 불러오지 못했습니다.",
+          "updatedAt": "{date}에 업데이트",
+          "currentDj": "현재 DJ",
+          "queuePosition": "대기열 #{position}",
+          "listener": "듣는 중",
+          "empty": "현재 이 방에 접속한 사람이 없습니다."
+        },
         "fields": {
           "name": "방명",
           "slug": "룸 슬러그",
@@ -5508,6 +5523,7 @@
           "emailMissing": "제공되지 않음",
           "filteredCount": "{total} 응답의 {count}",
           "noSearchResults": "이 검색어와 일치하는 응답이 없습니다.",
+          "emptyStatus": "{status} 상태의 응답이 없습니다.",
           "collapse": "접기",
           "expand": "펼치기",
           "delete": "응답 삭제",

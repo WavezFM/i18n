@@ -5026,6 +5026,7 @@
         },
         "modalTabs": {
           "overview": "Přehled",
+          "members": "Lidé",
           "access": "Personál",
           "theme": "Téma",
           "donations": "Dary",
@@ -5059,6 +5060,20 @@
           "actions": "Akce"
         },
         "activeUsers": "Online",
+        "members": {
+          "title": "Lidé v místnosti",
+          "subtitle": "Podívejte se, kdo je připojený, kdo právě hraje a kdo čeká ve frontě.",
+          "count": "{count} online",
+          "refresh": "Obnovit seznam",
+          "refreshing": "Obnovování seznamu",
+          "loading": "Načítání lidí...",
+          "loadError": "Nepodařilo se načíst uživatele v této místnosti.",
+          "updatedAt": "Aktualizováno {date}",
+          "currentDj": "Aktuální DJ",
+          "queuePosition": "Fronta #{position}",
+          "listener": "Poslouchá",
+          "empty": "V této místnosti teď nikdo není."
+        },
         "fields": {
           "name": "Název místnosti",
           "slug": "Místnostní slug",
@@ -5508,6 +5523,7 @@
           "emailMissing": "neposkytnuto",
           "filteredCount": "{count} {total} reakcí",
           "noSearchResults": "Žádná odpověď neodpovídá tomuto vyhledávání.",
+          "emptyStatus": "Žádná odpověď se stavem {status}.",
           "collapse": "Kolaps",
           "expand": "Rozšířit",
           "delete": "Odpověď na smazání",

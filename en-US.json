@@ -5026,6 +5026,7 @@
         },
         "modalTabs": {
           "overview": "Overview",
+          "members": "People",
           "access": "Staff",
           "theme": "Theme",
           "donations": "Donations",
@@ -5059,6 +5060,20 @@
           "actions": "Actions"
         },
         "activeUsers": "online",
+        "members": {
+          "title": "People in the room",
+          "subtitle": "See who is connected now and who is playing or waiting in the queue.",
+          "count": "{count} online",
+          "refresh": "Refresh list",
+          "refreshing": "Refreshing list",
+          "loading": "Loading people...",
+          "loadError": "We couldn't load the people in this room.",
+          "updatedAt": "Updated at {date}",
+          "currentDj": "Current DJ",
+          "queuePosition": "Queue #{position}",
+          "listener": "Listening",
+          "empty": "No one is connected to this room right now."
+        },
         "fields": {
           "name": "Room name",
           "slug": "Room slug",
@@ -5508,6 +5523,7 @@
           "emailMissing": "not provided",
           "filteredCount": "{count} of {total} response(s)",
           "noSearchResults": "No response matches this search.",
+          "emptyStatus": "No responses with the {status} status.",
           "collapse": "Collapse",
           "expand": "Expand",
           "delete": "Delete response",

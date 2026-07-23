@@ -5026,6 +5026,7 @@
         },
         "modalTabs": {
           "overview": "Przegląd",
+          "members": "Osoby",
           "access": "Personel",
           "theme": "Temat",
           "donations": "Darowizny",
@@ -5059,6 +5060,20 @@
           "actions": "Działania"
         },
         "activeUsers": "Online",
+        "members": {
+          "title": "Osoby w pokoju",
+          "subtitle": "Zobacz, kto jest połączony, kto aktualnie gra i kto czeka w kolejce.",
+          "count": "{count} online",
+          "refresh": "Odśwież listę",
+          "refreshing": "Odświeżanie listy",
+          "loading": "Ładowanie osób...",
+          "loadError": "Nie udało się wczytać osób w tym pokoju.",
+          "updatedAt": "Zaktualizowano {date}",
+          "currentDj": "Aktualny DJ",
+          "queuePosition": "Kolejka #{position}",
+          "listener": "Słucha",
+          "empty": "W tej chwili nikogo nie ma w tym pokoju."
+        },
         "fields": {
           "name": "Nazwa pokoju",
           "slug": "Slug pokojowy",
@@ -5508,6 +5523,7 @@
           "emailMissing": "Nie udostępniono",
           "filteredCount": "{count} {total} odpowiedzi",
           "noSearchResults": "Żadna odpowiedź nie zgadza się z tym wyszukiwaniem.",
+          "emptyStatus": "Brak odpowiedzi ze statusem {status}.",
           "collapse": "Upadek",
           "expand": "Rozwiń",
           "delete": "Odpowiedź usuń",
