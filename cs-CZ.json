@@ -632,6 +632,7 @@
         "ROOM_PERMISSION_MANAGE_QUEUE": "V této místnosti nemůžete spravovat frontu DJ .",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Nemůžeš ovládat vnější média této místnosti.",
         "ROOM_PERMISSION_MANAGE_POLLS": "V této místnosti nemůžete vytvářet ankety.",
+        "ROOM_PERMISSION_CREATE_EVENTS": "V této místnosti nemůžete vytvářet události.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Pouze administrátoři mohou povolit externí média pro místnost.",
         "ROOM_EXTERNAL_MEDIA_DISABLED": "Externí média jsou na platformě deaktivována.",
         "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "Do této místnosti nebylo povoleno vkládání externích médií.",
@@ -1427,6 +1428,10 @@
             "label": "Vytvořte ankety",
             "description": "Umožňuje vytvářet ankety připnuté nahoře v chatu."
           },
+          "create_events": {
+            "label": "Vytvářet události",
+            "description": "Umožňuje odesílat události této místnosti ke schválení týmem."
+          },
           "manage_emojis": {
             "label": "Spravovat emoji",
             "description": "Umožňuje vytváření, upravování a mazání emoji místností."
@@ -1771,7 +1776,34 @@
         "dayEventCount": "{count} události",
         "noEventsForDayTitle": "Dnes žádné akce",
         "noEventsForDayDescription": "Vyberte si jiný den v kalendáři, abyste viděli naplánované akce.",
-        "eventDateUnavailable": "Datum není k dispozici"
+        "eventDateUnavailable": "Datum není k dispozici",
+        "submitEvent": "Odeslat událost",
+        "reviewEvents": "Posoudit",
+        "submitTitle": "Odeslat událost ke schválení",
+        "submitSubtitle": "Vyplňte údaje. Událost se zobrazí až po schválení týmem.",
+        "eventTitle": "Název",
+        "eventDescription": "Popis",
+        "titlePtBr": "Portugalský název",
+        "titleEnUs": "Anglický název",
+        "descriptionPtBr": "Portugalský popis",
+        "descriptionEnUs": "Anglický popis",
+        "imageUrl": "URL obrázku",
+        "eventLink": "Odkaz na událost",
+        "startsAt": "Začátek",
+        "endsAt": "Konec",
+        "cancel": "Zrušit",
+        "submitting": "Odesílání...",
+        "sendForReview": "Odeslat ke schválení",
+        "submitError": "Událost se nepodařilo odeslat.",
+        "reviewTitle": "Schvalování událostí",
+        "reviewSubtitle": "Schvalte nebo zamítněte události odeslané hostitelem.",
+        "reviewLoading": "Načítání žádostí...",
+        "reviewLoadError": "Žádosti se nepodařilo načíst.",
+        "reviewError": "Rozhodnutí se nepodařilo uložit.",
+        "reviewEmpty": "Žádné čekající události",
+        "reviewEmptyDescription": "Žádosti hostitele se zobrazí zde.",
+        "approve": "Schválit",
+        "reject": "Zamítnout"
       },
       "tabs": {
         "chat": "Chat",
@@ -2463,7 +2495,11 @@
         "unpin": "Zpráva odpin",
         "pinnedToast": "Zpráva připnutá na začátku chatu.",
         "unpinnedToast": "Zpráva odstraněna z horní části chatu.",
-        "error": "Teď jsme nemohli aktualizovat připnutou zprávu."
+        "error": "Teď jsme nemohli aktualizovat připnutou zprávu.",
+        "confirmTitle": "Připnout tuto zprávu?",
+        "confirmDescription": "Připnout zprávu uživatele {username} do horní části chatu?",
+        "confirm": "Připnout zprávu",
+        "cancel": "Zrušit"
       },
       "actions": {
         "becomeFan": "Staňte se fanouškem",
@@ -2690,6 +2726,7 @@
       "ROOM_NOT_FOUND": "Místnost nenalezena.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "V této místnosti nemůžete vytvářet boty pro místnosti.",
       "ROOM_PERMISSION_MANAGE_POLLS": "V této místnosti nemůžete vytvářet ankety.",
+      "ROOM_PERMISSION_CREATE_EVENTS": "V této místnosti nemůžete vytvářet události.",
       "ROOM_PERMISSION_MENTION_ROOM": "Nesmíš zde zmínit celou místnost nebo role místnosti.",
       "ROOM_POLLS_DISABLED": "Hlasovací místnosti jsou momentálně deaktivovány.",
       "ROOM_POLL_NOT_ACTIVE": "Tento průzkum již není aktivní.",
@@ -2749,6 +2786,12 @@
       "PLAYLIST_REORDER_TRACK_SET_INVALID": "Odeslané skladby neodpovídají tomuto playlistu.",
       "PLAYLIST_NOT_FOUND": "Playlist nenalezen.",
       "INVALID_BIO": "Životopis musí mít maximálně 150 znaků.",
+      "INVALID_PRONOUNS": "Zájmena mohou mít maximálně 40 znaků.",
+      "INVALID_PRONOUNS_OPTION": "Vyberte platnou možnost zájmen.",
+      "INVALID_PLAYLIST_TRACK_TITLE": "Název skladby musí mít 1 až 300 znaků.",
+      "INVALID_PLAYLIST_TRACK_ARTIST": "Jméno interpreta musí mít 1 až 200 znaků.",
+      "INVALID_PLAYLIST_TRACK_METADATA": "Zadejte název nebo interpreta, kterého chcete u této skladby změnit.",
+      "PLAYLIST_TRACK_NOT_FOUND": "Tato skladba nebyla v playlistu nalezena.",
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "Expirace nahrávání obrázků z chatu musí být mezi 5 minutami a 7 dny.",
       "INVALID_COLOR_THEME": "Zvolené barevné téma je neplatné.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "Preference viditelnosti profilu superfanoušků je neplatná.",
@@ -3284,6 +3327,18 @@
       "reorderError": "Teď jsme nemohli tento playlist přeuspořádat.",
       "moveToTop": "Přesunout se nahoru",
       "moveToEnd": "Move to end",
+      "renameTrack": "Přejmenovat skladbu",
+      "renameTrackHint": "Vlastní název a interpret se použijí pouze v tomto playlistu.",
+      "renameTrackTitleLabel": "Název",
+      "renameTrackArtistLabel": "Interpret",
+      "renameTrackInvalid": "Zadejte název o délce 1 až 300 znaků a interpreta o délce 1 až 200 znaků.",
+      "renameTrackRestore": "Obnovit originál",
+      "renameTrackCancel": "Zrušit",
+      "renameTrackSave": "Uložit změny",
+      "renamingTrack": "Ukládání...",
+      "renameTrackUpdated": "Skladba {title} byla přejmenována.",
+      "renameTrackRestored": "Původní údaje skladby {title} byly obnoveny.",
+      "renameTrackError": "Tuto skladbu se teď nepodařilo přejmenovat.",
       "editClip": "Cut track",
       "clipBadge": "{start}-{end}",
       "clipDialogSubtitle": "Vyberte segment, který by měl běžet. Původní délka trvání je {duration}.",
@@ -5596,6 +5651,14 @@
         "enable": "Povolit",
         "disable": "Schovej se",
         "delete": "Odstranit",
+        "approve": "Schválit",
+        "reject": "Zamítnout",
+        "reviewError": "Událost se nepodařilo posoudit.",
+        "approval": {
+          "pending": "Čeká",
+          "approved": "Schváleno",
+          "rejected": "Zamítnuto"
+        },
         "eventBadgeTitle": "Odznak akce",
         "eventBadgeSubtitle": "Zpráva uvádí uživatele, kteří během období události poslali veřejné zprávy. Odznak je udělen pouze tlačítkem pro udělení.",
         "badgePlaceholder": "Vyberte si odznak",
@@ -6188,6 +6251,11 @@
         "applicationFormsEnabledSuccess": "Stránka s formuláři žádosti byla povolena.",
         "applicationFormsDisabledSuccess": "Stránka s formuláři žádosti byla deaktivována.",
         "applicationFormsSaveError": "Nemohli jsme aktualizovat stránku s formuláři žádosti.",
+        "customPronounsTitle": "Povolit vlastní zájmena",
+        "customPronounsSubtitle": "Když je tato možnost vypnutá, profily mohou používat jen předdefinované volby. Zapnutím povolíte vlastní text.",
+        "customPronounsEnabledSuccess": "Vlastní zájmena byla povolena.",
+        "customPronounsDisabledSuccess": "Profily nyní používají pouze předdefinovaná zájmena.",
+        "customPronounsSaveError": "Možnosti zájmen se nepodařilo aktualizovat.",
         "globalDonationGoalTitle": "Globální cíl darování",
         "globalDonationGoalSubtitle": "Vytvořte platformovou WavezFM kampaň, která bude vidět nad chatem v každé místnosti.",
         "globalDonationGoalEnabledLabel": "Zobrazit globální cíl",
@@ -6488,6 +6556,24 @@
       "globalRoles": {
         "title": "Vlastní globální role",
         "subtitle": "Vytvořte kosmetické nebo funkční globální role a přesně definujte, která oprávnění každá z nich uděluje.",
+        "systemRoles": {
+          "title": "Oprávnění vestavěných rolí",
+          "description": "Nastavte přístup automaticky udělený rolemi Developer, Ambassador, Ověřený a Předplatitel. Změny platí pro všechny držitele role.",
+          "adminProtected": "Admin je chráněn",
+          "roleSelector": "Vybrat vestavěnou roli",
+          "roles": {
+            "developer": "Developer",
+            "ambassador": "Ambassador",
+            "verified": "Ověřený",
+            "subscriber": "Předplatitel"
+          },
+          "selectedCount": "{count} oprávnění pro tuto roli",
+          "restoreRole": "Obnovit výchozí",
+          "save": "Uložit oprávnění",
+          "saving": "Ukládání...",
+          "saveSuccess": "Oprávnění vestavěných rolí byla aktualizována.",
+          "saveError": "Oprávnění vestavěných rolí se nepodařilo aktualizovat."
+        },
         "newRole": "Nová role",
         "listCount": "{count} role(y)",
         "empty": "Zatím nebyly vytvořeny žádné vlastní globální role.",
@@ -6558,6 +6644,10 @@
           "room_superuser": {
             "label": "Superuživatel místnosti",
             "description": "Uděluje administrativní obcházení pro provozní akce uvnitř místností."
+          },
+          "review_room_events": {
+            "label": "Posuzovat události místností",
+            "description": "Umožňuje schvalovat nebo zamítat události odeslané hostiteli."
           },
           "clear_admin_logs": {
             "label": "Vymazejte administrátorské záznamy",
@@ -7490,19 +7580,35 @@
         "saveError": "Vlajku se nepodařilo zachránit.",
         "close": "Blízký vybírač vlajek"
       },
+      "pronouns": {
+        "label": "Zájmena",
+        "selectPlaceholder": "Vyberte svá zájmena",
+        "customPlaceholder": "Například: ona/její, on/jeho, oni/jejich",
+        "predefinedHint": "Volitelné. Vyberte zájmena zobrazená na profilu a rychlém profilu.",
+        "customHint": "Volitelné. Maximálně 40 znaků, zobrazených na profilu a rychlém profilu.",
+        "options": {
+          "none": "Nezobrazovat zájmena",
+          "she_her": "Ona/její",
+          "he_him": "On/jeho",
+          "they_them": "Oni/jejich",
+          "she_they": "Ona/oni",
+          "he_they": "On/oni",
+          "any": "Jakákoli zájmena"
+        }
+      },
       "bio": {
         "title": "Životopis",
         "subtitle": "Přidejte krátký úvod, který se objeví na vašem profilu a rychlý profil.",
         "label": "Tvůj životopis",
         "placeholder": "Řekni něco o sobě, o svém náladě...",
         "hint": "Maximálně 150 znaků. Základní markdown je podporován a tvůj bio se také objevuje v rychlém profilu místnosti.",
-        "edit": "Editace životopisu",
+        "edit": "Upravit profil",
         "cancel": "Zrušit",
         "empty": "Tvůj bio je stále prázdný. Přidejte krátkou větu, aby váš profil lépe kontextoval.",
-        "save": "Uložit si životopis",
-        "saving": "Ukládání bio...",
-        "saveSuccess": "Tvůj bio byl aktualizován.",
-        "saveError": "Teď bychom nemohli uložit tvůj životopis."
+        "save": "Uložit profil",
+        "saving": "Ukládání profilu...",
+        "saveSuccess": "Váš profil byl aktualizován.",
+        "saveError": "Váš profil se teď nepodařilo uložit."
       },
       "clearSlot": "Vyčistit drážku",
       "pickerEmpty": "Zatím nemáš žádné odznaky, ze kterých by si mohl vybírat.",
@@ -7514,6 +7620,8 @@
       "suspendedTitle": "Suspendován z místa",
       "suspendedSubtitle": "Tento účet je momentálně pozastaven z WavezFM.",
       "suspendedReason": "Důvod: {reason}",
+      "suspendedDefaultReason": "Účet pozastaven administrátorem.",
+      "suspendedWarningLimitReason": "Účet byl trvale pozastaven po 3 aktivních porušeních.",
       "status": {
         "online": "Online",
         "busy": "Práce",

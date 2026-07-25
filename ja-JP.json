@@ -632,6 +632,7 @@
         "ROOM_PERMISSION_MANAGE_QUEUE": "この部屋の DJ キューは管理できません。",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "この部屋の外部メディアは制御できません。",
         "ROOM_PERMISSION_MANAGE_POLLS": "この部屋で投票を作成することはできません。",
+        "ROOM_PERMISSION_CREATE_EVENTS": "この部屋でイベントを作成することはできません。",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "外部メディアを部屋に許可できるのは管理者だけです。",
         "ROOM_EXTERNAL_MEDIA_DISABLED": "プラットフォーム上では外部メディアが無効になっています。",
         "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "この部屋では外部メディアの使用が許可されていません。",
@@ -1427,6 +1428,10 @@
             "label": "投票を作成する",
             "description": "チャットの上部にピン留めした投票を作成できます。"
           },
+          "create_events": {
+            "label": "イベントを作成",
+            "description": "このルームのイベントを運営チームの承認に送信できます。"
+          },
           "manage_emojis": {
             "label": "絵文字の管理",
             "description": "部屋の絵文字の作成、編集、削除が可能です。"
@@ -1771,7 +1776,34 @@
         "dayEventCount": "{count} イベント",
         "noEventsForDayTitle": "この日は特に何もありません",
         "noEventsForDayDescription": "予定されているイベントを見るためにカレンダーの別の日を選んでください。",
-        "eventDateUnavailable": "日付不明"
+        "eventDateUnavailable": "日付不明",
+        "submitEvent": "イベントを申請",
+        "reviewEvents": "審査",
+        "submitTitle": "イベントを承認申請",
+        "submitSubtitle": "詳細を入力してください。スタッフの承認後に公開されます。",
+        "eventTitle": "タイトル",
+        "eventDescription": "説明",
+        "titlePtBr": "ポルトガル語のタイトル",
+        "titleEnUs": "英語のタイトル",
+        "descriptionPtBr": "ポルトガル語の説明",
+        "descriptionEnUs": "英語の説明",
+        "imageUrl": "画像URL",
+        "eventLink": "イベントリンク",
+        "startsAt": "開始",
+        "endsAt": "終了",
+        "cancel": "キャンセル",
+        "submitting": "送信中...",
+        "sendForReview": "承認申請を送信",
+        "submitError": "イベントを送信できませんでした。",
+        "reviewTitle": "イベント審査",
+        "reviewSubtitle": "ホストが申請したイベントを承認または却下します。",
+        "reviewLoading": "申請を読み込み中...",
+        "reviewLoadError": "申請を読み込めませんでした。",
+        "reviewError": "決定を保存できませんでした。",
+        "reviewEmpty": "保留中のイベントはありません",
+        "reviewEmptyDescription": "ホストからの申請がここに表示されます。",
+        "approve": "承認",
+        "reject": "却下"
       },
       "tabs": {
         "chat": "チャット",
@@ -2463,7 +2495,11 @@
         "unpin": "メッセージのピンを解除してください",
         "pinnedToast": "チャットの上部にピン留めされたメッセージ。",
         "unpinnedToast": "チャットの上部からメッセージが削除されました。",
-        "error": "今は固定されたメッセージを更新できませんでした。"
+        "error": "今は固定されたメッセージを更新できませんでした。",
+        "confirmTitle": "このメッセージを固定しますか？",
+        "confirmDescription": "{username}さんのメッセージをチャット上部に固定しますか？",
+        "confirm": "メッセージを固定",
+        "cancel": "キャンセル"
       },
       "actions": {
         "becomeFan": "ファンになる",
@@ -2690,6 +2726,7 @@
       "ROOM_NOT_FOUND": "部屋が見つかりません。",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "この部屋でルームボットを作成することはできません。",
       "ROOM_PERMISSION_MANAGE_POLLS": "この部屋で投票を作成することはできません。",
+      "ROOM_PERMISSION_CREATE_EVENTS": "この部屋でイベントを作成することはできません。",
       "ROOM_PERMISSION_MENTION_ROOM": "ここで部屋全体や部屋の役割を言及することはできません。",
       "ROOM_POLLS_DISABLED": "現在、投票は無効になっています。",
       "ROOM_POLL_NOT_ACTIVE": "この投票は現在は活動していません。",
@@ -2749,6 +2786,12 @@
       "PLAYLIST_REORDER_TRACK_SET_INVALID": "提出されたトラックはこのプレイリストと一致しません。",
       "PLAYLIST_NOT_FOUND": "プレイリストが見つかりません。",
       "INVALID_BIO": "プロフィールは最大でも150文字以内です。",
+      "INVALID_PRONOUNS": "代名詞は40文字以内で入力してください。",
+      "INVALID_PRONOUNS_OPTION": "有効な代名詞を選択してください。",
+      "INVALID_PLAYLIST_TRACK_TITLE": "曲名は1文字以上300文字以内で入力してください。",
+      "INVALID_PLAYLIST_TRACK_ARTIST": "アーティスト名は1文字以上200文字以内で入力してください。",
+      "INVALID_PLAYLIST_TRACK_METADATA": "この曲を更新するには曲名またはアーティスト名を入力してください。",
+      "PLAYLIST_TRACK_NOT_FOUND": "この曲はプレイリストに見つかりませんでした。",
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "チャット画像のアップロード期限は5分から7日以内になければなりません。",
       "INVALID_COLOR_THEME": "選択したカラーテーマは無効です。",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "プロフィールのスーパーファンの可視性設定は無効です。",
@@ -3284,6 +3327,18 @@
       "reorderError": "今はこのプレイリストを再注文できませんでした。",
       "moveToTop": "トップへ移動",
       "moveToEnd": "終了への移動",
+      "renameTrack": "曲名を変更",
+      "renameTrackHint": "変更した曲名とアーティスト名は、このプレイリスト内でのみ使用されます。",
+      "renameTrackTitleLabel": "曲名",
+      "renameTrackArtistLabel": "アーティスト",
+      "renameTrackInvalid": "曲名は1～300文字、アーティスト名は1～200文字で入力してください。",
+      "renameTrackRestore": "元に戻す",
+      "renameTrackCancel": "キャンセル",
+      "renameTrackSave": "変更を保存",
+      "renamingTrack": "保存中...",
+      "renameTrackUpdated": "{title}の名前を変更しました。",
+      "renameTrackRestored": "{title}の元の情報を復元しました。",
+      "renameTrackError": "現在、この曲の名前を変更できません。",
       "editClip": "カットトラック",
       "clipBadge": "{start}-{end}",
       "clipDialogSubtitle": "再生すべきセグメントを選びましょう。元の期間は {duration}。",
@@ -5596,6 +5651,14 @@
         "enable": "有効化",
         "disable": "隠れて",
         "delete": "削除",
+        "approve": "承認",
+        "reject": "却下",
+        "reviewError": "イベントを審査できませんでした。",
+        "approval": {
+          "pending": "保留中",
+          "approved": "承認済み",
+          "rejected": "却下済み"
+        },
         "eventBadgeTitle": "イベントバッジ",
         "eventBadgeSubtitle": "報告書には、イベント期間中に公開メッセージを送信したユーザーも記載されています。バッジは助成ボタンでしか付与されません。",
         "badgePlaceholder": "バッジを選びましょう",
@@ -6188,6 +6251,11 @@
         "applicationFormsEnabledSuccess": "申請フォームのページは有効になっていました。",
         "applicationFormsDisabledSuccess": "申請フォームのページは無効にされました。",
         "applicationFormsSaveError": "申請フォームのページを更新できませんでした。",
+        "customPronounsTitle": "代名詞の自由入力を許可",
+        "customPronounsSubtitle": "無効の場合、プロフィールでは定義済みの代名詞のみ選択できます。有効にすると自由入力を許可します。",
+        "customPronounsEnabledSuccess": "代名詞の自由入力を有効にしました。",
+        "customPronounsDisabledSuccess": "プロフィールでは定義済みの代名詞のみ使用するようになりました。",
+        "customPronounsSaveError": "代名詞の設定を更新できませんでした。",
         "globalDonationGoalTitle": "世界寄付目標",
         "globalDonationGoalSubtitle": "すべての部屋のチャットの上に表示するプラットフォーム全体の WavezFM キャンペーンを作成しましょう。",
         "globalDonationGoalEnabledLabel": "グローバル目標を示す",
@@ -6488,6 +6556,24 @@
       "globalRoles": {
         "title": "カスタムグローバル役割",
         "subtitle": "見た目や機能的なグローバルロールを作成し、それぞれがどの権限を付与するかを正確に定義します。",
+        "systemRoles": {
+          "title": "組み込みロールの権限",
+          "description": "Developer、Ambassador、認証済み、サブスクライバーが自動的に付与するアクセス権を設定します。変更はそのロールを持つ全員に適用されます。",
+          "adminProtected": "Admin は保護されています",
+          "roleSelector": "組み込みロールを選択",
+          "roles": {
+            "developer": "Developer",
+            "ambassador": "Ambassador",
+            "verified": "認証済み",
+            "subscriber": "サブスクライバー"
+          },
+          "selectedCount": "このロールの権限: {count}件",
+          "restoreRole": "デフォルトに戻す",
+          "save": "権限を保存",
+          "saving": "保存中...",
+          "saveSuccess": "組み込みロールの権限を更新しました。",
+          "saveError": "組み込みロールの権限を更新できませんでした。"
+        },
         "newRole": "新たな役割",
         "listCount": "{count} 役",
         "empty": "カスタムのグローバルロールはまだ作成されていません。",
@@ -6558,6 +6644,10 @@
           "room_superuser": {
             "label": "ルームスーパーユーザー",
             "description": "部屋内の運用作業に対して管理上のバイパスを付与します。"
+          },
+          "review_room_events": {
+            "label": "ルームイベントを審査",
+            "description": "ホストが申請したイベントを承認または却下できます。"
           },
           "clear_admin_logs": {
             "label": "管理者ログをクリアする",
@@ -7490,19 +7580,35 @@
         "saveError": "旗を救えなかった。",
         "close": "フラッグピッカーを閉じる"
       },
+      "pronouns": {
+        "label": "代名詞",
+        "selectPlaceholder": "代名詞を選択",
+        "customPlaceholder": "例：she/her、he/him、they/them",
+        "predefinedHint": "任意。プロフィールとクイックプロフィールに表示する代名詞を選択します。",
+        "customHint": "任意。40文字以内で、プロフィールとクイックプロフィールに表示されます。",
+        "options": {
+          "none": "代名詞を表示しない",
+          "she_her": "She/her",
+          "he_him": "He/him",
+          "they_them": "They/them",
+          "she_they": "She/they",
+          "he_they": "He/they",
+          "any": "どの代名詞でも可"
+        }
+      },
       "bio": {
         "title": "経歴",
         "subtitle": "プロフィールやクイックプロフィールに表示される短い紹介文を追加しましょう。",
         "label": "あなたのプロフィール",
         "placeholder": "少し自己紹介や雰囲気について教えてください...",
         "hint": "最大150文字まで。基本的な markdown はサポートされており、あなたのプロフィールもルームのクイックプロフィールに表示されます。",
-        "edit": "編集:プロフィール",
+        "edit": "プロフィールを編集",
         "cancel": "キャンセル",
         "empty": "あなたのプロフィールはまだ空っぽです。プロフィールにもっと文脈を与えるために短い行を追加しましょう。",
-        "save": "プロフィールを保存してください",
-        "saving": "バイオを保存する...",
-        "saveSuccess": "あなたのプロフィールが更新されました。",
-        "saveError": "今はあなたのプロフィールを保存できませんでした。"
+        "save": "プロフィールを保存",
+        "saving": "プロフィールを保存中...",
+        "saveSuccess": "プロフィールを更新しました。",
+        "saveError": "現在、プロフィールを保存できません。"
       },
       "clearSlot": "スロットクリア",
       "pickerEmpty": "まだ選べるバッジはありません。",
@@ -7514,6 +7620,8 @@
       "suspendedTitle": "現場から停止",
       "suspendedSubtitle": "このアカウントは現在 WavezFMから停止されています。",
       "suspendedReason": "理由: {reason}",
+      "suspendedDefaultReason": "管理者によってアカウントが停止されました。",
+      "suspendedWarningLimitReason": "3件の有効な違反により、アカウントが永久停止されました。",
       "status": {
         "online": "オンライン",
         "busy": "忙しい",

@@ -632,6 +632,7 @@
         "ROOM_PERMISSION_MANAGE_QUEUE": "이 방에서는 DJ 대기열을 관리할 수 없습니다.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "이 방의 외부 미디어를 제어할 수 없습니다.",
         "ROOM_PERMISSION_MANAGE_POLLS": "이 방에서는 설문조사를 만들 수 없습니다.",
+        "ROOM_PERMISSION_CREATE_EVENTS": "이 방에서는 이벤트를 만들 수 없습니다.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "관리자만 방에 외부 미디어를 허용할 수 있습니다.",
         "ROOM_EXTERNAL_MEDIA_DISABLED": "플랫폼에서 외부 미디어가 비활성화되어 있습니다.",
         "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "이 방에는 외부 미디어가 허용되지 않습니다.",
@@ -1427,6 +1428,10 @@
             "label": "설문조사 만들기",
             "description": "채팅 상단에 고정된 설문조사를 만들 수 있습니다."
           },
+          "create_events": {
+            "label": "이벤트 만들기",
+            "description": "이 방의 이벤트를 운영진의 승인을 위해 제출할 수 있습니다."
+          },
           "manage_emojis": {
             "label": "이모티콘 관리",
             "description": "방 이모티콘을 생성, 편집, 삭제할 수 있습니다."
@@ -1771,7 +1776,34 @@
         "dayEventCount": "{count} 이벤트",
         "noEventsForDayTitle": "이 날은 이벤트가 없습니다.",
         "noEventsForDayDescription": "예정된 이벤트를 보려면 달력에서 다른 날짜를 선택하세요.",
-        "eventDateUnavailable": "날짜를 알 수 없음"
+        "eventDateUnavailable": "날짜를 알 수 없음",
+        "submitEvent": "이벤트 제출",
+        "reviewEvents": "검토",
+        "submitTitle": "이벤트 승인 요청",
+        "submitSubtitle": "세부 정보를 입력하세요. 스태프 승인 후에만 공개됩니다.",
+        "eventTitle": "제목",
+        "eventDescription": "설명",
+        "titlePtBr": "포르투갈어 제목",
+        "titleEnUs": "영어 제목",
+        "descriptionPtBr": "포르투갈어 설명",
+        "descriptionEnUs": "영어 설명",
+        "imageUrl": "이미지 URL",
+        "eventLink": "이벤트 링크",
+        "startsAt": "시작",
+        "endsAt": "종료",
+        "cancel": "취소",
+        "submitting": "제출 중...",
+        "sendForReview": "승인 요청 보내기",
+        "submitError": "이벤트를 제출하지 못했습니다.",
+        "reviewTitle": "이벤트 승인",
+        "reviewSubtitle": "호스트가 제출한 이벤트를 승인하거나 거절합니다.",
+        "reviewLoading": "요청 불러오는 중...",
+        "reviewLoadError": "요청을 불러오지 못했습니다.",
+        "reviewError": "결정을 저장하지 못했습니다.",
+        "reviewEmpty": "대기 중인 이벤트 없음",
+        "reviewEmptyDescription": "호스트의 새 요청이 여기에 표시됩니다.",
+        "approve": "승인",
+        "reject": "거절"
       },
       "tabs": {
         "chat": "채팅",
@@ -2463,7 +2495,11 @@
         "unpin": "메시지 고정 해제",
         "pinnedToast": "메시지가 채팅 상단에 고정되었습니다.",
         "unpinnedToast": "채팅 상단에서 메시지가 삭제되었습니다.",
-        "error": "지금은 고정된 메시지를 업데이트할 수 없습니다."
+        "error": "지금은 고정된 메시지를 업데이트할 수 없습니다.",
+        "confirmTitle": "이 메시지를 고정할까요?",
+        "confirmDescription": "{username}님의 메시지를 채팅 상단에 고정할까요?",
+        "confirm": "메시지 고정",
+        "cancel": "취소"
       },
       "actions": {
         "becomeFan": "팬 되기",
@@ -2690,6 +2726,7 @@
       "ROOM_NOT_FOUND": "방을 찾을 수 없습니다.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "이 방에서는 룸봇을 생성할 수 없습니다.",
       "ROOM_PERMISSION_MANAGE_POLLS": "이 방에서는 설문조사를 만들 수 없습니다.",
+      "ROOM_PERMISSION_CREATE_EVENTS": "이 방에서는 이벤트를 만들 수 없습니다.",
       "ROOM_PERMISSION_MENTION_ROOM": "여기서 전체 룸이나 룸 역할을 언급할 수는 없습니다.",
       "ROOM_POLLS_DISABLED": "현재 설문조사가 비활성화되어 있습니다.",
       "ROOM_POLL_NOT_ACTIVE": "이 설문조사는 더 이상 활성화되지 않습니다.",
@@ -2749,6 +2786,12 @@
       "PLAYLIST_REORDER_TRACK_SET_INVALID": "제출된 트랙이 이 재생목록과 일치하지 않습니다.",
       "PLAYLIST_NOT_FOUND": "재생목록을 찾을 수 없습니다.",
       "INVALID_BIO": "약력은 최대 150자여야 합니다.",
+      "INVALID_PRONOUNS": "대명사는 최대 40자까지 입력할 수 있습니다.",
+      "INVALID_PRONOUNS_OPTION": "올바른 대명사 옵션을 선택하세요.",
+      "INVALID_PLAYLIST_TRACK_TITLE": "트랙 제목은 1자 이상 300자 이하여야 합니다.",
+      "INVALID_PLAYLIST_TRACK_ARTIST": "아티스트 이름은 1자 이상 200자 이하여야 합니다.",
+      "INVALID_PLAYLIST_TRACK_METADATA": "이 트랙을 수정하려면 제목이나 아티스트를 입력하세요.",
+      "PLAYLIST_TRACK_NOT_FOUND": "플레이리스트에서 이 트랙을 찾을 수 없습니다.",
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "채팅 이미지 업로드 만료 기간은 5분에서 7일 사이여야 합니다.",
       "INVALID_COLOR_THEME": "선택한 색상 테마가 잘못되었습니다.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "프로필 열성 팬 공개 설정이 잘못되었습니다.",
@@ -3284,6 +3327,18 @@
       "reorderError": "지금은 이 재생목록을 재정렬할 수 없습니다.",
       "moveToTop": "맨 위로 이동",
       "moveToEnd": "끝으로 이동",
+      "renameTrack": "트랙 이름 변경",
+      "renameTrackHint": "변경한 제목과 아티스트는 이 플레이리스트에만 적용됩니다.",
+      "renameTrackTitleLabel": "제목",
+      "renameTrackArtistLabel": "아티스트",
+      "renameTrackInvalid": "제목은 1~300자, 아티스트는 1~200자로 입력하세요.",
+      "renameTrackRestore": "원본 복원",
+      "renameTrackCancel": "취소",
+      "renameTrackSave": "변경 사항 저장",
+      "renamingTrack": "저장 중...",
+      "renameTrackUpdated": "{title}의 이름을 변경했습니다.",
+      "renameTrackRestored": "{title}의 원래 정보를 복원했습니다.",
+      "renameTrackError": "지금은 이 트랙의 이름을 변경할 수 없습니다.",
       "editClip": "트랙 자르기",
       "clipBadge": "{start}-{end}",
       "clipDialogSubtitle": "재생해야 하는 세그먼트를 선택합니다. 원래 기간은 {duration}입니다.",
@@ -5596,6 +5651,14 @@
         "enable": "활성화",
         "disable": "숨기기",
         "delete": "제거",
+        "approve": "승인",
+        "reject": "거절",
+        "reviewError": "이벤트를 검토하지 못했습니다.",
+        "approval": {
+          "pending": "대기 중",
+          "approved": "승인됨",
+          "rejected": "거절됨"
+        },
         "eventBadgeTitle": "이벤트 배지",
         "eventBadgeSubtitle": "보고서에는 이벤트 기간 동안 공개 메시지를 보낸 사용자가 나열됩니다. 배지는 부여 버튼을 통해서만 부여됩니다.",
         "badgePlaceholder": "배지를 선택하세요",
@@ -6188,6 +6251,11 @@
         "applicationFormsEnabledSuccess": "신청서 페이지가 활성화되었습니다.",
         "applicationFormsDisabledSuccess": "신청서 페이지가 비활성화되었습니다.",
         "applicationFormsSaveError": "신청서 페이지를 업데이트할 수 없습니다.",
+        "customPronounsTitle": "사용자 지정 대명사 허용",
+        "customPronounsSubtitle": "끄면 프로필에서 미리 정의된 대명사만 선택할 수 있습니다. 켜면 자유롭게 입력할 수 있습니다.",
+        "customPronounsEnabledSuccess": "사용자 지정 대명사를 활성화했습니다.",
+        "customPronounsDisabledSuccess": "이제 프로필에서 미리 정의된 대명사만 사용합니다.",
+        "customPronounsSaveError": "대명사 옵션을 업데이트할 수 없습니다.",
         "globalDonationGoalTitle": "글로벌 기부 목표",
         "globalDonationGoalSubtitle": "플랫폼 전체의 WavezFM 캠페인을 만들어 모든 방의 채팅 위에 표시하세요.",
         "globalDonationGoalEnabledLabel": "글로벌 목표 표시",
@@ -6488,6 +6556,24 @@
       "globalRoles": {
         "title": "사용자 정의 전역 역할",
         "subtitle": "외관상 또는 기능적 전역 역할을 생성하고 각 역할이 부여하는 권한을 정확하게 정의합니다.",
+        "systemRoles": {
+          "title": "기본 역할 권한",
+          "description": "Developer, Ambassador, 인증됨, 구독자 역할이 자동으로 부여하는 접근 권한을 설정합니다. 변경 사항은 해당 역할을 가진 모든 사용자에게 적용됩니다.",
+          "adminProtected": "Admin 보호됨",
+          "roleSelector": "기본 역할 선택",
+          "roles": {
+            "developer": "Developer",
+            "ambassador": "Ambassador",
+            "verified": "인증됨",
+            "subscriber": "구독자"
+          },
+          "selectedCount": "이 역할의 권한 {count}개",
+          "restoreRole": "기본값 복원",
+          "save": "권한 저장",
+          "saving": "저장 중...",
+          "saveSuccess": "기본 역할 권한이 업데이트되었습니다.",
+          "saveError": "기본 역할 권한을 업데이트하지 못했습니다."
+        },
         "newRole": "새로운 역할",
         "listCount": "{count} 역할",
         "empty": "아직 사용자 정의 전역 역할이 생성되지 않았습니다.",
@@ -6558,6 +6644,10 @@
           "room_superuser": {
             "label": "룸 수퍼유저",
             "description": "방 내부의 운영 작업에 대한 관리 우회를 허용합니다."
+          },
+          "review_room_events": {
+            "label": "룸 이벤트 검토",
+            "description": "호스트가 제출한 이벤트를 승인하거나 거절할 수 있습니다."
           },
           "clear_admin_logs": {
             "label": "관리자 로그 지우기",
@@ -7490,19 +7580,35 @@
         "saveError": "플래그를 저장할 수 없습니다.",
         "close": "플래그 선택기 닫기"
       },
+      "pronouns": {
+        "label": "대명사",
+        "selectPlaceholder": "대명사 선택",
+        "customPlaceholder": "예: she/her, he/him, they/them",
+        "predefinedHint": "선택 사항입니다. 프로필과 빠른 프로필에 표시할 대명사를 선택하세요.",
+        "customHint": "선택 사항입니다. 최대 40자이며 프로필과 빠른 프로필에 표시됩니다.",
+        "options": {
+          "none": "대명사 표시 안 함",
+          "she_her": "She/her",
+          "he_him": "He/him",
+          "they_them": "They/them",
+          "she_they": "She/they",
+          "he_they": "He/they",
+          "any": "어떤 대명사든"
+        }
+      },
       "bio": {
         "title": "바이오",
         "subtitle": "프로필과 빠른 프로필에 표시되는 짧은 소개를 추가하세요.",
         "label": "당신의 약력",
         "placeholder": "자신에 대해 조금 말해주세요. 당신의 분위기는...",
         "hint": "최대 150자입니다. 기본 markdown가 지원되며 귀하의 약력도 방 빠른 프로필에 표시됩니다.",
-        "edit": "약력 편집",
+        "edit": "프로필 편집",
         "cancel": "취소",
         "empty": "귀하의 약력은 아직 비어 있습니다. 프로필에 더 많은 맥락을 제공하려면 짧은 줄을 추가하세요.",
-        "save": "약력 저장",
-        "saving": "바이오 저장 중...",
-        "saveSuccess": "귀하의 약력이 업데이트되었습니다.",
-        "saveError": "지금은 약력을 저장할 수 없습니다."
+        "save": "프로필 저장",
+        "saving": "프로필 저장 중...",
+        "saveSuccess": "프로필이 업데이트되었습니다.",
+        "saveError": "지금은 프로필을 저장할 수 없습니다."
       },
       "clearSlot": "슬롯 지우기",
       "pickerEmpty": "아직 선택할 수 있는 배지가 없습니다.",
@@ -7514,6 +7620,8 @@
       "suspendedTitle": "사이트에서 정지됨",
       "suspendedSubtitle": "이 계정은 현재 WavezFM에서 정지되었습니다.",
       "suspendedReason": "이유: {reason}",
+      "suspendedDefaultReason": "관리자에 의해 계정이 정지되었습니다.",
+      "suspendedWarningLimitReason": "활성 위반 3건으로 계정이 영구 정지되었습니다.",
       "status": {
         "online": "온라인",
         "busy": "바쁨",

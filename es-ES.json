@@ -632,6 +632,7 @@
         "ROOM_PERMISSION_MANAGE_QUEUE": "No puedes gestionar la cola de DJ en esta sala.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "No puedes controlar los medios externos de esta sala.",
         "ROOM_PERMISSION_MANAGE_POLLS": "No puedes crear encuestas en esta sala.",
+        "ROOM_PERMISSION_CREATE_EVENTS": "No puedes crear eventos en esta sala.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Solo los administradores pueden permitir medios externos para una sala.",
         "ROOM_EXTERNAL_MEDIA_DISABLED": "Los medios externos están deshabilitados en la plataforma.",
         "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "No se ha permitido el uso de medios externos en esta sala.",
@@ -1427,6 +1428,10 @@
             "label": "Crear encuestas",
             "description": "Permite crear encuestas fijadas en la parte superior del chat."
           },
+          "create_events": {
+            "label": "Crear eventos",
+            "description": "Permite enviar eventos de esta sala para que el equipo los apruebe."
+          },
           "manage_emojis": {
             "label": "Gestionar emojis",
             "description": "Permite crear, editar y eliminar emojis de sala."
@@ -1771,7 +1776,34 @@
         "dayEventCount": "{count} evento(s)",
         "noEventsForDayTitle": "No hay eventos en ese día",
         "noEventsForDayDescription": "Elige otro día en el calendario para ver los eventos programados.",
-        "eventDateUnavailable": "Fecha no disponible"
+        "eventDateUnavailable": "Fecha no disponible",
+        "submitEvent": "Enviar evento",
+        "reviewEvents": "Revisar",
+        "submitTitle": "Enviar evento para aprobación",
+        "submitSubtitle": "Completa los datos. El evento solo será visible tras la aprobación del equipo.",
+        "eventTitle": "Título",
+        "eventDescription": "Descripción",
+        "titlePtBr": "Título en portugués",
+        "titleEnUs": "Título en inglés",
+        "descriptionPtBr": "Descripción en portugués",
+        "descriptionEnUs": "Descripción en inglés",
+        "imageUrl": "URL de la imagen",
+        "eventLink": "Enlace del evento",
+        "startsAt": "Inicio",
+        "endsAt": "Fin",
+        "cancel": "Cancelar",
+        "submitting": "Enviando...",
+        "sendForReview": "Enviar para aprobación",
+        "submitError": "No se pudo enviar el evento.",
+        "reviewTitle": "Aprobación de eventos",
+        "reviewSubtitle": "Aprueba o rechaza los eventos enviados por el anfitrión.",
+        "reviewLoading": "Cargando solicitudes...",
+        "reviewLoadError": "No se pudieron cargar las solicitudes.",
+        "reviewError": "No se pudo guardar la decisión.",
+        "reviewEmpty": "No hay eventos pendientes",
+        "reviewEmptyDescription": "Las solicitudes del anfitrión aparecerán aquí.",
+        "approve": "Aprobar",
+        "reject": "Rechazar"
       },
       "tabs": {
         "chat": "Chat",
@@ -2463,7 +2495,11 @@
         "unpin": "Mensaje de desenganchar",
         "pinnedToast": "Mensaje fijado en la parte superior del chat.",
         "unpinnedToast": "Mensaje eliminado de la parte superior del chat.",
-        "error": "No pudimos actualizar el mensaje fijado ahora mismo."
+        "error": "No pudimos actualizar el mensaje fijado ahora mismo.",
+        "confirmTitle": "¿Fijar este mensaje?",
+        "confirmDescription": "¿Quieres fijar el mensaje de {username} en la parte superior del chat?",
+        "confirm": "Fijar mensaje",
+        "cancel": "Cancelar"
       },
       "actions": {
         "becomeFan": "Hazte fan",
@@ -2690,6 +2726,7 @@
       "ROOM_NOT_FOUND": "Sala no encontrada.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "No puedes crear bots de sala en esta sala.",
       "ROOM_PERMISSION_MANAGE_POLLS": "No puedes crear encuestas en esta sala.",
+      "ROOM_PERMISSION_CREATE_EVENTS": "No puedes crear eventos en esta sala.",
       "ROOM_PERMISSION_MENTION_ROOM": "No puedes mencionar aquí toda la sala o los roles de la sala.",
       "ROOM_POLLS_DISABLED": "Las urnas están desactivadas ahora mismo.",
       "ROOM_POLL_NOT_ACTIVE": "Esta encuesta ya no está activa.",
@@ -2749,6 +2786,12 @@
       "PLAYLIST_REORDER_TRACK_SET_INVALID": "Las canciones enviadas no coinciden con esta lista de reproducción.",
       "PLAYLIST_NOT_FOUND": "Lista de reproducción no encontrada.",
       "INVALID_BIO": "La biografía debe tener como mucho 150 caracteres.",
+      "INVALID_PRONOUNS": "Los pronombres deben tener como máximo 40 caracteres.",
+      "INVALID_PRONOUNS_OPTION": "Elige una opción de pronombres válida.",
+      "INVALID_PLAYLIST_TRACK_TITLE": "El título de la pista debe tener entre 1 y 300 caracteres.",
+      "INVALID_PLAYLIST_TRACK_ARTIST": "El artista de la pista debe tener entre 1 y 200 caracteres.",
+      "INVALID_PLAYLIST_TRACK_METADATA": "Introduce un título o artista para actualizar esta pista.",
+      "PLAYLIST_TRACK_NOT_FOUND": "No se encontró esta pista en la lista de reproducción.",
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "La caducidad de la subida de imágenes del chat debe ser entre 5 minutos y 7 días.",
       "INVALID_COLOR_THEME": "El tema de color seleccionado no es válido.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "La preferencia de visibilidad de superfans del perfil no es válida.",
@@ -3284,6 +3327,18 @@
       "reorderError": "No pudimos reordenar esta lista ahora mismo.",
       "moveToTop": "Pasar a la parte superior",
       "moveToEnd": "Movimiento al final",
+      "renameTrack": "Cambiar nombre de la pista",
+      "renameTrackHint": "El título y el artista personalizados solo se aplican a esta lista de reproducción.",
+      "renameTrackTitleLabel": "Título",
+      "renameTrackArtistLabel": "Artista",
+      "renameTrackInvalid": "Introduce un título de entre 1 y 300 caracteres y un artista de entre 1 y 200 caracteres.",
+      "renameTrackRestore": "Restaurar original",
+      "renameTrackCancel": "Cancelar",
+      "renameTrackSave": "Guardar cambios",
+      "renamingTrack": "Guardando...",
+      "renameTrackUpdated": "Se cambió el nombre de {title}.",
+      "renameTrackRestored": "Se restauraron los datos originales de {title}.",
+      "renameTrackError": "No pudimos cambiar el nombre de esta pista ahora mismo.",
       "editClip": "Vía cortada",
       "clipBadge": "{start}-{end}",
       "clipDialogSubtitle": "Elige el segmento que debe sonar. La duración original es {duration}.",
@@ -5596,6 +5651,14 @@
         "enable": "Habilitar",
         "disable": "Escóndete",
         "delete": "Eliminar",
+        "approve": "Aprobar",
+        "reject": "Rechazar",
+        "reviewError": "No se pudo revisar el evento.",
+        "approval": {
+          "pending": "Pendiente",
+          "approved": "Aprobado",
+          "rejected": "Rechazado"
+        },
         "eventBadgeTitle": "Insignia del evento",
         "eventBadgeSubtitle": "El informe enumera a los usuarios que enviaron mensajes públicos durante el periodo del evento. La insignia solo se concede mediante el botón de conceder.",
         "badgePlaceholder": "Elige la insignia",
@@ -6188,6 +6251,11 @@
         "applicationFormsEnabledSuccess": "La página de formularios de solicitud estaba habilitada.",
         "applicationFormsDisabledSuccess": "La página de formularios de solicitud estaba desactivada.",
         "applicationFormsSaveError": "No pudimos actualizar la página de formularios de solicitud.",
+        "customPronounsTitle": "Permitir pronombres personalizados",
+        "customPronounsSubtitle": "Si está desactivado, los perfiles solo pueden usar opciones predefinidas. Actívalo para permitir texto libre.",
+        "customPronounsEnabledSuccess": "Se activaron los pronombres personalizados.",
+        "customPronounsDisabledSuccess": "Los perfiles ahora solo usan pronombres predefinidos.",
+        "customPronounsSaveError": "No pudimos actualizar las opciones de pronombres.",
         "globalDonationGoalTitle": "Objetivo global de donación",
         "globalDonationGoalSubtitle": "Crea una campaña WavezFM a nivel de plataforma para mostrar por encima del chat en cada sala.",
         "globalDonationGoalEnabledLabel": "Mostrar objetivo global",
@@ -6488,6 +6556,24 @@
       "globalRoles": {
         "title": "Roles globales personalizados",
         "subtitle": "Crea roles globales cosméticos o funcionales y define exactamente qué permisos concede cada uno.",
+        "systemRoles": {
+          "title": "Permisos de roles integrados",
+          "description": "Define el acceso concedido automáticamente por Developer, Ambassador, Verificado y Suscriptor. Los cambios se aplican a todas las personas con el rol.",
+          "adminProtected": "Admin protegido",
+          "roleSelector": "Seleccionar rol integrado",
+          "roles": {
+            "developer": "Developer",
+            "ambassador": "Ambassador",
+            "verified": "Verificado",
+            "subscriber": "Suscriptor"
+          },
+          "selectedCount": "{count} permiso(s) en este rol",
+          "restoreRole": "Restaurar valor predeterminado",
+          "save": "Guardar permisos",
+          "saving": "Guardando...",
+          "saveSuccess": "Se actualizaron los permisos de los roles integrados.",
+          "saveError": "No se pudieron actualizar los permisos de los roles integrados."
+        },
         "newRole": "Nuevo papel",
         "listCount": "{count} Rol(es)",
         "empty": "Aún no se han creado roles globales personalizados.",
@@ -6558,6 +6644,10 @@
           "room_superuser": {
             "label": "Superusuario de sala",
             "description": "Concede bypass administrativo para acciones operativas dentro de las salas."
+          },
+          "review_room_events": {
+            "label": "Revisar eventos de salas",
+            "description": "Permite aprobar o rechazar eventos enviados por anfitriones."
           },
           "clear_admin_logs": {
             "label": "Borrar registros administrativos",
@@ -7490,19 +7580,35 @@
         "saveError": "No pudo salvar la bandera.",
         "close": "Recogidor de banderas cercanas"
       },
+      "pronouns": {
+        "label": "Pronombres",
+        "selectPlaceholder": "Elige tus pronombres",
+        "customPlaceholder": "Por ejemplo: ella, él, elle",
+        "predefinedHint": "Opcional. Elige los pronombres que aparecen en tu perfil y perfil rápido.",
+        "customHint": "Opcional. Hasta 40 caracteres, visibles en tu perfil y perfil rápido.",
+        "options": {
+          "none": "No mostrar pronombres",
+          "she_her": "Ella",
+          "he_him": "Él",
+          "they_them": "Elle",
+          "she_they": "Ella/elle",
+          "he_they": "Él/elle",
+          "any": "Cualquier pronombre"
+        }
+      },
       "bio": {
         "title": "Biografía",
         "subtitle": "Añade una breve introducción que aparezca en tu perfil y un perfil rápido.",
         "label": "Tu biografía",
         "placeholder": "Habla un poco de ti, de tu rollo...",
         "hint": "Máximo 150 caracteres. Se soporta markdown básico y tu biografía también aparece en el perfil rápido de la sala.",
-        "edit": "Editar biografía",
+        "edit": "Editar perfil",
         "cancel": "Cancelar",
         "empty": "Tu biografía sigue vacía. Añade una línea corta para dar más contexto a tu perfil.",
-        "save": "Guardar la biografía",
-        "saving": "Salvar bio...",
-        "saveSuccess": "Tu biografía ha sido actualizada.",
-        "saveError": "No pudimos salvar tu biografía ahora mismo."
+        "save": "Guardar perfil",
+        "saving": "Guardando perfil...",
+        "saveSuccess": "Tu perfil se ha actualizado.",
+        "saveError": "No pudimos guardar tu perfil ahora mismo."
       },
       "clearSlot": "Ranura de limpieza",
       "pickerEmpty": "Aún no tienes ninguna insignia para elegir.",
@@ -7514,6 +7620,8 @@
       "suspendedTitle": "Suspendido del lugar",
       "suspendedSubtitle": "Esta cuenta está actualmente suspendida de WavezFM.",
       "suspendedReason": "Motivo: {reason}",
+      "suspendedDefaultReason": "Cuenta suspendida por un administrador.",
+      "suspendedWarningLimitReason": "Cuenta suspendida permanentemente tras 3 infracciones activas.",
       "status": {
         "online": "En línea",
         "busy": "Ocupado",

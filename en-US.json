@@ -632,6 +632,7 @@
         "ROOM_PERMISSION_MANAGE_QUEUE": "You cannot manage the DJ queue in this room.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "You cannot control this room's external media.",
         "ROOM_PERMISSION_MANAGE_POLLS": "You cannot create polls in this room.",
+        "ROOM_PERMISSION_CREATE_EVENTS": "You cannot create events in this room.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Only admins can allow external media for a room.",
         "ROOM_EXTERNAL_MEDIA_DISABLED": "External media is disabled on the platform.",
         "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "External media has not been allowed for this room.",
@@ -1427,6 +1428,10 @@
             "label": "Create polls",
             "description": "Allows creating polls pinned at the top of chat."
           },
+          "create_events": {
+            "label": "Create events",
+            "description": "Allows submitting events for this room for staff approval."
+          },
           "manage_emojis": {
             "label": "Manage emojis",
             "description": "Allows creating, editing, and deleting room emojis."
@@ -1771,7 +1776,34 @@
         "dayEventCount": "{count} event(s)",
         "noEventsForDayTitle": "No events on this day",
         "noEventsForDayDescription": "Pick another day in the calendar to see scheduled events.",
-        "eventDateUnavailable": "Date unavailable"
+        "eventDateUnavailable": "Date unavailable",
+        "submitEvent": "Submit event",
+        "reviewEvents": "Review",
+        "submitTitle": "Submit event for approval",
+        "submitSubtitle": "Complete the event details. It will only become visible after staff approval.",
+        "eventTitle": "Title",
+        "eventDescription": "Description",
+        "titlePtBr": "Portuguese title",
+        "titleEnUs": "English title",
+        "descriptionPtBr": "Portuguese description",
+        "descriptionEnUs": "English description",
+        "imageUrl": "Image URL",
+        "eventLink": "Event link",
+        "startsAt": "Starts",
+        "endsAt": "Ends",
+        "cancel": "Cancel",
+        "submitting": "Submitting...",
+        "sendForReview": "Submit for approval",
+        "submitError": "We could not submit the event.",
+        "reviewTitle": "Event approval",
+        "reviewSubtitle": "Approve or reject events submitted by this room's host.",
+        "reviewLoading": "Loading requests...",
+        "reviewLoadError": "We could not load the requests.",
+        "reviewError": "We could not save the decision.",
+        "reviewEmpty": "No pending events",
+        "reviewEmptyDescription": "New requests from the host will appear here.",
+        "approve": "Approve",
+        "reject": "Reject"
       },
       "tabs": {
         "chat": "Chat",
@@ -2463,7 +2495,11 @@
         "unpin": "Unpin message",
         "pinnedToast": "Message pinned to the top of the chat.",
         "unpinnedToast": "Message removed from the top of the chat.",
-        "error": "We couldn't update the pinned message right now."
+        "error": "We couldn't update the pinned message right now.",
+        "confirmTitle": "Pin this message?",
+        "confirmDescription": "Pin {username}'s message to the top of the chat?",
+        "confirm": "Pin message",
+        "cancel": "Cancel"
       },
       "actions": {
         "becomeFan": "Become fan",
@@ -2690,6 +2726,7 @@
       "ROOM_NOT_FOUND": "Room not found.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "You cannot create room bots in this room.",
       "ROOM_PERMISSION_MANAGE_POLLS": "You cannot create polls in this room.",
+      "ROOM_PERMISSION_CREATE_EVENTS": "You cannot create events in this room.",
       "ROOM_PERMISSION_MENTION_ROOM": "You cannot mention the whole room or room roles here.",
       "ROOM_POLLS_DISABLED": "Polls are disabled right now.",
       "ROOM_POLL_NOT_ACTIVE": "This poll is no longer active.",
@@ -2749,6 +2786,12 @@
       "PLAYLIST_REORDER_TRACK_SET_INVALID": "The submitted tracks do not match this playlist.",
       "PLAYLIST_NOT_FOUND": "Playlist not found.",
       "INVALID_BIO": "The bio must be at most 150 characters long.",
+      "INVALID_PRONOUNS": "Pronouns must be at most 40 characters long.",
+      "INVALID_PRONOUNS_OPTION": "Choose a valid pronoun option.",
+      "INVALID_PLAYLIST_TRACK_TITLE": "The track title must be between 1 and 300 characters.",
+      "INVALID_PLAYLIST_TRACK_ARTIST": "The track artist must be between 1 and 200 characters.",
+      "INVALID_PLAYLIST_TRACK_METADATA": "Enter a title or artist to update this track.",
+      "PLAYLIST_TRACK_NOT_FOUND": "This track was not found in the playlist.",
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "Chat image upload expiration must be between 5 minutes and 7 days.",
       "INVALID_COLOR_THEME": "The selected color theme is invalid.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "The profile superfans visibility preference is invalid.",
@@ -3284,6 +3327,18 @@
       "reorderError": "We could not reorder this playlist right now.",
       "moveToTop": "Move to top",
       "moveToEnd": "Move to end",
+      "renameTrack": "Rename track",
+      "renameTrackHint": "The custom title and artist apply only to this playlist.",
+      "renameTrackTitleLabel": "Title",
+      "renameTrackArtistLabel": "Artist",
+      "renameTrackInvalid": "Enter a title between 1 and 300 characters and an artist between 1 and 200 characters.",
+      "renameTrackRestore": "Restore original",
+      "renameTrackCancel": "Cancel",
+      "renameTrackSave": "Save changes",
+      "renamingTrack": "Saving...",
+      "renameTrackUpdated": "{title} was renamed.",
+      "renameTrackRestored": "The original details for {title} were restored.",
+      "renameTrackError": "We could not rename this track right now.",
       "editClip": "Cut track",
       "clipBadge": "{start}-{end}",
       "clipDialogSubtitle": "Choose the segment that should play. The original duration is {duration}.",
@@ -5596,6 +5651,14 @@
         "enable": "Enable",
         "disable": "Hide",
         "delete": "Remove",
+        "approve": "Approve",
+        "reject": "Reject",
+        "reviewError": "We could not review the event.",
+        "approval": {
+          "pending": "Pending",
+          "approved": "Approved",
+          "rejected": "Rejected"
+        },
         "eventBadgeTitle": "Event badge",
         "eventBadgeSubtitle": "The report lists users who sent public messages during the event period. The badge is only granted by the grant button.",
         "badgePlaceholder": "Choose the badge",
@@ -6188,6 +6251,11 @@
         "applicationFormsEnabledSuccess": "The application forms page was enabled.",
         "applicationFormsDisabledSuccess": "The application forms page was disabled.",
         "applicationFormsSaveError": "We could not update the application forms page.",
+        "customPronounsTitle": "Allow custom pronouns",
+        "customPronounsSubtitle": "When disabled, profiles can only use predefined pronoun options. Enable it to allow free text.",
+        "customPronounsEnabledSuccess": "Custom pronouns were enabled.",
+        "customPronounsDisabledSuccess": "Profiles now use predefined pronouns only.",
+        "customPronounsSaveError": "We could not update the pronoun options.",
         "globalDonationGoalTitle": "Global donation goal",
         "globalDonationGoalSubtitle": "Create a platform-wide WavezFM campaign to show above the chat in every room.",
         "globalDonationGoalEnabledLabel": "Show global goal",
@@ -6488,6 +6556,24 @@
       "globalRoles": {
         "title": "Custom global roles",
         "subtitle": "Create cosmetic or functional global roles and define exactly which permissions each one grants.",
+        "systemRoles": {
+          "title": "Built-in role permissions",
+          "description": "Define the access granted automatically by Developer, Ambassador, Verified, and Subscriber. Changes apply to everyone who holds the role.",
+          "adminProtected": "Admin protected",
+          "roleSelector": "Select built-in role",
+          "roles": {
+            "developer": "Developer",
+            "ambassador": "Ambassador",
+            "verified": "Verified",
+            "subscriber": "Subscriber"
+          },
+          "selectedCount": "{count} permission(s) on this role",
+          "restoreRole": "Restore default",
+          "save": "Save permissions",
+          "saving": "Saving...",
+          "saveSuccess": "Built-in role permissions were updated.",
+          "saveError": "We couldn't update the built-in role permissions."
+        },
         "newRole": "New role",
         "listCount": "{count} role(s)",
         "empty": "No custom global roles have been created yet.",
@@ -6558,6 +6644,10 @@
           "room_superuser": {
             "label": "Room superuser",
             "description": "Grants administrative bypass for operational actions inside rooms."
+          },
+          "review_room_events": {
+            "label": "Review room events",
+            "description": "Allows approving or rejecting events submitted by room hosts."
           },
           "clear_admin_logs": {
             "label": "Clear admin logs",
@@ -7490,19 +7580,35 @@
         "saveError": "Could not save the flag.",
         "close": "Close flag picker"
       },
+      "pronouns": {
+        "label": "Pronouns",
+        "selectPlaceholder": "Select your pronouns",
+        "customPlaceholder": "For example: she/her, he/him, they/them",
+        "predefinedHint": "Optional. Choose the pronouns shown on your profile and quick profile.",
+        "customHint": "Optional. Up to 40 characters, shown on your profile and quick profile.",
+        "options": {
+          "none": "Do not show pronouns",
+          "she_her": "She/her",
+          "he_him": "He/him",
+          "they_them": "They/them",
+          "she_they": "She/they",
+          "he_they": "He/they",
+          "any": "Any pronouns"
+        }
+      },
       "bio": {
         "title": "Bio",
         "subtitle": "Add a short intro that shows up on your profile and quick profile.",
         "label": "Your bio",
         "placeholder": "Say a bit about yourself, your vibe...",
         "hint": "Maximum 150 characters. Basic markdown is supported and your bio also appears in the room quick profile.",
-        "edit": "Edit bio",
+        "edit": "Edit profile",
         "cancel": "Cancel",
         "empty": "Your bio is still empty. Add a short line to give your profile more context.",
-        "save": "Save bio",
-        "saving": "Saving bio...",
-        "saveSuccess": "Your bio has been updated.",
-        "saveError": "We could not save your bio right now."
+        "save": "Save profile",
+        "saving": "Saving profile...",
+        "saveSuccess": "Your profile has been updated.",
+        "saveError": "We could not save your profile right now."
       },
       "clearSlot": "Clear slot",
       "pickerEmpty": "You do not have any badges to choose from yet.",
@@ -7514,6 +7620,8 @@
       "suspendedTitle": "Suspended from the site",
       "suspendedSubtitle": "This account is currently suspended from WavezFM.",
       "suspendedReason": "Reason: {reason}",
+      "suspendedDefaultReason": "Account suspended by an administrator.",
+      "suspendedWarningLimitReason": "Account permanently suspended after 3 active violations.",
       "status": {
         "online": "Online",
         "busy": "Busy",

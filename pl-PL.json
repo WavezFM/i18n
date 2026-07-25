@@ -632,6 +632,7 @@
         "ROOM_PERMISSION_MANAGE_QUEUE": "Nie możesz zarządzać kolejką DJ w tym pokoju.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Nie możesz kontrolować zewnętrznych mediów tego pokoju.",
         "ROOM_PERMISSION_MANAGE_POLLS": "Nie możesz tworzyć ankiet w tym pokoju.",
+        "ROOM_PERMISSION_CREATE_EVENTS": "Nie możesz tworzyć wydarzeń w tym pokoju.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Tylko administratorzy mogą zezwalać na zewnętrzne media do pokoju.",
         "ROOM_EXTERNAL_MEDIA_DISABLED": "Zewnętrzne media są wyłączone na platformie.",
         "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "Nie dopuszczono do tego pokoju nośników zewnętrznych.",
@@ -1427,6 +1428,10 @@
             "label": "Twórz ankiety",
             "description": "Pozwala tworzyć ankiety przypięte na górze czatu."
           },
+          "create_events": {
+            "label": "Tworzenie wydarzeń",
+            "description": "Pozwala przesyłać wydarzenia tego pokoju do zatwierdzenia przez zespół."
+          },
           "manage_emojis": {
             "label": "Zarządzaj emotikonami",
             "description": "Pozwala na tworzenie, edytowanie i usuwanie emotikon pokoju."
@@ -1771,7 +1776,34 @@
         "dayEventCount": "{count} wydarzenia",
         "noEventsForDayTitle": "Tego dnia nie było żadnych wydarzeń",
         "noEventsForDayDescription": "Wybierz inny dzień w kalendarzu, aby zobaczyć zaplanowane wydarzenia.",
-        "eventDateUnavailable": "Data niedostępna"
+        "eventDateUnavailable": "Data niedostępna",
+        "submitEvent": "Wyślij wydarzenie",
+        "reviewEvents": "Sprawdź",
+        "submitTitle": "Wyślij wydarzenie do zatwierdzenia",
+        "submitSubtitle": "Uzupełnij dane. Wydarzenie będzie widoczne dopiero po zatwierdzeniu.",
+        "eventTitle": "Tytuł",
+        "eventDescription": "Opis",
+        "titlePtBr": "Tytuł portugalski",
+        "titleEnUs": "Tytuł angielski",
+        "descriptionPtBr": "Opis portugalski",
+        "descriptionEnUs": "Opis angielski",
+        "imageUrl": "URL obrazu",
+        "eventLink": "Link do wydarzenia",
+        "startsAt": "Początek",
+        "endsAt": "Koniec",
+        "cancel": "Anuluj",
+        "submitting": "Wysyłanie...",
+        "sendForReview": "Wyślij do zatwierdzenia",
+        "submitError": "Nie udało się wysłać wydarzenia.",
+        "reviewTitle": "Zatwierdzanie wydarzeń",
+        "reviewSubtitle": "Zatwierdź lub odrzuć wydarzenia wysłane przez hosta.",
+        "reviewLoading": "Ładowanie zgłoszeń...",
+        "reviewLoadError": "Nie udało się załadować zgłoszeń.",
+        "reviewError": "Nie udało się zapisać decyzji.",
+        "reviewEmpty": "Brak oczekujących wydarzeń",
+        "reviewEmptyDescription": "Zgłoszenia hosta pojawią się tutaj.",
+        "approve": "Zatwierdź",
+        "reject": "Odrzuć"
       },
       "tabs": {
         "chat": "Czat",
@@ -2463,7 +2495,11 @@
         "unpin": "Odpiń wiadomość",
         "pinnedToast": "Wiadomość przypięta na górze czatu.",
         "unpinnedToast": "Wiadomość usunięta z góry czatu.",
-        "error": "Nie mogliśmy teraz zaktualizować przypiętej wiadomości."
+        "error": "Nie mogliśmy teraz zaktualizować przypiętej wiadomości.",
+        "confirmTitle": "Przypiąć tę wiadomość?",
+        "confirmDescription": "Przypiąć wiadomość użytkownika {username} u góry czatu?",
+        "confirm": "Przypnij wiadomość",
+        "cancel": "Anuluj"
       },
       "actions": {
         "becomeFan": "Zostań fanem",
@@ -2690,6 +2726,7 @@
       "ROOM_NOT_FOUND": "Pokój nie znaleziony.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "Nie możesz tworzyć botów pokojowych w tym pokoju.",
       "ROOM_PERMISSION_MANAGE_POLLS": "Nie możesz tworzyć ankiet w tym pokoju.",
+      "ROOM_PERMISSION_CREATE_EVENTS": "Nie możesz tworzyć wydarzeń w tym pokoju.",
       "ROOM_PERMISSION_MENTION_ROOM": "Nie możesz tu wymieniać całego pokoju ani ról pokoju.",
       "ROOM_POLLS_DISABLED": "Obecnie ankiety są wyłączone.",
       "ROOM_POLL_NOT_ACTIVE": "Ta ankieta nie jest już aktywna.",
@@ -2749,6 +2786,12 @@
       "PLAYLIST_REORDER_TRACK_SET_INVALID": "Przesłane utwory nie pasują do tej playlisty.",
       "PLAYLIST_NOT_FOUND": "Playlista nie znaleziona.",
       "INVALID_BIO": "Biografia musi mieć maksymalnie 150 znaków.",
+      "INVALID_PRONOUNS": "Zaimki mogą mieć maksymalnie 40 znaków.",
+      "INVALID_PRONOUNS_OPTION": "Wybierz prawidłową opcję zaimków.",
+      "INVALID_PLAYLIST_TRACK_TITLE": "Tytuł utworu musi mieć od 1 do 300 znaków.",
+      "INVALID_PLAYLIST_TRACK_ARTIST": "Nazwa wykonawcy musi mieć od 1 do 200 znaków.",
+      "INVALID_PLAYLIST_TRACK_METADATA": "Wpisz tytuł lub wykonawcę, aby zaktualizować ten utwór.",
+      "PLAYLIST_TRACK_NOT_FOUND": "Nie znaleziono tego utworu na playliście.",
       "INVALID_CHAT_IMAGE_UPLOAD_TTL": "Ważność przesyłania obrazków czatu musi wynosić od 5 minut do 7 dni.",
       "INVALID_COLOR_THEME": "Wybrany motyw kolorystyczny jest nieprawidłowy.",
       "INVALID_SHOW_SUPERFANS_ON_PROFILE": "Preferencja widoczności profilu superfanów jest nieprawidłowa.",
@@ -3284,6 +3327,18 @@
       "reorderError": "Nie mogliśmy teraz przełożyć tej playlisty.",
       "moveToTop": "Przenieś się na górę",
       "moveToEnd": "Move to end",
+      "renameTrack": "Zmień nazwę utworu",
+      "renameTrackHint": "Własny tytuł i wykonawca obowiązują tylko na tej playliście.",
+      "renameTrackTitleLabel": "Tytuł",
+      "renameTrackArtistLabel": "Wykonawca",
+      "renameTrackInvalid": "Wpisz tytuł o długości od 1 do 300 znaków i wykonawcę o długości od 1 do 200 znaków.",
+      "renameTrackRestore": "Przywróć oryginał",
+      "renameTrackCancel": "Anuluj",
+      "renameTrackSave": "Zapisz zmiany",
+      "renamingTrack": "Zapisywanie...",
+      "renameTrackUpdated": "Zmieniono nazwę utworu {title}.",
+      "renameTrackRestored": "Przywrócono oryginalne dane utworu {title}.",
+      "renameTrackError": "Nie udało się teraz zmienić nazwy tego utworu.",
       "editClip": "Cut track",
       "clipBadge": "{start}-{end}",
       "clipDialogSubtitle": "Wybierz segment, który powinien się wyświetlić. Pierwotny czas trwania to {duration}.",
@@ -5596,6 +5651,14 @@
         "enable": "Włącz",
         "disable": "Ukryj się",
         "delete": "Usuń",
+        "approve": "Zatwierdź",
+        "reject": "Odrzuć",
+        "reviewError": "Nie udało się sprawdzić wydarzenia.",
+        "approval": {
+          "pending": "Oczekuje",
+          "approved": "Zatwierdzone",
+          "rejected": "Odrzucone"
+        },
         "eventBadgeTitle": "Odznaka wydarzenia",
         "eventBadgeSubtitle": "Raport wymienia użytkowników, którzy wysyłali publiczne wiadomości w trakcie trwania wydarzenia. Odznaka jest przyznawana tylko przyciskiem przyznania.",
         "badgePlaceholder": "Wybierz odznakę",
@@ -6188,6 +6251,11 @@
         "applicationFormsEnabledSuccess": "Strona formularzy aplikacyjnych została włączona.",
         "applicationFormsDisabledSuccess": "Strona formularzy aplikacyjnych została wyłączona.",
         "applicationFormsSaveError": "Nie mogliśmy zaktualizować strony formularzy aplikacyjnych.",
+        "customPronounsTitle": "Zezwalaj na własne zaimki",
+        "customPronounsSubtitle": "Po wyłączeniu profile mogą używać tylko gotowych opcji. Włącz, aby zezwolić na dowolny tekst.",
+        "customPronounsEnabledSuccess": "Własne zaimki zostały włączone.",
+        "customPronounsDisabledSuccess": "Profile używają teraz tylko gotowych zaimków.",
+        "customPronounsSaveError": "Nie udało się zaktualizować opcji zaimków.",
         "globalDonationGoalTitle": "Globalny cel darowizn",
         "globalDonationGoalSubtitle": "Stwórz kampanię WavezFM na całej platformie, która będzie widoczna nad czatem w każdym pokoju.",
         "globalDonationGoalEnabledLabel": "Pokaż cel globalny",
@@ -6488,6 +6556,24 @@
       "globalRoles": {
         "title": "Niestandardowe role globalne",
         "subtitle": "Stwórz kosmetyczne lub funkcjonalne role globalne i określ dokładnie, jakie uprawnienia każda z nich przyznaje.",
+        "systemRoles": {
+          "title": "Uprawnienia wbudowanych ról",
+          "description": "Określ dostęp automatycznie nadawany przez role Developer, Ambassador, Zweryfikowany i Subskrybent. Zmiany dotyczą wszystkich osób z daną rolą.",
+          "adminProtected": "Admin chroniony",
+          "roleSelector": "Wybierz wbudowaną rolę",
+          "roles": {
+            "developer": "Developer",
+            "ambassador": "Ambassador",
+            "verified": "Zweryfikowany",
+            "subscriber": "Subskrybent"
+          },
+          "selectedCount": "{count} uprawnienie(-a) tej roli",
+          "restoreRole": "Przywróć domyślne",
+          "save": "Zapisz uprawnienia",
+          "saving": "Zapisywanie...",
+          "saveSuccess": "Uprawnienia wbudowanych ról zostały zaktualizowane.",
+          "saveError": "Nie udało się zaktualizować uprawnień wbudowanych ról."
+        },
         "newRole": "Nowa rola",
         "listCount": "{count} role",
         "empty": "Nie utworzono jeszcze żadnych niestandardowych ról globalnych.",
@@ -6558,6 +6644,10 @@
           "room_superuser": {
             "label": "Superużytkownik pokoju",
             "description": "Zapewnia administracyjne obejście działań operacyjnych wewnątrz pomieszczeń."
+          },
+          "review_room_events": {
+            "label": "Sprawdzanie wydarzeń pokoi",
+            "description": "Pozwala zatwierdzać lub odrzucać wydarzenia wysłane przez hostów."
           },
           "clear_admin_logs": {
             "label": "Czyść logi administracyjne",
@@ -7490,19 +7580,35 @@
         "saveError": "Nie udało się uratować flagi.",
         "close": "Bliski picker flag"
       },
+      "pronouns": {
+        "label": "Zaimki",
+        "selectPlaceholder": "Wybierz swoje zaimki",
+        "customPlaceholder": "Na przykład: ona/jej, on/jego, oni/ich",
+        "predefinedHint": "Opcjonalne. Wybierz zaimki widoczne na profilu i szybkim profilu.",
+        "customHint": "Opcjonalne. Do 40 znaków, widoczne na profilu i szybkim profilu.",
+        "options": {
+          "none": "Nie pokazuj zaimków",
+          "she_her": "Ona/jej",
+          "he_him": "On/jego",
+          "they_them": "Oni/ich",
+          "she_they": "Ona/oni",
+          "he_they": "On/oni",
+          "any": "Dowolne zaimki"
+        }
+      },
       "bio": {
         "title": "Biografia",
         "subtitle": "Dodaj krótkie wprowadzenie, które pojawi się na Twoim profilu i szybkim profilu.",
         "label": "Twoje biogramy",
         "placeholder": "Opowiedz trochę o sobie, o swoim klimacie...",
         "hint": "Maksymalnie 150 znaków. Podstawowe markdown są obsługiwane, a Twoje bio pojawia się także w profilu pokoju quick.",
-        "edit": "Edytuj biografię",
+        "edit": "Edytuj profil",
         "cancel": "Anuluj",
         "empty": "Twój bio wciąż jest pusty. Dodaj krótkie zdanie, aby nadać swojemu profilu więcej kontekstu.",
-        "save": "Zapisz biografię",
-        "saving": "Zapisywanie bio...",
-        "saveSuccess": "Twoje bio zostało zaktualizowane.",
-        "saveError": "Nie mogliśmy teraz zapisać twojego biogramu."
+        "save": "Zapisz profil",
+        "saving": "Zapisywanie profilu...",
+        "saveSuccess": "Twój profil został zaktualizowany.",
+        "saveError": "Nie udało się teraz zapisać Twojego profilu."
       },
       "clearSlot": "Clear slot",
       "pickerEmpty": "Nie masz jeszcze żadnych odznak do wyboru.",
@@ -7514,6 +7620,8 @@
       "suspendedTitle": "Zawieszony na miejscu",
       "suspendedSubtitle": "To konto jest obecnie zawieszone od WavezFM.",
       "suspendedReason": "Powód: {reason}",
+      "suspendedDefaultReason": "Konto zawieszone przez administratora.",
+      "suspendedWarningLimitReason": "Konto zostało trwale zawieszone po 3 aktywnych naruszeniach.",
       "status": {
         "online": "Online",
         "busy": "Zajęte",
