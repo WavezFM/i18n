@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "Вы не можете очистить чат в этой комнате.",
         "ROOM_PERMISSION_MANAGE_QUEUE": "Вы не можете управлять очередью DJ в этой комнате.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Вы не можете управлять внешними медиа в этой комнате.",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Вы не можете редактировать пользовательскую тему этой комнаты.",
         "ROOM_PERMISSION_MANAGE_POLLS": "Вы не можете создавать опросы в этой комнате.",
         "ROOM_PERMISSION_CREATE_EVENTS": "Вы не можете создавать события в этой комнате.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Только администраторы могут разрешить внешние медиа для комнаты.",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "Управлять внешними медиа",
             "description": "Позволяет настроить видео в комнате, включить внешний носитель, а также приостановить или ускорить воспроизведение."
+          },
+          "manage_custom_theme": {
+            "label": "Редактировать пользовательскую тему",
+            "description": "Позволяет редактировать цвета пользовательской темы, когда функция разблокирована для комнаты."
           },
           "manage_polls": {
             "label": "Создавать опросы",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "Внешние носители отключены на платформе.",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "Нам не удалось открыть вставку для этого внешнего носителя.",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "Использование внешних носителей в этой комнате запрещено.",
+      "ROOM_FEATURE_ROOM_REQUIRED": "Выберите комнату, которая получит эту функцию.",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "Только владелец комнаты может приобрести эту функцию.",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "У этой комнаты уже есть постоянный доступ к этой функции.",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "Нам не удалось загрузить поток для этого внешнего носителя.",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "Эта ссылка на внешний носитель не поддерживается.",
       "ROOM_GLOBAL_WORD_BLOCKED": "Это сообщение содержит слово, заблокированное глобальной модерацией.",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "Вы не можете выгнать пользователей в этой комнате.",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "Вы не можете управлять смайликами этой комнаты.",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Вы не можете управлять внешними носителями в этой комнате.",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Вы не можете редактировать пользовательскую тему этой комнаты.",
       "ROOM_PERMISSION_MANAGE_LINKS": "Вы не можете управлять фильтрами ссылок этой комнаты.",
       "ROOM_PERMISSION_MANAGE_QUEUE": "Вы не можете управлять очередью DJ в этой комнате.",
       "ROOM_PERMISSION_MANAGE_ROLES": "Вы не можете управлять ролями в этой комнате.",
@@ -3190,6 +3199,13 @@
         "roomThemeRoomsLoading": "Загрузка комнат...",
         "roomThemeRoomsLoadError": "Не удалось загрузить ваши комнаты прямо сейчас.",
         "roomThemeNoOwnedRooms": "Чтобы купить или арендовать собственную тему, вам необходимо иметь комнату.",
+        "externalMediaPermanentMeta": "Навсегда открывает внешние медиа для выбранной комнаты",
+        "externalMediaMonthlyMeta": "Открывает внешние медиа на {days} дней в выбранной комнате",
+        "externalMediaRoomLocked": "Применяется только к выбранной комнате. Роли с разрешением смогут управлять внешними медиа в этой комнате.",
+        "externalMediaRoomRequired": "Выберите одну из своих комнат, чтобы купить или арендовать доступ к внешним медиа.",
+        "externalMediaRoomRequiredShort": "Выберите комнату",
+        "externalMediaRoomLabel": "Комната с внешними медиа",
+        "externalMediaNoOwnedRooms": "Чтобы открыть внешние медиа, вы должны владеть комнатой.",
         "checkoutSummary": "Внешний платеж {price}. Доставка применяется автоматически после подтверждения.",
         "checkoutDelivery": "Оплата заказа",
         "checkoutSuccess": "Оплата подтверждена. Элемент был применен автоматически.",
@@ -5114,6 +5130,12 @@
           "disableSuccess": "Внешний носитель заблокирован для {name}.",
           "saveError": "Нам не удалось обновить доступ к внешним носителям для этой комнаты."
         },
+        "featureAccess": {
+          "paidUntil": "Платный доступ активен до {date}.",
+          "paidPermanent": "Постоянный платный доступ.",
+          "customThemeTitle": "Пользовательская тема комнаты",
+          "customThemeSubtitle": "Административно открывает редактирование пользовательской темы для разрешённых ролей в этой комнате."
+        },
         "roleLimits": {
           "title": "Ограничения ролей в комнате",
           "subtitle": "Настройте, сколько человек в этой комнате может иметь каждую особую роль.",
@@ -6089,9 +6111,12 @@
         "miscShopKindUsername": "Изменение имени пользователя",
         "miscShopKindRoomThemePermanent": "Постоянная тема комнаты",
         "miscShopKindRoomThemeMonthly": "Ежемесячная индивидуальная тема комнаты",
+        "miscShopKindRoomExternalMediaPermanent": "Постоянные внешние медиа",
+        "miscShopKindRoomExternalMediaMonthly": "Ежемесячные внешние медиа",
         "miscShopCurrency": "Валюта",
         "miscShopCurrencyCoins": "Монеты",
         "miscShopCurrencyDiamonds": "Бриллианты",
+        "miscShopCurrencyCoinsAndDiamonds": "Бриллианты + Монеты",
         "miscShopCurrencyBrl": "Реальные деньги (BRL)",
         "miscShopCurrencyUsd": "Реальные деньги (доллары США)",
         "miscShopCurrencyEur": "Реальные деньги (ЕВРО)",

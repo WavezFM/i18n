@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "Você não pode limpar o chat desta sala.",
         "ROOM_PERMISSION_MANAGE_QUEUE": "Você não pode gerenciar a fila de DJ nesta sala.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Você não pode controlar a mídia externa desta sala.",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Você não pode editar o tema custom desta sala.",
         "ROOM_PERMISSION_MANAGE_POLLS": "Você não pode criar enquetes nesta sala.",
         "ROOM_PERMISSION_CREATE_EVENTS": "Você não pode criar eventos nesta sala.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Somente admins podem liberar mídia externa para uma sala.",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "Controlar mídia externa",
             "description": "Permite definir o vídeo da sala, ativar a mídia externa, pausar e avançar a reprodução."
+          },
+          "manage_custom_theme": {
+            "label": "Editar tema custom",
+            "description": "Permite editar as cores do tema custom quando a função estiver liberada para a sala."
           },
           "manage_polls": {
             "label": "Criar enquetes",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "As mídias externas estão desativadas na plataforma.",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "Não foi possível abrir o embed dessa mídia externa.",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "As mídias externas não foram liberadas para esta sala.",
+      "ROOM_FEATURE_ROOM_REQUIRED": "Selecione a sala que receberá esta função.",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "Somente o dono da sala pode comprar esta função.",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "Esta sala já possui acesso permanente a esta função.",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "Não foi possível carregar o stream dessa mídia externa.",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "Este link de mídia externa não é suportado.",
       "ROOM_GLOBAL_WORD_BLOCKED": "Esta mensagem contém uma palavra bloqueada pela moderação global.",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "Você não pode expulsar usuários nesta sala.",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "Você não pode gerenciar os emojis da sala.",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Você não pode controlar a mídia externa desta sala.",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Você não pode editar o tema custom desta sala.",
       "ROOM_PERMISSION_MANAGE_LINKS": "Você não pode gerenciar os filtros de links da sala.",
       "ROOM_PERMISSION_MANAGE_QUEUE": "Você não pode gerenciar a fila de DJ nesta sala.",
       "ROOM_PERMISSION_MANAGE_ROLES": "Você não pode gerenciar os cargos da sala.",
@@ -3186,6 +3195,13 @@
         "roomThemeRoomLocked": "Aplicado somente à sala selecionada. Não libera tema custom em outras salas da conta.",
         "roomThemeRoomRequired": "Selecione uma sala sua para comprar ou alugar este tema.",
         "roomThemeRoomRequiredShort": "Selecione uma sala",
+        "externalMediaPermanentMeta": "Libera mídia externa permanentemente para a sala selecionada",
+        "externalMediaMonthlyMeta": "Libera mídia externa por {days} dias para a sala selecionada",
+        "externalMediaRoomLocked": "Aplicado somente à sala selecionada. Cargos com permissão poderão controlar a mídia externa nessa sala.",
+        "externalMediaRoomRequired": "Selecione uma sala sua para comprar ou alugar o acesso à mídia externa.",
+        "externalMediaRoomRequiredShort": "Selecione uma sala",
+        "externalMediaRoomLabel": "Sala que recebe mídia externa",
+        "externalMediaNoOwnedRooms": "Você precisa ter uma sala própria para liberar mídia externa.",
         "roomThemeRoomLabel": "Sala que recebe o tema",
         "roomThemeRoomsLoading": "Carregando suas salas...",
         "roomThemeRoomsLoadError": "Não foi possível carregar suas salas agora.",
@@ -5165,6 +5181,12 @@
           "disableSuccess": "Mídia externa bloqueada para {name}.",
           "saveError": "Não foi possível atualizar a liberação de mídia externa desta sala."
         },
+        "featureAccess": {
+          "paidUntil": "Acesso pago ativo até {date}.",
+          "paidPermanent": "Acesso pago permanente.",
+          "customThemeTitle": "Tema custom da sala",
+          "customThemeSubtitle": "Libera administrativamente a edição do tema custom para os cargos autorizados desta sala."
+        },
         "roleLimits": {
           "title": "Limites de cargos por sala",
           "subtitle": "Personalize quantas pessoas esta sala pode ter em cada cargo especial.",
@@ -6130,9 +6152,12 @@
         "miscShopKindUsername": "Troca de username",
         "miscShopKindRoomThemePermanent": "Tema custom permanente",
         "miscShopKindRoomThemeMonthly": "Tema custom mensal",
+        "miscShopKindRoomExternalMediaPermanent": "Mídia externa permanente",
+        "miscShopKindRoomExternalMediaMonthly": "Mídia externa mensal",
         "miscShopCurrency": "Moeda",
         "miscShopCurrencyCoins": "Moedas",
         "miscShopCurrencyDiamonds": "Diamantes",
+        "miscShopCurrencyCoinsAndDiamonds": "Diamantes + Moedas",
         "miscShopCurrencyBrl": "Dinheiro real (BRL)",
         "miscShopCurrencyUsd": "Dinheiro real (USD)",
         "miscShopCurrencyEur": "Dinheiro real (EUR)",

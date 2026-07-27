@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "이 방 채팅을 지울 수 없습니다.",
         "ROOM_PERMISSION_MANAGE_QUEUE": "이 방에서는 DJ 대기열을 관리할 수 없습니다.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "이 방의 외부 미디어를 제어할 수 없습니다.",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "이 방의 커스텀 테마를 편집할 수 없습니다.",
         "ROOM_PERMISSION_MANAGE_POLLS": "이 방에서는 설문조사를 만들 수 없습니다.",
         "ROOM_PERMISSION_CREATE_EVENTS": "이 방에서는 이벤트를 만들 수 없습니다.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "관리자만 방에 외부 미디어를 허용할 수 있습니다.",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "외부 미디어 제어",
             "description": "방 비디오 설정, 외부 미디어 활성화, 재생 일시 중지 또는 진행을 허용합니다."
+          },
+          "manage_custom_theme": {
+            "label": "커스텀 테마 편집",
+            "description": "해당 기능이 방에 잠금 해제되어 있을 때 커스텀 테마 색상을 편집할 수 있습니다."
           },
           "manage_polls": {
             "label": "설문조사 만들기",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "플랫폼에서 외부 미디어가 비활성화되어 있습니다.",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "이 외부 미디어에 대한 삽입을 열 수 없습니다.",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "이 방에는 외부 미디어가 허용되지 않습니다.",
+      "ROOM_FEATURE_ROOM_REQUIRED": "이 기능을 받을 방을 선택하세요.",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "방 소유자만 이 기능을 구매할 수 있습니다.",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "이 방은 이미 이 기능을 영구적으로 이용할 수 있습니다.",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "이 외부 미디어에 대한 스트림을 로드할 수 없습니다.",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "이 외부 미디어 링크는 지원되지 않습니다.",
       "ROOM_GLOBAL_WORD_BLOCKED": "이 메시지에는 전역 조정에 의해 차단된 단어가 포함되어 있습니다.",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "이 방에서는 사용자를 추방할 수 없습니다.",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "이 방의 이모티콘을 관리할 수 없습니다.",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "이 방의 외부 미디어를 제어할 수 없습니다.",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "이 방의 커스텀 테마를 편집할 수 없습니다.",
       "ROOM_PERMISSION_MANAGE_LINKS": "이 룸의 링크 필터를 관리할 수 없습니다.",
       "ROOM_PERMISSION_MANAGE_QUEUE": "이 방에서는 DJ 대기열을 관리할 수 없습니다.",
       "ROOM_PERMISSION_MANAGE_ROLES": "이 룸의 역할을 관리할 수 없습니다.",
@@ -3190,6 +3199,13 @@
         "roomThemeRoomsLoading": "방 로드 중...",
         "roomThemeRoomsLoadError": "지금은 방을 로드할 수 없습니다.",
         "roomThemeNoOwnedRooms": "맞춤 테마를 구매하거나 임대하려면 방을 소유해야 합니다.",
+        "externalMediaPermanentMeta": "선택한 방에서 외부 미디어를 영구적으로 잠금 해제합니다",
+        "externalMediaMonthlyMeta": "선택한 방에서 외부 미디어를 {days}일 동안 잠금 해제합니다",
+        "externalMediaRoomLocked": "선택한 방에만 적용됩니다. 권한이 있는 역할은 해당 방의 외부 미디어를 제어할 수 있습니다.",
+        "externalMediaRoomRequired": "외부 미디어 이용권을 구매하거나 대여할 내 방을 선택하세요.",
+        "externalMediaRoomRequiredShort": "방 선택",
+        "externalMediaRoomLabel": "외부 미디어를 받을 방",
+        "externalMediaNoOwnedRooms": "외부 미디어를 잠금 해제하려면 방을 소유해야 합니다.",
         "checkoutSummary": "{price}의 외부 지불. 배송은 확인 후 자동으로 적용됩니다.",
         "checkoutDelivery": "체크아웃 결제",
         "checkoutSuccess": "결제가 확인되었습니다. 해당 항목이 자동으로 적용되었습니다.",
@@ -5160,6 +5176,12 @@
           "disableSuccess": "{name}에 대한 외부 미디어가 차단되었습니다.",
           "saveError": "이 방에 대한 외부 미디어 액세스를 업데이트할 수 없습니다."
         },
+        "featureAccess": {
+          "paidUntil": "유료 이용권은 {date}까지 활성화됩니다.",
+          "paidPermanent": "영구 유료 이용권.",
+          "customThemeTitle": "방 커스텀 테마",
+          "customThemeSubtitle": "이 방의 권한이 있는 역할에 대해 커스텀 테마 편집을 관리자가 잠금 해제합니다."
+        },
         "roleLimits": {
           "title": "룸 역할 제한",
           "subtitle": "각 특별 역할에 이 방에 포함될 수 있는 사람의 수를 맞춤설정하세요.",
@@ -6125,9 +6147,12 @@
         "miscShopKindUsername": "사용자 이름 변경",
         "miscShopKindRoomThemePermanent": "영구 사용자 정의 룸 테마",
         "miscShopKindRoomThemeMonthly": "월간 커스텀 룸 테마",
+        "miscShopKindRoomExternalMediaPermanent": "영구 외부 미디어",
+        "miscShopKindRoomExternalMediaMonthly": "월간 외부 미디어",
         "miscShopCurrency": "통화",
         "miscShopCurrencyCoins": "동전",
         "miscShopCurrencyDiamonds": "다이아몬드",
+        "miscShopCurrencyCoinsAndDiamonds": "다이아몬드 + 코인",
         "miscShopCurrencyBrl": "실제 화폐(BRL)",
         "miscShopCurrencyUsd": "실제 화폐(USD)",
         "miscShopCurrencyEur": "실제 돈(EUR)",

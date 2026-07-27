@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "この部屋チャットをクリアすることはできません。",
         "ROOM_PERMISSION_MANAGE_QUEUE": "この部屋の DJ キューは管理できません。",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "この部屋の外部メディアは制御できません。",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "この部屋のカスタムテーマは編集できません。",
         "ROOM_PERMISSION_MANAGE_POLLS": "この部屋で投票を作成することはできません。",
         "ROOM_PERMISSION_CREATE_EVENTS": "この部屋でイベントを作成することはできません。",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "外部メディアを部屋に許可できるのは管理者だけです。",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "外部メディアの制御",
             "description": "部屋の映像設定、外部メディアの有効化、再生の一時停止や進行が可能です。"
+          },
+          "manage_custom_theme": {
+            "label": "カスタムテーマを編集",
+            "description": "この機能が部屋でアンロックされている場合に、カスタムテーマの色を編集できます。"
           },
           "manage_polls": {
             "label": "投票を作成する",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "プラットフォーム上では外部メディアが無効になっています。",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "この外部メディアの埋め込みは開けませんでした。",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "この部屋では外部メディアの使用が許可されていません。",
+      "ROOM_FEATURE_ROOM_REQUIRED": "この機能を受け取る部屋を選択してください。",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "この機能を購入できるのは部屋の所有者だけです。",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "この部屋はすでにこの機能への永久アクセスを持っています。",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "この外部メディアのストリームを読み込むことができませんでした。",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "この外部メディアリンクはサポートされていません。",
       "ROOM_GLOBAL_WORD_BLOCKED": "このメッセージには、グローバルモデレーションによってブロックされた単語が含まれています。",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "この部屋でユーザーをキックできない。",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "この部屋の絵文字は管理できません。",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "この部屋の外部メディアは制御できません。",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "この部屋のカスタムテーマは編集できません。",
       "ROOM_PERMISSION_MANAGE_LINKS": "この部屋のリンクフィルターは管理できません。",
       "ROOM_PERMISSION_MANAGE_QUEUE": "この部屋の DJ キューは管理できません。",
       "ROOM_PERMISSION_MANAGE_ROLES": "この部屋の役割は管理できません。",
@@ -3190,6 +3199,13 @@
         "roomThemeRoomsLoading": "部屋に積み込みます...",
         "roomThemeRoomsLoadError": "今は部屋を詰め込めません。",
         "roomThemeNoOwnedRooms": "カスタムテーマを購入またはレンタルするには、自分の部屋を所有する必要があります。",
+        "externalMediaPermanentMeta": "選択した部屋で外部メディアを永久にアンロックします",
+        "externalMediaMonthlyMeta": "選択した部屋で外部メディアを{days}日間アンロックします",
+        "externalMediaRoomLocked": "選択した部屋にのみ適用されます。権限のある役職は、その部屋の外部メディアを操作できます。",
+        "externalMediaRoomRequired": "外部メディアのアクセスを購入またはレンタルする自分の部屋を選択してください。",
+        "externalMediaRoomRequiredShort": "部屋を選択",
+        "externalMediaRoomLabel": "外部メディアを受け取る部屋",
+        "externalMediaNoOwnedRooms": "外部メディアをアンロックするには、自分の部屋が必要です。",
         "checkoutSummary": "外部からの支払い {price}。配達は確認後に自動的に適用されます。",
         "checkoutDelivery": "チェックアウト支払い",
         "checkoutSuccess": "支払い確認。アイテムは自動的に適用されました。",
@@ -5160,6 +5176,12 @@
           "disableSuccess": "外部メディアは {name}ブロックされていました。",
           "saveError": "この部屋の外部メディアアクセスを更新できませんでした。"
         },
+        "featureAccess": {
+          "paidUntil": "有料アクセスは{date}まで有効です。",
+          "paidPermanent": "永久有料アクセス。",
+          "customThemeTitle": "部屋のカスタムテーマ",
+          "customThemeSubtitle": "この部屋の許可された役職に対して、カスタムテーマの編集を管理者権限でアンロックします。"
+        },
         "roleLimits": {
           "title": "部屋の役割制限",
           "subtitle": "この部屋で各特殊役割に何人収容できるかをカスタマイズできます。",
@@ -6125,9 +6147,12 @@
         "miscShopKindUsername": "ユーザー名変更",
         "miscShopKindRoomThemePermanent": "恒久的なカスタムルームテーマ",
         "miscShopKindRoomThemeMonthly": "月次カスタムルームテーマ",
+        "miscShopKindRoomExternalMediaPermanent": "永久外部メディア",
+        "miscShopKindRoomExternalMediaMonthly": "月間外部メディア",
         "miscShopCurrency": "通貨",
         "miscShopCurrencyCoins": "硬貨",
         "miscShopCurrencyDiamonds": "ダイヤモンド",
+        "miscShopCurrencyCoinsAndDiamonds": "ダイヤモンド + コイン",
         "miscShopCurrencyBrl": "リアルマネー(BRL)",
         "miscShopCurrencyUsd": "リアルマネー(USD)",
         "miscShopCurrencyEur": "リアルマネー(EUR)",

@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "Nemůžeš vyčistit tento chat v místnosti.",
         "ROOM_PERMISSION_MANAGE_QUEUE": "V této místnosti nemůžete spravovat frontu DJ .",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Nemůžeš ovládat vnější média této místnosti.",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Nemůžeš upravovat vlastní motiv této místnosti.",
         "ROOM_PERMISSION_MANAGE_POLLS": "V této místnosti nemůžete vytvářet ankety.",
         "ROOM_PERMISSION_CREATE_EVENTS": "V této místnosti nemůžete vytvářet události.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Pouze administrátoři mohou povolit externí média pro místnost.",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "Řídicí externí média",
             "description": "Umožňuje nastavení videa v místnosti, zapnutí externích médií a pozastavení nebo posun přehrávání."
+          },
+          "manage_custom_theme": {
+            "label": "Upravit vlastní motiv",
+            "description": "Umožňuje upravovat barvy vlastního motivu, když je tato funkce pro místnost odemknutá."
           },
           "manage_polls": {
             "label": "Vytvořte ankety",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "Externí média jsou na platformě deaktivována.",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "Nemohli jsme otevřít embed pro toto externí médium.",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "Do této místnosti nebylo povoleno vkládání externích médií.",
+      "ROOM_FEATURE_ROOM_REQUIRED": "Vyberte místnost, která tuto funkci obdrží.",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "Tuto funkci může zakoupit pouze vlastník místnosti.",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "Tato místnost již má k této funkci trvalý přístup.",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "Nemohli jsme načíst stream pro toto externí médium.",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "Tento odkaz na externí médium není podporován.",
       "ROOM_GLOBAL_WORD_BLOCKED": "Tato zpráva obsahuje slovo blokované globální moderací.",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "V této místnosti nemůžete vyhodit uživatele.",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "Nemůžeš spravovat emoji v této místnosti.",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Nemůžeš ovládat vnější média této místnosti.",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Nemůžeš upravovat vlastní motiv této místnosti.",
       "ROOM_PERMISSION_MANAGE_LINKS": "Nemůžete spravovat filtry odkazů v této místnosti.",
       "ROOM_PERMISSION_MANAGE_QUEUE": "V této místnosti nemůžete spravovat frontu DJ .",
       "ROOM_PERMISSION_MANAGE_ROLES": "Nemůžeš zvládnout role této místnosti.",
@@ -3190,6 +3199,13 @@
         "roomThemeRoomsLoading": "Nakládáte pokoje...",
         "roomThemeRoomsLoadError": "Teď bychom nemohli naložit vaše pokoje.",
         "roomThemeNoOwnedRooms": "Musíte vlastnit místnost, abyste si mohli koupit nebo pronajmout vlastní téma.",
+        "externalMediaPermanentMeta": "Trvale odemkne externí média pro vybranou místnost",
+        "externalMediaMonthlyMeta": "Odemkne externí média na {days} dní ve vybrané místnosti",
+        "externalMediaRoomLocked": "Platí pouze pro vybranou místnost. Role s oprávněním mohou v této místnosti ovládat externí média.",
+        "externalMediaRoomRequired": "Vyberte jednu ze svých místností pro nákup nebo pronájem přístupu k externím médiím.",
+        "externalMediaRoomRequiredShort": "Vyberte místnost",
+        "externalMediaRoomLabel": "Místnost s externími médii",
+        "externalMediaNoOwnedRooms": "Pro odemknutí externích médií musíte vlastnit místnost.",
         "checkoutSummary": "Externí platby {price}. Doručení se automaticky uplatní po potvrzení.",
         "checkoutDelivery": "Platba při platbě",
         "checkoutSuccess": "Platba potvrzena. Položka byla aplikována automaticky.",
@@ -5160,6 +5176,12 @@
           "disableSuccess": "Externí média byla blokována {name}.",
           "saveError": "Nemohli jsme aktualizovat přístup k externím médiím pro tuto místnost."
         },
+        "featureAccess": {
+          "paidUntil": "Placený přístup je aktivní do {date}.",
+          "paidPermanent": "Trvalý placený přístup.",
+          "customThemeTitle": "Vlastní motiv místnosti",
+          "customThemeSubtitle": "Administrativně odemkne úpravu vlastního motivu pro oprávněné role v této místnosti."
+        },
         "roleLimits": {
           "title": "Limity místností",
           "subtitle": "Přizpůsobte si, kolik lidí může tato místnost mít v každé speciální roli.",
@@ -6125,9 +6147,12 @@
         "miscShopKindUsername": "Změna uživatelského jména",
         "miscShopKindRoomThemePermanent": "Trvalé téma vlastní místnosti",
         "miscShopKindRoomThemeMonthly": "Měsíční téma vlastních místností",
+        "miscShopKindRoomExternalMediaPermanent": "Trvalá externí média",
+        "miscShopKindRoomExternalMediaMonthly": "Měsíční externí média",
         "miscShopCurrency": "Měna",
         "miscShopCurrencyCoins": "Mince",
         "miscShopCurrencyDiamonds": "Diamanty",
+        "miscShopCurrencyCoinsAndDiamonds": "Diamanty + Mince",
         "miscShopCurrencyBrl": "Skutečné peníze (BRL)",
         "miscShopCurrencyUsd": "Skutečné peníze (USD)",
         "miscShopCurrencyEur": "Reálné peníze (EUR)",

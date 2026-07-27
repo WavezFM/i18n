@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "Nie możesz oczyścić tego czatu w pokoju.",
         "ROOM_PERMISSION_MANAGE_QUEUE": "Nie możesz zarządzać kolejką DJ w tym pokoju.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Nie możesz kontrolować zewnętrznych mediów tego pokoju.",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Nie możesz edytować niestandardowego motywu tego pokoju.",
         "ROOM_PERMISSION_MANAGE_POLLS": "Nie możesz tworzyć ankiet w tym pokoju.",
         "ROOM_PERMISSION_CREATE_EVENTS": "Nie możesz tworzyć wydarzeń w tym pokoju.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Tylko administratorzy mogą zezwalać na zewnętrzne media do pokoju.",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "Steruj zewnętrznymi nośnikami",
             "description": "Pozwala ustawić wideo w pokoju, włączyć nośniki zewnętrzne oraz zatrzymać lub przyspieszyć odtwarzanie."
+          },
+          "manage_custom_theme": {
+            "label": "Edytuj niestandardowy motyw",
+            "description": "Pozwala edytować kolory niestandardowego motywu, gdy funkcja jest odblokowana dla pokoju."
           },
           "manage_polls": {
             "label": "Twórz ankiety",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "Zewnętrzne media są wyłączone na platformie.",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "Nie mogliśmy otworzyć osadzenia dla tego zewnętrznego nośnika.",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "Nie dopuszczono do tego pokoju nośników zewnętrznych.",
+      "ROOM_FEATURE_ROOM_REQUIRED": "Wybierz pokój, który otrzyma tę funkcję.",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "Tylko właściciel pokoju może kupić tę funkcję.",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "Ten pokój ma już stały dostęp do tej funkcji.",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "Nie mogliśmy załadować strumienia dla tego zewnętrznego nośnika.",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "Ten link do mediów zewnętrznych nie jest obsługiwany.",
       "ROOM_GLOBAL_WORD_BLOCKED": "Ta wiadomość zawiera słowo zablokowane przez globalną moderację.",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "Nie możesz wyrzucić użytkowników w tym pokoju.",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "Nie potrafisz zarządzać emotikonami w tym pokoju.",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "Nie możesz kontrolować zewnętrznych mediów tego pokoju.",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "Nie możesz edytować niestandardowego motywu tego pokoju.",
       "ROOM_PERMISSION_MANAGE_LINKS": "Nie możesz zarządzać filtrami linków w tym pokoju.",
       "ROOM_PERMISSION_MANAGE_QUEUE": "Nie możesz zarządzać kolejką DJ w tym pokoju.",
       "ROOM_PERMISSION_MANAGE_ROLES": "Nie potrafisz zarządzać rolami tego pokoju.",
@@ -3190,6 +3199,13 @@
         "roomThemeRoomsLoading": "Ładuję wasze pokoje...",
         "roomThemeRoomsLoadError": "Nie mogliśmy teraz załadować pokoi.",
         "roomThemeNoOwnedRooms": "Musisz mieć własny pokój, aby kupić lub wynająć motyw na zamówienie.",
+        "externalMediaPermanentMeta": "Odblokowuje zewnętrzne media na stałe dla wybranego pokoju",
+        "externalMediaMonthlyMeta": "Odblokowuje zewnętrzne media na {days} dni w wybranym pokoju",
+        "externalMediaRoomLocked": "Dotyczy tylko wybranego pokoju. Role z uprawnieniem mogą kontrolować zewnętrzne media w tym pokoju.",
+        "externalMediaRoomRequired": "Wybierz jeden ze swoich pokoi, aby kupić lub wynająć dostęp do zewnętrznych mediów.",
+        "externalMediaRoomRequiredShort": "Wybierz pokój",
+        "externalMediaRoomLabel": "Pokój otrzymujący zewnętrzne media",
+        "externalMediaNoOwnedRooms": "Musisz posiadać pokój, aby odblokować zewnętrzne media.",
         "checkoutSummary": "Zewnętrzne płatności {price}. Dostawa jest wdrażana automatycznie po potwierdzeniu.",
         "checkoutDelivery": "Płatność przy kase",
         "checkoutSuccess": "Płatność potwierdzona. Element został zastosowany automatycznie.",
@@ -5160,6 +5176,12 @@
           "disableSuccess": "Zewnętrzne media zostały zablokowane przez {name}.",
           "saveError": "Nie mogliśmy zaktualizować zewnętrznego dostępu do mediów w tym pokoju."
         },
+        "featureAccess": {
+          "paidUntil": "Płatny dostęp aktywny do {date}.",
+          "paidPermanent": "Stały płatny dostęp.",
+          "customThemeTitle": "Niestandardowy motyw pokoju",
+          "customThemeSubtitle": "Administracyjnie odblokowuje edycję niestandardowego motywu dla uprawnionych ról w tym pokoju."
+        },
         "roleLimits": {
           "title": "Ograniczenia ról w pomieszczeniu",
           "subtitle": "Dostosuj, ile osób może pomieścić ten pokój w każdej specjalnej roli.",
@@ -6125,9 +6147,12 @@
         "miscShopKindUsername": "Zmiana nazwy użytkownika",
         "miscShopKindRoomThemePermanent": "Stały motyw niestandardowego pokoju",
         "miscShopKindRoomThemeMonthly": "Motyw miesięcznego pokoju na zamówienie",
+        "miscShopKindRoomExternalMediaPermanent": "Stałe zewnętrzne media",
+        "miscShopKindRoomExternalMediaMonthly": "Miesięczne zewnętrzne media",
         "miscShopCurrency": "Waluta",
         "miscShopCurrencyCoins": "Monety",
         "miscShopCurrencyDiamonds": "Diamenty",
+        "miscShopCurrencyCoinsAndDiamonds": "Diamenty + Monety",
         "miscShopCurrencyBrl": "Prawdziwe pieniądze (BRL)",
         "miscShopCurrencyUsd": "Prawdziwe pieniądze (USD)",
         "miscShopCurrencyEur": "Prawdziwe pieniądze (EUR)",

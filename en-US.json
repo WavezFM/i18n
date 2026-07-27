@@ -631,6 +631,7 @@
         "ROOM_PERMISSION_CLEAR_CHAT": "You cannot clear this room chat.",
         "ROOM_PERMISSION_MANAGE_QUEUE": "You cannot manage the DJ queue in this room.",
         "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "You cannot control this room's external media.",
+        "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "You cannot edit this room's custom theme.",
         "ROOM_PERMISSION_MANAGE_POLLS": "You cannot create polls in this room.",
         "ROOM_PERMISSION_CREATE_EVENTS": "You cannot create events in this room.",
         "ROOM_EXTERNAL_MEDIA_ADMIN_ONLY": "Only admins can allow external media for a room.",
@@ -1423,6 +1424,10 @@
           "manage_external_media": {
             "label": "Control external media",
             "description": "Allows setting the room video, enabling external media, and pausing or advancing playback."
+          },
+          "manage_custom_theme": {
+            "label": "Edit custom theme",
+            "description": "Allows editing custom theme colors when the feature is unlocked for the room."
           },
           "manage_polls": {
             "label": "Create polls",
@@ -2979,6 +2984,9 @@
       "ROOM_EXTERNAL_MEDIA_DISABLED": "External media is disabled on the platform.",
       "ROOM_EXTERNAL_MEDIA_EMBED_UNAVAILABLE": "We could not open the embed for this external media.",
       "ROOM_EXTERNAL_MEDIA_ROOM_DISABLED": "External media has not been allowed for this room.",
+      "ROOM_FEATURE_ROOM_REQUIRED": "Select the room that will receive this feature.",
+      "ROOM_FEATURE_ROOM_OWNER_REQUIRED": "Only the room owner can purchase this feature.",
+      "ROOM_FEATURE_ALREADY_PERMANENT": "This room already has permanent access to this feature.",
       "ROOM_EXTERNAL_MEDIA_STREAM_UNAVAILABLE": "We could not load the stream for this external media.",
       "ROOM_EXTERNAL_MEDIA_UNSUPPORTED_URL": "This external media link is not supported.",
       "ROOM_GLOBAL_WORD_BLOCKED": "This message contains a word blocked by global moderation.",
@@ -3000,6 +3008,7 @@
       "ROOM_PERMISSION_KICK_USER": "You cannot kick users in this room.",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "You cannot manage this room's emojis.",
       "ROOM_PERMISSION_MANAGE_EXTERNAL_MEDIA": "You cannot control this room's external media.",
+      "ROOM_PERMISSION_MANAGE_CUSTOM_THEME": "You cannot edit this room's custom theme.",
       "ROOM_PERMISSION_MANAGE_LINKS": "You cannot manage this room's link filters.",
       "ROOM_PERMISSION_MANAGE_QUEUE": "You cannot manage the DJ queue in this room.",
       "ROOM_PERMISSION_MANAGE_ROLES": "You cannot manage this room's roles.",
@@ -3186,6 +3195,13 @@
         "roomThemeRoomLocked": "Applied only to the selected room. It does not unlock custom themes in other rooms on the account.",
         "roomThemeRoomRequired": "Select one of your rooms to buy or rent this theme.",
         "roomThemeRoomRequiredShort": "Select a room",
+        "externalMediaPermanentMeta": "Unlocks external media permanently for the selected room",
+        "externalMediaMonthlyMeta": "Unlocks external media for {days} days in the selected room",
+        "externalMediaRoomLocked": "Applied only to the selected room. Roles with permission can control external media in that room.",
+        "externalMediaRoomRequired": "Select one of your rooms to buy or rent external media access.",
+        "externalMediaRoomRequiredShort": "Select a room",
+        "externalMediaRoomLabel": "Room receiving external media",
+        "externalMediaNoOwnedRooms": "You need to own a room to unlock external media.",
         "roomThemeRoomLabel": "Room receiving the theme",
         "roomThemeRoomsLoading": "Loading your rooms...",
         "roomThemeRoomsLoadError": "We couldn't load your rooms right now.",
@@ -5160,6 +5176,12 @@
           "disableSuccess": "External media was blocked for {name}.",
           "saveError": "We could not update external media access for this room."
         },
+        "featureAccess": {
+          "paidUntil": "Paid access active until {date}.",
+          "paidPermanent": "Permanent paid access.",
+          "customThemeTitle": "Room custom theme",
+          "customThemeSubtitle": "Administratively unlock custom theme editing for authorized roles in this room."
+        },
         "roleLimits": {
           "title": "Room role limits",
           "subtitle": "Customize how many people this room can have in each special role.",
@@ -6125,9 +6147,12 @@
         "miscShopKindUsername": "Username change",
         "miscShopKindRoomThemePermanent": "Permanent custom room theme",
         "miscShopKindRoomThemeMonthly": "Monthly custom room theme",
+        "miscShopKindRoomExternalMediaPermanent": "Permanent room external media",
+        "miscShopKindRoomExternalMediaMonthly": "Monthly room external media",
         "miscShopCurrency": "Currency",
         "miscShopCurrencyCoins": "Coins",
         "miscShopCurrencyDiamonds": "Diamonds",
+        "miscShopCurrencyCoinsAndDiamonds": "Diamonds + Coins",
         "miscShopCurrencyBrl": "Real money (BRL)",
         "miscShopCurrencyUsd": "Real money (USD)",
         "miscShopCurrencyEur": "Real money (EUR)",
