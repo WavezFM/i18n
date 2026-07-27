@@ -1662,8 +1662,8 @@
       },
       "queueAction": {
         "leaveBooth": "Opusťte kabinu",
-        "leaveQueue": "Nechat frontu",
-        "skipTurn": "Přeskočení tahu",
+        "leaveQueue": "Opustit frontu",
+        "skipTurn": "Přeskočení písně",
         "enterQueue": "Připojit se do fronty",
         "queueFull": "Čekací listina je plná",
         "queueLocked": "Fronta zamčena",
@@ -1682,9 +1682,9 @@
         "leaveQueueTitle": "Opustit frontu?",
         "leaveQueueSubtitle": "Už jste ve frontě DJ . Chceš to teď nechat být?",
         "cancel": "Zrušit",
-        "skipTurn": "Přeskočení tahu",
-        "leaveQueue": "Nechat frontu",
-        "leaveDjQueue": "Nechte DJ frontě"
+        "skipTurn": "Přeskočení písně",
+        "leaveQueue": "Odejít z fronty",
+        "leaveDjQueue": "Opustit DJ frontu"
       },
       "votes": {
         "woot": "Woot",
@@ -2477,8 +2477,8 @@
       },
       "platform": {
         "none": "Člen",
-        "admin": "Administrativa",
-        "ambassador": "Velvyslanec",
+        "admin": "Admin",
+        "ambassador": "Ambassador",
         "bot": "Robot",
         "developer": "Vývojář",
         "verified": "Ověřeno",
@@ -2671,7 +2671,7 @@
       "communities": "Moje komunity",
       "team": "Tým",
       "progression": "Postup",
-      "leaveRoom": "Místo na volném místě"
+      "leaveRoom": "Opustit místnost"
     },
     "notificationCenter": {
       "button": "Oznámení",
@@ -3348,7 +3348,7 @@
       "reorderSuccess": "Pořadí playlistů bylo aktualizováno.",
       "reorderError": "Teď jsme nemohli tento playlist přeuspořádat.",
       "moveToTop": "Přesunout se nahoru",
-      "moveToEnd": "Move to end",
+      "moveToEnd": "Přesunout dolů",
       "renameTrack": "Přejmenovat skladbu",
       "renameTrackHint": "Vlastní název a interpret se použijí pouze v tomto playlistu.",
       "renameTrackTitleLabel": "Název",
@@ -3565,13 +3565,13 @@
       "title": "Prostředí",
       "subtitle": "Upravte svůj účet, způsob, jakým vás upozornění dostávají, a formát vašeho zážitku napříč WavezFM.",
       "tabs": {
-        "account": "Vyprávění",
+        "account": "Účet",
         "developer": "Vývojář",
         "violations": "Porušení",
         "notifications": "Oznámení",
         "chat": "Chat",
         "subscription": "Předplatné",
-        "billing": "Vyobrazování",
+        "billing": "Fakturace a platby",
         "diamonds": "Diamanty"
       },
       "nav": {
@@ -3580,11 +3580,11 @@
         "searchPlaceholder": "Vyhledávání",
         "emptySearch": "Žádná nastavení nenalezena.",
         "groups": {
-          "account": "Vyprávění",
+          "account": "Účet",
           "security": "Bezpečnost",
           "privacy": "Soukromí",
           "experience": "Zkušenosti",
-          "billing": "Vyobrazování",
+          "billing": "Fakturace a platby",
           "system": "Systém",
           "developer": "Vývojář"
         },
@@ -3600,7 +3600,7 @@
           "language": "Jazyk",
           "appearance": "Vzhled",
           "subscription": "Předplatné",
-          "billing": "Vyobrazování",
+          "billing": "Fakturace a platby",
           "diamonds": "Diamanty",
           "developer": "Vývojář"
         },
@@ -3644,13 +3644,13 @@
         "saveError": "Nemohli jsme aktualizovat režim údržby."
       },
       "account": {
-        "title": "Vyprávění",
+        "title": "Připojení",
         "subtitle": "Spravujte přístup, bezpečnost a způsob, jakým se vám čas zobrazuje na celém webu.",
         "emailLabel": "E-mail účtu",
         "emailHelp": "Kontaktujte podporu pro změnu e-mailu:",
         "discordLabel": "Discord",
-        "discordConnected": "Discord propojené",
-        "discordDisconnected": "Discord ještě nepřipojený",
+        "discordConnected": "Účet Discord je připojen",
+        "discordDisconnected": "Discord účet není připojen",
         "discordConnectedSince": "Jsme propojeni od roku {date}.",
         "discordHelp": "Připojte svůj Discord účet pro budoucí sociální funkce, odznaky a integrace do chatu.",
         "discordConnectedCta": "Propojení",
@@ -4583,8 +4583,8 @@
       "restrictedSubtitle": "Tato část dashboardu je dostupná pouze WavezFM administrátorům.",
       "roles": {
         "none": "Člen",
-        "admin": "Administrativa",
-        "ambassador": "Velvyslanec",
+        "admin": "Admin",
+        "ambassador": "Ambassador",
         "bot": "Bot",
         "developer": "Vývojář",
         "verified": "Ověřeno",
@@ -5211,7 +5211,7 @@
         "theme": {
           "title": "Barvy místností",
           "subtitle": "Změňte základní barvy renderované uvnitř místnosti. Prázdná pole používají výchozí téma stránky.",
-          "adminOnly": "Administrativa",
+          "adminOnly": "Admin",
           "import": "Importní JSON",
           "export": "Exportní JSON",
           "clear": "Čisté",
@@ -6211,9 +6211,9 @@
         "roleNameGlowUsersPlaceholder": "Vyhledejte uživatele podle jména, e-mailu nebo ID",
         "roleNameGlowUsersEmpty": "Vyhledejte uživatele, kterého chcete přidat, nebo odstranit vybrané uživatele zde.",
         "roleNameGlowNoUsers": "Žádní uživatelé nenalezeni.",
-        "roleNameGlowRoleAdmin": "Administrativa",
+        "roleNameGlowRoleAdmin": "Admin",
         "roleNameGlowRoleDeveloper": "Vývojář",
-        "roleNameGlowRoleAmbassador": "Velvyslanec",
+        "roleNameGlowRoleAmbassador": "Ambassador",
         "roleNameGlowRoleVerified": "Ověřeno",
         "roleNameGlowRoleSubscriber": "Odběratel",
         "badgeGlowTitle": "Záření odznaku",
