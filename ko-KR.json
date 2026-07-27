@@ -4784,6 +4784,7 @@
           "allVisibleAlreadyOwned": "이 계정은 이미 표시되는 모든 아바타를 소유하고 있습니다.",
           "selectVisible": "표시된 항목 선택",
           "clearSelection": "선택 해제",
+          "selectionCount": "{count}개 선택됨",
           "grantBatchSuccess": "{username}의 인벤토리에 아이템 {count}개를 추가했습니다.",
           "grantBatchSkipped": "이미 보유한 아이템 {count}개를 건너뛰었습니다.",
           "removeBatchSuccess": "{username}의 인벤토리에서 아이템 {count}개를 제거했습니다.",

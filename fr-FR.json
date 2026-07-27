@@ -4784,6 +4784,7 @@
           "allVisibleAlreadyOwned": "Ce compte possède déjà tous les avatars visibles.",
           "selectVisible": "Sélectionner les éléments visibles",
           "clearSelection": "Effacer la sélection",
+          "selectionCount": "{count, plural, =0 {Aucun élément sélectionné} one {# élément sélectionné} other {# éléments sélectionnés}}",
           "grantBatchSuccess": "{count, plural, one {# objet a été ajouté à l’inventaire de {username}.} other {# objets ont été ajoutés à l’inventaire de {username}.}}",
           "grantBatchSkipped": "{count, plural, one {# objet appartenait déjà au compte et a été ignoré.} other {# objets appartenaient déjà au compte et ont été ignorés.}}",
           "removeBatchSuccess": "{count, plural, one {# objet a été retiré de l’inventaire de {username}.} other {# objets ont été retirés de l’inventaire de {username}.}}",

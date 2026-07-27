@@ -4784,6 +4784,7 @@
           "allVisibleAlreadyOwned": "To konto już posiada wszystkie widoczne awatary.",
           "selectVisible": "Wybierz widoczne",
           "clearSelection": "Wyczyść wybór",
+          "selectionCount": "{count, plural, =0 {Nie wybrano żadnych elementów} one {Wybrano # element} few {Wybrano # elementy} many {Wybrano # elementów} other {Wybrano # elementu}}",
           "grantBatchSuccess": "{count, plural, one {Dodano # przedmiot do ekwipunku użytkownika {username}.} few {Dodano # przedmioty do ekwipunku użytkownika {username}.} other {Dodano # przedmiotów do ekwipunku użytkownika {username}.}}",
           "grantBatchSkipped": "{count, plural, one {Pominięto # przedmiot, ponieważ konto już go posiadało.} few {Pominięto # przedmioty, ponieważ konto już je posiadało.} other {Pominięto # przedmiotów, ponieważ konto już je posiadało.}}",
           "removeBatchSuccess": "{count, plural, one {Usunięto # przedmiot z ekwipunku użytkownika {username}.} few {Usunięto # przedmioty z ekwipunku użytkownika {username}.} other {Usunięto # przedmiotów z ekwipunku użytkownika {username}.}}",

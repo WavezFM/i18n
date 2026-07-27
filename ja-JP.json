@@ -4784,6 +4784,7 @@
           "allVisibleAlreadyOwned": "このアカウントはすでにすべての見えるアバターを所有しています。",
           "selectVisible": "表示中を選択",
           "clearSelection": "選択を解除",
+          "selectionCount": "{count}件選択中",
           "grantBatchSuccess": "{username} のインベントリに {count} 件のアイテムを追加しました。",
           "grantBatchSkipped": "{count} 件のアイテムはすでに所有しているためスキップされました。",
           "removeBatchSuccess": "{username} のインベントリから {count} 件のアイテムを削除しました。",
