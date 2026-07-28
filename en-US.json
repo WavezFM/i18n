@@ -1922,7 +1922,7 @@
       "composerPlaceholder": "Click here to join the conversation",
       "pastedImage": {
         "label": "Attached image",
-        "expired": "Expired image",
+        "expired": "This media has expired.",
         "attach": "Attach image or GIF",
         "fallbackName": "Pasted image",
         "uploading": "Uploading image...",

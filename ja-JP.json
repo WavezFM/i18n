@@ -1922,7 +1922,7 @@
       "composerPlaceholder": "会話に参加するにはこちらをクリックしてください",
       "pastedImage": {
         "label": "添付画像",
-        "expired": "期限切れの画像",
+        "expired": "このメディアは期限切れです。",
         "attach": "画像またはGIFを添付してください",
         "fallbackName": "貼り付けた画像",
         "uploading": "画像をアップロード中...",

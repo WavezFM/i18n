@@ -1922,7 +1922,7 @@
       "composerPlaceholder": "대화에 참여하려면 여기를 클릭하세요",
       "pastedImage": {
         "label": "첨부된 이미지",
-        "expired": "만료된 이미지",
+        "expired": "이 미디어는 만료되었습니다.",
         "attach": "이미지 첨부 또는 GIF",
         "fallbackName": "붙여넣은 이미지",
         "uploading": "이미지 업로드 중...",
