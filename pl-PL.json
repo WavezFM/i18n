@@ -1922,6 +1922,7 @@
       "composerPlaceholder": "Kliknij tutaj, aby dołączyć do rozmowy",
       "pastedImage": {
         "label": "Załączony obraz",
+        "expired": "Obraz wygasł",
         "attach": "Załącz obraz lub GIF",
         "fallbackName": "Wklejony obraz",
         "uploading": "Przesyłam obraz...",

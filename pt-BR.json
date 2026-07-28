@@ -1922,6 +1922,7 @@
       "composerPlaceholder": "Clique aqui para entrar na conversa",
       "pastedImage": {
         "label": "Imagem anexada",
+        "expired": "Imagem expirada",
         "attach": "Anexar imagem ou GIF",
         "fallbackName": "Imagem colada",
         "uploading": "Enviando imagem...",

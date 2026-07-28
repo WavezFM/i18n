@@ -1922,6 +1922,7 @@
       "composerPlaceholder": "Klikněte zde a zapojte se do diskuze",
       "pastedImage": {
         "label": "Přiložený obrázek",
+        "expired": "Platnost obrázku vypršela",
         "attach": "Přiložte obrázek nebo GIF",
         "fallbackName": "Vložený obrázek",
         "uploading": "Nahrávám obrázek...",

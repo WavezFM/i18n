@@ -1922,6 +1922,7 @@
       "composerPlaceholder": "Cliquez ici pour rejoindre la conversation",
       "pastedImage": {
         "label": "Image jointe",
+        "expired": "Image expirée",
         "attach": "Attachez une image ou GIF",
         "fallbackName": "Image collée",
         "uploading": "Téléchargement de l’image...",

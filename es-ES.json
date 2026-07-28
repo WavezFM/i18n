@@ -1922,6 +1922,7 @@
       "composerPlaceholder": "Haz clic aquí para unirte a la conversación",
       "pastedImage": {
         "label": "Imagen adjunta",
+        "expired": "Imagen caducada",
         "attach": "Adjunta imagen o GIF",
         "fallbackName": "Imagen pegada",
         "uploading": "Subiendo imagen...",
