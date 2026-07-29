@@ -1767,6 +1767,7 @@
         "goToRoom": "Ve a la sala",
         "scopeGlobal": "Global",
         "scopeRoom": "Sala",
+        "roomName": "Sala: {room}",
         "emptyTitle": "Todavía no hay eventos aquí",
         "emptyDescription": "Cuando hay un evento global o un evento en esta sala, aparecerá aquí.",
         "previous": "Evento anterior",

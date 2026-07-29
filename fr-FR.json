@@ -1767,6 +1767,7 @@
         "goToRoom": "Va dans la chambre",
         "scopeGlobal": "Mondial",
         "scopeRoom": "Chambre",
+        "roomName": "Salle : {room}",
         "emptyTitle": "Aucun événement ici pour l’instant",
         "emptyDescription": "Lorsqu’il y a un événement mondial ou un événement dans cette salle, il apparaîtra ici.",
         "previous": "Événement précédent",

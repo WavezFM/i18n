@@ -1767,6 +1767,7 @@
         "goToRoom": "Jdi do pokoje",
         "scopeGlobal": "Globální",
         "scopeRoom": "Pokoj",
+        "roomName": "Místnost: {room}",
         "emptyTitle": "Zatím tu žádné akce",
         "emptyDescription": "Když se v této místnosti odehraje globální událost nebo událost, objeví se zde.",
         "previous": "Předchozí událost",

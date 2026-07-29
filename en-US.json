@@ -1767,6 +1767,7 @@
         "goToRoom": "Go to room",
         "scopeGlobal": "Global",
         "scopeRoom": "Room",
+        "roomName": "Room: {room}",
         "emptyTitle": "No events here yet",
         "emptyDescription": "When there is a global event or an event in this room, it will appear here.",
         "previous": "Previous event",

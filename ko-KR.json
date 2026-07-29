@@ -1767,6 +1767,7 @@
         "goToRoom": "방으로 이동",
         "scopeGlobal": "글로벌",
         "scopeRoom": "방",
+        "roomName": "방: {room}",
         "emptyTitle": "아직 이벤트가 없습니다.",
         "emptyDescription": "글로벌 이벤트나 이 방에 이벤트가 있으면 여기에 표시됩니다.",
         "previous": "이전 이벤트",

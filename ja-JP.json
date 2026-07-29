@@ -1767,6 +1767,7 @@
         "goToRoom": "部屋に行って",
         "scopeGlobal": "グローバル",
         "scopeRoom": "部屋",
+        "roomName": "ルーム: {room}",
         "emptyTitle": "まだここでの出来事はありません",
         "emptyDescription": "この部屋でグローバルイベントやイベントが起きた場合、ここに表示されます。",
         "previous": "前回のイベント",
