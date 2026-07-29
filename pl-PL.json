@@ -1791,6 +1791,8 @@
         "reviewEvents": "Sprawdź",
         "submitTitle": "Wyślij wydarzenie do zatwierdzenia",
         "submitSubtitle": "Uzupełnij dane. Wydarzenie będzie widoczne dopiero po zatwierdzeniu.",
+        "globalSubmissionLabel": "Wydarzenie globalne",
+        "globalSubmissionHint": "Po zaznaczeniu wydarzenie zostanie przesłane dla wszystkich pokoi. W przeciwnym razie po zatwierdzeniu będzie dostępne tylko w tym pokoju.",
         "eventTitle": "Tytuł",
         "eventDescription": "Opis",
         "titlePtBr": "Tytuł portugalski",

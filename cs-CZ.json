@@ -1791,6 +1791,8 @@
         "reviewEvents": "Posoudit",
         "submitTitle": "Odeslat událost ke schválení",
         "submitSubtitle": "Vyplňte údaje. Událost se zobrazí až po schválení týmem.",
+        "globalSubmissionLabel": "Globální událost",
+        "globalSubmissionHint": "Po zaškrtnutí bude událost odeslána pro všechny místnosti. Jinak bude po schválení dostupná pouze v této místnosti.",
         "eventTitle": "Název",
         "eventDescription": "Popis",
         "titlePtBr": "Portugalský název",

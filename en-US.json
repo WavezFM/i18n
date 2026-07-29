@@ -1791,6 +1791,8 @@
         "reviewEvents": "Review",
         "submitTitle": "Submit event for approval",
         "submitSubtitle": "Complete the event details. It will only become visible after staff approval.",
+        "globalSubmissionLabel": "Global event",
+        "globalSubmissionHint": "When selected, the event will be submitted for every room. Otherwise, it will only be available in this room after approval.",
         "eventTitle": "Title",
         "eventDescription": "Description",
         "titlePtBr": "Portuguese title",

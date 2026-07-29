@@ -1791,6 +1791,8 @@
         "reviewEvents": "검토",
         "submitTitle": "이벤트 승인 요청",
         "submitSubtitle": "세부 정보를 입력하세요. 스태프 승인 후에만 공개됩니다.",
+        "globalSubmissionLabel": "글로벌 이벤트",
+        "globalSubmissionHint": "선택하면 모든 방을 대상으로 제출됩니다. 선택하지 않으면 승인 후 이 방에서만 표시됩니다.",
         "eventTitle": "제목",
         "eventDescription": "설명",
         "titlePtBr": "포르투갈어 제목",

@@ -1791,6 +1791,8 @@
         "reviewEvents": "Revisar",
         "submitTitle": "Enviar evento para aprobación",
         "submitSubtitle": "Completa los datos. El evento solo será visible tras la aprobación del equipo.",
+        "globalSubmissionLabel": "Evento global",
+        "globalSubmissionHint": "Al marcarlo, el evento se enviará para todas las salas. De lo contrario, solo estará disponible en esta sala tras su aprobación.",
         "eventTitle": "Título",
         "eventDescription": "Descripción",
         "titlePtBr": "Título en portugués",

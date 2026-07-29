@@ -1791,6 +1791,8 @@
         "reviewEvents": "Examiner",
         "submitTitle": "Soumettre un événement pour approbation",
         "submitSubtitle": "Renseignez les détails. L’événement ne sera visible qu’après approbation.",
+        "globalSubmissionLabel": "Événement global",
+        "globalSubmissionHint": "Si cette option est cochée, l’événement sera proposé pour toutes les salles. Sinon, il sera disponible uniquement dans cette salle après approbation.",
         "eventTitle": "Titre",
         "eventDescription": "Description",
         "titlePtBr": "Titre en portugais",

@@ -1791,6 +1791,8 @@
         "reviewEvents": "審査",
         "submitTitle": "イベントを承認申請",
         "submitSubtitle": "詳細を入力してください。スタッフの承認後に公開されます。",
+        "globalSubmissionLabel": "グローバルイベント",
+        "globalSubmissionHint": "選択すると、すべてのルーム向けイベントとして申請されます。選択しない場合、承認後にこのルームでのみ表示されます。",
         "eventTitle": "タイトル",
         "eventDescription": "説明",
         "titlePtBr": "ポルトガル語のタイトル",
