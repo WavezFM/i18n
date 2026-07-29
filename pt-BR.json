@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "Chat travado"
       },
+      "localChat": {
+        "clearAction": "Limpar meu chat",
+        "cleared": "Seu chat foi limpo apenas neste navegador.",
+        "loadOlder": "Carregar {count} mensagens anteriores"
+      },
       "versionBanner": "Bem-vindo ao WavezFM. Versão {version}.",
       "versionBannerDismiss": "Fechar aviso de versão",
       "memberSince": "Usuário desde",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "Uso: /efeito <tipo|off>",
         "usagePoll": "Uso: /poll ou /enquete",
         "usageClear": "Uso: /clear [@usuário|0-50]",
+        "usageClearLocal": "Uso: /clearlocal",
+        "usageUser": "Uso: /user @usuário",
         "usageWhisper": "Uso: /w @usuário mensagem",
         "noTrackPlaying": "Não há nenhuma faixa tocando para pular.",
         "usageLockChat": "Uso: /lockchat [on|off] ou /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "Uso: /spoiler <mensagem>",
         "userNotFound": "Não encontramos essa pessoa na sala.",
         "userNotFoundGlobal": "Não encontramos esse usuário.",
+        "userLookupError": "Não foi possível abrir esse usuário agora.",
         "clearCountInvalid": "Use /clear com um número de 0 a 50 mensagens.",
         "cannotWhisperYourself": "Você não pode sussurrar para si mesmo.",
         "whisperTooLong": "O sussurro pode ter no máximo 500 caracteres.",
@@ -2157,6 +2165,8 @@
           "room": "sala"
         },
         "commands": {
+          "clearLocal": "Limpa o chat apenas para você neste navegador.",
+          "user": "Abre o perfil rápido de qualquer usuário.",
           "clear": "Apaga o chat inteiro ou as mensagens de uma pessoa.",
           "spoiler": "Envia a mensagem coberta como spoiler.",
           "whisper": "Envia uma mensagem privada para um usuário.",

@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "Chat zamčen"
       },
+      "localChat": {
+        "clearAction": "Vymazat můj chat",
+        "cleared": "Chat byl vymazán pouze v tomto prohlížeči.",
+        "loadOlder": "Načíst {count} starších zpráv"
+      },
       "versionBanner": "Vítejte u WavezFM. Verze {version}.",
       "versionBannerDismiss": "Oznámení o uzavřené verzi",
       "memberSince": "Člen od",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "Použití: /effect <type|off>",
         "usagePoll": "Použití: /poll nebo /enquete",
         "usageClear": "Použití: /clear [@user|0-50]",
+        "usageClearLocal": "Použití: /clearlocal",
+        "usageUser": "Použití: /user @uživatel",
         "usageWhisper": "Použití: /w @user zpráva",
         "noTrackPlaying": "Není zde žádná skladba, kterou by se dalo přeskočit.",
         "usageLockChat": "Použití: /lockchat [zapnuto|vypnuto] nebo /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "Použití: /spoiler <message>",
         "userNotFound": "Nemohli jsme tu osobu v místnosti najít.",
         "userNotFoundGlobal": "Toho uživatele jsme nenašli.",
+        "userLookupError": "Tohoto uživatele se nyní nepodařilo otevřít.",
         "clearCountInvalid": "Použijte /clear s číslem od 0 do 50 zpráv.",
         "cannotWhisperYourself": "Nemůžeš si šeptat.",
         "whisperTooLong": "Whispers může mít maximálně 500 znaků.",
@@ -2157,6 +2165,8 @@
           "room": "Místnost"
         },
         "commands": {
+          "clearLocal": "Vymaže chat pouze pro vás v tomto prohlížeči.",
+          "user": "Otevře rychlý profil libovolného uživatele.",
           "clear": "Vymaže celý chat nebo zprávy jednoho uživatele.",
           "spoiler": "Zpráva je zakrytá jako spoiler.",
           "whisper": "Odešle uživateli soukromou zprávu.",

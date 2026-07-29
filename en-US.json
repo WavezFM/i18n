@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "Chat locked"
       },
+      "localChat": {
+        "clearAction": "Clear my chat",
+        "cleared": "Your chat was cleared only in this browser.",
+        "loadOlder": "Load {count} older messages"
+      },
       "versionBanner": "Welcome to WavezFM. Version {version}.",
       "versionBannerDismiss": "Close version notice",
       "memberSince": "Member since",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "Usage: /effect <type|off>",
         "usagePoll": "Usage: /poll or /enquete",
         "usageClear": "Usage: /clear [@user|0-50]",
+        "usageClearLocal": "Usage: /clearlocal",
+        "usageUser": "Usage: /user @username",
         "usageWhisper": "Usage: /w @user message",
         "noTrackPlaying": "There is no track playing to skip.",
         "usageLockChat": "Usage: /lockchat [on|off] or /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "Usage: /spoiler <message>",
         "userNotFound": "We could not find that person in the room.",
         "userNotFoundGlobal": "We could not find that user.",
+        "userLookupError": "We could not open that user right now.",
         "clearCountInvalid": "Use /clear with a number from 0 to 50 messages.",
         "cannotWhisperYourself": "You cannot whisper yourself.",
         "whisperTooLong": "Whispers can be at most 500 characters long.",
@@ -2157,6 +2165,8 @@
           "room": "room"
         },
         "commands": {
+          "clearLocal": "Clears the chat only for you in this browser.",
+          "user": "Opens any user's quick profile.",
           "clear": "Clears the whole chat or one user's messages.",
           "spoiler": "Sends the message covered as a spoiler.",
           "whisper": "Sends a private message to a user.",

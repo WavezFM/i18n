@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "Czat zablokowany"
       },
+      "localChat": {
+        "clearAction": "Wyczyść mój czat",
+        "cleared": "Czat został wyczyszczony tylko w tej przeglądarce.",
+        "loadOlder": "Wczytaj {count} starszych wiadomości"
+      },
       "versionBanner": "Witamy w WavezFM. Wersja {version}.",
       "versionBannerDismiss": "Powiadomienie o wersji zamkniętej",
       "memberSince": "Członek od",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "Użytkowanie: /effect <type|off>",
         "usagePoll": "Użycie: /poll lub /enquete",
         "usageClear": "Użycie: /clear [@user|0-50]",
+        "usageClearLocal": "Użycie: /clearlocal",
+        "usageUser": "Użycie: /user @użytkownik",
         "usageWhisper": "Użycie: /w @user wiadomość",
         "noTrackPlaying": "Nie ma odtwarzania utworu, który można pominąć.",
         "usageLockChat": "Użycie: /lockchat [wyłączone] lub /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "Użytkowanie: /spoiler <message>",
         "userNotFound": "Nie mogliśmy znaleźć tej osoby w pokoju.",
         "userNotFoundGlobal": "Nie mogliśmy znaleźć tego użytkownika.",
+        "userLookupError": "Nie udało się teraz otworzyć tego użytkownika.",
         "clearCountInvalid": "Użyj /clear z liczbą od 0 do 50 wiadomości.",
         "cannotWhisperYourself": "Nie możesz sam szepnąć.",
         "whisperTooLong": "Whispers mogą mieć maksymalnie 500 znaków.",
@@ -2157,6 +2165,8 @@
           "room": "Pokój"
         },
         "commands": {
+          "clearLocal": "Czyści czat tylko dla ciebie w tej przeglądarce.",
+          "user": "Otwiera szybki profil dowolnego użytkownika.",
           "clear": "Usuwa cały czat lub wiadomości jednego użytkownika.",
           "spoiler": "Wysyła wiadomość ukrytą jako spoiler.",
           "whisper": "Wysyła prywatną wiadomość do użytkownika.",

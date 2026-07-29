@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "채팅이 잠겼습니다."
       },
+      "localChat": {
+        "clearAction": "내 채팅 지우기",
+        "cleared": "이 브라우저에서만 채팅을 지웠습니다.",
+        "loadOlder": "이전 메시지 {count}개 불러오기"
+      },
       "versionBanner": "WavezFM에 오신 것을 환영합니다. 버전 {version}.",
       "versionBannerDismiss": "버전 공지 닫기",
       "memberSince": "이후 회원",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "사용법: /effect <type|off>",
         "usagePoll": "사용법: /poll 또는 /enquete",
         "usageClear": "사용법: /clear [@user|0-50]",
+        "usageClearLocal": "사용법: /clearlocal",
+        "usageUser": "사용법: /user @사용자명",
         "usageWhisper": "사용법: /w @user 메시지",
         "noTrackPlaying": "건너뛸 수 있는 재생 중인 트랙이 없습니다.",
         "usageLockChat": "사용법: /lockchat [on|off] 또는 /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "사용법: /spoiler <message>",
         "userNotFound": "방에서는 그 사람을 찾을 수 없었습니다.",
         "userNotFoundGlobal": "해당 사용자를 찾을 수 없습니다.",
+        "userLookupError": "지금은 해당 사용자를 열 수 없습니다.",
         "clearCountInvalid": "0~50개 메시지의 숫자와 함께 /clear를 사용하세요.",
         "cannotWhisperYourself": "스스로 속삭일 수는 없습니다.",
         "whisperTooLong": "귓속말의 길이는 최대 500자까지 가능합니다.",
@@ -2157,6 +2165,8 @@
           "room": "방"
         },
         "commands": {
+          "clearLocal": "이 브라우저에서 나에게만 채팅을 지웁니다.",
+          "user": "사용자의 빠른 프로필을 엽니다.",
           "clear": "전체 채팅 또는 한 사용자의 메시지를 지웁니다.",
           "spoiler": "스포일러로 가려진 메시지를 보냅니다.",
           "whisper": "사용자에게 비공개 메시지를 보냅니다.",

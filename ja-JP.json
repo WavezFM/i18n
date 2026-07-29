@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "チャットロック"
       },
+      "localChat": {
+        "clearAction": "自分のチャットを消去",
+        "cleared": "このブラウザ内のチャットだけを消去しました。",
+        "loadOlder": "過去のメッセージを{count}件読み込む"
+      },
       "versionBanner": "ようこそ WavezFM。バージョン {version}。",
       "versionBannerDismiss": "終了版通知",
       "memberSince": "メンバー",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "使用例: /effect <type|off>",
         "usagePoll": "使用: /poll または /enquete",
         "usageClear": "使用: /clear [@user|0-50]",
+        "usageClearLocal": "使用: /clearlocal",
+        "usageUser": "使用: /user @ユーザー名",
         "usageWhisper": "使用例: /w @user メッセージ",
         "noTrackPlaying": "スキップできる曲はありません。",
         "usageLockChat": "使用方法: /lockchat [オン|オフ]または /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "使用例: /spoiler <message>",
         "userNotFound": "その人を見つけることはできませんでした。",
         "userNotFoundGlobal": "そのユーザーは見つかりませんでした。",
+        "userLookupError": "現在そのユーザーを開けませんでした。",
         "clearCountInvalid": "0から50までの番号の /clear を使いましょう。",
         "cannotWhisperYourself": "自分でささやくことはできません。",
         "whisperTooLong": "ささやきは最大でも500文字程度です。",
@@ -2157,6 +2165,8 @@
           "room": "部屋"
         },
         "commands": {
+          "clearLocal": "このブラウザ上で自分のチャットだけを消去します。",
+          "user": "任意のユーザーのクイックプロフィールを開きます。",
           "clear": "チャット全体や1人のメッセージを消去します。",
           "spoiler": "ネタバレとしてメッセージを送る。",
           "whisper": "ユーザーにプライベートメッセージを送信します。",

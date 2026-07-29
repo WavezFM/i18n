@@ -732,6 +732,11 @@
       "chatLocked": {
         "badge": "Chat verrouillé"
       },
+      "localChat": {
+        "clearAction": "Effacer mon chat",
+        "cleared": "Votre chat a été effacé uniquement dans ce navigateur.",
+        "loadOlder": "Charger {count} messages précédents"
+      },
       "versionBanner": "Bienvenue à WavezFM. Version {version}.",
       "versionBannerDismiss": "Avis de version fermée",
       "memberSince": "Membre depuis",
@@ -2082,6 +2087,8 @@
         "usageStrobo": "Utilisation : /effect <type|off>",
         "usagePoll": "Utilisation : /poll ou /enquete",
         "usageClear": "Utilisation : /clear [@user|0-50]",
+        "usageClearLocal": "Utilisation : /clearlocal",
+        "usageUser": "Utilisation : /user @utilisateur",
         "usageWhisper": "Utilisation : /w @user message",
         "noTrackPlaying": "Il n’y a pas de piste à sauter.",
         "usageLockChat": "Utilisation : /lockchat [activé|désactivé] ou /unlockchat",
@@ -2093,6 +2100,7 @@
         "usageSpoiler": "Utilisation : /spoiler <message>",
         "userNotFound": "Nous n’avons pas pu trouver cette personne dans la pièce.",
         "userNotFoundGlobal": "Nous n’avons pas pu trouver cet utilisateur.",
+        "userLookupError": "Impossible d’ouvrir cet utilisateur maintenant.",
         "clearCountInvalid": "Utilisez /clear avec un nombre allant de 0 à 50 messages.",
         "cannotWhisperYourself": "Tu ne peux pas te murmurer à voix basse.",
         "whisperTooLong": "Les Chuchotements peuvent faire au maximum 500 caractères.",
@@ -2157,6 +2165,8 @@
           "room": "Chambre"
         },
         "commands": {
+          "clearLocal": "Efface le chat uniquement pour vous dans ce navigateur.",
+          "user": "Ouvre le profil rapide de n’importe quel utilisateur.",
           "clear": "Ça efface tout le chat ou les messages d’un utilisateur.",
           "spoiler": "Envoie le message couvert comme un spoiler.",
           "whisper": "Envoie un message privé à un utilisateur.",
