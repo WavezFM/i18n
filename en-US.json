@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "You are banned from this room.",
         "ROOM_PERMISSION_SEND_CHAT": "You cannot chat in this room.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "You cannot attach images or GIFs in this room chat.",
         "ROOM_PERMISSION_JOIN_QUEUE": "You cannot join the DJ queue in this room.",
         "ROOM_PERMISSION_MUTE_USER": "You cannot mute users in this room.",
         "ROOM_PERMISSION_KICK_USER": "You cannot kick users in this room.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "Send chat",
             "description": "Allows regular chat messages in the room."
+          },
+          "attach_chat_media": {
+            "label": "Attach chat media",
+            "description": "Allows attaching images and GIFs to room chat messages."
           },
           "join_queue": {
             "label": "Join queue",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "You cannot manage this room.",
       "ROOM_PERMISSION_MUTE_USER": "You cannot mute users in this room.",
       "ROOM_PERMISSION_SEND_CHAT": "You cannot chat in this room.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "You cannot attach images or GIFs in this room chat.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "You cannot view this room's logs.",
       "ROOM_QUEUE_FULL": "The DJ queue has already reached the 100-person limit.",
       "ROOM_QUEUE_LOCKED": "The DJ queue is locked for regular users.",

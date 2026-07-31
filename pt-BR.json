@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "Você está banido desta sala.",
         "ROOM_PERMISSION_SEND_CHAT": "Você não pode conversar nesta sala.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Você não pode anexar imagens ou GIFs no chat desta sala.",
         "ROOM_PERMISSION_JOIN_QUEUE": "Você não pode entrar na fila de DJ nesta sala.",
         "ROOM_PERMISSION_MUTE_USER": "Você não pode mutar usuários nesta sala.",
         "ROOM_PERMISSION_KICK_USER": "Você não pode expulsar usuários nesta sala.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "Enviar mensagens",
             "description": "Permite falar normalmente no chat da sala."
+          },
+          "attach_chat_media": {
+            "label": "Anexar mídia no chat",
+            "description": "Permite anexar imagens e GIFs às mensagens do chat da sala."
           },
           "join_queue": {
             "label": "Entrar na fila",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "Você não pode gerenciar esta sala.",
       "ROOM_PERMISSION_MUTE_USER": "Você não pode mutar usuários nesta sala.",
       "ROOM_PERMISSION_SEND_CHAT": "Você não pode conversar nesta sala.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Você não pode anexar imagens ou GIFs no chat desta sala.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "Você não pode ver os registros da sala.",
       "ROOM_QUEUE_FULL": "A fila de DJ já atingiu o limite de 100 pessoas.",
       "ROOM_QUEUE_LOCKED": "A fila de DJ está travada para usuários comuns.",

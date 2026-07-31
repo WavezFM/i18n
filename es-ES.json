@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "Estás vetado en esta sala.",
         "ROOM_PERMISSION_SEND_CHAT": "No puedes charlar en esta sala.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "No puedes adjuntar imágenes ni GIF en el chat de esta sala.",
         "ROOM_PERMISSION_JOIN_QUEUE": "No puedes unirte a la cola de DJ en esta sala.",
         "ROOM_PERMISSION_MUTE_USER": "No puedes silenciar a los usuarios en esta sala.",
         "ROOM_PERMISSION_KICK_USER": "No puedes expulsar a los usuarios de esta sala.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "Enviar chat",
             "description": "Permite mensajes de chat regulares en la sala."
+          },
+          "attach_chat_media": {
+            "label": "Adjuntar medios al chat",
+            "description": "Permite adjuntar imágenes y GIF a los mensajes del chat de la sala."
           },
           "join_queue": {
             "label": "Cola de unión",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "No puedes manejar esta sala.",
       "ROOM_PERMISSION_MUTE_USER": "No puedes silenciar a los usuarios en esta sala.",
       "ROOM_PERMISSION_SEND_CHAT": "No puedes charlar en esta sala.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "No puedes adjuntar imágenes ni GIF en el chat de esta sala.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "No puedes ver los registros de esta sala.",
       "ROOM_QUEUE_FULL": "La cola de DJ ya ha alcanzado el límite de 100 personas.",
       "ROOM_QUEUE_LOCKED": "La cola de DJ está bloqueada para los usuarios habituales.",

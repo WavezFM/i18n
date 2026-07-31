@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "Jsi z této místnosti vyloučen.",
         "ROOM_PERMISSION_SEND_CHAT": "V této místnosti si nemůžete povídat.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "V chatu této místnosti nemůžete připojovat obrázky ani GIFy.",
         "ROOM_PERMISSION_JOIN_QUEUE": "Do fronty DJ v této místnosti se nemůžete připojit.",
         "ROOM_PERMISSION_MUTE_USER": "V této místnosti nelze uživatele ztlumit.",
         "ROOM_PERMISSION_KICK_USER": "V této místnosti nemůžete vyhodit uživatele.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "Pošli chat",
             "description": "Umožňuje běžné chatovací zprávy v místnosti."
+          },
+          "attach_chat_media": {
+            "label": "Připojit média k chatu",
+            "description": "Umožňuje připojovat obrázky a GIFy ke zprávám v chatu místnosti."
           },
           "join_queue": {
             "label": "Připojit se do fronty",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "Tuto místnost nezvládneš.",
       "ROOM_PERMISSION_MUTE_USER": "V této místnosti nelze uživatele ztlumit.",
       "ROOM_PERMISSION_SEND_CHAT": "V této místnosti si nemůžete povídat.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "V chatu této místnosti nemůžete připojovat obrázky ani GIFy.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "Nemůžeš nahlédnout do záznamů této místnosti.",
       "ROOM_QUEUE_FULL": "Fronta na DJ již dosáhla limitu 100 osob.",
       "ROOM_QUEUE_LOCKED": "Fronta DJ je pro běžné uživatele zamčena.",

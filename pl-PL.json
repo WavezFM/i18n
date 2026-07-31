@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "Masz zakaz wstępu do tego pokoju.",
         "ROOM_PERMISSION_SEND_CHAT": "Nie możesz rozmawiać w tym pokoju.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Nie możesz załączać obrazów ani GIF-ów na czacie tego pokoju.",
         "ROOM_PERMISSION_JOIN_QUEUE": "Nie możesz dołączyć do kolejki DJ w tym pokoju.",
         "ROOM_PERMISSION_MUTE_USER": "Nie można wyciszać użytkowników w tym pokoju.",
         "ROOM_PERMISSION_KICK_USER": "Nie możesz wyrzucić użytkowników w tym pokoju.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "Wyślij czat",
             "description": "Pozwala na regularne wiadomości na czacie w pokoju."
+          },
+          "attach_chat_media": {
+            "label": "Załącz multimedia do czatu",
+            "description": "Pozwala załączać obrazy i GIF-y do wiadomości na czacie pokoju."
           },
           "join_queue": {
             "label": "Dołącz do kolejki",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "Nie potrafisz zarządzać tym pokojem.",
       "ROOM_PERMISSION_MUTE_USER": "Nie można wyciszać użytkowników w tym pokoju.",
       "ROOM_PERMISSION_SEND_CHAT": "Nie możesz rozmawiać w tym pokoju.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Nie możesz załączać obrazów ani GIF-ów na czacie tego pokoju.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "Nie możesz przeglądać dzienników tego pokoju.",
       "ROOM_QUEUE_FULL": "Kolejka DJ już osiągnęła limit 100 osób.",
       "ROOM_QUEUE_LOCKED": "Kolejka DJ jest zablokowana dla zwykłych użytkowników.",

@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "당신은 이 방에 들어갈 수 없습니다.",
         "ROOM_PERMISSION_SEND_CHAT": "이 방에서는 채팅을 할 수 없습니다.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "이 방의 채팅에는 이미지나 GIF를 첨부할 수 없습니다.",
         "ROOM_PERMISSION_JOIN_QUEUE": "이 방에서는 DJ 대기열에 참여할 수 없습니다.",
         "ROOM_PERMISSION_MUTE_USER": "이 방의 사용자를 음소거할 수 없습니다.",
         "ROOM_PERMISSION_KICK_USER": "이 방에서는 사용자를 추방할 수 없습니다.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "채팅 보내기",
             "description": "방에서 일반 채팅 메시지를 허용합니다."
+          },
+          "attach_chat_media": {
+            "label": "채팅에 미디어 첨부",
+            "description": "방 채팅 메시지에 이미지와 GIF를 첨부할 수 있습니다."
           },
           "join_queue": {
             "label": "대기열에 참여",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "이 방을 관리할 수 없습니다.",
       "ROOM_PERMISSION_MUTE_USER": "이 방의 사용자를 음소거할 수 없습니다.",
       "ROOM_PERMISSION_SEND_CHAT": "이 방에서는 채팅을 할 수 없습니다.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "이 방의 채팅에는 이미지나 GIF를 첨부할 수 없습니다.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "이 방의 로그를 볼 수 없습니다.",
       "ROOM_QUEUE_FULL": "DJ 대기열은 이미 100명 제한에 도달했습니다.",
       "ROOM_QUEUE_LOCKED": "DJ 대기열은 일반 사용자에 대해 잠겨 있습니다.",

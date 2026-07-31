@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "この部屋への立ち入り禁止です。",
         "ROOM_PERMISSION_SEND_CHAT": "この部屋ではおしゃべりできません。",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "この部屋のチャットには画像やGIFを添付できません。",
         "ROOM_PERMISSION_JOIN_QUEUE": "この部屋の DJ 列には入れません。",
         "ROOM_PERMISSION_MUTE_USER": "この部屋ではユーザーのミュートはできません。",
         "ROOM_PERMISSION_KICK_USER": "この部屋でユーザーをキックできない。",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "チャットを送る",
             "description": "部屋内で定期的にチャットメッセージを送ることが可能です。"
+          },
+          "attach_chat_media": {
+            "label": "チャットにメディアを添付",
+            "description": "部屋のチャットメッセージに画像やGIFを添付できます。"
           },
           "join_queue": {
             "label": "キューに参加",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "この部屋は管理できない。",
       "ROOM_PERMISSION_MUTE_USER": "この部屋ではユーザーのミュートはできません。",
       "ROOM_PERMISSION_SEND_CHAT": "この部屋ではおしゃべりできません。",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "この部屋のチャットには画像やGIFを添付できません。",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "この部屋のログは閲覧できません。",
       "ROOM_QUEUE_FULL": "DJ列はすでに100人の上限に達しています。",
       "ROOM_QUEUE_LOCKED": "DJキューは通常の利用者にはロックされています。",

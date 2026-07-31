@@ -624,6 +624,7 @@
       "errorCodes": {
         "ROOM_BANNED": "Vous êtes banni de cette pièce.",
         "ROOM_PERMISSION_SEND_CHAT": "Vous ne pouvez pas discuter dans cette pièce.",
+        "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Vous ne pouvez pas joindre d’images ou de GIF au chat de cette salle.",
         "ROOM_PERMISSION_JOIN_QUEUE": "Vous ne pouvez pas rejoindre la file d’attente DJ dans cette salle.",
         "ROOM_PERMISSION_MUTE_USER": "Vous ne pouvez pas mettre en sourdine les utilisateurs dans cette pièce.",
         "ROOM_PERMISSION_KICK_USER": "Vous ne pouvez pas expulser les utilisateurs de cette pièce.",
@@ -1385,6 +1386,10 @@
           "send_chat": {
             "label": "Envoyer un chat",
             "description": "Permet des messages de chat réguliers dans la pièce."
+          },
+          "attach_chat_media": {
+            "label": "Joindre des médias au chat",
+            "description": "Permet de joindre des images et des GIF aux messages du chat de la salle."
           },
           "join_queue": {
             "label": "File d’attente de rejoindre",
@@ -3029,6 +3034,7 @@
       "ROOM_PERMISSION_MANAGE_ROOM": "Tu ne peux pas gérer cette pièce.",
       "ROOM_PERMISSION_MUTE_USER": "Vous ne pouvez pas mettre en sourdine les utilisateurs dans cette pièce.",
       "ROOM_PERMISSION_SEND_CHAT": "Vous ne pouvez pas discuter dans cette pièce.",
+      "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Vous ne pouvez pas joindre d’images ou de GIF au chat de cette salle.",
       "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "Vous ne pouvez pas consulter les journaux de cette pièce.",
       "ROOM_QUEUE_FULL": "La file d’attente DJ a déjà atteint la limite de 100 personnes.",
       "ROOM_QUEUE_LOCKED": "La file d’attente DJ est verrouillée pour les utilisateurs réguliers.",
