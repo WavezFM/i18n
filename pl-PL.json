@@ -2747,6 +2747,21 @@
       "xpTo": "XP na kolejny poziom"
     },
     "errorCodes": {
+      "ADMIN_RESET_TWO_FACTOR_REQUIRED": "Skonfiguruj uwierzytelnianie dwuskładnikowe przed globalnym resetem kont.",
+      "ADMIN_STRONG_AUTH_FAILED": "Nie udało się potwierdzić danych administratora.",
+      "ACCOUNT_TEMPORARILY_LOCKED": "Zbyt wiele nieudanych prób weryfikacji. Spróbuj ponownie później.",
+      "INVALID_ACCOUNT_RESET_CONFIRMATION": "Wpisz dokładną frazę potwierdzającą, aby kontynuować.",
+      "INVALID_ACCOUNT_RESET_MODE": "Wybierz prawidłowy tryb resetu kont.",
+      "INVALID_CATALOG_CATEGORY_PRICE": "Użyj cen całkowitych od 0 do 1 000 000.",
+      "INVALID_CATALOG_PRICE_CATEGORY": "Wybierz prawidłową kategorię katalogu.",
+      "INVALID_CODE": "Kod uwierzytelniania dwuskładnikowego jest nieprawidłowy.",
+      "INVALID_TWO_FACTOR_CODE": "Kod uwierzytelniania dwuskładnikowego jest nieprawidłowy.",
+      "OTP_NOT_CONFIGURED": "Weryfikacja e-mail lub SMS nie jest skonfigurowana w tym środowisku.",
+      "OTP_NOT_ENABLED": "Weryfikacja kodem jednorazowym nie jest włączona dla tego konta.",
+      "OTP_HAS_EXPIRED": "Ten kod uwierzytelniania dwuskładnikowego wygasł. Poproś o nowy.",
+      "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE": "Zbyt wiele prób. Poproś o nowy kod.",
+      "TOTP_NOT_ENABLED": "Weryfikacja aplikacją uwierzytelniającą nie jest włączona dla tego konta.",
+      "TWO_FACTOR_NOT_ENABLED": "Uwierzytelnianie dwuskładnikowe nie jest włączone dla tego konta.",
       "ROOM_NOT_FOUND": "Pokój nie znaleziony.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "Nie możesz tworzyć botów pokojowych w tym pokoju.",
       "ROOM_PERMISSION_MANAGE_POLLS": "Nie możesz tworzyć ankiet w tym pokoju.",
@@ -3201,6 +3216,8 @@
         "hint": "Boosty i narzędzia do personalizacji konta",
         "xpBoostMeta": "{multiplier}x XP przez {minutes} minut",
         "displayNameMeta": "Natychmiast aktualizuje wyświetlaną nazwę",
+        "firstChangeFreeAction": "Użyj pierwszej darmowej zmiany",
+        "firstChangeFreeHint": "Pierwsza zmiana wyświetlanej nazwy jest bezpłatna. Kolejne używają ustawionej ceny i czasu oczekiwania.",
         "usernameMeta": "Aktualizacje @username i natychmiast wyświetlanie nazwy",
         "cooldownMetaDays": "Tę zmianę można wykonać raz na {days} dni.",
         "cooldownMetaHours": "Tę zmianę można wykonać raz na {hours} godzin.",
@@ -3515,7 +3532,13 @@
     "fans": {
       "eyebrow": "Graf społeczny",
       "title": "Fani",
-      "headerSubtitle": "Ludzie, których śledzisz, i superfani gotowi do rozmowy.",
+      "headerSubtitle": "Twoi fani, superfani i osoby, które obserwujesz.",
+      "followersCount": "{count, plural, one {# fan} other {# fanów}}",
+      "followersEyebrow": "Twoja społeczność",
+      "followersTitle": "Twoi fani",
+      "followersSubtitle": "Osoby, które zostały twoimi fanami.",
+      "followersEmpty": "Nie masz jeszcze fanów.",
+      "followersEmptySubtitle": "Osoby, które zostaną twoimi fanami, pojawią się tutaj.",
       "superfansCount": "{count, plural, one {# superfan} other {# Superfani}}",
       "pendingCount": "{count, plural, one {# W trakcie oczekiwania} other {# W trakcie oczekiwania}}",
       "followingCount": "{count} następne",
@@ -6061,7 +6084,28 @@
         "promotionStatusScheduled": "Harmonogram",
         "promotionStatusExpired": "Zakończone",
         "invalidDate": "Używaj ważnej daty i godziny.",
-        "clearAll": "Usuń wszystko"
+        "clearAll": "Usuń wszystko",
+        "categoryPrices": {
+          "title": "Ceny kategorii katalogu",
+          "subtitle": "Ustaw jedną cenę w monetach i jedną w diamentach dla wszystkich aktualnie dostępnych przedmiotów w każdej kategorii.",
+          "loadError": "Nie udało się wczytać cen kategorii.",
+          "saveError": "Nie udało się teraz zaktualizować tej kategorii.",
+          "saveSuccess": "Zaktualizowane przedmioty: {count}.",
+          "invalidPrice": "Użyj cen całkowitych od 0 do 1 000 000.",
+          "coins": "Cena w monetach",
+          "diamonds": "Cena w diamentach",
+          "mixed": "Różne ceny",
+          "itemCounts": "{coins} za monety · {diamonds} za diamenty",
+          "apply": "Zastosuj",
+          "saving": "Stosowanie...",
+          "note": "Darmowe przedmioty i przedmioty tylko dla subskrybentów nie są zmieniane. Aktualizowane są przedmioty, które już używają monet lub diamentów.",
+          "categories": {
+            "avatars": "Awatary",
+            "badges": "Odznaki",
+            "backgrounds": "Tła",
+            "videoframes": "Ramki wideo"
+          }
+        }
       },
       "system": {
         "eyebrow": "System",
@@ -6084,7 +6128,46 @@
           "alerts": "Globalne alerty",
           "alertsDescription": "Tworz i edytuj lokalne globalne alerty dla całej strony.",
           "realtime": "Diagnostyka w czasie rzeczywistym",
-          "realtimeDescription": "Monitoruj kolejki, Redis, blokady i rozproszony stan pokoju."
+          "realtimeDescription": "Monitoruj kolejki, Redis, blokady i rozproszony stan pokoju.",
+          "accountReset": "Reset kont",
+          "accountResetDescription": "Zresetuj ekonomię i postęp wersji Alpha z potwierdzeniem hasłem i 2FA."
+        },
+        "accountReset": {
+          "title": "Zresetuj wszystkie konta",
+          "subtitle": "Resetuje ekonomię i postęp wersji Alpha na wszystkich kontach. Ta operacja jest globalna, natychmiastowa i nieodwracalna.",
+          "openAction": "Rozpocznij reset",
+          "modeLegend": "Tryb resetu",
+          "preserved": "Konta, hasła, 2FA, profile, role, subskrypcje, pokoje, playlisty, dane społecznościowe i historia transakcji są zachowane w każdym trybie.",
+          "dialogTitle": "Autoryzuj globalny reset",
+          "dialogDescription": "Uruchomisz: {mode}. Potwierdź hasło, kod uwierzytelniania dwuskładnikowego i dokładną frazę poniżej.",
+          "passwordLabel": "Aktualne hasło",
+          "authorize": "Kontynuuj z 2FA",
+          "resendCode": "Wyślij kod ponownie",
+          "authyHint": "Wpisz aktualny kod z aplikacji uwierzytelniającej.",
+          "otpSent": "Kod weryfikacyjny wysłano do {destination}.",
+          "codeLabel": "Kod uwierzytelniania dwuskładnikowego",
+          "confirmationHint": "Wpisz dokładnie tę frazę, aby odblokować reset:",
+          "confirmationLabel": "Fraza potwierdzająca",
+          "cancel": "Anuluj",
+          "confirmAction": "Zresetuj wszystkie konta",
+          "resetting": "Resetowanie...",
+          "challengeError": "Nie udało się autoryzować tego resetu.",
+          "resetError": "Nie udało się ukończyć globalnego resetu.",
+          "success": "Pomyślnie zresetowane konta: {count}.",
+          "modes": {
+            "total": {
+              "title": "Pełny reset wersji Alpha",
+              "description": "Resetuje monety, diamenty, poziom, XP, osiągnięcia, ekwipunek, odznaki, bonusy, czasy odnowienia i wybranego awatara."
+            },
+            "economy_progress_keep_avatar": {
+              "title": "Monety i poziom",
+              "description": "Resetuje monety, poziom, XP i czasy postępu. Zachowuje awatara, diamenty, ekwipunek, odznaki i osiągnięcia."
+            },
+            "economy_progress_achievements": {
+              "title": "Monety, poziom i osiągnięcia",
+              "description": "Resetuje także postęp osiągnięć i odznaki nagród. Zachowuje awatara, diamenty, ekwipunek i pozostałe odznaki."
+            }
+          }
         },
         "maintenanceTitle": "Tryb utrzymania",
         "maintenanceSubtitle": "Blokuje dostęp do strony wszystkim oprócz administratorów i deweloperów.",
@@ -6152,6 +6235,8 @@
         "backgroundShopSaveError": "Nie mogliśmy zaktualizować zakładki tła sklepu.",
         "miscShopTitle": "Sklep z dodatkami",
         "miscShopSubtitle": "Zarządzaj ulepszeniami, zmianami nazw wyświetlanych, motywami niestandardowych pokoi i innymi przedmiotami sprzedawanymi za monety, diamenty lub prawdziwe pieniądze.",
+        "miscShopFirstChangeFree": "Pierwsza zmiana za darmo",
+        "miscShopFirstChangeFreeHint": "Po włączeniu każde konto może wykonać pierwszą zmianę wyświetlanej nazwy bez wydawania monet ani diamentów.",
         "miscShopToggleAria": "Włącz sklep Extras",
         "miscShopItemToggleAria": "Włącz Dodatki w sklepie",
         "miscShopSaveSuccess": "Sklep Extras został zaktualizowany.",

@@ -2747,6 +2747,21 @@
       "xpTo": "XP na další úroveň"
     },
     "errorCodes": {
+      "ADMIN_RESET_TWO_FACTOR_REQUIRED": "Před globálním resetem účtů nastavte dvoufázové ověření.",
+      "ADMIN_STRONG_AUTH_FAILED": "Nepodařilo se ověřit vaše přihlašovací údaje správce.",
+      "ACCOUNT_TEMPORARILY_LOCKED": "Příliš mnoho neúspěšných pokusů o ověření. Zkuste to později.",
+      "INVALID_ACCOUNT_RESET_CONFIRMATION": "Pro pokračování zadejte přesnou potvrzovací frázi.",
+      "INVALID_ACCOUNT_RESET_MODE": "Vyberte platný režim resetu účtů.",
+      "INVALID_CATALOG_CATEGORY_PRICE": "Použijte celá čísla od 0 do 1 000 000.",
+      "INVALID_CATALOG_PRICE_CATEGORY": "Vyberte platnou kategorii katalogu.",
+      "INVALID_CODE": "Kód dvoufázového ověření není platný.",
+      "INVALID_TWO_FACTOR_CODE": "Kód dvoufázového ověření není platný.",
+      "OTP_NOT_CONFIGURED": "Ověření e-mailem nebo SMS není v tomto prostředí nastaveno.",
+      "OTP_NOT_ENABLED": "Ověření jednorázovým kódem není pro tento účet zapnuto.",
+      "OTP_HAS_EXPIRED": "Platnost kódu dvoufázového ověření vypršela. Vyžádejte si nový.",
+      "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE": "Příliš mnoho pokusů. Vyžádejte si nový kód.",
+      "TOTP_NOT_ENABLED": "Ověření autentizační aplikací není pro tento účet zapnuto.",
+      "TWO_FACTOR_NOT_ENABLED": "Dvoufázové ověření není pro tento účet zapnuto.",
       "ROOM_NOT_FOUND": "Místnost nenalezena.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "V této místnosti nemůžete vytvářet boty pro místnosti.",
       "ROOM_PERMISSION_MANAGE_POLLS": "V této místnosti nemůžete vytvářet ankety.",
@@ -3201,6 +3216,8 @@
         "hint": "Boosty a utility pro přizpůsobení vašeho účtu",
         "xpBoostMeta": "{multiplier}x XP {minutes} minut",
         "displayNameMeta": "Okamžitě aktualizuje zobrazené jméno",
+        "firstChangeFreeAction": "Použít první změnu zdarma",
+        "firstChangeFreeHint": "První změna zobrazovaného jména je zdarma. Další změny používají nastavenou cenu a čekací dobu.",
         "usernameMeta": "Aktualizace @username a zobrazení jména okamžitě",
         "cooldownMetaDays": "Tuto změnu lze provést jednou za {days} dní.",
         "cooldownMetaHours": "Tuto změnu lze provést jednou za {hours} hodin.",
@@ -3515,7 +3532,13 @@
     "fans": {
       "eyebrow": "Sociální graf",
       "title": "Fans",
-      "headerSubtitle": "Lidé, které sledujete, a superfanoušci připravení na rozhovor.",
+      "headerSubtitle": "Vaši fanoušci, superfanoušci a lidé, které sledujete.",
+      "followersCount": "{count, plural, one {# fanoušek} few {# fanoušci} other {# fanoušků}}",
+      "followersEyebrow": "Vaše komunita",
+      "followersTitle": "Vaši fanoušci",
+      "followersSubtitle": "Lidé, kteří se stali vašimi fanoušky.",
+      "followersEmpty": "Zatím nemáte žádné fanoušky.",
+      "followersEmptySubtitle": "Lidé, kteří se stanou vašimi fanoušky, se zobrazí zde.",
       "superfansCount": "{count, plural, one {# Superfan} other {# Superfanoušci}}",
       "pendingCount": "{count, plural, one {# Čeká na} other {# Čeká na}}",
       "followingCount": "{count} následuje",
@@ -6061,7 +6084,28 @@
         "promotionStatusScheduled": "Plánované",
         "promotionStatusExpired": "Konec",
         "invalidDate": "Použijte platné datum a čas.",
-        "clearAll": "Vyjasnit vše"
+        "clearAll": "Vyjasnit vše",
+        "categoryPrices": {
+          "title": "Ceny kategorií katalogu",
+          "subtitle": "Nastavte jednu cenu v mincích a jednu v diamantech pro všechny aktuálně prodejné položky v každé kategorii.",
+          "loadError": "Ceny kategorií se nepodařilo načíst.",
+          "saveError": "Tuto kategorii se nyní nepodařilo aktualizovat.",
+          "saveSuccess": "Aktualizované položky: {count}.",
+          "invalidPrice": "Použijte celá čísla od 0 do 1 000 000.",
+          "coins": "Cena v mincích",
+          "diamonds": "Cena v diamantech",
+          "mixed": "Různé ceny",
+          "itemCounts": "{coins} za mince · {diamonds} za diamanty",
+          "apply": "Použít",
+          "saving": "Používání...",
+          "note": "Bezplatné položky a položky pouze pro předplatitele se nemění. Aktualizují se jen položky, které již používají mince nebo diamanty.",
+          "categories": {
+            "avatars": "Avataři",
+            "badges": "Odznaky",
+            "backgrounds": "Pozadí",
+            "videoframes": "Rámečky videa"
+          }
+        }
       },
       "system": {
         "eyebrow": "Systém",
@@ -6084,7 +6128,46 @@
           "alerts": "Globální upozornění",
           "alertsDescription": "Vytvářejte a upravujte lokalizovaná globální upozornění pro celý web.",
           "realtime": "Diagnostika v reálném čase",
-          "realtimeDescription": "Monitorujte fronty, Redis, zámky a distribuovaný stav místnosti."
+          "realtimeDescription": "Monitorujte fronty, Redis, zámky a distribuovaný stav místnosti.",
+          "accountReset": "Reset účtů",
+          "accountResetDescription": "Resetujte ekonomiku a postup z Alpha verze s potvrzením heslem a 2FA."
+        },
+        "accountReset": {
+          "title": "Resetovat všechny účty",
+          "subtitle": "Resetuje ekonomiku a postup z Alpha verze u všech účtů. Akce je globální, okamžitá a nevratná.",
+          "openAction": "Spustit reset",
+          "modeLegend": "Režim resetu",
+          "preserved": "Účty, hesla, 2FA, profily, role, předplatná, místnosti, playlisty, sociální data a historie transakcí zůstanou ve všech režimech zachovány.",
+          "dialogTitle": "Autorizovat globální reset",
+          "dialogDescription": "Chystáte se spustit: {mode}. Potvrďte heslo, kód dvoufázového ověření a přesnou frázi níže.",
+          "passwordLabel": "Aktuální heslo",
+          "authorize": "Pokračovat s 2FA",
+          "resendCode": "Poslat kód znovu",
+          "authyHint": "Zadejte aktuální kód z autentizační aplikace.",
+          "otpSent": "Ověřovací kód byl odeslán na {destination}.",
+          "codeLabel": "Kód dvoufázového ověření",
+          "confirmationHint": "Pro povolení resetu zadejte přesně tuto frázi:",
+          "confirmationLabel": "Potvrzovací fráze",
+          "cancel": "Zrušit",
+          "confirmAction": "Resetovat všechny účty",
+          "resetting": "Resetování...",
+          "challengeError": "Tento reset se nepodařilo autorizovat.",
+          "resetError": "Globální reset se nepodařilo dokončit.",
+          "success": "Úspěšně resetované účty: {count}.",
+          "modes": {
+            "total": {
+              "title": "Úplný reset Alpha verze",
+              "description": "Resetuje mince, diamanty, úroveň, XP, úspěchy, inventář, odznaky, bonusy, cooldowny a vybaveného avatara."
+            },
+            "economy_progress_keep_avatar": {
+              "title": "Mince a úroveň",
+              "description": "Resetuje mince, úroveň, XP a cooldowny postupu. Zachová avatara, diamanty, inventář, odznaky a úspěchy."
+            },
+            "economy_progress_achievements": {
+              "title": "Mince, úroveň a úspěchy",
+              "description": "Resetuje také postup úspěchů a odměnové odznaky. Zachová avatara, diamanty, inventář a ostatní odznaky."
+            }
+          }
         },
         "maintenanceTitle": "Režim údržby",
         "maintenanceSubtitle": "Blokuje přístup na stránky všem kromě administrátorů a vývojářů.",
@@ -6152,6 +6235,8 @@
         "backgroundShopSaveError": "Nemohli jsme aktualizovat záložku pozadí obchodu.",
         "miscShopTitle": "Obchod s bonusy",
         "miscShopSubtitle": "Spravujte vylepšení, zobrazujte změny názvů, vlastní témata místností a další předměty prodávané za mince, diamanty nebo skutečné peníze.",
+        "miscShopFirstChangeFree": "První změna zdarma",
+        "miscShopFirstChangeFreeHint": "Když je tato možnost zapnutá, každý účet může provést první změnu zobrazovaného jména bez utracení mincí nebo diamantů.",
         "miscShopToggleAria": "Povolit ukládání Extras",
         "miscShopItemToggleAria": "Povolit Extras v obchodě s položkou",
         "miscShopSaveSuccess": "Obchod Extras byl aktualizován.",

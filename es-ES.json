@@ -2747,6 +2747,21 @@
       "xpTo": "XP al siguiente nivel"
     },
     "errorCodes": {
+      "ADMIN_RESET_TWO_FACTOR_REQUIRED": "Configura la autenticación en dos pasos antes de restablecer todas las cuentas.",
+      "ADMIN_STRONG_AUTH_FAILED": "No pudimos confirmar tus credenciales de administrador.",
+      "ACCOUNT_TEMPORARILY_LOCKED": "Hubo demasiados intentos de verificación fallidos. Inténtalo más tarde.",
+      "INVALID_ACCOUNT_RESET_CONFIRMATION": "Escribe la frase de confirmación exacta para continuar.",
+      "INVALID_ACCOUNT_RESET_MODE": "Elige un modo de restablecimiento válido.",
+      "INVALID_CATALOG_CATEGORY_PRICE": "Usa precios enteros entre 0 y 1.000.000.",
+      "INVALID_CATALOG_PRICE_CATEGORY": "Elige una categoría válida del catálogo.",
+      "INVALID_CODE": "El código de autenticación en dos pasos no es válido.",
+      "INVALID_TWO_FACTOR_CODE": "El código de autenticación en dos pasos no es válido.",
+      "OTP_NOT_CONFIGURED": "La verificación por correo o SMS no está configurada en este entorno.",
+      "OTP_NOT_ENABLED": "La verificación con código de un solo uso no está activada en esta cuenta.",
+      "OTP_HAS_EXPIRED": "Este código de autenticación en dos pasos ha caducado. Solicita uno nuevo.",
+      "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE": "Demasiados intentos. Solicita un código nuevo.",
+      "TOTP_NOT_ENABLED": "La verificación con aplicación de autenticación no está activada en esta cuenta.",
+      "TWO_FACTOR_NOT_ENABLED": "La autenticación en dos pasos no está activada en esta cuenta.",
       "ROOM_NOT_FOUND": "Sala no encontrada.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "No puedes crear bots de sala en esta sala.",
       "ROOM_PERMISSION_MANAGE_POLLS": "No puedes crear encuestas en esta sala.",
@@ -3201,6 +3216,8 @@
         "hint": "Impulsos y utilidades para personalizar tu cuenta",
         "xpBoostMeta": "{multiplier}x XP por {minutes} min",
         "displayNameMeta": "Actualiza el nombre mostrado inmediatamente",
+        "firstChangeFreeAction": "Usar primer cambio gratis",
+        "firstChangeFreeHint": "Tu primer cambio de nombre es gratis. Los siguientes usan el precio y el tiempo de espera configurados.",
         "usernameMeta": "Actualizaciones @username y nombre de visualización inmediatamente",
         "cooldownMetaDays": "Este cambio se puede realizar una vez cada {days, plural, one {# día} other {# días}}.",
         "cooldownMetaHours": "Este cambio se puede realizar una vez cada {hours, plural, one {# hora} other {# horas}}.",
@@ -3515,7 +3532,13 @@
     "fans": {
       "eyebrow": "Grafo social",
       "title": "Fans",
-      "headerSubtitle": "Personas a las que sigues y superfans listos para conversar.",
+      "headerSubtitle": "Tus fans, superfans y personas a las que sigues.",
+      "followersCount": "{count, plural, one {# fan} other {# fans}}",
+      "followersEyebrow": "Tu comunidad",
+      "followersTitle": "Tus fans",
+      "followersSubtitle": "Personas que se han hecho fans tuyas.",
+      "followersEmpty": "Todavía no tienes fans.",
+      "followersEmptySubtitle": "Las personas que se hagan fans tuyas aparecerán aquí.",
       "superfansCount": "{count, plural, one {# Superfan} other {# Superfans}}",
       "pendingCount": "{count, plural, one {# pendiente} other {# pendiente}}",
       "followingCount": "{count} siguientes",
@@ -6061,7 +6084,28 @@
         "promotionStatusScheduled": "Programados",
         "promotionStatusExpired": "Terminado",
         "invalidDate": "Usa una fecha y hora válidas.",
-        "clearAll": "Limpiar todo"
+        "clearAll": "Limpiar todo",
+        "categoryPrices": {
+          "title": "Precios por categoría del catálogo",
+          "subtitle": "Aplica un precio en Monedas y otro en Diamantes a todos los artículos comprables actuales de cada categoría.",
+          "loadError": "No pudimos cargar los precios de las categorías.",
+          "saveError": "No pudimos actualizar esta categoría ahora.",
+          "saveSuccess": "{count, plural, one {Se actualizó # artículo.} other {Se actualizaron # artículos.}}",
+          "invalidPrice": "Usa precios enteros entre 0 y 1.000.000.",
+          "coins": "Precio en Monedas",
+          "diamonds": "Precio en Diamantes",
+          "mixed": "Precios variados",
+          "itemCounts": "{coins} en Monedas · {diamonds} en Diamantes",
+          "apply": "Aplicar",
+          "saving": "Aplicando...",
+          "note": "Los artículos gratuitos y exclusivos para suscriptores no cambian. Esto actualiza los artículos que ya usan Monedas o Diamantes.",
+          "categories": {
+            "avatars": "Avatares",
+            "badges": "Emblemas",
+            "backgrounds": "Fondos",
+            "videoframes": "Marcos de vídeo"
+          }
+        }
       },
       "system": {
         "eyebrow": "Sistema",
@@ -6084,7 +6128,46 @@
           "alerts": "Alertas globales",
           "alertsDescription": "Crea y edita alertas globales localizadas para todo el sitio.",
           "realtime": "Diagnóstico en tiempo real",
-          "realtimeDescription": "Monitoriza colas, Redis, cerraduras y el estado de la sala distribuida."
+          "realtimeDescription": "Monitoriza colas, Redis, cerraduras y el estado de la sala distribuida.",
+          "accountReset": "Restablecimiento de cuentas",
+          "accountResetDescription": "Restablece la economía y la progresión del Alpha con confirmación por contraseña y 2FA."
+        },
+        "accountReset": {
+          "title": "Restablecer todas las cuentas",
+          "subtitle": "Restablece la economía y la progresión del Alpha de todas las cuentas. Esta acción es global, inmediata y no se puede deshacer.",
+          "openAction": "Iniciar restablecimiento",
+          "modeLegend": "Modo de restablecimiento",
+          "preserved": "Las cuentas, contraseñas, 2FA, perfiles, roles, suscripciones, salas, listas, datos sociales e historial de transacciones se conservan en todos los modos.",
+          "dialogTitle": "Autorizar restablecimiento global",
+          "dialogDescription": "Vas a ejecutar: {mode}. Confirma tu contraseña, el código de autenticación en dos pasos y la frase exacta de abajo.",
+          "passwordLabel": "Contraseña actual",
+          "authorize": "Continuar con 2FA",
+          "resendCode": "Reenviar código",
+          "authyHint": "Introduce el código actual de tu aplicación de autenticación.",
+          "otpSent": "Se envió un código de verificación a {destination}.",
+          "codeLabel": "Código de autenticación en dos pasos",
+          "confirmationHint": "Escribe esta frase exacta para habilitar el restablecimiento:",
+          "confirmationLabel": "Frase de confirmación",
+          "cancel": "Cancelar",
+          "confirmAction": "Restablecer todas las cuentas",
+          "resetting": "Restableciendo...",
+          "challengeError": "No pudimos autorizar este restablecimiento.",
+          "resetError": "No pudimos completar el restablecimiento global.",
+          "success": "{count, plural, one {Se restableció # cuenta correctamente.} other {Se restablecieron # cuentas correctamente.}}",
+          "modes": {
+            "total": {
+              "title": "Restablecimiento total del Alpha",
+              "description": "Restablece Monedas, Diamantes, nivel, XP, logros, inventario, emblemas, mejoras, tiempos de espera y avatar equipado."
+            },
+            "economy_progress_keep_avatar": {
+              "title": "Monedas y nivel",
+              "description": "Restablece Monedas, nivel, XP y tiempos de progresión. Conserva avatar, Diamantes, inventario, emblemas y logros."
+            },
+            "economy_progress_achievements": {
+              "title": "Monedas, nivel y logros",
+              "description": "También restablece el progreso y los emblemas de recompensa de los logros. Conserva avatar, Diamantes, inventario y emblemas ajenos a logros."
+            }
+          }
         },
         "maintenanceTitle": "Modo de mantenimiento",
         "maintenanceSubtitle": "Bloquea el acceso al sitio para todos excepto para administradores y desarrolladores.",
@@ -6152,6 +6235,8 @@
         "backgroundShopSaveError": "No pudimos actualizar la pestaña de fondos de la tienda.",
         "miscShopTitle": "Tienda de extras",
         "miscShopSubtitle": "Gestiona los impulsos, muestra los cambios de nombre, temas personalizados de las salas y otros objetos vendidos por monedas, diamantes o dinero real.",
+        "miscShopFirstChangeFree": "Primer cambio gratis",
+        "miscShopFirstChangeFreeHint": "Al activarlo, cada cuenta puede hacer su primer cambio de nombre sin gastar monedas ni diamantes.",
         "miscShopToggleAria": "Habilitar la tienda Extras",
         "miscShopItemToggleAria": "Activar Extras en el artículo de almacenar",
         "miscShopSaveSuccess": "La tienda de Extras fue actualizada.",

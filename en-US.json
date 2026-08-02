@@ -2747,6 +2747,21 @@
       "xpTo": "XP to next level"
     },
     "errorCodes": {
+      "ADMIN_RESET_TWO_FACTOR_REQUIRED": "Configure two-factor authentication before running a global account reset.",
+      "ADMIN_STRONG_AUTH_FAILED": "We could not confirm your administrator credentials.",
+      "ACCOUNT_TEMPORARILY_LOCKED": "Too many failed verification attempts. Try again later.",
+      "INVALID_ACCOUNT_RESET_CONFIRMATION": "Type the exact confirmation phrase to continue.",
+      "INVALID_ACCOUNT_RESET_MODE": "Choose a valid account reset mode.",
+      "INVALID_CATALOG_CATEGORY_PRICE": "Use whole category prices between 0 and 1,000,000.",
+      "INVALID_CATALOG_PRICE_CATEGORY": "Choose a valid catalog category.",
+      "INVALID_CODE": "The two-factor code is invalid.",
+      "INVALID_TWO_FACTOR_CODE": "The two-factor code is invalid.",
+      "OTP_NOT_CONFIGURED": "Email or SMS verification is not configured in this environment.",
+      "OTP_NOT_ENABLED": "One-time code verification is not enabled for this account.",
+      "OTP_HAS_EXPIRED": "This two-factor code has expired. Request a new code.",
+      "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE": "Too many attempts. Request a new code.",
+      "TOTP_NOT_ENABLED": "Authenticator app verification is not enabled for this account.",
+      "TWO_FACTOR_NOT_ENABLED": "Two-factor authentication is not enabled for this account.",
       "ROOM_NOT_FOUND": "Room not found.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "You cannot create room bots in this room.",
       "ROOM_PERMISSION_MANAGE_POLLS": "You cannot create polls in this room.",
@@ -3201,6 +3216,8 @@
         "hint": "Boosts and utilities to customize your account",
         "xpBoostMeta": "{multiplier}x XP for {minutes} min",
         "displayNameMeta": "Updates the displayed name immediately",
+        "firstChangeFreeAction": "Use free first change",
+        "firstChangeFreeHint": "Your first display name change is free. Later changes use the configured price and cooldown.",
         "usernameMeta": "Updates @username and display name immediately",
         "cooldownMetaDays": "This change can be made once every {days, plural, one {# day} other {# days}}.",
         "cooldownMetaHours": "This change can be made once every {hours, plural, one {# hour} other {# hours}}.",
@@ -3515,7 +3532,13 @@
     "fans": {
       "eyebrow": "Social graph",
       "title": "Fans",
-      "headerSubtitle": "People you follow and superfans ready for conversation.",
+      "headerSubtitle": "Your fans, superfans, and people you follow.",
+      "followersCount": "{count, plural, one {# fan} other {# fans}}",
+      "followersEyebrow": "Your community",
+      "followersTitle": "Your fans",
+      "followersSubtitle": "People who became your fans.",
+      "followersEmpty": "You do not have any fans yet.",
+      "followersEmptySubtitle": "People who become your fans will appear here.",
       "superfansCount": "{count, plural, one {# superfan} other {# superfans}}",
       "pendingCount": "{count, plural, one {# pending} other {# pending}}",
       "followingCount": "{count} following",
@@ -6061,7 +6084,28 @@
         "promotionStatusScheduled": "Scheduled",
         "promotionStatusExpired": "Ended",
         "invalidDate": "Use a valid date and time.",
-        "clearAll": "Clear all"
+        "clearAll": "Clear all",
+        "categoryPrices": {
+          "title": "Catalog category prices",
+          "subtitle": "Apply one Coins price and one Diamonds price to all current purchasable items in each category.",
+          "loadError": "We could not load catalog category prices.",
+          "saveError": "We could not update this category right now.",
+          "saveSuccess": "{count, plural, one {# item was updated.} other {# items were updated.}}",
+          "invalidPrice": "Use whole prices between 0 and 1,000,000.",
+          "coins": "Coins price",
+          "diamonds": "Diamonds price",
+          "mixed": "Mixed prices",
+          "itemCounts": "{coins} Coins · {diamonds} Diamonds",
+          "apply": "Apply",
+          "saving": "Applying...",
+          "note": "Free and subscriber-only items are not changed. This updates items that already use Coins or Diamonds.",
+          "categories": {
+            "avatars": "Avatars",
+            "badges": "Badges",
+            "backgrounds": "Backgrounds",
+            "videoframes": "Video frames"
+          }
+        }
       },
       "system": {
         "eyebrow": "System",
@@ -6084,7 +6128,46 @@
           "alerts": "Global alerts",
           "alertsDescription": "Create and edit localized global alerts for the entire site.",
           "realtime": "Realtime diagnostics",
-          "realtimeDescription": "Monitor queues, Redis, locks, and distributed room state."
+          "realtimeDescription": "Monitor queues, Redis, locks, and distributed room state.",
+          "accountReset": "Account reset",
+          "accountResetDescription": "Reset Alpha economy and progression with password and 2FA confirmation."
+        },
+        "accountReset": {
+          "title": "Reset all accounts",
+          "subtitle": "Reset Alpha economy and progression for every account. This action is global, immediate, and cannot be undone.",
+          "openAction": "Start reset",
+          "modeLegend": "Reset mode",
+          "preserved": "Accounts, passwords, 2FA, profiles, roles, subscriptions, rooms, playlists, social data, and transaction history are preserved in every mode.",
+          "dialogTitle": "Authorize global reset",
+          "dialogDescription": "You are about to run: {mode}. Confirm your password, two-factor code, and the exact phrase below.",
+          "passwordLabel": "Current password",
+          "authorize": "Continue with 2FA",
+          "resendCode": "Resend code",
+          "authyHint": "Enter the current code from your authenticator app.",
+          "otpSent": "A verification code was sent to {destination}.",
+          "codeLabel": "Two-factor code",
+          "confirmationHint": "Type this exact phrase to unlock the reset:",
+          "confirmationLabel": "Confirmation phrase",
+          "cancel": "Cancel",
+          "confirmAction": "Reset all accounts",
+          "resetting": "Resetting...",
+          "challengeError": "We could not authorize this reset.",
+          "resetError": "We could not complete the global reset.",
+          "success": "{count, plural, one {# account was reset successfully.} other {# accounts were reset successfully.}}",
+          "modes": {
+            "total": {
+              "title": "Full Alpha reset",
+              "description": "Resets Coins, Diamonds, level, XP, achievements, inventory, badges, boosts, cooldowns, and equipped avatar."
+            },
+            "economy_progress_keep_avatar": {
+              "title": "Coins and level",
+              "description": "Resets Coins, level, XP, and progression cooldowns. Keeps avatar, Diamonds, inventory, badges, and achievements."
+            },
+            "economy_progress_achievements": {
+              "title": "Coins, level, and achievements",
+              "description": "Also resets achievement progress and reward badges. Keeps avatar, Diamonds, inventory, and non-achievement badges."
+            }
+          }
         },
         "maintenanceTitle": "Maintenance mode",
         "maintenanceSubtitle": "Blocks site access for everyone except admins and developers.",
@@ -6152,6 +6235,8 @@
         "backgroundShopSaveError": "We could not update the store backgrounds tab.",
         "miscShopTitle": "Extras store",
         "miscShopSubtitle": "Manage boosts, display name changes, custom room themes, and other items sold for coins, diamonds, or real money.",
+        "miscShopFirstChangeFree": "Free first change",
+        "miscShopFirstChangeFreeHint": "When enabled, each account can make its first display name change without spending Coins or Diamonds.",
         "miscShopToggleAria": "Enable Extras store",
         "miscShopItemToggleAria": "Enable Extras store item",
         "miscShopSaveSuccess": "The Extras store was updated.",

@@ -2747,6 +2747,21 @@
       "xpTo": "次のレベルへXP"
     },
     "errorCodes": {
+      "ADMIN_RESET_TWO_FACTOR_REQUIRED": "全アカウントをリセットする前に、二要素認証を設定してください。",
+      "ADMIN_STRONG_AUTH_FAILED": "管理者の認証情報を確認できませんでした。",
+      "ACCOUNT_TEMPORARILY_LOCKED": "認証に何度も失敗しました。しばらくしてからもう一度お試しください。",
+      "INVALID_ACCOUNT_RESET_CONFIRMATION": "続行するには正確な確認フレーズを入力してください。",
+      "INVALID_ACCOUNT_RESET_MODE": "有効なアカウントリセット方法を選択してください。",
+      "INVALID_CATALOG_CATEGORY_PRICE": "0から1,000,000までの整数価格を使用してください。",
+      "INVALID_CATALOG_PRICE_CATEGORY": "有効なカタログカテゴリを選択してください。",
+      "INVALID_CODE": "二要素認証コードが無効です。",
+      "INVALID_TWO_FACTOR_CODE": "二要素認証コードが無効です。",
+      "OTP_NOT_CONFIGURED": "この環境ではメールまたはSMS認証が設定されていません。",
+      "OTP_NOT_ENABLED": "このアカウントではワンタイムコード認証が有効ではありません。",
+      "OTP_HAS_EXPIRED": "二要素認証コードの有効期限が切れました。新しいコードをリクエストしてください。",
+      "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE": "試行回数が多すぎます。新しいコードをリクエストしてください。",
+      "TOTP_NOT_ENABLED": "このアカウントでは認証アプリによる確認が有効ではありません。",
+      "TWO_FACTOR_NOT_ENABLED": "このアカウントでは二要素認証が有効ではありません。",
       "ROOM_NOT_FOUND": "部屋が見つかりません。",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "この部屋でルームボットを作成することはできません。",
       "ROOM_PERMISSION_MANAGE_POLLS": "この部屋で投票を作成することはできません。",
@@ -3201,6 +3216,8 @@
         "hint": "アカウントをカスタマイズするためのブーストやユーティリティ",
         "xpBoostMeta": "{multiplier}x x 1 XP {minutes} 分",
         "displayNameMeta": "表示された名前を即座に更新します",
+        "firstChangeFreeAction": "初回無料変更を使う",
+        "firstChangeFreeHint": "表示名の初回変更は無料です。2回目以降は設定された価格とクールダウンが適用されます。",
         "usernameMeta": "更新 @username 表示名はすぐに",
         "cooldownMetaDays": "この変更は{days}日に1回行えます。",
         "cooldownMetaHours": "この変更は{hours}時間に1回行えます。",
@@ -3515,7 +3532,13 @@
     "fans": {
       "eyebrow": "社会的グラフ",
       "title": "ファン",
-      "headerSubtitle": "フォローしている人や熱狂的なファン、会話を楽しみにしている人たち。",
+      "headerSubtitle": "あなたのファン、スーパーファン、フォローしている人たち。",
+      "followersCount": "{count} ファン",
+      "followersEyebrow": "あなたのコミュニティ",
+      "followersTitle": "あなたのファン",
+      "followersSubtitle": "あなたのファンになった人たちです。",
+      "followersEmpty": "まだファンはいません。",
+      "followersEmptySubtitle": "あなたのファンになった人がここに表示されます。",
       "superfansCount": "{count, plural, one {# スーパーファン} other {# スーパーファン}}",
       "pendingCount": "{count, plural, one {# 保留中} other {# 保留中}}",
       "followingCount": "{count} 続",
@@ -6061,7 +6084,28 @@
         "promotionStatusScheduled": "予定",
         "promotionStatusExpired": "終了",
         "invalidDate": "有効な日付と時間を使用してください。",
-        "clearAll": "すべてクリア"
+        "clearAll": "すべてクリア",
+        "categoryPrices": {
+          "title": "カタログカテゴリ価格",
+          "subtitle": "各カテゴリで現在購入可能な全アイテムに、コイン価格とダイヤモンド価格を一括設定します。",
+          "loadError": "カテゴリ価格を読み込めませんでした。",
+          "saveError": "このカテゴリを現在更新できませんでした。",
+          "saveSuccess": "{count}件のアイテムを更新しました。",
+          "invalidPrice": "0から1,000,000までの整数価格を使用してください。",
+          "coins": "コイン価格",
+          "diamonds": "ダイヤモンド価格",
+          "mixed": "複数の価格",
+          "itemCounts": "コイン {coins}件 · ダイヤモンド {diamonds}件",
+          "apply": "適用",
+          "saving": "適用中...",
+          "note": "無料アイテムと登録者限定アイテムは変更されません。すでにコインまたはダイヤモンドを使用しているアイテムのみ更新します。",
+          "categories": {
+            "avatars": "アバター",
+            "badges": "バッジ",
+            "backgrounds": "背景",
+            "videoframes": "ビデオフレーム"
+          }
+        }
       },
       "system": {
         "eyebrow": "システム",
@@ -6084,7 +6128,46 @@
           "alerts": "グローバルアラート",
           "alertsDescription": "サイト全体のローカライズされたグローバルアラートを作成・編集します。",
           "realtime": "リアルタイム診断",
-          "realtimeDescription": "キュー、Redis、ロック、分散した部屋の状態を監視します。"
+          "realtimeDescription": "キュー、Redis、ロック、分散した部屋の状態を監視します。",
+          "accountReset": "アカウントリセット",
+          "accountResetDescription": "パスワードと2FAの確認を使用して、Alphaの経済と進行状況をリセットします。"
+        },
+        "accountReset": {
+          "title": "全アカウントをリセット",
+          "subtitle": "全アカウントのAlpha経済と進行状況をリセットします。この操作は全体に即時反映され、元に戻せません。",
+          "openAction": "リセットを開始",
+          "modeLegend": "リセット方法",
+          "preserved": "アカウント、パスワード、2FA、プロフィール、ロール、サブスクリプション、ルーム、プレイリスト、ソーシャルデータ、取引履歴はすべての方法で保持されます。",
+          "dialogTitle": "全体リセットを承認",
+          "dialogDescription": "実行する内容: {mode}。パスワード、二要素認証コード、下記の正確なフレーズを確認してください。",
+          "passwordLabel": "現在のパスワード",
+          "authorize": "2FAで続行",
+          "resendCode": "コードを再送信",
+          "authyHint": "認証アプリの現在のコードを入力してください。",
+          "otpSent": "確認コードを{destination}に送信しました。",
+          "codeLabel": "二要素認証コード",
+          "confirmationHint": "リセットを有効にするには、このフレーズを正確に入力してください:",
+          "confirmationLabel": "確認フレーズ",
+          "cancel": "キャンセル",
+          "confirmAction": "全アカウントをリセット",
+          "resetting": "リセット中...",
+          "challengeError": "このリセットを承認できませんでした。",
+          "resetError": "全体リセットを完了できませんでした。",
+          "success": "{count}件のアカウントを正常にリセットしました。",
+          "modes": {
+            "total": {
+              "title": "Alpha完全リセット",
+              "description": "コイン、ダイヤモンド、レベル、XP、実績、インベントリ、バッジ、ブースト、クールダウン、装備中のアバターをリセットします。"
+            },
+            "economy_progress_keep_avatar": {
+              "title": "コインとレベル",
+              "description": "コイン、レベル、XP、進行クールダウンをリセットします。アバター、ダイヤモンド、インベントリ、バッジ、実績は保持します。"
+            },
+            "economy_progress_achievements": {
+              "title": "コイン、レベル、実績",
+              "description": "実績の進行と報酬バッジもリセットします。アバター、ダイヤモンド、インベントリ、実績以外のバッジは保持します。"
+            }
+          }
         },
         "maintenanceTitle": "メンテナンスモード",
         "maintenanceSubtitle": "管理者と開発者以外の全員のサイトアクセスをブロックします。",
@@ -6152,6 +6235,8 @@
         "backgroundShopSaveError": "ストアの背景タブを更新できませんでした。",
         "miscShopTitle": "特典ストア",
         "miscShopSubtitle": "ブースト、表示名の変更、カスタムルームテーマ、コイン、ダイヤモンド、リアルマネーで売られるその他のアイテムを管理できます。",
+        "miscShopFirstChangeFree": "初回変更を無料にする",
+        "miscShopFirstChangeFreeHint": "有効にすると、各アカウントはコインやダイヤモンドを使わずに表示名を初回のみ変更できます。",
         "miscShopToggleAria": "エクストラストアを有効にする",
         "miscShopItemToggleAria": "追加ストアアイテムを有効にする",
         "miscShopSaveSuccess": "エクストラストアも更新されました。",

@@ -2747,6 +2747,21 @@
       "xpTo": "XP para o próximo nível"
     },
     "errorCodes": {
+      "ADMIN_RESET_TWO_FACTOR_REQUIRED": "Configure a autenticação em duas etapas antes de resetar todas as contas.",
+      "ADMIN_STRONG_AUTH_FAILED": "Não foi possível confirmar suas credenciais de administrador.",
+      "ACCOUNT_TEMPORARILY_LOCKED": "Muitas tentativas de verificação falharam. Tente novamente mais tarde.",
+      "INVALID_ACCOUNT_RESET_CONFIRMATION": "Digite a frase de confirmação exata para continuar.",
+      "INVALID_ACCOUNT_RESET_MODE": "Escolha um modo de reset válido.",
+      "INVALID_CATALOG_CATEGORY_PRICE": "Use preços inteiros entre 0 e 1.000.000.",
+      "INVALID_CATALOG_PRICE_CATEGORY": "Escolha uma categoria válida do catálogo.",
+      "INVALID_CODE": "O código de autenticação em duas etapas é inválido.",
+      "INVALID_TWO_FACTOR_CODE": "O código de autenticação em duas etapas é inválido.",
+      "OTP_NOT_CONFIGURED": "A verificação por e-mail ou SMS não está configurada neste ambiente.",
+      "OTP_NOT_ENABLED": "A verificação por código único não está ativada nesta conta.",
+      "OTP_HAS_EXPIRED": "Este código de autenticação em duas etapas expirou. Solicite outro código.",
+      "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE": "Muitas tentativas. Solicite um novo código.",
+      "TOTP_NOT_ENABLED": "A verificação por aplicativo autenticador não está ativada nesta conta.",
+      "TWO_FACTOR_NOT_ENABLED": "A autenticação em duas etapas não está ativada nesta conta.",
       "ROOM_NOT_FOUND": "Sala não encontrada.",
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "Você não pode criar room bots nesta sala.",
       "ROOM_PERMISSION_MANAGE_POLLS": "Você não pode criar enquetes nesta sala.",
@@ -3201,6 +3216,8 @@
         "hint": "Boosts e utilidades para personalizar sua conta",
         "xpBoostMeta": "{multiplier}x XP por {minutes} min",
         "displayNameMeta": "Atualiza o nome exibido imediatamente",
+        "firstChangeFreeAction": "Usar primeira troca grátis",
+        "firstChangeFreeHint": "Sua primeira troca de nome é gratuita. As próximas usam o preço e o cooldown configurados.",
         "usernameMeta": "Atualiza o @username e o nome exibido imediatamente",
         "cooldownMetaDays": "Esta alteração pode ser feita uma vez a cada {days, plural, one {# dia} other {# dias}}.",
         "cooldownMetaHours": "Esta alteração pode ser feita uma vez a cada {hours, plural, one {# hora} other {# horas}}.",
@@ -3515,7 +3532,13 @@
     "fans": {
       "eyebrow": "Rede social",
       "title": "Fãs",
-      "headerSubtitle": "Pessoas que você acompanha e superfãs prontos para conversa.",
+      "headerSubtitle": "Seus fãs, superfãs e pessoas que você acompanha.",
+      "followersCount": "{count, plural, one {# fã} other {# fãs}}",
+      "followersEyebrow": "Sua comunidade",
+      "followersTitle": "Seus fãs",
+      "followersSubtitle": "Pessoas que viraram suas fãs.",
+      "followersEmpty": "Você ainda não tem fãs.",
+      "followersEmptySubtitle": "Quem virar seu fã aparece aqui.",
       "superfansCount": "{count, plural, one {# superfã} other {# superfãs}}",
       "pendingCount": "{count, plural, one {# pendente} other {# pendentes}}",
       "followingCount": "{count} seguindo",
@@ -6066,7 +6089,28 @@
         "promotionStatusScheduled": "Agendada",
         "promotionStatusExpired": "Encerrada",
         "invalidDate": "Use uma data e hora válidas.",
-        "clearAll": "Limpar tudo"
+        "clearAll": "Limpar tudo",
+        "categoryPrices": {
+          "title": "Preços por categoria do catálogo",
+          "subtitle": "Aplique um preço em Moedas e outro em Diamantes a todos os itens compráveis atuais de cada categoria.",
+          "loadError": "Não foi possível carregar os preços das categorias.",
+          "saveError": "Não foi possível atualizar esta categoria agora.",
+          "saveSuccess": "{count, plural, one {# item foi atualizado.} other {# itens foram atualizados.}}",
+          "invalidPrice": "Use preços inteiros entre 0 e 1.000.000.",
+          "coins": "Preço em Moedas",
+          "diamonds": "Preço em Diamantes",
+          "mixed": "Preços variados",
+          "itemCounts": "{coins} em Moedas · {diamonds} em Diamantes",
+          "apply": "Aplicar",
+          "saving": "Aplicando...",
+          "note": "Itens gratuitos e exclusivos para assinantes não são alterados. Esta ação atualiza os itens que já usam Moedas ou Diamantes.",
+          "categories": {
+            "avatars": "Avatares",
+            "badges": "Emblemas",
+            "backgrounds": "Fundos",
+            "videoframes": "Molduras de vídeo"
+          }
+        }
       },
       "system": {
         "eyebrow": "Sistema",
@@ -6089,7 +6133,46 @@
           "alerts": "Alertas globais",
           "alertsDescription": "Crie e edite alertas globais por idioma para todo o site.",
           "realtime": "Realtime e diagnósticos",
-          "realtimeDescription": "Monitore filas, redis, locks e o estado distribuído das salas."
+          "realtimeDescription": "Monitore filas, redis, locks e o estado distribuído das salas.",
+          "accountReset": "Reset de contas",
+          "accountResetDescription": "Resete a economia e a progressão do Alpha com confirmação por senha e 2FA."
+        },
+        "accountReset": {
+          "title": "Resetar todas as contas",
+          "subtitle": "Resete a economia e a progressão do Alpha de todas as contas. Esta ação é global, imediata e não pode ser desfeita.",
+          "openAction": "Iniciar reset",
+          "modeLegend": "Modo do reset",
+          "preserved": "Contas, senhas, 2FA, perfis, cargos, assinaturas, salas, playlists, dados sociais e histórico de transações são preservados em todos os modos.",
+          "dialogTitle": "Autorizar reset global",
+          "dialogDescription": "Você está prestes a executar: {mode}. Confirme sua senha, o código de autenticação em duas etapas e a frase exata abaixo.",
+          "passwordLabel": "Senha atual",
+          "authorize": "Continuar com 2FA",
+          "resendCode": "Reenviar código",
+          "authyHint": "Digite o código atual do seu aplicativo autenticador.",
+          "otpSent": "Um código de verificação foi enviado para {destination}.",
+          "codeLabel": "Código de autenticação em duas etapas",
+          "confirmationHint": "Digite esta frase exata para liberar o reset:",
+          "confirmationLabel": "Frase de confirmação",
+          "cancel": "Cancelar",
+          "confirmAction": "Resetar todas as contas",
+          "resetting": "Resetando...",
+          "challengeError": "Não foi possível autorizar este reset.",
+          "resetError": "Não foi possível concluir o reset global.",
+          "success": "{count, plural, one {# conta foi resetada com sucesso.} other {# contas foram resetadas com sucesso.}}",
+          "modes": {
+            "total": {
+              "title": "Reset total do Alpha",
+              "description": "Reseta Moedas, Diamantes, nível, XP, conquistas, inventário, emblemas, boosts, cooldowns e o avatar equipado."
+            },
+            "economy_progress_keep_avatar": {
+              "title": "Moedas e nível",
+              "description": "Reseta Moedas, nível, XP e cooldowns de progressão. Mantém avatar, Diamantes, inventário, emblemas e conquistas."
+            },
+            "economy_progress_achievements": {
+              "title": "Moedas, nível e conquistas",
+              "description": "Também reseta o progresso das conquistas e seus emblemas de recompensa. Mantém avatar, Diamantes, inventário e emblemas que não são de conquistas."
+            }
+          }
         },
         "maintenanceTitle": "Modo de manutenção",
         "maintenanceSubtitle": "Bloqueia o acesso ao site para todos, exceto admins e developers.",
@@ -6157,6 +6240,8 @@
         "backgroundShopSaveError": "Não foi possível atualizar a aba de fundos da loja.",
         "miscShopTitle": "Loja de Extras",
         "miscShopSubtitle": "Gerencie boosts, troca de nome, tema custom da sala e outros itens vendidos por moedas, diamantes ou dinheiro real.",
+        "miscShopFirstChangeFree": "Primeira troca gratuita",
+        "miscShopFirstChangeFreeHint": "Quando ativado, cada conta pode fazer a primeira troca de nome sem gastar moedas ou diamantes.",
         "miscShopToggleAria": "Ativar loja de Extras",
         "miscShopItemToggleAria": "Ativar item da loja de Extras",
         "miscShopSaveSuccess": "A loja de Extras foi atualizada.",
