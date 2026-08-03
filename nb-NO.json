@@ -8068,5 +8068,399 @@
     "cookies": "Retningslinjer for informasjonskapsler",
     "accept": "Godta",
     "reject": "Avslå"
+  },
+  "legal": {
+    "privacy": {
+      "back": "Tilbake",
+      "title": "Personvernerklæring",
+      "intro": "Denne erklæringen forklarer hvordan WavezFM samler inn, bruker, deler, lagrer og beskytter personopplysninger når du bruker plattformen, inkludert rom, chat, spillelister, profiler, betalinger og tilkoblede tjenester.",
+      "lastUpdated": "Sist oppdatert",
+      "effectiveDate": "Ikrafttredelsesdato",
+      "sections": {
+        "introduction": {
+          "title": "1. Omfang og aksept",
+          "paragraphs": {
+            "p1": "Denne personvernerklæringen gjelder WavezFMs nettsteder, applikasjoner, innloggede områder, direktesendte rom og relaterte tjenester. Ved å bruke Tjenesten bekrefter du at du er kjent med praksisen som beskrives her.",
+            "p2": "Denne erklæringen bør leses sammen med Bruksvilkårene og retningslinjene for informasjonskapsler. Hvis en funksjon har en mer spesifikk personvernerklæring, gjelder også denne for funksjonen."
+          }
+        },
+        "controller": {
+          "title": "2. Behandlingsansvarlig",
+          "paragraphs": {
+            "p1": "WavezFM er ansvarlig for å avgjøre hvorfor og hvordan personopplysninger behandles i forbindelse med Tjenesten. Personvernforespørsler kan sendes til hi@wavez.fm."
+          }
+        },
+        "provided": {
+          "title": "3. Opplysninger du gir",
+          "paragraphs": {
+            "p1": "Vi behandler opplysninger du oppgir når du oppretter og bruker en konto eller kommuniserer gjennom Tjenesten."
+          },
+          "items": {
+            "i1": "Kontodata, som e-postadresse, brukernavn, visningsnavn, passordhash og autentiserings- eller tofaktordetaljer.",
+            "i2": "Profildata, som avatar, biografi, landflagg, merker, sosiale forbindelser, preferanser og offentlige profilinnstillinger.",
+            "i3": "Innhold og kommunikasjon, inkludert romchat, hvisk, reaksjoner, avstemninger, utlodninger, rapporter, brukerstøttehenvendelser, opplastede medier, rominnstillinger og botkonfigurasjoner.",
+            "i4": "Musikk- og fellesskapsaktivitet, inkludert spillelister, importerte spor, romdeltakelse, DJ-køaktivitet, stemmer, favoritter, kontoer du følger og modereringshandlinger.",
+            "i5": "Transaksjonsdetaljer, som kjøp, abonnementer, gaver, donasjoner, valuta, beløp, leverandør og betalingsstatus. Fullstendige kortopplysninger håndteres av betalingsleverandøren og lagres ikke av WavezFM."
+          }
+        },
+        "automatic": {
+          "title": "4. Opplysninger som samles inn automatisk",
+          "paragraphs": {
+            "p1": "Når du bruker Tjenesten, kan vi automatisk registrere teknisk informasjon og bruksinformasjon som er nødvendig for å drive, sikre og forbedre den."
+          },
+          "items": {
+            "i1": "IP-adresse, nettleser, operativsystem, enhetstype, språk, tidssone, skjerminformasjon og omtrentlig plassering utledet fra IP.",
+            "i2": "Øktidentifikatorer, informasjonskapsler, lokal lagring, autentiseringstilstand, sikkerhetssignaler og tilkoblings- eller WebSocket-diagnostikk.",
+            "i3": "Sider og funksjoner som brukes, klikk, feil, ytelsesinformasjon, romtilstedeværelse, avspillingshendelser og tidsstempler.",
+            "i4": "Sikkerhets-, modererings- og revisjonslogger som brukes til å forhindre misbruk, undersøke hendelser og håndheve plattform- eller romregler."
+          }
+        },
+        "thirdParties": {
+          "title": "5. Opplysninger fra tilkoblede tjenester",
+          "paragraphs": {
+            "p1": "Hvis du kobler til eller bruker en ekstern tjeneste, kan vi motta informasjonen som trengs for å levere den integrasjonen."
+          },
+          "items": {
+            "i1": "Discord kan oppgi en kontoidentifikator, brukernavn, avatar og autorisasjonsinformasjon når det brukes til innlogging eller kontokobling.",
+            "i2": "Last.fm kan oppgi konto- og autorisasjonsinformasjon som brukes til scrobbling når du aktiverer integrasjonen.",
+            "i3": "YouTube, SoundCloud, Spotify, Google Drive og andre medietjenester kan oppgi lenker, identifikatorer, metadata, cover, tilgjengelighet og spillelisteinformasjon.",
+            "i4": "Stripe og Mercado Pago oppgir transaksjonsidentifikatorer, betalingsstatus, faktureringssyklus, valuta, beløp og begrenset faktureringsinformasjon som kreves for støtte, regnskap og svindelforebygging."
+          }
+        },
+        "purposes": {
+          "title": "6. Hvordan vi bruker opplysninger",
+          "paragraphs": {
+            "p1": "Vi bruker personopplysninger til følgende formål:"
+          },
+          "items": {
+            "i1": "Opprette, autentisere, sikre, gjenopprette og vedlikeholde kontoer.",
+            "i2": "Drive rom, synkronisert avspilling, chat, hvisk, spillelister, profiler, sosiale funksjoner, boter, avstemninger, utlodninger og varsler.",
+            "i3": "Behandle kjøp, abonnementer, gaver, virtuelle saldoer og donasjoner og gi transaksjonsstøtte.",
+            "i4": "Tilpasse språk, utseende, tilgjengelighet, personvern, innhold og varselpreferanser.",
+            "i5": "Moderere innhold, håndheve regler, undersøke rapporter, forhindre svindel, spam, misbruk og uautorisert tilgang, og beskytte brukere og Tjenesten.",
+            "i6": "Diagnostisere feil, måle ytelse, utvikle funksjoner og produsere aggregert eller avidentifisert statistikk.",
+            "i7": "Oppfylle juridiske, regulatoriske, regnskapsmessige, skattemessige og tvisteløsningsmessige forpliktelser og svare på lovlige forespørsler."
+          }
+        },
+        "legalBases": {
+          "title": "7. Rettslige grunnlag",
+          "paragraphs": {
+            "p1": "Avhengig av konteksten og gjeldende lov kan behandlingen bygge på ett eller flere av følgende grunnlag:"
+          },
+          "items": {
+            "i1": "Oppfyllelse av en avtale, når opplysninger er nødvendige for å opprette en konto eller levere en forespurt funksjon.",
+            "i2": "Berettigede interesser, inkludert tjenestesikkerhet, forebygging av misbruk, produktforbedring og fellesskapsmoderering, avveid mot dine rettigheter.",
+            "i3": "Samtykke, når det kreves for valgfrie informasjonskapsler, visse integrasjoner, markedsføring eller annen valgfri behandling; samtykke kan trekkes tilbake.",
+            "i4": "Overholdelse av juridiske eller regulatoriske forpliktelser, inkludert regnskapsdata og gyldige myndighetsforespørsler.",
+            "i5": "Beskyttelse av rettigheter, sikkerhet og rettskrav, der loven tillater det."
+          }
+        },
+        "sharing": {
+          "title": "8. Hvordan opplysninger deles",
+          "paragraphs": {
+            "p1": "WavezFM selger ikke personopplysninger. Vi utleverer bare det som med rimelighet er nødvendig for formålene beskrevet i denne erklæringen."
+          },
+          "items": {
+            "i1": "Tjenesteleverandører som støtter hosting, lagring, innholdslevering, e-post, autentisering, antimisbrukstiltak, medieintegrasjoner og betalingsbehandling.",
+            "i2": "Rommoderatorer og plattformansatte når det trengs for moderering, støtte, sikkerhet, revisjon eller hendelsesundersøkelse.",
+            "i3": "Myndigheter, domstoler eller andre parter når det kreves av loven eller med rimelighet er nødvendig for å beskytte rettigheter, sikkerhet, brukere eller Tjenesten.",
+            "i4": "En etterfølgende organisasjon ved en fusjon, omstrukturering, finansiering eller overføring av Tjenesten, underlagt passende krav om konfidensialitet og varsel."
+          }
+        },
+        "publicAreas": {
+          "title": "9. Offentlige og sosiale områder",
+          "paragraphs": {
+            "p1": "Brukernavn, visningsnavn, avatarer, merker, offentlige biografier, romaktivitet, chatmeldinger, reaksjoner, spilleliste- eller rominformasjon og annet innhold du velger å publisere, kan være synlig for andre brukere avhengig av innstillingene dine og funksjonen som brukes.",
+            "p2": "Ikke publiser personlig eller konfidensiell informasjon du ikke vil at andre skal se. Rompersonvern og profilkontroller reduserer synligheten, men kan ikke hindre en annen person i å ta opp eller dele innhold de har tilgang til."
+          }
+        },
+        "retention": {
+          "title": "10. Lagring av data",
+          "paragraphs": {
+            "p1": "Vi oppbevarer personopplysninger kun så lenge det med rimelighet er nødvendig for å levere Tjenesten, opprettholde sikkerhets- og modereringsregistre, løse tvister og oppfylle juridiske, skattemessige, regnskapsmessige eller regulatoriske plikter. Lagringstiden varierer etter datatype, romkonfigurasjon, kontostatus og lovkrav.",
+            "p2": "Etter sletting av kontoen kan data forbli i en begrenset periode i sikkerhetskopier, svindelforebyggingsregistre, transaksjonsregistre eller logger som må bevares. Offentlig innhold kan slettes, anonymiseres eller beholdes når det er nødvendig for å bevare integriteten i samtaler, håndheve rettigheter eller overholde loven."
+          }
+        },
+        "security": {
+          "title": "11. Sikkerhet",
+          "paragraphs": {
+            "p1": "Vi bruker rimelige tekniske og organisatoriske tiltak som er tilpasset opplysningenes art. Ingen nettbasert tjeneste kan garantere absolutt sikkerhet."
+          },
+          "items": {
+            "i1": "Kryptert overføring for støttede tilkoblinger og sikker hashing av passord.",
+            "i2": "Autentisering, tilgangskontroller, tillatelseskontroller og tofaktoralternativer.",
+            "i3": "Logging, hastighetsgrenser, misbruksdeteksjon, sikkerhetskopier og prosedyrer for hendelsesundersøkelse.",
+            "i4": "Begrenset administrativ tilgang basert på operasjonelt behov."
+          }
+        },
+        "rights": {
+          "title": "12. Dine personvernrettigheter",
+          "paragraphs": {
+            "p1": "Avhengig av hvor du bor, blant annet under LGPD eller GDPR, kan du ha følgende rettigheter. Vi kan be om informasjon som er nødvendig for å bekrefte identitet og beskytte kontoen før vi oppfyller en forespørsel."
+          },
+          "items": {
+            "i1": "Bekreftelse på at personopplysninger behandles og tilgang til disse opplysningene.",
+            "i2": "Korrigering av ufullstendige, unøyaktige eller utdaterte opplysninger.",
+            "i3": "Sletting, anonymisering eller blokkering der dette følger av gjeldende rett.",
+            "i4": "Begrensning av behandling eller innsigelse mot visse behandlinger.",
+            "i5": "Dataportabilitet i et relevant maskinlesbart format.",
+            "i6": "Informasjon om enheter som data ble delt med.",
+            "i7": "Tilbaketrekking av samtykke uten å påvirke tidligere lovlig behandling.",
+            "i8": "Gjennomgang av avgjørelser som utelukkende er basert på automatisert behandling, når det er aktuelt.",
+            "i9": "En klage til ANPD, en tilsynsmyndighet i EU eller en annen kompetent lokal myndighet."
+          }
+        },
+        "transfers": {
+          "title": "13. Internasjonale overføringer",
+          "paragraphs": {
+            "p1": "WavezFM og leverandørene kan behandle data i andre land enn ditt eget. Der det kreves, bruker vi anerkjente tiltak som kontraktsmessig beskyttelse, beslutninger om tilstrekkelig beskyttelsesnivå, sikkerhetstiltak og dataminimeringspraksis."
+          }
+        },
+        "cookies": {
+          "title": "14. Informasjonskapsler og lokal lagring",
+          "paragraphs": {
+            "p1": "Vi bruker essensielle teknologier for autentisering, sikkerhet, øktkontinuitet, språk og grunnleggende drift. Valgfrie preferanseteknologier brukes i henhold til dine valg der samtykke kreves.",
+            "p2": "Du kan administrere støttede valg gjennom informasjonskapselkontrollene og nettleseren din. Å deaktivere essensiell lagring kan hindre autentiserte eller sikkerhetssensitive funksjoner i å fungere. Se retningslinjene for informasjonskapsler for flere detaljer."
+          }
+        },
+        "children": {
+          "title": "15. Barn",
+          "paragraphs": {
+            "p1": "Tjenesten er ikke rettet mot noen under 16 år, og vi samler ikke bevisst inn personopplysninger fra dem. Hvis du tror at en person under gjeldende minstealder har oppgitt data til WavezFM, kontakt hi@wavez.fm slik at vi kan undersøke og iverksette passende tiltak."
+          }
+        },
+        "changes": {
+          "title": "16. Endringer i denne erklæringen",
+          "paragraphs": {
+            "p1": "Vi kan oppdatere denne erklæringen etter hvert som Tjenesten, leverandørene eller lovkravene endres. Vesentlige endringer kan kunngjøres på nettstedet, i applikasjonen eller på e-post. Datoen ovenfor angir gjeldende versjon."
+          }
+        },
+        "contact": {
+          "title": "17. Kontakt og klager",
+          "paragraphs": {
+            "p1": "For å stille et personvernspørsmål eller utøve en datarettighet, send e-post til hi@wavez.fm med nok informasjon til å identifisere kontoen og forespørselen din. Ikke send passord eller fullstendige betalingskortopplysninger.",
+            "p2": "Du kan også kontakte den kompetente personvern- eller forbrukermyndigheten i din jurisdiksjon, inkludert Brasils ANPD eller tilsynsmyndigheten i ditt EU- eller EØS-land, der det er aktuelt."
+          }
+        }
+      }
+    },
+    "terms": {
+      "back": "Tilbake",
+      "title": "Bruksvilkår",
+      "intro": "Disse vilkårene utgjør avtalen mellom deg og WavezFM om tilgang til og bruk av plattformen, inkludert rom, chat, spillelister, sosiale funksjoner, integrasjoner, abonnementer, kjøp og virtuelle gjenstander.",
+      "lastUpdated": "Sist oppdatert",
+      "effectiveDate": "Ikrafttredelsesdato",
+      "sections": {
+        "acceptance": {
+          "title": "1. Aksept av vilkårene",
+          "paragraphs": {
+            "p1": "Ved å opprette en konto, bruke eller få tilgang til WavezFM godtar du disse vilkårene, personvernerklæringen, retningslinjene for informasjonskapsler og gjeldende plattform- og romregler. Hvis du ikke godtar, må du ikke bruke Tjenesten.",
+            "p2": "Hvis du bruker Tjenesten på vegne av en organisasjon, bekrefter du at du har fullmakt til å binde den organisasjonen til disse vilkårene."
+          }
+        },
+        "service": {
+          "title": "2. Tjenesten",
+          "paragraphs": {
+            "p1": "WavezFM er en sosial musikkplattform som kan la brukere:"
+          },
+          "items": {
+            "i1": "Opprette og bli med i offentlige eller private lytterom.",
+            "i2": "Synkronisere avspilling fra støttede tredjeparts mediekilder.",
+            "i3": "Opprette, importere, organisere og dele spillelister.",
+            "i4": "Bruke chat, hvisk, reaksjoner, profiler, følginger, avstemninger, utlodninger og andre fellesskapsfunksjoner.",
+            "i5": "Delta i DJ-køer, stemmer, rommoderering og romboter i henhold til tillatelser.",
+            "i6": "Kjøpe abonnementer, virtuelle gjenstander, tillegg, gaver eller gi donasjoner når det er tilgjengelig."
+          }
+        },
+        "eligibility": {
+          "title": "3. Hvem kan bruke Tjenesten",
+          "paragraphs": {
+            "p1": "Du må være minst 16 år og ha juridisk tillatelse til å bruke Tjenesten. Hvis loven der du bor krever en høyere minstealder, gjelder den høyere alderen.",
+            "p2": "Hvis du er under myndighetsalder, bekrefter du at en forelder eller verge har gjennomgått og godkjent bruken din av Tjenesten og alle kjøp du gjør."
+          }
+        },
+        "account": {
+          "title": "4. Kontoer og sikkerhet",
+          "paragraphs": {
+            "p1": "Du er ansvarlig for kontoen din og aktiviteten som utføres gjennom den."
+          },
+          "items": {
+            "i1": "Oppgi nøyaktig informasjon og hold den rimelig oppdatert.",
+            "i2": "Beskytt passordet ditt, tofaktorkoder, økter, gjenopprettingsmetoder og bottokener.",
+            "i3": "Varsle WavezFM omgående hvis du mistenker uautorisert tilgang eller at kontoen er kompromittert.",
+            "i4": "Ikke selg, lei ut, overfør eller del kontoer, og ikke utgi deg for andre, på en måte som svekker sikkerhet eller håndheving."
+          }
+        },
+        "conduct": {
+          "title": "5. Akseptabel bruk",
+          "paragraphs": {
+            "p1": "Du kan ikke bruke Tjenesten til å:"
+          },
+          "items": {
+            "i1": "Bryte gjeldende lov eller fremme ulovlig aktivitet.",
+            "i2": "Trakassere, true, utnytte, bedra, forfølge, dokse eller diskriminere en annen person.",
+            "i3": "Publisere hatefullt, seksuelt utnyttende, ondsinnet, ærekrenkende eller på annen måte ulovlig innhold.",
+            "i4": "Krenke opphavsrett, varemerke, personvern, retten til eget bilde eller andre rettigheter.",
+            "i5": "Spamme, manipulere engasjement, omgå sanksjoner, opprette misbrukskontoer eller utgi seg for personer eller organisasjoner.",
+            "i6": "Distribuere skadevare, phishing, skadelige filer eller villedende lenker.",
+            "i7": "Undersøke, omgå, forstyrre, foreta omvendt utvikling av, overbelaste, skrape eller automatisere tilgang utover dokumenterte API-er og autoriserte botfunksjoner.",
+            "i8": "Misbruke avspilling, stemming, DJ-køer, gaver, betalinger, rapporter, modereringsverktøy eller en hvilken som helst plattformøkonomi."
+          }
+        },
+        "rooms": {
+          "title": "6. Rom og moderering",
+          "paragraphs": {
+            "p1": "Romeiere og autoriserte moderatorer kan opprette og håndheve romspesifikke regler, forutsatt at reglene ikke er i strid med disse vilkårene eller plattformens retningslinjer. Brukere må følge legitime modereringsinstruksjoner og tillatelsesgrenser.",
+            "p2": "WavezFM og autoriserte moderatorer kan gjennomgå rapporter og anvende advarsler, midlertidige dempinger, købegrensninger, fjerninger, utestengelser, innholdssletting, funksjonsbegrensninger eller suspensjon av konto. Tiltak kan iverksettes umiddelbart der det trengs for sikkerhet, trygghet, juridisk overholdelse eller tjenestens integritet."
+          }
+        },
+        "userContent": {
+          "title": "7. Brukerinnhold",
+          "paragraphs": {
+            "p1": "Du beholder rettighetene du har til innhold du sender inn. Du er ansvarlig for å sikre at du har rettighetene og tillatelsene som trengs for å publisere det.",
+            "p2": "Du gir WavezFM en verdensomspennende, ikke-eksklusiv, royaltyfri lisens til å hoste, lagre, reprodusere, formatere, overføre, vise og moderere det innholdet kun i den grad det med rimelighet er nødvendig for å drive, sikre, forbedre og markedsføre Tjenesten. Denne lisensen opphører når innholdet slettes, med unntak av kopier som kreves av loven, sikkerhetskopier, håndhevingsregistre eller innhold delt med andre som de beholder."
+          }
+        },
+        "platformContent": {
+          "title": "8. Plattformens immaterielle rettigheter",
+          "paragraphs": {
+            "p1": "Navnet WavezFM, merkevaren, grensesnittet, programvaren, dokumentasjonen, originale ressurser og plattformfunksjoner eies av WavezFM eller dets lisensgivere. Disse vilkårene gir deg en begrenset, personlig, tilbakekallbar, ikke-eksklusiv rett til å bruke Tjenesten; de overfører ikke eierskap eller tillater uautorisert kommersiell gjenbruk."
+          }
+        },
+        "thirdParty": {
+          "title": "9. Tredjepartstjenester og media",
+          "paragraphs": {
+            "p1": "Tjenesten integrerer eller lenker til leverandører som YouTube, SoundCloud, Spotify, Discord, Last.fm, Google Drive, Stripe, Mercado Pago og andre tjenester. Deres egne vilkår og personvernerklæringer regulerer bruken din av deres tjenester.",
+            "p2": "WavezFM kontrollerer ikke tilgjengeligheten, lisensieringen, nøyaktigheten, sikkerheten eller den fortsatte driften av tredjepartsinnhold. Medier kan bli fjernet, blokkert, utilgjengelig i enkelte regioner, avbrutt eller endret av leverandøren."
+          }
+        },
+        "copyright": {
+          "title": "10. Klager om opphavsrett",
+          "paragraphs": {
+            "p1": "Hvis du tror at innhold som er tilgjengelig gjennom WavezFM krenker rettighetene dine, send et tilstrekkelig detaljert varsel til hi@wavez.fm."
+          },
+          "items": {
+            "i1": "Identifiser det beskyttede verket og det påstått krenkende materialet.",
+            "i2": "Oppgi den relevante URL-en, rommet, meldingen, profilen eller et annet sted.",
+            "i3": "Inkluder navnet ditt og pålitelig kontaktinformasjon.",
+            "i4": "Oppgi i god tro hvorfor bruken er uautorisert.",
+            "i5": "Bekreft at informasjonen er nøyaktig og at du er rettighetshaveren eller autorisert til å opptre på deres vegne."
+          }
+        },
+        "payments": {
+          "title": "11. Betalinger, abonnementer, gaver og donasjoner",
+          "paragraphs": {
+            "p1": "Priser, valuta, faktureringsintervall, skatter og avgifter, fornyelsesvilkår og inkluderte fordeler vises før betaling. Betalinger behandles av tredjepartsleverandører som Stripe eller Mercado Pago og er også underlagt deres vilkår.",
+            "p2": "Løpende abonnementer fornyes til de kanselleres gjennom den tilgjengelige administrasjonsflyten. Kansellering forhindrer normalt fremtidig fornyelse og opphever ikke den nåværende betalte perioden med tilbakevirkende kraft. Engangsgaver, virtuelle gjenstander, tillegg og donasjoner fornyes ikke med mindre betalingsprosessen uttrykkelig oppgir noe annet."
+          },
+          "items": {
+            "i1": "Du autoriserer den viste belastningen og bekrefter at du kan bruke den valgte betalingsmåten.",
+            "i2": "Fordeler tas i bruk etter leverandørbekreftelse og kan bli forsinket mens en betaling er under behandling eller vurdering.",
+            "i3": "Refusjoner gis der det kreves av gjeldende lov eller uttrykkelig oppgitt ved kjøp; fullført digital levering, gaver og donasjoner kan ellers være endelige.",
+            "i4": "Tilbakeføringer, svindel, betalingsreversering eller misbruk kan føre til fjerning av fordeler, negative saldoer, begrensninger eller kontosuspensjon.",
+            "i5": "Priser og fremtidige abonnementsvilkår kan endres med forhåndsvarsel der loven krever det."
+          }
+        },
+        "virtualItems": {
+          "title": "12. Virtuelle gjenstander og saldoer",
+          "paragraphs": {
+            "p1": "Mynter, diamanter, XP, merker, avatarer, bakgrunner, videorammer, boosts og andre virtuelle fordeler er begrensede lisenser til bruk innenfor WavezFM. De har ingen kontantverdi, er ikke eiendom, og kan ikke selges, byttes eller overføres utenfor støttede funksjoner. Vi kan korrigere saldoer som er påvirket av feil, svindel, reversering eller misbruk."
+          }
+        },
+        "privacy": {
+          "title": "13. Personvern",
+          "paragraphs": {
+            "p1": "Personvernerklæringen forklarer hvordan personopplysninger behandles, og retningslinjene for informasjonskapsler forklarer bruken av informasjonskapsler og lignende lagring. Ved å bruke Tjenesten anerkjenner du de merknadene."
+          }
+        },
+        "availability": {
+          "title": "14. Tilgjengelighet og endringer i Tjenesten",
+          "paragraphs": {
+            "p1": "Tjenesten kan endres, oppleve avbrudd, gå i vedlikehold, innføre grenser eller avvikle funksjoner. Vi kan endre integrasjoner, grenser, fordeler, rom, kataloger eller støttede leverandører for å opprettholde sikkerhet, juridisk overholdelse, ytelse eller produktets levedyktighet.",
+            "p2": "Vi garanterer ikke at et rom, spor, spilleliste, brukernavn, gjenstand, integrasjon eller funksjon vil forbli tilgjengelig permanent."
+          }
+        },
+        "disclaimers": {
+          "title": "15. Ansvarsfraskrivelser",
+          "paragraphs": {
+            "p1": "I den grad loven tillater det, leveres Tjenesten «som den er» og «som tilgjengelig». Vi lover ikke uavbrutt drift, feilfritt innhold, permanent bevaring av data eller kompatibilitet med enhver enhet, nettleser, nettverk eller tredjepartsleverandør.",
+            "p2": "Ingenting i disse vilkårene utelukker garantier, rettsmidler eller forbrukerrettigheter som ikke lovlig kan utelukkes."
+          }
+        },
+        "liability": {
+          "title": "16. Ansvarsbegrensning",
+          "paragraphs": {
+            "p1": "I den grad loven tillater det, er WavezFM ikke ansvarlig for indirekte, tilfeldige, spesielle, pønale eller følgemessige tap, eller for tapt fortjeneste, data, goodwill, muligheter eller tredjepartsinnhold som oppstår ved bruk av Tjenesten.",
+            "p2": "Der ansvar ikke kan utelukkes, vil WavezFMs samlede ansvar knyttet til Tjenesten ikke overstige beløpet du betalte til WavezFM i løpet av de tolv månedene før hendelsen som ga opphav til kravet. Denne grensen gjelder ikke der den er forbudt ved lov."
+          }
+        },
+        "indemnification": {
+          "title": "17. Ansvar for krav",
+          "paragraphs": {
+            "p1": "I den grad loven tillater det, er du ansvarlig for tap og rimelige kostnader som følge av din ulovlige bruk av Tjenesten, ditt innhold, ditt brudd på disse vilkårene eller din krenkelse av en annen persons rettigheter."
+          }
+        },
+        "termination": {
+          "title": "18. Suspensjon og oppsigelse",
+          "paragraphs": {
+            "p1": "Du kan slutte å bruke Tjenesten og be om sletting av kontoen gjennom tilgjengelige innstillinger eller støtte. Utestående betalings-, modererings-, juridiske eller sikkerhetsmessige forhold kan måtte løses først.",
+            "p2": "WavezFM kan begrense, suspendere eller avslutte tilgang ved brudd, risiko, lovkrav, manglende betaling, svindel, tjenesteavvikling eller for å beskytte brukere og infrastruktur. Bestemmelser om immaterielle rettigheter, betalinger, ansvar, tvister og nødvendig lagring av data gjelder etter oppsigelse."
+          }
+        },
+        "changes": {
+          "title": "19. Endringer i disse vilkårene",
+          "paragraphs": {
+            "p1": "Vi kan oppdatere disse vilkårene etter hvert som Tjenesten eller loven endres. Vesentlige oppdateringer kan kunngjøres på e-post, ved varsel i appen eller ved publisering på nettstedet. Fortsatt bruk etter ikrafttredelsesdatoen betyr aksept der loven tillater det; hvis du ikke godtar, må du slutte å bruke Tjenesten."
+          }
+        },
+        "law": {
+          "title": "20. Lovvalg og tvister",
+          "paragraphs": {
+            "p1": "Disse vilkårene reguleres av lovene som gjelder for WavezFMs drift, uten å fjerne ufravikelige forbruker- eller databeskyttelsesrettigheter som gjelder der du bor. Før du fremmer et krav, kontakt hi@wavez.fm slik at partene kan forsøke en uformell løsning. Tvister vil bli forelagt domstolene med jurisdiksjon i henhold til gjeldende lov."
+          }
+        },
+        "miscellaneous": {
+          "title": "21. Generelle bestemmelser",
+          "paragraphs": {
+            "p1": "Følgende bestemmelser gjelder også:"
+          },
+          "items": {
+            "i1": "Hvis én bestemmelse ikke kan håndheves, forblir de øvrige bestemmelsene i kraft.",
+            "i2": "Unnlatelse av å håndheve en bestemmelse er ikke et avkall på retten til å håndheve den senere.",
+            "i3": "Du kan ikke overdra disse vilkårene uten skriftlig forhåndssamtykke; WavezFM kan overdra dem som del av en omstrukturering eller overføring av Tjenesten, underlagt gjeldende lov.",
+            "i4": "Disse vilkårene og de innlemmede retningslinjene utgjør avtalen om Tjenesten, med unntak av vilkår som uttrykkelig presenteres for et spesifikt kjøp eller en spesifikk funksjon."
+          }
+        },
+        "contact": {
+          "title": "22. Kontakt",
+          "paragraphs": {
+            "p1": "Spørsmål om disse vilkårene, opphavsrett, kjøp eller juridiske forhold kan sendes til hi@wavez.fm. Inkluder kontoidentifikatoren din og relevante detaljer, men send aldri passordet ditt, tofaktorkoden eller fullstendig kortinformasjon."
+          }
+        }
+      }
+    },
+    "cookiesPolicy": {
+      "back": "Tilbake",
+      "title": "Retningslinjer for informasjonskapsler",
+      "intro": "Denne siden forklarer hvilke informasjonskapsler WavezFM bruker i dag, hva de er til for, og hvordan samtykkevalget ditt påvirker innstillingskapsler på nettstedet.",
+      "sections": {
+        "essential": {
+          "title": "1. Nødvendige informasjonskapsler",
+          "body": "Noen informasjonskapsler er nødvendige for innlogging, sikkerhet, øktkontinuitet og grunnleggende drift av innloggede områder. Disse informasjonskapslene er en del av driften av tjenesten."
+        },
+        "preferences": {
+          "title": "2. Innstillingskapsler",
+          "body": "WavezFM bruker en språkkapsel for å beholde det valgte språket ditt mellom besøk og innlastinger. Andre grensesnittinnstillinger, som tilstanden til sidefeltet, avhenger fortsatt av samtykket ditt."
+        },
+        "thirdParties": {
+          "title": "3. Leverandører og integrasjoner",
+          "body": "Noen deler av plattformen kan være avhengige av eksterne leverandører for autentisering, drift, lyd, video eller sikkerhet. Disse tjenestene kan kreve tekniske informasjonskapsler for å fungere som de skal."
+        },
+        "choices": {
+          "title": "4. Ditt valg",
+          "body": "Hvis du avviser informasjonskapsler, slutter WavezFM å lagre innstillinger som ikke er nødvendige, som tilstanden til sidefeltet, og fjerner dem den kan styre direkte. Språkkapselen kan fortsatt brukes slik at produktet respekterer det valgte språket ditt."
+        }
+      }
+    }
   }
 }
