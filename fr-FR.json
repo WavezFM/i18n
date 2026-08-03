@@ -2964,6 +2964,8 @@
       "ROOM_BOT_NOT_FOUND": "On ne trouvait pas ce robot de la pièce pour l’instant.",
       "ROOM_BOT_ALREADY_REVOKED": "Ce robot de salle a déjà été révoqué.",
       "PRIVATE_MESSAGE_EDIT_FORBIDDEN": "Vous ne pouvez modifier que vos propres chuchotements.",
+      "USER_BLOCK_SELF_FORBIDDEN": "Vous ne pouvez pas bloquer votre propre compte.",
+      "USER_BLOCK_RELATION_FORBIDDEN": "Cette interaction est indisponible, car l’un de ces comptes a bloqué l’autre.",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "Cet article n’a pas été trouvé dans le catalogue.",
       "ADMIN_REQUIRED": "Seuls les administrateurs peuvent effectuer cette action.",
       "AMBASSADOR_REQUIRED": "Seuls les ambassadeurs peuvent accomplir cette action.",
@@ -4713,6 +4715,17 @@
         "banError": "Nous ne pouvions pas suspendre cet utilisateur.",
         "unbanSuccess": "{username} a été réactivé.",
         "unbanError": "Nous n’avons pas pu réactiver cet utilisateur.",
+        "accountReset": {
+          "title": "Réinitialiser les données du compte",
+          "subtitle": "Réinitialisez uniquement la progression, l’économie et les objets de collection de {username}, sans supprimer le compte.",
+          "openAction": "Configurer la réinitialisation",
+          "dialogTitle": "Autoriser la réinitialisation du compte",
+          "dialogDescription": "Vous allez exécuter {mode} pour {username}. Confirmez votre mot de passe, votre code à deux facteurs et la phrase exacte ci-dessous.",
+          "confirmationHint": "Saisissez exactement cette phrase pour confirmer la réinitialisation de {username} :",
+          "confirmAction": "Réinitialiser ce compte",
+          "resetError": "Nous n’avons pas pu réinitialiser ce compte.",
+          "success": "Les données de progression de {username} ont été réinitialisées."
+        },
         "deleteTitle": "Supprimer le compte",
         "deleteHint": "Cela supprime les sessions, playlists, relations sociales et salles possédées de ce compte. Chambres concernées : {count}.",
         "delete": "Supprimer le compte",
@@ -5462,6 +5475,7 @@
         "users": "Utilisateurs",
         "system": "Système",
         "billingPricing": "Tarification",
+        "catalogPricing": "Tarifs du catalogue",
         "miscShop": "Boutique d’extras",
         "subscribers": "Abonnés",
         "bots": "Bots",
@@ -7851,7 +7865,17 @@
         "becomeFan": "Devenez fan",
         "unfan": "Arrête d’être fan",
         "becomeFanSuccess": "Vous êtes maintenant fan de {username}.",
-        "unfanSuccess": "Tu as cessé d’être fan de {username}."
+        "unfanSuccess": "Tu as cessé d’être fan de {username}.",
+        "blockUser": "Bloquer l’utilisateur",
+        "unblockUser": "Débloquer l’utilisateur",
+        "blockConfirmTitle": "Bloquer cet utilisateur ?",
+        "blockConfirmDescription": "{username} ne pourra plus vous mentionner ni vous envoyer de messages privés. Vous ne verrez plus non plus les messages de l’autre dans les salons.",
+        "blockConfirmSubmit": "Bloquer",
+        "blockConfirmCancel": "Annuler",
+        "blockSuccess": "{username} a été bloqué.",
+        "unblockSuccess": "{username} a été débloqué.",
+        "blockError": "Impossible de mettre à jour ce blocage pour le moment.",
+        "interactionBlocked": "Cette interaction est indisponible, car l’un de ces comptes a bloqué l’autre."
       }
     },
     "myStuff": {

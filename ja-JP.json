@@ -2964,6 +2964,8 @@
       "ROOM_BOT_NOT_FOUND": "今はあのルームボットが見つからなかった。",
       "ROOM_BOT_ALREADY_REVOKED": "このルームボットはすでに取り消されています。",
       "PRIVATE_MESSAGE_EDIT_FORBIDDEN": "自分のささやきだけを編集できる。",
+      "USER_BLOCK_SELF_FORBIDDEN": "自分のアカウントをブロックすることはできません。",
+      "USER_BLOCK_RELATION_FORBIDDEN": "どちらかのアカウントが相手をブロックしているため、この操作は利用できません。",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "この商品はカタログには載っていませんでした。",
       "ADMIN_REQUIRED": "この操作は管理者のみが実行できます。",
       "AMBASSADOR_REQUIRED": "この行為は大使のみが行えます。",
@@ -4713,6 +4715,17 @@
         "banError": "このユーザーを停止することはできませんでした。",
         "unbanSuccess": "{username} は再稼働しました。",
         "unbanError": "このユーザーを再活性化できなかった。",
+        "accountReset": {
+          "title": "アカウントデータをリセット",
+          "subtitle": "アカウントを削除せずに、{username} の進行状況、経済データ、コレクションのみをリセットします。",
+          "openAction": "リセットを設定",
+          "dialogTitle": "アカウントのリセットを承認",
+          "dialogDescription": "{username} に対して {mode} を実行します。パスワード、2段階認証コード、下の確認フレーズを正確に入力してください。",
+          "confirmationHint": "{username} のリセットを確定するには、次のフレーズを正確に入力してください：",
+          "confirmAction": "このアカウントをリセット",
+          "resetError": "このアカウントをリセットできませんでした。",
+          "success": "{username} の進行データをリセットしました。"
+        },
         "deleteTitle": "アカウントを削除してください",
         "deleteHint": "このアカウントからセッション、プレイリスト、ソーシャル関係、所有ルームを削除します。影響を受ける部屋: {count}。",
         "delete": "アカウントを削除してください",
@@ -5462,6 +5475,7 @@
         "users": "ユーザー",
         "system": "システム",
         "billingPricing": "価格設定",
+        "catalogPricing": "カタログ価格",
         "miscShop": "エキストラショップ",
         "subscribers": "加入者",
         "bots": "ボット",
@@ -7851,7 +7865,17 @@
         "becomeFan": "ファンになる",
         "unfan": "ファンでいるのはやめろ",
         "becomeFanSuccess": "あなたは今や {username}のファンです。",
-        "unfanSuccess": "君は {username}のファンじゃなくなった。"
+        "unfanSuccess": "君は {username}のファンじゃなくなった。",
+        "blockUser": "ユーザーをブロック",
+        "unblockUser": "ブロックを解除",
+        "blockConfirmTitle": "このユーザーをブロックしますか？",
+        "blockConfirmDescription": "{username} はあなたをメンションしたり、ささやきを送ったりできなくなります。また、ルームチャットでお互いのメッセージが表示されなくなります。",
+        "blockConfirmSubmit": "ブロック",
+        "blockConfirmCancel": "キャンセル",
+        "blockSuccess": "{username} をブロックしました。",
+        "unblockSuccess": "{username} のブロックを解除しました。",
+        "blockError": "現在ブロック設定を更新できませんでした。",
+        "interactionBlocked": "どちらかのアカウントが相手をブロックしているため、この操作は利用できません。"
       }
     },
     "myStuff": {

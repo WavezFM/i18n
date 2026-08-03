@@ -2964,6 +2964,8 @@
       "ROOM_BOT_NOT_FOUND": "Nie mogliśmy teraz znaleźć tego bota pokojowego.",
       "ROOM_BOT_ALREADY_REVOKED": "Ten bot pokoju został już odwołany.",
       "PRIVATE_MESSAGE_EDIT_FORBIDDEN": "Możesz edytować tylko własne szepty.",
+      "USER_BLOCK_SELF_FORBIDDEN": "Nie możesz zablokować własnego konta.",
+      "USER_BLOCK_RELATION_FORBIDDEN": "Ta interakcja jest niedostępna, ponieważ jedno z kont zablokowało drugie.",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "Ten przedmiot nie został znaleziony w katalogu.",
       "ADMIN_REQUIRED": "Tylko administratorzy mogą wykonać tę akcję.",
       "AMBASSADOR_REQUIRED": "Tylko ambasadorowie mogą wykonać tę czynność.",
@@ -4713,6 +4715,17 @@
         "banError": "Nie mogliśmy zawiesić tego użytkownika.",
         "unbanSuccess": "{username} został ponownie aktywowany.",
         "unbanError": "Nie mogliśmy ponownie aktywować tego użytkownika.",
+        "accountReset": {
+          "title": "Zresetuj dane konta",
+          "subtitle": "Zresetuj wyłącznie postęp, ekonomię i przedmioty kolekcjonerskie użytkownika {username}, bez usuwania konta.",
+          "openAction": "Skonfiguruj reset",
+          "dialogTitle": "Autoryzuj reset konta",
+          "dialogDescription": "Za chwilę wykonasz {mode} dla użytkownika {username}. Potwierdź hasło, kod uwierzytelniania dwuskładnikowego i dokładną frazę poniżej.",
+          "confirmationHint": "Wpisz dokładnie tę frazę, aby potwierdzić reset użytkownika {username}:",
+          "confirmAction": "Zresetuj to konto",
+          "resetError": "Nie udało się zresetować tego konta.",
+          "success": "Dane postępu użytkownika {username} zostały zresetowane."
+        },
         "deleteTitle": "Usuń konto",
         "deleteHint": "Usuwa sesje, playlisty, relacje społeczne i własne pokoje z tego konta. Dotknięte pokoje: {count}.",
         "delete": "Usuń konto",
@@ -5462,6 +5475,7 @@
         "users": "Użytkownicy",
         "system": "System",
         "billingPricing": "Ceny",
+        "catalogPricing": "Ceny katalogu",
         "miscShop": "Sklep z dodatkami",
         "subscribers": "Subskrybenci",
         "bots": "Boty",
@@ -7851,7 +7865,17 @@
         "becomeFan": "Zostań fanem",
         "unfan": "Przestań być fanem",
         "becomeFanSuccess": "Teraz jesteś fanem {username}.",
-        "unfanSuccess": "Przestałeś być fanem {username}."
+        "unfanSuccess": "Przestałeś być fanem {username}.",
+        "blockUser": "Zablokuj użytkownika",
+        "unblockUser": "Odblokuj użytkownika",
+        "blockConfirmTitle": "Zablokować użytkownika?",
+        "blockConfirmDescription": "{username} nie będzie mógł Cię oznaczać ani wysyłać szeptów. Nie będziecie też widzieć swoich wiadomości na czatach pokojów.",
+        "blockConfirmSubmit": "Zablokuj",
+        "blockConfirmCancel": "Anuluj",
+        "blockSuccess": "Użytkownik {username} został zablokowany.",
+        "unblockSuccess": "Użytkownik {username} został odblokowany.",
+        "blockError": "Nie udało się teraz zmienić blokady.",
+        "interactionBlocked": "Ta interakcja jest niedostępna, ponieważ jedno z kont zablokowało drugie."
       }
     },
     "myStuff": {

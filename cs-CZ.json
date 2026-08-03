@@ -2964,6 +2964,8 @@
       "ROOM_BOT_NOT_FOUND": "Teď jsme toho bota v místnosti nemohli najít.",
       "ROOM_BOT_ALREADY_REVOKED": "Tento bot místnosti už byl zrušen.",
       "PRIVATE_MESSAGE_EDIT_FORBIDDEN": "Můžeš upravovat jen své vlastní šepoty.",
+      "USER_BLOCK_SELF_FORBIDDEN": "Nemůžete zablokovat vlastní účet.",
+      "USER_BLOCK_RELATION_FORBIDDEN": "Tato interakce není dostupná, protože jeden z účtů zablokoval druhý.",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "Tento předmět nebyl v katalogu nalezen.",
       "ADMIN_REQUIRED": "Tuto akci mohou provést pouze administrátoři.",
       "AMBASSADOR_REQUIRED": "Tuto akci mohou provést pouze velvyslanci.",
@@ -4713,6 +4715,17 @@
         "banError": "Nemohli jsme tohoto uživatele pozastavit.",
         "unbanSuccess": "{username} byla znovu aktivována.",
         "unbanError": "Nemohli jsme tohoto uživatele znovu aktivovat.",
+        "accountReset": {
+          "title": "Resetovat data účtu",
+          "subtitle": "Resetujte pouze postup, ekonomiku a sběratelské předměty uživatele {username}, aniž byste účet odstranili.",
+          "openAction": "Nastavit reset",
+          "dialogTitle": "Autorizovat reset účtu",
+          "dialogDescription": "Chystáte se spustit {mode} pro uživatele {username}. Potvrďte heslo, kód dvoufázového ověření a přesnou frázi níže.",
+          "confirmationHint": "Pro potvrzení resetu uživatele {username} zadejte přesně tuto frázi:",
+          "confirmAction": "Resetovat tento účet",
+          "resetError": "Tento účet se nepodařilo resetovat.",
+          "success": "Data postupu uživatele {username} byla úspěšně resetována."
+        },
         "deleteTitle": "Smazat účet",
         "deleteHint": "Odstraní sezení, playlisty, sociální vztahy a vlastněné místnosti z tohoto účtu. Postižené místnosti: {count}.",
         "delete": "Smazat účet",
@@ -5462,6 +5475,7 @@
         "users": "Uživatelé",
         "system": "Systém",
         "billingPricing": "Ceny",
+        "catalogPricing": "Ceny katalogu",
         "miscShop": "Obchod s doplňky",
         "subscribers": "Předplatitelé",
         "bots": "Boti",
@@ -7851,7 +7865,17 @@
         "becomeFan": "Staňte se fanouškem",
         "unfan": "Přestaň být fanouškem",
         "becomeFanSuccess": "Teď jste fanouškem {username}.",
-        "unfanSuccess": "Přestal jsi být fanouškem {username}."
+        "unfanSuccess": "Přestal jsi být fanouškem {username}.",
+        "blockUser": "Zablokovat uživatele",
+        "unblockUser": "Odblokovat uživatele",
+        "blockConfirmTitle": "Zablokovat uživatele?",
+        "blockConfirmDescription": "{username} vás nebude moci zmínit ani vám poslat soukromou zprávu. V chatech místností také neuvidíte zprávy toho druhého.",
+        "blockConfirmSubmit": "Zablokovat",
+        "blockConfirmCancel": "Zrušit",
+        "blockSuccess": "Uživatel {username} byl zablokován.",
+        "unblockSuccess": "Uživatel {username} byl odblokován.",
+        "blockError": "Blokování se teď nepodařilo změnit.",
+        "interactionBlocked": "Tato interakce není dostupná, protože jeden z účtů zablokoval druhý."
       }
     },
     "myStuff": {

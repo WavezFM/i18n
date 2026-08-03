@@ -2964,6 +2964,8 @@
       "ROOM_BOT_NOT_FOUND": "Não foi possível localizar esse bot agora.",
       "ROOM_BOT_ALREADY_REVOKED": "Este bot já foi revogado.",
       "PRIVATE_MESSAGE_EDIT_FORBIDDEN": "Você só pode editar os seus próprios sussurros.",
+      "USER_BLOCK_SELF_FORBIDDEN": "Você não pode bloquear a própria conta.",
+      "USER_BLOCK_RELATION_FORBIDDEN": "Esta interação não está disponível devido a um bloqueio entre as contas.",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "Esse item não foi encontrado no catálogo.",
       "ADMIN_REQUIRED": "Apenas administradores podem realizar esta ação.",
       "AMBASSADOR_REQUIRED": "Apenas ambassadors podem realizar esta ação.",
@@ -4718,6 +4720,17 @@
         "banError": "Não foi possível suspender este usuário.",
         "unbanSuccess": "A conta de {username} foi reativada.",
         "unbanError": "Não foi possível reativar este usuário.",
+        "accountReset": {
+          "title": "Resetar dados da conta",
+          "subtitle": "Redefina apenas a progressão, a economia e os colecionáveis de {username}, sem excluir a conta.",
+          "openAction": "Configurar reset",
+          "dialogTitle": "Autorizar reset da conta",
+          "dialogDescription": "Você está prestes a executar {mode} para {username}. Confirme sua senha, o código de autenticação em duas etapas e a frase exata abaixo.",
+          "confirmationHint": "Digite esta frase exatamente para confirmar o reset de {username}:",
+          "confirmAction": "Resetar esta conta",
+          "resetError": "Não foi possível resetar esta conta.",
+          "success": "Os dados de progressão de {username} foram resetados com sucesso."
+        },
         "deleteTitle": "Excluir conta",
         "deleteHint": "Remove sessões, playlists, relações sociais e salas próprias desta conta. Salas afetadas: {count}.",
         "delete": "Excluir conta",
@@ -5467,6 +5480,7 @@
         "users": "Usuários",
         "system": "Sistema",
         "billingPricing": "Preços",
+        "catalogPricing": "Preços do catálogo",
         "miscShop": "Loja de extras",
         "subscribers": "Assinantes",
         "bots": "Bots",
@@ -7851,7 +7865,17 @@
         "becomeFan": "Virar fã",
         "unfan": "Deixar de ser fã",
         "becomeFanSuccess": "Agora você virou fã de {username}.",
-        "unfanSuccess": "Você deixou de ser fã de {username}."
+        "unfanSuccess": "Você deixou de ser fã de {username}.",
+        "blockUser": "Bloquear usuário",
+        "unblockUser": "Desbloquear usuário",
+        "blockConfirmTitle": "Bloquear usuário?",
+        "blockConfirmDescription": "{username} não poderá mencionar nem enviar sussurros para você. Vocês também deixarão de ver as mensagens um do outro nas salas.",
+        "blockConfirmSubmit": "Bloquear",
+        "blockConfirmCancel": "Cancelar",
+        "blockSuccess": "{username} foi bloqueado.",
+        "unblockSuccess": "{username} foi desbloqueado.",
+        "blockError": "Não foi possível atualizar o bloqueio agora.",
+        "interactionBlocked": "Esta interação não está disponível devido a um bloqueio entre as contas."
       }
     },
     "myStuff": {

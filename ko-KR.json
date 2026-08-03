@@ -2964,6 +2964,8 @@
       "ROOM_BOT_NOT_FOUND": "지금은 그 룸봇을 찾을 수 없습니다.",
       "ROOM_BOT_ALREADY_REVOKED": "이 채팅방 봇은 이미 취소되었습니다.",
       "PRIVATE_MESSAGE_EDIT_FORBIDDEN": "자신의 귓속말만 편집할 수 있습니다.",
+      "USER_BLOCK_SELF_FORBIDDEN": "자신의 계정은 차단할 수 없습니다.",
+      "USER_BLOCK_RELATION_FORBIDDEN": "두 계정 중 하나가 상대를 차단하여 이 기능을 사용할 수 없습니다.",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "이 항목을 카탈로그에서 찾을 수 없습니다.",
       "ADMIN_REQUIRED": "관리자만 이 작업을 수행할 수 있습니다.",
       "AMBASSADOR_REQUIRED": "대사만 이 작업을 수행할 수 있습니다.",
@@ -4713,6 +4715,17 @@
         "banError": "이 사용자를 정지할 수 없습니다.",
         "unbanSuccess": "{username}가 다시 활성화되었습니다.",
         "unbanError": "이 사용자를 재활성화할 수 없습니다.",
+        "accountReset": {
+          "title": "계정 데이터 초기화",
+          "subtitle": "계정을 삭제하지 않고 {username}의 진행도, 경제 및 수집품 데이터만 초기화합니다.",
+          "openAction": "초기화 설정",
+          "dialogTitle": "계정 초기화 승인",
+          "dialogDescription": "{username}에게 {mode}을(를) 실행하려고 합니다. 비밀번호, 2단계 인증 코드와 아래의 정확한 문구를 입력하세요.",
+          "confirmationHint": "{username}의 초기화를 확인하려면 다음 문구를 정확히 입력하세요:",
+          "confirmAction": "이 계정 초기화",
+          "resetError": "이 계정을 초기화할 수 없습니다.",
+          "success": "{username}의 진행 데이터가 성공적으로 초기화되었습니다."
+        },
         "deleteTitle": "계정 삭제",
         "deleteHint": "이 계정에서 세션, 재생 목록, 소셜 관계 및 소유한 방을 제거합니다. 영향을 받는 방: {count}.",
         "delete": "계정 삭제",
@@ -5462,6 +5475,7 @@
         "users": "사용자",
         "system": "시스템",
         "billingPricing": "가격",
+        "catalogPricing": "카탈로그 가격",
         "miscShop": "엑스트라 숍",
         "subscribers": "구독자",
         "bots": "봇",
@@ -7851,7 +7865,17 @@
         "becomeFan": "팬 되기",
         "unfan": "팬 그만둬",
         "becomeFanSuccess": "이제 귀하는 {username}의 팬이 되었습니다.",
-        "unfanSuccess": "당신은 {username}의 팬이 아니었습니다."
+        "unfanSuccess": "당신은 {username}의 팬이 아니었습니다.",
+        "blockUser": "사용자 차단",
+        "unblockUser": "사용자 차단 해제",
+        "blockConfirmTitle": "사용자를 차단할까요?",
+        "blockConfirmDescription": "{username}님은 회원님을 멘션하거나 귓속말을 보낼 수 없습니다. 또한 룸 채팅에서 서로의 메시지가 표시되지 않습니다.",
+        "blockConfirmSubmit": "차단",
+        "blockConfirmCancel": "취소",
+        "blockSuccess": "{username}님을 차단했습니다.",
+        "unblockSuccess": "{username}님의 차단을 해제했습니다.",
+        "blockError": "지금은 차단 설정을 변경할 수 없습니다.",
+        "interactionBlocked": "두 계정 중 하나가 상대를 차단하여 이 기능을 사용할 수 없습니다."
       }
     },
     "myStuff": {
