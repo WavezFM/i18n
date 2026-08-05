@@ -15,6 +15,7 @@ Community-maintained interface translations for [WavezFM](https://wavez.fm), a s
 | <img src="./assets/flags/ko-KR.svg" width="24" alt="South Korea flag"> | `ko-KR.json` | Korean |
 | <img src="./assets/flags/pl-PL.svg" width="24" alt="Poland flag"> | `pl-PL.json` | Polish |
 | <img src="./assets/flags/ru-RU.svg" width="24" alt="Russia flag"> | `ru-RU.json` | Russian |
+| <img src="./assets/flags/nb-NO.svg" width="24" alt="Norway flag"> | `nb-NO.json` | Norwegian (Bokmål) |
 
 ## Contributing
 
