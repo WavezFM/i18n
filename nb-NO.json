@@ -98,7 +98,7 @@
     "close": "Lukk"
   },
   "supporterBadges": {
-    "subscription": "{count, plural, one {abonnent i # måned} other {abonnent i # måneder}}",
+    "subscription": "{count, plural, one {Abonnent i # måned} other {Abonnent i # måneder}}",
     "gift": {
       "supporter": "Giver",
       "enthusiast": "Supergiver",
@@ -766,7 +766,7 @@
       },
       "level": "Nivå",
       "fans": "Fans",
-      "fansCount": "{count, plural, one {# fan} other {# fans}}",
+      "fansCount": "{count, plural, one {# Fan} other {# Fans}}",
       "fanLabel": "{count, plural, one {Fan} other {Fans}}",
       "sharedMediaAlt": "Delt media",
       "mediaPreviewTitle": "Forhåndsvisning",
@@ -2741,7 +2741,7 @@
     },
     "user": {
       "fans": "Fans",
-      "fansCount": "{count, plural, one {# fan} other {# fans}}",
+      "fansCount": "{count, plural, one {# Fan} other {# Fans}}",
       "fanLabel": "{count, plural, one {Fan} other {Fans}}",
       "level": "Nivå",
       "xpTo": "XP til neste nivå"
@@ -6744,7 +6744,7 @@
           "iconPlaceholder": "IconIdBadge2 eller https://.../icon.png",
           "iconHint": "Godtar et Tabler-ikonnavn eller en bilde-URL.",
           "colorHex": "Farge",
-          "colorHexPlaceholder": "#7dd3fc",
+          "colorHexPlaceholder": "#7DD3FC",
           "isCosmetic": "Kosmetisk rolle",
           "isCosmeticHint": "Når dette er aktivert, er rollen ment for status eller utseende og trenger ikke funksjonelle tillatelser.",
           "isEnabled": "Rolle aktivert",
