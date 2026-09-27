@@ -98,7 +98,7 @@
     "close": "Zatvoriť"
   },
   "supporterBadges": {
-    "subscription": "{count, plural, one {# Mesiac Predplatiteľ} other {# Mesiac Predplatiteľ}}",
+    "subscription": "{count, plural, one {# mesačný predplatiteľ} other {# mesačný predplatiteľ}}",
     "gift": {
       "supporter": "Dárca",
       "enthusiast": "Super darca",
@@ -143,7 +143,7 @@
       "roomPreviewLabel": "Náhľad distribúcie",
       "roomPreviewTitle": "{count, plural, one {# mesačný darček} other {# mesačné darčeky pre predplatiteľov}}",
       "roomPreviewBody": "Systém automaticky rezervuje až {count, plural, one {# oprávnená aktívna osoba} other {# oprávnené aktívne osoby}} v aktuálnej miestnosti pred spustením platby.",
-      "recipientMeta": "Úroveň {level} • {fans, plural, one {# fanúšik} other {# fanúšikovia}}",
+      "recipientMeta": "Úroveň {level} • {fans, plural, one {# fanúšik} other {# fanúšikov}}",
       "recipientSubscriptionActive": "Aktívne predplatné platí do {date}. Vďaka tomuto darčeku získate navyše ďalších {quantity}.",
       "recipientSubscriptionActiveNoEnd": "Tento účet už má aktívne predplatné. Tento dar pridá ďalších {quantity} navyše.",
       "recipientEmpty": "Zadajte používateľské meno, aby sa načítal náhľad účtu.",
@@ -460,22 +460,22 @@
     }
   },
   "rooms": {
-    "title": "Živé miestnosti",
+    "title": "Aktívne miestnosti",
     "titleHighlight": "teraz",
-    "subtitle": "Pozrite sa, čo sa práve teraz deje, objavte skutočné aktívne miestnosti a za pár sekúnd si spustite svoju vlastnú.",
-    "searchPlaceholder": "Vyhľadávanie podľa miestnosti, organizátora, tematického bloku alebo popisu...",
-    "createButton": "Vytvoriť izbu",
+    "subtitle": "Objavte aktívne miestnosti alebo si za pár sekúnd vytvorte vlastnú.",
+    "searchPlaceholder": "Vyhľadávanie podľa názvu miestnosti, hostiteľa, žánru alebo popisu...",
+    "createButton": "Vytvoriť",
     "limitReached": "Už ste dosiahli {limit}-limit počtu miestností pre tento účet. Pred vytvorením ďalšej miestnosti jednu zo svojich miestností zatvorte alebo znovu použite.",
-    "loadErrorSubtitle": "Zoznam izieb sa nám momentálne nepodarilo aktualizovať. Skúste to prosím o chvíľu znova.",
+    "loadErrorSubtitle": "Zoznam miestností sa nám momentálne nepodarilo aktualizovať. Skúste to prosím o chvíľu znova.",
     "favoriteToast": {
-      "added": "Izba bola pridaná do obľúbených.",
-      "removed": "Izba bola odstránená z obľúbených."
+      "added": "Miestnosť bola pridaná do obľúbených.",
+      "removed": "Miestnosť bola odstránená z obľúbených."
     },
-    "emptyTitle": "Zatiaľ neboli vytvorené žiadne miestnosti",
-    "emptySubtitle": "Vytvorte prvú reláciu, ktorá bude vysielaná na WavezFM.",
-    "noResults": "Žiadna izba nezodpovedá tomuto vyhľadávaniu.",
+    "emptyTitle": "Zatiaľ žiadne aktívne miestnosti",
+    "emptySubtitle": "Objavte aktívne miestnosti alebo si za pár sekúnd vytvorte vlastnú.",
+    "noResults": "Žiadna miestnosť nezodpovedá vášmu vyhľadávaniu.",
     "noResultsSubtitle": "Skúste zadať iný výraz alebo zrušte filter, aby ste videli celý zoznam.",
-    "people": "Ľudia",
+    "people": "ľudia",
     "host": "Hostiteľ",
     "join": "Vstúpiť do miestnosti",
     "currentRoom": "Už ste tu",
@@ -495,31 +495,31 @@
     },
     "favorites": {
       "eyebrow": "Rýchly prístup",
-      "title": "Obľúbené izby",
-      "subtitle": "Izby, ktoré si si uložil medzi obľúbené, aby si sa do nich mohol vrátiť bez ďalšieho vyhľadávania.",
+      "title": "Obľúbené miestnosti",
+      "subtitle": "Miestnosti, ktoré si si uložil/a medzi obľúbené, aby si sa do nich mohol/la vrátiť bez ďalšieho vyhľadávania.",
       "badge": "Obľúbené",
-      "countLabel": "{count, plural, one {# izba} other {# izby}}",
-      "emptyTitle": "Zatiaľ žiadne obľúbené izby",
-      "emptySubtitle": "Označte si niekoľko izieb ako obľúbené a vytvorte si tak vlastný zoznam pre rýchly prístup.",
-      "tabSubtitle": "Všetky izby, ktoré ste si pridali do obľúbených, pričom sa zachováva poradie podľa cieľovej skupiny adresára."
+      "countLabel": "{count, plural, one {# miestnosť} other {# miestnosti}}",
+      "emptyTitle": "Zatiaľ žiadne obľúbené miestnosti",
+      "emptySubtitle": "Označte si niekoľko miestností ako obľúbené a vytvorte si tak vlastný zoznam pre rýchly prístup.",
+      "tabSubtitle": "Všetky miestnosti, ktoré ste si pridali do obľúbených, pričom sa zachováva poradie podľa cieľovej skupiny adresára."
     },
     "allRooms": {
-      "eyebrow": "Izby",
-      "title": "Izby",
-      "countLabel": "{count, plural, one {# izba} other {# izby}}",
+      "eyebrow": "Miestnosti",
+      "title": "Miestnosti",
+      "countLabel": "{count, plural, one {# miestnosť} other {# miestností}}",
       "subtitle": "Všetky aktívne miestnosti sú pripravené, môžete do nich vstúpiť hneď teraz.",
-      "subtitleWithFavorites": "Zvyšné aktívne izby okrem tých, ktoré ste si už pridali do obľúbených."
+      "subtitleWithFavorites": "Zvyšné aktívne miestnosti okrem tých, ktoré ste si už pridali do obľúbených."
     },
     "privateRooms": {
-      "eyebrow": "Súkromné izby",
-      "title": "Súkromné izby",
-      "countLabel": "{count, plural, one {# súkromná izba} other {# súkromné izby}}",
+      "eyebrow": "Súkromné miestnosti",
+      "title": "Súkromné miestnosti",
+      "countLabel": "{count, plural, one {# súkromná miestnosť} other {# súkromné miestnosti}}",
       "subtitle": "Súkromné miestnosti sú viditeľné len pre správcov a ambasádorov.",
       "emptyTitle": "V súčasnosti nie je viditeľná žiadna súkromná miestnosť",
-      "emptySubtitle": "Tu sa zobrazia všetky dostupné súkromné izby."
+      "emptySubtitle": "Tu sa zobrazia všetky dostupné súkromné miestnosti."
     },
     "tabs": {
-      "all": "Všetko",
+      "all": "Všetky",
       "favorites": "Obľúbené",
       "private": "Súkromné"
     },
@@ -533,9 +533,9 @@
       "externalMediaTrack": "{provider} na obrazovke",
       "waitingTitle": "Zatiaľ sa nič neprehráva",
       "favorite": "Obľúbené",
-      "verified": "Overená izba",
-      "partner": "Izba pre partnerov",
-      "queue": "V čakacom zozname",
+      "verified": "Overená miestnosť",
+      "partner": "Partnerská miestnosť",
+      "queue": "v čakacom zozname",
       "privateBadge": "Súkromné",
       "privateHint": "Túto miestnosť môžu v zozname vidieť len správcovia a ambasádori.",
       "sfwBadge": "SFW",
@@ -543,12 +543,12 @@
     },
     "detailPage": {
       "loading": "Načítava sa miestnosť...",
-      "roomLabel": "Izba: {slug}",
-      "fallbackTitle": "Izba",
+      "roomLabel": "Miestnosť: {slug}",
+      "fallbackTitle": "Miestnosť",
       "nowPlaying": "Práve hrá: {title} – {artist}",
       "stats": "{owner} - {listeners} počúvanie – {queue} v čakacom rade",
       "notFound": "Stránka nebola nájdená.",
-      "loadError": "Momentálne sa nám nepodarilo načítať izbu.",
+      "loadError": "Momentálne sa nám nepodarilo načítať miestnosť.",
       "panelLabel": "Obklad steny",
       "closePanel": "Zatvoriť",
       "hostLabel": "Hostiteľ",
@@ -569,58 +569,58 @@
       "messageJustNow": "Práve teraz"
     },
     "create": {
-      "close": "Zatvoriť modálne okno na vytvorenie miestnosti",
-      "title": "Vytvorte skutočnú miestnosť",
-      "subtitle": "Vytvorte správnu atmosféru, vyberte si čistý slug a spustite svoju komunitu naživo bez toho, aby ste sa spoliehali na akékoľvek testovacie údaje.",
+      "close": "Zatvoriť okno na vytvorenie miestnosti",
+      "title": "Vytvorte miestnosť",
+      "subtitle": "Vytvorte správnu atmosféru a spustite svoju komunitu naživo.",
       "usage": "{count}/{limit}",
       "remaining": "{count} zostáva",
       "name": "Názov miestnosti",
-      "namePlaceholder": "Lo-fi po polnoci",
-      "slug": "Slimák",
-      "slugPlaceholder": "lo-fi po polnoci",
+      "namePlaceholder": "Párty celý deň",
+      "slug": "Odkaz",
+      "slugPlaceholder": "party-cely-den",
       "slugHint": "Vytvorené automaticky na základe názvu miestnosti; znaky z nelatinských abecied sa prepisujú na malé písmená a pomlčky.",
       "slugSuggestions": "Dostupné odkazy",
       "slugSuggestionHint": "Vyberte jednu z možností a pokračujte.",
       "description": "Popis",
-      "descriptionPlaceholder": "Opíšte atmosféru, hudobný štýl a typ ľudí, ktorých by ste tu chceli privítať.",
+      "descriptionPlaceholder": "Uveďte žáner hudby, ktorý hráte, a typ ľudí, ktorých by ste tu chceli privítať.",
       "descriptionHint": "Voliteľné. Krátky popis v dĺžke maximálne 250 znakov pomáha vytvoriť v miestnosti živú atmosféru ešte pred spustením prvej skladby.",
-      "privateLabel": "Súkromná izba",
-      "privateHint": "Súkromné izby sú viditeľné len pre osoby s prístupom.",
+      "privateLabel": "Súkromná miestnosť",
+      "privateHint": "Súkromné miestnosti sú viditeľné len pre osoby s prístupom.",
       "nsfwLabel": "Miestnosť s obsahom nevhodným pre prácu (NSFW)",
       "nsfwHint": "V inzeráte označte miestnosť varovaním „NSFW“, než sa ľudia pripoja.",
       "cancel": "Zrušiť",
-      "submit": "Vytvoriť izbu",
-      "submitting": "Vytváranie miesta...",
+      "submit": "Vytvoriť miestnosť",
+      "submitting": "Vytváranie miestnosti...",
       "success": "„{name}“ bol vytvorený a už sa zobrazuje vo vašom zozname.",
       "errors": {
         "nameMin": "Názov miestnosti musí mať aspoň 3 znaky.",
         "nameMax": "Názov miestnosti smie obsahovať najviac 25 znakov.",
-        "slugMin": "Popisok musí mať aspoň 3 znaky.",
-        "slugMax": "Pre slug použite najviac 48 znakov.",
-        "slugFormat": "Vygenerovaný slug smie obsahovať iba malé písmená, čísla a spojovníky.",
+        "slugMin": "Odkaz musí mať aspoň 3 znaky.",
+        "slugMax": "Pre odkaz použite najviac 48 znakov.",
+        "slugFormat": "Vygenerovaný odkaz smie obsahovať iba malé písmená, čísla a spojovníky.",
         "descriptionMax": "Popis môže mať maximálne 250 znakov.",
-        "limit": "Tento účet už dosiahol limit {limit} vytvorených miestností.",
-        "slugInUse": "Tento odkaz na miestnosť je už obsadený. Skúste iný slug.",
+        "limit": "Váš účet už dosiahol limit {limit} vytvorených miestností.",
+        "slugInUse": "Tento odkaz na miestnosť je už obsadený. Skúste iný odkaz.",
         "unauthorized": "Vaša relácia vypršala. Pred vytvorením miestnosti sa prosím znovu prihláste.",
         "unexpected": "V túto chvíľu sme tú miestnosť nemohli vytvoriť."
       }
     },
     "live": {
-      "loadError": "Momentálne sa nám nepodarilo načítať izbu.",
+      "loadError": "Momentálne sa nám nepodarilo načítať miestnosť.",
       "contextLoadError": "Tento kontext miestnosti sa momentálne nepodarilo načítať.",
       "playlistLoadError": "V súčasnosti sa nám nepodarilo načítať playlist pre túto miestnosť.",
       "playlistChangeError": "V súčasnosti nemôžeme zmeniť aktívny zoznam skladieb.",
       "playlistRequired": "Pred použitím funkcie „grab“ si vyberte zoznam skladieb.",
       "grabError": "Túto skladbu sme momentálne nemohli uložiť do zoznamu skladieb.",
-      "favoriteError": "Tento obľúbený izba momentálne nemôžeme aktualizovať.",
+      "favoriteError": "Túto obľúbenú miestnosť momentálne nemôžeme aktualizovať.",
       "deleteMessageError": "Túto správu sme momentálne nemohli odstrániť.",
       "fanError": "Tento vzťah medzi fanúšikmi sme momentálne nemohli aktualizovať.",
       "fanNotification": {
-        "title": "Nový ventilátor",
+        "title": "Nový fanúšik",
         "message": "{username} sa stal vaším fanúšikom.",
-        "messageUnknown": "Niekto sa stal tvojím fanúšikom."
+        "messageUnknown": "Niekto sa stal vaším fanúšikom."
       },
-      "roleError": "Túto úlohu miestnosti sa nám momentálne nepodarilo aktualizovať.",
+      "roleError": "Túto rolu miestnosti sa nám momentálne nepodarilo aktualizovať.",
       "errorCodes": {
         "ROOM_BANNED": "Máte zakázaný vstup do tejto miestnosti.",
         "ROOM_PERMISSION_SEND_CHAT": "V tejto miestnosti nemôžete chatovať.",
@@ -752,7 +752,7 @@
       },
       "idLabel": "ID",
       "user": {
-        "fanLabel": "{count, plural, one {Ventilátor} other {Fanúšikovia}}"
+        "fanLabel": "{count, plural, one {# fanúšik} few {# fanúšikovia} other {# fanúšikov}}"
       },
       "countryFlag": {
         "edit": "Zmeniť vlajku",
@@ -766,8 +766,8 @@
       },
       "level": "Úroveň",
       "fans": "Fanúšikovia",
-      "fansCount": "{count, plural, one {# Fanúšik} other {# Fanúšikovia}}",
-      "fanLabel": "{count, plural, one {Ventilátor} other {Fanúšikovia}}",
+      "fansCount": "{count, plural, one {# fanúšik} few {# fanúšikovia} other {# fanúšikov}}",
+      "fanLabel": "{count, plural, one {fanúšik} few {fanúšikovia} other {fanúšikov}}",
       "sharedMediaAlt": "Zdieľané médiá",
       "mediaPreviewTitle": "Náhľad obrázka",
       "mediaPreviewOpenOriginal": "Otvoriť originál",
@@ -805,25 +805,25 @@
       "achievementUnlockedPopupTitle": "Úspech odomknutý",
       "achievementUnlockedPopupClose": "Zatvoriť okienko s úspechom",
       "topbar": {
-        "noTrack": "Žiadna relácia sa nevysiela",
+        "noTrack": "Žiadna skladba sa neprehráva",
         "currentDj": "Aktuálny DJ: {name}",
         "awaitingDj": "Čakáme na ďalšieho DJ-a",
         "liveBadge": "NAŽIVO",
-        "host": "Moderátor: {name}",
-        "verified": "Overená izba",
-        "partner": "Izba pre partnerov",
-        "volume": "Hlasitosť prehrávača",
+        "host": "Hostiteľ: {name}",
+        "verified": "Overená miestnosť",
+        "partner": "Partnerská miestnosť",
+        "volume": "Hlasnosť prehrávača",
         "mutePlayer": "Vypnúť zvuk prehrávača",
         "unmutePlayer": "Zapnúť zvuk prehrávača",
         "muteCurrentTrack": "Stlmiť aktuálnu skladbu",
         "unmuteCurrentTrack": "Pokračovať v prehrávaní aktuálnej skladby",
-        "disablePlayer": "Vypnúť hráča",
-        "enablePlayer": "Zapnúť hráča",
+        "disablePlayer": "Vypnúť prehrávač",
+        "enablePlayer": "Zapnúť prehrávač",
         "hideVideoOnWeb": "Skryť video",
         "showVideoOnWeb": "Prehrať video",
         "hideMobilePlaybackBar": "Skryť lištu skladieb",
-        "showMobilePlaybackBar": "Zobraziť lištu s pesničkami",
-        "hideMobileVoteBar": "Skryť lištu s hlasovaním",
+        "showMobilePlaybackBar": "Zobraziť lištu skladieb",
+        "hideMobileVoteBar": "Skryť lištu hlasovania",
         "showMobileVoteBar": "Zobraziť lištu hlasovania",
         "openOnYouTube": "Otvoriť na YouTube",
         "openOnSoundCloud": "Otvoriť na SoundCloude",
@@ -831,19 +831,19 @@
         "externalMediaTrack": "{provider} na obrazovke"
       },
       "roomInfo": {
-        "button": "Informácie o izbe",
+        "button": "Informácie o miestnosti",
         "eyebrow": "Informácie",
-        "title": "Informácie o izbe",
+        "title": "Informácie o miestnosti",
         "subtitle": "Stručný prehľad pravidiel, médií a aktuálneho stavu tejto miestnosti.",
-        "close": "Zatvoriť informácie o izbe",
+        "close": "Zatvoriť informácie o miestnosti",
         "description": "Popis",
         "noDescription": "Popis nebol uvedený.",
         "roomIdentity": "Identita miestnosti",
         "verified": "Overené",
         "partner": "Partner",
-        "overview": "Prehľad izieb",
+        "overview": "Prehľad miestnosti",
         "host": "Hostiteľ",
-        "activeUsers": "V izbe",
+        "activeUsers": "V miestnosti",
         "queue": "V čakacom rade",
         "visibility": "Viditeľnosť",
         "publicRoom": "Verejnosť",
@@ -973,7 +973,7 @@
           "rules": "Pravidlá pobytu",
           "mediaBlacklist": "Čierny zoznam izieb",
           "bans": "Zákazy vstupu do izieb",
-          "logs": "Záznamy z izieb",
+          "logs": "Záznam miestnosti",
           "security": "Prehľad"
         },
         "fields": {
@@ -1346,7 +1346,7 @@
               "roomRules": "Pravidlá pobytu",
               "chatUnavailableTrackSkipAlertsEnabled": "Upozornenia na nedostupné skladby",
               "isNsfw": "Miestnosť s obsahom nevhodným pre prácu",
-              "queueLocked": "Čakacia fronta je uzamknutá",
+              "queueLocked": "Čakacia rada je uzamknutá",
               "cycleWaitlist": "Čakací zoznam pre cyklistov",
               "chatCommandAnnouncementsEnabled": "Oznámenia o príkazoch",
               "chatCommandAnnouncementCommands": "Ohlásené príkazy",
@@ -1392,8 +1392,8 @@
             "description": "Umožňuje pripájať obrázky a GIFy k správam v chate miestnosti."
           },
           "join_queue": {
-            "label": "Zaradiť do fronty",
-            "description": "Umožňuje pripojiť sa k DJ-ovej čakárni."
+            "label": "Pripojiť sa do rady",
+            "description": "Umožňuje pripojiť sa k zoznamu DJ-ov."
           },
           "bypass_queue_lock": {
             "label": "Obísť uzamknutie fronty",
@@ -1538,7 +1538,7 @@
           },
           "lockqueue": {
             "label": "/lockqueue",
-            "description": "Oznámte, kedy je čakacia fronta DJ-a uzamknutá alebo odomknutá."
+            "description": "Oznámte, kedy je čakacia rada DJ-ov uzamknutá alebo odomknutá."
           },
           "cyclequeue": {
             "label": "/cyclequeue",
@@ -1571,16 +1571,16 @@
         }
       },
       "favorite": {
-        "add": "Obľúbená izba",
-        "remove": "Odstrániť izbu z obľúbených"
+        "add": "Obľúbená miestnosť",
+        "remove": "Odstrániť miestnosť z obľúbených"
       },
       "favoriteToast": {
         "added": "Izba bola pridaná medzi obľúbené.",
         "removed": "Izba bola odstránená z obľúbených."
       },
       "history": {
-        "button": "História izby",
-        "title": "História izby",
+        "button": "História miestnosti",
+        "title": "História miestnosti",
         "emptyTitle": "Zatiaľ neprehrala žiadna skladba",
         "emptyDescription": "Akonáhle sa v miestnosti začne prehrávať hudba, tu sa zobrazí jej história.",
         "openTrack": "Otvorená trať",
@@ -1671,35 +1671,35 @@
         "soundcloudDisabledDescription": "Služba SoundCloud bola celosvetovo deaktivovaná z administrátorského panela."
       },
       "queueAction": {
-        "leaveBooth": "Opusti stánok",
-        "leaveQueue": "Opusti frontu",
-        "skipTurn": "Preskočiť ťah",
-        "enterQueue": "Zaradiť do fronty",
+        "leaveBooth": "Opustiť stánok",
+        "leaveQueue": "Opustiť radu",
+        "skipTurn": "Preskočiť skladbu",
+        "enterQueue": "Zaradiť do rady",
         "queueFull": "Čakací zoznam je plný",
-        "queueLocked": "Čakacia fronta je uzamknutá",
+        "queueLocked": "Čakacia rada je uzamknutá",
         "booth": "Aktívny stánok",
         "externalMedia": "Externé médiá",
         "locked": "Zamknuté",
         "turn": "Teraz si na rade ty",
-        "eta": "Predpokladaný čas príchodu: {time}",
-        "etaNow": "Predpokladaný čas príchodu: teraz",
-        "etaLive": "Predpokladaný čas príchodu: po skončení prenosu",
-        "etaUnknown": "Predpokladaný čas príchodu: —"
+        "eta": "ETA: {time}",
+        "etaNow": "ETA: teraz",
+        "etaLive": "ETA: po skončení prenosu",
+        "etaUnknown": "ETA: —"
       },
       "queueDialog": {
         "currentDjTitle": "Čo by si chcel robiť?",
         "currentDjSubtitle": "Práve teraz hráte. Môžete preskočiť svoje kolo a zostať v poradí, alebo sa z poradia DJ-ov úplne odhlásiť.",
-        "leaveQueueTitle": "Opustiť frontu?",
-        "leaveQueueSubtitle": "Už ste v DJ-ovej fronte. Chcete ju teraz opustiť?",
+        "leaveQueueTitle": "Opustiť radu?",
+        "leaveQueueSubtitle": "Už ste v čakacej rade. Chcete ju teraz opustiť?",
         "cancel": "Zrušiť",
         "skipTurn": "Preskočiť ťah",
-        "leaveQueue": "Opusti frontu",
-        "leaveDjQueue": "Opustiť frontu DJ-a"
+        "leaveQueue": "Opustiť radu",
+        "leaveDjQueue": "Opustiť radu DJ-a"
       },
       "votes": {
         "woot": "Woot",
-        "grab": "Chyť",
-        "meh": "No..."
+        "grab": "Grab",
+        "meh": "Meh"
       },
       "trackToast": {
         "title": "Práve prehráva",
@@ -1710,8 +1710,8 @@
         "message": "Vstúpili ste do {roomName}."
       },
       "grabDialog": {
-        "eyebrowSave": "Chyť",
-        "eyebrowRemove": "Odstrániť uchopenie",
+        "eyebrowSave": "Grab",
+        "eyebrowRemove": "Odstrániť grab",
         "titleSave": "Vyberte si zoznam skladieb",
         "titleRemove": "Odstrániť zo zoznamu skladieb",
         "subtitleSave": "Pred potvrdením stiahnutia uložte aktuálnu skladbu do príslušného zoznamu skladieb.",
@@ -1824,12 +1824,12 @@
         "reject": "Odmietnuť"
       },
       "tabs": {
-        "chat": "Chat",
+        "chat": "Správy",
         "people": "Ľudia",
-        "queue": "Čakacia fronta"
+        "queue": "Rada"
       },
       "filters": {
-        "all": "Chat",
+        "all": "Správy",
         "mentions": "Odkazy",
         "staff": "Zamestnanci"
       },
@@ -1841,7 +1841,7 @@
       "emptyMentionsDescription": "Keď vás niekto spomenie alebo vám odpovie, správy sa zobrazia práve tu.",
       "emptyStaffTitle": "Žiadne oznámenia pre zamestnancov",
       "emptyStaffDescription": "Tento chat používajte výlučne na komunikáciu s personálom tejto miestnosti.",
-      "composerStaffPlaceholder": "Oslovte personál izby",
+      "composerStaffPlaceholder": "Oslovte personál miestnosti",
       "chatPaused": {
         "message": "Chat je pozastavený — pre pokračovanie prejdite nižšie",
         "newMessages": "{count, plural, one {# nová správa} other {# nové správy}}"
@@ -1950,7 +1950,7 @@
       "peopleSearchPlaceholder": "Vyhľadávanie osôb podľa používateľského mena alebo ID",
       "peopleFilters": {
         "all": "Všetci",
-        "staff": "Personál izieb"
+        "staff": "Personál miestností"
       },
       "queueSearchPlaceholder": "Vyhľadávanie v zozname DJ-ov podľa používateľského mena alebo ID",
       "emptyPeopleSearchTitle": "Toto vyhľadávanie nezodpovedá žiadnemu výsledku",
@@ -2124,7 +2124,7 @@
         "chatLockedOn": "Chat bol uzamknutý.",
         "chatLockedOff": "Chat bol odblokovaný.",
         "queueLockedOn": "Čakáreň DJ-ov bola uzamknutá.",
-        "queueLockedOff": "Čakacia fronta DJ-a bola odomknutá.",
+        "queueLockedOff": "Čakacia rada DJ-ov bola odomknutá.",
         "cycleQueueOn": "Bolo aktivované striedanie na čakacom zozname.",
         "cycleQueueOff": "Striedanie na čakacom zozname bolo deaktivované.",
         "slowModeUpdated": "Režim spomaleného chodu miestnosti je teraz {duration}.",
@@ -2223,7 +2223,7 @@
         "targetHint": "Zadajte @užívateľské meno, aby ste overili používateľa.",
         "targetSearching": "Overovanie používateľa...",
         "targetLookupError": "V súčasnosti sa nám nepodarilo nájsť tohto používateľa.",
-        "targetMeta": "Úroveň {level} • {fans, plural, one {# fanúšik} other {# fanúšikovia}}",
+        "targetMeta": "Úroveň {level} • {fans, plural, one {# fanúšik} few {# fanúšikovia} other {# fanúšikov}}",
         "bulkTargetHint": {
           "room": "Táto akcia sa uplatní na oprávnených používateľov v aktuálnej miestnosti.",
           "global": "Toto opatrenie sa bude vzťahovať na všetkých oprávnených používateľov."
@@ -2468,7 +2468,7 @@
         "removeFromQueue": "Odstrániť z fronty",
         "nextUp": "Ďalej",
         "waiting": "V čakacom rade",
-        "emptyTitle": "Čakacia fronta je prázdna",
+        "emptyTitle": "Čakacia rada je prázdna",
         "emptyDescription": "Zatiaľ sa do fronty nikto nepripojil."
       },
       "roles": {
@@ -2478,7 +2478,7 @@
         "resident_dj": "Rezidentný DJ",
         "bouncer": "Vyhadzovač",
         "manager": "Manažér",
-        "cohost": "Spolumoderátor",
+        "cohost": "Spolu-Hostiteľ",
         "host": "Hostiteľ"
       },
       "mentionTargets": {
@@ -2496,17 +2496,17 @@
       },
       "platform": {
         "none": "Člen",
-        "admin": "Správca",
-        "ambassador": "Veľvyslanec",
+        "admin": "Administrátor",
+        "ambassador": "Ambasádor",
         "bot": "Robot",
         "developer": "Vývojár",
-        "verified": "Overené",
+        "verified": "Overený",
         "subscriber": "Predplatiteľ"
       },
       "status": {
         "online": "Online",
         "busy": "Zaneprázdnený",
-        "away": "Vonku",
+        "away": "Preč",
         "invisible": "Neviditeľný",
         "offline": "Offline"
       },
@@ -2527,14 +2527,14 @@
       },
       "actions": {
         "becomeFan": "Staňte sa fanúšikom",
-        "unfan": "Odstráňte ventilátor",
-        "mention": "Poznámka",
+        "unfan": "Prestať byť fanúšikom",
+        "mention": "Označiť",
         "whisper": "Šepot",
         "viewProfile": "Zobraziť profil",
-        "reportUser": "Správa",
+        "reportUser": "Nahlásiť",
         "addToQueue": "Pridať do fronty",
         "removeFromQueue": "Odstrániť z fronty",
-        "removeFromBooth": "Vybrať z kabíny",
+        "removeFromBooth": "Odstrániť z kabíny",
         "skipTurn": "Preskočiť ťah",
         "skipTrack": "Preskočiť skladbu",
         "warn": "Upozorniť",
@@ -2680,7 +2680,7 @@
       "shop": "Obchod",
       "settings": "Nastavenia",
       "admin": "Správa",
-      "ambassador": "Diskusný panel veľvyslancov",
+      "ambassador": "Diskusný panel ambasádorov",
       "logout": "Odhlásiť sa",
       "loggingOut": "Odhlásenie...",
       "logoutError": "V súčasnosti vás nemôžeme odhlásiť.",
@@ -2690,7 +2690,7 @@
       "communities": "Moje komunity",
       "team": "Tím",
       "progression": "Postup",
-      "leaveRoom": "Nechajte voľné miesto"
+      "leaveRoom": "Opustiť miestnosť"
     },
     "notificationCenter": {
       "button": "Oznámenia",
@@ -2741,8 +2741,8 @@
     },
     "user": {
       "fans": "Fanúšikovia",
-      "fansCount": "{count, plural, one {# Fanúšik} other {# Fanúšikovia}}",
-      "fanLabel": "{count, plural, one {Ventilátor} other {Fanúšikovia}}",
+      "fansCount": "{count, plural, one {# fanúšik} few {# fanúšikovia} other {# fanúšikov}}",
+      "fanLabel": "{count, plural, one {fanúšik} few {fanúšikovia} other {fanúšikov}}",
       "level": "Úroveň",
       "xpTo": "XP na ďalšiu úroveň"
     },
@@ -2897,7 +2897,7 @@
       "CANNOT_REPORT_SELF": "Nemôžete nahlásiť svoj vlastný účet.",
       "CANNOT_REPORT_OWN_MESSAGE": "Nemôžete nahlásiť svoj vlastný príspevok.",
       "CANNOT_WARN_ADMIN": "Správcovia nemôžu dostávať varovania.",
-      "AMBASSADOR_CANNOT_WARN_AMBASSADOR": "Veľvyslanci nemôžu varovať iných veľvyslancov.",
+      "AMBASSADOR_CANNOT_WARN_AMBASSADOR": "Ambasádori nemôžu varovať iných ambasádorov.",
       "REPORT_NOT_FOUND": "Správa nebola nájdená.",
       "MESSAGE_NOT_FOUND": "Správa nebola nájdená.",
       "ROOM_REPLY_TARGET_NOT_FOUND": "Správa, na ktorú bola odpoveď zaslaná, už nie je k dispozícii.",
@@ -2971,7 +2971,7 @@
       "USER_BLOCK_RELATION_FORBIDDEN": "Táto interakcia nie je dostupná, pretože jeden z týchto účtov zablokoval druhý.",
       "ADMIN_INVENTORY_ITEM_NOT_FOUND": "Táto položka nebola nájdená v katalógu.",
       "ADMIN_REQUIRED": "Túto akciu môžu vykonať len správcovia.",
-      "AMBASSADOR_REQUIRED": "Túto činnosť môžu vykonávať iba veľvyslanci.",
+      "AMBASSADOR_REQUIRED": "Túto činnosť môžu vykonávať iba ambasádori.",
       "BAD_REQUEST": "Neplatná požiadavka.",
       "INVALID_USER_RESTRICTION_TYPE": "Vyberte platný typ obmedzenia.",
       "USER_RESTRICTION_NOT_FOUND": "Toto obmedzenie už nie je platné.",
@@ -3538,7 +3538,7 @@
       "eyebrow": "Sociálny graf",
       "title": "Fanúšikovia",
       "headerSubtitle": "Vaši fanúšikovia, superfanúšikovia a ľudia, ktorých sledujete.",
-      "followersCount": "{count, plural, one {# fanúšik} other {# fanúšikovia}}",
+      "followersCount": "{count, plural, one {# fanúšik} few {# fanúšikovia} other {# fanúšikov}}",
       "followersEyebrow": "Vaša komunita",
       "followersTitle": "Vaši fanúšikovia",
       "followersSubtitle": "Ľudia, ktorí sa stali tvojimi fanúšikmi.",
@@ -3565,7 +3565,7 @@
       "searchEmptySubtitle": "Zadajte presný názov, aby sa načítal profil.",
       "searchError": "Tento používateľ sa nám nepodarilo nájsť.",
       "selfSearchError": "Tu nemôžete vyhľadávať sami seba.",
-      "searchMeta": "Úroveň {level} · {fans, plural, one {# fanúšik} other {# fanúšikovia}}",
+      "searchMeta": "Úroveň {level} · {fans, plural, one {# fanúšik} few {# fanúšikovia} other {# fanúšikov}}",
       "follow": "Staňte sa fanúšikom",
       "unfollow": "Prestaň byť fanúšikom",
       "followSuccess": "Teraz ste fanúšikom {username}}.",
@@ -4335,13 +4335,13 @@
       "ariaLabel": "Oznámenie o dostupnej aktualizácii"
     },
     "ambassador": {
-      "eyebrow": "Diskusný panel veľvyslancov",
+      "eyebrow": "Ambasádor panel",
       "title": "Činnosti v rámci komunity",
       "subtitle": "Riešte incidenty v miestnostiach, udeľujte varovania a zatvárajte miestnosti s nevhodným správaním bez toho, aby ste odhalili celý ovládací panel správcu.",
       "refresh": "Obnoviť panel",
       "refreshing": "Osviežujúce...",
-      "loadError": "V súčasnosti sa nám nepodarilo načítať sekciu pre veľvyslancov.",
-      "loading": "Načítava sa panel veľvyslancov...",
+      "loadError": "V súčasnosti sa nám nepodarilo načítať sekciu pre ambasádorov.",
+      "loading": "Načítava sa panel ambasádorov...",
       "restrictedTitle": "Oblasť s obmedzeným prístupom",
       "restrictedSubtitle": "Tento panel je k dispozícii iba pre ambasádorov a správcov WavezFM.",
       "common": {
@@ -4632,7 +4632,7 @@
       "roles": {
         "none": "Člen",
         "admin": "Správca",
-        "ambassador": "Veľvyslanec",
+        "ambassador": "Ambasádor",
         "bot": "Bot",
         "developer": "Vývojár",
         "verified": "Overené",
@@ -5212,7 +5212,7 @@
           "loadError": "Ľudí v tejto miestnosti sa nám nepodarilo naložiť.",
           "updatedAt": "Aktualizované {date}",
           "currentDj": "Súčasný DJ",
-          "queuePosition": "Čakacia fronta #{position}",
+          "queuePosition": "Rada #{position}",
           "listener": "Počúvanie",
           "empty": "V tejto miestnosti momentálne nie je nikto prihlásený."
         },
@@ -5222,8 +5222,8 @@
           "description": "Popis",
           "owner": "Nový majiteľ",
           "logoUrl": "Logo izby",
-          "verified": "Overená izba",
-          "partner": "Izba pre partnerov"
+          "verified": "Overená miestnosť",
+          "partner": "Partnerská miestnosť"
         },
         "externalMedia": {
           "title": "Externé médiá v miestnosti",
@@ -5508,7 +5508,7 @@
       },
       "helpCalls": {
         "title": "Žiadosti o pomoc",
-        "subtitle": "Sledujte SOS žiadosti odoslané z miestností veľvyslancom a správcom.",
+        "subtitle": "Sledujte SOS žiadosti odoslané z miestností ambasádorom a správcom.",
         "loading": "Načítavanie volaní o pomoc...",
         "refresh": "Obnoviť volania na pomoc",
         "refreshing": "Osviežujúce...",
@@ -6344,7 +6344,7 @@
         "roleNameGlowNoUsers": "Nenašli sa žiadni používatelia.",
         "roleNameGlowRoleAdmin": "Správca",
         "roleNameGlowRoleDeveloper": "Vývojár",
-        "roleNameGlowRoleAmbassador": "Veľvyslanec",
+        "roleNameGlowRoleAmbassador": "Ambasádor",
         "roleNameGlowRoleVerified": "Overené",
         "roleNameGlowRoleSubscriber": "Predplatiteľ",
         "badgeGlowTitle": "Svietenie odznaku",
@@ -6585,7 +6585,7 @@
         "staffChatRoleAccessSaving": "Ukladanie prístupu...",
         "staffChatRoleAccessSaveError": "Nepodarilo sa nám aktualizovať prístup k firemnému chatu.",
         "staffChatRoleAccessUpdated": "Bol aktualizovaný prístup k firemnému chatu.",
-        "roomRoleLimitCohost": "Spolumoderátor",
+        "roomRoleLimitCohost": "Spolu-Hostiteľ",
         "roomRoleLimitManager": "Manažér",
         "roomRoleLimitBouncer": "Vyhadzovač",
         "roomRoleLimitResidentDj": "Rezidentný DJ",
@@ -6663,7 +6663,7 @@
         "subscriberPerksRoomEmojisHint": "Ak sa vyskytne niektorá z týchto vlastností účtu, systém použije zvýšený limit namiesto základného.",
         "subscriberPerksRoleAdmin": "Správcovia",
         "subscriberPerksRoleDeveloper": "Vývojári",
-        "subscriberPerksRoleAmbassador": "Veľvyslanci",
+        "subscriberPerksRoleAmbassador": "Ambasádori",
         "subscriberPerksRoleSubscriber": "Predplatitelia",
         "subscriberPerksRoleEmailVerified": "Overená e-mailová adresa",
         "subscriberPerksRoleSupporterBadge": "Odznak podporovateľa",
@@ -6735,7 +6735,7 @@
           "roleSelector": "Vyberte vstavanú rolu",
           "roles": {
             "developer": "Vývojár",
-            "ambassador": "Veľvyslanec",
+            "ambassador": "Ambasádor",
             "verified": "Overené",
             "subscriber": "Predplatiteľ"
           },
@@ -6802,8 +6802,8 @@
             "description": "Umožňuje prístup k úplnému administratívnemu riadiacemu panelu."
           },
           "access_ambassador_panel": {
-            "label": "Prístup k panelu veľvyslancov",
-            "description": "Umožňuje prístup k riadiacemu panelu veľvyslanca."
+            "label": "Prístup k panelu ambasádora",
+            "description": "Umožňuje prístup k riadiacemu panelu ambasádora."
           },
           "bypass_maintenance": {
             "label": "Údržba obtokového potrubia",
@@ -8053,22 +8053,22 @@
       }
     },
     "communities": {
-      "eyebrow": "Sieť vo vašej izbe",
-      "title": "Moje komunity",
+      "eyebrow": "Vaše miestnosti",
+      "title": "Moje miestnosti",
       "subtitle": "Sledujte miestnosti, ktoré vlastníte, a miestnosti, v ktorých momentálne zastávate funkciu v rámci personálu.",
-      "loading": "Načítavanie komunít...",
-      "loadError": "Vaše komunity sa momentálne nepodarilo načítať.",
-      "empty": "Na tejto karte neboli nájdené žiadne komunity.",
+      "loading": "Načítavanie miestností...",
+      "loadError": "Vaše miestnosti sa momentálne nepodarilo načítať.",
+      "empty": "Na tejto karte neboli nájdené žiadne miestnosti.",
       "audienceCount": "{count, plural, =0 {V miestnosti je 0 ľudí} one {# osoba v miestnosti} other {# ľudí v miestnosti}}",
       "open": "Otvorená miestnosť",
       "roles": {
         "host": "Hostiteľ",
-        "cohost": "Spolumoderátor",
+        "cohost": "Spolu-Hostiteľ",
         "manager": "Manažér"
       },
       "tabs": {
-        "owned": "Izby, ktoré vlastníte",
-        "managed": "Izby, ktoré spravujete"
+        "owned": "Miestnosti, ktoré vlastníte",
+        "managed": "Miestnosti, ktoré spravujete"
       }
     },
     "team": {
