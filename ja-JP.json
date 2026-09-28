@@ -1,4 +1,389 @@
 {
+  "globalRoleCommand": {
+    "title": "グローバルロールを管理",
+    "description": "ユーザーの標準ロールとカスタムグローバルロールを追加・削除します。",
+    "user": "ユーザー",
+    "userPlaceholder": "@username",
+    "load": "ユーザーを読み込む",
+    "loading": "読み込み中...",
+    "loadError": "このユーザーのロールを読み込めませんでした。",
+    "saveError": "ロールを保存できませんでした。",
+    "saved": "グローバルロールを保存しました。",
+    "close": "閉じる"
+  },
+  "roomRoleCommand": {
+    "description": "このルームで自分の役職を設定"
+  },
+  "eventAlertSettings": {
+    "title": "イベント告知の外観",
+    "hint": "チャットの告知をカスタマイズします。変更は今後の告知に適用されます。"
+  },
+  "discordPresence": {
+    "title": "Discordの音楽アクティビティ（実験的）",
+    "hint": "ルームで聴いている曲を共有します。Discordの認証が必要です。オフにするとこのブラウザでの共有を停止します。",
+    "error": "Discordの認証に失敗しました。",
+    "room": "ルーム",
+    "join": "ルームへ移動",
+    "unconfirmed": "Discordに接続しましたが、アクティビティはまだ確認されていません。"
+  },
+  "subscriptionAnnouncement": {
+    "label": "ルームチャットにサブスクリプション登録を通知する"
+  },
+  "eventParticipation": {
+    "announce": "イベントのルームチャットに参加を通知する",
+    "rsvp": "参加する",
+    "cancel": "参加を取り消す",
+    "count": "参加者：{count}人",
+    "calendar": "カレンダーに追加",
+    "before": "10分前に通知",
+    "start": "開始時または遅れて入室したときに通知",
+    "ownRole": "このルームでの自分の役職",
+    "apply": "適用",
+    "saved": "保存しました。",
+    "error": "操作を完了できませんでした。"
+  },
+  "nameSpaceSettings": {
+    "title": "名前のスペース",
+    "hint": "登録時と変更時の設定を個別に管理します。既存の名前は変更されません。",
+    "displayRegistration": "表示名：登録時",
+    "displayChange": "表示名：変更時",
+    "usernameRegistration": "ユーザー名：登録時",
+    "usernameChange": "ユーザー名：変更時",
+    "save": "保存",
+    "error": "設定を保存できませんでした。"
+  },
+  "youtubeAvailability": {
+    "check": "Check YouTube restrictions",
+    "blocked": "Blocked in {count} countries",
+    "allowed": "Allowed only in {count} countries",
+    "loading": "Checking…",
+    "unknown": "Region restrictions unavailable.",
+    "embedBlocked": "Playback on external websites is blocked.",
+    "embedAllowed": "Playback on external websites is allowed.",
+    "embedUnknown": "External playback permission unknown.",
+    "empty": "No countries listed."
+  },
+  "globalRoomAppearance": {
+    "title": "Global room appearance",
+    "hint": "画像はすべての部屋の背景とフレームを上書きします。欄を空にすると部屋の設定に戻ります。HTTPS URLまたは / で始まるローカルパス（例：/room/backgrounds/image.jpg）を使用してください。フレームの中央は透明にしてください。",
+    "backgroundUrl": "Global background",
+    "videoFrameUrl": "Global video frame",
+    "save": "Save appearance",
+    "saved": "Appearance saved. Open rooms update within 30 seconds.",
+    "error": "Could not load or save. Check the HTTPS URLs."
+  },
+  "adminBotDeletion": {
+    "action": "Delete bot",
+    "description": "Delete {name}? The bot will be removed from the list and disconnected. Its token remains blocked and audit records are preserved.",
+    "cancel": "Cancel",
+    "error": "Could not delete the bot."
+  },
+  "promoterApplication": {
+    "disabled": "Applications are closed while the referrals program is disabled.",
+    "openApplication": "Open application",
+    "applicationAccessHint": "Users apply on the site’s Referrals page. Review submitted applications here. Approved users see their referrals dashboard.",
+    "title": "プロモーター応募",
+    "applications": "応募者とプロモーター",
+    "settings": "目標と報酬",
+    "firstName": "名",
+    "age": "年齢（16歳以上）",
+    "account": "WavezFMアカウント",
+    "english": "英語力",
+    "none": "英語で会話できない",
+    "basic": "基礎",
+    "fluent": "流暢",
+    "communities": "参加しているコミュニティ、SNSやプロジェクト（リンクは任意）",
+    "promotionPlan": "WavezFMをどう紹介しますか？計画と活動できる時間を書いてください。",
+    "promoteNetworks": "SNSやコミュニティで紹介できます。",
+    "promoteFriends": "友達、家族や同僚を招待できます。",
+    "discordContact": "Discordでチームと定期的に連絡できます。",
+    "email": "連絡先メール",
+    "discord": "Discordユーザー名（旧式の#0000は不要）",
+    "agreement": "回答が正確であり、スパムや偽アカウントを使わず紹介することを確認します。",
+    "submit": "応募する",
+    "sending": "送信中…",
+    "pending": "審査中",
+    "approved": "承認済み",
+    "rejected": "不承認",
+    "suspended": "アクセス停止中",
+    "all": "すべて",
+    "note": "内部メモ（管理者のみ）",
+    "response": "応募者への回答",
+    "approve": "承認 / 保存",
+    "reject": "不承認にする",
+    "suspend": "アクセスを停止",
+    "history": "審査履歴",
+    "submitted": "応募を送信しました",
+    "yes": "はい",
+    "no": "いいえ",
+    "error": "送信できませんでした。メール認証と必須項目を確認してください。",
+    "intro": "コミュニティにどう貢献したいか教えてください。チームがすべての応募を審査し、承認された方だけが紹介リンクとプログラムを利用できます。英語力やSNSは参考情報であり、自動承認にはなりません。",
+    "privacy": "回答と連絡先は本人と管理者だけが閲覧できます。応募だけでロールや報酬は付与されません。",
+    "retryHint": "不承認の場合、前回の応募から7日後に再応募できます。"
+  },
+  "promoter": {
+    "sidebarVisible": "Show Referrals in the sidebar",
+    "sidebarVisibleHint": "Controls only the menu item. Does not disable the program or delete applications. Save to apply.",
+    "invalidTier": "Milestone {number}: enter a name, valid thresholds (1–10000 invitees, 1–365 days and 1–1440 minutes), and select at least one reward.",
+    "invalidReward": "A reward is no longer available. Select another item and try again.",
+    "invalidConfig": "Review the milestone names, thresholds and rewards before saving.",
+    "title": "友達紹介",
+    "enabled": "プログラムを有効にする",
+    "name": "目標名",
+    "invites": "条件を満たした招待者数",
+    "days": "異なる活動日数",
+    "minutes": "1日あたりの分数",
+    "avatar": "アバター",
+    "badge": "バッジ",
+    "globalRole": "グローバルロール",
+    "customRole": "カスタムロール",
+    "verified": "認証済み",
+    "select": "報酬を選択",
+    "search": "名前で検索",
+    "empty": "結果がありません",
+    "remove": "削除",
+    "addReward": "報酬を追加",
+    "removeTier": "目標を削除",
+    "addTier": "目標を追加",
+    "save": "保存",
+    "saving": "保存中…",
+    "saved": "設定を保存しました。",
+    "error": "入力内容を確認して再試行してください。",
+    "loading": "読み込み中…",
+    "disabled": "プログラムは無効です。",
+    "copy": "リンクをコピー",
+    "copied": "リンクをコピーしました。",
+    "progress": "進捗",
+    "awarded": "報酬付与済み",
+    "referrals": "招待したユーザー",
+    "excluded": "対象外",
+    "unverified": "メール認証待ち",
+    "previous": "前へ",
+    "next": "次へ",
+    "rules": "新しいユーザーを招待しましょう。ルームの最低滞在時間を満たすと1日として数えます。連続した日でなくてもよく、UTCで集計します。メール認証が必要で、禁止アカウントは対象外です。作成から7日以内にコードを登録でき、変更できません。",
+    "rewardHint": "報酬は永続的で目標ごとに1回です。目標の編集や削除で付与済み報酬は取り消されません。カスタムロールは外観専用です。管理権限とサブスクリプションは報酬にできません。",
+    "threshold": "{invites}人 × {days}日 × 1日{minutes}分のルーム滞在。",
+    "activity": "滞在日数：{days}日 · 合計{minutes}分"
+  },
+  "botAppearance": {
+    "title": "ボットの外観",
+    "loading": "読み込み中…",
+    "enable": "このルームでカスタマイズを許可",
+    "hint": "サイト管理者は常に編集できます。有効にすると、ボットを編集できるユーザーも外観を変更できます。",
+    "preview": "チャットのプレビュー",
+    "photoUrl": "写真のURL",
+    "color": "名前とアイコンの色",
+    "icon": "チャットアイコン",
+    "chatImageUrl": "チャット画像のURL",
+    "resetHint": "空欄にすると既定値に戻ります。チャット画像はアイコンより優先されます。画像にはHTTPSのURLを使用してください。",
+    "saving": "保存中…",
+    "save": "外観を保存",
+    "disabled": "このルームではカスタマイズが許可されていません。",
+    "saved": "外観を保存しました。",
+    "error": "外観を読み込むか保存できませんでした。",
+    "retry": "再試行"
+  },
+  "roleGrantTabs": {
+    "roles": "役割",
+    "items": "アバターとバッジ"
+  },
+  "roleBadgeGrants": {
+    "saved": "アバターへのアクセスを保存しました。",
+    "title": "グローバル役割によってバッジのロックが解除される",
+    "hint": "役割ごとに最大 100 個のバッジを選択します。ロールがアクティブである間はアクセスが継続します。購入したバッジは引き続き所有されます。",
+    "error": "バッジ アクセスをロードまたは保存できませんでした。",
+    "retry": "リトライ",
+    "loading": "読み込み中…",
+    "remove": "取り除く",
+    "search": "バッジIDまたは名前で検索",
+    "limit": "最大 120 件の結果を表示します。検索して他のバッジを見つけます。",
+    "save": "バッジへのアクセスを保存",
+    "saving": "保存中…"
+  },
+  "socialLoginSettings": {
+    "title": "ソーシャルログイン",
+    "label": "{provider} でサインイン",
+    "hint": "新しいサインインを制御します。サーバーの資格情報が必要です。既存のセッションはアクティブなままになります。",
+    "saved": "設定が保存されました。",
+    "error": "設定をロードまたは保存できませんでした。"
+  },
+  "roleAvatarGrants": {
+    "saved": "アバターへのアクセスを保存しました。",
+    "title": "グローバルロールによってロック解除されるアバター",
+    "hint": "役割ごとに最大 100 個のアバターを選択できます。ロールが保持されている間はアクセスが継続します。購入したアイテムは所有されたままになります。ルーム限定アバターは別途管理されます。利用可能日は引き続き適用されます。",
+    "error": "アバターへのアクセスをロードまたは保存できませんでした。",
+    "retry": "リトライ",
+    "loading": "読み込み中…",
+    "remove": "取り除く",
+    "search": "アバターIDまたは名前で検索",
+    "limit": "最大 120 件の結果を表示します。検索して他のアバターを見つけます。",
+    "save": "アバターへのアクセスを保存",
+    "saving": "保存中…"
+  },
+  "regionPlayback": {
+    "blocked": "このYouTube動画は{country}でブロックされている可能性があります（IPから推定した国）。",
+    "dismiss": "閉じる"
+  },
+  "roomBotEditor": {
+    "delete": "ボットを削除",
+    "deleteWarning": "{name}を削除しますか？トークンは無効化され、ボットはこのルームから切断されます。",
+    "cancelDelete": "キャンセル",
+    "deleted": "ボットを削除しました。",
+    "deleteError": "ボットを削除できませんでした。",
+    "regenerate": "トークンを再生成",
+    "regenerateWarning": "現在のトークンは無効になり、ボットは切断されます。新しいトークンを設定にコピーして、ボットを再起動してください。",
+    "regenerateConfirm": "再生成を確認",
+    "newToken": "新しいトークン",
+    "regenerated": "トークンを再生成しました。再表示されないため、今すぐコピーしてください。",
+    "regenerateError": "トークンを再生成できませんでした。",
+    "selfRename": "ボットが自分自身の名前を変更できるようにする",
+    "selfRenameHint": "変更は最大 5 分に 1 回です。プレフィックスと権限は引き続き制御できます。",
+    "title": "ルームのボット",
+    "hint": "ボットを選択すると設定を確認できます。権限があれば、自分のボットを編集できます。",
+    "loading": "ボットを読み込んでいます...",
+    "empty": "このルームには表示できるボットがありません。",
+    "readOnly": "このボットの設定は確認できますが、編集はできません。",
+    "loadError": "ボットを読み込めません。",
+    "saveError": "ボットを保存できません。名前、プレフィックス、権限を確認して、再試行してください。",
+    "save": "ボットを保存する",
+    "saving": "保存中...",
+    "saved": "ボットが更新されました。変更は次の API リクエストに適用されます。",
+    "retry": "もう一度やり直してください",
+    "createTitle": "新しいボット トークンを作成する",
+    "createHint": "以下のフィールドは新しいトークンを構成するだけです。ルームの [保存] ボタンでは既存のボットは更新されません。"
+  },
+  "emojiCatalog": {
+    "manual": "リンク",
+    "search": "絵文字を検索する",
+    "loading": "絵文字を読み込んでいます...",
+    "empty": "絵文字が見つかりませんでした。",
+    "error": "絵文字を読み込めませんでした。もう一度やり直してください。",
+    "previous": "前の",
+    "next": "次",
+    "retry": "もう一度やり直してください",
+    "selected": "選択済み: {name}。名前を選択し、「絵文字を追加」をクリックします。",
+    "hint": "絵文字を選択して、その名前と画像リンクを入力します。"
+  },
+  "stageHover": {
+    "followMouse": "ネズミを追って",
+    "title": "群衆ホバープロファイル",
+    "description": "アバターの上にマウスを移動すると、コンパクトなプロフィールが表示されます。",
+    "error": "設定をロードまたは保存できませんでした。",
+    "retry": "リトライ",
+    "online": "オンライン",
+    "busy": "忙しい",
+    "away": "離れて",
+    "level": "レベル{level}",
+    "since": "{date}以降のメンバー"
+  },
+  "dailyXpLimit": {
+    "title": "1日のXP上限",
+    "description": "wootとDJで共有する報酬枠です。各報酬はアクションと全体のクールダウンの長い方を消費します。00:00 UTCにリセット。コインには影響しません。",
+    "enabled": "有効",
+    "hours": "1日の時間（1〜24）",
+    "save": "保存",
+    "saved": "保存しました。",
+    "error": "設定を読み込みまたは保存できませんでした。",
+    "retry": "再試行"
+  },
+  "GuestRoomPreview": {
+    "previewOnly": "ゲストプレビュー",
+    "liveNow": "ライブ配信中",
+    "quietNow": "静かなルーム",
+    "hostedBy": "ホスト: {host}",
+    "playingNow": "再生中",
+    "nothingPlaying": "現在再生中の曲はありません",
+    "emptyRoom": "現在このルームは静かです。",
+    "ctaTitle": "チャットするにはログインしてください。",
+    "ctaDescription": "無料アカウントを作成すると参加できます。決めるまでライブプレビューを見続けられます。",
+    "listeners": "リスナー",
+    "inQueue": "待機中",
+    "signIn": "ログイン",
+    "createAccount": "アカウントを作成",
+    "auth": {
+      "title": "WavezFMに参加",
+      "description": "ログインまたはアカウントを作成して、WavezFMのすべての機能をご利用ください。",
+      "roomDescription": "ログインまたはアカウントを作成して、このルームに参加しましょう。"
+    },
+    "tour": {
+      "label": "ガイドツアー",
+      "step": "ステップ {current}/{total}",
+      "skip": "ガイドをスキップ",
+      "back": "戻る",
+      "next": "次へ",
+      "done": "完了",
+      "intro": {
+        "ariaLabel": "WavezFM入門ツアー",
+        "label": "はじめに",
+        "welcomeTitle": "WavezFMへようこそ",
+        "welcomeDescription": "ルームの検索、音楽の準備、使い心地の調整に必要な主な項目をご案内します。",
+        "profileTitle": "プロフィールをひと目で確認",
+        "profileDescription": "ナビゲーションからレベル、XPの進行状況、プレゼンスを確認できます。",
+        "exploreTitle": "アクティブなルームを見つける",
+        "exploreDescription": "探索画面では、配信中のコミュニティと各ルームで再生中の曲をすぐに確認できます。",
+        "playlistsTitle": "プレイリストを準備する",
+        "playlistsDescription": "DJキューに入る前に曲を整理し、次の選曲を準備しておきましょう。",
+        "settingsTitle": "WavezFMを自分好みに調整",
+        "settingsDescription": "プロフィール、音声、チャット、通知、外観、セキュリティは設定にまとまっています。",
+        "roomsTitle": "聴きたい場所を選ぶ",
+        "roomsDescription": "カードには現在の曲、ホスト、リスナーが表示されます。開くとルームに入れます。"
+      },
+      "explore": {
+        "ariaLabel": "探索ガイド",
+        "label": "探索ガイド",
+        "welcomeTitle": "今起きていることを確認",
+        "welcomeDescription": "探索画面なら、アクティブなルームを見つけてすぐに聴き始められます。",
+        "controlsTitle": "ぴったりのルームを探す",
+        "controlsDescription": "検索、カテゴリ、コンテンツフィルターを使って好みに合うルームに絞り込めます。",
+        "roomsTitle": "ルームカードから入る",
+        "roomsDescription": "各カードにルームの活動がまとまっています。選択すると音楽とリスナーの様子を追えます。",
+        "accountTitle": "準備ができたら参加",
+        "accountDescription": "ナビゲーションからログインまたはアカウント作成を行うと、チャット、投票、プレイリスト、DJブースを利用できます。"
+      },
+      "room": {
+        "ariaLabel": "ルームガイド",
+        "label": "ルームガイド",
+        "welcomeTitle": "ルームに入りました",
+        "welcomeDescription": "ここでは音楽、DJ、コミュニティが一緒になります。よく使う操作をご案内します。",
+        "stageTitle": "曲とDJはステージに表示",
+        "stageDescription": "中央には再生中の曲、ブースにいる人、ルームの様子が表示されます。",
+        "chatTitle": "ほかのリスナーと話す",
+        "chatDescription": "ルームを離れずにメッセージ、返信、メンション、リアクションを利用できます。",
+        "guestChatDescription": "会話は閲覧できます。メッセージ、返信、リアクションにはログインまたはアカウント作成が必要です。",
+        "audioTitle": "音声をコントロール",
+        "audioDescription": "ここで音量調整やミュートができます。ほかのルーム操作はステージ周辺にあります。"
+      },
+      "settings": {
+        "ariaLabel": "設定ガイド",
+        "label": "設定ガイド",
+        "welcomeTitle": "設定をひとつの場所で管理",
+        "welcomeDescription": "アカウント、プライバシー、音声、チャット、外観、通知、セキュリティを管理できます。",
+        "navigationTitle": "必要な項目へすぐ移動",
+        "navigationDescription": "カテゴリを使えば、長いページをスクロールせずに目的の設定へ移れます。",
+        "contentTitle": "このパネルで編集",
+        "contentDescription": "選択したカテゴリの操作がここに表示され、ほかの設定も整理されたままです。"
+      },
+      "playlists": {
+        "ariaLabel": "プレイリストガイド",
+        "label": "プレイリストガイド",
+        "welcomeTitle": "DJブースに入る前に選曲を準備",
+        "welcomeDescription": "プレイリストを作成し、曲順を整え、DJキューに入る前に次の曲を準備しておきましょう。",
+        "libraryTitle": "プレイリストはここにあります",
+        "libraryDescription": "この列でプレイリストの作成、インポート、並べ替え、編集対象の選択ができます。",
+        "workspaceTitle": "再生順を組み立てて整理",
+        "workspaceDescription": "音楽を検索し、リンクを追加し、曲を確認して、自分の番に使う順番を設定します。"
+      }
+    },
+    "unavailableTitle": "ルームプレビューを利用できません",
+    "unavailableDescription": "このルームは非公開、終了済み、または利用できない可能性があります。",
+    "backHome": "ホームへ戻る",
+    "browseEyebrow": "公開ルーム",
+    "browseTitle": "WavezFMで再生中の音楽をチェック",
+    "browseDescription": "アカウントを作成する前に、アクティブなルームをプレビューできます。チャット、投票、ルーム操作にはログインが必要です。",
+    "emptyBrowse": "現在利用できる公開ルームはありません。",
+    "browseError": "公開ルームを読み込めませんでした。しばらくしてから更新してください。",
+    "refresh": "更新"
+  },
   "LandingPage": {
     "alpha": {
       "badge": "アルファ版"
@@ -43,13 +428,110 @@
         }
       }
     },
+    "supportedMedia": {
+      "eyebrow": "対応メディア",
+      "title": "リンクからフロアへ、手間なく",
+      "description": "いつも使っているプラットフォームから曲を追加できます。WavezFM がルーム全体の再生を同期します。",
+      "youtube": {
+        "description": "動画、ミックス、ライブ映像を全員が同じタイミングで再生できます。"
+      },
+      "soundcloud": {
+        "description": "SoundCloud の曲やセットを直接、同期して再生できます。"
+      },
+      "ready": "再生準備完了"
+    },
+    "features": {
+      "eyebrow": "コミュニティのために",
+      "title": "再生するだけではありません",
+      "description": "ルームを運営し、参加を称え、それぞれの空間に個性を持たせるための機能です。",
+      "bots": {
+        "eyebrow": "自動化",
+        "title": "ルーム専用ボットを作成",
+        "description": "制限付き権限のIDとトークンを発行し、自分のボットをルームに接続できます。",
+        "builder": "ボット設定",
+        "ready": "トークン準備完了",
+        "nameLabel": "ボット名",
+        "prefixLabel": "プレフィックス",
+        "permissionsLabel": "権限",
+        "permissions": {
+          "readChat": "チャットを読む",
+          "sendMessages": "メッセージを送る"
+        },
+        "commands": {
+          "help": "help",
+          "queue": "queue",
+          "nowPlaying": "playing"
+        }
+      },
+      "achievements": {
+        "eyebrow": "ゲーミフィケーション",
+        "title": "あなたの歩みを残す実績",
+        "description": "活動、アカウント日数、参加に関する目標を進めて、専用の実績を解除できます。",
+        "rarity": "コモン",
+        "name": "登録1か月",
+        "requirement": "アカウント登録から30日を達成する。"
+      },
+      "profile": {
+        "eyebrow": "プロフィールとバッジ",
+        "title": "あなたの歩みをプロフィールに",
+        "description": "自己紹介を書き、イベントで獲得またはショップで購入したバッジを表示できます。",
+        "previewName": "あなたのプロフィール",
+        "bio": "音楽、コミュニティ、そして新しい発見。",
+        "badgeAlt": "2000年代イベントバッジ",
+        "eventBadge": "イベントバッジ",
+        "badgeName": "2000年代への旅",
+        "badgeSource": "コミュニティイベントへの参加で獲得。"
+      },
+      "customization": {
+        "eyebrow": "ルームテーマ",
+        "title": "ルームごとに独自の個性を",
+        "description": "色、サーフェス、ナビゲーション、チャット、操作部分を変更して独自の空間を作れます。",
+        "preview": "ルームプレビュー",
+        "accent": "アクセント",
+        "navigation": "ナビゲーション",
+        "chat": "チャット",
+        "surfaces": "ルームサーフェス",
+        "active": "テーマ使用中",
+        "background": "ルームの背景",
+        "colors": "テーマカラー",
+        "welcome": "ウェルカムメッセージ"
+      }
+    },
+    "faq": {
+      "eyebrow": "よくある質問",
+      "title": "ルームに入る前に",
+      "description": "WavezFM で聴く、流す、参加するための基本情報です。",
+      "items": {
+        "free": {
+          "question": "WavezFM は無料ですか？",
+          "answer": "はい。アカウント作成、ルーム参加、チャット、投票、楽曲再生を無料で利用できます。任意のサブスクリプション機能ではカスタマイズが広がり、プラットフォームの支援にもつながります。"
+        },
+        "media": {
+          "question": "どの音楽サービスに対応していますか？",
+          "answer": "現在、ルームでは YouTube と SoundCloud のリンクを参加者間で同期して再生できます。"
+        },
+        "guests": {
+          "question": "アカウントなしでルームを見られますか？",
+          "answer": "はい。ゲストモードでは公開ルームの様子を確認できます。チャット、投票、DJ キューへの参加にはアカウントが必要です。"
+        },
+        "rooms": {
+          "question": "自分のルームを作成して管理できますか？",
+          "answer": "はい。スタッフ、権限、DJ キュー、ボット、イベント、投票、モデレーション機能を設定できます。"
+        },
+        "customization": {
+          "question": "何をカスタマイズできますか？",
+          "answer": "プロフィールではアバター、バッジ、背景、フレームを利用できます。ルームではテーマ、色、ルーム背景、ウェルカムメッセージ、バナーも設定できます。"
+        }
+      }
+    },
     "footer": {
       "description": "列に並んで。歌をやめろ。あるいはただそこにいて聴くだけでもいい――ただ人々が一緒に音楽を演奏しているだけ。",
       "product": "製品",
       "productLinks": {
         "explore": "ルームを探す",
-        "howItWorks": "使い方",
-        "createRoom": "ルームを作成"
+        "features": "機能",
+        "supportedMedia": "対応メディア",
+        "faq": "よくある質問"
       },
       "community": "コミュニティ",
       "legal": "法的",
@@ -99,6 +581,7 @@
   },
   "supporterBadges": {
     "subscription": "{count, plural, one {#か月継続サブスクライバー} other {#か月継続サブスクライバー}}",
+    "giftDescription": "{count}件のサブスクリプションを贈りました",
     "gift": {
       "supporter": "ギフター",
       "enthusiast": "スーパーギフター",
@@ -108,6 +591,7 @@
     }
   },
   "billingGift": {
+    "profileAction": "定期購入をギフトする",
     "senderDialog": {
       "eyebrow": "贈り物を送ってください",
       "diamondsTitle": "ギフトダイヤモンド",
@@ -137,6 +621,8 @@
       "roomCountLabel": "サブギフトの金額",
       "roomCountHint": "この部屋で配る月額サブギフトは1個から100個まで選べます。",
       "roomCountAutoAdjustHint": "オンラインの対象者が少ない場合、チェックアウトは支払い前の最終請求額を自動的に最大額に調整します。",
+      "roomExcludeSubscribersLabel": "有効な登録者を除外",
+      "roomExcludeSubscribersHint": "ルーム内の抽選ギフトでは、ギフトによる登録を含め、有効なサブスクリプションを持つ人を除外します。料金は対象者の分だけ請求されます。",
       "roomCurrentLabel": "現在の部屋",
       "roomCurrentHint": "ギフトは、あなたのアカウントを除き、この部屋で活動している人に贈られます。",
       "recipientPreviewLabel": "受取人プレビュー",
@@ -198,17 +684,17 @@
   },
   "inventoryGrant": {
     "receivedDialog": {
-      "eyebrow": "新しい在庫アイテム",
+      "eyebrow": "インベントリを更新しました",
       "title": "受領品",
       "batchTitle": "{count} 受領品",
       "description": "{item}{category}インベントリに追加されました。",
-      "batchDescription": "{count} {category} インベントリに追加されました。",
+      "batchDescription": "アイテムがインベントリで利用できるようになりました。",
       "categoryLabel": "種類",
       "receivedAtLabel": "受信地",
       "expiresAtLabel": "有効期限は以下の通りです",
       "permanent": "常設",
       "now": "さて",
-      "close": "閉じる",
+      "close": "了解",
       "categories": {
         "avatar": "アバター",
         "badge": "バッジ",
@@ -229,7 +715,9 @@
     "register": {
       "subtitle": "アカウントを作成し、雰囲気に参加しましょう",
       "continueWithDiscord": "続けて Discord",
+      "continueWithTwitch": "続けて Twitch",
       "connectingDiscord": "Discordとつながって...",
+      "connectingTwitch": "Twitchとつながって...",
       "or": "または",
       "username": "ユーザー名",
       "usernamePlaceholder": "your_username",
@@ -238,6 +726,8 @@
       "password": "パスワード",
       "passwordPlaceholder": "••••••••",
       "confirmPassword": "パスワード確認",
+      "acceptTermsLabel": "利用規約に同意する",
+      "acceptTerms": "<terms>利用規約</terms>と<privacy>プライバシーポリシー</privacy>に同意します。",
       "passwordStrength": "パスワードの強度",
       "req8chars": "少なくとも8人のキャラクターが",
       "reqUppercase": "大文字1文字",
@@ -269,6 +759,7 @@
       "errorPasswordNumber": "少なくとも一つの数字",
       "errorPasswordSpecial": "少なくとも一人の特別なキャラクター",
       "errorConfirmPassword": "パスワードが一致しません",
+      "errorAcceptTerms": "利用規約とプライバシーポリシーへの同意が必要です。",
       "socialError": "今はソーシャルサインインを始められなかった。",
       "socialCanceled": "ソーシャル認証ウィンドウは終わる前に閉じられてしまいました。",
       "unexpectedError": "今はアカウントを作成することはできませんでした。",
@@ -277,7 +768,9 @@
     "login": {
       "subtitle": "サインインして部屋に戻ってください",
       "continueWithDiscord": "続けて Discord",
+      "continueWithTwitch": "続けて Twitch",
       "connectingDiscord": "Discordとつながって...",
+      "connectingTwitch": "Twitchとつながって...",
       "or": "または",
       "email": "メール",
       "emailPlaceholder": "あなたの@email.com",
@@ -315,9 +808,15 @@
       "magicLinkRateLimited": "リンクのリクエスト回数が多すぎます。数分待ってからもう一度お試しください。"
     },
     "popup": {
-      "title": "認証の完了",
-      "description": "このウィンドウであなたのアカウントの安全なサインインフローを完了しています。",
-      "fallback": "自動で閉まらなければ、手動で閉じることができます。"
+      "loadingTitle": "{provider} に接続中",
+      "loadingDescription": "アカウントの安全な認証を準備しています。",
+      "loadingStatus": "認証を開いています",
+      "successTitle": "{provider} に接続しました",
+      "successDescription": "アカウントが WavezFM アカウントにリンクされました。",
+      "successClosing": "このウィンドウを自動的に閉じています...",
+      "errorTitle": "接続に失敗しました",
+      "errorDescription": "{provider} アカウントをリンクできませんでした。もう一度お試しください。",
+      "errorFallback": "このウィンドウを閉じて、もう一度お試しください。"
     },
     "socialComplete": {
       "eyebrow": "もうすぐだ",
@@ -411,8 +910,11 @@
     },
     "maintenance": {
       "title": "WavezFM メンテナンス中です",
-      "subtitle": "現在、プラットフォームのアップデートを適用しています。アクセスは一時的に管理者と開発者に制限されています。",
-      "staffOnly": "スタッフのみの立ち入り",
+      "status": "プラットフォームメンテナンス",
+      "subtitle": "WavezFM を安定して運用するため、予定されていたメンテナンスを実施しています。アカウント、ルーム、プレイリスト、進行状況は安全に保持されています。",
+      "staffOnly": "チームアクセス",
+      "staffDescription": "管理者と開発者はログインして作業を続けられます。",
+      "expectedEnd": "復旧予定: {date}。",
       "accessDenied": "あなたのアカウントはメンテナンスモードを回避することはできません。",
       "submit": "サインイン"
     },
@@ -523,6 +1025,12 @@
       "favorites": "お気に入り",
       "private": "私立"
     },
+    "contentFilter": {
+      "label": "コンテンツ区分でルームを絞り込む",
+      "all": "すべて",
+      "sfw": "SFW",
+      "nsfw": "NSFW"
+    },
     "pagination": {
       "previous": "前のページ",
       "next": "次のページ",
@@ -583,9 +1091,12 @@
       "slugSuggestionHint": "続行するには候補を選択してください。",
       "description": "概要",
       "descriptionPlaceholder": "雰囲気、音楽の方向性、そしてここに集めたい人々のタイプを説明してください。",
-      "descriptionHint": "任意です。最大250人のキャラクターを短く説明することで、最初のトラックが始まる前に部屋が生き生きと感じられます。",
+      "descriptionHint": "任意です。最大{count}人のキャラクターを短く説明することで、最初のトラックが始まる前に部屋が生き生きと感じられます。",
       "privateLabel": "個室",
       "privateHint": "個室はアクセス可能な人だけが見える。",
+      "passwordLabel": "ルームパスワード",
+      "passwordPlaceholder": "At least 6 characters",
+      "passwordHint": "人々はこのパスワードを使用して部屋に入室します。",
       "nsfwLabel": "NSFW 部屋",
       "nsfwHint": "入室前に NSFW 警告を部屋に表示します。",
       "cancel": "キャンセル",
@@ -594,13 +1105,15 @@
       "success": "「{name}」が作成され、すでにリストに表示されています。",
       "errors": {
         "nameMin": "部屋名は最低3文字でなければなりません。",
-        "nameMax": "部屋名は最大25文字まで使ってください。",
+        "nameMax": "部屋名は最大{count}文字まで使ってください。",
         "slugMin": "スラッグは最低3文字以上の長さでなければなりません。",
         "slugMax": "スラッグは最大48文字まで使います。",
         "slugFormat": "生成されるスラッグは小文字、数字、ハイフンのみで構成されなければなりません。",
-        "descriptionMax": "説明は最大でも250文字程度です。",
+        "descriptionMax": "説明は最大でも{count}文字程度です。",
+        "passwordMin": "ルームのパスワードは 6 文字以上である必要があります。",
         "limit": "このアカウントはすでに {limit} 部屋の上限に達しています。",
         "slugInUse": "その部屋のリンクはすでに使われています。別のスラッグを試してみてください。",
+        "nameProtected": "この名前は、対応する役職を持つチームメンバー専用です。",
         "unauthorized": "あなたのセッションは終了しました。部屋を作成する前にもう一度サインインしてください。",
         "unexpected": "今は部屋を作ることができませんでした。"
       }
@@ -622,6 +1135,10 @@
       },
       "roleError": "今はこの部屋の役割を更新できませんでした。",
       "errorCodes": {
+      "ROOM_AVATAR_ROOM_ONLY": "このアバターは{room}内でのみ使用できます。装備するにはそのルームに入ってください。他のルームでは使用できません。",
+      "ROOM_AVATAR_ROLE_REQUIRED": "このアバターには{room}で{role}以上のロールが必要です。",
+      "ROOM_AVATAR_INACTIVE": "このルーム限定アバターは現在利用できません。",
+
         "ROOM_BANNED": "この部屋への立ち入り禁止です。",
         "ROOM_PERMISSION_SEND_CHAT": "この部屋ではおしゃべりできません。",
         "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "この部屋のチャットには画像やGIFを添付できません。",
@@ -648,6 +1165,7 @@
         "ROOM_PERMISSION_VIEW_AUDIT_LOGS": "この部屋のログは閲覧できません。",
         "ROOM_PERMISSION_CLEAR_AUDIT_LOGS": "この部屋のログは消去できません。",
         "ROOM_PERMISSION_DELETE_ROOM": "この部屋は削除できません。",
+        "ROOM_DELETE_TWO_FACTOR_REQUIRED": "ルームを削除する前に、アカウント設定で二要素認証を有効にしてください。",
         "ROOM_HOST_TRANSFER_REQUIRED": "ホストを降格させるには、まず別の人を部屋の責任者に配置してください。",
         "ROOM_ROLE_LIMIT_REACHED": "この役割にはすでに多くの人がいて、この部屋には不十分です。",
         "ROOM_CHAT_FORBIDDEN": "この部屋ではおしゃべりできません。",
@@ -719,6 +1237,21 @@
       "muteReason": "ルームスタッフによってミュートされました。",
       "notFoundTitle": "部屋はご利用できません",
       "notFoundDescription": "この部屋が見つからなかったか、もう使えなくなっています。",
+      "privateRoomAccess": {
+        "enterTitle": "個室",
+        "enterDescription": "続行するにはルームのパスワードを入力してください。",
+        "setupTitle": "このルームのパスワードを設定します",
+        "setupDescription": "このプライベート ルームは、パスワードが要求される前に作成されました。メンバーに再度公開する前に設定してください。",
+        "passwordLabel": "ルームパスワード",
+        "passwordPlaceholder": "At least 6 characters",
+        "passwordHint": "6 ～ 72 文字を使用してください。 Wavez 管理者と BA は、それなしで参加できます。",
+        "enterAction": "部屋に入る",
+        "setupAction": "パスワードを保存する",
+        "submitting": "保存中...",
+        "invalidPassword": "ルームのパスワードが間違っています。",
+        "notConfigured": "このプライベートルームは、オーナーがパスワードを設定するのを待っています。",
+        "unexpectedError": "現在、ルームのパスワードを確認できませんでした。"
+      },
       "backToRooms": "部屋に戻る",
       "chatTitle": "チャット({count})",
       "chatLogLabel": "ルームチャット",
@@ -735,6 +1268,10 @@
       },
       "localChat": {
         "clearAction": "自分のチャットを消去",
+        "confirmTitle": "チャットを消去しますか？",
+        "confirmDescription": "このブラウザで表示されているルームチャットが自分に対してのみ削除されます。この操作は元に戻せません。",
+        "confirmAction": "チャットを消去",
+        "cancelAction": "キャンセル",
         "cleared": "このブラウザ内のチャットだけを消去しました。",
         "loadOlder": "過去のメッセージを{count}件読み込む"
       },
@@ -769,6 +1306,20 @@
       "fansCount": "{count, plural, one {# ファン} other {# ファン}}",
       "fanLabel": "{count, plural, one {ファン} other {ファン}}",
       "sharedMediaAlt": "共有メディア",
+      "emojiInfo": {
+        "dialogLabel": "絵文字 {emoji} の詳細",
+        "openLabel": "{emoji} の情報を表示",
+        "standardEmoji": "標準絵文字",
+        "standardDescription": "これは標準絵文字です。WavezFMのどこでも使用できます。",
+        "customDescription": "これはWavezFMのカスタム絵文字です。",
+        "privateDescription": "この絵文字は招待制または利用できないルームのものです。",
+        "originLabel": "この絵文字の提供元",
+        "openRoom": "ルーム「{room}」を開く",
+        "privateRoom": "非公開ルーム",
+        "unknownRoom": "WavezFMルーム",
+        "privateOrigin": "招待者限定ルーム",
+        "roomOrigin": "WavezFMルーム"
+      },
       "mediaPreviewTitle": "画像プレビュー",
       "mediaPreviewOpenOriginal": "開いたオリジナル",
       "showSpoiler": "番組のネタバレ",
@@ -932,6 +1483,8 @@
       "linkFilterDialog": {
         "title": "リンクフィルター",
         "subtitle": "部屋がすべてのリンクをブロックするか、特定のドメインやパターンだけをブロックするかを選びましょう。",
+        "mediaPreviewsTitle": "リンクとGIFのプレビューを表示",
+        "mediaPreviewsHint": "無効にするとリンクはクリックできますが、画像、GIF、外部メディアはチャット内で展開されません。",
         "blockAllTitle": "すべてのリンクをブロックしてください",
         "blockAllHint": "有効にすると、ルームチャットで外部 URL を送信することはできません。",
         "blockedPatternsTitle": "ブロック固有のリンク",
@@ -955,6 +1508,8 @@
         "saveSuccess": "部屋の設定も更新されました。",
         "error": "今はこれらの部屋設定を保存できませんでした。",
         "tabs": {
+          "playback": "音楽とキュー",
+          "bots": "ボット",
           "room": "部屋",
           "appearance": "外見",
           "tools": "ツール",
@@ -979,10 +1534,39 @@
         "fields": {
           "roomName": "部屋名",
           "description": "概要",
-          "descriptionHint": "任意です。雰囲気や期待できることを最大250文字で説明してください。",
+          "descriptionHint": "任意です。雰囲気や期待できることを最大{count}文字で説明してください。",
           "welcomeMessage": "歓迎メッセージ",
           "welcomeMessagePinned": "チャットでようこそピン留め",
           "welcomeMessagePinnedHint": "新しいメッセージが届いても、ルームメッセージが公開チャットのトップに保たれます。",
+          "welcomeMessageMedia": "ウェルカム画像またはGIF",
+          "welcomeMessageMediaHint": "固定されたウェルカムメッセージに画像またはGIFの直接URLを追加します。",
+          "welcomeMessageMediaPreview": "ウェルカムメディアのプレビュー",
+          "roomBanner": "ルームバナー",
+          "roomBannerHint": "ルームカードで現在のYouTubeまたはSoundCloudの画像の代わりに表示されます。",
+          "roomBannerPreview": "ルームバナーのプレビュー",
+          "peopleGrouping": "ユーザーリストのグループ化",
+          "peopleGroupingHint": "このルーム全体の「ユーザー」タブでの表示方法を選択します。",
+          "peopleGroupingLabels": {
+            "wavez_staff": "WavezFM スタッフ",
+            "wavez_team": "WavezFM チーム",
+            "wavez_crew": "WavezFM クルー",
+            "room_staff": "ルームスタッフ",
+            "room_team": "ルームチーム",
+            "moderators": "モデレーター",
+            "bots": "ボット",
+            "robots": "ロボット",
+            "room_bots": "ルームボット",
+            "automations": "自動化",
+            "users": "ユーザー",
+            "members": "メンバー",
+            "community": "コミュニティ"
+          },
+          "peopleGroupingDetailed": "ロール別の詳細表示",
+          "peopleGroupingDetailedHint": "グローバルロールとルームロールを個別のセクションに表示します。",
+          "peopleGroupingTeams": "チームとユーザー",
+          "peopleGroupingTeamsHint": "WavezFMスタッフ、ルームスタッフ、Bot、VIPを含むユーザーにまとめます。",
+          "presentationMediaPlaceholder": "https://example.com/image.gif",
+          "presentationMediaError": "PNG、JPG、GIF、WebP、AVIFで終わるHTTPまたはHTTPSの直接URLを使用してください。",
           "minimumChatLevel": "最低チャットレベル",
           "minimumChatLevelHint": "このレベルの以下のユーザーはメッセージを送信できません。0を使って全員を許可してください。",
           "slowMode": "スローモード",
@@ -995,6 +1579,11 @@
           "allowYouTubeLivesHint": "有効化されると、キューとプレイヤーで YouTube ライブストリームが受け入れられます。無効にすると、再生開始前にブロックされます。",
           "privateRoom": "個室",
           "privateRoomHint": "招待または認可されたユーザーのみが入場可能です。",
+          "privateRoomPassword": "ルームパスワード",
+          "privateRoomPasswordPlaceholder": "新しいパスワードを入力",
+          "privateRoomPasswordConfiguredHint": "パスワードはすでに設定されています。これを空白のままにして保持するか、新しい値を入力して置き換えます。",
+          "privateRoomPasswordRequiredHint": "このプライベートルームを保存する前に、6～72文字のパスワードを設定してください。",
+          "privateRoomPasswordError": "少なくとも 6 文字を入力してください。",
           "nsfw": "NSFW 内容",
           "nsfwHint": "部屋を大人向けコンテンツとしてマークします。",
           "lockChat": "チャットをロックする",
@@ -1007,6 +1596,8 @@
           "chatHistoryHint": "後で参加する人のために最新の部屋のメッセージを保存しておきましょう。",
           "chatHistoryRetentionDays": "日単位での歴史保持",
           "chatHistoryRetentionDaysHint": "保存されたメッセージがどれくらいの期間利用可能かを選びましょう。",
+          "chatMediaPreviews": "リンクとGIFのプレビューを表示",
+          "chatMediaPreviewsHint": "画像、GIF、対応するメディアリンクをルームチャット内で展開します。",
           "blockAllLinks": "すべてのリンクをブロックしてください",
           "blockAllLinksHint": "ルームチャットにリンクが投稿されるのを防いでください。",
           "blockedLinks": "ブロックされたリンクとパターン",
@@ -1020,7 +1611,14 @@
           "mediaBlockedUrlsPlaceholder": "https://youtu.be/...youtube:abc123\nsoundcloud.com/artist/track\n",
           "mediaBlockedTitles": "ブロックされた名前とアーティスト",
           "mediaBlockedTitlesHint": "タイトル、アーティスト、メディア名の断片には1行につき1つのエントリーを使いましょう。",
-          "mediaBlockedTitlesPlaceholder": "ブロックされたアーティスト\n曲名\n禁断のリミックス"
+          "mediaBlockedTitlesPlaceholder": "ブロックされたアーティスト\n曲名\n禁断のリミックス",
+          "bannerUpload": "バナーをアップロードする",
+          "bannerUploading": "バナーをアップロードしています...",
+          "bannerUploadReady": "バナーをアップロードしました。設定を保存して適用します。",
+          "bannerUploadSize": "最大 5 MB の画像を選択します。",
+          "bannerUploadInvalid": "無効な画像です。 JPEG、PNG、WebP、または GIF を使用します。バナーは静的になります。",
+          "bannerUploadUnavailable": "バナーストレージはまだ設定されていません。",
+          "bannerUploadFailed": "バナーをアップロードできませんでした。もう一度試してください。"
         },
         "mediaBlacklist": {
           "title": "音楽・ビデオブラックリスト",
@@ -1074,9 +1672,9 @@
             "roomIcon": "部屋のアイコン",
             "queueButtonAccent": "キューボタン",
             "voteButtonBackground": "投票経歴",
-            "voteWoot": "やったー",
+            "voteWoot": "Woot",
             "voteGrab": "掴め",
-            "voteMeh": "ふーん",
+            "voteMeh": "Meh",
             "inventoryGrant": "アイテムポップアップ",
             "welcomeMessage": "歓迎メッセージ",
             "chatMessageBlock": "チャットメッセージブロック",
@@ -1116,8 +1714,10 @@
             "nameLabel": "ボット名",
             "namePlaceholder": "ナイトシフトボット",
             "prefixLabel": "接頭辞",
+            "prefixHelp": "APIが提供する接頭辞です。ボットがコマンドを認識するには、この設定を使用する必要があります。コードや .env で指定した接頭辞は上書きされません。",
+            "reservedPrefix": "/ と : はコマンドと絵文字用に予約されています。",
             "avatarLabel": "ボットバッジ",
-            "avatarHint": "ルームボットは常にグローバルロボットバッジを使用します。このビジュアルはチャットや部屋に固定されています。",
+            "avatarHint": "新しいボットにはロボットアイコンが使われます。作成後、上でボットを選択すると、許可されている場合は外観を変更できます。",
             "permissionsLabel": "ボット権限",
             "identityHint": "これらの権限はトークン内に存在します。ボットはここで有効になっている機能を使うのにルームロールは必要ありません。",
             "permissionGroups": {
@@ -1158,6 +1758,10 @@
               "ban_user": {
                 "title": "ユーザーを禁止する",
                 "hint": "部屋からのユーザーを禁止できます。"
+              },
+              "delete_protected_messages": {
+                "title": "すべてのユーザーのメッセージを削除",
+                "hint": "管理者を含む個別のメッセージを削除できます。この権限は管理者のみ付与でき、clear_chat が必要です。"
               },
               "clear_chat": {
                 "title": "クリアチャット",
@@ -1203,12 +1807,12 @@
           "customEmojisHint": "{count} この部屋で現在使われている絵文字スロット。",
           "auditLogs": "部屋のログ",
           "auditLogsHint": "モデレーション活動をリアルタイムで追跡するための専用モーダルを開いてください。",
-          "closeRoom": "閉めて",
-          "closeRoomHint": "すぐに部屋を閉めて全員を避難させてください。これは本当に部屋を閉ざす必要がある時だけ使ってください。",
-          "closeRoomAction": "もう終わり",
-          "closingRoom": "閉鎖します...",
-          "closeRoomConfirm": "部屋を閉めたい {name}?この行動は取り消せない。",
-          "closeRoomError": "今はこの部屋を閉められない。",
+          "closeRoom": "ルームを削除",
+          "closeRoomHint": "二要素認証を有効にした所有者のみがルームを削除できます。削除は元に戻せません。",
+          "closeRoomAction": "削除する",
+          "closingRoom": "削除中...",
+          "closeRoomConfirm": "ルーム「{name}」を完全に削除しますか？この操作は取り消せません。",
+          "closeRoomError": "ルームを削除できませんでした。",
           "empty": "あなたの役割に合う追加の部屋用ツールはありません。"
         },
         "rules": {
@@ -1217,6 +1821,8 @@
           "add": "サブアイテムを追加",
           "addList": "リストを追加",
           "addSubitem": "サブアイテムを追加",
+          "moveUp": "サブアイテムを上へ移動",
+          "moveDown": "サブアイテムを下へ移動",
           "remove": "サブアイテムを削除",
           "removeList": "リストを削除",
           "empty": "まだルールは追加されていません。",
@@ -1253,7 +1859,7 @@
           "unbanError": "今はこの部屋の禁止を解除できません。",
           "byModerator": "{moderator}",
           "unknownModerator": "不明のモデレーター",
-          "ipBan": "知的財産",
+          "ipBan": "IP",
           "table": {
             "user": "ユーザー",
             "reason": "理由",
@@ -1394,6 +2000,34 @@
           "join_queue": {
             "label": "キューに参加",
             "description": "DJキューに参加できます。"
+          },
+          "bypass_track_duration": {
+            "label": "曲の長さ制限を無視",
+            "description": "ルームの長さ制限を超える曲でキューに参加し、再生できます。他のルールは引き続き適用されます。"
+          },
+          "bypass_recent_tracks": {
+            "label": "最近再生した曲の制限を無視",
+            "description": "最近再生した曲の制限を無視."
+          },
+          "bypass_youtube_live_restriction": {
+            "label": "YouTubeライブを許可",
+            "description": "YouTubeライブを許可."
+          },
+          "bypass_minimum_chat_level": {
+            "label": "チャットの最低レベルを無視",
+            "description": "チャットの最低レベルを無視."
+          },
+          "bypass_room_blocked_words": {
+            "label": "ルームブロックされた単語を無視する",
+            "description": "ルームワードフィルターをバイパスします。グローバルルールは引き続き適用されます。"
+          },
+          "bypass_room_blocked_links": {
+            "label": "ルームのブロックされたリンクを無視する",
+            "description": "ルームリンク禁止とブロックされた URL パターンをバイパスします。グローバルルールは引き続き適用されます。"
+          },
+          "bypass_slow_mode": {
+            "label": "低速モードを無視",
+            "description": "低速モードを無視."
           },
           "bypass_queue_lock": {
             "label": "バイパスキューロック",
@@ -1583,6 +2217,7 @@
         "title": "部屋の歴史",
         "emptyTitle": "まだ曲は再生されていません",
         "emptyDescription": "部屋で音楽が流れ始めると、歴史がここに現れます。",
+        "playingNow": "再生中",
         "openTrack": "オープントラック",
         "grabSavedToast": "「{title}」が {playlist}に追加されました。",
         "actions": {
@@ -1610,11 +2245,12 @@
         "globalBadge": "グローバル",
         "roomMessage": "{donor} この部屋に寄付 {amount} 。",
         "globalMessage": "{donor}WavezFMグローバル目標に寄付{amount}しました。",
-        "anonymousDonor": "誰か"
+        "anonymousDonor": "匿名"
       },
       "welcomeBanner": {
         "title": "歓迎メッセージ",
-        "dismiss": "ウェルカムメッセージを非表示"
+        "dismiss": "ウェルカムメッセージを非表示",
+        "mediaAlt": "ルームのウェルカムメディア"
       },
       "welcomeManager": {
         "title": "歓迎メッセージ",
@@ -1667,7 +2303,7 @@
         "captionsOff": "字幕をオフにしてください",
         "hideOnMobile": "モバイルでの動画非表示",
         "showOnMobile": "モバイルで動画を表示",
-        "soundcloudDisabledTitle": "SoundCloud 障害者",
+        "soundcloudDisabledTitle": "SoundCloud 無効",
         "soundcloudDisabledDescription": "SoundCloud 管理パネルからグローバルに無効化されていました。"
       },
       "queueAction": {
@@ -1679,6 +2315,7 @@
         "queueLocked": "キューロック",
         "booth": "現役ブース",
         "externalMedia": "外部メディア",
+        "externalMediaQueueBlocked": "DJキューに参加する前に外部メディアを停止してください。",
         "locked": "ロックされた",
         "turn": "次は君の番だ",
         "eta": "追記: {time}",
@@ -1697,9 +2334,9 @@
         "leaveDjQueue": "列 DJ 離れろ"
       },
       "votes": {
-        "woot": "やったー",
+        "woot": "Woot",
         "grab": "掴め",
-        "meh": "ふーん"
+        "meh": "Meh"
       },
       "trackToast": {
         "title": "現在プレイ中",
@@ -1797,8 +2434,8 @@
         "reviewEvents": "審査",
         "submitTitle": "イベントを承認申請",
         "submitSubtitle": "詳細を入力してください。スタッフの承認後に公開されます。",
-        "globalSubmissionLabel": "グローバルイベント",
-        "globalSubmissionHint": "選択すると、すべてのルーム向けイベントとして申請されます。選択しない場合、承認後にこのルームでのみ表示されます。",
+        "globalSubmissionLabel": "グローバルプロモーションをリクエストする",
+        "globalSubmissionHint": "ルーム間でのプロモーションをリクエストするには、管理者または認定アンバサダーの承認が必要です。それ以外の場合、イベントは承認後もこのルームに留まります。",
         "eventTitle": "タイトル",
         "eventDescription": "説明",
         "titlePtBr": "ポルトガル語のタイトル",
@@ -1814,13 +2451,23 @@
         "sendForReview": "承認申請を送信",
         "submitError": "イベントを送信できませんでした。",
         "reviewTitle": "イベント審査",
-        "reviewSubtitle": "ホストが申請したイベントを承認または却下します。",
+        "reviewSubtitle": "すべてのルームから送信されたイベントを承認または却下します。",
         "reviewLoading": "申請を読み込み中...",
         "reviewLoadError": "申請を読み込めませんでした。",
         "reviewError": "決定を保存できませんでした。",
+        "reviewPending": "承認待ち",
+        "announcementTitle": "新しいイベント",
+        "announcementStarts": "開始",
+        "announcementEnds": "終了",
+        "announcementLocation": "<name>{room}</name>ルームで開催",
+        "announcementRoom": "ルーム",
+        "roomNavigationConfirmTitle": "このルームに移動しますか？",
+        "roomNavigationConfirmDescription": "ルーム {room} に移動します。続行しますか？",
+        "roomNavigationConfirmAction": "ルームに移動",
         "reviewEmpty": "保留中のイベントはありません",
         "reviewEmptyDescription": "ホストからの申請がここに表示されます。",
         "approve": "承認",
+        "approveWithoutGlobal": "全体への告知なしで承認",
         "reject": "却下"
       },
       "tabs": {
@@ -1841,10 +2488,35 @@
       "emptyMentionsDescription": "誰かがあなたに言及したり返信したりすると、ここにメッセージが表示されます。",
       "emptyStaffTitle": "スタッフからのメッセージはありません",
       "emptyStaffDescription": "このチャットはこの部屋のスタッフとだけ話してください。",
-      "composerStaffPlaceholder": "メッセージルームスタッフ",
+      "composerStaffPlaceholder": "スタッフにメッセージ…",
+      "chatTyping": {
+        "one": "{user1}さんが入力中...",
+        "two": "{user1}さんと{user2}さんが入力中...",
+        "three": "{user1}さん、{user2}さん、{user3}さんが入力中...",
+        "many": "複数のユーザーが入力中..."
+      },
       "chatPaused": {
         "message": "チャットが一時停止 — スクロールして再開",
         "newMessages": "{count, plural, one {# 新しいメッセージ} other {# 新しいメッセージ}}"
+      },
+      "compactProfile": {
+        "block": "ブロック",
+        "unblock": "ブロック解除",
+        "ban": "入室禁止",
+        "kick": "退出させる",
+        "muteRoomTooltip": "このルームでのチャット送信を禁止します。",
+        "unmuteRoomTooltip": "このルームでのチャット送信を再び許可します。",
+        "fan": "ファンになる",
+        "unfan": "ファン解除",
+        "profile": "プロフィール",
+        "muteRoom": "ミュート",
+        "unmuteRoom": "ミュート解除",
+        "muteLocal": "自分だけメッセージを非表示",
+        "unmuteLocal": "Show messages again",
+        "moderation": "モデレーション",
+        "moreActions": "その他の操作",
+        "showMore": "もっと見る",
+        "showLess": "折りたたむ"
       },
       "quickProfile": "簡単なプロフィール",
       "close": "閉じる",
@@ -1872,7 +2544,9 @@
       "reactionPicker": {
         "title": "反応してください",
         "subtitle": "部屋、グローバル、またはシステムの絵文字を選びましょう。",
+        "add": "リアクションを追加",
         "more": "反応してください",
+        "viewMore": "さらに表示",
         "limitReached": "このメッセージにはすでに {count} つの反応タイプがあります。",
         "close": "近接反応"
       },
@@ -1895,6 +2569,10 @@
         "panelEmpty": "まだささやきはない。",
         "searchEmpty": "会話は見つかりません。",
         "panelLoadError": "今はウィスパーズをロードできなかった。",
+        "pageStatus": "{page}ページ",
+        "previousPage": "前のページ",
+        "nextPage": "次のページ",
+        "pageEmpty": "このページに表示できる会話はありません。",
         "youPrefix": "あなた:",
         "you": "お前だ",
         "unknownUser": "ユーザー",
@@ -1932,8 +2610,9 @@
       "replyingToLabel": "@{username}への返信",
       "composerReconnecting": "再接続中...",
       "composerChatLocked": "スタッフによってチャットがロックされました",
-      "composerPlaceholder": "会話に参加するにはこちらをクリックしてください",
+      "composerPlaceholder": "メッセージを入力…",
       "pastedImage": {
+        "spoiler": "ネタバレ",
         "label": "添付画像",
         "expired": "このメディアは期限切れです。",
         "attach": "画像またはGIFを添付してください",
@@ -1948,9 +2627,21 @@
         "uploadError": "この画像はアップロードできませんでした。"
       },
       "peopleSearchPlaceholder": "ユーザー名やIDで検索できます",
+      "guestViewer": "ルームを閲覧中のゲスト",
       "peopleFilters": {
         "all": "みんな",
-        "staff": "部屋スタッフ"
+        "staff": "部屋スタッフ",
+        "onlineStaff": "オンラインスタッフ"
+      },
+      "peopleDensity": {
+        "compact": "コンパクト表示にする",
+        "comfortable": "標準表示にする"
+      },
+      "peopleGroups": {
+        "wavez_staff": "WavezFM スタッフ",
+        "room_staff": "ルームスタッフ",
+        "users": "ユーザーとVIP",
+        "bots": "Bot"
       },
       "queueSearchPlaceholder": "ユーザー名またはIDでDJキューを検索してください",
       "emptyPeopleSearchTitle": "この検索に一致する者はいません",
@@ -2023,6 +2714,10 @@
         "addColor": "色を加える",
         "removeColor": "色を除去する",
         "clear": "クリア",
+        "version1": "エフェクト V1",
+        "version2": "エフェクト V2",
+        "previousPage": "前のページ",
+        "nextPage": "次のページ",
         "effects": {
           "strobo": "ストロボ",
           "fireworks": "花火",
@@ -2030,15 +2725,43 @@
           "confetti": "紙吹雪",
           "sparks": "スパークス",
           "senpai": "先輩",
+          "snow": "雪",
           "rain": "雨",
           "show_smoke": "ショースモーク",
-          "brazil_goal": "ブラジルのゴール"
+          "brazil_goal": "ブラジルのゴール",
+          "v2_confetti": "紙吹雪 V2",
+          "v2_luxury": "ラグジュアリー",
+          "v2_fireworks": "花火 V2",
+          "v2_sparks": "スパーク V2",
+          "v2_smoke": "スモーク V2",
+          "v2_lasers": "レーザー",
+          "v2_hearts": "ハート V2",
+          "v2_emojis": "絵文字",
+          "v2_kawaii": "Kawaii",
+          "v2_neon": "ネオン",
+          "v2_brazil_goal": "ブラジルのゴール V2"
         }
+      },
+      "systemMessages": {
+        "subscriptionAnnounced": "{username}がWavezFM Premiumに登録しました！",
+        "localNoticeTitle": "ローカル通知",
+        "blacklistTrackSkipped": "このルームでブロックされているため、曲をスキップしました：{title}",
+        "eventRsvpBefore": "イベントは{minutes}分後に開始します：{title}。{link}",
+        "eventRsvpStarted": "イベントが始まりました：{title}。{link}",
+        "unavailableTrackSkipped": "利用できないため、曲をスキップしました。",
+        "queuePlaylistLoadStalled": "現在プレイリストを読み込めないため、{username} はキューから退出しました。",
+        "queueNoRoomCompatibleTracks": "現在プレイリストにルームのルールに合う曲がないため、{username} はキューから退出しました。",
+        "queuePlaylistEmpty": "プレイリストに利用可能な曲が残っていないため、{username} はキューから退出しました。",
+        "queueNoAvailableTracks": "現在プレイリスト内のどの曲も利用できないため、{username} はキューから退出しました。",
+        "queueYoutubeLiveNotAllowed": "{username} の YouTube ライブ配信「{track}」はこのルームでは許可されていません。別の曲を選ぶまで、{username} はキューから退出しました。",
+        "queueTrackTooLong": "{username} の曲「{track}」はルームの上限（{unit, select, minute {{duration}分} hour {{duration}時間} day {{duration}日} other {{duration}}}）を超えています。短い曲を選ぶまで、{username} はキューから退出しました。",
+        "localMaxDurationSkipNotice": "この通知はあなただけに表示されています。「{skippedTrack}」はルームの上限（{unit, select, minute {{duration}分} hour {{duration}時間} day {{duration}日} other {{duration}}}）を超えています。あなたの順番は維持され、WavezFM がプレイリスト内の次の再生可能な曲「{nextTrack}」を再生しました。"
       },
       "slash": {
         "availableCommands": "利用可能なコマンド",
         "announcements": {
           "dequeue": "{actor}{target}をDJキューから除外しました。",
+          "clearQueue": "{actor}がDJキューを空にし、{count, plural, other {#人}}を削除しました。",
           "removeGhost": "{actor} 削除済み {count, plural, one {# 非活動者} other {# 非活動者}} キューから(最後のメッセージはなし) {unit, select, minute {{duration, plural, one {# 1分} other {# 分}}} hour {{duration, plural, one {# 時間} other {# 営業時間}}} day {{duration, plural, one {# 日} other {# 日々}}} other {{duration}}}).",
           "queueMoved": "{target} は列の第 {position} に移動されました。",
           "queueMovedBy": "{actor}{target}キューの{position}に移動しました。",
@@ -2076,20 +2799,24 @@
         "usageKick": "使用例: /kick @user [理由]",
         "usageBan": "使用法: /ban @user [30m|1h|1d|perm] [reason]",
         "usageDequeue": "使用例: /dequeue @user",
+        "usageClearQueue": "使用例: /clearqueue",
         "usageRemoveGhost": "使用例: /removeghost <30m|2h>",
         "usageMove": "使用例: /move @user <position>",
         "usageSwap": "使用例: /swap @user",
         "usageUnban": "使用例: /unban ユーザー名",
         "usageCoins": "使用法: /coins @user|room|all> <set|add|remove> <amount>",
         "usageDiamonds": "使用法: /diamonds @user|room|all> <set|add|remove> <amount>",
+        "usageRoomRole": "/roomrole <役職>",
+        "usageGlobalRole": "/globalrole [@user]",
         "usageXp": "使用法: /xp @user|room|all> <set|add|remove> <amount>",
-        "usageSubgift": "使用頻度: /subgift @user|room|global> <amount> (ユーザー/global:1〜12ヶ月、ルーム:1〜100登録者)",
+        "usageSubgift": "使い方: /subgift <@user|room|global> <amount> [--exclude-subscribers] (ユーザー/global: 1〜12か月、ルーム: 1〜100件。オプションはルーム内のギフトまたは全体への配布のみ)",
         "usageSystemAlert": "使用例: /systemalert",
         "usageRoomAlert": "使用例: /roomalert",
         "usageAlert": "使用例: /alert @user または /useralert @user",
         "usageGiveaway": "使用: /giveaway または /sorteio",
         "usageRenameUser": "使用例: /renameuser @user <display name>",
         "usageGiveItem": "使用法: /giveitem @user[, @other] <avatar|badge|background|video-frame> <itemId> [有効期限が経過期AtISO]",
+        "usageGiveRole": "使用法: /giverole @ユーザー <ロールのslugまたは名前>",
         "usageEventBadge": "使用例: /eventbadge <badge> <room> <30m|2h>",
         "usageEffect": "使用方法: /effect <type> [#HEX] [音声:オン|オフ]、 /effect オフ、または /effect オーディオ <on|off>。種類:ストロボ、花火、ハート、紙吹雪、火花、先輩、雨、煙、ゴール。",
         "usageStrobo": "使用例: /effect <type|off>",
@@ -2111,7 +2838,7 @@
         "userLookupError": "現在そのユーザーを開けませんでした。",
         "clearCountInvalid": "0から50までの番号の /clear を使いましょう。",
         "cannotWhisperYourself": "自分でささやくことはできません。",
-        "whisperTooLong": "ささやきは最大でも500文字程度です。",
+        "whisperTooLong": "ささやきは最大でも{count}文字程度です。",
         "whisperSent": "ささやきが {username}に送った。",
         "whisperError": "今はこんなささやきを送れない。",
         "targetNotInQueue": "その人は今 DJ の列にはいません。",
@@ -2145,7 +2872,7 @@
         "subgiftGlobalPartial": "部分的なグローバルサブギフト: {count} ユーザーが月を受け取 {months} か月; {failed} 失敗しました。",
         "subgiftUserSuccess": "{months}ヶ月分のサブギフトを{username}に送った。",
         "subgiftError": "今すぐサブギフトを送ることはできませんでした。",
-        "renameUserSuccess": "{username}の表示名は {displayUsername}に更新されました。",
+        "renameUserSuccess": "表示名を {previousDisplayUsername} から {displayUsername} に変更しました。",
         "renameUserError": "今はそのユーザーの名前を変更することはできませんでした。",
         "giveItemSuccess": "{category} 「{item}」が {username}に与えられました。",
         "giveItemTemporarySuccess": "{category} 「{item}」は一時的に {username}に与えられました。",
@@ -2155,6 +2882,9 @@
         "giveItemTemporaryBulkPartial": "{category} 「{item}」は一時的に {count} ユーザーに付与されました。失敗: {failed}。",
         "giveItemUsersNotFound": "ユーザーが見つかりません: {users}。",
         "giveItemError": "今はその条件を認めることはできません。",
+        "giveRoleSuccess": "{username} にロール「{role}」を付与しました。",
+        "giveRoleAlreadyAssigned": "{username} はすでにロール「{role}」を持っています。",
+        "giveRoleError": "現在このロールを付与できません。",
         "eventBadgeSuccess": "{badge}{room}から{count}ユーザーに付与されます。対象:{eligible}。スキップ:{skipped}。失敗:{failed}。",
         "eventBadgeNoRecipients": "{room}年にはバッジは授与されませんでした。対象者:{eligible}。スキップ:{skipped}。失敗:{failed}。",
         "eventBadgeError": "今はイベントバッジを授与できません。",
@@ -2190,6 +2920,7 @@
           "kick": "すぐに誰かを部屋から退けてください。",
           "ban": "指定された期間、誰かを部屋から追放します。",
           "dequeue": "DJキューから誰かを外します。",
+          "clearQueue": "現在の曲を中断せずにDJキュー全体を空にします。",
           "removeGhost": "選択したウィンドウ中にチャットで話さなかった人はキューから外されます。",
           "move": "DJキューの特定のポジションに誰かを移動させる。",
           "swap": "他の誰かとキューの位置を入れ替える。",
@@ -2204,20 +2935,38 @@
           "giveaway": "モーダルを開いてプレゼント企画を作ります。",
           "renameUser": "ユーザーの表示名を編集します。",
           "giveItem": "ユーザーにアバター、バッジ、背景、またはビデオフレームを付与します。",
+          "giveRole": "現在のロールを削除せずにグローバルロールを付与します。",
+          "globalRole": "ユーザーのグローバルロール管理を開きます。",
           "eventBadge": "最近部屋にいたユーザーにバッジを付与します。",
           "effect": "部屋の全員にアニメーションのステージ効果がオンになります。",
           "strobo": "部屋の中の全員のアニメーションステージストロボをオン・オフできます。",
-          "poll": "モーダルを開いてチャットに固定された投票を作成します。"
+          "poll": "モーダルを開いてチャットに固定された投票を作成します。",
+          "bot": "ボットへの非公開コマンドを開く"
         },
-        "usageUnmute": "使用例: /unmute @user"
+        "usageUnmute": "使用例: /unmute @user",
+        "usageBot": "/bot @bot"
       },
       "adminSlashDialog": {
         "walletTitle": "調整 {currency}",
         "xpTitle": "調整 XP",
         "subgiftTitle": "サブギフトを送る",
+        "subgiftExcludeSubscribersLabel": "有効な登録者を除外",
+        "subgiftExcludeSubscribersHint": "ルーム内のギフトまたは全ユーザーへの配布では、ギフトによるものを含め、有効なサブスクリプションを持つユーザーは対象外です。",
         "renameUserTitle": "ユーザー名変更",
         "giveItemTitle": "助成金項目",
+        "giveRoleTitle": "グローバルロールを付与",
+        "giveRoleUserPlaceholder": "ユーザーを選択",
+        "giveRoleUserSearch": "ユーザーを検索...",
+        "giveRoleUserEmpty": "ユーザーが見つかりません。",
+        "giveRoleRoleLabel": "グローバルロール",
+        "giveRoleRolePlaceholder": "ロールを選択",
+        "giveRoleRoleLoading": "ロールを読み込み中...",
+        "giveRoleRoleSearch": "ロールを検索...",
+        "giveRoleRoleEmpty": "ロールが見つかりません。",
+        "giveRoleCatalogError": "現在グローバルロールを読み込めません。",
         "subtitle": "構文を暗記せずにフィールドを埋めてコマンドを送信します。",
+        "announceInChatLabel": "チャットに送信",
+        "announceInChatHint": "調整内容をチャットに投稿します。既定ではオフです。",
         "targetLabel": "ターゲット",
         "targetPlaceholder": "@user、部屋、または全部",
         "targetHint": "@usernameを入力してユーザーの認証を行います。",
@@ -2288,6 +3037,39 @@
         "submit": "送信"
       },
       "systemAlertDialog": {
+        "appearance": {
+          "iconBackgroundEnabled": "アイコンの背景",
+          "iconBackgroundHint": "アイコンの背景と枠線を表示します。オフにするとアイコンのみ表示します。",
+          "heading": "ポップアップの外観",
+          "reset": "青いテーマに戻す",
+          "background": "背景色",
+          "border": "枠線の色",
+          "titleColor": "タイトルの色",
+          "textColor": "本文の色",
+          "iconColor": "アイコンの色",
+          "iconBackground": "アイコンの背景",
+          "icon": "アイコン",
+          "iconPosition": "アイコンの位置",
+          "info": "情報",
+          "brand": "WavezFMロゴ",
+          "warning": "警告",
+          "bell": "ベル",
+          "gift": "ギフト",
+          "none": "なし",
+          "left": "左",
+          "top": "タイトルの上",
+          "right": "右",
+          "iconSize": "アイコンのサイズ",
+          "width": "幅",
+          "titleSize": "タイトルのサイズ",
+          "textSize": "本文のサイズ",
+          "preview": "プレビュー。幅は画面に合わせて調整されます。",
+          "preset": "プリセット",
+          "presetBlue": "ブルー",
+          "presetBlack": "ブラックとブルー",
+          "presetCustom": "カスタム"
+        },
+        "colorLabel": "アラートの色",
         "title": "グローバルシステムアラート",
         "subtitle": "現在、接続されたすべての部屋にシステムメッセージを送信します。",
         "roomTitle": "部屋システム警報",
@@ -2298,7 +3080,7 @@
         "systemTitlePtBr": "Alerta do Sistema",
         "systemTitleEnUs": "システムアラート",
         "singleMode": "一言語",
-        "bilingualMode": "PT-BRと英語",
+        "bilingualMode": "ポルトガル語と英語",
         "modeHint": "2つの言語をオンにして、それぞれが自分のインターフェース言語でアラートを見られるようにします。",
         "bilingualToggle": "2つの言語を有効にする",
         "deliveryTitle": "配信形式",
@@ -2307,19 +3089,19 @@
         "deliveryPopup": "ポップアップ",
         "userDeliveryTitle": "ポップアップ配信",
         "userDeliveryHint": "ポップアップはユーザーにプライベートアラートを開きます。チャットは、そのユーザーだけが現在の部屋で見られるプライベートなシステムメッセージを送信します。",
-        "ptBrSection": "PT-BR",
+        "ptBrSection": "ポルトガル語（ブラジル）",
         "enUsSection": "英語",
         "titleLabel": "タイトル(任意)",
-        "titlePtBrLabel": "PT-BRタイトル(任意)",
+        "titlePtBrLabel": "ポルトガル語（ブラジル）タイトル(任意)",
         "titleEnUsLabel": "英語-米国タイトル(任意)",
         "messageLabel": "メッセージ",
-        "messagePtBrLabel": "PT-BRメッセージ",
+        "messagePtBrLabel": "ポルトガル語（ブラジル）メッセージ",
         "messageEnUsLabel": "英語-米国のメッセージ",
         "placeholder": "グローバルチャットに表示されるはずのアラートを入力してください...",
         "placeholderPtBr": "Digite o alerta em português...",
         "placeholderEnUs": "アラートは英語で入力してください...",
         "preview": "プレビュー",
-        "previewPtBr": "PT-BRプレビュー",
+        "previewPtBr": "ポルトガル語（ブラジル）プレビュー",
         "previewEnUs": "米国プレビュー",
         "emptyPreview": "プレビューはこちらに掲載されています。",
         "cancel": "キャンセル",
@@ -2396,6 +3178,91 @@
         }
       },
       "giveaway": {
+        "title": "抽選",
+        "createTitle": "抽選を作成",
+        "subtitle": "このルームで利用できる抽選に参加または退出できます。",
+        "createSubtitle": "賞品、期間、当選者数、応募の重みを設定します。",
+        "closeLabel": "抽選を閉じる",
+        "tabsLabel": "抽選表示",
+        "joinTab": "参加",
+        "createTab": "作成",
+        "emptyTitle": "現在利用できる抽選はありません。",
+        "emptyDescription": "管理者が作成したルームまたはグローバル抽選がここに表示されます。",
+        "globalScope": "グローバル",
+        "roomScope": "ルーム",
+        "currentRoomScope": "現在のルーム（{room}）",
+        "startsAt": "{date}に開始",
+        "endsAt": "{date}に終了",
+        "noDate": "日付なし",
+        "entryCount": "応募数：{count}",
+        "winnerCount": "当選者数：{count}",
+        "vipDoubleBadge": "VIP 2倍",
+        "soon": "近日開始",
+        "join": "参加する",
+        "leave": "退出する",
+        "status": {
+          "scheduled": "予定",
+          "active": "開催中",
+          "ended": "終了",
+          "cancelled": "キャンセル済み"
+        },
+        "prize": {
+          "subscription": "サブスクリプション",
+          "coins": "コイン",
+          "diamonds": "ダイヤモンド",
+          "xp": "XP"
+        },
+        "form": {
+          "nameLabel": "抽選名",
+          "namePlaceholder": "週末サブスクリプション抽選",
+          "descriptionLabel": "説明",
+          "descriptionPlaceholder": "抽選のルール、概要、注意事項...",
+          "scopeLabel": "対象",
+          "prizeLabel": "賞品",
+          "amountLabel": "数量",
+          "winnersLabel": "当選者",
+          "startLabel": "開始",
+          "endLabel": "終了",
+          "vipLabel": "VIP／登録者は2口として計算",
+          "announceLabel": "チャットに送信",
+          "announceHint": "抽選を告知するシステムメッセージをルームに投稿します。",
+          "creating": "作成中...",
+          "create": "抽選を作成",
+          "saving": "保存中...",
+          "save": "変更を保存",
+          "cancel": "キャンセル"
+        },
+        "manage": {
+          "open": "管理",
+          "hide": "管理を閉じる",
+          "edit": "編集",
+          "editTitle": "抽選を編集",
+          "draw": "当選者を抽選",
+          "deliver": "賞品を付与",
+          "delivered": "賞品付与済み",
+          "cancel": "抽選をキャンセル",
+          "cancelConfirm": "この抽選をキャンセルしますか？",
+          "participants": "参加者",
+          "emptyParticipants": "まだ参加者はいません。",
+          "winner": "当選者",
+          "weight": "応募 {count}倍",
+          "removeParticipant": "{name}を抽選から削除"
+        },
+        "action": {
+          "created": "抽選を作成しました。",
+          "createFailed": "抽選を作成できませんでした。",
+          "updated": "抽選を更新しました。",
+          "updateFailed": "抽選を更新できませんでした。",
+          "cancelled": "抽選をキャンセルしました。",
+          "cancelFailed": "抽選をキャンセルできませんでした。",
+          "drawn": "当選者を抽選しました。",
+          "drawFailed": "抽選を実行できませんでした。",
+          "delivered": "賞品を付与しました。",
+          "deliverFailed": "賞品を付与できませんでした。",
+          "removeParticipantFailed": "参加者を削除できませんでした。",
+          "joinFailed": "抽選に参加できませんでした。",
+          "leaveFailed": "抽選から退出できませんでした。"
+        },
         "restrictionBadge": "未登録者のみ",
         "blockedButton": "有効なサブスクリプション",
         "blockedDescription": "この抽選は有効なサブスクリプションを持っていないユーザーのみ参加できます。",
@@ -2458,7 +3325,8 @@
         "helper": "許可されている直接画像リンクは、PNG、JPG、 GIF、WEBP、APNG、AVIFのみです。",
         "limitReached": "この部屋はすでにカスタム絵文字の上限に達しています {limit}。",
         "button": "部屋の絵文字を管理する",
-        "error": "今はこの部屋の絵文字を更新できません。"
+        "error": "今はこの部屋の絵文字を更新できません。",
+        "created": "ルームに絵文字を追加しました。"
       },
       "queue": {
         "currentDj": "現在の DJ",
@@ -2475,6 +3343,7 @@
         "user": "ユーザー",
         "verified": "検証済み",
         "subscriber": "加入者",
+        "vip": "VIP",
         "resident_dj": "レジデント DJ",
         "bouncer": "バウンサー",
         "manager": "監督",
@@ -2487,6 +3356,7 @@
         "aliases": {
           "everyone": "全員",
           "djs": "ディージェイ",
+          "vip": "vip",
           "resident_dj": "レジデントDJ",
           "bouncer": "バウンサー",
           "manager": "マネージャー",
@@ -2546,8 +3416,12 @@
         "unmute": "ミュート解除",
         "ban": "部屋からの追放",
         "setAsHostSuccess": "{username} が今、この部屋の新しいホストです。",
+        "hostTransferConfirmTitle": "このルームを譲渡しますか？",
+        "hostTransferConfirmDescription": "{username} が新しいホストになり、現在のホストは共同ホストになります。所有権と権限はすぐに変更されます。",
+        "hostTransferConfirmSubmit": "ルームを譲渡",
         "role": "部屋の役割",
-        "hostTransferHint": "このホストを降格させるには、まず別の人を部屋の責任者に据えてください。"
+        "hostTransferHint": "このホストを降格させるには、まず別の人を部屋の責任者に据えてください。",
+        "botCommand": "非公開コマンド"
       },
       "report": {
         "userTitle": "ユーザーを報告",
@@ -2669,7 +3543,31 @@
     }
   },
   "app": {
+    "navigationCategories": {
+      "access": "アクセス",
+      "playback": "再生とキュー",
+      "chat": "チャット",
+      "bots": "ボットと自動化",
+      "platform": "プラットフォーム",
+      "rooms": "ルームとイベント",
+      "appearance": "外観",
+      "integrations": "連携",
+      "commerce": "ショップ",
+      "progression": "XPと成長",
+      "economy": "経済と特典",
+      "configuration": "設定",
+      "community": "コミュニティ",
+      "security": "セキュリティ",
+      "moderation": "モデレーション",
+      "roles": "ロールと表示",
+      "catalog": "カタログ",
+      "account": "アカウントとプロフィール",
+      "gifts": "ギフト",
+      "room": "ルーム",
+      "features": "機能"
+    },
     "sidebar": {
+      "promoter": "友達紹介",
       "explore": "探索",
       "playlists": "プレイリスト",
       "fans": "ファン",
@@ -2684,13 +3582,20 @@
       "logout": "サインアウト",
       "loggingOut": "サインアウトします...",
       "logoutError": "今すぐ退院手続きはできません。",
+      "logoutConfirmTitle": "サインアウトしますか？",
+      "logoutConfirmDescription": "アカウントにアクセスするには、もう一度サインインする必要があります。",
+      "logoutConfirmCancel": "サインインしたまま",
       "profile": "プロフィール",
       "myStuff": "私の持ち物",
       "recentlyPlayed": "最近プレイされた",
       "communities": "私のコミュニティ",
       "team": "チーム",
       "progression": "進行",
-      "leaveRoom": "スペースを空けて"
+      "leaveRoom": "ルームを退出",
+      "leaveRoomConfirmTitle": "このルームを退出しますか？",
+      "leaveRoomConfirmDescription": "DJキューから退出してダッシュボードに戻ります。",
+      "leaveRoomConfirmAction": "ルームを退出",
+      "leaveRoomConfirmCancel": "ルームに残る"
     },
     "notificationCenter": {
       "button": "通知",
@@ -2708,7 +3613,8 @@
       "items": {
         "mention": {
           "title": "あなたのことが言及されました",
-          "roomTitle": "部屋の言及"
+          "roomTitle": "部屋の言及",
+          "mediaAttachment": "添付メディア"
         },
         "fan": {
           "title": "新しいファン",
@@ -2747,6 +3653,340 @@
       "xpTo": "次のレベルへXP"
     },
     "errorCodes": {
+      "ROOM_AVATAR_ROOM_ONLY": "このアバターは{room}内でのみ使用できます。装備するにはそのルームに入ってください。他のルームでは使用できません。",
+      "ROOM_AVATAR_ROLE_REQUIRED": "このアバターには{room}で{role}以上のロールが必要です。",
+      "ROOM_AVATAR_INACTIVE": "このルーム限定アバターは現在利用できません。",
+
+      "IP_BANNED": "このIPアドレスは管理者によってブロックされています。",
+      "UNAUTHORIZED": "認証が必要です。",
+      "KLIPY_QUERY_REQUIRED": "GIFの検索語を入力してください。",
+      "KLIPY_PROVIDER_UNAVAILABLE": "GIF検索は一時的に利用できません。後で再試行してください。",
+      "EMOJI_CATALOG_UNAVAILABLE": "絵文字カタログは一時的に利用できません。",
+      "KLIPY_NOT_CONFIGURED": "GIF検索は一時的に利用できません。後で再試行してください。",
+      "KLIPY_UPSTREAM_ERROR": "GIF検索は一時的に利用できません。後で再試行してください。",
+      "KLIPY_INVALID_RESPONSE": "GIF検索は一時的に利用できません。後で再試行してください。",
+      "KLIPY_AUTH_FAILED": "GIF検索は一時的に利用できません。後で再試行してください。",
+      "EMAIL_NOT_VERIFIED": "ログインする前にメールアドレスを確認してください。",
+      "SOCIAL_ACCOUNT_ALREADY_LINKED": "このソーシャルアカウントは連携済みです。",
+      "EMAIL_CAN_NOT_BE_UPDATED": "現在メールアドレスを変更できません。",
+      "EMAIL_ALREADY_VERIFIED": "このメールアドレスは確認済みです。",
+      "EMAIL_MISMATCH": "メールアドレスがリクエストと一致しません。",
+      "USERNAME_IS_IMMUTABLE": "この操作ではユーザー名を変更できません。",
+      "PASSWORD_ALREADY_SET": "このアカウントにはパスワードがあります。パスワード変更を使用してください。",
+      "TOTP_ALREADY_ENABLED": "認証アプリによる確認は有効になっています。",
+      "BACKUP_CODES_NOT_ENABLED": "このアカウントのリカバリーコードは無効です。",
+      "INVALID_BACKUP_CODE": "リカバリーコードが無効、または使用済みです。",
+      "INVALID_USERNAME_OR_PASSWORD": "その身分証ではサインインできませんでした。",
+      "INVALID_EMAIL_OR_PASSWORD": "その身分証ではサインインできませんでした。",
+      "INVALID_USERNAME": "ユーザー名には文字、数字、ピリオド、アンダー、ハイフンのみが含まれ、スペースは入れません。",
+      "UNEXPECTED_ERROR": "今はアクションを完了できませんでした。",
+      "INVALID_USER": "その身分証ではサインインできませんでした。",
+      "PROVIDER_NOT_FOUND": "アカウントプロバイダー：値を確認して再試行してください。",
+      "ID_TOKEN_NOT_SUPPORTED": "アカウントプロバイダー：値を確認して再試行してください。",
+      "USER_EMAIL_NOT_FOUND": "有効なメールアドレスを入力してください。",
+      "USER_ALREADY_EXISTS": "そのメールアドレスのアカウントはすでに存在しています。",
+      "USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL": "そのメールアドレスのアカウントはすでに存在しています。",
+      "CHANGE_EMAIL_DISABLED": "現在メールアドレスを変更できません。",
+      "CREDENTIAL_ACCOUNT_NOT_FOUND": "その身分証ではサインインできませんでした。",
+      "FAILED_TO_UNLINK_LAST_ACCOUNT": "削除する前に別のログイン方法を追加してください。",
+      "ACCOUNT_NOT_FOUND": "その身分証ではサインインできませんでした。",
+      "USER_ALREADY_HAS_PASSWORD": "このアカウントにはパスワードがあります。パスワード変更を使用してください。",
+      "CROSS_SITE_NAVIGATION_LOGIN_BLOCKED": "この措置はサイトのセキュリティ保護によって阻止されました。",
+      "MISSING_OR_NULL_ORIGIN": "この措置はサイトのセキュリティ保護によって阻止されました。",
+      "LINKED_ACCOUNT_ALREADY_EXISTS": "このソーシャルアカウントは連携済みです。",
+      "INVALID_CALLBACK_URL": "この措置はサイトのセキュリティ保護によって阻止されました。",
+      "INVALID_REDIRECT_URL": "この措置はサイトのセキュリティ保護によって阻止されました。",
+      "INVALID_ERROR_CALLBACK_URL": "この措置はサイトのセキュリティ保護によって阻止されました。",
+      "INVALID_NEW_USER_CALLBACK_URL": "この措置はサイトのセキュリティ保護によって阻止されました。",
+      "CALLBACK_URL_REQUIRED": "無効なリクエストです。",
+      "FIELD_NOT_ALLOWED": "無効なリクエストです。",
+      "ASYNC_VALIDATION_NOT_SUPPORTED": "無効なリクエストです。",
+      "VALIDATION_ERROR": "無効なリクエストです。",
+      "MISSING_FIELD": "無効なリクエストです。",
+      "METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED": "無効なリクエストです。",
+      "BODY_MUST_BE_AN_OBJECT": "身体は無効 JSON 。",
+      "TOTP_NOT_CONFIGURED": "この環境ではメールまたはSMS認証が設定されていません。",
+      "OTP_EXPIRED": "二要素認証コードの有効期限が切れました。新しいコードをリクエストしてください。",
+      "INVALID_OTP": "二要素認証コードが無効です。",
+      "TOO_MANY_ATTEMPTS": "試行回数が多すぎます。新しいコードをリクエストしてください。",
+      "VERIFICATION_FAILED": "セキュリティチェックの検証ができませんでした。",
+      "MISSING_RESPONSE": "セキュリティチェックを完了して続行してください。",
+      "FAILED_TO_CREATE_USER": "今はアカウントを作成することはできませんでした。",
+      "FAILED_TO_CREATE_SESSION": "今はサインインできません。",
+      "FAILED_TO_GET_SESSION": "セッションを復元できませんでした。再度サインインしてください。",
+      "FAILED_TO_UPDATE_USER": "今はユーザー名を保存できませんでした。",
+      "FAILED_TO_GET_USER_INFO": "セッションを復元できませんでした。再度サインインしてください。",
+      "SESSION_EXPIRED": "セッションを復元できませんでした。再度サインインしてください。",
+      "SESSION_NOT_FRESH": "セッションを復元できませんでした。再度サインインしてください。",
+      "INVALID_TWO_FACTOR_COOKIE": "この二要素による異議申し立てはもはや保留されていません。再度サインインしてください。",
+      "INVALID_TOKEN": "このログインリンクは無効か、有効期限が切れています。新しいリンクをリクエストしてください。",
+      "TOKEN_EXPIRED": "このログインリンクは無効か、有効期限が切れています。新しいリンクをリクエストしてください。",
+      "FAILED_TO_CREATE_VERIFICATION": "今は二要素認証が完了できませんでした。",
+      "VERIFICATION_EMAIL_NOT_ENABLED": "今は二要素認証が完了できませんでした。",
+      "ACHIEVEMENT_ICON_COLOR_INVALID": "実績アイコンの色：値を確認して再試行してください。",
+      "ACHIEVEMENT_ID_REQUIRED": "実績ID：必須項目をすべて入力してください。",
+      "ACHIEVEMENT_ID_INVALID": "実績ID：値を確認して再試行してください。",
+      "ACHIEVEMENT_ID_IN_USE": "実績ID：すでに使用されています。別の値を選択してください。",
+      "ACHIEVEMENT_FIELD_REQUIRED": "実績の項目：必須項目をすべて入力してください。",
+      "ACHIEVEMENT_FIELD_TOO_LONG": "実績の項目：許可された上限を超えています。",
+      "ACHIEVEMENT_HOUR_INVALID": "時間帯：値を確認して再試行してください。",
+      "ACHIEVEMENT_HOUR_WINDOW_INCOMPLETE": "時間帯：必須項目をすべて入力してください。",
+      "ACHIEVEMENT_HOUR_WINDOW_INVALID": "時間帯：値を確認して再試行してください。",
+      "ACHIEVEMENT_DATETIME_INVALID": "日付範囲：値を確認して再試行してください。",
+      "ACHIEVEMENT_DATE_WINDOW_INCOMPLETE": "日付範囲：必須項目をすべて入力してください。",
+      "ACHIEVEMENT_DATE_WINDOW_INVALID": "日付範囲：値を確認して再試行してください。",
+      "ACHIEVEMENT_TIMEZONE_INVALID": "タイムゾーン：値を確認して再試行してください。",
+      "ACHIEVEMENT_CREATE_FAILED": "実績：現在利用できません。後で再試行してください。",
+      "ACHIEVEMENT_TRIGGER_INVALID": "実績の発動条件：値を確認して再試行してください。",
+      "ACHIEVEMENT_THRESHOLD_INVALID": "実績の目標値：値を確認して再試行してください。",
+      "ACHIEVEMENT_REWARD_BADGE_NOT_FOUND": "バッジ：見つかりません。",
+      "INVALID_BADGE_ID": "バッジ：値を確認して再試行してください。",
+      "BADGE_NOT_FOUND": "バッジ：見つかりません。",
+      "INVALID_EVENT_BADGE": "バッジ：値を確認して再試行してください。",
+      "INVALID_SITEWIDE_GIFT_BADGE": "バッジ：値を確認して再試行してください。",
+      "INVALID_BILLING_PRICE": "請求価格：値を確認して再試行してください。",
+      "INVALID_EVENT_BADGE_LOOKBACK": "イベントバッジの集計期間：値を確認して再試行してください。",
+      "INVALID_EVENT_BADGE_REPORT_WINDOW": "イベントバッジの集計期間：値を確認して再試行してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_ICON": "ロールアイコン：値を確認して再試行してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_ICON_URL": "ロールアイコン：値を確認して再試行してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_ORDER": "ロールの順序：値を確認して再試行してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_SLUG": "ロール識別子：値を確認して再試行してください。",
+      "INVALID_CUSTOM_ROOM_ROLE_SLUG": "ロール識別子：値を確認して再試行してください。",
+      "CUSTOM_ROOM_ROLE_SLUG_TAKEN": "ロール識別子：すでに使用されています。別の値を選択してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_NAME": "ロール名：値を確認して再試行してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_NAME_PT_BR": "ロール名：値を確認して再試行してください。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_NAME_EN_US": "ロール名：値を確認して再試行してください。",
+      "INVALID_CUSTOM_ROOM_ROLE_NAME": "ロール名：値を確認して再試行してください。",
+      "GLOBAL_CUSTOM_ROLE_NOT_FOUND": "ロール：見つかりません。",
+      "INVALID_CUSTOM_ROOM_ROLE_BASE": "ロール：値を確認して再試行してください。",
+      "CUSTOM_ROOM_ROLE_NOT_FOUND": "ロール：見つかりません。",
+      "INVALID_GLOBAL_CUSTOM_ROLE_REFERENCE": "ロール：値を確認して再試行してください。",
+      "CUSTOM_ROOM_ROLE_DISABLED": "ロール：無効です。",
+      "INVALID_SESSION_ID": "セッション：値を確認して再試行してください。",
+      "SESSION_NOT_FOUND": "セッション：見つかりません。",
+      "INVALID_INVENTORY_ITEM": "インベントリアイテム：値を確認して再試行してください。",
+      "INVALID_STORE_CATALOG_ITEM": "インベントリアイテム：値を確認して再試行してください。",
+      "MAINTENANCE_END_MUST_BE_AFTER_START": "メンテナンス開始・終了日時：値を確認して再試行してください。",
+      "INVALID_CHAT_SYSTEM_MESSAGE_RETENTION": "システムメッセージの有効期限：値を確認して再試行してください。",
+      "INVALID_CHAT_HISTORY_MESSAGE_LIMIT": "Chat履歴の上限：許可された上限を超えています。",
+      "INVALID_ROOM_DISCONNECT_GRACE_SECONDS": "部屋からの切断猶予時間：値を確認して再試行してください。",
+      "INVALID_GLOBAL_DONATION_GOAL_TARGET": "寄付目標額：値を確認して再試行してください。",
+      "GLOBAL_DONATION_GOAL_TARGET_TOO_HIGH": "寄付目標額：許可された上限を超えています。",
+      "GLOBAL_DONATION_GOAL_TARGET_REQUIRED": "寄付目標額：必須項目をすべて入力してください。",
+      "GLOBAL_DONATION_GOAL_TITLE_TOO_LONG": "寄付目標のタイトル：許可された上限を超えています。",
+      "GLOBAL_DONATION_GOAL_DESCRIPTION_TOO_LONG": "寄付目標の説明：許可された上限を超えています。",
+      "INVALID_GLOBAL_DONATION_GOAL_RAISED_ADJUSTMENT_AMOUNT": "寄付総額の調整：値を確認して再試行してください。",
+      "GLOBAL_DONATION_GOAL_RAISED_ADJUSTMENT_TOO_HIGH": "寄付総額の調整：許可された上限を超えています。",
+      "INVALID_GLOBAL_DONATION_GOAL_RAISED_ADJUSTMENT": "寄付総額の調整：値を確認して再試行してください。",
+      "AVATAR_NOT_FOUND": "アバター：見つかりません。",
+      "ROOM_AVATAR_ROLE_ASSIGNMENT_INVALID": "アバター：値を確認して再試行してください。",
+      "ROOM_STAFF_FORCED_AVATAR_INVALID": "アバター：値を確認して再試行してください。",
+      "INVALID_AVATAR_ID": "アバター：値を確認して再試行してください。",
+      "ROOM_AVATAR_ROLE_ASSIGNMENTS_INVALID": "アバター：値を確認して再試行してください。",
+      "INVALID_AVATAR_CATEGORY": "アバターカテゴリ：値を確認して再試行してください。",
+      "AVATAR_CATEGORY_NOT_FOUND": "アバターカテゴリ：見つかりません。",
+      "BACKGROUND_CREATE_FAILED": "背景：現在利用できません。後で再試行してください。",
+      "BACKGROUND_NOT_FOUND": "背景：見つかりません。",
+      "VIDEOFRAME_CREATE_FAILED": "動画フレーム：現在利用できません。後で再試行してください。",
+      "VIDEOFRAME_NOT_FOUND": "動画フレーム：見つかりません。",
+      "FEATURED_ROOM_LIMIT_REACHED": "注目の部屋：許可された上限を超えています。",
+      "INVALID_GLOBAL_ANNOUNCEMENT_TITLE": "お知らせのタイトル：値を確認して再試行してください。",
+      "INVALID_GLOBAL_ANNOUNCEMENT_MESSAGE": "お知らせ：値を確認して再試行してください。",
+      "GLOBAL_ANNOUNCEMENT_NOT_FOUND": "お知らせ：見つかりません。",
+      "ROOM_NAME_TOO_SHORT": "部屋名：値を確認して再試行してください。",
+      "ROOM_NAME_TOO_LONG": "部屋名：許可された上限を超えています。",
+      "ROOM_NAME_LENGTH_INVALID": "部屋名：値を確認して再試行してください。",
+      "ROOM_SLUG_INVALID": "部屋のアドレス：値を確認して再試行してください。",
+      "ROOM_SLUG_IN_USE": "部屋のアドレス：すでに使用されています。別の値を選択してください。",
+      "INVALID_ROOM_LOGO_URL": "部屋のロゴ：値を確認して再試行してください。",
+      "INVALID_CHAT_WORD_FILTERS": "単語フィルター：値を確認して再試行してください。",
+      "INVALID_ROOM_WORD_FILTERS": "単語フィルター：値を確認して再試行してください。",
+      "INVALID_STAGE_HOVER_SETTING": "ステージのプロフィールプレビュー設定：値を確認して再試行してください。",
+      "INVALID_LEVEL": "レベル：値を確認して再試行してください。",
+      "INVALID_XP": "XP量：値を確認して再試行してください。",
+      "INVALID_COINS": "コイン数：値を確認して再試行してください。",
+      "INVALID_DIAMONDS": "ダイヤモンド数：値を確認して再試行してください。",
+      "INVALID_BULK_TARGET_SCOPE": "一括操作の対象：値を確認して再試行してください。",
+      "INVALID_XP_OPERATION": "XP操作：値を確認して再試行してください。",
+      "INVALID_COUNTRY_CODE": "国コード：値を確認して再試行してください。",
+      "INVALID_SUBSCRIPTION_GIFT_MONTHS": "ギフトサブスクリプションの期間：値を確認して再試行してください。",
+      "ADMIN_SUBSCRIPTION_GIFT_UNAVAILABLE": "ギフトサブスクリプション：現在利用できません。後で再試行してください。",
+      "ROOM_SUBSCRIPTION_GIFT_UNAVAILABLE": "ギフトサブスクリプション：現在利用できません。後で再試行してください。",
+      "INVALID_ROOM_SUBSCRIPTION_GIFT_COUNT": "ギフト受取人数：値を確認して再試行してください。",
+      "INVALID_WALLET_CURRENCY": "ウォレット通貨：値を確認して再試行してください。",
+      "MISC_SHOP_WALLET_CURRENCY_INVALID": "ウォレット通貨：値を確認して再試行してください。",
+      "INVALID_WALLET_AMOUNT": "ウォレット金額：値を確認して再試行してください。",
+      "INVALID_WALLET_OPERATION": "ウォレット操作：値を確認して再試行してください。",
+      "WARNING_NOT_FOUND": "警告：見つかりません。",
+      "SUBSCRIPTION_ITEM_MISSING": "サブスクリプション：見つかりません。",
+      "SUBSCRIPTION_HISTORY_UNAVAILABLE": "サブスクリプション：現在利用できません。後で再試行してください。",
+      "CHECKOUT_SESSION_NOT_FOUND": "決済セッション：見つかりません。",
+      "INVALID_IMAGE_URL": "画像：値を確認して再試行してください。",
+      "INVALID_IMAGE": "画像：値を確認して再試行してください。",
+      "INVALID_LASTFM_ARTIST": "アーティスト：値を確認して再試行してください。",
+      "INVALID_LASTFM_TRACK": "曲：値を確認して再試行してください。",
+      "PLAYLIST_JSON_TRACK_UNRESOLVED": "曲：現在利用できません。後で再試行してください。",
+      "LASTFM_UNAVAILABLE": "Last.fm接続：現在利用できません。後で再試行してください。",
+      "LASTFM_TEMPORARILY_UNAVAILABLE": "Last.fm接続：現在利用できません。後で再試行してください。",
+      "LASTFM_API_ERROR": "Last.fm接続：現在利用できません。後で再試行してください。",
+      "LASTFM_SESSION_UNAVAILABLE": "Last.fm接続：現在利用できません。後で再試行してください。",
+      "LASTFM_TOKEN_UNAVAILABLE": "Last.fm認証トークン：現在利用できません。後で再試行してください。",
+      "INVALID_LASTFM_TOKEN": "Last.fm認証トークン：値を確認して再試行してください。",
+      "INVALID_LASTFM_TIMESTAMP": "Last.fm再生時刻：値を確認して再試行してください。",
+      "PLAYLIST_IMPORT_PART_NAME_UNAVAILABLE": "インポートしたプレイリスト名：現在利用できません。後で再試行してください。",
+      "PRIVATE_CONVERSATION_NOT_FOUND": "プライベート会話：見つかりません。",
+      "PRIVATE_MESSAGE_NOT_FOUND": "プライベートメッセージ：見つかりません。",
+      "INVALID_PRIVATE_MESSAGE_CONTENT": "プライベートメッセージ：値を確認して再試行してください。",
+      "PRIVATE_MESSAGE_TOO_LONG": "プライベートメッセージ：許可された上限を超えています。",
+      "PRIVATE_MESSAGE_REPLY_NOT_FOUND": "プライベートメッセージ：見つかりません。",
+      "ROOM_BOT_RENAME_UNAVAILABLE": "ボット名：現在利用できません。後で再試行してください。",
+      "ROOM_BOT_RENAME_INPUT_INVALID": "ボット名：値を確認して再試行してください。",
+      "ROOM_PASSWORD_REQUIRED": "部屋のパスワード：必須項目をすべて入力してください。",
+      "ROOM_PASSWORD_TOO_SHORT": "部屋のパスワード：値を確認して再試行してください。",
+      "ROOM_PASSWORD_TOO_LONG": "部屋のパスワード：許可された上限を超えています。",
+      "ROOM_EMOJI_LIMIT_REACHED": "部屋の絵文字：許可された上限を超えています。",
+      "INVALID_ROOM_PRESENCE_REPORT_RANGE": "在室レポートの期間：値を確認して再試行してください。",
+      "ROOM_PRESENCE_REPORT_RANGE_TOO_LONG": "在室レポートの期間：許可された上限を超えています。",
+      "ROOM_EVENTS_SINCE_INVALID": "在室レポートの期間：値を確認して再試行してください。",
+      "ROOM_PRESENTATION_MEDIA_INVALID": "部屋の紹介メディア：値を確認して再試行してください。",
+      "ROOM_PRESENTATION_MEDIA_TOO_LONG": "部屋の紹介メディア：許可された上限を超えています。",
+      "SAVED_BANNER_INVALID": "保存済みバナー：値を確認して再試行してください。",
+      "SAVED_BANNER_NOT_FOUND": "保存済みバナー：見つかりません。",
+      "SAVED_BANNER_LIMIT": "保存済みバナー：許可された上限を超えています。",
+      "INVALID_TIME_FORMAT": "時間フォーマット：値を確認して再試行してください。",
+      "INVALID_NOTIFY_CHAT_MENTIONS": "チャットでの言及：値を確認して再試行してください。",
+      "INVALID_NOTIFY_FAN_TOASTS": "ファン通知：値を確認して再試行してください。",
+      "INVALID_PLAY_MENTION_SOUND": "言われたら音を出してください：値を確認して再試行してください。",
+      "INVALID_PLAY_WHISPER_SOUND": "ささやき声を出す音を流してみて：値を確認して再試行してください。",
+      "INVALID_PRESENCE_STATUS": "アカウント設定：値を確認して再試行してください。",
+      "INVALID_SELECTED_BADGES": "アカウント設定：値を確認して再試行してください。",
+      "INVALID_SHOW_CHAT_BADGE": "アカウント設定：値を確認して再試行してください。",
+      "INVALID_SHOW_FAN_RELATIONS_ON_PROFILE": "番組ファンとファン：値を確認して再試行してください。",
+      "INVALID_SHOW_SUPPORTER_BADGES": "自動サポーターバッジを表示する：値を確認して再試行してください。",
+      "INVALID_SHOW_ONLINE_ROOM_ON_PROFILE": "オンライン時は現在の部屋を表示：値を確認して再試行してください。",
+      "INVALID_SHOW_LAST_SEEN_ON_PROFILE": "最後の活動を表示：値を確認して再試行してください。",
+      "INVALID_BLOCK_UNKNOWN_WHISPERS": "見知らぬ人のささやき声：値を確認して再試行してください。",
+      "INVALID_AUTO_OPEN_INCOMING_WHISPERS": "新しいささやきのポップアップを表示：値を確認して再試行してください。",
+      "INVALID_SFW_MODE": "SFW モード：値を確認して再試行してください。",
+      "INVALID_SFW_MODE_AUDIO_ENABLED": "SFWモードのオーディオ：値を確認して再試行してください。",
+      "INVALID_LASTFM_SCROBBLING_ENABLED": "今はスクロブルズ Last.fm 更新できませんでした。",
+      "INVALID_GIF_FAVORITES": "アカウント設定：値を確認して再試行してください。",
+      "ROOM_POLL_CREATE_FAILED": "投票：現在利用できません。後で再試行してください。",
+      "GLOBAL_POLL_SERVICE_UNAVAILABLE": "投票：現在利用できません。後で再試行してください。",
+      "ROOM_POLL_QUESTION_INVALID": "投票の質問：値を確認して再試行してください。",
+      "ROOM_POLL_DESCRIPTION_TOO_LONG": "投票の説明：許可された上限を超えています。",
+      "ROOM_POLL_OPTIONS_INVALID": "投票の選択肢：値を確認して再試行してください。",
+      "ROOM_POLL_OPTION_DUPLICATE": "投票の選択肢：すでに使用されています。別の値を選択してください。",
+      "ROOM_POLL_DURATION_INVALID": "投票期間：値を確認して再試行してください。",
+      "INVALID_BOOLEAN_INPUT": "有効化状態：値を確認して再試行してください。",
+      "INVALID_INTEGER_INPUT": "整数：値を確認して再試行してください。",
+      "INVALID_STRING_INPUT": "テキスト値：値を確認して再試行してください。",
+      "INVALID_PROVIDER": "アカウントプロバイダー：値を確認して再試行してください。",
+      "INVALID_LASTFM_CALLBACK_URL": "アカウントプロバイダー：値を確認して再試行してください。",
+      "LASTFM_REAUTH_REQUIRED": "続行するにはLast.fmアカウントを再連携してください。",
+      "LASTFM_AUTHORIZATION_PENDING": "先にLast.fmで認証を完了してください。",
+      "CANNOT_REMOVE_LAST_LOGIN_METHOD": "削除する前に別のログイン方法を追加してください。",
+      "CANNOT_TERMINATE_CURRENT_SESSION": "現在のセッションを終了するにはログアウトしてください。",
+      "CANNOT_DELETE_SELF": "この操作では自分のアカウントを削除できません。",
+      "NO_WARNINGS": "このユーザーに警告はありません。",
+      "PRIVATE_MESSAGE_SELF_FORBIDDEN": "自分自身にプライベートメッセージは送信できません。",
+      "WHISPER_RECIPIENT_BLOCKS_UNKNOWN": "このユーザーは知らない相手からのプライベートメッセージを受け付けていません。",
+      "ROOM_NAME_PROTECTED": "この部屋名は予約されています。",
+      "ROOM_LIMIT_REACHED": "作成できる部屋数の上限に達しました。",
+      "ROOM_MAX_TRACK_DURATION_EXCEEDED": "この曲は部屋の再生時間上限を超えています。",
+      "ROOM_RUNTIME_BUSY": "部屋で別の操作を処理中です。少し待って再試行してください。",
+      "USER_DOES_NOT_OWN_ITEM": "このユーザーは選択したアイテムを所有していません。",
+      "ROOM_AVATAR_LINKED_ELSEWHERE": "このアバターは別の部屋にリンクされています。",
+      "AVATAR_DEFAULT_DELETE_FORBIDDEN": "標準アイテムは削除できません。",
+      "ROOM_SUBSCRIPTION_GIFT_NO_RECIPIENTS": "この部屋には対象の受取人がいません。",
+      "ROOM_BOT_CHAT_NOT_CONFIGURED": "このボットのChatは未設定です。",
+      "ROOM_MEDIA_PLAYBACK_BLOCKLIST_DISABLED": "部屋のメディアブロックリストは無効です。",
+      "CANNOT_BAN_SELF": "自分を抑えることはできません。",
+      "CANNOT_WARN_SELF": "自分を抑えることはできません。",
+      "ROOM_HOST_TRANSFER_FORBIDDEN": "この部屋の役割は管理できません。",
+      "ROOM_PERMISSION_MANAGE_LIVE_PLAYBACK_XP": "この部屋は管理できない。",
+      "ROOM_PERMISSION_MANAGE_HOST_THEME_PERMISSIONS": "この部屋のカスタムテーマは編集できません。",
+      "ROOM_PERMISSION_MANAGE_PEOPLE_GROUPING": "この部屋は管理できない。",
+      "CHAT_MEDIA_PREVIEW_URL_REQUIRED": "メディアリンクが必要です。",
+      "CHAT_MEDIA_PREVIEW_UNAVAILABLE": "このメディアのプレビューは利用できません。",
+      "CHAT_MESSAGE_REACTION_UNAVAILABLE": "有効なリアクション絵文字を選択してください。",
+      "ROOM_RUNTIME_LOCK_EXPIRED": "部屋で別の操作を処理中です。少し待って再試行してください。",
+      "ROOM_QUEUE_TARGET_NOT_IN_ROOM": "ターゲットユーザーは今、部屋にいません。",
+      "ROOM_STAFF_FORCED_AVATAR_LINKED_ELSEWHERE": "このアバターは別の部屋にリンクされています。",
+      "BACKGROUND_DEFAULT_DELETE_FORBIDDEN": "標準アイテムは削除できません。",
+      "VIDEOFRAME_DEFAULT_DELETE_FORBIDDEN": "標準アイテムは削除できません。",
+      "AMBASSADOR_CANNOT_MODERATE_STAFF": "プラットフォームチームに保護されているユーザーをモデレートすることはできません。",
+      "ROOM_PEOPLE_GROUPING_ADMIN_ONLY": "この操作は管理者のみが実行できます。",
+      "ROOM_LOGO_ADMIN_ONLY": "この操作は管理者のみが実行できます。",
+      "ROOM_ROLE_LIMITS_ADMIN_ONLY": "この操作は管理者のみが実行できます。",
+      "ROOM_STAFF_CHAT_ACCESS_ADMIN_ONLY": "この操作は管理者のみが実行できます。",
+      "ADMIN_ONLY_GLOBAL_SYSTEM_ALERT": "この操作は管理者のみが実行できます。",
+      "ADMIN_ONLY_ROOM_SYSTEM_ALERT": "この操作は管理者のみが実行できます。",
+      "ADMIN_ONLY_USER_SYSTEM_ALERT": "この操作は管理者のみが実行できます。",
+      "CANNOT_CLEAR_ADMIN_LOGS": "この操作は管理者のみが実行できます。",
+      "ROOM_EXTERNAL_MEDIA_SUBTITLE_UNAVAILABLE": "字幕を読み込めませんでした。",
+      "INVALID_ROOM_LIMITS": "部屋の上限設定を確認してください。",
+      "INVALID_PLATFORM_ROLES": "有効なプラットフォームロールを選択してください。",
+      "INVENTORY_UNAVAILABLE": "現在インベントリを利用できません。",
+      "INVALID_INVENTORY_ITEMS": "選択したインベントリアイテムを確認してください。",
+      "INVALID_AVATAR_FRAME_COUNT_MODE": "アバターのフレーム数モードを正しく選択してください。",
+      "INVALID_AVATAR_UNLOCK_LEVEL": "アバターの解放レベルを正しく選択してください。",
+      "STRIPE_PAYMENT_FAILED": "支払いに失敗しました。支払い方法を確認してください。",
+      "CHAT_IMAGE_UPLOAD_DISABLED": "Chatへの画像アップロードは無効です。",
+      "CHAT_IMAGE_REQUIRED": "アップロードする画像を選択してください。",
+      "CHAT_IMAGE_UNSUPPORTED_TYPE": "この画像形式には対応していません。",
+      "CHAT_IMAGE_TOO_LARGE": "画像がアップロードサイズの上限を超えています。",
+      "LASTFM_NOT_LINKED": "先にLast.fmアカウントを連携してください。",
+      "LASTFM_SCROBBLING_PAUSED": "Last.fmの再生履歴送信は一時停止中です。",
+      "LASTFM_UNEXPECTED_ERROR": "Last.fmへのリクエストに失敗しました。後でお試しください。",
+      "INVALID_REGION_QUERY": "有効な地域の検索条件を入力してください。",
+      "CHAT_MEDIA_PREVIEW_UNSUPPORTED": "このメディアのプレビューは利用できません。",
+      "PLAYLIST_TRACKS_LOAD_FAILED": "プレイリストの曲を読み込めませんでした。再試行してください。",
+      "ROOM_POLL_VOTES_LOAD_FAILED": "投票結果を読み込めませんでした。再試行してください。",
+      "USER_PROFILE_SUMMARY_IDS_INVALID": "プロフィールを読み込む有効なユーザーを選択してください。",
+      "ADMIN_SYSTEM_STATUS_FAILED": "システム状態を読み込めませんでした。再試行してください。",
+      "TEAM_PAGE_DISABLED": "チームページは無効です。",
+      "INVALID_LIMIT": "有効な上限を入力してください。",
+      "SOCIAL_LOGIN_DISABLED": "このプロバイダーでのログインは無効です。",
+      "ROOM_BOT_MUTED": "この部屋ではミュートだ。",
+      "ROOM_LINK_BLOCKED": "この部屋ではリンクがブロックされています。",
+      "AUTH_REQUIRED": "認証が必要です。",
+      "UNAUTHENTICATED": "認証が必要です。",
+      "INVALID_REQUEST": "無効なリクエストです。",
+      "CHAT_MEDIA_PREVIEW_TIMEOUT": "メディア提供者の対応に時間がかかりすぎました。",
+      "INVALID_AVATAR_CURRENCY": "有効な通貨を選択してください。",
+      "INVALID_AVATAR_TYPE": "有効なアイテムタイプを選びましょう。",
+      "INVALID_BADGE_CURRENCY": "有効な通貨を選択してください。",
+      "INVALID_BADGE_TYPE": "有効なアイテムタイプを選びましょう。",
+      "INVALID_BACKGROUND_CURRENCY": "有効な通貨を選択してください。",
+      "INVALID_BACKGROUND_TYPE": "有効なアイテムタイプを選びましょう。",
+      "INVALID_VIDEOFRAME_CURRENCY": "有効な通貨を選択してください。",
+      "INVALID_VIDEOFRAME_TYPE": "有効なアイテムタイプを選びましょう。",
+      "USERNAME_ALREADY_IN_USE": "このユーザー名はすでに使用されています。",
+      "INVALID_DAILY_XP_LIMIT": "1～24の整数で時間を入力し、有効な有効化状態を指定してください。",
+      "ACHIEVEMENT_REWARD_ITEMS_INVALID": "報酬を確認してください。購入の解放には日時制限のないレベル実績が必要です。",
+      "INVALID_LINKED_AVATAR_MINIMUM_ROLE": "リンクされたアバターに有効な最低ロールを選択してください。",
+      "INVALID_MEDIA_PLAYBACK_BLOCKLIST": "音楽と動画のブロックリストが無効です。",
+      "MEDIA_PLAYBACK_BLOCKED": "この音楽または動画はプラットフォームでブロックされています。",
+      "MISC_SHOP_CHECKOUT_AMOUNT_INVALID": "このアイテムの決済金額が無効です。",
+      "MISC_SHOP_CHECKOUT_REQUIRED": "このアイテムは決済ページから購入してください。",
+      "MISC_SHOP_CHECKOUT_UNAVAILABLE": "このアイテムの決済を開けませんでした。後でもう一度お試しください。",
+      "MISC_SHOP_FULFILLMENT_UNAVAILABLE": "現在このアイテムを付与できません。",
+      "MISC_SHOP_PROVIDER_UNSUPPORTED_CURRENCY": "この決済サービスはアイテムの通貨に対応していません。",
+      "MISC_SHOP_WALLET_CURRENCY": "ウォレットのコインまたはダイヤモンドで購入してください。",
+      "INVALID_PRIVATE_MESSAGE_REACTION": "有効なリアクション絵文字を選択してください。",
+      "PRIVATE_MESSAGE_REACTION_UNAVAILABLE": "プライベートメッセージのリアクションは利用できません。",
+      "ROOM_BAN_IP_NOT_AVAILABLE": "このユーザーの最近のIPアドレスが見つかりません。",
+      "ROOM_PERMANENT_BAN_FORBIDDEN": "永久追放を行えるのはコーディネーターと共同ホストのみです。一時追放を使用してください。",
+      "ROOM_CUSTOM_THEME_ACCESS_REQUIRED": "この部屋の色を編集するにはカスタムテーマを購入またはレンタルしてください。",
+      "MAINTENANCE_SCHEDULE_INVALID": "メンテナンスの予定時刻が無効です。",
+      "MAINTENANCE_SCHEDULE_MUST_BE_FUTURE": "メンテナンスは未来の日時に設定してください。",
+      "USERNAME_IS_ALREADY_TAKEN": "このユーザー名はすでに使用されています。",
+      "TERMS_NOT_ACCEPTED": "利用規約とプライバシーポリシーへの同意が必要です。",
+      "ROOM_CUSTOM_THEME_ADMIN_ONLY": "この操作は管理者のみが実行できます。",
+      "ROOM_CUSTOM_THEME_ALREADY_PERMANENT": "この部屋はすでにこの機能への永久アクセスを持っています。",
+      "ROOM_CUSTOM_THEME_ROOM_OWNER_REQUIRED": "この機能を購入できるのは部屋の所有者だけです。",
+      "ROOM_CUSTOM_THEME_ROOM_REQUIRED": "この機能を受け取る部屋を選択してください。",
       "ADMIN_RESET_TWO_FACTOR_REQUIRED": "全アカウントをリセットする前に、二要素認証を設定してください。",
       "ADMIN_STRONG_AUTH_FAILED": "管理者の認証情報を確認できませんでした。",
       "ACCOUNT_TEMPORARILY_LOCKED": "認証に何度も失敗しました。しばらくしてからもう一度お試しください。",
@@ -2769,6 +4009,8 @@
       "ROOM_PERMISSION_CREATE_ROOM_BOT": "この部屋でルームボットを作成することはできません。",
       "ROOM_PERMISSION_MANAGE_POLLS": "この部屋で投票を作成することはできません。",
       "ROOM_PERMISSION_CREATE_EVENTS": "この部屋でイベントを作成することはできません。",
+      "INVALID_EVENT_DESCRIPTION_PT_BR": "ポルトガル語の説明は{maxLength}文字以内で入力してください。",
+      "INVALID_EVENT_DESCRIPTION_EN_US": "英語の説明は{maxLength}文字以内で入力してください。",
       "ROOM_PERMISSION_MENTION_ROOM": "ここで部屋全体や部屋の役割を言及することはできません。",
       "ROOM_POLLS_DISABLED": "現在、投票は無効になっています。",
       "ROOM_POLL_NOT_ACTIVE": "この投票は現在は活動していません。",
@@ -2780,6 +4022,7 @@
       "ROOM_POLL_ACTIVE_LIMIT_REACHED": "この部屋にはすでに3つの投票が進行中です。もう一つを作る前に、まず一つ閉じましょう。",
       "USER_NOT_FOUND": "ユーザー未確認。",
       "ACHIEVEMENT_NOT_FOUND": "実績は見つかりませんでした。",
+      "ACHIEVEMENT_CATEGORY_NOT_FOUND": "実績カテゴリーが見つかりませんでした。",
       "ACHIEVEMENT_PROGRESS_INVALID": "達成進捗は0以上でなければなりません。",
       "ACHIEVEMENT_PROGRESS_LOAD_FAILED": "更新された進行状況を読み込めませんでした。",
       "WALLET_NOT_FOUND": "財布が見つかりません。",
@@ -2855,6 +4098,10 @@
       "PASSWORD_NEEDS_UPPERCASE": "パスワードには少なくとも1つの大文字を含める必要があります。",
       "PASSWORD_NEEDS_NUMBER": "パスワードには少なくとも1つの数字が含まれていなければなりません。",
       "PASSWORD_NEEDS_SPECIAL": "パスワードには少なくとも1つの特殊文字が含まれていなければなりません。",
+      "PASSWORD_COMPROMISED": "このパスワードはデータ漏えいで確認されているため、使用できません。",
+      "INVALID_SUBSCRIPTION_TENURE": "進捗を更新できませんでした。 (1–1200)",
+      "SUBSCRIPTION_TENURE_REQUIRES_ACTIVE": "進捗を調整する前にサブスクリプションを有効にしてください。",
+      "SUBSCRIPTION_TENURE_CONFLICT": "進捗を更新できませんでした。",
       "INVALID_SUBSCRIPTION_STATUS": "購読状況は無効です。",
       "INVALID_SUBSCRIPTION_CYCLE": "サブスクリプションサイクルは無効です。",
       "INVALID_SUBSCRIPTION_DAYS": "購読日数は無効です。",
@@ -2864,6 +4111,7 @@
       "MEDIA_URL_INVALID": "提供されたメディアの資料 URL 無効です。",
       "MEDIA_PROVIDER_TIMEOUT": "メディア提供者の対応に時間がかかりすぎました。",
       "MEDIA_PROVIDER_UNAVAILABLE": "メディアプロバイダーは現在利用できません。",
+      "PLAYLIST_METADATA_UNAVAILABLE": "現在プロバイダーからメディア情報を取得できません。後で再試行してください。これは動画の制限を示すものではありません。",
       "YOUTUBE_NOT_CONFIGURED": "YouTube 統合は設定されていません。",
       "SOUNDCLOUD_NOT_CONFIGURED": "SoundCloud 統合は設定されていません。",
       "SPOTIFY_NOT_CONFIGURED": "Spotify 統合は設定されていません。",
@@ -2890,8 +4138,8 @@
       "GIFT_RECIPIENT_NOT_FOUND": "このギフトを受け取るべきユーザーを見つけることができませんでした。",
       "GIFT_SELF_FORBIDDEN": "この贈り物はご自身の口座に送ることはできません。",
       "GIFT_RECIPIENT_ALREADY_SUBSCRIBED": "このユーザーはすでにアクティブなサブスクリプションを持っています。",
-      "SPOTIFY_DISABLED": "Spotify 現在は無効化されています。",
-      "SOUNDCLOUD_DISABLED": "SoundCloud 現在は無効化されています。",
+      "SPOTIFY_DISABLED": "Spotify は現在無効です。",
+      "SOUNDCLOUD_DISABLED": "SoundCloud は現在無効です。",
       "REPORT_REASON_INVALID": "レポートは5文字から500文字の間でなければなりません。",
       "REPORT_STAFF_NOTE_INVALID": "ノートは2文字から1000文字の間でなければなりません。",
       "CANNOT_REPORT_SELF": "自分のアカウントを報告することはできません。",
@@ -2921,6 +4169,8 @@
       "INVALID_PROGRESSION_BONUS_WINDOW_XP_MULTIPLIER": "XP倍率は1倍から10倍の間でなければなりません。",
       "INVALID_PROGRESSION_BONUS_WINDOW_COIN_MULTIPLIER": "コインの倍率は1倍から10倍の間でなければなりません。",
       "INVALID_GLOBAL_XP_COOLDOWN_SECONDS": "グローバル XP クールダウンは15秒から3600秒の間でなければなりません。",
+      "INVALID_WOOT_XP_COOLDOWN_SECONDS": "woot XPクールダウンは15秒から3600秒の間でなければなりません。",
+      "INVALID_DJ_TRACK_REPLAY_XP_COOLDOWN_SECONDS": "DJ XPクールダウンは15秒から3600秒の間でなければなりません。",
       "INVALID_DJ_PLAYBACK_XP_COOLDOWN_SECONDS": "DJ XPクールダウンは15秒から3600秒の間でなければなりません。",
       "ROOM_DONATION_AMOUNT_INVALID": "寄付金額は無効です。",
       "ROOM_DONATION_GOAL_DISABLED": "この部屋寄付目標は現在有効ではありません。",
@@ -2958,7 +4208,7 @@
       "STRIPE_EMBEDDED_CHECKOUT_NOT_CONFIGURED": "Stripe チェックアウトは設定されていません。",
       "STRIPE_CHECKOUT_ELEMENTS_NOT_CONFIGURED": "Stripe チェックアウトは設定されていません。",
       "ROOM_DONATION_GOAL_ADMIN_ONLY": "この部屋寄付の目標を変えられるのは管理者だけです。",
-      "ROOM_DESCRIPTION_TOO_LONG": "部屋の説明は最大でも250文字までです。",
+      "ROOM_DESCRIPTION_TOO_LONG": "ルームの説明が設定された文字数制限を超えています。",
       "ROOM_DONATION_GOAL_TARGET_INVALID": "寄付目標は有効な金額を使用しなければなりません。",
       "ROOM_DONATION_GOAL_TITLE_TOO_SHORT": "最低3キャラクターの寄付目標タイトルを設定しましょう。",
       "ROOM_DONATION_GOAL_TARGET_TOO_LOW": "寄付目標は最低1.00でなければなりません。",
@@ -3043,6 +4293,7 @@
       "ROOM_PERMISSION_CLEAR_AUDIT_LOGS": "この部屋のログは消去できません。",
       "ROOM_PERMISSION_CLEAR_CHAT": "この部屋チャットをクリアすることはできません。",
       "ROOM_PERMISSION_DELETE_ROOM": "この部屋は削除できません。",
+      "ROOM_DELETE_TWO_FACTOR_REQUIRED": "ルームを削除する前に、アカウント設定で二要素認証を有効にしてください。",
       "ROOM_PERMISSION_JOIN_QUEUE": "この部屋の DJ 列には入れません。",
       "ROOM_PERMISSION_KICK_USER": "この部屋でユーザーをキックできない。",
       "ROOM_PERMISSION_MANAGE_EMOJIS": "この部屋の絵文字は管理できません。",
@@ -3061,6 +4312,7 @@
       "ROOM_QUEUE_RESTRICTED": "この部屋の DJ 列には入れません。",
       "ROOM_ROLE_LIMIT_REACHED": "この役割にはすでに多くの人がいて、この部屋には不十分です。",
       "ROOM_SLOW_MODE_ACTIVE": "スローモードは有効です。次のメッセージを送る前に {duration} 待ってください。",
+      "ROOM_PRESENTATION_MEDIA_UNSAFE": "この画像または GIF のドメインはグローバルメディアモデレーションによってブロックされています。",
       "ROOM_UNSAFE_MEDIA_BLOCKED": "成人向け/+18の画像や GIF リンクはチャット内で許可されていません。",
       "ROOM_WORD_BLOCKED": "このメッセージには、この部屋でブロックされた単語が含まれています。",
       "ROOM_YOUTUBE_LIVE_NOT_ALLOWED": "アクティブプレイリストの最初のトラックは YouTube ライブストリームで、この部屋ではライブ配信は許可されていません。",
@@ -3083,7 +4335,9 @@
       "WS_MESSAGE_TOO_LARGE": "あなたが送ったメッセージが大きすぎます。",
       "WS_RATE_LIMITED": "部屋の接続が命令を送るのが速すぎた。少し待ってからもう一度試してみて。",
       "WS_UNKNOWN_COMMAND": "不明コマンド: {command}。",
-      "WS_UNSUPPORTED_VERSION": "この websocket プロトコルバージョンはサポートされていません。"
+      "WS_UNSUPPORTED_VERSION": "この websocket プロトコルバージョンはサポートされていません。",
+      "CHAT_WORD_FILTER_ENTRY_TOO_LONG": "項目{entry}は{length}文字です。1項目の上限は{limit}文字です。",
+      "CHAT_WORD_FILTER_LIMIT_EXCEEDED": "フィルターは{count}項目です。上限は{limit}項目です。"
     },
     "shop": {
       "eyebrow": "WavezFM ストア",
@@ -3101,6 +4355,7 @@
       "filterProductLabel": "製品",
       "filterCategoryLabel": "カテゴリー",
       "filterTypeLabel": "種類",
+      "categoryUnlockLevel": "レベル {level}",
       "allCategories": "すべてのカテゴリー",
       "allTypes": "全員",
       "allTypesHint": "このカテゴリで利用可能なすべてのアイテムタイプ。",
@@ -3174,31 +4429,31 @@
       "diamondAccessBody": "サブスクリプションがなくても、 Premium アイテムはダイヤモンドでアンロック可能です。",
       "subscriberAccessTitle": "購読中",
       "subscriberAccessBody": "サブスクリプションですでにすべての Premium アイテムがアンロックされます。",
-      "subscriberBenefitsTitle": "現在の福利厚生",
-      "subscriberBenefitsSubtitle": "システム内で設定されたアクティブ加入者特典から生成されます。",
+      "subscriberBenefitsTitle": "サブスクリプションに含まれる特典",
+      "subscriberBenefitsSubtitle": "サブスクリプションが有効な間に利用できる内容を確認できます。",
       "subscriberBenefitsCount": "{count, plural, one {# 利点} other {# 利点}}",
-      "subscriberBenefitPremiumAvatarsTitle": "Premium アバター",
-      "subscriberBenefitPremiumAvatarsDescription": "アイテムごとにダイヤモンドを使わずに Premium アバターを使えます。",
-      "subscriberBenefitPremiumBadgesTitle": "Premium バッジ",
-      "subscriberBenefitPremiumBadgesDescription": "購読者限定の Premium バッジを購入または獲得できます。",
-      "subscriberBenefitPremiumBackgroundsTitle": "Premium 背景",
-      "subscriberBenefitPremiumBackgroundsDescription": "Premium背景を選んで部屋をカスタマイズできます。",
-      "subscriberBenefitPremiumVideoFramesTitle": "Premium ビデオフレーム",
-      "subscriberBenefitPremiumVideoFramesDescription": "Premium映像フレームでプレイヤーをカスタマイズしましょう。",
+      "subscriberBenefitPremiumAvatarsTitle": "プレミアムアバター",
+      "subscriberBenefitPremiumAvatarsDescription": "アイテムごとにダイヤモンドを使わずに、プレミアムアバターを利用できます。",
+      "subscriberBenefitPremiumBadgesTitle": "プレミアムバッジ",
+      "subscriberBenefitPremiumBadgesDescription": "サブスクリプション利用者限定のプレミアムバッジを購入または受け取れます。",
+      "subscriberBenefitPremiumBackgroundsTitle": "プレミアム背景",
+      "subscriberBenefitPremiumBackgroundsDescription": "プレミアム背景を選んで、ルームの見た目を変えられます。",
+      "subscriberBenefitPremiumVideoFramesTitle": "プレミアム動画フレーム",
+      "subscriberBenefitPremiumVideoFramesDescription": "プレーヤーを囲むプレミアム動画フレームで、見た目をカスタマイズできます。",
       "subscriberBenefitSubscriptionBadgesTitle": "限定バッジ",
-      "subscriberBenefitSubscriptionBadgesDescription": "{count, plural, one {# 購読者向けにストアでバッジが購入可能です。} other {# 購読者向けにストアでバッジが販売されています。}}",
-      "subscriberBenefitPlaylistLimitTitle": "プレイリストごとにつき{count}曲",
-      "subscriberBenefitPlaylistLimitDescription": "現在の自由度限界は {freeCount}です。",
-      "subscriberBenefitRoomLimitTitle": "{count} 所有の部屋",
-      "subscriberBenefitRoomLimitDescription": "現在の自由度限界は {freeCount}です。",
-      "subscriberBenefitEmojiLimitTitle": "{count} 部屋絵文字",
-      "subscriberBenefitEmojiLimitDescription": "加入者が上限を使う場合。現在の拠点: {baseCount}。",
-      "subscriberBenefitGlobalEmojiTitle": "グローバルなお気に入りルーム絵文字",
-      "subscriberBenefitGlobalEmojiDescription": "お気に入りの部屋の絵文字をチャットで使ってみてください。",
-      "subscriberBenefitXpBonusTitle": "+{bonus}% XP",
-      "subscriberBenefitXpBonusDescription": "ボーナスは自動的に進行に適用されます。",
-      "subscriberBenefitCoinBonusTitle": "+{bonus}% コイン",
-      "subscriberBenefitCoinBonusDescription": "ボーナスは獲得したコインに自動的に適用されます。",
+      "subscriberBenefitSubscriptionBadgesDescription": "{count, plural, other {サブスクリプション利用者向けに、#個のバッジがショップで提供されています。}}",
+      "subscriberBenefitPlaylistLimitTitle": "プレイリスト1つにつき{count, number}曲",
+      "subscriberBenefitPlaylistLimitDescription": "無料アカウントの現在の上限は{freeCount, number}曲です。",
+      "subscriberBenefitRoomLimitTitle": "{count, number}個のルームを所有可能",
+      "subscriberBenefitRoomLimitDescription": "無料アカウントの現在の上限は{freeCount, number}個のルームです。",
+      "subscriberBenefitEmojiLimitTitle": "ルーム絵文字{count, number}個",
+      "subscriberBenefitEmojiLimitDescription": "サブスクリプション利用者向けの拡大された上限が適用される場合の値です。現在の基本上限は{baseCount, number}個です。",
+      "subscriberBenefitGlobalEmojiTitle": "お気に入りルームの絵文字をどのチャットでも",
+      "subscriberBenefitGlobalEmojiDescription": "お気に入りのルームの絵文字を、どのチャットでも使えます。",
+      "subscriberBenefitXpBonusTitle": "XP +{bonus, number}%",
+      "subscriberBenefitXpBonusDescription": "獲得するXPに、ボーナスが自動で適用されます。",
+      "subscriberBenefitCoinBonusTitle": "コイン +{bonus, number}%",
+      "subscriberBenefitCoinBonusDescription": "獲得するコインに、ボーナスが自動で適用されます。",
       "manageSubscription": "サブスクリプション管理",
       "premiumAccessTitle": "Premium アクセス有効",
       "premiumAccessBody": "管理者アカウントはすでにすべての Premium アイテムを即座にアンロックします。",
@@ -3498,6 +4753,7 @@
         "budgetExhausted": "{count} 検索限界",
         "failed": "{count} 失敗した",
         "genericError": "今はこのプレイリストをインポートできませんでした。",
+        "responseLost": "インポートの応答が途切れました。一部の曲が保存され、サーバーがまだ処理中の可能性があります。一覧を更新しました。再試行する前に確認してください。",
         "emptyResultError": "このプレイリストにはインポート可能なトラックは見つかりませんでした。",
         "splitCompleted": "{name} の {count} 曲を {playlists} 個のプレイリストにインポートしました。",
         "splitAcross": "使用したプレイリスト: {count}",
@@ -3522,8 +4778,7 @@
         "spotify": {
           "label": "Spotify",
           "subtitle": "Spotifyプレイリストやアルバムを選んだプレイリストにインポートし、サーバーに変換を任せましょう。",
-          "placeholder": "https://open.spotify.com/playlist/... か /album/...",
-          "attribution": "Songlinkによるマッチング提供。"
+          "placeholder": "https://open.spotify.com/playlist/... か /album/..."
         },
         "soundcloud": {
           "label": "SoundCloud",
@@ -3547,8 +4802,12 @@
       "superfansCount": "{count, plural, one {# スーパーファン} other {# スーパーファン}}",
       "pendingCount": "{count, plural, one {# 保留中} other {# 保留中}}",
       "followingCount": "{count} 続",
+      "filterStatus": "ステータスで絞り込む",
       "filterAll": "全員",
-      "filterOnline": "オンライン",
+      "filterOnline": "接続中",
+      "filterAvailable": "オンライン",
+      "filterAway": "退席中",
+      "filterBusy": "取り込み中",
       "filterOffline": "オフライン",
       "empty": "まだ熱狂的なファンではありません。",
       "emptySubtitle": "二人がお互いのファンになると、ここに現れます。",
@@ -3634,6 +4893,7 @@
           "experience": "経験",
           "billing": "請求",
           "system": "システム",
+          "payments": "お支払い",
           "developer": "開発者"
         },
         "items": {
@@ -3795,8 +5055,8 @@
         "showSupporterBadgesHint": "プロフィール、チャット、クイックプロフィールに自動的にサブギフトおよびサブスクリプションテニュアバッジが表示されます。",
         "blockUnknownWhispers": "見知らぬ人のささやき声",
         "blockUnknownWhispersHint": "有効化されると、あなたの熱狂的なファンでない人は会話を始めた後にしかささやき声をかけられます。",
-        "autoOpenIncomingWhispers": "ささやき声が開かれている",
-        "autoOpenIncomingWhispersHint": "有効になると、新しいささやきは自動的に最小化ウィンドウと新しいメッセージバッジとして表示されます。",
+        "autoOpenIncomingWhispers": "新しいささやきのポップアップを表示",
+        "autoOpenIncomingWhispersHint": "新しいささやきが届くと最小化されたウィンドウを表示します。オフの場合も、未読のささやきはささやきタブで確認できます。",
         "statusLabel": "現状",
         "statusHint": "DJをしていない時は、プロフィールや部屋で自分の存在感をどう見せるかを選びましょう。",
         "status": {
@@ -3850,9 +5110,15 @@
           "loading": "セキュリティ状態を読み込み中...",
           "loadError": "今は二要素認証のオプションを読み込むことができませんでした。",
           "passwordRequirement": "二要素認証を有効にする前にアカウントのパスワードを作成しましょう。これにより、後で管理・無効化が可能になります。",
-          "securityPasswordLabel": "有効化または切り替え方法の現在のパスワード",
-          "securityPasswordHint": "現在のパスワードを使って認証方法を有効化または切り替えてください。無効にするには、別の確認を使ってください。",
+          "securityPasswordLabel": "現在のパスワード",
+          "securityPasswordHint": "このパスワードは方式の有効化または変更を承認するためだけに使用されます。",
           "securityPasswordPlaceholder": "現在のパスワードを入力してください",
+          "methodChange": {
+            "title": "2FAの変更を確認",
+            "description": "{method}を続行するには現在のパスワードを確認してください。",
+            "confirm": "続行",
+            "confirming": "確認中..."
+          },
           "emailVerified": "あなたのメールアドレスはすでに認証済みで、コードの受信準備ができています。",
           "emailNotVerified": "この2段階認証を使う前に、必ずメールアドレスを確認してください。",
           "verifyCodeLabel": "検証コード",
@@ -3960,7 +5226,7 @@
         "botNameRequired": "ボット名を入力してください。",
         "prefixLabel": "接頭辞",
         "avatarLabel": "ボットバッジ",
-        "avatarHint": "ルームボットは常にグローバルロボットバッジを使用します。このビジュアルはチャットや部屋に固定されています。",
+        "avatarHint": "新しいボットにはロボットアイコンが使われます。作成後、上でボットを選択すると、許可されている場合は外観を変更できます。",
         "permissionsLabel": "ボット権限",
         "permissionsHint": "このトークンが何を可能にするかを選びましょう。ボットはロボットとして登場し、部屋の役割は使いません。",
         "permissionGroups": {
@@ -4178,15 +5444,16 @@
         "paymentHistory": {
           "eyebrow": "起訴内容",
           "title": "支払い履歴",
-          "subtitle": "サブスクリプションに関連する最新の請求や更新を追跡しましょう。",
+          "subtitle": "サブスクリプションの支払い、更新、贈ったギフトを確認できます。",
           "loading": "支払い履歴を読み込み中...",
-          "empty": "まだサブスクリプションの支払いは記録されていません。",
+          "empty": "サブスクリプションの支払いまたはギフトの記録はまだありません。",
           "loadError": "今は支払い履歴を読み込めませんでした。",
           "amountUnavailable": "利用可能な金額",
           "dateUnavailable": "日付不明",
           "providers": {
             "stripe": "Stripe",
-            "mercadopago": "Mercado Pago"
+            "mercadopago": "Mercado Pago",
+            "admin": "管理者からのギフト"
           },
           "descriptions": {
             "mercadoPagoPrepaidSubscription": {
@@ -4199,14 +5466,16 @@
             },
             "subscriptionCanceled": "自動更新がキャンセルされました",
             "subscriptionResumed": "自動更新が再開されました",
-            "subscriptionPending": "サブスクリプション更新処理"
+            "subscriptionPending": "サブスクリプション更新処理",
+            "subscriptionGiftSent": "{recipient}にサブスクリプションを贈りました"
           },
           "status": {
             "paid": "有料",
             "pending": "保留中",
             "updated": "更新",
             "canceled": "キャンセル",
-            "resumed": "再開"
+            "resumed": "再開",
+            "gifted": "ギフト送付済み"
           }
         },
         "manage": {
@@ -4309,6 +5578,8 @@
       },
       "secureNote": "保護された支払い",
       "stayOnPageStripe": "ここで全部終わらせていいよ。 Stripe は支払いを安全に処理します。",
+      "hostedDescription": "Open secure checkout in another tab. This page will stay open while you complete your purchase.",
+      "openHostedCheckout": "Continue to payment",
       "stayOnPageMercadoPago": "ここで全部終わらせていいよ。 Mercado Pago は支払いを安全に処理します。",
       "summaryLabel": "命令概要",
       "totalLabel": "合計",
@@ -4620,6 +5891,42 @@
       }
     },
     "admin": {
+      "userCountryFlag": {
+        "title": "ユーザーフラグ",
+        "default": "デフォルト (フラグなし)",
+        "save": "保存フラグ",
+        "remove": "フラグを削除",
+        "saved": "フラグが更新されました。",
+        "error": "フラグを更新できませんでした。"
+      },
+      "countryFlags": {
+        "title": "フラグ",
+        "description": "プロファイルで選択できるフラグを選択します。既存の選択内容は保持されます。",
+        "search": "検索フラグ",
+        "save": "保存",
+        "saving": "保存中...",
+        "saved": "フラグが保存されました。",
+        "error": "フラグをロードまたは保存できませんでした。再試行してください。",
+        "loading": "フラグを読み込んでいます...",
+        "empty": "フラグが見つかりませんでした。"
+      },
+      "itemRewards": {
+        "title": "アイテム報酬",
+        "levels": "レベル報酬",
+        "levelsHint": "ここにはレベル到達で解除される実績のみ表示されます。「実績」タブにはすべての種類が表示されます。変更は両方の画面に反映されます。",
+        "select": "アイテムを選択",
+        "empty": "アイテムなし",
+        "add": "アイテムを追加",
+        "remove": "アイテムを削除",
+        "mode": "報酬の種類",
+        "grant": "無料で付与",
+        "purchase": "購入を解放",
+        "retry": "再試行",
+        "avatar": "アバター",
+        "background": "背景",
+        "videoframe": "動画フレーム",
+        "badge": "バッジ"
+      },
       "eyebrow": "コントロールパネル",
       "title": "WavezFM 行政",
       "subtitle": "プラットフォームの役割を管理し、進行を調整し、必要に応じてコンテンツを削除してサイトの安全と整理を行ってください。",
@@ -4672,6 +5979,10 @@
         "searchPlaceholder": "ユーザー名、表示名、メールアドレス、または IDで検索できます。",
         "emptySearch": "この検索結果に一致するユーザーはいません。",
         "filters": {
+          "ownedAvatar": "所有アバター",
+          "allAvatars": "すべてのアバター",
+          "avatarSearchEmpty": "アバターが見つかりませんでした。",
+          "avatarId": "Avatar ID",
           "button": "フィルター",
           "presence": "存在",
           "presenceAll": "存在:全員",
@@ -4743,13 +6054,14 @@
         "createdAtChip": "{date}で作成",
         "banReason": "停学理由: {reason}",
         "modalTabs": {
+          "roles": "ロール",
           "summary": "概要",
           "profile": "プロフィールとアバター",
-          "account": "アカウントと役割",
+          "account": "アカウント",
           "progression": "進行",
           "subscription": "購読",
           "inventory": "在庫",
-          "security": "セキュリティ"
+          "security": "アクセス履歴"
         },
         "roleSaving": "セーブ...",
         "roleSave": "セーブロール",
@@ -4786,7 +6098,7 @@
           "confirmPasswordPlaceholder": "新しいパスワードを確認",
           "username": "ユーザー名",
           "usernamePlaceholder": "ユーザー名",
-          "usernameHint": "アカウントの実際の @username. を変更する 3〜14の文字、数字、ピリオド、アンダー、ハイフンを使用します。",
+          "usernameHint": "アカウントの実際の @username を変更します。3〜14文字の英字、数字、ピリオド、アンダースコア、ハイフン、または単語間のスペースを使用できます。",
           "identity": "プロファイルアイデンティティ",
           "identityHint": "このアカウントの実際の @username と表示名を管理してください。",
           "displayName": "ディスプレイ名",
@@ -4852,11 +6164,11 @@
           "expiresAtHint": "ピッカーを使って、この口座で商品が無効になるタイミングを定義してください。",
           "temporaryUntil": "{date}まで一時的",
           "permanent": "常設",
-          "grantAllVisibleHint": "見えるすべてのアバターを付与し、隠しアバターやアカウントが既に所有しているものはスキップします。",
+          "grantAllVisibleHint": "このカテゴリの表示中アイテムをすべて付与し、非表示または所有済みのアイテムはスキップします。",
           "grantAllVisible": "見えるものすべて({count})を追加します。",
-          "grantAllVisibleLoading": "見えるアバターを追加し...",
-          "grantAllVisibleSuccess": "{count} 目に見えるアバターが {username}のインベントリに追加されました。",
-          "allVisibleAlreadyOwned": "このアカウントはすでにすべての見えるアバターを所有しています。",
+          "grantAllVisibleLoading": "表示中のアイテムを追加しています...",
+          "grantAllVisibleSuccess": "{count} 個の表示中アイテムを {username} のインベントリに追加しました。",
+          "allVisibleAlreadyOwned": "このアカウントは、このカテゴリの表示中アイテムをすべて所有しています。",
           "selectVisible": "表示中を選択",
           "clearSelection": "選択を解除",
           "selectionCount": "{count}件選択中",
@@ -4910,6 +6222,14 @@
           "giftAction": "ギフトサブスクリプション",
           "giftSuccess": "{username}{months}ギフトサブスクリプション月を受け取りました。",
           "giftError": "今はこのサブスクリプションを贈ることはできませんでした。",
+          "tenureEditor": {
+            "label": "累計月数を調整",
+            "hint": "表示される加入期間とバッジのレベルを更新します。月数は引き続き増加し、有効期限、プラン、請求は変わりません。",
+            "save": "進捗を保存",
+            "inactive": "進捗を調整する前にサブスクリプションを有効にしてください。",
+            "success": "進捗を更新しました。",
+            "error": "進捗を更新できませんでした。"
+          },
           "totalTenure": "累計在籍期間",
           "currentBadge": "現在の月間バッジ",
           "tenureMonths": "{count, plural, =0 {未完了月数はありません} one {# 完了月間} other {# 完了月数}}",
@@ -4954,9 +6274,9 @@
           "error": "今はこの贈り物を送れなかった。"
         },
         "walletAnnouncement": {
-          "label": "ルームチャットでコインとダイヤモンドを発表しましょう",
-          "hint": "セーブ時にコインやダイヤモンドが変わる場合は、{room}のチャットでアップデートをお知らせWavezFMします。",
-          "unavailable": "これらの変更をチャットで通知するには、ユーザーがアクティブな部屋にいなければなりません。"
+          "label": "進行状況の変更をルームチャットに送信",
+          "hint": "保存時にコイン、ダイヤモンド、XPが変わると、WavezFMが{room}のチャットで通知します。",
+          "unavailable": "進行状況の変更をチャットに送信するには、ユーザーがアクティブなルームにいる必要があります。"
         },
         "roomAnnouncementTarget": {
           "label": "アナウンスルーム",
@@ -5043,16 +6363,16 @@
         },
         "accessHistory": {
           "title": "アクセス履歴",
-          "subtitle": "最近のIPアドレスとこのユーザーのセッションのおおよその位置をご覧ください。",
+          "subtitle": "このユーザーのアクセス履歴に記録されたIPアドレスとおおよその位置情報を確認できます。",
           "loading": "アクセス履歴を読み込み中...",
-          "empty": "このユーザーのセッションは録画されていません。",
+          "empty": "このユーザーのアクセス記録はありません。",
           "loadError": "このユーザーのアクセス履歴を読み込めませんでした。",
           "terminate": "セッション終了",
           "terminating": "終わり...",
           "terminateSuccess": "活動中のセッションは終了 {username} 。",
           "terminateError": "このセッションを終わらせることができませんでした。",
           "sessionActive": "アクティブセッション",
-          "sessionExpired": "期限切れのセッション",
+          "sessionExpired": "終了したセッション",
           "lastSeen": "最後の活動",
           "createdAt": "作成",
           "expiresAt": "有効期限切れ",
@@ -5061,7 +6381,21 @@
           "locationUnavailable": "所在地不明",
           "unknownIp": "IPは提供されていません"
         },
+        "chatHistory": {
+          "title": "メッセージ履歴",
+          "subtitle": "ルームに保存されている {username} のメッセージ。",
+          "loading": "メッセージを読み込み中...",
+          "loadError": "メッセージを読み込めませんでした。",
+          "retry": "再試行",
+          "empty": "このユーザーの保存済みメッセージはありません。",
+          "staff": "スタッフ",
+          "edited": "編集済み",
+          "previous": "前へ",
+          "next": "次へ",
+          "page": "ページ {page}"
+        },
         "restrictions": {
+          "durationLabel": "期間",
           "title": "有効な制限",
           "subtitle": "このアカウントに適用された部屋の禁止、ルームミュート、キューブロックを確認してください。",
           "loading": "このユーザーの制限を読み込み中...",
@@ -5161,6 +6495,16 @@
         "invalidLogoUrl": "有効なhttpURLや内部経路を使いましょう。",
         "filters": {
           "badgeAll": "全室",
+          "access": "アクセス",
+          "status": "状態",
+          "presence": "占有率",
+          "all": "全て",
+          "public": "公共",
+          "private": "プライベート",
+          "open": "開ける",
+          "closed": "閉店",
+          "occupied": "人と",
+          "empty": "空の",
           "verified": "検証済み",
           "partner": "パートナー",
           "clear": "クリアフィルター",
@@ -5238,6 +6582,9 @@
         "featureAccess": {
           "paidUntil": "有料アクセスは{date}まで有効です。",
           "paidPermanent": "永久有料アクセス。",
+          "peopleGroupingTitle": "ユーザーリストのグループ化",
+          "peopleGroupingSubtitle": "グローバル設定が無効でも、この部屋だけで機能を有効にします。",
+          "peopleGroupingGlobalActive": "この機能はすでにすべての部屋でグローバルに有効です。",
           "customThemeTitle": "部屋のカスタムテーマ",
           "customThemeSubtitle": "この部屋の許可された役職に対して、カスタムテーマの編集を管理者権限でアンロックします。"
         },
@@ -5248,11 +6595,40 @@
           "invalid": "0から10000の間の値を入力します。",
           "systemDefault": "システムデフォルト: {count}",
           "roles": {
+            "vip": "VIP",
             "resident_dj": "レジデントDJ",
             "bouncer": "バウンサー",
             "manager": "監督",
-            "cohost": "共演者"
+            "cohost": "共演者",
+            "host": "ホスト"
           }
+        },
+        "avatarUnlocks": {
+          "title": "役割でアンロックするアバター",
+          "subtitle": "この部屋で各アバターをアンロックする最低役割を選択します。アバターはこの部屋でのみ使用できます。",
+          "selectedCount": "{count}件選択中",
+          "loading": "アバターカタログを読み込んでいます...",
+          "modeUnlock": "役割でアンロック",
+          "modeForced": "スタッフ必須アバター",
+          "forcedHint": "最低役割ごとに必須アバターを設定します。適用される最上位のルールが下位ルールを上書きし、役割別アンロックは無効になりません。",
+          "forcedMinimumRoleFor": "{avatar}を必須にする最低役割",
+          "forceAvatar": "スタッフに使用",
+          "forcedSelected": "必須",
+          "removeForced": "解除",
+          "search": "アバター、ID、カテゴリで検索...",
+          "noRole": "アンロックなし",
+          "minimumRoleFor": "{avatar}の最低役割",
+          "empty": "検索に一致するアバターはありません。",
+          "hierarchyHint": "上位の役割は下位の役割に割り当てられたアバターも受け取ります。",
+          "otherRoomsHidden": "他の部屋にリンクされた{count}件のアバターは非表示です。",
+          "previousPage": "前のページ",
+          "nextPage": "次のページ",
+          "save": "アバターを保存",
+          "saving": "保存中...",
+          "saveSuccess": "{count}件のアバターの役割リンクを更新しました。",
+          "saveError": "役割でアンロックするアバターを更新できませんでした。",
+          "forcedSaveSuccess": "スタッフ必須アバターを更新しました。",
+          "forcedSaveError": "スタッフ必須アバターを更新できませんでした。"
         },
         "staffChatAccess": {
           "title": "スタッフチャットアクセス",
@@ -5268,6 +6644,8 @@
           }
         },
         "theme": {
+          "editorsTitle": "テーマ編集者",
+          "editorsDescription": "選択したユーザーは、カスタムテーマが有効な間、このルームのテーマを編集できます。選択解除で追加権限を取り消します。ロールの権限は変わりません。",
           "title": "部屋の色",
           "subtitle": "部屋の内部でレンダリングされているベースカラーを変更してください。空欄はサイトのデフォルトテーマを使用します。",
           "adminOnly": "管理",
@@ -5475,12 +6853,14 @@
         }
       },
       "tabs": {
+        "promoter": "友達紹介",
         "users": "ユーザー",
         "system": "システム",
         "billingPricing": "価格設定",
         "catalogPricing": "カタログ価格",
         "miscShop": "エキストラショップ",
         "subscribers": "加入者",
+        "giftHistory": "ギフト履歴",
         "bots": "ボット",
         "rooms": "部屋",
         "reports": "報告書",
@@ -5502,6 +6882,43 @@
         "donations": "最近の寄付",
         "logs": "ログ",
         "announcements": "警報"
+      },
+      "giftHistory": {
+        "roomSubgiftSettings": {
+          "excludeAdmins": "ルームのサブスクリプションギフトから管理者を除外",
+          "description": "サイト管理者は、ルームでランダムに贈られるサブスクリプションの対象外になります。",
+          "loading": "ギフト設定を読み込み中...",
+          "saving": "保存中...",
+          "saved": "設定を保存しました。",
+          "loadError": "ギフト設定を読み込めませんでした。",
+          "saveError": "ギフト設定を保存できませんでした。"
+        },
+        "searchLabel": "ギフトを検索",
+        "searchPlaceholder": "贈り主または受取人で検索...",
+        "filterLabel": "ギフトの種類",
+        "filters": {
+          "all": "すべてのギフト",
+          "subscription": "サブスクリプション",
+          "diamonds": "ダイヤモンド"
+        },
+        "refresh": "更新",
+        "retry": "再試行",
+        "loading": "ギフト履歴を読み込み中...",
+        "error": "ギフト履歴を読み込めませんでした。",
+        "empty": "まだギフトの記録はありません。",
+        "emptyFilter": "該当するギフトが見つかりません。",
+        "columns": {
+          "sender": "贈り主",
+          "recipient": "受取人",
+          "gift": "ギフト",
+          "date": "日時"
+        },
+        "anonymous": "公開時は匿名",
+        "diamondsAmount": "{count} ダイヤモンド",
+        "subscriptionMonths": "サブスクリプション {count} か月分",
+        "subscriptionAnnual": "年間サブスクリプション",
+        "subscriptionMonthly": "月間サブスクリプション",
+        "room": "ルーム: {room}"
       },
       "giveaways": {
         "subtitle": "コミュニティでのプレゼント企画を作成し、応募者を追跡し、当選者を抽選しましょう。"
@@ -5581,6 +6998,9 @@
         "acceptedSlotsCount": "{count}/{total} 承認",
         "expiresAt": "閉店は {date}",
         "fields": {
+          "displayOrder": "表示優先度",
+          "displayOrderHint": "小さい値が先に表示され、名前の色を決定します。下のカスタムロールの優先度と比較してください。権限は変更されません。",
+          "customOrderHint": "グローバルロールの一覧で順序を変更してください。",
           "title": "タイトル",
           "titlePtBr": "PT-BRタイトル",
           "titleEnUs": "米国タイトル",
@@ -5746,8 +7166,10 @@
         "disable": "隠れて",
         "delete": "削除",
         "approve": "承認",
+        "approveWithoutGlobal": "全体への告知なしで承認",
         "reject": "却下",
         "reviewError": "イベントを審査できませんでした。",
+        "approvedBy": "{username} が承認",
         "approval": {
           "pending": "保留中",
           "approved": "承認済み",
@@ -6011,7 +7433,7 @@
         "disabled": "障害者",
         "empty": "まだボーナスのご windows はありません。",
         "fields": {
-          "voteWootXp": "XP per woot",
+          "voteWootXp": "ウートあたりのXP",
           "voteWootCoins": "1ウートあたりのコイン",
           "djTrackPlayedXp": "DJトラックを完成させるためのXP",
           "djTrackPlayedCoins": "DJトラックを完成させるためのコイン",
@@ -6197,6 +7619,20 @@
         },
         "maintenanceTitle": "メンテナンスモード",
         "maintenanceSubtitle": "管理者と開発者以外の全員のサイトアクセスをブロックします。",
+        "maintenanceScheduled": "予約済み",
+        "maintenanceScheduleLabel": "メンテナンス開始まで",
+        "maintenanceSchedulePlaceholder": "例: 5min、1h、5d 1h",
+        "maintenanceDurationLabel": "メンテナンス時間",
+        "maintenanceDurationPlaceholder": "例: 30min、2h、1d",
+        "maintenanceScheduleHint": "今すぐ開始するには 0 を使用します。開始時刻と自動終了時刻は再起動やデプロイ後も維持されます。",
+        "maintenanceScheduleAction": "メンテナンスを予約",
+        "maintenanceStartNowAction": "メンテナンスを開始",
+        "maintenanceScheduling": "予約中...",
+        "maintenanceScheduledFor": "メンテナンスは {date} に予約されています。",
+        "maintenanceScheduledUntil": "終了予定は {date} です。",
+        "maintenanceActiveUntil": "メンテナンスは {date} に自動終了します。",
+        "maintenanceScheduledSuccess": "メンテナンスモードを予約しました。",
+        "maintenanceScheduleCancel": "予約をキャンセル",
         "enabled": "有効化",
         "disabled": "障害者",
         "enableAria": "メンテナンスモードを有効にする",
@@ -6222,22 +7658,40 @@
         "globalXpCooldownSaving": "セーブ...",
         "globalXpCooldownSuccess": "グローバル XP クールダウンが更新されました。",
         "globalXpCooldownSaveError": "グローバル XP クールダウンを更新できませんでした。",
+        "wootXpCooldownTitle": "woot XP クールダウン",
+        "djTrackReplayXpCooldownTitle": "DJの同一曲XPクールダウン",
         "djPlaybackXpCooldownTitle": "DJ XP クールダウン",
+        "wootXpCooldownSubtitle": "wootで再びXPを獲得するまでの待ち時間を設定します。",
+        "djTrackReplayXpCooldownSubtitle": "同じ曲で再びDJのXPを獲得するまでの待ち時間を設定します。",
         "djPlaybackXpCooldownSubtitle": "同じユーザーが再び XP を得るまでどれだけ待たなければならないかを定義 DJ。",
+        "wootXpCooldownLabel": "woot クールダウン(分)",
+        "djTrackReplayXpCooldownLabel": "DJの同一曲XPクールダウン (min)",
         "djPlaybackXpCooldownLabel": "DJ クールダウン(分)",
+        "wootXpCooldownHint": "設定範囲：0.25～60分。wootのXP専用です。XPのグローバルクールダウンも適用されます。",
+        "djTrackReplayXpCooldownHint": "設定範囲：0.25～60分。グローバルおよびDJのクールダウンも適用されます。",
         "djPlaybackXpCooldownHint": "許容射程:0.25分から60分。このブロックは DJ XP 専用で、多くの短いトラックで農業を妨げています。",
+        "wootXpCooldownCurrent": "現在: {minutes} 分",
+        "djTrackReplayXpCooldownCurrent": "現在: {minutes} 分",
         "djPlaybackXpCooldownCurrent": "現在: {minutes} 分",
+        "wootXpCooldownSave": "クールダウン woot 節約しましょう",
+        "djTrackReplayXpCooldownSave": "クールダウン DJ 節約しましょう",
         "djPlaybackXpCooldownSave": "クールダウン DJ 節約しましょう",
+        "wootXpCooldownSaving": "セーブ...",
+        "djTrackReplayXpCooldownSaving": "セーブ...",
         "djPlaybackXpCooldownSaving": "セーブ...",
+        "wootXpCooldownSuccess": "woot XPクールダウンが更新されました。",
+        "djTrackReplayXpCooldownSuccess": "DJ XPクールダウンが更新されました。",
         "djPlaybackXpCooldownSuccess": "DJ XPクールダウンが更新されました。",
+        "wootXpCooldownSaveError": "woot XPクールダウンを更新できませんでした。",
+        "djTrackReplayXpCooldownSaveError": "DJ XPクールダウンを更新できませんでした。",
         "djPlaybackXpCooldownSaveError": "DJ XPクールダウンを更新できませんでした。",
-        "premiumShopTitle": "ストアのプレミアム/subscription タブ",
-        "premiumShopSubtitle": "パブリックストアがユーザーにプレミアム/subscriber タブを表示するかどうかを制御します。",
-        "premiumShopEnableAria": "ストア Premium タブを有効にしてください",
-        "premiumShopDisableAria": "ストア Premium タブを非表示にする",
-        "premiumShopEnabledSuccess": "ストア Premium タブが有効になっていました。",
-        "premiumShopDisabledSuccess": "ストア Premium タブは隠されていました。",
-        "premiumShopSaveError": "ストア Premium タブを更新できませんでした。",
+        "premiumShopTitle": "ストアのPremiumアイテム",
+        "premiumShopSubtitle": "ストアのPremiumアイテムを表示または非表示にします。設定 > サブスクリプションのプランやギフトには影響しません。",
+        "premiumShopEnableAria": "Premiumアイテムを表示",
+        "premiumShopDisableAria": "Premiumアイテムを非表示",
+        "premiumShopEnabledSuccess": "Premiumアイテムを表示しました。",
+        "premiumShopDisabledSuccess": "Premiumアイテムを非表示にしました。",
+        "premiumShopSaveError": "Premiumアイテムの表示を変更できませんでした。",
         "badgeShopTitle": "店舗のバッジタブ",
         "badgeShopSubtitle": "パブリックストアがバッジタブをユーザーに表示するかどうかを制御します。",
         "badgeShopEnableAria": "ストアでバッジタブを有効にする",
@@ -6397,6 +7851,17 @@
         "externalMediaEmbedsSaveError": "プレイヤー内の外部メディアの利用可能性を更新できませんでした。",
         "roomPollsTitle": "部屋投票",
         "roomPollsSubtitle": "ルームスタッフがチャットのトップに固定された投票を作成できるかどうかをコントロールします。",
+        "roomPeopleGroupingTitle": "ユーザーリストのグループ化（グローバル）",
+        "roomPeopleGroupingSubtitle": "すべての部屋でグループ化を有効にします。1つの部屋だけなら、その部屋の管理画面を使用してください。",
+        "roomPeopleGroupingEnabledSuccess": "ユーザーリストのグループ化を有効にしました。",
+        "roomPeopleGroupingDisabledSuccess": "ユーザーリストのグループ化を無効にしました。",
+        "roomPeopleGroupingSaveError": "ユーザーリストのグループ化を更新できませんでした。",
+        "guestAccessTitle": "ゲストアクセス",
+        "guestRoomPresenceTitle": "識別可能なルームゲスト",
+        "guestAccessSubtitle": "ログインなしでルームを閲覧できます。無効にするとログインが必要です。ログインと登録は引き続き利用できます。",
+        "guestRoomPresenceSubtitle": "訪問者がルームをプレビューしている間、ユーザー一覧と観客に guest-* として表示します。",
+        "guestAccessUpdatedSuccess": "ゲストアクセスを更新しました。",
+        "guestRoomPresenceUpdatedSuccess": "ゲストの表示設定を更新しました。",
         "roomPollsEnabledSuccess": "ルームポールが有効になりました。",
         "roomPollsDisabledSuccess": "部屋投票は無効化されました。",
         "roomPollsSaveError": "部屋投票の空き状況は更新できませんでした。",
@@ -6441,10 +7906,9 @@
         "globalDonationGoalTargetLabel": "目標額",
         "globalDonationGoalTargetPlaceholder": "例:2500.00",
         "globalDonationGoalCurrencyLabel": "通貨",
+        "globalDonationGoalCurrencyHint": "言語別の通貨が無効な場合に、グローバル目標で使用する単一の通貨です。",
         "globalDonationGoalLocalizedCurrencyLabel": "言語別の通貨",
         "globalDonationGoalLocalizedCurrencyHint": "有効化すると、通貨はサイトの所在地に従います:pt-BR -> BRL、en-US -> USD。EURを使いたい場合は手動通貨を使いましょう。",
-        "globalDonationGoalDesktopOnlyLabel": "デスクトップ専用",
-        "globalDonationGoalDesktopOnlyHint": "有効化すると、グローバル目標はデスクトップウェブ上で残り、モバイルでは隠されるためチャットはカバーされません。",
         "donationCurrencySelectionLabel": "通貨選択を許可する",
         "donationCurrencySelectionHint": "有効化すると、寄付入力にドロップダウンが表示され、BRL、USD、EURのいずれかを選択できます。無効化すると、寄付は目標のデフォルト通貨を使用します。",
         "donationCurrencySelectionEnabledSuccess": "寄付通貨選択が有効になりました。",
@@ -6455,7 +7919,7 @@
         "chatBlockedWordPatternsLabel": "ブロックされた単語やフレーズ",
         "chatBlockedWordPatternsPlaceholder": "スパム\n禁断の言葉\nブロックされたフレーズ",
         "chatBlockedWordPatternsHint": "1行あたりまたはカンマ区切りで1つのエントリーを使いましょう。マッチングは格やアクセントを無視します。",
-        "chatBlockedWordPatternsHelper": "このブロックは新しいメッセージ、編集、ルームボットによるメッセージに適用されます。",
+        "chatBlockedWordPatternsHelper": "このブロックは新しいメッセージ、編集、ルームボットによるメッセージに適用されます。メッセージは投稿されず、送信者には自分の言語でエラーが表示されます。",
         "chatBlockedWordPatternsSave": "ワードフィルターを保存する",
         "chatBlockedWordPatternsSaving": "フィルターを保存中...",
         "chatBlockedWordPatternsUpdated": "グローバルチャットワードフィルターが更新されました。",
@@ -6561,6 +8025,7 @@
         "roomRoleAssignmentLimitsValuesHint": "0を使って役割を無制限に残しましょう。部屋ごとにモーダルの制限があることがあります。",
         "roomRoleAssignmentLimitInvalid": "0から10000の間の値を入力します。",
         "roomRoleAssignmentLimitRoles": {
+          "vip": "VIP",
           "resident_dj": "レジデントDJ",
           "bouncer": "バウンサー",
           "manager": "監督",
@@ -6734,8 +8199,8 @@
           "adminProtected": "Admin は保護されています",
           "roleSelector": "組み込みロールを選択",
           "roles": {
-            "developer": "Developer",
-            "ambassador": "Ambassador",
+            "developer": "開発者",
+            "ambassador": "大使",
             "verified": "認証済み",
             "subscriber": "サブスクライバー"
           },
@@ -6828,6 +8293,10 @@
         }
       },
       "roleAppearance": {
+        "orderTitle": "役割の順序",
+        "orderHint": "上から下に読むと、#1 の表示優先度が最も高くなります。誰かが両方の役割を持っている場合、上の役割が最初に表示され、名前の色が決まります。ドラッグするか矢印を使用して、保存します。これによってロールの権限は変更されません。",
+        "highestPriority": "最高の優先順位 - 最初",
+        "lowestPriority": "優先度が最も低い - 最後",
         "title": "役柄出演",
         "subtitle": "内部プラットフォームロール、ルームロール、カスタムグローバルロールで名前、色、アイコンを調整してください。",
         "modes": {
@@ -6863,11 +8332,52 @@
           "namePtBr": "名称(PT-BR)",
           "nameEnUs": "名称(米国名)",
           "icon": "アイコン",
-          "iconPlaceholder": "IconCrownか https://.../icon.png",
+          "iconPlaceholder": "WavezFmMark, IconCrown または https://.../icon.png",
           "colorHex": "六角形の色"
+        },
+        "customRoomRoles": {
+          "title": "カスタムルームロール",
+          "description": "再利用可能なロールを作成します。ベースロールが階層と権限を制御します。",
+          "newRole": "新しいカスタムロール",
+          "empty": "カスタムロールはありません。",
+          "roomTitle": "利用可能なカスタムロール",
+          "roomDescription": "選択したルームで利用できるロールを選びます。",
+          "selectRoom": "ルームを選択",
+          "create": "ロールを作成",
+          "save": "ロールを保存",
+          "saveRoom": "利用設定を保存",
+          "saving": "保存中...",
+          "delete": "ロールを削除",
+          "created": "ロールを作成しました。",
+          "updated": "ロールを更新しました。",
+          "deleted": "ロールを削除しました。",
+          "roomUpdated": "利用設定を更新しました。",
+          "saveError": "ロールを保存できませんでした。",
+          "deleteError": "ロールを削除できませんでした。",
+          "roomSaveError": "利用設定を更新できませんでした。",
+          "assignedUsers": "割り当て済み: {count}",
+          "fields": {
+            "slug": "識別子",
+            "namePtBr": "名前 (pt-BR)",
+            "nameEnUs": "名前 (en-US)",
+            "icon": "アイコン",
+            "color": "色",
+            "baseRole": "ベースロール",
+            "enabled": "ロールを有効化"
+          },
+          "baseRoles": {
+            "user": "ユーザー",
+            "vip": "VIP",
+            "resident_dj": "常駐DJ",
+            "bouncer": "用心棒",
+            "manager": "マネージャー",
+            "cohost": "共催"
+          }
         }
       },
       "avatars": {
+        "exportError": "エクスポートに失敗しました。もう一度試してください。",
+        "exportCategoryLevels": "エクスポートのカテゴリとレベル",
         "title": "アバターカタログ",
         "subtitle": "新しいアバターを追加し、カテゴリ、通貨、価格を選択し、スプライトのアイドル、ダンス、 DJ モードをプレビューできます。",
         "loadError": "今はアバターカタログを読み込めなかった。",
@@ -6956,7 +8466,9 @@
           "djPlaceholder": "https://...",
           "linkedRoom": "リンクルーム",
           "linkedRoomPlaceholder": "パートナールームのUUIDまたはスラッグ",
-          "linkedRoomHint": "任意です。満員になると、この部屋の常駐DJや上位の役割が自動的にアバターをアンロックします。",
+          "linkedRoomHint": "任意です。この部屋で選択した最低役割がアバターを自動的にアンロックします。",
+          "linkedRoomMinimumRole": "アンロックする最低役割",
+          "linkedRoomMinimumRoleHint": "選択した役割より上位の役割もアバターをアンロックします。",
           "availabilityStart": "開始日",
           "availabilityEnd": "終了日",
           "availabilityHint": "任意です。両方の日付が埋まった場合、アバターはその期間のみ利用可能です。2026年3月27日14:40、27月3日午後2時40分、または2026年3月27日14:40などのフォーマットを受け入れています。"
@@ -6984,6 +8496,7 @@
         "search": "サーチバッジ",
         "searchPlaceholder": "名前、 ID、カテゴリー、希少性、または説明で検索できます...",
         "categoryFilter": "フィルター圏",
+        "categoryUnlockLevel": "レベル {level}",
         "allCategories": "すべてのカテゴリー",
         "emptySearch": "この検索に一致するバッジはありません。",
         "empty": "カタログにはまだバッジはありません。",
@@ -7195,6 +8708,12 @@
         }
       },
       "achievements": {
+        "disableCategoryError": "カテゴリを無効にできませんでした。",
+        "disableCategory": "カテゴリを無効にする",
+        "deleteCategory": "カテゴリを削除",
+        "deleteCategoryDescription": "「{category}」のすべての実績と関連するユーザーの進捗を削除しますか？この操作は取り消せません。",
+        "disableCategoryDescription": "{category} のすべての実績を無効にしますか?以前に獲得した実績は保持されます。",
+        "categoryDisabled": "カテゴリ実績が無効になりました。",
         "title": "実績",
         "subtitle": "管理パネルから完全に管理される自動マイルストーンを作成し、特別なコミュニティの瞬間には XP、コイン、ダイヤモンド、バッジを報酬として与えます。",
         "loadError": "今は実績を読み込めませんでした。",
@@ -7207,6 +8726,14 @@
         "deleteSuccess": "実績 {name} は削除されました。",
         "deleteError": "今はこの実績を削除することはできませんでした。",
         "deleting": "削除中...",
+        "renameCategory": "カテゴリー名を変更",
+        "renameCategoryDescription": "このカテゴリーを使用しているすべての実績で名前を変更します。",
+        "renameCategoryPlaceholder": "新しいカテゴリー名",
+        "renameCategoryCount": "{count} 件の実績が更新されます。",
+        "renameCategoryAction": "カテゴリー名を変更",
+        "renamingCategory": "カテゴリー名を変更中...",
+        "renameCategorySuccess": "カテゴリー「{previousName}」の名前を「{nextName}」に変更しました。",
+        "renameCategoryError": "現在、このカテゴリー名を変更できませんでした。",
         "submit": "成果を創出しましょう",
         "submitting": "成果を生み出すこと...",
         "edit": "編集",
@@ -7274,7 +8801,7 @@
           "imagePlaceholder": "/badges/achievements/midnight-dj.png",
           "iconKey": "タブラーアイコン",
           "iconPlaceholder": "例:アイコンムーンスターズ",
-          "iconHint": "どのTablerアイコンでも受け入れます。例:IconMoonStars、IconFlame、IconTrophy。",
+          "iconHint": "どのTablerアイコンでも受け入れます。例:IconMoonStars、FlameIcon、IconTrophy。",
           "colorHex": "アイコンの色",
           "colorHexPlaceholder": "例:#38BDF8",
           "colorHexHint": "任意です。有効な十六進形の色を使ってアイコンのデフォルトトーンを上書きしてください。",
@@ -7476,6 +9003,7 @@
           "achievement_created": "達成実績",
           "achievement_updated": "実績更新",
           "achievement_deleted": "実績の削除",
+          "achievement_category_renamed": "実績カテゴリー名を変更",
           "premium_shop_enabled": "Premium タブ有効",
           "premium_shop_disabled": "Premium タブが隠されています",
           "badge_shop_enabled": "バッジタブ有効",
@@ -7534,6 +9062,7 @@
           "user_session_terminated": "セッション終了",
           "user_custom_global_roles_updated": "カスタムグローバルロールの更新",
           "user_profile_updated": "ユーザープロフィール更新",
+          "user_subscription_tenure_adjusted": "累計月数を調整",
           "user_subscription_updated": "購読更新",
           "user_subscription_gifted": "サブスクリプション贈与",
           "user_visible_avatars_granted": "可視化されたアバター",
@@ -7590,7 +9119,7 @@
           "cycle": "サイクル",
           "days": "日々",
           "sessionId": "会期",
-          "ipAddress": "知的財産",
+          "ipAddress": "IP",
           "externalMediaEmbeds": "外部メディアの埋め込み",
           "roomPolls": "部屋投票",
           "roomRoleAssignmentLimits": "部屋役割割り当ての制限",
@@ -7726,6 +9255,7 @@
       "subtitle": "プロフィールに表示されるバッジを選び、アカウントの公開ページを整理してください。",
       "publicSubtitle": "このユーザーの特集バッジと公開アカウントの詳細をご覧ください。",
       "back": "戻る",
+      "retry": "再試行",
       "loading": "プロファイルを読み込み中...",
       "loadError": "今はあなたのプロフィールを読み込めません。",
       "memberSince": "メンバー",
@@ -7760,11 +9290,11 @@
         "customHint": "任意。40文字以内で、プロフィールとクイックプロフィールに表示されます。",
         "options": {
           "none": "代名詞を表示しない",
-          "she_her": "She/her",
-          "he_him": "He/him",
-          "they_them": "They/them",
-          "she_they": "She/they",
-          "he_they": "He/they",
+          "she_her": "彼女/彼女",
+          "he_him": "彼/彼",
+          "they_them": "彼ら/彼ら",
+          "she_they": "彼女/彼ら",
+          "he_they": "彼/彼ら",
           "any": "どの代名詞でも可"
         }
       },
@@ -7878,8 +9408,8 @@
         "unfan": "ファンでいるのはやめろ",
         "becomeFanSuccess": "あなたは今や {username}のファンです。",
         "unfanSuccess": "君は {username}のファンじゃなくなった。",
-        "blockUser": "ユーザーをブロック",
-        "unblockUser": "ブロックを解除",
+        "blockUser": "ブロック",
+        "unblockUser": "ブロック解除",
         "blockConfirmTitle": "このユーザーをブロックしますか？",
         "blockConfirmDescription": "{username} はあなたをメンションしたり、ささやきを送ったりできなくなります。また、ルームチャットでお互いのメッセージが表示されなくなります。",
         "blockConfirmSubmit": "ブロック",
@@ -8015,7 +9545,7 @@
       "noFilteredLevels": "この範囲内では、設定されたエクストラを含んだレベルは見つかりませんでした。",
       "noAchievements": "追跡できる実績はありません。",
       "noUnlocks": "レベルアンロックの設定もしていません。",
-      "baseCoinsValue": "{base} + {step}/level",
+      "baseCoinsValue": "{base} + {step}/レベル",
       "baseCoinsCaption": "レベルアップ時に自動で獲得できるコインで、進行設定から計算されます。",
       "configuredLevelsCaption": "実績やレベルアンロックが設定されているレベル。",
       "achievementsCaption": "進捗を追跡できる実績が用意されています。",
@@ -8080,6 +9610,13 @@
       "loadError": "今はチームを積み込めない。",
       "disabled": "チームページは現在無効になっています。",
       "empty": "チームメンバーは見つかりませんでした。",
+      "all": "すべて",
+      "search": "チームを検索",
+      "clearSearch": "検索をクリア",
+      "filterLabel": "役割で絞り込む",
+      "noResults": "検索に一致するメンバーはいません。",
+      "viewProfile": "{username}のプロフィールを見る",
+      "retry": "再試行",
       "customRolesTitle": "カスタムグローバル役割"
     },
     "recentlyPlayed": {
@@ -8277,6 +9814,17 @@
             "p1": "プライバシーに関する質問またはデータに関する権利の行使は、アカウントとご依頼を特定するために必要な情報を添えて hi@wavez.fm までメールでご連絡ください。パスワードやクレジットカード番号全体は送信しないでください。",
             "p2": "また、該当する場合は、ブラジルの ANPD または EU または EEA 国の監督当局を含む、管轄区域の管轄のデータ保護または消費者当局に連絡することもできます。"
           }
+        },
+        "youtube": {
+          "title": "18. YouTubeと動画データ",
+          "paragraphs": {
+            "p1": "WavezFMはYouTube APIサービスを使用して、公開動画のメタデータと視聴可能かどうかの情報を取得します。YouTube動画は埋め込みのYouTubeプレーヤーで再生されます。",
+            "p2": "WavezFMは、動画のリンク、ID、メタデータをプレイリストとルームのアクティビティ記録に保存します。埋め込みのYouTubeプレーヤーは、ブラウザ、端末、ネットワークに関するデータを受け取り、Googleのプライバシーポリシーに従ってCookieを使用する場合があります。",
+            "p3": "WavezFMが保有するデータの削除は、アカウント設定またはhi@wavez.fmからリクエストできます。WavezFMからデータを削除しても、YouTubeが保有するデータは削除されません。"
+          },
+          "links": {
+            "googlePrivacy": "Googleのプライバシーポリシー"
+          }
         }
       }
     },
@@ -8472,6 +10020,15 @@
           "paragraphs": {
             "p1": "これらの規約、著作権、購入、または法的問題に関する質問は、hi@wavez.fm に送信できます。アカウント識別子と関連詳細を含めてください。ただし、パスワード、2 要素コード、または完全なカード情報は決して送信しないでください。"
           }
+        },
+        "youtube": {
+          "title": "23. YouTubeの利用規約",
+          "paragraphs": {
+            "p1": "WavezFMでYouTubeの機能を使用すると、YouTubeの利用規約に同意したことになります。"
+          },
+          "links": {
+            "youtubeTerms": "YouTubeの利用規約"
+          }
         }
       }
     },
@@ -8495,6 +10052,600 @@
         "choices": {
           "title": "4. あなたの選択",
           "body": "クッキーを拒否すると、 WavezFM はサイドバーステートなどの不要な設定の保存を停止し、直接制御できる設定も削除します。言語クッキーは引き続き使用されるため、製品は選択した言語を尊重します。"
+        }
+      }
+    }
+  },
+  "roomGlobalLimits": {
+    "textLimits": "文字数制限",
+    "textLimitsHint": "チャット、プライベートメッセージ、ルーム説明の最大文字数を設定します（1～10,000）。",
+    "chatMaxLength": "チャットの文字数",
+    "whisperMaxLength": "プライベートメッセージの文字数",
+    "roomDescriptionMaxLength": "ルーム説明の文字数",
+    "roomNameMaxLength": "ルーム名の文字数（16～80）",
+    "removeFrames": "{count}フレームのグループを削除",
+    "avatarSpeed": "アバターの速度（FPS）",
+    "avatarSpeedHint": "フレーム数ごとに毎秒のフレーム数を設定します。保存するとリアルタイムで反映されます。未設定のグループは現在の速度を維持します。",
+    "avatarFrames": "{count}フレーム",
+    "frameCount": "フレーム数",
+    "addFrames": "グループを追加",
+    "title": "全ルーム共通の上限",
+    "hint": "変更はすべてのルームに即座に反映されます。待機列の上限を下げても、待機中のDJは削除されません。",
+    "djQueueLimit": "DJ待機列の定員",
+    "crowdAvatarLimit": "観客アバターの最大数",
+    "save": "上限を保存",
+    "saved": "上限を保存しました。",
+    "error": "上限の読み込みまたは保存に失敗しました。",
+    "addedBy": "追加したユーザー：{username}",
+    "unknownAuthor": "不明なユーザー",
+    "botCommandMaxLength": "ボットへの非公開コマンドの最大文字数"
+  },
+  "savedBanners": {
+    "title": "保存済みバナー",
+    "hint": "現在のバナーに名前を付けて保存し、編集できるルームで再利用できます。",
+    "choose": "バナーを選択",
+    "name": "バナー名",
+    "use": "使用する",
+    "save": "新規保存",
+    "rename": "名前を変更",
+    "delete": "削除",
+    "saved": "変更を保存しました。",
+    "selected": "バナーを選択しました。ルーム設定を保存すると適用されます。",
+    "error": "バナーを保存または読み込めませんでした。名前、URL、上限を確認してください。",
+    "limits": "保存バナーの上限",
+    "limitsHint": "アカウントごとに0〜200。上限を下げても既存のバナーは削除されません。",
+    "regular": "一般ユーザー",
+    "subscriber": "購読者",
+    "saveLimits": "上限を保存"
+  },
+  "roomAttendanceBadge": {
+    "title": "滞在時間によるバッジ",
+    "hint": "連続滞在でバッジを付与します。短い再接続では進捗を維持し、オフライン時間は加算しません。",
+    "badge": "バッジ",
+    "search": "バッジを検索",
+    "empty": "バッジがありません",
+    "minutes": "必要な時間（分）",
+    "reconnectGraceSeconds": "再接続の猶予（秒）",
+    "requireChat": "最近のチャット活動を必須にする",
+    "chatWithinMinutes": "メッセージの送信間隔（分）",
+    "resetHint": "手動退出や非活動時間の超過で進捗がリセットされます。ルールを保存すると全員の進捗がリセットされ、付与済みバッジは保持されます。30秒ごとに確認します。",
+    "save": "保存",
+    "saved": "保存しました。進捗をリセットしました。",
+    "error": "読み込みまたは保存に失敗しました。"
+  },
+  "roomEmojiMigration": {
+    "title": "絵文字をCDNに移行",
+    "hint": "コードとアニメーションを保持して外部画像をコピーします。アップロード成功後にのみ元のURLを置き換えます。",
+    "start": "絵文字を移行",
+    "running": "移行中…",
+    "progress": "{count}個の絵文字を移行済み…",
+    "done": "完了：{count}個を移行しました。",
+    "failed": "{count}個を移行。元のURLを保持：{names}。",
+    "busy": "移行はすでに実行中です。",
+    "error": "{count}個の後で中断しました。再開できます。"
+  },
+  "botPrivateCommand": {
+    "title": "ボットへの非公開コマンド",
+    "replyFrom": "{bot}からの返信",
+    "you": "あなた",
+    "conversation": "ボットとの会話",
+    "hint": "このコマンドは選択したボットだけに届き、公開チャットには保存されません。ボットは非公開で返信できます。",
+    "bot": "ボットを選択",
+    "message": "コマンドまたは設定",
+    "placeholder": "コマンドを入力するか、複数行のプロンプトを貼り付けてください…",
+    "send": "非公開で送信",
+    "sending": "送信中…",
+    "sent": "ボットに転送しました。処理の完了はボットの返信で確認してください。",
+    "offline": "ボットまたはルームへの接続がオフラインです。",
+    "error": "送信できませんでした。権限と文字数制限を確認してください。",
+    "uncertain": "確認が届きませんでした。届いている可能性があるため、再送する前にボットの返信を確認してください。"
+  }
+,
+  "adminRoomEmojis": {
+    "title": "ルームの絵文字",
+    "search": "絵文字を検索",
+    "edit": "編集",
+    "delete": "削除",
+    "shortcode": "絵文字コード",
+    "url": "画像URL",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "confirm": "この絵文字を削除しますか？",
+    "empty": "このルームには絵文字がありません。",
+    "saved": "変更を保存しました。",
+    "error": "保存できませんでした。コードとURLを確認してください。",
+    "duplicate": "このコードは既に存在します。"
+  },
+  "queueCooldown": {
+    "shortTitle": "待機制限",
+    "title": "待機列への参加制限",
+    "description": "ユーザーを待機列から外し、指定時間が経過するまで再参加を制限します。最長30日です。",
+    "duration": "期間（分）",
+    "minutes": "{minutes}分",
+    "custom": "期間を指定",
+    "apply": "適用",
+    "remove": "参加を許可",
+    "applied": "{minutes}分間の参加制限を設定しました。",
+    "removed": "待機列への参加を許可しました。",
+    "error": "参加権限を変更できませんでした。権限を確認して再度お試しください。"
+  },
+  "faq": {
+    "title": "WavezFMガイド",
+    "description": "次のお気に入りの曲を見つけて、くつろぎながら、みんなで楽しめることを探してみましょう。",
+    "eyebrow": "ヘルプ・よくある質問",
+    "back": "ルームを探す",
+    "search": "よくある質問を検索",
+    "searchPlaceholder": "XP、バッジ、プレイリスト、VIP、ボットなどで検索…",
+    "categoriesLabel": "よくある質問のトピック",
+    "all": "すべてのトピック",
+    "clear": "絞り込みを解除",
+    "noResults": "該当する回答がありません",
+    "noResultsHint": "短いキーワードで検索するか、別のトピックを選んでください。コミュニティでも相談できます。",
+    "openAll": "回答をすべて開く",
+    "closeAll": "回答をすべて閉じる",
+    "permalink": "この回答へのリンク",
+    "supportTitle": "まだ解決しませんか？",
+    "supportDescription": "公式Discordに参加するか、サポートチームにメールでお問い合わせください。ルーム内で起きている問題については、そのルームの通報機能やヘルプ機能をご利用ください。",
+    "contact": "サポートにメールする",
+    "limitsTitle": "現在のアカウント上限",
+    "limitsDescription": "これらの値は、WavezFMの現在の設定に基づいています。利用できる内容は、ルームのルールや機能の提供状況によっても変わります。",
+    "limitsUnavailable": "現在の上限と特典は、ショップまたは「設定 → サブスクリプション」で確認できます。現在の比較情報を読み込めませんでした。",
+    "limitFeature": "機能",
+    "free": "無料アカウント",
+    "subscriber": "サブスクリプション",
+    "tracks": "プレイリストごとの曲数",
+    "rooms": "所有できるルーム数",
+    "uploads": "チャットへの画像アップロード（MB）",
+    "currentBenefits": "現在のサブスクリプション特典",
+    "metaTitle": "よくある質問 — WavezFMガイド",
+    "resultCount": "{count, plural, other {#件の回答}}",
+    "categories": {
+      "getting-started": {
+        "title": "はじめに",
+        "description": "ルームを見つけて一緒に音楽を聴き、初めてのDJに挑戦しましょう。"
+      },
+      "progression": {
+        "title": "XPと報酬",
+        "description": "レベル、実績、通貨、報酬の仕組みを紹介します。"
+      },
+      "profile": {
+        "title": "プロフィールとカスタマイズ",
+        "description": "バッジを飾り、見た目を変えて、コレクションを管理しましょう。"
+      },
+      "playlists": {
+        "title": "プレイリストと音楽",
+        "description": "ライブラリを充実させて、次のDJの出番に向けて曲を準備しましょう。"
+      },
+      "subscription": {
+        "title": "アカウントとサブスクリプション",
+        "description": "無料アカウントで使える機能、現在の上限、サブスクリプションの特典を紹介します。"
+      },
+      "social": {
+        "title": "ファンとコミュニティ",
+        "description": "気の合う仲間を見つけて、交流を続けましょう。"
+      },
+      "rooms-roles": {
+        "title": "ルームとロール",
+        "description": "自分たちの居場所を作り、各ロールの権限を確認しましょう。"
+      },
+      "bots": {
+        "title": "ルームボットと外部連携",
+        "description": "自動化を設定し、外部サービスとの連携機能を活用しましょう。"
+      },
+      "support": {
+        "title": "サポートと安全",
+        "description": "ヘルプの利用、問題の報告、アカウントの保護について紹介します。"
+      }
+    },
+    "questions": {
+      "what-is-wavez": {
+        "question": "WavezFMとは何ですか？",
+        "paragraphs": {
+          "p1": "WavezFMは、リアルタイムのルームでみんなと音楽を聴ける場所です。交代でDJを務めながら曲を見つけたり、チャットをしたり、アイテムを集めたりして、好きな音楽を中心にコミュニティを育てていけます。"
+        },
+        "links": {
+          "l1": "ルームを探す"
+        }
+      },
+      "join-room": {
+        "question": "ルームを見つけて参加するにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "「探索」を開き、検索するか一覧からルームを探して、参加したいルームを選びます。ルームごとにホスト、ルール、音楽のスタイル、DJ待機列の設定が異なります。参加する前に、ルームの説明と歓迎メッセージを確認してください。"
+        },
+        "links": {
+          "l1": "ルーム一覧を見る"
+        }
+      },
+      "guest-access": {
+        "question": "アカウントなしでWavezFMを試せますか？",
+        "paragraphs": {
+          "p1": "WavezFMで有効になっている場合は、ゲストとしてプレビューを利用できます。すべての参加機能を使い、プレイリストを保存し、プロフィールを利用して成長の記録を残すには、アカウントを作成してログインしてください。ルームや操作によっては、追加の利用条件がある場合があります。"
+        },
+        "links": {
+          "l1": "アカウントを作成"
+        }
+      },
+      "become-dj": {
+        "question": "DJになるにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "再生できる曲をプレイリストに追加し、そのプレイリストをアクティブに設定します。次に、ルームでDJ待機列に参加してください。順番が来ると、アクティブなプレイリストから曲が再生されます。ホストは待機列のロック、必要なロールの指定、待ち時間の設定、曲の長さの制限を行えます。参加できない場合は、ルームのルールを確認してください。"
+        },
+        "links": {
+          "l1": "プレイリストを管理"
+        }
+      },
+      "woot-meh-grab": {
+        "question": "Woot、Meh、Grabは何をする機能ですか？",
+        "paragraphs": {
+          "p1": "Wootは再生中の曲への高評価、Mehは低評価です。Grabを使うと、曲をプレイリストに保存して後から探したり再生したりできます。投票、ルームのルール、スタッフの操作によって、再生が変わる場合があります。曲を保存しても、音声や動画がダウンロードされるわけではありません。"
+        }
+      },
+      "cinema-display": {
+        "question": "シネマモードとプレーヤーの表示設定はどう使いますか？",
+        "paragraphs": {
+          "p1": "再生中のメディアが対応している場合は、プレーヤーの「シネマモードに切り替え」で表示を大きくし、「シネマモードを終了」で元に戻せます。「動画を非表示／動画を表示」はパソコンでの動画表示を切り替える機能です。動画の非表示は、音声のミュートや「プレーヤーをオフにする」とは別の操作です。利用できる操作は、お使いの端末と再生中のメディアによって異なります。",
+          "p2": "「設定 → 外観」で、ステージ、観客、SFW表示の設定を変更できます。音声は、プレーヤーの音量とミュートの操作で調整してください。"
+        },
+        "links": {
+          "l1": "外観の設定"
+        }
+      },
+      "playback-trouble": {
+        "question": "曲の音が出ない、利用できない、再生が始まらないのはなぜですか？",
+        "paragraphs": {
+          "p1": "まず、プレーヤーの音量とミュート設定を確認してください。ブラウザーによっては、音声の再生前にクリック操作が必要です。また、曲が削除されていたり、地域や年齢の制限があったり、埋め込み再生が許可されていなかったりする場合もあります。別の曲を試し、接続が切れていた場合は再接続してください。全員に同じ問題が起きている場合は、ルームのスタッフに相談してください。"
+        }
+      },
+      "earn-xp": {
+        "question": "XPを獲得してレベルを上げるにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "条件を満たすWoot投票やDJとしての再生でXPを獲得できます。ルーム全体への報酬が有効な場合は、リアルタイムのルームへの参加も対象です。累計XPによってレベルが決まります。報酬には待ち時間、再生条件、1日の上限、有効なボーナスが適用されるため、クリックや曲の再生のたびに必ずXPがもらえるわけではありません。",
+          "p2": "チャットの投稿数を増やしたり、プレイリストに曲を追加したりしても、自動でXPがもらえるわけではありません。「進行」でレベル、到達目標、実績を確認できます。"
+        },
+        "links": {
+          "l1": "進行を確認"
+        }
+      },
+      "missing-xp": {
+        "question": "操作したのにXPがもらえないのはなぜですか？",
+        "paragraphs": {
+          "p1": "報酬を再び受け取れるまでの待ち時間が残っている、1日の獲得枠を使い切っている、再生した曲が最低再生時間や視聴の条件を満たしていない、といった理由が考えられます。通常のDJ再生では、ほかにアクティブなリスナーが1人以上いて、Wootを受け取ることも必要です。同じ曲を短い間隔で再生した場合も、報酬の対象外になることがあります。ボーナスイベントやアカウントのブーストによって、対象となる報酬が変わる場合があります。"
+        }
+      },
+      "daily-xp-allowance": {
+        "question": "1日のXP獲得枠はいつリセットされますか？",
+        "paragraphs": {
+          "p1": "1日のXP獲得枠が有効な場合、対象の活動で得られる報酬に上限が設けられ、UTCで日付が変わるたびにリセットされます。獲得枠の大きさと報酬の待ち時間は、WavezFMが設定します。獲得枠は報酬対象の操作によって消費されるため、単にルームを開いたままにした時間を測るタイマーではありません。",
+          "p2": "獲得枠を使い切ると、対象の操作では次のUTCの日付になるまでXPを獲得できなくなります。基本のコイン報酬は、通常の待ち時間と条件を満たしていれば、引き続き受け取れる場合があります。"
+        },
+        "links": {
+          "l1": "進行を確認"
+        }
+      },
+      "claim-rewards": {
+        "question": "報酬を獲得して受け取るにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "「進行」でレベルの到達目標と実績の条件を確認してください。対象の実績を達成すると、通貨、XP、バッジなどのアイテムを獲得できます。自動で付与される報酬もありますが、一部の到達目標は、アイテムが持ち物に追加されるのではなく、購入できるようになるものです。報酬の説明と「私の持ち物」を確認してください。"
+        },
+        "links": {
+          "l1": "進行と実績",
+          "l2": "私の持ち物"
+        }
+      },
+      "coins-diamonds": {
+        "question": "コインとダイヤモンドは何に使いますか？",
+        "paragraphs": {
+          "p1": "コインとダイヤモンドは、それぞれショップの対象商品を購入するための別々の通貨です。各アイテムには、使用する通貨、価格、必要な条件が表示されます。成長や実績を通じて対象の報酬を獲得し、利用できる購入方法をショップで確認してください。"
+        },
+        "links": {
+          "l1": "ショップを開く"
+        }
+      },
+      "events-giveaways": {
+        "question": "イベント、プレゼント企画、ボーナス期間はどこで確認できますか？",
+        "paragraphs": {
+          "p1": "ルームではイベントやプレゼント企画を開催でき、WavezFMでもボーナス期間を設けることがあります。参加条件、開催日時、報酬は、それぞれのイベントや企画のルールを確認してください。カレンダーが有効な場合、ルームの「イベント」で予定されているイベントを確認できます。ルームボットが独自のゲームやプレゼント企画を提供する場合もあり、それらには別のルールが適用されます。"
+        }
+      },
+      "set-badges": {
+        "question": "プロフィールに表示するバッジはどう選びますか？",
+        "paragraphs": {
+          "p1": "「プロフィール」を開き、バッジ選択から所有しているバッジを選びます。選んだバッジは最大3個まで表示できます。選択内容は自動保存されます。「私の持ち物 → バッジ」ではコレクションを確認でき、プロフィールの操作で表示するバッジを選べます。チャットでのバッジ表示は、チャット用のバッジ設定で変更します。"
+        },
+        "links": {
+          "l1": "プロフィールを編集",
+          "l2": "コレクションを見る"
+        }
+      },
+      "get-badges": {
+        "question": "新しいバッジはどうやって入手しますか？",
+        "paragraphs": {
+          "p1": "バッジによって、実績、ショップ、サブスクリプション、ギフト、特別な表彰などから入手できます。各バッジの説明と条件を確認してください。見た目を飾るバッジを所有または表示しても、自動的にルームのスタッフロールが付与されるわけではありません。"
+        },
+        "links": {
+          "l1": "ショップを見る",
+          "l2": "実績を見る"
+        }
+      },
+      "equip-items": {
+        "question": "アバター、背景、その他の見た目はどう変更しますか？",
+        "paragraphs": {
+          "p1": "「私の持ち物」で所有アイテムを探し、対応する着せ替えアイテムを装備できます。ショップでは、入手できるアイテムの見た目、価格、条件を確認できます。プロフィールのカスタマイズとルームの外観は別の設定です。ルームの背景や動画フレームを変更するには、そのルームの適切な権限が必要です。"
+        },
+        "links": {
+          "l1": "私の持ち物",
+          "l2": "ショップ"
+        }
+      },
+      "edit-profile": {
+        "question": "プロフィールや各種設定はどこで編集できますか？",
+        "paragraphs": {
+          "p1": "公開するプロフィール情報と表示するバッジは「プロフィール」で変更できます。アカウント、プライバシー、セキュリティ、外観、利用可能な外部連携は「設定」で管理します。プロフィールの公開情報はほかのユーザーにも見えるため、共有する内容は慎重に選んでください。"
+        },
+        "links": {
+          "l1": "プロフィール",
+          "l2": "設定"
+        }
+      },
+      "missing-item": {
+        "question": "ショップに表示されているアイテムを使えないのはなぜですか？",
+        "paragraphs": {
+          "p1": "アイテムによっては、購入、特定のレベルや実績、有効なサブスクリプションなどの条件が必要です。カタログでプレビューできることと、所有していることは別です。必要な条件と持ち物を確認し、購入が完了したアイテムが見当たらない場合はサポートにお問い合わせください。"
+        }
+      },
+      "playlist-count": {
+        "question": "アカウントやプロフィールには何個のプレイリストを作れますか？",
+        "paragraphs": {
+          "p1": "現在、作成できるプレイリストの数に固定の上限はありません。アカウントの上限は、プレイリストの数ではなく、各プレイリストに入れられる曲数に適用されます。無料アカウントとサブスクリプション利用中のアカウントでは曲数の上限が異なる場合があります。現在の比較は「アカウントとサブスクリプション」で確認できます。",
+          "p2": "プレイリストは、アカウントのライブラリに保存されます。公開プロフィールの「音楽」タブに表示されるのは、最近DJとして再生した曲です。保存したプレイリストの一覧が公開されるわけではありません。"
+        },
+        "links": {
+          "l1": "自分のプレイリスト",
+          "l2": "アカウントの上限を比較"
+        }
+      },
+      "create-playlist": {
+        "question": "プレイリストを作成して曲を追加するにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "「プレイリスト」を開いて新しいリストを作り、追加またはインポートの機能を使います。曲を検索するか、対応するメディアのリンクを貼り付け、保存したい曲を選んでください。利用できる音楽ソースやインポート方法は、プラットフォームの現在の設定によって異なります。インポートした曲は、ルームで使う前に確認してください。"
+        },
+        "links": {
+          "l1": "プレイリストを開く"
+        }
+      },
+      "active-playlist": {
+        "question": "アクティブなプレイリストとは何ですか？",
+        "paragraphs": {
+          "p1": "アクティブなプレイリストは、DJの順番が来たときに使用されるプレイリストです。待機列に参加する前に、再生したいプレイリストを選んでアクティブにしてください。再生できる曲を入れて順番を整えておくと、自分の出番に備えられます。"
+        }
+      },
+      "supported-music": {
+        "question": "どの音楽サービスを利用できますか？",
+        "paragraphs": {
+          "p1": "YouTubeの再生に対応しており、SoundCloudなどのほかのソースも有効になっていれば利用できます。Spotifyのプレイリストをインポートしても、Spotifyの音声を直接再生するわけではありません。インポートした曲は、対応する再生可能なメディアに紐付ける必要があります。利用できるかどうかは、ソース、地域、ルームのルールによって異なります。"
+        }
+      },
+      "find-track": {
+        "question": "以前に聴いた曲を見つけるにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "「最近再生した曲」で自分の視聴履歴を確認するか、ルームの再生履歴を確認してください。曲の再生中にGrabを使うと、自分のプレイリストに保存できます。ソースが削除されたり制限されたりすると、後から再生できなくなる場合があります。"
+        },
+        "links": {
+          "l1": "最近再生した曲"
+        }
+      },
+      "vanilla-account": {
+        "question": "無料アカウントでは何ができますか？",
+        "paragraphs": {
+          "p1": "無料アカウントでは、利用可能なルームへの参加、みんなとの音楽視聴、チャット、ルームが許可する場合のDJ参加、プレイリストの作成、ユーザーのフォロー、条件を満たすアイテムでのプロフィールのカスタマイズ、対象となる成長報酬の獲得ができます。ルーム作成とファイルのアップロードには、現在のアカウント上限が適用されます。カタログの有料アイテムやサブスクリプション特典には、それぞれの条件があります。"
+        }
+      },
+      "subscription-benefits": {
+        "question": "サブスクリプションにはどのような追加特典がありますか？",
+        "paragraphs": {
+          "p1": "サブスクリプションでは、アカウント上限の拡大や対象のプレミアムアイテムへのアクセスなど、WavezFMが現在提供している特典を利用できます。下の比較には現在の設定が反映されています。プレミアムアクセスがあっても、すべての有料アイテムを自動的に所有できるわけではありません。",
+          "p2": "購入前に、ショップと「設定 → サブスクリプション」でプラン、価格、期間、正確な特典内容を確認してください。XPボーナス、追加の絵文字、その他の特典は、明示的に有効化され、記載されている場合にのみ含まれます。"
+        },
+        "links": {
+          "l1": "ショップでプランを見る",
+          "l2": "サブスクリプションを管理"
+        }
+      },
+      "manage-subscription": {
+        "question": "サブスクリプションはどこで確認・管理できますか？",
+        "paragraphs": {
+          "p1": "「設定 → サブスクリプション」で、契約状況、更新や有効期限の情報、支払い履歴、利用できる管理操作を確認できます。プランと支払い方法に応じて表示される選択肢に従ってください。サブスクリプションを購入しても、ルームのモデレーション権限は付与されません。"
+        },
+        "links": {
+          "l1": "サブスクリプションの設定"
+        }
+      },
+      "gift-subscription": {
+        "question": "誰かにサブスクリプションを贈れますか？",
+        "paragraphs": {
+          "p1": "ギフト機能が利用できる場合は、サブスクリプションを贈るオプションを選び、支払い前に贈り先を確認してください。購入手続き中に、贈り先と期間が表示されます。サポーターやギフトのバッジには独自の獲得条件があり、ルームのスタッフロールとは異なります。"
+        },
+        "links": {
+          "l1": "ショップを開く"
+        }
+      },
+      "subscription-expiry": {
+        "question": "サブスクリプションが終了するとどうなりますか？",
+        "paragraphs": {
+          "p1": "有効なサブスクリプションを必要とする特典は、利用期間が終了すると使えなくなり、無料アカウントの上限が再び適用されます。「設定 → サブスクリプション」で現在の状況と更新方法を確認してください。個々のアイテムが使えるかどうかは、そのアイテムの条件によって異なります。購入や請求についてお困りの場合は、サポートにお問い合わせください。"
+        },
+        "links": {
+          "l1": "サブスクリプションの状況を確認"
+        }
+      },
+      "fans-superfans": {
+        "question": "ファン、フォロー中、スーパーファンとは何ですか？",
+        "paragraphs": {
+          "p1": "ファンは、あなたをフォローしている人です。「フォロー中」には、あなたがフォローしている人が表示されます。スーパーファンは、お互いにフォローしている相手です。これらはユーザー同士のつながりを表すもので、有料サブスクリプションのランクではありません。"
+        },
+        "links": {
+          "l1": "自分のファンを見る"
+        }
+      },
+      "follow-user": {
+        "question": "ユーザーをフォローするにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "チャットまたはルームの参加者一覧から相手のプロフィールを開き、フォローの操作を選んでください。つながりは「ファン」で管理できます。相手もあなたをフォローすると、スーパーファンに表示されます。"
+        },
+        "links": {
+          "l1": "つながりを管理"
+        }
+      },
+      "communities": {
+        "question": "コミュニティとは何ですか？",
+        "paragraphs": {
+          "p1": "コミュニティは、共通の興味を持つ人やルームが集まる場所です。「コミュニティ」ページで探して、それぞれで利用できる機能を確認してください。コミュニティへの所属と、ルームのスタッフ権限は別のものです。"
+        },
+        "links": {
+          "l1": "コミュニティを探す"
+        }
+      },
+      "private-messages": {
+        "question": "ささやきとプライベートメッセージはどう使いますか？",
+        "paragraphs": {
+          "p1": "ユーザーのプロフィールやルームに表示されるメッセージまたはささやきの操作から、プライベートな会話を始められます。利用できるかどうかは、プライバシー設定、ブロック状況、アカウントの権限によって変わる場合があります。プライバシー設定は「設定」で管理でき、不適切な行為は通報できます。"
+        },
+        "links": {
+          "l1": "プライバシーの設定"
+        }
+      },
+      "create-room": {
+        "question": "ルームはどう作成・管理しますか？",
+        "paragraphs": {
+          "p1": "「探索」でルーム作成の操作を選び、ルーム名、説明、ルール、その他の設定を入力してください。所有できるルーム数には、アカウントごとの上限があります。ルームのスタッフは各ロールに応じて運営を手伝えますが、一部の設定はホストまたは共同ホストに限られます。"
+        },
+        "links": {
+          "l1": "ルームを探す・作成する",
+          "l2": "現在のアカウント上限"
+        }
+      },
+      "room-roles": {
+        "question": "Host、Co-host、Manager、Bouncer、R.DJ、VIPとは何ですか？",
+        "paragraphs": {
+          "p1": "ルームのロールは、特定のルーム内で適用されます。ルームの所有者や権限を持つスタッフが割り当てるもので、サブスクリプションを利用しても自動的にスタッフになるわけではありません。以下は一般的なロールです。各ルームで名前や権限をカスタマイズできます。"
+        },
+        "items": {
+          "i1": "Host（ホスト）：ルームの所有者で、ルーム内で最も高い権限を持ちます。",
+          "i2": "Co-host（共同ホスト）：ホストを補佐し、ルームやスタッフを管理します。",
+          "i3": "Manager（マネージャー）：与えられた権限の範囲で、ルームの運営やモデレーションを手伝います。",
+          "i4": "Bouncer（バウンサー）：モデレーションツールを使い、チャットやルームのルールが守られるように対応します。",
+          "i5": "R.DJ（レジデントDJ）：信頼されたDJのロールです。標準の設定では、ロックされた待機列にも参加できます。",
+          "i6": "VIP：ルームで特別に認められたメンバーです。一般的なモデレーションを行うロールではありません。",
+          "i7": "ユーザー：通常の参加者です。ルームの設定によって、一部の操作が制限される場合があります。"
+        }
+      },
+      "platform-roles": {
+        "question": "プラットフォームのロールとルームのロールは違いますか？",
+        "paragraphs": {
+          "p1": "はい。管理者、開発者、アンバサダーはプラットフォーム全体のロールで、ホスト、マネージャーなどはルームのロールです。サブスクライバーは、サブスクリプションの利用資格を示します。認証済みや、装飾用・カスタムのロールにはそれぞれの意味があり、すべてのスタッフ権限が自動的に付与されるわけではありません。ロールの名前や見た目はカスタマイズできます。"
+        }
+      },
+      "room-rules": {
+        "question": "ほかのルームではできることが、このルームではできないのはなぜですか？",
+        "paragraphs": {
+          "p1": "各ルームは、プラットフォームの制限の範囲内で、待機列への参加条件、再生ルール、チャットの動作、投票、ボットなどの機能を設定できます。ルームでのBAN、ミュート、一時的な待機列の制限によって、操作できなくなる場合もあります。ルームのルールを読み、不明な点はそのルームのスタッフに確認してください。"
+        }
+      },
+      "replies-mentions-reactions": {
+        "question": "返信、メンション、メッセージへのリアクションはどう使いますか？",
+        "paragraphs": {
+          "p1": "メッセージの操作メニューを開いて「返信」を選ぶと、元のメッセージの文脈を添えて返信できます。メンションするには、@を入力して候補から相手を選んでください。「リアクションを追加／リアクション」では、メッセージに付ける絵文字を選べます。ルーム全体やロールへのメンションには、適切な権限が必要です。",
+          "p2": "チャットの「メンション」を選ぶと、自分へのメンションや返信を確認できます。メンションの通知や音は「設定 → 通知」で変更できます。ブラウザー通知を受け取るには、ブラウザー側でも許可が必要です。"
+        },
+        "links": {
+          "l1": "通知の設定"
+        }
+      },
+      "chat-features": {
+        "question": "GIF、動く絵文字、画像、投票は使えますか？",
+        "paragraphs": {
+          "p1": "チャットの入力欄にある操作から、利用できる絵文字、GIF、アップロードの機能を確認できます。ルームでは、有効になっていればカスタム絵文字や投票も利用できます。アップロードのサイズ、メッセージの長さ、利用資格は、アカウントとルームの設定によって異なります。プレビューを開くと共有されたメディアを確認できます。信頼できるリンクやファイルだけを利用してください。"
+        }
+      },
+      "setup-room-bot": {
+        "question": "自分のルームにボットを設定するにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "ルームボットは、ルーム専用のトークンを使い、WavezFMのボットAPIを通じて動作します。そのルームでボットを管理する権限が必要です。トークンを作成するだけでは、ボットは起動せず、実行環境も用意されません。"
+        },
+        "items": {
+          "i1": "ルームの管理設定を開き、「ボット」に進みます。",
+          "i2": "名前、プレフィックス、必要な権限、有効期間を指定してボットトークンを作成します。シークレットトークンは一度しか表示されないため、表示されたときにコピーしてください。",
+          "i3": "ボットのアプリケーション、または対応するボットサービスの設定ガイドに従い、ルームとトークンを設定します。",
+          "i4": "ボットを起動してルームに接続し、コマンドと権限が正しく動くか確認します。",
+          "i5": "トークンは秘密にしてください。漏えいした場合や不要になった場合は、失効させるか再発行してください。"
+        },
+        "links": {
+          "l1": "ルームボットの設定ガイド",
+          "l2": "トークンの作成と管理"
+        }
+      },
+      "bot-commands": {
+        "question": "ボットのコマンドが動かないのはなぜですか？",
+        "paragraphs": {
+          "p1": "コマンドは、そのルームで稼働しているボットが提供します。ボットがオンラインか、コマンド名とプレフィックスが正しいか、自分のロールとボットのトークンにその操作の権限があるかを確認してください。ボットがミュートされている、トークンが失効している、ルームの設定で機能が無効になっている、といった理由で使えない場合もあります。コマンド一覧は、ルームのボット管理者に確認してください。"
+        }
+      },
+      "bot-features": {
+        "question": "ルームボットには何ができますか？",
+        "paragraphs": {
+          "p1": "実装内容と付与された権限に応じて、チャットへの返信、ルーム内イベントの読み取り、待機列や再生の管理補助、モデレーション、ゲーム、自動処理などを行えます。ボットの権限は明示的に付与され、そのルーム内に限定されます。開発者はHTTP API、リアルタイムイベント、WavezFMのJavaScript/TypeScript SDKを利用できます。"
+        },
+        "links": {
+          "l1": "ボットの権限",
+          "l2": "開発者向けドキュメント"
+        }
+      },
+      "account-integrations": {
+        "question": "ほかのサービスとはどこで連携できますか？",
+        "paragraphs": {
+          "p1": "「設定」で、現在のアカウントで利用できる外部連携を確認できます。DiscordやLast.fmなどとの連携機能は、プラットフォームでの提供状況と、あなたの認証・許可に応じて利用できます。接続状況もそこで確認し、使わなくなったサービスは連携を解除してください。"
+        },
+        "links": {
+          "l1": "設定を開く"
+        }
+      },
+      "get-support": {
+        "question": "どこに相談すればよいですか？",
+        "paragraphs": {
+          "p1": "WavezFMの公式Discordに参加するか、下に記載されたサポート用メールアドレスをご利用ください。特定のルームのルール、待機列、モデレーションについては、まずそのルームのスタッフに相談してください。技術的な問題を報告するときは、ルーム名、おおよその発生時刻、具体的な状況を添えてください。パスワードやボットトークンは絶対に送らないでください。"
+        }
+      },
+      "report-user": {
+        "question": "ユーザーやメッセージを通報するにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "ユーザーまたはメッセージに用意されている通報の操作を選び、適切な理由と状況を入力してください。通報は担当のモデレーション手続きに送られます。ブロックやミュートは通報とは異なります。ルーム内で今起きている問題には、そのルームのスタッフが対応できます。"
+        }
+      },
+      "help-sos": {
+        "question": "ルームのヘルプ・SOS機能は何のためにありますか？",
+        "paragraphs": {
+          "p1": "ルームのヘルプやSOSが利用できる場合は、モデレーターの対応を依頼するために使えます。チームが確認できるよう、今起きている問題をわかりやすく説明してください。一般的な機能の質問や請求の問題については、下に記載されたサポート窓口へのお問い合わせが適しています。"
+        }
+      },
+      "account-security": {
+        "question": "アカウントを安全に保つにはどうすればよいですか？",
+        "paragraphs": {
+          "p1": "ほかで使っていないパスワードを設定し、メールアドレスを認証してください。利用できる場合は「設定」で2要素認証も有効にしましょう。連携中のサービスを見直し、ログインコード、復旧コード、ボットトークンを共有しないでください。ログインできなくなった場合は、パスワードの再設定手続きを利用してください。"
+        },
+        "links": {
+          "l1": "セキュリティの設定",
+          "l2": "アカウントを復旧"
+        }
+      },
+      "rules-privacy": {
+        "question": "プラットフォームのルールやプライバシーに関する情報はどこで読めますか？",
+        "paragraphs": {
+          "p1": "プラットフォーム全体に関する情報は、利用規約、プライバシーポリシー、Cookieポリシーを確認してください。各ルームも独自のルールを公開しており、プラットフォームの規約と併せて適用されます。"
+        },
+        "links": {
+          "l1": "利用規約",
+          "l2": "プライバシーポリシー",
+          "l3": "Cookieポリシー"
         }
       }
     }
