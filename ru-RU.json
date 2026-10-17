@@ -1,6 +1,6 @@
 {
   "globalRoleCommand": {
-    "title": "Управление глобальными ролями",
+    "title": "Управление Глобальными Ролями",
     "description": "Добавляйте и удаляйте стандартные и пользовательские глобальные роли.",
     "user": "Пользователь",
     "userPlaceholder": "@username",
@@ -15,11 +15,11 @@
     "description": "Назначить себе роль в комнате"
   },
   "eventAlertSettings": {
-    "title": "Оформление объявлений о событиях",
+    "title": "Оформление Объявлений о Событиях",
     "hint": "Настройте объявления чата. Изменения применяются к будущим объявлениям."
   },
   "discordPresence": {
-    "title": "Музыкальная активность Discord (экспериментально)",
+    "title": "Музыкальная Активность Discord (экспериментально)",
     "hint": "Показывайте текущий трек во время прослушивания в комнате. Требуется разрешение Discord. Отключите для остановки публикации в этом браузере.",
     "error": "Не удалось разрешить публикацию в Discord.",
     "room": "Комната",
@@ -43,8 +43,10 @@
     "error": "Не удалось выполнить действие."
   },
   "nameSpaceSettings": {
-    "title": "Пробелы в именах",
+    "title": "Пробелы в Именах",
     "hint": "Отдельные настройки регистрации и изменения имени. Существующие имена сохраняются.",
+    "loading": "Загрузка настроек…",
+    "loadError": "Не удалось загрузить настройки. Попробуйте ещё раз.",
     "displayRegistration": "Отображаемое имя: регистрация",
     "displayChange": "Отображаемое имя: изменение",
     "usernameRegistration": "Имя пользователя: регистрация",
@@ -61,11 +63,45 @@
     "embedBlocked": "Playback on external websites is blocked.",
     "embedAllowed": "Playback on external websites is allowed.",
     "embedUnknown": "External playback permission unknown.",
-    "empty": "No countries listed."
+    "empty": "No countries listed.",
+    "title": "Ограничения YouTube",
+    "retry": "Повторить",
+    "blockedEverywhere": "Заблокировано во всех странах.",
+    "noRegionRestrictions": "Опубликованных ограничений по странам нет.",
+    "providerHint": "Ограничения YouTube могут измениться. Эта проверка не охватывает все ошибки воспроизведения.",
+    "roomAffected": "Возможно затронутые слушатели: {count}",
+    "morePeople": "ещё {count}",
+    "roomNoKnownBlocks": "Затронутые слушатели не обнаружены.",
+    "roomUnverified": "Непроверенные слушатели: {count}. Их страна или ограничения YouTube неизвестны.",
+    "roomEstimateHint": "Оценка по стране, определённой по IP-адресу текущего подключения каждого слушателя. Неизвестные страны подключения нельзя проверить при ограничениях по странам.",
+    "nextAffected": "Блокировка · {count}",
+    "nextBlocked": "Воспроизведение заблокировано",
+    "nextUnverified": "Не проверено",
+    "nextHint": "Проверить ограничения следующего трека"
   },
   "globalRoomAppearance": {
-    "title": "Global room appearance",
-    "hint": "Изображения заменяют фон и рамку во всех комнатах. Очистите поле для восстановления настроек комнаты. Используйте HTTPS-ссылки или локальные пути с / (например /room/backgrounds/image.jpg). Центр рамки должен быть прозрачным.",
+    "includedRooms": "Include partner and verified rooms",
+    "includedRoomsHint": "Selected rooms receive the global background and video frame even when their category is excluded.",
+    "addIncludedRoom": "Select room to include",
+    "removeIncludedRoom": "Remove inclusion for {room}",
+    "expiresAt": "End date and time (optional)",
+    "expiresAtHint": "Leave empty for no time limit. At the end, each room returns to its own background and frame. Times use your device time zone.",
+    "clearExpiration": "Remove end date",
+    "excludedRooms": "Manually excluded rooms",
+    "addExcludedRoom": "Add excluded room",
+    "searchRooms": "Search rooms by name, slug or ID",
+    "removeRoom": "Remove {room} from exclusions",
+    "remove": "Remove",
+    "roomError": "Could not load rooms. Saved exclusions have been preserved.",
+    "excludePartnerRooms": "Exclude partner rooms",
+    "excludeVerifiedRooms": "Exclude verified rooms",
+    "exclusionsHint": "Excluded rooms keep their own background and video frame. Save to apply.",
+    "chooseCatalog": "Select from catalog",
+    "searchCatalog": "Search by name or ID",
+    "sourceHint": "Select a catalog item or enter a direct URL. Clear the field to remove it.",
+    "catalogError": "Some catalog items could not be loaded. You can still enter a direct URL.",
+    "title": "Global Room Appearance",
+    "hint": "Глобальный фон применяется в комнатах, где администратор не задал URL фона. Глобальная видеорамка применяется во всех комнатах. Очистите поле для восстановления настроек комнаты. Используйте HTTPS-ссылки или локальные пути с / (например /catalog/backgrounds/image.jpg). Центр рамки должен быть прозрачным.",
     "backgroundUrl": "Global background",
     "videoFrameUrl": "Global video frame",
     "save": "Save appearance",
@@ -82,7 +118,7 @@
     "disabled": "Applications are closed while the referrals program is disabled.",
     "openApplication": "Open application",
     "applicationAccessHint": "Users apply on the site’s Referrals page. Review submitted applications here. Approved users see their referrals dashboard.",
-    "title": "Заявка промоутера",
+    "title": "Заявка Промоутера",
     "applications": "Заявки и промоутеры",
     "settings": "Цели и награды",
     "firstName": "Имя",
@@ -166,7 +202,7 @@
     "activity": "{days} дней присутствия · всего {minutes} минут"
   },
   "botAppearance": {
-    "title": "Внешний вид бота",
+    "title": "Внешний Вид Бота",
     "loading": "Загрузка…",
     "enable": "Разрешить настройку в этой комнате",
     "hint": "Администраторы сайта могут менять оформление всегда. При включении это также доступно пользователям с правом редактирования бота.",
@@ -175,13 +211,21 @@
     "color": "Цвет имени и значка",
     "icon": "Значок в чате",
     "chatImageUrl": "URL изображения в чате",
-    "resetHint": "Оставьте поля пустыми для восстановления настроек по умолчанию. Изображение в чате имеет приоритет над значком. Используйте HTTPS-ссылки.",
+    "iconBackground": "Показывать фон значка",
+    "iconBackgroundHint": "Добавляет цветной фон и рамку значку в чате. Отключите, чтобы показывать только значок.",
+    "resetHint": "Оставьте поля пустыми для восстановления настроек по умолчанию. Изображение чата заменяет фото только в чате. Значок отображается рядом с именем. Используйте HTTPS-ссылки.",
     "saving": "Сохранение…",
     "save": "Сохранить оформление",
     "disabled": "Настройка оформления в этой комнате не разрешена.",
     "saved": "Оформление сохранено.",
     "error": "Не удалось загрузить или сохранить оформление.",
-    "retry": "Повторить"
+    "retry": "Повторить",
+    "iconHint": "Укажите название значка Tabler (например, IconRobot) или HTTPS-адрес изображения.",
+    "loadError": "Не удалось загрузить настройки внешнего вида.",
+    "saveError": "Не удалось сохранить настройки внешнего вида. Ваши изменения сохранены в форме.",
+    "invalidIcon": "Укажите название значка Tabler или HTTPS-адрес изображения.",
+    "invalidImageUrl": "Используйте HTTPS-адрес изображения без имени пользователя и пароля.",
+    "invalidColor": "Используйте шестизначный шестнадцатеричный цвет, например #38BDF8."
   },
   "roleGrantTabs": {
     "roles": "Роли",
@@ -189,7 +233,7 @@
   },
   "roleBadgeGrants": {
     "saved": "Доступ к аватарам сохранён.",
-    "title": "Значки, разблокированные по глобальной роли",
+    "title": "Значки, Разблокированные по Глобальной Роли",
     "hint": "Выберите до 100 значков для каждой роли. Доступ сохраняется, пока роль активна; купленные значки остаются в собственности.",
     "error": "Не удалось загрузить или сохранить доступ к бейджу.",
     "retry": "Повторить попытку",
@@ -201,7 +245,7 @@
     "saving": "Сохранение…"
   },
   "socialLoginSettings": {
-    "title": "Вход через социальные сети",
+    "title": "Вход Через Социальные Сети",
     "label": "Войдите с помощью {provider}",
     "hint": "Контролирует новые входы в систему. Требуются учетные данные сервера; существующие сеансы остаются активными.",
     "saved": "Настройка сохранена.",
@@ -209,7 +253,7 @@
   },
   "roleAvatarGrants": {
     "saved": "Доступ к аватарам сохранён.",
-    "title": "Аватары, разблокированные по глобальной роли",
+    "title": "Аватары, Разблокированные по Глобальной Роли",
     "hint": "Выбирайте до 100 аватаров для каждой роли. Доступ сохраняется, пока удерживается роль; купленные вещи остаются в собственности. Эксклюзивные аватары для комнат управляются отдельно. Даты доступности все еще актуальны.",
     "error": "Не удалось загрузить или сохранить доступ к аватару.",
     "retry": "Повторить попытку",
@@ -238,7 +282,7 @@
     "regenerateError": "Не удалось создать токен.",
     "selfRename": "Разрешить боту переименовывать себя",
     "selfRenameHint": "Максимум одна смена каждые 5 минут. Префикс и разрешения остаются под вашим контролем.",
-    "title": "Боты комнаты",
+    "title": "Боты Комнаты",
     "hint": "Выберите бота, чтобы посмотреть его настройки. Вы можете редактировать своих ботов, если у вас есть разрешение.",
     "loading": "Загрузка ботов...",
     "empty": "В этой комнате нет доступных вам ботов.",
@@ -277,7 +321,7 @@
     "since": "Участник с {date}"
   },
   "dailyXpLimit": {
-    "title": "Дневной лимит XP",
+    "title": "Дневной Лимит XP",
     "description": "Общий бюджет наград woot/DJ. Награда расходует больший интервал: действия или глобальный. Сброс в 00:00 UTC. Монеты не затрагиваются.",
     "enabled": "Включён",
     "hours": "Часов в день (1–24)",
@@ -297,7 +341,7 @@
     "ctaTitle": "Войдите, чтобы общаться.",
     "ctaDescription": "Создайте бесплатный аккаунт, чтобы участвовать. Пока вы решаете, можно продолжать смотреть эфир.",
     "listeners": "слушателей",
-    "inQueue": "в очереди",
+    "inQueue": "В очереди",
     "signIn": "Войти",
     "createAccount": "Создать аккаунт",
     "auth": {
@@ -407,29 +451,29 @@
       "explore": "Исследуйте комнаты"
     },
     "stats": {
-      "eyebrow": "Живая платформа пульсирует",
-      "title": "WavezFM прямо сейчас",
+      "eyebrow": "Живая Платформа Пульсирует",
+      "title": "WavezFM Прямо Сейчас",
       "items": {
         "publicRooms": {
           "title": "Комнаты",
           "description": "Открытые комнаты, доступные в настоящее время на платформе."
         },
         "tracksPlayed": {
-          "title": "Отыгранные треки",
+          "title": "Отыгранные Треки",
           "description": "Воспроизведенные треки в общих живых сессиях."
         },
         "totalUsers": {
-          "title": "Зарегистрированные аккаунты",
+          "title": "Зарегистрированные Аккаунты",
           "description": "Все учетные записи, созданные на WavezFM."
         },
         "onlineUsers": {
-          "title": "Сейчас онлайн",
+          "title": "Сейчас Онлайн",
           "description": "Подключенные пользователи на платформе."
         }
       }
     },
     "supportedMedia": {
-      "eyebrow": "Поддерживаемые медиа",
+      "eyebrow": "Поддерживаемые Медиа",
       "title": "От ссылки до танцпола — без сложностей",
       "description": "Добавляйте треки с платформ, которыми уже пользуетесь. WavezFM синхронизирует воспроизведение для всей комнаты.",
       "youtube": {
@@ -441,7 +485,7 @@
       "ready": "Готово к воспроизведению"
     },
     "features": {
-      "eyebrow": "Создано для сообществ",
+      "eyebrow": "Создано для Сообществ",
       "title": "Больше, чем просто нажать Play",
       "description": "Инструменты для управления комнатой, поощрения активности и создания собственного стиля каждого пространства.",
       "bots": {
@@ -472,7 +516,7 @@
         "requirement": "Проведите с аккаунтом 30 дней."
       },
       "profile": {
-        "eyebrow": "Профиль и значки",
+        "eyebrow": "Профиль и Значки",
         "title": "Покажите, что стало частью вашей истории",
         "description": "Добавьте биографию и покажите значки, полученные на событиях или купленные в магазине.",
         "previewName": "Ваш профиль",
@@ -483,7 +527,7 @@
         "badgeSource": "Получен за участие в событии сообщества."
       },
       "customization": {
-        "eyebrow": "Темы комнат",
+        "eyebrow": "Темы Комнат",
         "title": "У каждой комнаты свой стиль",
         "description": "Настраивайте цвета, поверхности, навигацию, чат и элементы управления, создавая уникальное пространство.",
         "preview": "Предпросмотр комнаты",
@@ -546,7 +590,7 @@
   },
   "NotFound": {
     "title": "404",
-    "eyebrow": "Сигнал потерян",
+    "eyebrow": "Сигнал Потерян",
     "heading": "Эта страница не в эфире",
     "description": "Здесь нет страницы. Вернитесь в активную комнату или на главную.",
     "backHome": "На главную",
@@ -556,7 +600,7 @@
   },
   "ErrorPage": {
     "code": "500",
-    "eyebrow": "Воспроизведение прервано",
+    "eyebrow": "Воспроизведение Прервано",
     "heading": "На этой странице произошла ошибка",
     "description": "Приложение столкнулось с неожиданной ошибкой при загрузке этого экрана.",
     "tryAgain": "Попробовать снова",
@@ -593,7 +637,7 @@
   "billingGift": {
     "profileAction": "Подарите подписку",
     "senderDialog": {
-      "eyebrow": "Отправить подарок",
+      "eyebrow": "Отправить Подарок",
       "diamondsTitle": "Подарить бриллианты",
       "subscriptionTitle": "Подарить подписку",
       "diamondsDescription": "Выберите, кто получит бриллианты, напишите дополнительное сообщение и решите, должен ли подарок появиться в чате комнаты.",
@@ -642,15 +686,19 @@
       "subscriptionCheckoutSuccess": "Оплата подтверждена. Подписка будет автоматически доставлена ​​на выбранную учетную запись через несколько минут.",
       "subscriptionRoomCheckoutSuccess": "Оплата подтверждена. Подарки пользователям в комнате будут доставлены автоматически, как только Stripe завершит проведение оплаты.",
       "summary": {
-        "title": "Краткое описание подарков",
+        "title": "Краткое Описание Подарков",
         "diamonds": "{amount} бриллиантов",
         "diamondsBody": "Оформление заказа открывается в Stripe, и бриллианты автоматически доставляются получателю.",
         "subscriptionMonthly": "1 месяц подписки",
         "subscriptionAnnual": "1 год подписки",
-        "subscriptionBody": "Оформление заказа открывается в Stripe как единоразовый платеж без повторения, а подписка применяется автоматически после подтверждения платежа.",
+        "subscriptionBody": "Разовый платёж без автоматического продления. Выбранный срок добавляется к текущей дате окончания подписки получателя после подтверждения оплаты.",
         "roomSubscription": "{count, plural, one {# ежемесячный субподарок} few {# ежемесячные субподарки} many {# ежемесячные субподарки} other {# ежемесячные субподарки}}",
-        "roomSubscriptionBody": "Оформление заказа открывается в Stripe как единовременный платеж без повторения, а окончательное количество автоматически корректируется в соответствии с количеством активных пользователей, находящихся в комнате, отвечающих критериям до списания средств."
-      }
+        "roomSubscriptionBody": "Оформление заказа открывается в Stripe как единовременный платеж без повторения, а окончательное количество автоматически корректируется в соответствии с количеством активных пользователей, находящихся в комнате, отвечающих критериям до списания средств.",
+        "subscriptionWeekly": "7 Дней Подписки",
+        "subscriptionFortnightly": "15 Дней Подписки"
+      },
+      "durationLabel": "Срок Подарка",
+      "durationHint": "Разовый платёж. Выбранный срок добавляется к текущей дате окончания подписки получателя, без автоматического продления."
     },
     "receivedDialog": {
       "eyebrow": "Вы получили подарок",
@@ -679,13 +727,15 @@
       "roomLabel": "Объявление в комнате",
       "roomAnnounced": "Об этом подарке также было объявлено в {room}.",
       "roomPrivate": "Этот подарок был отправлен в приватно.",
-      "close": "Закрыть"
+      "close": "Закрыть",
+      "subscriptionDaysQuantity": "{amount} дней подписки",
+      "cycleDays": "{amount} дней"
     }
   },
   "inventoryGrant": {
     "receivedDialog": {
-      "eyebrow": "Инвентарь обновлён",
-      "title": "Товар получен",
+      "eyebrow": "Инвентарь Обновлён",
+      "title": "Товар Получен",
       "batchTitle": "Получено {count} товаров",
       "description": "{item} был добавлен в ваш инвентарь {category}.",
       "batchDescription": "Предметы теперь доступны в вашем инвентаре.",
@@ -819,7 +869,7 @@
       "errorFallback": "Вы можете закрыть это окно и повторить попытку."
     },
     "socialComplete": {
-      "eyebrow": "Почти готово",
+      "eyebrow": "Почти Готово",
       "title": "Выберите имя пользователя",
       "subtitle": "Ваша социальная учетная запись уже подключена. Выберите имя пользователя, которое вы будете использовать в WavezFM, прежде чем мы вас впустим.",
       "usernameLabel": "Имя пользователя",
@@ -868,7 +918,7 @@
       "unexpectedError": "В данный момент нам не удалось завершить двухфакторную проверку."
     },
     "forgotPassword": {
-      "title": "Восстановить пароль",
+      "title": "Восстановить Пароль",
       "subtitle": "Введите свой адрес электронной почты, и мы вышлем вам код для сброса пароля.",
       "resetTitle": "Установить новый пароль",
       "resetSubtitle": "Введите код, отправленный по электронной почте, и выберите новый пароль.",
@@ -919,7 +969,7 @@
       "submit": "Войти"
     },
     "verifyEmail": {
-      "title": "Подтвердите свой адрес электронной почты",
+      "title": "Подтвердите Свой Адрес Электронной Почты",
       "subtitle": "Мы отправили 6-значный код на вашу электронную почту. Введите его ниже, чтобы активировать свою учетную запись.",
       "otpLabel": "Проверочный код",
       "otpPlaceholder": "123456",
@@ -962,7 +1012,7 @@
     }
   },
   "rooms": {
-    "title": "Живые комнаты",
+    "title": "Живые Комнаты",
     "titleHighlight": "сейчас",
     "subtitle": "Посмотрите, что происходит прямо сейчас, найдите активные комнаты и откройте собственную за несколько секунд.",
     "searchPlaceholder": "Поиск по комнате, хозяину, треку или описанию...",
@@ -982,8 +1032,8 @@
     "join": "Войти в комнату",
     "currentRoom": "Вы уже здесь",
     "featured": {
-      "eyebrow": "Выбор редакции",
-      "title": "Главные комнаты",
+      "eyebrow": "Выбор Редакции",
+      "title": "Главные Комнаты",
       "subtitle": "Комнаты, которые сейчас задают темп на WavezFM.",
       "badge": "Главные",
       "addAction": "Добавить в главные",
@@ -996,8 +1046,8 @@
       "error": "Не удалось обновить главные комнаты."
     },
     "favorites": {
-      "eyebrow": "Быстрый доступ",
-      "title": "Избранные комнаты",
+      "eyebrow": "Быстрый Доступ",
+      "title": "Избранные Комнаты",
       "subtitle": "Комнаты, которые вы записали в избранные, чтобы можно было быстро вернуться в них, не ища снова.",
       "badge": "Избранные",
       "countLabel": "{count, plural, one {# комната} few {# комнат} many {# комнат} other {# комнат}}",
@@ -1013,8 +1063,8 @@
       "subtitleWithFavorites": "Активные комнаты, кроме тех, что вы уже добавили в избранные."
     },
     "privateRooms": {
-      "eyebrow": "Приватные комнаты",
-      "title": "Приватные комнаты",
+      "eyebrow": "Приватные Комнаты",
+      "title": "Приватные Комнаты",
       "countLabel": "{count, plural, one {# приватная комната} few {# приватные комнаты} many {# приватные комнаты} other {# приватные комнаты}}",
       "subtitle": "Приватные комнаты видны только администраторам и представителям.",
       "emptyTitle": "В данный момент не видно ни одной приватной комнаты",
@@ -1040,6 +1090,9 @@
       "emptyTitle": "Никто не играет.",
       "externalMediaTrack": "{provider} на экране",
       "waitingTitle": "Пока ничего не воспроизводится",
+      "currentlyPlaying": "Сейчас Играет",
+      "playbackPaused": "Приостановлено",
+      "onScreen": "На Экране",
       "favorite": "Избранная",
       "verified": "Верифицированная комната",
       "partner": "Партнерская комната",
@@ -1119,6 +1172,19 @@
       }
     },
     "live": {
+      "navigation": {
+        "music": "Музыка",
+        "room": "Комната",
+        "details": "О комнате",
+        "tools": "Инструменты",
+        "player": "Плеер",
+        "more": "Ещё",
+        "shortcuts": "Дополнительно",
+        "community": "Сообщество",
+        "help": "Помощь",
+        "moderation": "Модерация",
+        "updates": "Обновления"
+      },
       "loadError": "Не удалось загрузить комнату прямо сейчас.",
       "contextLoadError": "Не удалось загрузить контекст этой комнаты прямо сейчас.",
       "playlistLoadError": "Не удалось загрузить плейлист комнаты прямо сейчас.",
@@ -1129,16 +1195,15 @@
       "deleteMessageError": "Не удалось удалить это сообщение прямо сейчас.",
       "fanError": "Не удалось обновить информацию об отношениях с фанатами прямо сейчас.",
       "fanNotification": {
-        "title": "Новый фанат",
+        "title": "Новый Фанат",
         "message": "{username} стал вашим фанатом.",
         "messageUnknown": "Кто-то стал вашим фанатом."
       },
       "roleError": "Не удалось обновить роль этой комнаты прямо сейчас.",
       "errorCodes": {
-      "ROOM_AVATAR_ROOM_ONLY": "Этот аватар можно использовать только в комнате {room}. Войдите в неё, чтобы выбрать его; в других комнатах он недоступен.",
-      "ROOM_AVATAR_ROLE_REQUIRED": "Для этого аватара нужна роль {role} или выше в комнате {room}.",
-      "ROOM_AVATAR_INACTIVE": "Этот эксклюзивный аватар комнаты сейчас недоступен.",
-
+        "ROOM_AVATAR_ROOM_ONLY": "Этот аватар можно использовать только в комнате {room}. Войдите в неё, чтобы выбрать его; в других комнатах он недоступен.",
+        "ROOM_AVATAR_ROLE_REQUIRED": "Для этого аватара нужна роль {role} или выше в комнате {room}.",
+        "ROOM_AVATAR_INACTIVE": "Этот эксклюзивный аватар комнаты сейчас недоступен.",
         "ROOM_BANNED": "Вам запрещено посещать эту комнату.",
         "ROOM_PERMISSION_SEND_CHAT": "Вы не можете отправлять сообщения в чат этой комнаты.",
         "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "Вы не можете отправлять изображения или GIF в чат этой комнаты.",
@@ -1296,7 +1361,7 @@
       },
       "countryFlag": {
         "edit": "Изменить флаг",
-        "title": "Выберите флаг",
+        "title": "Выберите Флаг",
         "subtitle": "Обнаружение IP устанавливает первый флаг. После этого ваш выбор останется сохраненным в вашем профиле.",
         "searchPlaceholder": "Искать страну...",
         "unknown": "Флаг не установлен",
@@ -1312,16 +1377,31 @@
       "emojiInfo": {
         "dialogLabel": "Сведения об эмодзи {emoji}",
         "openLabel": "Посмотреть сведения о {emoji}",
+        "hoverHint": "Нажмите, чтобы узнать больше",
         "standardEmoji": "Стандартный эмодзи",
         "standardDescription": "Это стандартный эмодзи. Его можно использовать в любом месте WavezFM.",
         "customDescription": "Это пользовательский эмодзи WavezFM.",
         "privateDescription": "Этот эмодзи из комнаты только по приглашению или недоступной комнаты.",
-        "originLabel": "Этот эмодзи из",
+        "originLabel": "Этот эмодзи можно найти в",
         "openRoom": "Открыть комнату {room}",
         "privateRoom": "Приватная комната",
         "unknownRoom": "Комната WavezFM",
         "privateOrigin": "Комната только по приглашению",
-        "roomOrigin": "Комната WavezFM"
+        "roomOrigin": "Комната WavezFM",
+        "currentRoomDescription": "Этот эмодзи из этой комнаты. Введите его название в чат, чтобы использовать.",
+        "currentRoomGlobalDescription": "Этот эмодзи из этой комнаты. Его можно использовать в других чатах, где разрешены внешние эмодзи.",
+        "currentRoomSubscribeDescription": "Этот эмодзи из этой комнаты. Оформите подписку и добавьте комнату в избранное, чтобы использовать его в других чатах.",
+        "favoriteRoomDescription": "Этот эмодзи из одной из ваших избранных комнат. Откройте её, чтобы использовать его.",
+        "favoriteRoomSubscriberDescription": "Этот эмодзи из одной из ваших избранных комнат. Введите его название в чат, чтобы использовать.",
+        "externalRoomDescription": "Хотите использовать этот эмодзи в других чатах? Оформите подписку и добавьте эту комнату в избранное.",
+        "externalRoomSubscriberDescription": "Добавьте эту комнату в избранное, чтобы использовать этот эмодзи в других чатах.",
+        "restrictedDescription": "Этот эмодзи из комнаты, доступной только по приглашению или недоступной.",
+        "globalDisabledDescription": "В этой комнате нельзя использовать эмодзи из других комнат.",
+        "subscribeAction": "Оформить подписку",
+        "favoriteRoomSubscribeDescription": "Этот эмодзи из одной из ваших избранных комнат. Оформите подписку, чтобы использовать его в других чатах.",
+        "currentRoomFavoriteDescription": "Этот эмодзи из этой комнаты. Добавьте комнату в избранное, чтобы использовать его в других чатах, где разрешены внешние эмодзи.",
+        "externalRoomJoinDescription": "Этот эмодзи из другой комнаты. Откройте её, чтобы использовать его.",
+        "openRoomAction": "Открыть комнату"
       },
       "mediaPreviewTitle": "Предварительный просмотр изображения",
       "mediaPreviewOpenOriginal": "Открыть оригинал",
@@ -1334,7 +1414,13 @@
       "externalLinkConfirmCancel": "Отмена",
       "bot": {
         "label": "Робот",
-        "profileMeta": "Комнатный бот"
+        "profileMeta": "Комнатный бот",
+        "ephemeralLabel": "Видно только вам",
+        "ephemeralHistoryHint": "Это личное сообщение бота не сохраняется в истории чата.",
+        "dismissEphemeral": "Скрыть",
+        "ephemeralRecipientsLabel": "Видно выбранным получателям",
+        "ephemeralPublicLabel": "Временное сообщение",
+        "ephemeralPublicHistoryHint": "Это временное сообщение бота не сохраняется в истории чата."
       },
       "badge": "Значок",
       "noBadge": "Нет значка",
@@ -1385,17 +1471,17 @@
         "externalMediaTrack": "{provider} на экране"
       },
       "roomInfo": {
-        "button": "Информация о комнате",
+        "button": "Информация о Комнате",
         "eyebrow": "Информация",
-        "title": "Информация о комнате",
+        "title": "Информация о Комнате",
         "subtitle": "Краткий обзор правил, медиа и текущего состояния этой комнаты.",
         "close": "Закрыть информацию о комнате",
         "description": "Описание",
         "noDescription": "Описание не дано.",
-        "roomIdentity": "Идентификатор комнаты комнаты",
+        "roomIdentity": "Идентификатор Комнаты Комнаты",
         "verified": "Проверенная комната",
         "partner": "Партнерская комната",
-        "overview": "Обзор комнаты",
+        "overview": "Обзор Комнаты",
         "host": "Хозяин",
         "activeUsers": "В комнате",
         "queue": "В очереди",
@@ -1440,7 +1526,8 @@
         "no": "Нет"
       },
       "tools": {
-        "title": "Управление комнатой",
+        "title": "Управление Комнатой",
+        "adminBackground": "Фон Комнаты",
         "linkFilter": "Фильтр ссылок",
         "externalMediaAdd": "Добавить внешнее медиа",
         "externalMediaConfigure": "Редактировать внешнее медиа",
@@ -1463,7 +1550,7 @@
         "externalMediaGoogleDriveUnavailable": "Сейчас не удалось получить доступ к этому файлу на Google Диске. Он может быть приватным, все еще обрабатывается или недоступен для прямой потоковой передачи.",
         "externalMediaGoogleDriveFolderUnsupported": "Не удалось найти общедоступное видео в папке на Google Диске. Сделайте папку и файлы общедоступными или вставьте прямую ссылку на видеофайл.",
         "externalMediaDialog": {
-          "title": "Внешние медиа комнаты",
+          "title": "Внешние Медиа Комнаты",
           "subtitle": "Вставьте проигрыватель YouTube, Twitch, Kick, Google Drive, Dailymotion, PHP/HLS, прямой файл или открытую папку Диска с видео и субтитрами.",
           "label": "URL медиа",
           "titleLabel": "Настраиваемое название",
@@ -1483,8 +1570,23 @@
           "clear": "Удалить медиа"
         }
       },
+      "adminBackgroundDialog": {
+        "title": "Фон Комнаты",
+        "description": "Установите фоновое изображение для этой комнаты, не меняя другие комнаты.",
+        "urlLabel": "URL Фона",
+        "urlPlaceholder": "https://cdn.wavez.fm/background.webp",
+        "hint": "Используйте URL с HTTPS или путь к локальному файлу, начинающийся с /. Удаление этого переопределения восстановит собственный фон комнаты или глобальный фон по умолчанию.",
+        "invalidUrl": "Используйте URL с HTTPS или путь к локальному файлу, начинающийся с /.",
+        "save": "Сохранить Фон",
+        "clear": "Удалить Переопределение",
+        "cancel": "Отмена",
+        "saving": "Сохранение...",
+        "success": "Фон этой комнаты обновлён.",
+        "error": "Не удалось обновить фон этой комнаты.",
+        "previewAlt": "Предпросмотр фона комнаты"
+      },
       "linkFilterDialog": {
-        "title": "Фильтр ссылок",
+        "title": "Фильтр Ссылок",
         "subtitle": "Выберите, будет ли комната блокировать все ссылки или только определенные домены и шаблоны.",
         "mediaPreviewsTitle": "Показывать превью ссылок и GIF",
         "mediaPreviewsHint": "Если отключено, ссылки останутся кликабельными, но изображения, GIF и внешние медиа не будут раскрываться в чате.",
@@ -1504,9 +1606,50 @@
       },
       "linkReviewPending": "Ваша ссылка отправлена модераторам и пока не видна в чате.",
       "settingsPanel": {
-        "button": "Настройки комнаты",
+        "ownershipTransfer": {
+          "title": "Transfer room ownership",
+          "description": "Choose the new host for {name} and confirm using the code sent to your email.",
+          "button": "Transfer host",
+          "buttonHint": "Give ownership of this room to another account, with email confirmation.",
+          "consequence": "You will become a cohost and give up ownership of the room.",
+          "benefits": "Benefits and limits tied to the host will follow the new host’s subscription.",
+          "targetLabel": "New host’s username",
+          "targetHint": "Enter the exact @username. Check the account below before requesting a code.",
+          "checkUser": "Check user",
+          "checking": "Checking…",
+          "newHost": "New host",
+          "lookupError": "We couldn’t check that account right now.",
+          "sendCode": "Send email code",
+          "sending": "Sending…",
+          "requestError": "We couldn’t send the code right now.",
+          "emailSent": "We sent a confirmation code to {email}.",
+          "codeLabel": "Email confirmation code",
+          "codeHint": "The code expires in 10 minutes. Sending another code replaces the previous one.",
+          "expired": "This code has expired. Request a new one.",
+          "attemptsRemaining": "{count, plural, one {# attempt remaining} few {# attempts remaining} many {# attempts remaining} other {# attempts remaining}}",
+          "resend": "Send another code",
+          "resendCountdown": "Resend in {seconds}s",
+          "retryCountdown": "Повторить через {seconds} с",
+          "confirm": "Confirm transfer",
+          "confirming": "Transferring…",
+          "confirmError": "We couldn’t confirm the transfer right now.",
+          "cancel": "Cancel",
+          "success": "@{username} is now the host. You are a cohost.",
+          "errors": {
+            "FORBIDDEN": "Only the current room host can transfer ownership.",
+            "EMAIL_VERIFICATION_REQUIRED": "Verify the email on your account before transferring ownership.",
+            "INVALID_TARGET": "Choose another registered account. Bots, guests and suspended accounts cannot become the host.",
+            "INVALID_CODE": "The confirmation code is incorrect.",
+            "EXPIRED": "This code has expired or has already been used. Request a new one.",
+            "RATE_LIMITED": "Please wait before requesting another code.",
+            "CONFLICT": "The room settings, host or your email changed. Review the current details and request a new code.",
+            "EMAIL_UNAVAILABLE": "Email delivery is temporarily unavailable. Please try again later.",
+            "UNAVAILABLE": "Ownership transfer is temporarily unavailable. Please try again later."
+          }
+        },
+        "button": "Настройки Комнаты",
         "mobileButton": "Настройки",
-        "title": "Настройки комнаты",
+        "title": "Настройки Комнаты",
         "close": "Закрыть настройки комнаты",
         "save": "Сохранить настройки",
         "saving": "Сохранение...",
@@ -1530,7 +1673,7 @@
           "queue": "Очередь DJ",
           "history": "История чата",
           "linkFilters": "Фильтры чата",
-          "tools": "Управление комнатой",
+          "tools": "Управление Комнатой",
           "rules": "Правила комнаты",
           "mediaBlacklist": "Черный список комнаты",
           "bans": "Забаненные пользователи комнаты",
@@ -1620,7 +1763,7 @@
           "mediaBlockedUrlsHint": "Используйте каждую строку для одной ссылки на музыку/видео, идентификатора или фрагмента URL.",
           "mediaBlockedUrlsPlaceholder": "https://youtu.be/...\nyoutube: abc123\nsoundcloud.com/artist/track",
           "mediaBlockedTitles": "Заблокированные названия и исполнители",
-          "mediaBlockedTitlesHint": "Используйте каждую строку для одного названия, исполнителя или фрагмента названия медиа.",
+          "mediaBlockedTitlesHint": "Указывайте по одной записи в строке или через запятую: целые слова или фразы из названия/имени исполнителя. 'bass boost' требует всей фразы, а не только 'bass'.",
           "mediaBlockedTitlesPlaceholder": "заблокированный исполнитель\nназвание песни\nзапрещенный ремикс",
           "bannerUpload": "Загрузить баннер",
           "bannerUploading": "Загрузка баннера...",
@@ -1628,12 +1771,15 @@
           "bannerUploadSize": "Выберите изображение размером до 5 МБ.",
           "bannerUploadInvalid": "Недопустимое изображение. Используйте JPEG, PNG, WebP или GIF. Баннер будет статическим.",
           "bannerUploadUnavailable": "Хранилище баннеров еще не настроено.",
-          "bannerUploadFailed": "Не удалось загрузить баннер. Пожалуйста, попробуйте еще раз."
+          "bannerUploadFailed": "Не удалось загрузить баннер. Пожалуйста, попробуйте еще раз.",
+          "requireLogin": "Требовать Вход",
+          "requireLoginHint": "Войти могут только пользователи, авторизованные в системе. При включении этой настройки гости, находящиеся в комнате, будут удалены.",
+          "guestAccessEnabled": "Доступ Гостей"
         },
         "mediaBlacklist": {
-          "title": "Черный список музыки и видео",
+          "title": "Черный Список Музыки и Видео",
           "hint": "Заблокировать медиа в этой комнате по URL, идентификатору, названию или исполнителю. Глобальный черный список действует независимо от этого.",
-          "helper": "В записях игнорируется регистр. В названиях также игнорируются диактрические символы. Комната пропускает эти треки во время воспроизведения, не удаляя из плейлиста пользователя.",
+          "helper": "Названия совпадают с целыми словами/фразами без учёта регистра, диакритики и лишних пробелов. URL/ID совпадают с фрагментами. Комната пропускает треки, не удаляя их из плейлиста.",
           "count": "{count} запись/записей"
         },
         "appearance": {
@@ -1694,7 +1840,7 @@
           "defaultVideoFrame": "Видеокадр по умолчанию"
         },
         "linkReviews": {
-          "title": "Ссылки на проверке",
+          "title": "Ссылки на Проверке",
           "hint": "Сообщения с ограниченными ссылками скрыты, пока модератор их не одобрит.",
           "refresh": "Обновить",
           "loading": "Загрузка ссылок…",
@@ -1721,6 +1867,8 @@
           "favoriteRoomGlobalEmojisHint": "Если этот параметр отключен, подписчики не могут использовать собственные смайлы из других любимых комнат в этой комнате.",
           "messageReactions": "Разрешить реакции на сообщения",
           "messageReactionsHint": "Если этот параметр отключен, никто не сможет добавлять или удалять реакции в виде эмодзи на сообщения в этой комнате.",
+          "mutedUsersCanReact": "Разрешить реакции пользователям с запретом чата",
+          "mutedUsersCanReactHint": "Если отключено, пользователи с запретом чата не могут добавлять и удалять реакции в этой комнате.",
           "livePlaybackXpMode": "XP за прямые трансляции",
           "livePlaybackXpModeHint": "Выберите, кто получит XP, пока в комнате идет прямая трансляция.",
           "livePlaybackXpModes": {
@@ -1734,7 +1882,7 @@
           "commandAnnouncementsSelected": "Для объявлений выбрано {count} команд.",
           "commandAnnouncementsConfigure": "Выберите команды",
           "roomBots": {
-            "title": "Боты комнаты",
+            "title": "Боты Комнаты",
             "hint": "Создайте здесь токен и выберите, что именно может делать бот. Каждый бот отображается как робот и не наследует роль владельца.",
             "nameLabel": "Имя бота",
             "namePlaceholder": "Бот ночной смены",
@@ -1753,35 +1901,35 @@
             },
             "permissions": {
               "read_state": {
-                "title": "Читать состояние комнаты",
+                "title": "Читать Состояние Комнаты",
                 "hint": "Позволяет читать состояние, очередь, воспроизведимый трек и присутствие пользователей."
               },
               "read_chat": {
-                "title": "Читать чат",
+                "title": "Читать Чат",
                 "hint": "Позволяет читать сообщения и события комнаты."
               },
               "send_chat": {
-                "title": "Отправлять сообщения",
+                "title": "Отправлять Сообщения",
                 "hint": "Позволяет говорить в чате как робот."
               },
               "manage_queue": {
-                "title": "Управлять очередью",
+                "title": "Управлять Очередью",
                 "hint": "Позволяет удалять, перемещать и добавлять пользователей в очередь."
               },
               "skip_others": {
-                "title": "Пропускать треки",
+                "title": "Пропускать Треки",
                 "hint": "Позволяет пропустить текущую песню."
               },
               "mute_user": {
-                "title": "Отключать пользователей от чата",
+                "title": "Отключать Пользователей от Чата",
                 "hint": "Позволяет запрещать пользователям отправлять сообщения в чат."
               },
               "kick_user": {
-                "title": "Выгонять пользователей",
+                "title": "Выгонять Пользователей",
                 "hint": "Позволяет удалять пользователей из комнаты."
               },
               "ban_user": {
-                "title": "Банить пользователей",
+                "title": "Банить Пользователей",
                 "hint": "Позволяет блокировать пользователям доступ к комнате."
               },
               "delete_protected_messages": {
@@ -1789,11 +1937,11 @@
                 "hint": "Разрешает удалять отдельные сообщения, включая сообщения администраторов. Только администраторы могут выдать это разрешение; требуется clear_chat."
               },
               "clear_chat": {
-                "title": "Очищать чат",
+                "title": "Очищать Чат",
                 "hint": "Позволяет очистить чат или сообщения одного пользователя."
               },
               "manage_room": {
-                "title": "Управлять комнатой",
+                "title": "Управлять Комнатой",
                 "hint": "Включает доступ к администрированию комнаты и действует как широкое разрешение на действия от лица персонала."
               }
             },
@@ -1872,7 +2020,7 @@
           "removeRoleSuccess": "{username} больше имеет роль {role} в этой комнате."
         },
         "security": {
-          "title": "Безопасность хозяина",
+          "title": "Безопасность Хозяина",
           "subtitle": "Доступ хозяина остается защищенным. Роль хозяина сохраняет самые высокие привилегии в комнате, даже если вы настроите другие роли."
         },
         "bans": {
@@ -1903,6 +2051,7 @@
           "clearError": "Не удалось очистить журналы комнаты прямо сейчас.",
           "actions": {
             "room_updated": "Настройки комнаты обновлены.",
+            "room_ownership_transferred": "Право собственности на комнату передано",
             "room_chat_history_disabled": "История чата отключена",
             "room_link_filters_updated": "Фильтры ссылок обновлены.",
             "room_word_filters_updated": "Фильтры слов обновлены",
@@ -1967,6 +2116,7 @@
               "maxTrackDurationSeconds": "Макс. продолжительность трека",
               "allowYouTubeLives": "Трансляции YouTube",
               "messageReactionsEnabled": "Реакции на сообщения",
+              "mutedUsersCanReact": "Разрешить реакции пользователям с запретом чата",
               "skipRecentlyPlayedTracksEnabled": "Пропуск недавних треков",
               "skipRecentlyPlayedTracksWindowMinutes": "Давность недавних треков",
               "allowExternalMediaEmbeds": "Встраивание внешних медиа",
@@ -1977,7 +2127,7 @@
               "livePlaybackXpMode": "XP от трансляций",
               "roomRules": "Правила комнаты",
               "chatUnavailableTrackSkipAlertsEnabled": "Оповещения о недоступных треках",
-              "isNsfw": "комната NSFW",
+              "isNsfw": "Комната NSFW",
               "queueLocked": "Очередь заблокирована",
               "cycleWaitlist": "Цикл очереди",
               "chatCommandAnnouncementsEnabled": "Объявления команд",
@@ -2006,7 +2156,7 @@
         "agree": "Я согласен"
       },
       "permissionsModal": {
-        "title": "Разрешения для ролей",
+        "title": "Разрешения для Ролей",
         "subtitle": "Решите, что разрешено делать каждой роли персонала комнаты. Переопределения применяются только внутри этой комнаты.",
         "close": "Закрыть разрешения для роли",
         "reset": "Использовать разрешения по умолчанию",
@@ -2147,7 +2297,7 @@
         }
       },
       "commandAnnouncementsModal": {
-        "title": "Объявления команд",
+        "title": "Объявления Команд",
         "subtitle": "Выберите, какие команды косой черты комнаты должны стать автоматическими сообщениями в чате.",
         "close": "Закрыть объявления команд",
         "selectedCount": "Выбрано {count} из {total} команд",
@@ -2236,16 +2386,16 @@
         }
       },
       "favorite": {
-        "add": "Добавить комнату в избранные",
-        "remove": "Удалить комнату из избранных"
+        "add": "Добавить Комнату в Избранные",
+        "remove": "Удалить Комнату из Избранных"
       },
       "favoriteToast": {
         "added": "Комната в избранных.",
         "removed": "Комната удалена из избранных."
       },
       "history": {
-        "button": "История комнаты",
-        "title": "История комнаты",
+        "button": "История Комнаты",
+        "title": "История Комнаты",
         "emptyTitle": "Треки еще не воспроизводились",
         "emptyDescription": "Как только в комнате начнет играть музыка, здесь появится история.",
         "playingNow": "Сейчас играет",
@@ -2279,12 +2429,38 @@
         "anonymousDonor": "Аноним"
       },
       "welcomeBanner": {
-        "title": "Приветственное сообщение",
+        "title": "Приветственное Сообщение",
         "dismiss": "Скрыть приветственное сообщение",
         "mediaAlt": "Приветственное медиа комнаты"
       },
+      "welcomeMarkdown": {
+        "alignment": "Выравнивание текста",
+        "left": "Выровнять слева",
+        "center": "По центру",
+        "right": "Выровнять справа",
+        "helper": "Выделите текст и используйте кнопки для форматирования. Выравнивание применяется к выделенным абзацам или, без выделения, ко всему сообщению; проверьте результат на вкладке «Предпросмотр».",
+        "formatting": "Форматирование текста",
+        "bold": "Жирный",
+        "italic": "Курсив",
+        "underline": "Подчёркнутый",
+        "strike": "Зачёркнутый",
+        "spoiler": "Скрытый текст",
+        "inlineCode": "Код в тексте",
+        "link": "Ссылка",
+        "bulletList": "Маркированный список",
+        "numberedList": "Нумерованный список",
+        "quote": "Цитата",
+        "codeBlock": "Блок кода",
+        "write": "Написать",
+        "preview": "Предпросмотр",
+        "previewEmpty": "Напишите приветственное сообщение, чтобы увидеть его предпросмотр.",
+        "textPlaceholder": "текст",
+        "linkTextPlaceholder": "текст ссылки",
+        "codePlaceholder": "код",
+        "urlPlaceholder": "https://example.com"
+      },
       "welcomeManager": {
-        "title": "Приветственное сообщение",
+        "title": "Приветственное Сообщение",
         "subtitle": "Установите заметку, которая будет закреплена вверху чата этой комнаты и будет приветствовать всех, кто присоединится.",
         "label": "Сообщение",
         "placeholder": "Оставьте записку для всех, кто присоединится к комнате.",
@@ -2317,6 +2493,7 @@
         "cinema": "Войти в в режим кино",
         "exitCinema": "Выйти из режима кино",
         "reload": "Перезагрузить плеер",
+        "moreActions": "Другие действия",
         "youtubeSyncLabel": "Синхр.",
         "youtubeSyncHint": "Воспроизведение синхронизировано с комнатой. Перемотка возвращает к её текущей позиции.",
         "externalMediaResume": "Возобновить видео",
@@ -2372,7 +2549,7 @@
         "meh": "Meh"
       },
       "trackToast": {
-        "title": "Сейчас играет",
+        "title": "Сейчас Играет",
         "message": "{username} играет «{title}»"
       },
       "enterToast": {
@@ -2403,7 +2580,13 @@
         "confirmSave": "Подтвердить захват",
         "confirmRemove": "Удалить захват",
         "duplicate": "Этот трек уже есть в выбранном плейлисте.",
-        "savedToast": "Трек \"{title}\" добавлен ​​в плейлист {playlist}."
+        "savedToast": "Трек \"{title}\" добавлен ​​в плейлист {playlist}.",
+        "addPlaylist": "Добавить Новый Плейлист",
+        "playlistName": "Название Плейлиста",
+        "playlistNamePlaceholder": "Введите название",
+        "createAndGrab": "Создать и Сохранить",
+        "createdRetry": "Плейлист {name} создан. Повторите попытку, чтобы добавить трек.",
+        "createError": "Не удалось создать плейлист."
       },
       "footer": {
         "emptyPlaylist": "Нет активного плейлиста",
@@ -2630,7 +2813,7 @@
         "replyingTo": "В ответ пользователю @{user}",
         "cancelReply": "Отменить ответ",
         "replyDeleted": "Сообщение недоступно",
-        "typing": "{user} печатает",
+        "typing": "{user} печатает...",
         "unreadMessages": "{count, plural, one {# новое сообщение} few {# новых сообщения} many {# новых сообщений} other {# новых сообщения}}",
         "loadError": "Не удалось загрузить этот разговор прямо сейчас.",
         "editError": "Не удалось изменить этот шёпот прямо сейчас.",
@@ -2643,10 +2826,13 @@
       "replyingToLabel": "В ответ пользователю @{username}",
       "composerReconnecting": "Переподключение...",
       "composerChatLocked": "Чат закрыт персоналом",
+      "composerMuted": "Чат заблокирован · осталось {remaining}",
       "composerPlaceholder": "Написать сообщение…",
       "pastedImage": {
+        "dropToUpload": "Отпустите, чтобы загрузить",
         "spoiler": "Спойлер",
         "label": "Прикрепленное изображение",
+        "gifLabel": "Прикрепленный GIF",
         "expired": "Срок действия этого медиа истёк.",
         "attach": "Прикрепить изображение или GIF",
         "fallbackName": "Вставленное изображение",
@@ -2688,18 +2874,20 @@
         "adminExternalAction": "Открыть администрирование"
       },
       "emoji": {
-        "title": "эмодзи",
+        "title": "Эмодзи",
         "custom": "Эмодзи комнаты",
         "customWithGlobalAccess": "Комнатные и глобальные эмодзи",
         "globalCustom": "Избранные глобальные эмодзи",
         "native": "Системные эмодзи",
-        "autocomplete": "Рекомендованные эмодзи",
+        "autocomplete": "Эмодзи для {query}",
         "button": "Открыть выбор эмодзи",
         "searchPlaceholder": "Поиск эмодзи или шорткода",
         "frequentlyUsed": "Часто используемые",
         "noResults": "Эмодзи не найдено."
       },
       "gifPicker": {
+        "unavailableTitle": "GIF недоступен",
+        "unavailableDescription": "Не удалось загрузить изображение.",
         "title": "GIFs",
         "subtitle": "Найдите в KLIPY и закиньте GIF в чат.",
         "favoritesSubtitle": "Ваши сохраненные GIF для быстрой отправки в чат.",
@@ -2726,14 +2914,14 @@
         "adLabel": "Реклама",
         "previousPage": "Предыдущая страница GIF",
         "nextPage": "Следующая страница GIF",
-        "pageLabelPrefix": "страница GIF",
+        "pageLabelPrefix": "Страница GIF",
         "attachedLabel": "Прикрепленный GIF",
         "attachedReady": "Готово к отправке вместе с сообщением.",
         "attachedHint": "Ссылка на GIF будет добавлена в чат.",
         "removeAttachment": "Удалить GIF"
       },
       "stageEffectsPanel": {
-        "title": "Эффекты комнаты",
+        "title": "Эффекты Комнаты",
         "command": "/эффекты",
         "close": "Закрыть эффекты",
         "globalBrazilGoalAudio": "Глобальное аудио Гол Бразилии",
@@ -2834,25 +3022,25 @@
         "usageDequeue": "Использование: /dequeue @user",
         "usageClearQueue": "Использование: /clearqueue",
         "usageRemoveGhost": "Использование: /removeghost <30m|2h>",
-        "usageMove": "Использование: /move @user <position>",
+        "usageMove": "Использование: /move @user '<position>'",
         "usageSwap": "Использование: /swap @пользователь",
         "usageUnban": "Использование: /unban имя пользователя",
-        "usageCoins": "Использование: /coins <@user|room|all> <set|add|remove> <количество>",
-        "usageDiamonds": "Использование: /diamonds <@user|room|all> <set|add|remove> <количество>",
-        "usageRoomRole": "/roomrole <роль>",
+        "usageCoins": "Использование: /coins '<@user|room|all>' '<set|add|remove>' '<количество>'",
+        "usageDiamonds": "Использование: /diamonds '<@user|room|all>' '<set|add|remove>' '<количество>'",
+        "usageRoomRole": "/roomrole '<роль>'",
         "usageGlobalRole": "/globalrole [@user]",
-        "usageXp": "Использование: /xp <@user|room|all> <set|add|remove> <количество>",
-        "usageSubgift": "Использование: /subgift <@user|room|global> <количество> [--exclude-subscribers] (пользователь/глобально: 1–12 месяцев, комната: 1–100 подписок; флаг только для подарков в комнате или распределения по всей платформе)",
+        "usageXp": "Использование: /xp '<@user|room|all>' '<set|add|remove>' '<количество>'",
+        "usageSubgift": "Использование: /subgift '<@user|room|global>' '<количество>' [--exclude-subscribers] (пользователь/глобально: 1–12 месяцев, комната: 1–100 подписок; флаг только для подарков в комнате или распределения по всей платформе)",
         "usageSystemAlert": "Использование: /systemalert",
         "usageRoomAlert": "Использование: /roomalert",
         "usageAlert": "Использование: /alert @user или /useralert @user",
         "usageGiveaway": "Использование: /giveaway или /sorteio.",
-        "usageRenameUser": "Использование: /renameuser @user <имя для отображения>",
-        "usageGiveItem": "Использование: /giveitem @user[, @other] <avatar|badge|background|video-frame> <id предмета> [дата истечения срока в формате ISO]",
-        "usageGiveRole": "Использование: /giverole @пользователь <slug или название роли>",
-        "usageEventBadge": "Использование: /eventbadge <badge> <room> <30m|2h>",
-        "usageEffect": "Использование: /effect <type> [#HEX] [audio:on|off], /effect off или /effect audio <on|off>. Типы: стробоскоп, фейерверк, сердечки, конфетти, искры, сэмпай, дождь, дым, гол.",
-        "usageStrobo": "Использование: /эффект <type|off>",
+        "usageRenameUser": "Использование: /renameuser @user '<имя для отображения>'",
+        "usageGiveItem": "Использование: /giveitem @user[, @other] '<avatar|badge|background|video-frame>' '<id предмета>' [дата истечения срока в формате ISO]",
+        "usageGiveRole": "Использование: /giverole @пользователь '<slug или название роли>'",
+        "usageEventBadge": "Использование: /eventbadge '<badge>' '<room>' '<30m|2h>'",
+        "usageEffect": "Использование: /effect '<type>' [#HEX] [audio:on|off], /effect off или /effect audio '<on|off>'. Типы: стробоскоп, фейерверк, сердечки, конфетти, искры, сэмпай, дождь, дым, гол.",
+        "usageStrobo": "Использование: /эффект '<type|off>'",
         "usagePoll": "Использование: /poll или /enquete.",
         "usageClear": "Использование: /clear [@user|0-50]",
         "usageClearLocal": "Использование: /clearlocal",
@@ -2865,7 +3053,7 @@
         "usageSlowMode": "Использование: /slowmode <0|off|3s|30s|1m|1h>",
         "usageMinChatLevel": "Использование: /minchatlevel <0-999|off>",
         "usageLinkFilter": "Использование: /linkfilter [on|off]",
-        "usageSpoiler": "Использование: /spoiler <сообщение>",
+        "usageSpoiler": "Использование: /spoiler '<сообщение>'",
         "userNotFound": "Не удалось найти этого человека в комнате.",
         "userNotFoundGlobal": "Не удалось найти этого пользователя.",
         "userLookupError": "Сейчас не удалось открыть этого пользователя.",
@@ -2974,10 +3162,10 @@
           "effect": "Включить анимированные эффекты сцены для всех в комнате.",
           "strobo": "Включить или выключает анимированный стробоскоп на сцене для всех, кто находится в комнате.",
           "poll": "Открыть модальное окно для создания опроса, закрепленного в чате.",
-          "bot": "Открыть личную команду боту"
+          "bot": "Отправить личную команду или открыть диалог без команды"
         },
         "usageUnmute": "Использование: /mute @user",
-        "usageBot": "/bot @bot"
+        "usageBot": "/bot @bot [команда]"
       },
       "adminSlashDialog": {
         "walletTitle": "Установить {currency}",
@@ -3071,12 +3259,16 @@
       },
       "systemAlertDialog": {
         "appearance": {
+          "iconBeforeTitle": "Значок перед заголовком",
           "iconBackgroundEnabled": "Фон значка",
           "iconBackgroundHint": "Показывает фон и рамку значка. Отключите, чтобы оставить только значок.",
           "heading": "Внешний вид окна",
+          "headingChat": "Внешний вид чата",
           "reset": "Вернуть синюю тему",
           "background": "Фон окна",
+          "backgroundChat": "Фон чата",
           "border": "Рамка окна",
+          "borderChat": "Рамка чата",
           "titleColor": "Цвет заголовка",
           "textColor": "Цвет сообщения",
           "iconColor": "Цвет значка",
@@ -3094,6 +3286,7 @@
           "right": "Справа",
           "iconSize": "Размер значка",
           "width": "Ширина окна",
+          "widthChat": "Ширина чата",
           "titleSize": "Размер заголовка",
           "textSize": "Размер текста",
           "preview": "Предпросмотр; ширина подстраивается под экран.",
@@ -3103,7 +3296,7 @@
           "presetCustom": "Свой"
         },
         "colorLabel": "Цвет оповещения",
-        "title": "Глобальное системное оповещение",
+        "title": "Глобальное Системное Оповещение",
         "subtitle": "Отправить системное сообщение в каждую подключенную комнату прямо сейчас.",
         "roomTitle": "Системное оповещение в комнате",
         "roomSubtitle": "Отправить системное сообщение только людям, находящимся в этой комнате, прямо сейчас.",
@@ -3112,6 +3305,12 @@
         "systemTitle": "Системное оповещение",
         "systemTitlePtBr": "Alerta do Sistema",
         "systemTitleEnUs": "System Alert",
+        "roomSystemTitlePtBr": "Alerta do Sistema da Sala",
+        "roomSystemTitleEnUs": "Room System Alert",
+        "userSystemTitlePtBr": "Alerta para Usuário",
+        "userSystemTitleEnUs": "User Alert",
+        "globalSystemTitlePtBr": "Alerta Global do Sistema",
+        "globalSystemTitleEnUs": "Global System Alert",
         "singleMode": "Один язык",
         "bilingualMode": "Португальский и английский",
         "modeHint": "Включить два языка, чтобы каждый человек видел оповещение на своем языке интерфейса.",
@@ -3170,7 +3369,7 @@
         "close": "Закрыть оповещение"
       },
       "pollDialog": {
-        "title": "Создать опрос",
+        "title": "Создать Опрос",
         "subtitle": "Опрос остается закрепленным в верхней части чата и может длиться не более 7 дней.",
         "questionLabel": "Вопрос",
         "questionPlaceholder": "Пример: Какую тему нам следует сыграть следующей?",
@@ -3342,14 +3541,14 @@
         "closeModal": "Закрыть опрос"
       },
       "emojiManager": {
-        "title": "Комнатные смайлы",
-        "subtitle": "Добавляйте и удаляйте собственные смайлы для этого сообщества.",
+        "title": "Комнатные Смайлы",
+        "subtitle": "Лимит эмодзи в этой комнате зависит от активной подписки её владельца.",
         "close": "Закрыть менеджер смайлов",
         "empty": "Пользовательских смайлов пока нет.",
         "add": "Добавить смайлик",
         "save": "Сохранять",
         "cancel": "Отмена",
-        "edit": "Изменить имя",
+        "edit": "Изменить эмодзи",
         "renamePlaceholder": "новый короткий код",
         "usage": "{count}/{limit}",
         "remaining": "осталось {count}",
@@ -3357,6 +3556,7 @@
         "imagePlaceholder": "https://",
         "helper": "Разрешены только прямые ссылки на изображения: PNG, JPG, GIF, WEBP, APNG или AVIF.",
         "limitReached": "В этой комнате уже достигнут лимит пользовательских смайлов {limit}.",
+        "overLimit": "В этой комнате {count} эмодзи, но текущий лимит владельца — {limit}. Существующие эмодзи остаются доступны. Чтобы добавить новые, продлите подписку владельца или удалите эмодзи, чтобы их осталось меньше {limit}.",
         "button": "Управление смайликами комнаты",
         "error": "Сейчас нам не удалось обновить смайлы этой комнаты.",
         "created": "Эмодзи добавлен в комнату."
@@ -3385,7 +3585,8 @@
       },
       "mentionTargets": {
         "everyone": "Вся комната",
-        "djs": "диджеи в очереди",
+        "djs": "Диджеи в очереди",
+        "staff": "Персонал комнаты",
         "aliases": {
           "everyone": "все",
           "djs": "диджеи",
@@ -3417,7 +3618,7 @@
       "statusSaving": "Сохранение статуса...",
       "statusSaveError": "Не удалось обновить ваш статус прямо сейчас.",
       "pinned": {
-        "title": "Закрепленное сообщение",
+        "title": "Закрепленное Сообщение",
         "pin": "Закрепить сообщение",
         "unpin": "Открепить сообщение",
         "pinnedToast": "Сообщение закреплено вверху чата.",
@@ -3542,12 +3743,13 @@
         "anonymousLabel": "Пожертвовать анонимно",
         "anonymousHint": "Ваше имя не будет отображаться в объявлении о пожертвовании.",
         "invalidAmount": "Введите действительную сумму не менее 1,00.",
+        "wholeAmountHint": "Введите целую сумму в {currency}.",
         "error": "Не удалось начать пожертвование прямо сейчас.",
         "checkoutSuccess": "Пожертвование подтверждено. Прогресс цели обновится автоматически.",
         "checkoutCanceled": "Выдача пожертвования отменена."
       },
       "globalDonationGoal": {
-        "eyebrow": "Глобальная цель",
+        "eyebrow": "Глобальная Цель",
         "titleFallback": "WavezFM глобальная цель",
         "progress": "Прогресс",
         "raisedOfTarget": "{raised} из {target}",
@@ -3572,10 +3774,95 @@
       "paymentProviders": {
         "stripe": "Карта через Stripe",
         "mercadoPago": "Карта или Pix через Mercado Pago"
+      },
+      "loginRequired": {
+        "title": "Войдите, чтобы Присоединиться",
+        "description": "Для этой комнаты нужна учётная запись WavezFM. Войдите или создайте учётную запись.",
+        "signIn": "Войти / Создать Аккаунт",
+        "retry": "Проверить Снова"
       }
     }
   },
   "app": {
+    "reportUpdates": {
+      "title": "Обновления для Автора",
+      "subtitle": "Эти сообщения видны автору жалобы. Внутренние заметки команды остаются приватными.",
+      "tab": "Сообщения Автору",
+      "inbox": "Мои Жалобы",
+      "inboxSubtitle": "Следите за обновлениями от команды модерации.",
+      "noReports": "У вас пока нет жалоб.",
+      "selectReport": "Выберите жалобу, чтобы увидеть обновления.",
+      "reportTitle": "Жалоба № {id}",
+      "newUpdate": "Обновление жалобы № {id}",
+      "open": "Открыть Жалобу",
+      "close": "Закрыть",
+      "refresh": "Обновить",
+      "loading": "Загрузка…",
+      "loadError": "Не удалось загрузить обновления.",
+      "sendError": "Не удалось отправить. Текст сохранён; повторите попытку.",
+      "empty": "Обновлений пока нет.",
+      "placeholder": "Напишите обновление для автора…",
+      "send": "Отправить Обновление",
+      "email": "Эл. почта",
+      "discord": "Discord",
+      "sendEmail": "Отправить по Почте",
+      "sendDiscord": "Отправить в Discord",
+      "emailHint": "Использует подтверждённый адрес автора жалобы.",
+      "discordHint": "Отправляет личное сообщение через бота WavezFM.",
+      "inAppAlways": "Обновление всегда сохраняется здесь, даже если внешняя отправка не удалась.",
+      "saved": "Обновление сохранено.",
+      "savedWithFailure": "Обновление сохранено, но внешняя отправка не удалась или не была подтверждена.",
+      "unavailable": {
+        "notConfigured": "Не настроено",
+        "noVerifiedEmail": "Нет подтверждённой почты",
+        "notLinked": "Discord не привязан"
+      },
+      "delivery": {
+        "not_requested": "Не запрошено",
+        "pending": "Не подтверждено",
+        "sent": "Отправлено",
+        "failed": "Ошибка"
+      },
+      "types": {
+        "user": "Жалоба на пользователя",
+        "message": "Жалоба на сообщение",
+        "sos": "Запрос помощи"
+      },
+      "statuses": {
+        "open": "Открыта",
+        "resolved": "Решена"
+      }
+    },
+    "helpChat": {
+      "title": "Чат Помощи",
+      "conversation": "Переписка",
+      "privateHint": "Приватная переписка с администраторами и амбассадорами платформы.",
+      "inbox": "Ваши Запросы Помощи",
+      "open": "Открыть Чат Помощи",
+      "close": "Закрыть Чат Помощи",
+      "callTitle": "Запрос Помощи #{id}",
+      "empty": "Сообщений пока нет. Вы можете добавить подробности, пока ждёте ответа.",
+      "loading": "Загрузка переписки…",
+      "loadError": "Не удалось загрузить переписку.",
+      "retry": "Повторить",
+      "send": "Отправить",
+      "sending": "Отправка…",
+      "placeholder": "Напишите сообщение…",
+      "messageLabel": "Сообщение",
+      "sendError": "Не удалось отправить сообщение. Попробуйте ещё раз.",
+      "resolved": "Этот запрос решён. Переписка доступна только для чтения.",
+      "statusOpen": "Открыт",
+      "statusResolved": "Решён",
+      "loadOlder": "Загрузить Предыдущие Сообщения",
+      "requester": "Автор Запроса",
+      "admin": "Администратор",
+      "ambassador": "Амбассадор",
+      "newReply": "Новый ответ в запросе помощи #{id}",
+      "unread": "Непрочитанный ответ",
+      "inboxEmpty": "У вас пока нет запросов помощи.",
+      "refresh": "Обновить",
+      "deleted": "Этот запрос помощи больше недоступен."
+    },
     "navigationCategories": {
       "access": "Доступ",
       "playback": "Воспроизведение и очередь",
@@ -3612,7 +3899,7 @@
       "settings": "Настройки",
       "admin": "Администрация",
       "ambassador": "Группа послов",
-      "logout": "выход",
+      "logout": "Выход",
       "loggingOut": "Выход из системы...",
       "logoutError": "Не удалось выписать вас прямо сейчас.",
       "logoutConfirmTitle": "Выйти из аккаунта?",
@@ -3645,34 +3932,34 @@
       "anonymous": "Кто-то",
       "items": {
         "mention": {
-          "title": "Вас упомянули",
+          "title": "Вас Упомянули",
           "roomTitle": "Упоминание комнаты",
           "mediaAttachment": "Прикрепленный медиафайл"
         },
         "fan": {
-          "title": "Новый фанат",
+          "title": "Новый Фанат",
           "description": "Кто-то стал вашим поклонником.",
           "descriptionWithUser": "{username} стал вашим фанатом."
         },
         "gift": {
-          "title": "Подарок получен",
+          "title": "Подарок Получен",
           "description": "{sender} отправил вам {gift}.",
           "coins": "{count, plural, one {# монета} few {# монеты} many {# монеты} other {# монеты}}",
           "diamonds": "{count, plural, one {# бриллиант} few {# бриллианты} many {# бриллианты} other {# бриллианты}}",
           "subscription": "подписка"
         },
         "inventory": {
-          "title": "Товар получен",
+          "title": "Товар Получен",
           "description": "Вы получили {item}."
         },
         "applicationForm": {
           "formFallback": "форма",
           "approved": {
-            "title": "Заявка одобрена",
+            "title": "Заявка Одобрена",
             "description": "Ваша заявка по форме «{form}» была одобрена."
           },
           "rejected": {
-            "title": "Заявка отклонена",
+            "title": "Заявка Отклонена",
             "description": "Ваша заявка по форме «{form}» была отклонена."
           }
         }
@@ -3689,7 +3976,6 @@
       "ROOM_AVATAR_ROOM_ONLY": "Этот аватар можно использовать только в комнате {room}. Войдите в неё, чтобы выбрать его; в других комнатах он недоступен.",
       "ROOM_AVATAR_ROLE_REQUIRED": "Для этого аватара нужна роль {role} или выше в комнате {room}.",
       "ROOM_AVATAR_INACTIVE": "Этот эксклюзивный аватар комнаты сейчас недоступен.",
-
       "IP_BANNED": "Этот IP-адрес заблокирован администратором.",
       "UNAUTHORIZED": "Требуется аутентификация.",
       "KLIPY_QUERY_REQUIRED": "Введите запрос для поиска GIF.",
@@ -3777,6 +4063,7 @@
       "BADGE_NOT_FOUND": "Значок: не найдено.",
       "INVALID_EVENT_BADGE": "Значок: проверьте значение и повторите попытку.",
       "INVALID_SITEWIDE_GIFT_BADGE": "Значок: проверьте значение и повторите попытку.",
+      "BILLING_UNSUPPORTED_CURRENCY": "Эта валюта недоступна для этого платежа.",
       "INVALID_BILLING_PRICE": "Стоимость оплаты: проверьте значение и повторите попытку.",
       "INVALID_EVENT_BADGE_LOOKBACK": "Период отчёта о значках события: проверьте значение и повторите попытку.",
       "INVALID_EVENT_BADGE_REPORT_WINDOW": "Период отчёта о значках события: проверьте значение и повторите попытку.",
@@ -3827,6 +4114,8 @@
       "INVALID_GLOBAL_ANNOUNCEMENT_MESSAGE": "Объявление: проверьте значение и повторите попытку.",
       "GLOBAL_ANNOUNCEMENT_NOT_FOUND": "Объявление: не найдено.",
       "ROOM_NAME_TOO_SHORT": "Название комнаты: проверьте значение и повторите попытку.",
+      "INVALID_ROOM_PRIVACY": "Выберите, будет комната приватной или публичной.",
+      "ROOM_OWNER_CHANGED": "Хост комнаты изменился. Обновите данные комнаты и попробуйте снова.",
       "ROOM_NAME_TOO_LONG": "Название комнаты: превышен допустимый предел.",
       "ROOM_NAME_LENGTH_INVALID": "Название комнаты: проверьте значение и повторите попытку.",
       "ROOM_SLUG_INVALID": "Адрес комнаты: проверьте значение и повторите попытку.",
@@ -3904,6 +4193,8 @@
       "INVALID_SFW_MODE_AUDIO_ENABLED": "Звук в режиме SFW: проверьте значение и повторите попытку.",
       "INVALID_LASTFM_SCROBBLING_ENABLED": "В данный момент мы не можем обновить скробблы Last.fm.",
       "INVALID_GIF_FAVORITES": "Настройка аккаунта: проверьте значение и повторите попытку.",
+      "GIF_FAVORITES_RELOAD_REQUIRED": "Обновите страницу перед изменением избранных GIF. Ваш сохранённый список не изменён.",
+      "GIF_FAVORITES_LIMIT_REACHED": "Можно сохранить до 200 избранных GIF. Удалите один, прежде чем добавлять новый.",
       "ROOM_POLL_CREATE_FAILED": "Опрос: сейчас недоступно. Повторите позже.",
       "GLOBAL_POLL_SERVICE_UNAVAILABLE": "Опрос: сейчас недоступно. Повторите позже.",
       "ROOM_POLL_QUESTION_INVALID": "Вопрос опроса: проверьте значение и повторите попытку.",
@@ -4151,7 +4442,7 @@
       "STRIPE_NOT_CONFIGURED": "Касса еще не настроена.",
       "DIAMOND_QUANTITY_INVALID": "Неверное количество бриллиантов.",
       "DISPLAY_USERNAME_ALREADY_IN_USE": "Это отображаемое имя уже используется.",
-      "INVALID_DISPLAY_USERNAME": "Отображаемое имя должно содержать от 3 до 50 символов.",
+      "INVALID_DISPLAY_USERNAME": "Используйте от 3 до 50 букв, цифр, точек, подчёркиваний или дефисов. Пробелы — только если разрешены.",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "Лимит отображаемых уровней должен быть целым числом от 1 до 500.",
       "INVALID_MISC_SHOP_ITEMS": "Конфигурация магазина Extras недействительна.",
       "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "Этот Extra всё ещё на перезарядке. Повторите попытку через {remainingHours} ч.",
@@ -4161,6 +4452,18 @@
       "SUBSCRIPTION_CANCEL_NOT_AVAILABLE": "Автоматическое продление нельзя отменить прямо сейчас.",
       "SUBSCRIPTION_RESUME_NOT_AVAILABLE": "В настоящее время автоматическое продление невозможно возобновить.",
       "SUBSCRIPTION_UPGRADE_NOT_AVAILABLE": "Сейчас нам не удалось перевести эту подписку на годовой план.",
+      "SUBSCRIPTION_PRICE_MISMATCH": "Указанная цена не совпадает с ценой платёжного сервиса. Платёж заблокирован; обратитесь в поддержку.",
+      "SUBSCRIPTION_UPGRADE_CONFIGURATION_INVALID": "Настройки подписки необходимо проверить. Обратитесь в поддержку перед сменой плана.",
+      "SUBSCRIPTION_UPGRADE_TIME_LIMIT": "Перед переходом на годовой план необходимо проверить накопленное оплаченное время. Нового списания не было.",
+      "SUBSCRIPTION_UPGRADE_PREVIEW_INVALID": "Не удалось проверить точную сумму смены плана. Обновите сумму перед подтверждением.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_REQUIRED": "Проверьте сумму платежа перед подтверждением смены плана.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_EXPIRED": "Срок подтверждения суммы истёк. Обновите сумму перед подтверждением.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_CHANGED": "Сумма или подписка изменилась. Проверьте обновлённую сумму перед подтверждением.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_NOT_CONFIGURED": "Подтверждение смены плана временно недоступно. Обратитесь в поддержку.",
+      "SUBSCRIPTION_UPGRADE_IN_PROGRESS": "Другое подтверждение уже выполняется. Подождите и не совершайте ещё один платёж.",
+      "SUBSCRIPTION_UPGRADE_LOCK_UNAVAILABLE": "Подтверждение смены плана временно недоступно. Попробуйте позже.",
+      "SUBSCRIPTION_UPGRADE_LOCK_LOST": "Не удалось безопасно продолжить подтверждение. Проверьте обновлённую сумму перед повторной попыткой.",
+      "SUBSCRIPTION_UPGRADE_RESULT_PENDING": "Результат этого подтверждения ещё не проверен. Не совершайте ещё один платёж. Обратитесь в поддержку для проверки результата.",
       "SUBSCRIPTION_ALREADY_ANNUAL": "Ваша подписка уже годовая.",
       "SUBSCRIPTION_MANAGEMENT_NOT_CONFIGURED": "Управление подпиской еще не настроено.",
       "DIAMOND_CHECKOUT_NOT_CONFIGURED": "Алмазная проверка не настроена.",
@@ -4373,7 +4676,30 @@
       "WS_UNKNOWN_COMMAND": "Неизвестная команда: {command}.",
       "WS_UNSUPPORTED_VERSION": "Эта версия протокола веб-сокета не поддерживается.",
       "CHAT_WORD_FILTER_ENTRY_TOO_LONG": "Запись {entry} содержит {length} символов; максимум на запись — {limit}.",
-      "CHAT_WORD_FILTER_LIMIT_EXCEEDED": "Фильтр содержит {count} записей; максимум — {limit}."
+      "CHAT_WORD_FILTER_LIMIT_EXCEEDED": "Фильтр содержит {count} записей; максимум — {limit}.",
+      "ROOM_LOGIN_REQUIRED": "Для этой комнаты нужна учётная запись WavezFM. Войдите или создайте учётную запись.",
+      "INVALID_ROOM_GUEST_ACCESS": "Состояние включения: проверьте значение и повторите попытку.",
+      "STRIPE_BRL_DISABLED": "Платежи в BRL через Stripe сейчас недоступны.",
+      "STRIPE_BRL_PIX_ONLY_SUBSCRIPTION_UNAVAILABLE": "Stripe в BRL ограничен Pix. Выберите предоплаченный Premium через Pix; автоматическое продление требует кредитную карту и недоступно с этой настройкой.",
+      "CDN_MEDIA_UNAVAILABLE": "Загрузка в CDN недоступна. Проверьте настройки хранилища медиафайлов на сервере.",
+      "CDN_MEDIA_INVALID_PATH": "Укажите допустимый путь к папке глубиной не более шести уровней.",
+      "CDN_MEDIA_INVALID_NAME": "Используйте имя длиной до 80 символов из букв, цифр, пробелов, дефисов, точек или знаков подчёркивания.",
+      "CDN_MEDIA_INVALID_IMAGE": "Используйте корректное изображение PNG, JPEG, GIF или WebP.",
+      "CDN_MEDIA_INVALID_SCRIPT": "Используйте корректный непустой файл JavaScript (.js) в кодировке UTF-8.",
+      "CDN_MEDIA_INVALID_FILE": "Выберите изображение PNG, JPEG, GIF или WebP либо файл .js.",
+      "CDN_MEDIA_TOO_LARGE": "Файл превышает ограничение размера.",
+      "CDN_MEDIA_BUSY": "Обрабатывается другая загрузка. Повторите попытку через некоторое время.",
+      "CDN_MEDIA_NOT_FOUND": "Файл или папка больше не существует.",
+      "CDN_MEDIA_FOLDER_NOT_EMPTY": "Переместите файлы и вложенные папки перед переименованием или удалением этой папки.",
+      "CDN_MEDIA_ALREADY_EXISTS": "Папка с таким именем уже существует.",
+      "CDN_MEDIA_STORAGE_FAILED": "Не удалось получить доступ к хранилищу CDN. Повторите попытку через некоторое время.",
+      "HISTORY_UNAVAILABLE": "В этой старой записи недостаточно данных для безопасной отмены.",
+      "IDENTITY_CHANGED": "Имя изменилось после этой записи. Сначала отмените более позднее изменение.",
+      "IDENTITY_ALREADY_IN_USE": "Прежнее имя пользователя теперь занято другой учётной записью.",
+      "PURCHASE_EFFECT_CHANGED": "Купленное право изменилось после покупки.",
+      "PURCHASE_NOT_DIAMONDS": "Здесь можно отменить только покупки, оплаченные алмазами.",
+      "BILLING_PRICE_CONFIRMATION_REQUIRED": "Обновите текущие цены перед подтверждением оплаты.",
+      "BILLING_PRICE_CHANGED": "Цена изменилась. Проверьте обновлённую сумму перед подтверждением оплаты."
     },
     "shop": {
       "eyebrow": "WavezFM Магазин",
@@ -4468,14 +4794,14 @@
       "subscriberBenefitsTitle": "Включено в подписку",
       "subscriberBenefitsSubtitle": "Посмотрите всё, что доступно, пока ваша подписка активна.",
       "subscriberBenefitsCount": "{count, plural, one {# преимущество} few {# преимущества} many {# преимуществ} other {# преимущества}}",
-      "subscriberBenefitPremiumAvatarsTitle": "Премиальные аватары",
-      "subscriberBenefitPremiumAvatarsDescription": "Используйте премиальные аватары, не тратя бриллианты на каждый предмет.",
-      "subscriberBenefitPremiumBadgesTitle": "Премиальные значки",
-      "subscriberBenefitPremiumBadgesDescription": "Покупайте или получайте премиальные значки, доступные только подписчикам.",
-      "subscriberBenefitPremiumBackgroundsTitle": "Премиальные фоны",
-      "subscriberBenefitPremiumBackgroundsDescription": "Выбирайте премиальные фоны для оформления своих комнат.",
-      "subscriberBenefitPremiumVideoFramesTitle": "Премиальные рамки для видео",
-      "subscriberBenefitPremiumVideoFramesDescription": "Оформите плеер с помощью премиальных рамок для видео.",
+      "subscriberBenefitPremiumAvatarsTitle": "Аватары для подписчиков",
+      "subscriberBenefitPremiumAvatarsDescription": "Используйте аватары из каталога для подписчиков, не тратя бриллианты на каждый предмет.",
+      "subscriberBenefitPremiumBadgesTitle": "Значки для подписчиков",
+      "subscriberBenefitPremiumBadgesDescription": "Покупайте или получайте значки, доступные только подписчикам.",
+      "subscriberBenefitPremiumBackgroundsTitle": "Фоны для подписчиков",
+      "subscriberBenefitPremiumBackgroundsDescription": "Выбирайте фоны из каталога для подписчиков для оформления своих комнат.",
+      "subscriberBenefitPremiumVideoFramesTitle": "Рамки видео для подписчиков",
+      "subscriberBenefitPremiumVideoFramesDescription": "Оформите плеер с помощью рамок видео из каталога для подписчиков.",
       "subscriberBenefitSubscriptionBadgesTitle": "Эксклюзивные значки",
       "subscriberBenefitSubscriptionBadgesDescription": "{count, plural, one {# значок доступен в магазине для подписчиков.} few {# значка доступны в магазине для подписчиков.} many {# значков доступны в магазине для подписчиков.} other {# значка доступны в магазине для подписчиков.}}",
       "subscriberBenefitPlaylistLimitTitle": "{count, plural, one {# трек в плейлисте} few {# трека в плейлисте} many {# треков в плейлисте} other {# трека в плейлисте}}",
@@ -4549,7 +4875,7 @@
         "usernameInvalid": "Используйте только буквы, цифры, точки, подчеркивания и дефисы, без пробелов.",
         "usernameReserved": "Это имя пользователя зарезервировано и не может быть использовано.",
         "displayNameLabel": "Новое отображаемое имя",
-        "displayNameInvalid": "Используйте от 3 до 50 символов.",
+        "displayNameInvalid": "Используйте от 3 до 50 букв, цифр, точек, подчёркиваний или дефисов. Пробелы — только если разрешены.",
         "instantDelivery": "Мгновенная доставка",
         "buying": "Покупка..."
       },
@@ -4561,10 +4887,12 @@
         "previous": "Предыдущая страница",
         "next": "Следующая страница",
         "pageLabel": "Страница {page}"
-      }
+      },
+      "subscriptionPricingUnavailable": "Не удалось загрузить текущие цены. Обновите сумму перед оплатой.",
+      "subscriptionUpgradeCurrencyNotice": "Эти цены действуют для новых подписок. Переход на годовой план сохраняет валюту текущей подписки; проверьте точную сумму перед подтверждением."
     },
     "playlists": {
-      "eyebrow": "Музыкальная библиотека",
+      "eyebrow": "Музыкальная Библиотека",
       "title": "Плейлисты",
       "empty": "Плейлистов пока нет.",
       "emptySubtitle": "Создайте свой первый плейлист и систематизируйте свою музыку.",
@@ -4759,7 +5087,7 @@
       "selectTitle": "Выберите плейлист",
       "selectSubtitle": "Чтобы начать, выберите плейлист в левом столбце или создайте новый.",
       "imports": {
-        "title": "Импортировать плейлист",
+        "title": "Импортировать Плейлист",
         "streamingAction": "Импорт через потоковую передачу",
         "close": "Закрыть модальное окно",
         "autoSourceLabel": "Автоматическое обнаружение",
@@ -4826,7 +5154,12 @@
       }
     },
     "fans": {
-      "eyebrow": "Социальный граф",
+      "visitRoom": "В комнату",
+      "pagination": {
+        "previous": "Предыдущая страница",
+        "next": "Следующая страница"
+      },
+      "eyebrow": "Социальный Граф",
       "title": "Фанаты",
       "headerSubtitle": "Ваши поклонники, суперфанаты и люди, на которых вы подписаны.",
       "followersCount": "{count, plural, one {# поклонник} few {# поклонника} many {# поклонников} other {# поклонника}}",
@@ -4899,12 +5232,12 @@
       "openProfile": "Посмотреть профиль"
     },
     "history": {
-      "title": "История комнаты",
+      "title": "История Комнаты",
       "empty": "Ни одной песни в истории.",
       "emptySubtitle": "Присоединяйтесь к комнате и начните слушать музыку."
     },
     "settings": {
-      "eyebrow": "Настройки аккаунта",
+      "eyebrow": "Настройки Аккаунта",
       "title": "Настройки",
       "subtitle": "Настройте свою учетную запись, способ получения оповещений и формат вашего взаимодействия с WavezFM.",
       "tabs": {
@@ -4976,7 +5309,7 @@
       },
       "system": {
         "eyebrow": "Система",
-        "title": "Режим обслуживания",
+        "title": "Режим Обслуживания",
         "subtitle": "Блокирует доступ к сайту всем, кроме администраторов и разработчиков.",
         "updatedAtLabel": "Последнее обновление:",
         "enabled": "Включено",
@@ -5061,7 +5394,7 @@
         "onlyShowSuperfanAvatarsHint": "Ограничивает аудиторию комнаты вашими суперфанатами и вашим собственным аватаром.",
         "disableRoomCustomThemesLabel": "Отключить пользовательские темы комнат",
         "disableRoomCustomThemesHint": "Всегда использует стандартную тему WavezFM в комнатах, не изменяя тему для других пользователей.",
-        "sfwModeLabel": "режим СФВ",
+        "sfwModeLabel": "Режим СФВ",
         "youtubePlayerV2Label": "Плеер YouTube V2 (бета)",
         "youtubePlayerV2Hint": "Попробуйте интерактивный плеер YouTube на этом устройстве. Настройка действует только для вашей учетной записи в этом браузере; у других пользователей остается свой плеер.",
         "sfwModeHint": "Отключает сцену комнаты, фон и видео игрока для этой учетной записи.",
@@ -5137,7 +5470,7 @@
         "passwordRequirementNumber": "Одна цифра",
         "passwordRequirementSpecial": "Один специальный персонаж",
         "twoFactor": {
-          "title": "Двухфакторная проверка",
+          "title": "Двухфакторная Проверка",
           "subtitle": "Выберите способ подтверждения новых входов. Изменения запрашивают ваш пароль, а отключение открывает отдельное подтверждение.",
           "currentMethodLabel": "Текущий метод",
           "statusDisabled": "Отключено",
@@ -5152,7 +5485,7 @@
           "securityPasswordHint": "Этот пароль используется только для подтверждения включения или смены метода.",
           "securityPasswordPlaceholder": "Введите текущий пароль",
           "methodChange": {
-            "title": "Подтвердить изменение 2FA",
+            "title": "Подтвердить Изменение 2FA",
             "description": "Подтвердите текущий пароль, чтобы продолжить с методом {method}.",
             "confirm": "Продолжить",
             "confirming": "Подтверждение..."
@@ -5179,7 +5512,7 @@
               "disabledHint": "SMS 2FA в настоящее время скрыт глобально. Этот метод остается здесь только для учетных записей, которые уже использовали или настраивали SMS."
             },
             "authy": {
-              "title": "Authy / приложение для аутентификации",
+              "title": "Authy / Приложение для Аутентификации",
               "description": "Используйте Authy или любое TOTP-совместимое приложение для локальной генерации кода.",
               "envHint": "Этот метод не требует дополнительных переменных .env. Он использует стандарт TOTP и работает с совместимыми приложениями, такими как Authy, 1Password и Google Authenticator.",
               "disabledHint": "Приложение для аутентификации 2FA в настоящее время скрыто глобально. Этот метод остается здесь только для учетных записей, которые уже использовали или настраивали этот поток.",
@@ -5214,7 +5547,7 @@
             "backupCodesLabel": "Резервные коды"
           },
           "disable": {
-            "title": "Отключить двухфакторную проверку",
+            "title": "Отключить Двухфакторную Проверку",
             "description": "Удаляет второй фактор из вашего аккаунта. Ваш пароль запрашивается в отдельном подтверждении, чтобы избежать случайного отключения.",
             "button": "Отключить 2FA",
             "modalTitle": "Подтвердите отключение 2FA",
@@ -5275,43 +5608,43 @@
         },
         "permissions": {
           "read_state": {
-            "title": "Чтение состояния комнаты",
+            "title": "Чтение Состояния Комнаты",
             "hint": "Снимок, очередь, воспроизведение и присутствие."
           },
           "read_chat": {
-            "title": "Читать чат",
+            "title": "Читать Чат",
             "hint": "Сообщения и события комнаты."
           },
           "send_chat": {
-            "title": "Отправлять сообщения",
+            "title": "Отправлять Сообщения",
             "hint": "Говорите в чате как Робот."
           },
           "manage_queue": {
-            "title": "Управление очередью",
+            "title": "Управление Очередью",
             "hint": "Добавляйте, удаляйте и перемещайте пользователей."
           },
           "skip_others": {
-            "title": "Пропускать треки",
+            "title": "Пропускать Треки",
             "hint": "Пропустить текущую песню."
           },
           "mute_user": {
-            "title": "Отключить звук пользователей",
+            "title": "Отключить Звук Пользователей",
             "hint": "Отключение и включение звука пользователей."
           },
           "kick_user": {
-            "title": "Выкидывать пользователей",
+            "title": "Выкидывать Пользователей",
             "hint": "Удалите пользователей из комнаты."
           },
           "ban_user": {
-            "title": "Забанить пользователей",
+            "title": "Забанить Пользователей",
             "hint": "Запретить пользователям доступ в комнату."
           },
           "clear_chat": {
-            "title": "Очистить чат",
+            "title": "Очистить Чат",
             "hint": "Очистить чат или чьи-то сообщения."
           },
           "manage_room": {
-            "title": "Управление комнатой",
+            "title": "Управление Комнатой",
             "hint": "Административные конечные точки и широкие права на действия персонала."
           }
         },
@@ -5377,7 +5710,7 @@
         "description": "Нарушения выдаются командой за нарушение Условий обслуживания. Накопление 3-х активных нарушений приводит к перманентному бану."
       },
       "diamonds": {
-        "title": "Бриллиантовое пополнение",
+        "title": "Бриллиантовое Пополнение",
         "subtitle": "Покупайте бриллианты, не выходя из настроек. Как только платеж будет подтвержден, баланс автоматически зачисляется на ваш кошелек.",
         "balanceLabel": "Текущий баланс",
         "balanceHint": "Используйте бриллианты, чтобы разблокировать предметы из каталога премиум-класса и другие покупки, требующие прямого баланса.",
@@ -5401,7 +5734,7 @@
         "featuresTitle": "Все включено в вашу подписку",
         "callouts": {
           "instantAccess": {
-            "title": "Premium разблокируется мгновенно",
+            "title": "Premium Разблокируется Мгновенно",
             "body": "При активной подписке каталог Premium становится доступен без траты бриллиантов поштучно."
           },
           "futureDrops": {
@@ -5411,35 +5744,35 @@
         },
         "features": {
           "avatars": {
-            "title": "Premium аватары",
+            "title": "Premium Аватары",
             "description": "Получите доступ к аватарам Premium из каталога, не покупая их отдельно."
           },
           "backgrounds": {
-            "title": "Premium фоны",
+            "title": "Premium Фоны",
             "description": "Разблокируйте сцены комнат Premium, чтобы придать комнатам больше индивидуальности."
           },
           "videoframes": {
-            "title": "Premium видеокадров",
+            "title": "Premium Видеокадров",
             "description": "Настройте плеер с помощью Premium кадров, разблокированных по вашей подписке."
           },
           "badges": {
-            "title": "Значок и выделение профиля",
+            "title": "Значок и Выделение Профиля",
             "description": "Получите значок сторонника и выделите свою учетную запись в своем профиле."
           },
           "noDiamonds": {
-            "title": "Бриллианты не требуются",
+            "title": "Бриллианты Не Требуются",
             "description": "Предметы Premium уже разблокированы, дополнительная проверка каждого предмета не требуется."
           },
           "emojiSlots": {
-            "title": "Больше слотов для эмодзи комнаты",
+            "title": "Больше Слотов для Эмодзи Комнаты",
             "description": "Расширьте возможности пользовательских смайлов в комнатах, которыми вы управляете."
           },
           "earlyAccess": {
-            "title": "Ранний доступ",
+            "title": "Ранний Доступ",
             "description": "Получите запуск Premium и функции, доступные только для подписчиков, раньше."
           },
           "futurePerks": {
-            "title": "Будущие льготы включены",
+            "title": "Будущие Льготы Включены",
             "description": "Новые преимущества Premium становятся частью вашей подписки по мере развития продукта."
           }
         },
@@ -5450,7 +5783,9 @@
             "captionPrepaid": "Единовременный платеж в {currency}. Activates right away and adds 1 month to the current end date.",
             "cta": "Подписаться ежемесячно",
             "extendCta": "Добавить 1 месяц",
-            "giftCta": "Подарок ежемесячно"
+            "giftCta": "Подарок ежемесячно",
+            "captionPixPrepaid": "Разовый платёж Pix в {currency}. Добавляет 1 месяц Premium после подтверждения оплаты. Без автоматического продления.",
+            "pixCta": "Купить 1 месяц через Pix"
           },
           "annual": {
             "label": "Ежегодный",
@@ -5458,19 +5793,36 @@
             "captionPrepaid": "Единовременный платеж в {currency}. Активируется сразу и добавляет 1 год к текущей дате окончания.",
             "cta": "Подписывайтесь ежегодно",
             "extendCta": "Добавить 1 год",
-            "giftCta": "Подарок ежегодно"
+            "giftCta": "Подарок ежегодно",
+            "captionPixPrepaid": "Разовый платёж Pix в {currency}. Добавляет 1 год Premium после подтверждения оплаты. Без автоматического продления.",
+            "pixCta": "Купить 1 год через Pix"
+          },
+          "weekly": {
+            "label": "7 Дней",
+            "caption": "Разовая оплата в {currency}. После подтверждения платежа добавляет 7 дней к текущей дате окончания. Без автоматического продления.",
+            "cta": "Купить 7 Дней",
+            "extendCta": "Добавить 7 Дней",
+            "giftCta": "Подарить 7 Дней"
+          },
+          "fortnightly": {
+            "label": "15 Дней",
+            "caption": "Разовая оплата в {currency}. После подтверждения платежа добавляет 15 дней к текущей дате окончания. Без автоматического продления.",
+            "cta": "Купить 15 Дней",
+            "extendCta": "Добавить 15 Дней",
+            "giftCta": "Подарить 15 Дней"
           }
         },
         "currencyLabel": "Валюта платежа",
         "currencyHint": "Выберите валюту, которую вы хотите использовать для оплаты подписки.",
         "paymentProviderLabel": "Оформление заказа BRL",
-        "paymentProviderHint": "В BRL вы можете выбрать Stripe или Mercado Pago. На Mercado Pago покупка предоплачивается картой: она сразу списывается, сразу же разблокируется и добавляет время к текущей дате окончания.",
+        "paymentProviderHint": "В BRL выберите Mercado Pago или Stripe. Stripe предлагает предоплату Pix без автоматического продления; для автоматического продления нужна кредитная карта.",
         "paymentProviders": {
           "stripe": "Регулярная карта через Stripe",
           "mercadoPago": "Предоплаченная карта через Mercado Pago"
         },
         "currencyOptionDescription": "Ежемесячно {monthly} • Ежегодно {annual}",
         "processing": "Открытие кассы...",
+        "shortPrepaidCheckoutDescription": "Предоплаченный доступ Подписчика. Разовый платёж без автоматического продления.",
         "checkoutSuccess": "Оплата подтверждена. Ваша подписка будет применена автоматически через несколько минут.",
         "checkoutCanceled": "Оформление подписки было отменено.",
         "checkoutError": "Не удалось начать оформление подписки прямо сейчас.",
@@ -5481,7 +5833,7 @@
         "unavailable": "Ссылка для оформления заказа еще не настроена.",
         "paymentHistory": {
           "eyebrow": "Сборы",
-          "title": "История платежей",
+          "title": "История Платежей",
           "subtitle": "Просматривайте платежи, изменения подписки и доставленные подарки.",
           "loading": "Загрузка истории платежей...",
           "empty": "Платежей и подаренных подписок пока нет.",
@@ -5496,7 +5848,9 @@
           "descriptions": {
             "mercadoPagoPrepaidSubscription": {
               "monthly": "Предоплаченная подписка Mercado Pago (ежемесячно)",
-              "annual": "Предоплаченная подписка Mercado Pago (годовая)"
+              "annual": "Предоплаченная подписка Mercado Pago (годовая)",
+              "weekly": "Предоплаченная подписка через Mercado Pago (7 дней)",
+              "fortnightly": "Предоплаченная подписка через Mercado Pago (15 дней)"
             },
             "stripeRecurringSubscription": {
               "monthly": "Ежемесячная повторяющаяся подписка Stripe ({currency})",
@@ -5505,7 +5859,13 @@
             "subscriptionCanceled": "Автоматическое продление отменено",
             "subscriptionResumed": "Автоматическое продление возобновлено",
             "subscriptionPending": "Обработка обновления подписки",
-            "subscriptionGiftSent": "Подписка подарена пользователю {recipient}"
+            "subscriptionGiftSent": "Подписка подарена пользователю {recipient}",
+            "stripePrepaidSubscription": {
+              "monthly": "Предоплаченная месячная подписка Stripe ({currency})",
+              "annual": "Предоплаченная годовая подписка Stripe ({currency})",
+              "weekly": "Предоплаченная подписка через Stripe (7 дней, {currency})",
+              "fortnightly": "Предоплаченная подписка через Stripe (15 дней, {currency})"
+            }
           },
           "status": {
             "paid": "Оплаченный",
@@ -5517,7 +5877,7 @@
           }
         },
         "manage": {
-          "title": "Ваша текущая подписка",
+          "title": "Ваша Текущая Подписка",
           "subtitle": "Управляйте продлением, планом и статусом своей подписки. Чтобы подписаться или подарить его, воспользуйтесь магазином.",
           "emptyTitle": "Нет активной подписки",
           "emptyDescription": "Покупка подписки теперь живет в магазине. После подписки вы можете управлять продлением и планировать изменения здесь.",
@@ -5539,7 +5899,7 @@
           "endsToday": "Заканчивается сегодня",
           "daysLeft": "{count} дней осталось",
           "descriptionRecurring": "Ваша подписка {cycle} уже открывает все преимущества Premium в учетной записи.",
-          "descriptionPrepaid": "Ваш доступ к Premium остается активным до тех пор, пока не закончится текущий предоплаченный баланс. Новые покупки Mercado Pago добавляют время к текущей дате окончания.",
+          "descriptionPrepaid": "Предоплаченный Premium действует до даты окончания без автоматического продления. Новые предоплаченные покупки добавляют время к этой дате.",
           "descriptionGifted": "В вашей учетной записи используется подарочная подписка до окончания текущего периода.",
           "stripeManagedHint": "Отсюда вы можете отменить автоматическое продление, включить его позже и перейти с ежемесячного на годовой, не теряя оставшиеся дни месяца.",
           "mercadoPagoManagedHint": "Отсюда вы можете отменить автоматическое продление, включить его позже и переключиться с ежемесячного на годовое. На Меркадо-Паго следующий платеж начинается с годовой суммы.",
@@ -5551,19 +5911,52 @@
           "resumeSuccess": "Автопродление было возобновлено.",
           "upgradeCta": "Перейти на годовой",
           "upgrading": "Переходим на годовой...",
-          "upgradeHint": "При переходе годовой план начинается прямо сейчас, и Stripe пропорционально распределяет кредит за неиспользованное ежемесячное время.",
+          "upgradeHint": "При переходе оставшееся время текущего плана сохраняется, а годовой план добавляет ещё 12 месяцев.",
           "mercadoPagoUpgradeHint": "При переходе Mercado Pago обновляет подписку на годовой план. Следующий платеж начинается с использования годовой суммы.",
-          "upgradeSuccess": "Годовой план теперь активен, и Stripe применил пропорциональный кредит за неиспользованный ежемесячный период.",
+          "upgradeSuccess": "Годовой план активирован. Оставшееся оплаченное время сохранено, добавлено ещё 12 месяцев.",
           "mercadoPagoUpgradeSuccess": "Годовой план был обновлен на Меркадо Паго. Следующий платеж будет использовать годовую сумму.",
           "upgradeConfirmTitle": "Перейти на годовой план?",
-          "upgradeConfirmDescription": "Это изменение немедленно активирует годовой план. Stripe немедленно взимает сдачу в текущей валюте подписки и пропорционально распределяет кредит за неиспользованное время в ежемесячном плане.",
+          "upgradeConfirmDescription": "Это изменение сохраняет оставшееся время текущего плана и добавляет 12 месяцев. Stripe спишет оплату годового плана сейчас в текущей валюте подписки.",
           "mercadoPagoUpgradeConfirmDescription": "Это изменение обновит вашу подписку Mercado Pago на годовой план. Следующий платеж будет использовать годовую сумму.",
           "upgradeConfirmAction": "Подтвердить переключение",
           "upgradeConfirmCancel": "Возвращаться",
+          "upgradeQuotedDescription": "Перед подтверждением проверьте точную сумму и даты доступа. Годовой план оплачивается сейчас, а оставшееся оплаченное время сохраняется. Корректировки счёта уже включены в показанную сумму.",
+          "upgradePreviewLoading": "Расчёт точной суммы…",
+          "upgradePreviewError": "Не удалось получить точную сумму. Попробуйте ещё раз перед подтверждением.",
+          "upgradePreviewRetry": "Обновить сумму",
+          "upgradeAmountDue": "К оплате сейчас",
+          "upgradeAnnualPrice": "Цена годового плана",
+          "upgradeProrationCredit": "Зачёт неиспользованного месячного периода",
+          "upgradeNextChargeDate": "Следующий платёж сейчас запланирован на {date}. Mercado Pago подтвердит дату после обновления плана.",
+          "upgradeNextCharge": "Годовая сумма будет списана в следующую дату оплаты.",
+          "upgradeQuoteExpired": "Обновите сумму перед подтверждением изменения.",
+          "upgradeConfirmQuotedAction": "Подтвердить и оплатить {amount}",
           "manageError": "Не удалось обновить подписку прямо сейчас.",
           "purchaseLocked": "Подписка активна",
-          "currentPlanCta": "Текущий план"
-        }
+          "currentPlanCta": "Текущий план",
+          "cycleUnknown": "Неизвестно",
+          "upgradeCurrencyNotice": "Текущая подписка оплачивается в {currency}. При переходе на годовой план эта валюта сохраняется.",
+          "upgradePeriodNotice": "Оставшееся оплаченное время сохраняется как доступ, а не превращается в скидку. Годовой план добавляет 12 месяцев после этого периода.",
+          "upgradeRemainingAccess": "Текущий оплаченный доступ сохраняется до {date}.",
+          "upgradeAccessUntil": "Доступ после перехода",
+          "upgradeRenewalDate": "Следующее ежегодное продление запланировано на {date}.",
+          "cycleWeekly": "7 Дней",
+          "cycleFortnightly": "План на 15 Дней"
+        },
+        "paymentModeLabel": "Оплата и продление",
+        "paymentModes": {
+          "prepaid": {
+            "label": "Предоплата через Pix",
+            "description": "Разовый платёж через Pix. Без автоматического продления."
+          },
+          "recurring": {
+            "label": "Кредитная карта · Автопродление",
+            "description": "Автоматическое списание с кредитной карты за каждый период плана."
+          }
+        },
+        "checkoutPrepaidDescription": "Оплатите период Premium через Pix. Продление выполняется вручную, без автоматических списаний.",
+        "checkoutPrepaidSuccess": "Платёж Pix подтверждён. Предоплаченный Premium скоро активируется без автоматического продления.",
+        "checkoutPrepaidPending": "Ожидаем подтверждения Pix. Premium активируется после оплаты, без автоматического продления."
       }
     },
     "loadingSession": "Загрузка сеанса...",
@@ -5635,7 +6028,7 @@
       "dismiss": "Закрыть уведомление"
     },
     "deployRefresh": {
-      "title": "Доступно обновление",
+      "title": "Доступно Обновление",
       "description": "Новая версия WavezFM готова. Подтвердите обновление страницы, чтобы применить ее сейчас.",
       "refreshNow": "Обновить сейчас",
       "buttonLabel": "Обновить приложение",
@@ -5644,8 +6037,8 @@
       "ariaLabel": "Уведомление о доступном обновлении"
     },
     "ambassador": {
-      "eyebrow": "Панель послов",
-      "title": "Общественные операции",
+      "eyebrow": "Панель Послов",
+      "title": "Общественные Операции",
       "subtitle": "Управляйте инцидентами в комнатах, применяйте предупреждения и закрывайте комнаты, в которых злоупотребляют, не открывая полную панель управления администратора.",
       "refresh": "Обновить панель",
       "refreshing": "Освежающий...",
@@ -5664,7 +6057,7 @@
         "helpCalls": "Звонки на помощь"
       },
       "stats": {
-        "title": "Статус платформы",
+        "title": "Статус Платформы",
         "subtitle": "Аккаунты, воспроизведенные треки и другие основные показатели WavezFM.",
         "totalUsers": "Счета",
         "totalUsersCaption": "Зарегистрированные учетные записи доступны для работы сообщества.",
@@ -5754,7 +6147,7 @@
           "noFlags": "-"
         },
         "history": {
-          "title": "История чата",
+          "title": "История Чата",
           "subtitle": "Администраторы и представители могут просматривать последние сообщения, даже если история общедоступной комнаты отключена.",
           "enabled": "История включена",
           "disabled": "История отключена",
@@ -5857,7 +6250,7 @@
         "saveRoomTitle": "Сохранить комнату",
         "saveRoomDescription": "Хотите сохранить изменения в {name}?",
         "deleteRoomTitle": "Закрыть комнату",
-        "deleteRoomDescription": "Вы хотите закрыть комнату {name}? Это действие невозможно отменить.",
+        "deleteRoomDescription": "Вы хотите закрыть комнату {name}? Он исчезнет из /dashboard и станет недоступным для общественности.",
         "warn": "Предупреждать",
         "ban": "Забанить навсегда",
         "save": "Сохранять",
@@ -5866,7 +6259,7 @@
       }
     },
     "bonusWindow": {
-      "eyebrow": "Бонусное окно в прямом эфире",
+      "eyebrow": "Бонусное Окно в Прямом Эфире",
       "subtitle": "Этот бонус активен прямо сейчас. Проверьте начало, конец и общее оставшееся время.",
       "startsAt": "Начинать",
       "endsAt": "Конец",
@@ -5903,7 +6296,7 @@
         "empty": "Флаги не найдены."
       },
       "itemRewards": {
-        "title": "Награды предметами",
+        "title": "Награды Предметами",
         "levels": "Награды за уровень",
         "levelsHint": "Здесь показаны только достижения за получение уровня. Вкладка «Достижения» содержит все типы. Изменения отображаются в обоих разделах.",
         "select": "Выберите предмет",
@@ -5919,8 +6312,8 @@
         "videoframe": "Видеорамка",
         "badge": "Значок"
       },
-      "eyebrow": "Панель управления",
-      "title": "WavezFM администрация",
+      "eyebrow": "Панель Управления",
+      "title": "WavezFM Администрация",
       "subtitle": "Управляйте ролями платформы, настраивайте прогресс и удаляйте контент всякий раз, когда вам нужно обеспечить безопасность и организованность сайта.",
       "save": "Сохранять",
       "saving": "Сохранение...",
@@ -5938,7 +6331,7 @@
         "subscriber": "подписчик"
       },
       "stats": {
-        "title": "Статус платформы",
+        "title": "Статус Платформы",
         "subtitle": "Аккаунты, воспроизведенные треки и другие основные показатели WavezFM.",
         "totalUsers": "Счета",
         "totalUsersCaption": "Всего зарегистрированных аккаунтов.",
@@ -5977,23 +6370,23 @@
           "avatarId": "Avatar ID",
           "button": "Фильтры",
           "presence": "Присутствие",
-          "presenceAll": "Наличие: все",
+          "presenceAll": "Наличие: Все",
           "online": "Онлайн",
           "offline": "Офлайн",
           "access": "Доступ",
-          "accessAll": "Доступ: все",
+          "accessAll": "Доступ: Все",
           "active": "Активный",
           "suspended": "Приостановленный",
           "email": "Электронная почта",
-          "emailAll": "Электронная почта: все",
+          "emailAll": "Электронная почта: Все",
           "emailVerified": "Проверено",
           "emailPending": "В ожидании",
           "subscription": "Подписка",
-          "subscriptionAll": "Подписка: все",
+          "subscriptionAll": "Подписка: Все",
           "subscriber": "Подписчики",
           "free": "Нет подписки",
           "warnings": "Предупреждения",
-          "warningsAll": "Предупреждения: все",
+          "warningsAll": "Предупреждения: Все",
           "withWarnings": "С предупреждениями",
           "withoutWarnings": "Никаких предупреждений",
           "minLevelLabel": "Минимальный уровень",
@@ -6022,7 +6415,7 @@
         "unbanSuccess": "{username} был повторно активирован.",
         "unbanError": "Нам не удалось повторно активировать этого пользователя.",
         "accountReset": {
-          "title": "Сбросить данные аккаунта",
+          "title": "Сбросить Данные Аккаунта",
           "subtitle": "Сбросьте только прогресс, экономику и коллекционные предметы пользователя {username}, не удаляя аккаунт.",
           "openAction": "Настроить сброс",
           "dialogTitle": "Подтвердить сброс аккаунта",
@@ -6053,7 +6446,8 @@
           "progression": "Прогресс",
           "subscription": "Подписка",
           "inventory": "Инвентарь",
-          "security": "История Входов"
+          "security": "История Входов",
+          "history": "История"
         },
         "roleSaving": "Сохранение...",
         "roleSave": "Сохранить роль",
@@ -6068,7 +6462,7 @@
           "subscriptionLockedHint": "Роль подписчика автоматически сохраняется активной подпиской и не может быть удалена здесь."
         },
         "customGlobalRoles": {
-          "title": "Пользовательские глобальные роли",
+          "title": "Пользовательские Глобальные Роли",
           "subtitle": "Объедините косметические и функциональные роли, созданные в админ-панели для этого аккаунта.",
           "empty": "Описание не предоставлено.",
           "noRolesYet": "Создайте собственные глобальные роли на вкладке «Глобальные роли», чтобы назначить их здесь.",
@@ -6078,6 +6472,14 @@
           "saving": "Сохранение пользовательских ролей...",
           "saveSuccess": "Пользовательские роли {username} были обновлены.",
           "saveError": "Нам не удалось обновить специальные роли этого пользователя."
+        },
+        "nameAvailability": {
+          "checking": "Проверка доступности…",
+          "available": "Имя доступно.",
+          "usernameTaken": "Это имя пользователя уже используется.",
+          "displayNameTaken": "Это отображаемое имя уже используется.",
+          "failed": "Не удалось проверить доступность. Попробуйте ещё раз.",
+          "retry": "Проверить ещё раз"
         },
         "fields": {
           "platformRoles": "Глобальные роли",
@@ -6096,6 +6498,7 @@
           "displayName": "Отображаемое имя",
           "displayNamePlaceholder": "Установите, как этот пользователь будет отображаться в интерфейсе...",
           "displayNameHint": "Оставьте это поле пустым, чтобы вернуться к @username по умолчанию для этой учетной записи.",
+          "displayNameAllowSpecialCharacters": "Разрешить символы и эмодзи (исключение администратора)",
           "bio": "Био",
           "bioPlaceholder": "Напишите краткую биографию для этого профиля...",
           "bioHint": "Биография отображается в общедоступном профиле, личном профиле и быстром профиле комнаты.",
@@ -6108,7 +6511,7 @@
           "infiniteLevelDisabledHint": "Эта опция доступна только для учетных записей с ролью глобального администратора."
         },
         "achievementProgress": {
-          "title": "Прогресс достижения",
+          "title": "Прогресс Достижения",
           "subtitle": "Отрегулируйте прогресс этой учетной записи вручную. Часовые достижения отображаются в часах, но сохраняются в формате времени выполнения.",
           "refresh": "Обновить",
           "loading": "Загрузка достижений...",
@@ -6125,7 +6528,7 @@
           "saving": "Сохранение..."
         },
         "inventory": {
-          "title": "Инвентаризация аккаунта",
+          "title": "Инвентаризация Аккаунта",
           "subtitle": "Предоставляйте предметы непосредственно на этот аккаунт, минуя магазин.",
           "avatarLabel": "Добавить аватар",
           "avatarHint": "Предоставляет аватар непосредственно в этом инвентаре учетной записи.",
@@ -6200,7 +6603,9 @@
             "none": "Нет цикла",
             "manual": "Руководство",
             "monthly": "Ежемесячно",
-            "annual": "Ежегодный"
+            "annual": "Ежегодный",
+            "weekly": "7 Дней",
+            "fortnightly": "15 Дней"
           },
           "daysHint": "Когда вы активируете ее вручную, WavezFM использует введенное вами количество дней, чтобы определить срок действия подписки.",
           "giftTitle": "Подарите бесплатную подписку",
@@ -6226,7 +6631,7 @@
           "currentBadge": "Текущий ежемесячный значок",
           "tenureMonths": "{count, plural, =0 {Нет завершенных месяцев} one {# завершенный месяц} few {# завершенных месяца} many {# завершенных месяцев} other {# завершенного месяца}}",
           "history": {
-            "title": "История подписки",
+            "title": "История Подписки",
             "subtitle": "Платежи, подарки и административные изменения, зарегистрированные для этой учетной записи.",
             "loading": "Загрузка истории подписки...",
             "empty": "Для этой учетной записи нет событий подписки.",
@@ -6243,7 +6648,8 @@
               "canceled": "Продление отменено",
               "resumed": "Продление возобновлено",
               "pending": "Ожидается обновление подписки"
-            }
+            },
+            "days": "{count} дней"
           },
           "saving": "Сохраняю подписку...",
           "save": "Сохранить подписку",
@@ -6251,7 +6657,7 @@
           "saveError": "Нам не удалось сохранить подписку этого пользователя."
         },
         "walletGift": {
-          "title": "Подарочные монеты или бриллианты",
+          "title": "Подарочные Монеты или Бриллианты",
           "hint": "Пополните баланс в кошельке пользователя, не перезаписывая текущее значение.",
           "currencyLabel": "Валюта",
           "currencyCoins": "Монеты",
@@ -6354,7 +6760,7 @@
           "violations": "Нарушения"
         },
         "accessHistory": {
-          "title": "История доступа",
+          "title": "История Доступа",
           "subtitle": "Просмотрите IP-адреса и приблизительные местоположения в истории доступа этого пользователя.",
           "loading": "Загрузка истории доступа...",
           "empty": "Для этого пользователя нет записей о доступе.",
@@ -6374,7 +6780,7 @@
           "unknownIp": "IP не указан"
         },
         "chatHistory": {
-          "title": "История сообщений",
+          "title": "История Сообщений",
           "subtitle": "Сообщения пользователя {username}, которые ещё хранятся в комнатах.",
           "loading": "Загрузка сообщений...",
           "loadError": "Не удалось загрузить сообщения.",
@@ -6388,7 +6794,7 @@
         },
         "restrictions": {
           "durationLabel": "Длительность",
-          "title": "Активные ограничения",
+          "title": "Активные Ограничения",
           "subtitle": "Проверьте баны комнаты, мьюты комнаты и блокировки очереди, примененные к этому аккаунту.",
           "loading": "Загрузка ограничений этого пользователя...",
           "empty": "У этого пользователя нет активных ограничений.",
@@ -6413,7 +6819,7 @@
         "warnRemovedSuccess": "Предупреждение удалено из {username}. {count} останется.",
         "warnRemoveError": "Нам не удалось снять предупреждение с этого пользователя.",
         "warningHistory": {
-          "title": "Выберите предупреждение",
+          "title": "Выберите Предупреждение",
           "subtitle": "Выберите, какое предупреждение от {username} вы хотите удалить.",
           "loading": "Загрузка предупреждений этого пользователя...",
           "empty": "У этого пользователя нет записанных предупреждений.",
@@ -6426,7 +6832,7 @@
           "removeSuccess": "Предупреждение для {username} из {date} было удалено."
         },
         "sitewideGifts": {
-          "title": "Подарки по всему сайту",
+          "title": "Подарки по Всему Сайту",
           "subtitle": "Отправьте подарок всем остальным учетным записям WavezFM одновременно. Любой, кто находится в сети, получает обновление в режиме реального времени.",
           "realtimeChip": "В реальном времени",
           "badgeTitle": "Предоставить глобальный значок",
@@ -6469,6 +6875,73 @@
           "amountInvalid": "Введите действительную сумму больше нуля.",
           "monthsInvalid": "Введите значение от 1 до 12 месяцев.",
           "note": "Эти подарки по всему сайту всегда игнорируют вашу собственную учетную запись и отправляются партиями, чтобы обеспечить стабильность в реальном времени."
+        },
+        "purchaseHistory": {
+          "label": "История",
+          "names": "Изменения имени",
+          "purchases": "Покупки за алмазы",
+          "namesHint": "Просмотрите сохранённые изменения имени пользователя и отображаемого имени и безопасно восстановите прежние значения.",
+          "purchasesHint": "Просмотрите платежи алмазами и отмените право, связанное с каждой покупкой.",
+          "refresh": "Обновить",
+          "loading": "Загрузка истории…",
+          "loadError": "Не удалось загрузить историю.",
+          "retry": "Повторить",
+          "revert": "Отменить изменение",
+          "revoke": "Отменить покупку",
+          "reverted": "Изменение отменено",
+          "revoked": "Покупка отменена",
+          "revertedOn": "Отменено {date}",
+          "revokedOn": "Покупка отменена {date}",
+          "revertHint": "Восстанавливает поля, изменённые этой записью.",
+          "revokeHint": "Удаляет оставшееся право, полученное при покупке.",
+          "username": "Имя пользователя",
+          "displayUsername": "Отображаемое имя",
+          "emptyValue": "Пусто",
+          "missingSnapshot": "В этой старой записи нет полного снимка данных пользователя.",
+          "diamondAmount": "{amount} алмазов",
+          "room": "Комната: {room}",
+          "refunded": "Возвращено {amount} алмазов",
+          "emptyNames": "У этого пользователя нет сохранённых изменений имени.",
+          "emptyPurchases": "У этого пользователя нет покупок за алмазы.",
+          "previous": "Назад",
+          "next": "Далее",
+          "page": "Страница {page}",
+          "confirmRevertTitle": "Отменить это изменение имени?",
+          "confirmRevokeTitle": "Отменить эту покупку?",
+          "confirmRevertDescription": "Восстановите прежние значения из этой записи. Текущие данные должны соответствовать отменяемому изменению.",
+          "confirmRevokeDescription": "Удалите оставшееся право от покупки «{name}». Уже полученный опыт не удаляется.",
+          "processing": "Обработка…",
+          "cancel": "Отмена",
+          "refundDiamonds": "Вернуть алмазы",
+          "refundHint": "Необязательно. Возвращает изначально уплаченные алмазы один раз при отмене.",
+          "reason": "Причина (необязательно)",
+          "revertSuccess": "Изменение имени отменено.",
+          "revokeSuccess": "Покупка отменена.",
+          "alreadyProcessed": "Это действие уже выполнено. История обновлена.",
+          "actionError": "Не удалось выполнить действие.",
+          "sources": {
+            "shop": "Покупка в магазине",
+            "admin": "Изменение администратора",
+            "revert": "Отмена изменения",
+            "legacy_admin": "Старая запись администратора"
+          },
+          "effects": {
+            "inventory": "Предмет инвентаря",
+            "identity": "Изменение имени",
+            "xp_boost": "Ускоритель XP",
+            "room_feature": "Функция комнаты",
+            "unknown": "Неизвестный эффект"
+          },
+          "unavailable": {
+            "generic": "Нельзя безопасно отменить эту запись.",
+            "HISTORY_SNAPSHOT_MISSING": "В этой старой записи недостаточно данных для безопасной отмены.",
+            "IDENTITY_CHANGED": "Имя изменилось после этой записи. Сначала отмените более позднее изменение.",
+            "HISTORY_ALREADY_REVERTED": "Это изменение имени уже отменено.",
+            "PURCHASE_ALREADY_REVOKED": "Эта покупка уже отменена.",
+            "PURCHASE_EFFECT_CHANGED": "Купленное право изменилось после покупки.",
+            "PURCHASE_EFFECT_MISSING": "Исходный эффект покупки не был сохранён.",
+            "IDENTITY_ALREADY_IN_USE": "Прежнее имя пользователя теперь занято другой учётной записью."
+          }
         }
       },
       "rooms": {
@@ -6484,6 +6957,10 @@
         "partnerBadge": "Партнерство",
         "partnerHint": "Отмечает эту комнату как партнерскую в панели администратора и списках комнат.",
         "logoUrlHint": "Изменяет логотип, отображаемый на верхней панели комнаты. Используйте http(s) URL или внутренний путь.",
+        "backgroundUrlLabel": "URL фона комнаты",
+        "backgroundUrlHint": "Заменяет фон из каталога только для этой комнаты. Очистите поле, чтобы восстановить фон из каталога.",
+        "backgroundUrlPlaceholder": "https://example.com/background.webp или /backgrounds/room.webp",
+        "backgroundUrlInvalid": "Введите корректный HTTPS-адрес или локальный путь, начинающийся с /.",
         "invalidLogoUrl": "Используйте действительный http(s) URL или внутренний путь.",
         "filters": {
           "badgeAll": "Все комнаты",
@@ -6539,7 +7016,7 @@
         },
         "activeUsers": "онлайн",
         "members": {
-          "title": "Участники в комнате",
+          "title": "Участники в Комнате",
           "subtitle": "Посмотрите, кто сейчас подключен, кто играет и кто ожидает в очереди.",
           "count": "{count} онлайн",
           "refresh": "Обновить список",
@@ -6562,7 +7039,7 @@
           "partner": "Партнерский комнату"
         },
         "externalMedia": {
-          "title": "Внешние носители комнаты",
+          "title": "Внешние Носители Комнаты",
           "subtitle": "Разрешает Google Drive, Dailymotion и прямые ссылки на организаторов и авторизованные роли в этой комнате.",
           "enabledBadge": "Внешние СМИ",
           "enable": "Разрешить медиа",
@@ -6581,7 +7058,7 @@
           "customThemeSubtitle": "Административно открывает редактирование пользовательской темы для разрешённых ролей в этой комнате."
         },
         "roleLimits": {
-          "title": "Ограничения ролей в комнате",
+          "title": "Ограничения Ролей в Комнате",
           "subtitle": "Настройте, сколько человек в этой комнате может иметь каждую особую роль.",
           "zeroHint": "Используйте 0, чтобы оставить роль неограниченной.",
           "invalid": "Введите значения от 0 до 10000.",
@@ -6596,7 +7073,7 @@
           }
         },
         "avatarUnlocks": {
-          "title": "Аватары, открываемые ролью",
+          "title": "Аватары, Открываемые Ролью",
           "subtitle": "Выберите минимальную роль, которая открывает каждый аватар в этой комнате. Аватар можно использовать только здесь.",
           "selectedCount": "Выбрано: {count}",
           "loading": "Загрузка каталога аватаров...",
@@ -6623,7 +7100,7 @@
           "forcedSaveError": "Не удалось обновить обязательный аватар staff."
         },
         "staffChatAccess": {
-          "title": "Доступ в чат сотрудников",
+          "title": "Доступ в Чат Сотрудников",
           "subtitle": "Настройте, какие роли в этой комнате могут открывать и отправлять сообщения в чат сотрудников.",
           "hostFixed": "Хост всегда включен",
           "allowed": "Доступ разрешен",
@@ -6638,7 +7115,7 @@
         "theme": {
           "editorsTitle": "Редакторы темы",
           "editorsDescription": "Выбранные пользователи могут изменять тему этой комнаты, пока пользовательская тема включена. Снимите выбор, чтобы отозвать дополнительное разрешение; права ролей сохраняются.",
-          "title": "Цвета комнаты",
+          "title": "Цвета Комнаты",
           "subtitle": "Измените базовые цвета, отображаемые внутри комнаты. Пустые поля используют тему сайта по умолчанию.",
           "adminOnly": "Админ",
           "import": "Импортировать JSON",
@@ -6708,7 +7185,7 @@
           }
         },
         "report": {
-          "title": "Отчет о комнате",
+          "title": "Отчет о Комнате",
           "subtitle": "Выберите окно событий и экспортируйте, кто был в сети, как долго и в каких сеансах.",
           "badge": "Присутствие",
           "startLabel": "Начало периода",
@@ -6757,7 +7234,7 @@
           }
         },
         "history": {
-          "title": "История чата",
+          "title": "История Чата",
           "subtitle": "Извлекайте старые сообщения комнаты для отчетов, аудита и общей проверки.",
           "enabled": "История включена",
           "disabled": "История отключена",
@@ -6781,7 +7258,7 @@
         "saveSuccess": "Комната {name} обновлена.",
         "saveError": "Не удалось спасти эту комнату.",
         "donationGoal": {
-          "title": "Цель пожертвования",
+          "title": "Цель Пожертвования",
           "subtitle": "Покажите цель по сбору средств над чатом комнаты и отслеживайте прогресс пожертвований в режиме реального времени.",
           "enabled": "Включить цель пожертвований",
           "goalTitle": "Название цели",
@@ -6792,11 +7269,12 @@
           "goalTitleEnUsPlaceholder": "Новый проектор в комнату.",
           "currency": "Валюта",
           "localizedCurrency": "Валюта по языку",
-          "localizedCurrencyHint": "Если этот параметр включен, валюта соответствует локали сайта: pt-BR -> BRL и en-US -> USD. Используйте ручную валюту, если хотите евро.",
-          "localizedCurrencyPreview": "Автоматический предварительный просмотр: pt-BR -> BRL • en-US -> USD",
+          "localizedCurrencyHint": "Использует валюту, предпочитаемую для языка сайта, если для неё задана цель; иначе использует доступную валюту.",
+          "localizedCurrencyPreview": "Предпочтения по языку: pt → BRL · en → USD · cs → CZK · ja → JPY · pl → PLN · ko → KRW · nb → NOK · fr/es/sk → EUR",
           "currencySelection": "Разрешить выбор валюты",
-          "currencySelectionHint": "Если эта функция включена, люди видят раскрывающийся список, в котором можно выбрать BRL, USD или EUR для этой цели комнаты.",
+          "currencySelectionHint": "Позволяет выбрать поддерживаемую валюту с целью больше нуля. Иначе пожертвования используют валюту цели по умолчанию.",
           "currencySelectionSharedHint": "Это глобальная настройка, которая также влияет на глобальную цель пожертвования.",
+          "targetCurrenciesHint": "Задайте цель для каждой принимаемой валюты. Остальные оставьте пустыми или нулевыми. Цели в JPY и KRW должны быть целыми суммами.",
           "target": "Цель",
           "targetPlaceholder": "150.00",
           "goalDescription": "Описание",
@@ -6859,6 +7337,7 @@
         "helpCalls": "Звонки на помощь",
         "privateMessages": "Шепот",
         "emailBlocklist": "Заблокированные электронные письма",
+        "ipBans": "Заблокированные IP",
         "progression": "Прогресс",
         "forms": "Заявки",
         "giveaways": "Подарки",
@@ -6873,7 +7352,8 @@
         "roleAppearance": "Ролевой внешний вид",
         "donations": "Недавние пожертвования",
         "logs": "Журналы",
-        "announcements": "Оповещения"
+        "announcements": "Оповещения",
+        "cdnMedia": "Файлы CDN"
       },
       "giftHistory": {
         "roomSubgiftSettings": {
@@ -6910,7 +7390,8 @@
         "subscriptionMonths": "{count, plural, one {# месяц подписки} few {# месяца подписки} many {# месяцев подписки} other {# месяца подписки}}",
         "subscriptionAnnual": "Годовая подписка",
         "subscriptionMonthly": "Месячная подписка",
-        "room": "Комната: {room}"
+        "room": "Комната: {room}",
+        "subscriptionDays": "{count, plural, one {# день подписки} few {# дня подписки} many {# дней подписки} other {# дня подписки}}"
       },
       "giveaways": {
         "subtitle": "Создавайте бесплатные призы для сообщества, отслеживайте заявки и выявляйте победителей."
@@ -6948,12 +7429,12 @@
         "optional": "Необязательный",
         "requiredHint": "Обязательно: пункт назначения, название pt-BR, название на английском языке, допустимое начало и конец.",
         "optionalHint": "Необязательно: описания, изображения, ссылки и объявления.",
-        "titlePtBrLabel": "название pt-BR",
-        "titleEnUsLabel": "англо-американское название",
+        "titlePtBrLabel": "Название pt-BR",
+        "titleEnUsLabel": "Англо-американское название",
         "titlePtBrPlaceholder": "Название (pt-BR)",
         "titleEnUsPlaceholder": "Название (англ.)",
-        "descriptionPtBrLabel": "описание pt-BR",
-        "descriptionEnUsLabel": "описание на английском языке",
+        "descriptionPtBrLabel": "Описание pt-BR",
+        "descriptionEnUsLabel": "Описание на английском языке",
         "descriptionPtBrPlaceholder": "Описание на португальском...",
         "descriptionEnUsPlaceholder": "Английское описание...",
         "imageLabel": "Изображение",
@@ -7228,8 +7709,60 @@
         "removedQuestion": "Вопрос удален",
         "emptyAnswer": "Нет ответа"
       },
+      "ipBans": {
+        "actions": "Действия",
+        "add": "Заблокировать IP",
+        "addTitle": "Заблокировать IP-адрес",
+        "addDescription": "Блокирует доступ к сайту с этого IP до снятия блокировки.",
+        "ipHint": "Введите один адрес IPv4 или IPv6.",
+        "optionalReason": "Причина (необязательно)",
+        "cancel": "Отмена",
+        "saving": "Сохранение...",
+        "invalidIp": "Введите действительный адрес IPv4 или IPv6.",
+        "addError": "Не удалось заблокировать этот IP. Повторите попытку.",
+        "added": "IP {ip} заблокирован.",
+        "remove": "Разблокировать",
+        "removeTitle": "Снять Блокировку IP",
+        "removeDescription": "Снять блокировку {ip}? Блокировки аккаунтов останутся в силе.",
+        "removeError": "Не удалось снять блокировку IP. Повторите попытку.",
+        "removed": "Блокировка IP {ip} снята.",
+        "ipOnly": "Только IP",
+        "title": "Заблокированные IP",
+        "subtitle": "Блокировки IP на всём сайте, включая истёкшие и отменённые записи.",
+        "searchPlaceholder": "Поиск по IP или имени пользователя...",
+        "searchLabel": "Поиск блокировок IP",
+        "filterLabel": "Фильтр по статусу",
+        "refresh": "Обновить",
+        "loading": "Загрузка блокировок IP...",
+        "loadError": "Не удалось загрузить блокировки IP.",
+        "empty": "Нет активных блокировок IP.",
+        "emptyFiltered": "Нет блокировок IP, соответствующих этим фильтрам.",
+        "total": "{count, plural, one {# запись} few {# записи} many {# записей} other {# записи}}",
+        "ipAddress": "IP-Адрес",
+        "reason": "Причина",
+        "targetUser": "Пользователь",
+        "bannedBy": "Заблокировал",
+        "createdAt": "Дата Регистрации",
+        "expiresAt": "Истекает",
+        "revokedAt": "Дата Отмены",
+        "status": "Статус",
+        "permanent": "Бессрочно",
+        "unknownUser": "Неизвестный пользователь",
+        "unknownAdmin": "Неизвестный администратор",
+        "unknownReason": "Причина не указана",
+        "notAvailable": "Недоступно",
+        "previous": "Предыдущая",
+        "next": "Следующая",
+        "page": "Страница",
+        "states": {
+          "active": "Активные",
+          "expired": "Истёкшие",
+          "revoked": "Отменённые",
+          "all": "Все"
+        }
+      },
       "emailBlocklist": {
-        "title": "Заблокированные регистрационные письма",
+        "title": "Заблокированные Регистрационные Письма",
         "subtitle": "Управляйте доменами, которые не могут создавать учетные записи. Список вступит в силу сразу после сохранения.",
         "addLabel": "Добавить домен",
         "placeholder": "example.com",
@@ -7257,7 +7790,7 @@
         "saveError": "Не удалось сохранить список прямо сейчас."
       },
       "usernameBlacklist": {
-        "title": "Чёрный список имён пользователей",
+        "title": "Чёрный Список Имён Пользователей",
         "subtitle": "Блокируйте оскорбительные или неприемлемые термины при новых регистрациях и каждом изменении @имени пользователя. Обязательные меры защиты удалить нельзя.",
         "placeholder": "Заблокированный термин",
         "add": "Добавить",
@@ -7274,7 +7807,7 @@
         "saveError": "Не удалось сохранить чёрный список прямо сейчас."
       },
       "privateMessages": {
-        "title": "Частные шепоты",
+        "title": "Частные Шепоты",
         "subtitle": "Просматривайте личные сообщения, когда сотрудникам необходимо смягчить злоупотребления или расследовать сообщения.",
         "refresh": "Обновить шепот",
         "clearAll": "Очистить все шепоты",
@@ -7319,7 +7852,7 @@
         "unknownUser": "Неизвестный пользователь"
       },
       "bots": {
-        "title": "Комнатные боты",
+        "title": "Комнатные Боты",
         "subtitle": "Просматривайте каждого созданного бота, отзывайте скомпрометированные токены и блокируйте учетные записи от создания новых ботов комнат, когда это необходимо.",
         "loading": "Загрузка комнатных ботов...",
         "loadError": "Сейчас нам не удалось загрузить комнатных ботов.",
@@ -7357,7 +7890,7 @@
         }
       },
       "subscribers": {
-        "title": "Список подписчиков",
+        "title": "Список Подписчиков",
         "subtitle": "Отслеживайте, у кого в настоящее время есть активная подписка, когда она началась, когда она заканчивается и включено ли еще автоматическое продление.",
         "count": "{count} активных подписчиков",
         "searchPlaceholder": "Поиск по пользователю, идентификатору или типу подписки...",
@@ -7390,7 +7923,9 @@
           "monthly": "Ежемесячно",
           "annual": "Ежегодный",
           "manual": "Руководство/подарок",
-          "unknown": "Неизвестный"
+          "unknown": "Неизвестный",
+          "weekly": "7 Дней",
+          "fortnightly": "15 Дней"
         },
         "renewal": {
           "on": "Автоматическое продление включено",
@@ -7407,7 +7942,7 @@
         }
       },
       "progression": {
-        "title": "Награды и бонусные окна",
+        "title": "Награды и Бонусные Окна",
         "subtitle": "Контролируйте количество опыта базовой комнаты и прирост монет, а также создавайте запланированные временные окна с автоматическими бонусами.",
         "loadError": "Не удалось загрузить настройки прогресса прямо сейчас.",
         "saveSuccess": "Настройки прогресса обновлены.",
@@ -7453,7 +7988,7 @@
           "timeWindow": "Установите реальную дату/время начала и окончания. Он принимает 27.03.2026 14:40, 27.03.2026 14:40 или 27.03.2026T14:40. Windows дольше одного дня работает нормально."
         },
         "windows": {
-          "title": "Бонусные окна",
+          "title": "Бонусные Окна",
           "subtitle": "Создавайте специальные расписания, например двойной опыт за ночь или дополнительные монеты в определенные часы.",
           "create": "Создать окно",
           "creating": "Создание окна...",
@@ -7474,11 +8009,11 @@
         }
       },
       "billingPricing": {
-        "title": "Подписка и цены на бриллианты",
+        "title": "Подписка и Цены на Бриллианты",
         "subtitle": "Измените переопределения оформления заказа здесь. Если оставить поле пустым, переопределение будет удалено, и произойдет возврат к значению .env или встроенному значению по умолчанию.",
         "fallbackChip": "Резервный файл .env/по умолчанию",
         "stripeTitle": "Подписки в полоску",
-        "stripeSubtitle": "Контролируйте ежемесячные и годовые цены в долларах США, BRL и евро.",
+        "stripeSubtitle": "Контролируйте ежемесячные и годовые цены в USD, BRL, EUR, CZK, JPY, PLN, KRW и NOK.",
         "monthlyTitle": "Ежемесячно",
         "annualTitle": "Ежегодный",
         "emptyUsesFallback": "Оставьте пустым, чтобы использовать .env/default.",
@@ -7487,7 +8022,7 @@
         "mercadoPagoMonthlyLabel": "Ежемесячно (BRL)",
         "mercadoPagoAnnualLabel": "Годовой (BRL)",
         "diamondsTitle": "Бриллианты",
-        "diamondsSubtitle": "Отрегулируйте цену за единицу, используемую для покупки бриллиантов, в долларах США, BRL и евро.",
+        "diamondsSubtitle": "Отрегулируйте цену за единицу, используемую для покупки бриллиантов, в USD, BRL, EUR, CZK, JPY, PLN, KRW и NOK.",
         "currentPrice": "Текущий: {price}",
         "sourceOverride": "Панель",
         "sourceFallback": "Отступать",
@@ -7503,7 +8038,7 @@
         "subscriptionPromotionTitle": "Продвижение подписки",
         "subscriptionPromotionSubtitle": "Установите окно скидок и ежемесячные/годовые цены со скидкой для Stripe и Mercado Pago.",
         "diamondsPromotionTitle": "Алмазная акция",
-        "diamondsPromotionSubtitle": "Установите окно скидок и цену за единицу со скидкой в ​​долларах США, BRL и евро.",
+        "diamondsPromotionSubtitle": "Задайте период скидки и цену за единицу со скидкой для каждой поддерживаемой валюты.",
         "promotionWindowTitle": "Окно акции",
         "promotionWindowHint": "Оставьте даты пустыми, чтобы акция действовала до тех пор, пока вы не удалите скидки.",
         "promotionStartsAt": "Начинается в",
@@ -7517,7 +8052,7 @@
         "invalidDate": "Используйте действительные дату и время.",
         "clearAll": "Очистить все",
         "categoryPrices": {
-          "title": "Цены категорий каталога",
+          "title": "Цены Категорий Каталога",
           "subtitle": "Выберите каталог и категорию, чтобы назначить всем её товарам одну валюту и цену.",
           "loadError": "Не удалось загрузить цены категорий.",
           "saveError": "Не удалось обновить эту категорию.",
@@ -7549,7 +8084,7 @@
       },
       "system": {
         "eyebrow": "Система",
-        "title": "Системные настройки",
+        "title": "Системные Настройки",
         "subtitle": "Настройте глобальное поведение платформы, прогресс и время повторного подключения комнаты.",
         "updatedAtLabel": "Последнее обновление:",
         "tabs": {
@@ -7573,7 +8108,7 @@
           "accountResetDescription": "Сбросьте экономику и прогресс Alpha с подтверждением паролем и 2FA."
         },
         "accountReset": {
-          "title": "Сбросить все учетные записи",
+          "title": "Сбросить Все Учетные Записи",
           "subtitle": "Сбрасывает экономику и прогресс Alpha для всех учетных записей. Это глобальное, немедленное и необратимое действие.",
           "openAction": "Начать сброс",
           "modeLegend": "Режим сброса",
@@ -7596,15 +8131,15 @@
           "success": "Успешно сброшено учетных записей: {count}.",
           "modes": {
             "total": {
-              "title": "Полный сброс Alpha",
+              "title": "Полный Сброс Alpha",
               "description": "Сбрасывает монеты, алмазы, уровень, XP, достижения, инвентарь, значки, усиления, задержки и выбранный аватар."
             },
             "economy_progress_keep_avatar": {
-              "title": "Монеты и уровень",
+              "title": "Монеты и Уровень",
               "description": "Сбрасывает монеты, уровень, XP и задержки прогресса. Сохраняет аватар, алмазы, инвентарь, значки и достижения."
             },
             "economy_progress_achievements": {
-              "title": "Монеты, уровень и достижения",
+              "title": "Монеты, Уровень и Достижения",
               "description": "Также сбрасывает прогресс достижений и наградные значки. Сохраняет аватар, алмазы, инвентарь и остальные значки."
             }
           }
@@ -7660,7 +8195,7 @@
         "globalXpCooldownSaving": "Сохранение...",
         "globalXpCooldownSuccess": "Глобальное время восстановления опыта было обновлено.",
         "globalXpCooldownSaveError": "Нам не удалось обновить глобальное время восстановления опыта.",
-        "wootXpCooldownTitle": "woot Время восстановления опыта",
+        "wootXpCooldownTitle": "Woot Время восстановления опыта",
         "djTrackReplayXpCooldownTitle": "Задержка XP диджея за тот же трек",
         "djPlaybackXpCooldownTitle": "DJ Время восстановления опыта",
         "wootXpCooldownSubtitle": "Определяет время ожидания перед повторным получением XP за woot.",
@@ -7748,6 +8283,7 @@
         "miscShopPriceDiamonds": "Цена в Алмазах",
         "miscShopCoinsCooldownHours": "Время ожидания для Монет",
         "miscShopRealMoneyPriceHint": "Для реальных денег введите сумму в центах. Пример: 1990 год = 19,90 доллара США.",
+        "miscShopZeroDecimalRealMoneyPriceHint": "Цены хранятся в сотых долях единицы: 100 = 1 {currency}. Цены в JPY и KRW должны соответствовать целым суммам.",
         "miscShopNamePtBr": "Название ПТ-БР",
         "miscShopNameEnUs": "Имя EN-US",
         "miscShopDescriptionPtBr": "Описание ПТ-БР",
@@ -7902,20 +8438,35 @@
         "globalDonationGoalNameEnUsPlaceholder": "Пример: Помогите финансировать следующее большое обновление.",
         "globalDonationGoalTargetLabel": "Целевая сумма",
         "globalDonationGoalTargetPlaceholder": "Пример: 2500,00",
+        "globalDonationGoalTargetCurrenciesHint": "Задайте цель для каждой принимаемой валюты. Остальные оставьте пустыми или нулевыми. Цели в JPY и KRW должны быть целыми суммами.",
         "globalDonationGoalCurrencyLabel": "Валюта",
         "globalDonationGoalCurrencyHint": "Единая валюта глобальной цели, когда выбор валюты по языку отключен.",
         "globalDonationGoalLocalizedCurrencyLabel": "Валюта по языку",
-        "globalDonationGoalLocalizedCurrencyHint": "Если этот параметр включен, валюта соответствует локали сайта: pt-BR -> BRL и en-US -> USD. Используйте ручную валюту, если хотите евро.",
+        "globalDonationGoalLocalizedCurrencyHint": "Использует валюту, предпочитаемую для языка сайта, если для неё задана цель; иначе использует доступную валюту.",
         "donationCurrencySelectionLabel": "Разрешить выбор валюты",
-        "donationCurrencySelectionHint": "Если этот параметр включен, при вводе пожертвования отображается раскрывающийся список, в котором люди могут выбрать BRL, USD или EUR. Если этот параметр отключен, для пожертвований используется валюта цели по умолчанию.",
+        "donationCurrencySelectionHint": "Позволяет выбрать поддерживаемую валюту с целью больше нуля. Иначе пожертвования используют валюту цели по умолчанию.",
         "donationCurrencySelectionEnabledSuccess": "Выбор валюты пожертвования был включен.",
         "donationCurrencySelectionDisabledSuccess": "Выбор валюты пожертвования был отключен.",
         "donationCurrencySelectionSaveError": "Не удалось обновить выбор валюты пожертвования.",
+        "patternList": {
+          "add": "Добавить",
+          "addLabel": "Добавить запись",
+          "searchLabel": "Поиск в списке",
+          "searchPlaceholder": "Поиск слова, домена или шаблона...",
+          "removeEntry": "Удалить {entry}",
+          "empty": "Нет заблокированных записей.",
+          "searchEmpty": "Нет записей, соответствующих поиску.",
+          "range": "{start}–{end} из {total}",
+          "bulkToggle": "Импортировать несколько записей",
+          "bulkLabel": "Новые записи",
+          "bulkAdd": "Добавить в список",
+          "bulkHint": "Введите по одной записи в строке. Новые записи добавляются в существующий список. Сохраните, чтобы применить изменения."
+        },
         "chatBlockedWordPatternsTitle": "Глобальный фильтр слов чата",
-        "chatBlockedWordPatternsSubtitle": "Определите слова, фразы или фрагменты, которые следует заблокировать в каждой комнате.",
+        "chatBlockedWordPatternsSubtitle": "Блокируйте целые слова или фразы во всех комнатах.",
         "chatBlockedWordPatternsLabel": "Заблокированные слова и фразы",
         "chatBlockedWordPatternsPlaceholder": "спам\nзапретное слово\nзаблокированная фраза",
-        "chatBlockedWordPatternsHint": "Используйте одну запись в строке или через запятую. При сопоставлении игнорируется регистр и акценты.",
+        "chatBlockedWordPatternsHint": "Введите по одной записи в строке или разделите их запятыми. Сопоставляются целые слова и фразы без учёта регистра и диакритики.",
         "chatBlockedWordPatternsHelper": "Этот блок применяется к новым сообщениям, изменениям и сообщениям, отправленным рум-ботами. Сообщение не публикуется, а отправитель видит ошибку на своем языке.",
         "chatBlockedWordPatternsSave": "Сохранить фильтр слов",
         "chatBlockedWordPatternsSaving": "Сохранение фильтра...",
@@ -7926,7 +8477,7 @@
         "chatMediaBlockedPatternsSubtitle": "Определите глобальные шаблоны для блокировки прямых ссылок на изображения и GIF-файлы в любой комнате.",
         "chatMediaBlockedPatternsLabel": "Заблокированные домены и шаблоны",
         "chatMediaBlockedPatternsPlaceholder": "красные гифки.\nпорнхаб.\ni.imgur.com/пример",
-        "chatMediaBlockedPatternsHint": "Используйте один шаблон в строке. Допускаются как полные домены, так и частичные фрагменты ссылок. Эта проверка применяется к прямым ссылкам на изображения/GIF, отправленным в чате.",
+        "chatMediaBlockedPatternsHint": "Указывайте один шаблон в строке. Домены блокируют сам домен и его поддомены; слова совпадают только с целыми словами. Начинайте фрагменты пути с / (например, /unsafe/). Применяется к прямым ссылкам на изображения/GIF, отправленным в чате.",
         "chatMediaBlockedPatternsHelper": "Совет: белый список встроенного предварительного просмотра настраивается отдельно ниже. Эта настройка управляет глобальным блоком безопасности.",
         "chatMediaBlockedPatternsSave": "Сохранить черный список",
         "chatMediaBlockedPatternsSaving": "Сохранение черного списка...",
@@ -7939,7 +8490,7 @@
         "mediaPlaybackBlockedUrlPatternsPlaceholder": "youtube.com/watch?v=abc123\nyoutu.be/abc123\nsoundcloud.com/artist/track",
         "mediaPlaybackBlockedTitlePatternsLabel": "Заблокированные имена, названия и исполнители",
         "mediaPlaybackBlockedTitlePatternsPlaceholder": "название песни\nзаблокированный исполнитель\nзапрещенный титул",
-        "mediaPlaybackBlockedPatternsHint": "Используйте одну запись в строке или через запятую. URL-адреса соответствуют фрагментам ссылок/идентификаторов; имена игнорируют регистр и акценты.",
+        "mediaPlaybackBlockedPatternsHint": "Указывайте по одной записи в строке или через запятую. URL/ID совпадают с фрагментами; названия — с целыми словами/фразами без учёта регистра, диакритики и лишних пробелов.",
         "mediaPlaybackBlockedPatternsHelper": "Это относится к предварительному просмотру, сохранению плейлистов, импорту и пропуску старых сохраненных треков, когда комната пытается их воспроизвести.",
         "mediaPlaybackRoomBlocklistToggleTitle": "Разрешить черный список для каждой комнаты в инструментах комнаты",
         "mediaPlaybackRoomBlocklistToggleHint": "Если эта функция включена, сотрудники с разрешением на управление комнатами могут вести черный список для конкретной комнаты в дополнение к глобальному.",
@@ -7979,7 +8530,7 @@
         "chatHistoryMessageLimitSaving": "Лимит экономии...",
         "chatHistoryMessageLimitUpdated": "Ограничение глобальной истории чата было обновлено.",
         "chatHistoryMessageLimitSaveError": "Нам не удалось обновить лимит глобальной истории чата.",
-        "globalDonationGoalLocalizedCurrencyPreview": "Автоматический предварительный просмотр: pt-BR -> BRL • en-US -> USD",
+        "globalDonationGoalLocalizedCurrencyPreview": "Предпочтения по языку: pt → BRL · en → USD · cs → CZK · ja → JPY · pl → PLN · ko → KRW · nb → NOK · fr/es/sk → EUR",
         "globalDonationGoalDescriptionLabel": "Описание",
         "globalDonationGoalDescriptionPlaceholder": "Объясните, для чего проводится кампания и что финансирует сообщество.",
         "globalDonationGoalDescriptionPtBrLabel": "Описание (пт-БР)",
@@ -8078,7 +8629,7 @@
         "supporterGiftBadgesTitle": "Отправленные subgifts",
         "supporterGiftBadgesSubtitle": "Самый высокий доступный уровень отображается, когда аккаунт достигает заданного количества доставленных subgifts.",
         "supporterSubscriptionBadgesTitle": "Срок подписки",
-        "supporterSubscriptionBadgesSubtitle": "Значок повышается в конце каждого оплаченного, подаренного или предоплаченного цикла.",
+        "supporterSubscriptionBadgesSubtitle": "Каждые 30 использованных дней подписки составляют 1 месяц. Использованные периоды по 7 и 15 дней суммируются; перерывы без подписки и купленное, но ещё не использованное время не учитываются.",
         "supporterBadgeAddTier": "Добавить уровень",
         "supporterBadgeThreshold": "Цель",
         "supporterBadgeLabel": "Название",
@@ -8136,7 +8687,7 @@
         "subscriberPerksSaveFooterTitle": "Внедрение в реальном времени",
         "subscriberPerksSaveFooterSubtitle": "При сохранении здесь изменения публикуются в среде выполнения и обновляются подключенные подписчики без перезапуска платформы.",
         "realtime": {
-          "title": "Диагностика в реальном времени",
+          "title": "Диагностика в Реальном Времени",
           "subtitle": "Отслеживайте работоспособность Redis, pub/sub и распределенной среды выполнения, не полагаясь только на журналы.",
           "redisSection": "Редис",
           "flagsSection": "Время выполнения",
@@ -8188,10 +8739,10 @@
         }
       },
       "globalRoles": {
-        "title": "Пользовательские глобальные роли",
+        "title": "Пользовательские Глобальные Роли",
         "subtitle": "Создайте косметические или функциональные глобальные роли и точно определите, какие разрешения предоставляет каждая из них.",
         "systemRoles": {
-          "title": "Разрешения встроенных ролей",
+          "title": "Разрешения Встроенных Ролей",
           "description": "Настройте доступ, автоматически выдаваемый ролями Developer, Ambassador, Проверенный и Подписчик. Изменения применяются ко всем обладателям роли.",
           "adminProtected": "Admin защищён",
           "roleSelector": "Выбрать встроенную роль",
@@ -8294,7 +8845,7 @@
         "orderHint": "Читайте сверху вниз: номер 1 имеет наивысший приоритет отображения. Роль, указанная выше, появляется первой и определяет цвет имени, если у кого-то есть обе роли. Перетащите или используйте стрелки, затем сохраните. Это не меняет разрешения роли.",
         "highestPriority": "Высший приоритет – первый",
         "lowestPriority": "Самый низкий приоритет – последний",
-        "title": "Ролевой внешний вид",
+        "title": "Ролевой Внешний Вид",
         "subtitle": "Настройте имя, цвет и значок для внутренних ролей платформы, ролей комнат и пользовательских глобальных ролей.",
         "modes": {
           "global": "Сайт по умолчанию",
@@ -8333,7 +8884,7 @@
           "colorHex": "Шестнадцатеричный цвет"
         },
         "customRoomRoles": {
-          "title": "Пользовательские роли комнаты",
+          "title": "Пользовательские Роли Комнаты",
           "description": "Создавайте повторно используемые роли. Базовая роль определяет иерархию и разрешения.",
           "newRole": "Новая роль",
           "empty": "Пользовательских ролей пока нет.",
@@ -8375,7 +8926,7 @@
       "avatars": {
         "exportError": "Экспорт не удался. Пожалуйста, попробуйте еще раз.",
         "exportCategoryLevels": "Категории и уровни экспорта",
-        "title": "Каталог аватаров",
+        "title": "Каталог Аватаров",
         "subtitle": "Добавляйте новые аватары, выбирайте категорию, валюту и цену и просматривайте спрайт в режиме ожидания, танца и DJ.",
         "loadError": "Не удалось загрузить каталог аватаров.",
         "createSuccess": "Аватар {name} добавлен в каталог.",
@@ -8472,7 +9023,7 @@
         }
       },
       "badges": {
-        "title": "Каталог бейджей",
+        "title": "Каталог Бейджей",
         "subtitle": "Создавайте и редактируйте значки магазинов с изображением или значком Tabler, а также описанием, валютой, ценой и видимостью.",
         "loadError": "Не удалось загрузить каталог бейджей прямо сейчас.",
         "createSuccess": "В каталог добавлен значок {name}.",
@@ -8512,7 +9063,7 @@
         "deleteConfirm": "Вы уверены, что хотите удалить значок «{name}»?",
         "holders": {
           "action": "Пользователи",
-          "title": "Статистика значков",
+          "title": "Статистика Значков",
           "subtitle": "Узнайте, кому принадлежит этот значок, и при необходимости закройте доступ.",
           "close": "Закрыть",
           "refresh": "Обновить",
@@ -8593,7 +9144,7 @@
         }
       },
       "backgrounds": {
-        "title": "Фоновый каталог",
+        "title": "Фоновый Каталог",
         "subtitle": "Создавайте и редактируйте фоны комнат с указанием имени, URL, категории, цены, валюты и видимости.",
         "loadError": "Не удалось загрузить фоновый каталог прямо сейчас.",
         "createSuccess": "В каталог добавлен фон {name}.",
@@ -8636,7 +9187,7 @@
           "name": "Имя",
           "namePlaceholder": "Неоновый закат",
           "imageUrl": "Изображение URL",
-          "imagePlaceholder": "/room/backgrounds/neon-sunset.png",
+          "imagePlaceholder": "/catalog/backgrounds/neon-sunset.png",
           "category": "Категория",
           "categoryPlaceholder": "клуб",
           "currency": "Валюта",
@@ -8651,7 +9202,7 @@
         }
       },
       "videoframes": {
-        "title": "Каталог видеокадров",
+        "title": "Каталог Видеокадров",
         "subtitle": "Администраторы могут создавать и редактировать видеокадры проигрывателя, настраивать имя, URL, категорию и видимость.",
         "loadError": "Не удалось загрузить каталог видеокадров прямо сейчас.",
         "createSuccess": "Видеокадр {name} добавлен в каталог.",
@@ -8693,7 +9244,7 @@
           "name": "Имя",
           "namePlaceholder": "Классическая рамка",
           "imageUrl": "Изображение URL",
-          "imagePlaceholder": "/room/video-frames/classic-frame.png",
+          "imagePlaceholder": "/catalog/video-frames/classic-frame.png",
           "category": "Категория",
           "categoryPlaceholder": "по умолчанию",
           "currency": "Валюта",
@@ -8825,7 +9376,7 @@
         }
       },
       "announcements": {
-        "title": "Глобальные оповещения",
+        "title": "Глобальные Оповещения",
         "subtitle": "Создайте глобальное оповещение, которое будет отображаться в чате комнаты и, если хотите, также закреплено вверху.",
         "globalPollTitle": "Глобальный опрос",
         "globalPollSubtitle": "Создайте опрос, закрепленный в верхней части чата в каждой комнате.",
@@ -8932,7 +9483,7 @@
         }
       },
       "logs": {
-        "title": "Административные журналы",
+        "title": "Административные Журналы",
         "subtitle": "Аудит банов, предупреждений, удалений комнат и изменений, внесенных командой.",
         "searchPlaceholder": "Поиск по действию, актеру, цели или деталям...",
         "emptySearch": "Ни один журнал не соответствует этому запросу.",
@@ -8947,7 +9498,7 @@
           "date": "Дата"
         },
         "donations": {
-          "title": "Недавние пожертвования",
+          "title": "Недавние Пожертвования",
           "subtitle": "Отслеживайте, кто сделал пожертвование, куда пошло пожертвование и когда был подтвержден платеж.",
           "searchPlaceholder": "Поиск по донору, комнате, валюте или сумме...",
           "emptySearch": "Ни одно пожертвование не соответствует этому запросу.",
@@ -9170,7 +9721,13 @@
         "clear": "Очистить журналы",
         "clearing": "Очистка...",
         "clearSuccess": "Административные журналы были очищены.",
-        "clearError": "Нам не удалось очистить журналы прямо сейчас."
+        "clearError": "Нам не удалось очистить журналы прямо сейчас.",
+        "activityFilter": "Фильтр активности",
+        "allActivity": "Вся активность",
+        "ambassadorActivity": "Активность BA",
+        "activitySubmitted": "Команда отправлена",
+        "activitySuccess": "Завершено",
+        "activityFailed": "Ошибка"
       },
       "confirm": {
         "saveStatsTitle": "Сохранить статистику",
@@ -9186,9 +9743,9 @@
         "deleteUserTitle": "Удалить аккаунт",
         "deleteUserDescription": "Вы хотите навсегда удалить учетную запись {username}? Сессии, плейлисты, социальные связи и собственные комнаты также будут удалены. Затронутые комнаты: {count}.",
         "resetGlobalDonationGoalRaisedTitle": "Сбросить глобальную собранную сумму",
-        "resetGlobalDonationGoalRaisedDescription": "Хотите обнулить собранную сумму глобального пожертвования? Общие суммы BRL, USD и EUR будут сброшены, и прогресс вернется к 0%.",
+        "resetGlobalDonationGoalRaisedDescription": "Обнулить собранные суммы во всех валютах и прогресс общей цели?",
         "resetRoomDonationGoalRaisedTitle": "Сбросить сумму, собранную на руме",
-        "resetRoomDonationGoalRaisedDescription": "Хотите обнулить собранную сумму для достижения цели комнаты {name}? Общие суммы BRL, USD и EUR будут сброшены, и прогресс вернется к 0%.",
+        "resetRoomDonationGoalRaisedDescription": "Обнулить собранные суммы во всех валютах и прогресс цели комнаты {name}?",
         "closeRoomTitle": "Закрыть комнату",
         "closeRoomDescription": "Вы хотите закрыть комнату {name}? Он исчезнет из /dashboard и станет недоступным для общественности.",
         "reopenRoomTitle": "Открыть комнату заново",
@@ -9243,6 +9800,73 @@
         "pageLabelPrefix": "Страница",
         "next": "Следующая страница",
         "previous": "Предыдущая страница"
+      },
+      "cdnMedia": {
+        "deletePasswordHint": "Confirm your account password to delete. This action will be recorded.",
+        "search": "Search files and folders in this folder…",
+        "selectPage": "Select page",
+        "selectName": "Select {name}",
+        "selectedCount": "{count} selected (maximum 100)",
+        "clearSelection": "Clear selection",
+        "deleteSelected": "Delete selected",
+        "deletedCount": "Deleted items: {count}.",
+        "deletePartial": "Could not delete {count} items. They remain selected; check the folder contents before retrying.",
+        "deleteBulkHelp": "Delete {count} selected items? Folders and all their contents will be permanently deleted. Existing links will stop working.",
+        "deleteFolderContentsHelp": "This folder and all files and subfolders inside it will be permanently deleted. Existing links will stop working.",
+        "noResults": "No matching files or folders.",
+        "previousPage": "Previous page",
+        "nextPage": "Next page",
+        "pagination": "CDN files pagination",
+        "pageSummary": "{start}–{end} of {total}",
+        "passwordInvalid": "Incorrect password or account without a password. Check it or set a password in settings.",
+        "passwordRateLimited": "Too many attempts. Wait one minute and try again.",
+        "confirmPassword": "Confirm your account password",
+        "legacyPasswordHint": "This existing CDN file may be in use. Confirm your password to edit or delete it. The action will be logged. Accounts without a password must set one in settings.",
+        "subtitle": "Загружайте изображения и файлы JavaScript, упорядочивайте папки и копируйте прямые ссылки из CDN.",
+        "folders": "Папки",
+        "files": "Файлы",
+        "root": "Корень",
+        "newFolder": "Новая папка",
+        "refresh": "Обновить",
+        "loadError": "Не удалось загрузить файлы из CDN. Попробуйте обновить список.",
+        "copyError": "Не удалось скопировать ссылку. Выделите прямую ссылку и скопируйте её вручную.",
+        "uploadError": "Не удалось загрузить файл {name}.",
+        "invalidUpload": "{name}: выберите изображение PNG, JPEG, GIF или WebP либо файл .js размером до {size} МБ.",
+        "uploaded": "{count, plural, one {Загружен # файл.} few {Загружено # файла.} many {Загружено # файлов.} other {Загружено # файла.}}",
+        "saved": "Изменения сохранены.",
+        "deleted": "Удалено.",
+        "saveError": "Не удалось сохранить изменения.",
+        "deleteError": "Не удалось удалить этот элемент.",
+        "unavailable": "Загрузка в CDN недоступна. Настройте хранилище медиафайлов на сервере, чтобы включить эту вкладку.",
+        "dropImages": "Перетащите файлы сюда для загрузки",
+        "dropNow": "Отпустите для загрузки",
+        "uploading": "Загрузка {current} из {total}…",
+        "formats": "PNG, JPEG, GIF, WebP и JS · до {size} МБ на файл",
+        "chooseImages": "Выбрать файлы",
+        "renameFolder": "Переименовать папку",
+        "renameFolderName": "Переименовать папку {name}",
+        "delete": "Удалить",
+        "deleteName": "Удалить {name}",
+        "directLink": "Прямая ссылка на {name}",
+        "copyLink": "Копировать ссылку",
+        "copied": "Скопировано",
+        "editAsset": "Переименовать или переместить файл",
+        "editName": "Изменить {name}",
+        "empty": "Эта папка пуста.",
+        "loading": "Загрузка…",
+        "loadMore": "Загрузить ещё",
+        "save": "Сохранить",
+        "cancel": "Отмена",
+        "folderName": "Имя папки",
+        "emptyFoldersOnly": "Переименовать можно только пустые папки. Сначала переместите файлы.",
+        "linkChanges": "При переименовании или перемещении файла его ссылка изменяется. Обновите уже используемые ссылки.",
+        "fileName": "Имя файла",
+        "destination": "Папка назначения",
+        "destinationHelp": "Введите путь к существующей папке, например bots/icons. Оставьте поле пустым, чтобы использовать корневую папку.",
+        "deleteTitle": "Удалить этот элемент?",
+        "deleteFolderHelp": "Удалять можно только пустые папки.",
+        "deleteAssetHelp": "Этот файл будет удалён. Его прямая ссылка перестанет работать.",
+        "readyLinks": "Прямые ссылки готовы"
       }
     },
     "applicationForm": {
@@ -9292,7 +9916,7 @@
       }
     },
     "profile": {
-      "eyebrow": "Ваш профиль",
+      "eyebrow": "Ваш Профиль",
       "publicEyebrow": "Профиль",
       "title": "Профиль",
       "subtitle": "Выберите, какие значки будут отображаться в вашем профиле, и настройте публичный вид своей учетной записи.",
@@ -9319,7 +9943,7 @@
       "countryFlag": {
         "edit": "Изменить флаг",
         "choose": "Выберите флаг",
-        "title": "Выберите флаг",
+        "title": "Выберите Флаг",
         "subtitle": "Обнаружение IP устанавливает первый флаг. После этого ваш выбор останется сохраненным в вашем профиле.",
         "searchPlaceholder": "Искать страну...",
         "saveError": "Не удалось сохранить флаг.",
@@ -9419,7 +10043,7 @@
         "nextPage": "Следующая страница"
       },
       "currentRoom": {
-        "title": "Текущая комната",
+        "title": "Текущая Комната",
         "subtitle": "Если этот человек онлайн и разрешает это, вы можете увидеть, где он сейчас находится.",
         "join": "Иди в комнату",
         "empty": "В данный момент общественных помещений для показа нет.",
@@ -9427,7 +10051,7 @@
         "queueCount": "{count, plural, one {# в очереди} few {# в очереди} many {# в очереди} other {# в очереди}}"
       },
       "recentTracks": {
-        "title": "Недавно воспроизведенные треки",
+        "title": "Недавно Воспроизведенные Треки",
         "subtitle": "Последние 5 треков этот пользователь проигрывал под именем DJ.",
         "empty": "Для этого пользователя пока нет недавно воспроизведенных треков.",
         "playedInRoom": "Играл в"
@@ -9464,8 +10088,8 @@
       }
     },
     "myStuff": {
-      "eyebrow": "Личная коллекция",
-      "title": "Мои вещи",
+      "eyebrow": "Личная Коллекция",
+      "title": "Мои Вещи",
       "subtitle": "Просмотрите свои аватары, значки и историю недавних покупок.",
       "loading": "Загрузка коллекции...",
       "loadError": "Не удалось загрузить ваши товары прямо сейчас.",
@@ -9518,7 +10142,7 @@
       "emptyBadgesSearch": "Ни один значок не соответствовал этому запросу.",
       "emptyHistory": "Ваша история покупок появится здесь, как только вы что-нибудь купите.",
       "subscription": {
-        "title": "Активная подписка",
+        "title": "Активная Подписка",
         "description": "Ваша подписка активна на плане {cycle}.",
         "descriptionPrepaid": "Ваш предоплаченный доступ активен в плане {cycle}, а новые покупки добавляют время к текущей дате окончания.",
         "descriptionGifted": "Ваша подписка активна через подарок.",
@@ -9537,11 +10161,37 @@
         "endsToday": "Заканчивается сегодня",
         "daysLeft": "{count, plural, one {# остался день} few {Осталось # дней} many {Осталось # дней} other {Осталось # дней}}",
         "planBadge": "план {cycle}"
+      },
+      "history": {
+        "count": "{count, plural, one {# покупка} few {# покупки} many {# покупок} other {# покупки}}",
+        "newestFirst": "Сначала новые",
+        "search": "Поиск покупок",
+        "refresh": "Обновить историю",
+        "loadError": "Не удалось загрузить историю покупок.",
+        "retry": "Повторить",
+        "external": "Внешний платёж",
+        "free": "Бесплатно",
+        "completed": "Завершено",
+        "currencyUnknown": "Валюта не указана",
+        "reference": "ID покупки: {id}",
+        "range": "{start}–{end} из {total}",
+        "noResults": "Покупки не найдены",
+        "noResultsHint": "Попробуйте другой запрос или категорию.",
+        "emptyTitle": "Покупок пока нет",
+        "categories": {
+          "all": "Все категории",
+          "avatar": "Аватары",
+          "background": "Фоны",
+          "badge": "Значки",
+          "videoframe": "Рамки видео",
+          "misc": "Другие предметы",
+          "unknown": "Без категории"
+        }
       }
     },
     "progression": {
       "eyebrow": "Прогресс",
-      "title": "Награды за уровень",
+      "title": "Награды за Уровень",
       "subtitle": "Отслеживайте награды и разблокировки по уровням.",
       "loading": "Загрузка наград за уровень...",
       "loadError": "Не удалось загрузить награды за уровни прямо сейчас.",
@@ -9557,8 +10207,8 @@
       "noNextExtra": "Никаких предстоящих дополнений",
       "noNextExtraDescription": "В загруженном диапазоне не обнаружено никаких настроенных дополнительных устройств.",
       "supporter": {
-        "eyebrow": "Поддержка платформы",
-        "title": "Подписка и подарки",
+        "eyebrow": "Поддержка Платформы",
+        "title": "Подписка и Подарки",
         "subtitle": "Следите за значками поддержки и прогрессом до следующего уровня.",
         "subscription": "Подписка",
         "gifts": "Отправленные подарки",
@@ -9626,8 +10276,8 @@
       }
     },
     "communities": {
-      "eyebrow": "Сеть вашей комнаты",
-      "title": "Мои сообщества",
+      "eyebrow": "Сеть Вашей Комнаты",
+      "title": "Мои Сообщества",
       "subtitle": "Отслеживайте комнаты, которыми вы владеете, и комнаты, в которых вы в настоящее время занимаете должность персонала.",
       "loading": "Загрузка сообществ...",
       "loadError": "Нам не удалось загрузить ваши сообщества прямо сейчас.",
@@ -9663,8 +10313,8 @@
       "customRolesTitle": "Пользовательские глобальные роли"
     },
     "recentlyPlayed": {
-      "eyebrow": "Ваш музыкальный маршрут",
-      "title": "Недавно играл",
+      "eyebrow": "Ваш Музыкальный Маршрут",
+      "title": "Недавно Играл",
       "subtitle": "Посмотрите последние треки, которые вы играли под именем DJ в комнатах.",
       "emptyTitle": "Здесь пока ничего",
       "emptySubtitle": "Как только вы воспроизведете трек под именем DJ в комнате, на этой панели отобразится ваша недавняя история.",
@@ -9694,20 +10344,20 @@
       "effectiveDate": "Дата вступления в силу",
       "sections": {
         "introduction": {
-          "title": "1. Область применения и принятие",
+          "title": "1. Область Применения и Принятие",
           "paragraphs": {
             "p1": "Настоящая Политика конфиденциальности применяется к веб-сайтам, приложениям, аутентифицированным областям, живым комнатам и сопутствующим услугам WavezFM. Используя Сервис, вы признаете описанные здесь правила.",
             "p2": "Настоящую Политику следует читать вместе с Условиями обслуживания и Политикой использования файлов cookie. Если для функции предусмотрено более конкретное уведомление о конфиденциальности, это уведомление также применимо к этой функции."
           }
         },
         "controller": {
-          "title": "2. Контроллер данных",
+          "title": "2. Контроллер Данных",
           "paragraphs": {
             "p1": "WavezFM несет ответственность за принятие решения о том, почему и как обрабатываются персональные данные в связи с Сервисом. Запросы о конфиденциальности можно отправлять по адресу hi@wavez.fm."
           }
         },
         "provided": {
-          "title": "3. Информация, которую вы предоставляете",
+          "title": "3. Информация, Которую Вы Предоставляете",
           "paragraphs": {
             "p1": "Мы обрабатываем информацию, которую вы предоставляете при создании и использовании учетной записи или общении через Сервис."
           },
@@ -9720,7 +10370,7 @@
           }
         },
         "automatic": {
-          "title": "4. Информация собирается автоматически.",
+          "title": "4. Информация Собирается Автоматически.",
           "paragraphs": {
             "p1": "Когда вы получаете доступ к Сервису, мы можем автоматически записывать техническую информацию и информацию об использовании, необходимую для его работы, защиты и улучшения."
           },
@@ -9732,7 +10382,7 @@
           }
         },
         "thirdParties": {
-          "title": "5. Информация от подключенных сервисов",
+          "title": "5. Информация от Подключенных Сервисов",
           "paragraphs": {
             "p1": "Если вы подключаете или используете внешнюю службу, мы можем получить информацию, необходимую для обеспечения такой интеграции."
           },
@@ -9744,9 +10394,10 @@
           }
         },
         "purposes": {
-          "title": "6. Как мы используем информацию",
+          "title": "6. Как Мы Используем Информацию",
           "paragraphs": {
-            "p1": "Мы используем персональные данные для следующих целей:"
+            "p1": "Мы используем персональные данные для следующих целей:",
+            "p2": "Если мы будем отправлять рекламные сообщения, вы сможете в любой момент отказаться от них, написав на hi@wavez.fm. Отказ не прекращает отправку необходимых уведомлений о работе сервиса, безопасности и операциях."
           },
           "items": {
             "i1": "Создавайте, аутентифицируйте, защищайте, восстанавливайте и обслуживайте учетные записи.",
@@ -9755,11 +10406,12 @@
             "i4": "Персонализируйте язык, внешний вид, доступность, конфиденциальность, контент и настройки уведомлений.",
             "i5": "Модерируйте контент, применяйте правила, расследуйте отчеты, предотвращайте мошенничество, спам, злоупотребления и несанкционированный доступ, а также защищайте пользователей и Сервис.",
             "i6": "Диагностируйте сбои, измеряйте производительность, разрабатывайте функции и создавайте агрегированную или обезличенную статистику.",
-            "i7": "Соблюдайте юридические, нормативные, бухгалтерские, налоговые обязательства и обязательства по разрешению споров, а также отвечайте на законные запросы."
+            "i7": "Соблюдайте юридические, нормативные, бухгалтерские, налоговые обязательства и обязательства по разрешению споров, а также отвечайте на законные запросы.",
+            "i8": "Если такие сообщения будут предлагаться, отправлять необязательные новости о продукте, объявления о новых функциях и рекламные материалы по электронной почте или через уведомления в приложении, когда это разрешено законом."
           }
         },
         "legalBases": {
-          "title": "7. Правовые основы",
+          "title": "7. Правовые Основы",
           "paragraphs": {
             "p1": "В зависимости от контекста и применимого законодательства обработка может основываться на одном или нескольких из следующих оснований:"
           },
@@ -9772,7 +10424,7 @@
           }
         },
         "sharing": {
-          "title": "8. Как передается информация",
+          "title": "8. Как Передается Информация",
           "paragraphs": {
             "p1": "WavezFM не продает персональные данные. Мы раскрываем только то, что разумно необходимо для целей, описанных в настоящей Политике."
           },
@@ -9784,17 +10436,18 @@
           }
         },
         "publicAreas": {
-          "title": "9. Общественные и социальные зоны",
+          "title": "9. Общественные и Социальные Зоны",
           "paragraphs": {
             "p1": "Имена пользователей, отображаемые имена, аватары, значки, общедоступные биографии, действия в комнате, сообщения чата, реакции, список воспроизведения или информация о комнате, а также другой контент, который вы решите опубликовать, могут быть видны другим пользователям в соответствии с вашими настройками и используемой функцией.",
             "p2": "Не публикуйте личную или конфиденциальную информацию, которую вы не хотите, чтобы другие видели. Элементы управления конфиденциальностью комнаты и профиля уменьшают видимость, но не могут помешать другому человеку записывать или делиться контентом, к которому он имеет доступ."
           }
         },
         "retention": {
-          "title": "10. Хранение данных",
+          "title": "10. Хранение Данных",
           "paragraphs": {
             "p1": "Мы храним персональные данные только до тех пор, пока это разумно необходимо для предоставления Сервиса, ведения записей о безопасности и модерации, разрешения споров и выполнения юридических, налоговых, бухгалтерских или нормативных обязанностей. Срок хранения зависит от типа данных, конфигурации помещения, статуса учетной записи и юридических требований.",
-            "p2": "После удаления учетной записи данные могут оставаться в течение ограниченного периода времени в резервных копиях, записях предотвращения мошенничества, записях транзакций или журналах, которые необходимо сохранять. Публичный контент может быть удален, анонимизирован или сохранен, когда это необходимо для сохранения целостности разговора, обеспечения соблюдения прав или соблюдения закона."
+            "p2": "После удаления учетной записи данные могут оставаться в течение ограниченного периода времени в резервных копиях, записях предотвращения мошенничества, записях транзакций или журналах, которые необходимо сохранять. Публичный контент может быть удален, анонимизирован или сохранен, когда это необходимо для сохранения целостности разговора, обеспечения соблюдения прав или соблюдения закона.",
+            "p3": "Контактные данные для необязательных рекламных рассылок хранятся только пока такая связь разрешена. После отказа, отзыва согласия или закрытия аккаунта мы перестаем использовать их для этой цели; минимальную запись об отказе можем хранить столько, сколько необходимо для соблюдения вашего выбора или закона."
           }
         },
         "security": {
@@ -9810,7 +10463,7 @@
           }
         },
         "rights": {
-          "title": "12. Ваши права на конфиденциальность",
+          "title": "12. Ваши Права на Конфиденциальность",
           "paragraphs": {
             "p1": "В зависимости от того, где вы живете, в том числе в соответствии с LGPD или GDPR, вы можете иметь следующие права. Мы можем запросить информацию, необходимую для проверки личности и защиты учетной записи, прежде чем выполнить запрос."
           },
@@ -9827,13 +10480,13 @@
           }
         },
         "transfers": {
-          "title": "13. Международная передача данных",
+          "title": "13. Международная Передача Данных",
           "paragraphs": {
             "p1": "WavezFM и ее провайдеры могут обрабатывать данные в других странах, кроме вашей. При необходимости мы используем признанные гарантии, такие как договорная защита, решения об адекватности, меры безопасности и методы минимизации данных."
           }
         },
         "cookies": {
-          "title": "14. Файлы cookie и локальное хранилище",
+          "title": "14. Файлы Cookie и Локальное Хранилище",
           "paragraphs": {
             "p1": "Мы используем основные технологии для аутентификации, безопасности, непрерывности сеансов, языка и основной работы. Дополнительные технологии предпочтений используются по вашему выбору, когда требуется согласие.",
             "p2": "Вы можете управлять поддерживаемыми вариантами с помощью элементов управления файлами cookie и вашего браузера. Отключение основного хранилища может помешать работе аутентифицированных или чувствительных к безопасности функций. Дополнительную информацию см. в Политике использования файлов cookie."
@@ -9846,20 +10499,20 @@
           }
         },
         "changes": {
-          "title": "16. Изменения в настоящей Политике",
+          "title": "16. Изменения в Настоящей Политике",
           "paragraphs": {
             "p1": "Мы можем обновлять настоящую Политику по мере изменения Услуг, поставщиков или юридических требований. О существенных изменениях можно сообщить на сайте, в приложении или по электронной почте. Дата выше идентифицирует текущую версию."
           }
         },
         "contact": {
-          "title": "17. Контакт и жалобы",
+          "title": "17. Контакт и Жалобы",
           "paragraphs": {
             "p1": "Чтобы задать вопрос о конфиденциальности или воспользоваться правом на данные, отправьте электронное письмо по адресу hi@wavez.fm, указав достаточную информацию для идентификации вашей учетной записи и запроса. Не отправляйте пароли или полные данные платежной карты.",
             "p2": "Вы также можете обратиться в компетентный орган по защите данных или в орган по защите прав потребителей в вашей юрисдикции, в том числе в ANPD Бразилии или в надзорный орган в вашей стране ЕС или ЕЭЗ, где это применимо."
           }
         },
         "youtube": {
-          "title": "18. YouTube и данные о видео",
+          "title": "18. YouTube и Данные о Видео",
           "paragraphs": {
             "p1": "WavezFM использует сервисы YouTube API для получения общедоступных метаданных видео и сведений об их доступности. Видео YouTube воспроизводятся во встроенном проигрывателе YouTube.",
             "p2": "WavezFM хранит ссылки на видео, их идентификаторы и метаданные в плейлистах и записях об активности комнат. Встроенный проигрыватель YouTube может получать данные о браузере, устройстве и сети и использовать файлы cookie в соответствии с Политикой конфиденциальности Google.",
@@ -9907,7 +10560,7 @@
           }
         },
         "account": {
-          "title": "4. Аккаунты и безопасность",
+          "title": "4. Аккаунты и Безопасность",
           "paragraphs": {
             "p1": "Вы несете ответственность за свою учетную запись и действия, осуществляемые через нее."
           },
@@ -9919,7 +10572,7 @@
           }
         },
         "conduct": {
-          "title": "5. Допустимое использование",
+          "title": "5. Допустимое Использование",
           "paragraphs": {
             "p1": "Вы не можете использовать Сервис для:"
           },
@@ -9935,34 +10588,34 @@
           }
         },
         "rooms": {
-          "title": "6. Комнаты и модерация",
+          "title": "6. Комнаты и Модерация",
           "paragraphs": {
             "p1": "Владельцы комнат и уполномоченный персонал могут устанавливать и обеспечивать соблюдение правил для каждой комнаты, при условии, что эти правила не противоречат настоящим Условиям или политике платформы. Пользователи должны следовать законным инструкциям модерации и ограничениям разрешений.",
             "p2": "WavezFM и уполномоченный персонал могут просматривать отчеты и применять предупреждения, отключение звука, ограничения очереди, удаления, баны, удаление контента, ограничения функций или блокировку учетной записи. Действия могут быть немедленными, если это необходимо для обеспечения безопасности, защиты, соблюдения законодательства или целостности обслуживания."
           }
         },
         "userContent": {
-          "title": "7. Пользовательский контент",
+          "title": "7. Пользовательский Контент",
           "paragraphs": {
             "p1": "Вы сохраняете за собой права на отправляемый вами контент. Вы несете ответственность за наличие у вас прав и разрешений, необходимых для его публикации.",
             "p2": "Вы предоставляете WavezFM международную неисключительную бесплатную лицензию на размещение, хранение, воспроизведение, форматирование, передачу, отображение и модерацию этого контента только в тех случаях, когда это разумно необходимо для работы, защиты, улучшения и продвижения Сервиса. Действие этой лицензии прекращается при удалении контента, за исключением копий, требуемых по закону, резервных копий, записей о правоприменении или контента, переданного другим лицам, который они сохраняют."
           }
         },
         "platformContent": {
-          "title": "8. Интеллектуальная собственность Платформы",
+          "title": "8. Интеллектуальная Собственность Платформы",
           "paragraphs": {
             "p1": "Название WavezFM, брендинг, интерфейс, программное обеспечение, документация, исходные ресурсы и функции платформы принадлежат WavezFM или ее лицензиарам. Настоящие Условия предоставляют вам ограниченное, личное, отзывное, неисключительное право на использование Сервиса; они не передают право собственности и не допускают несанкционированного коммерческого повторного использования."
           }
         },
         "thirdParty": {
-          "title": "9. Сторонние сервисы и средства массовой информации",
+          "title": "9. Сторонние Сервисы и Средства Массовой Информации",
           "paragraphs": {
             "p1": "Сервис интегрирует или связывает таких поставщиков, как YouTube, SoundCloud, Spotify, Discord, Last.fm, Google Drive, Stripe, Mercado Pago и другие сервисы. Их собственные условия и политика конфиденциальности регулируют использование вами их услуг.",
             "p2": "WavezFM не контролирует доступность, лицензирование, точность, безопасность или продолжение работы стороннего контента. Медиафайлы могут быть удалены, заблокированы, недоступны в зависимости от региона, прерваны или изменены их поставщиком."
           }
         },
         "copyright": {
-          "title": "10. Жалобы на нарушение авторских прав",
+          "title": "10. Жалобы на Нарушение Авторских Прав",
           "paragraphs": {
             "p1": "Если вы считаете, что контент, доступный через WavezFM, нарушает ваши права, отправьте достаточно подробное уведомление на адрес hi@wavez.fm."
           },
@@ -9975,7 +10628,7 @@
           }
         },
         "payments": {
-          "title": "11. Платежи, подписки, подарки и пожертвования.",
+          "title": "11. Платежи, Подписки, Подарки и Пожертвования.",
           "paragraphs": {
             "p1": "Цены, валюта, интервал выставления счетов, налоги, условия продления и включенные преимущества отображаются перед оплатой. Платежи обрабатываются сторонними поставщиками услуг, такими как Stripe или Mercado Pago, и также регулируются их условиями.",
             "p2": "Повторяющиеся подписки продлеваются до тех пор, пока не будут отменены с помощью доступного потока управления. Отмена обычно предотвращает будущее продление и не отменяет задним числом текущий оплаченный период. Одноразовые подарки, виртуальные предметы, дополнительные услуги и пожертвования не продлеваются, если в оформлении заказа прямо не указано иное."
@@ -9989,7 +10642,7 @@
           }
         },
         "virtualItems": {
-          "title": "12. Виртуальные предметы и балансы",
+          "title": "12. Виртуальные Предметы и Балансы",
           "paragraphs": {
             "p1": "Монеты, бриллианты, опыт, значки, аватары, фоны, видеокадры, усиления и другие виртуальные преимущества — это ограниченные лицензии для использования в WavezFM. Они не имеют денежной стоимости, не являются собственностью и не могут быть проданы, обменены или переданы за пределы поддерживаемых функций. Мы можем исправить балансы, на которые повлияла ошибка, мошенничество, аннулирование или злоупотребление."
           }
@@ -10001,53 +10654,53 @@
           }
         },
         "availability": {
-          "title": "14. Доступность и изменения Сервиса",
+          "title": "14. Доступность и Изменения Сервиса",
           "paragraphs": {
             "p1": "Служба может меняться, работать с перебоями, вводить техническое обслуживание, налагать ограничения или прекращать работу функций. Мы можем изменять интеграции, ограничения, преимущества, комнаты, каталоги или поддерживаемых поставщиков для обеспечения безопасности, соответствия законодательству, производительности или жизнеспособности продукта.",
             "p2": "Мы не гарантируем, что какая-либо комната, трек, список воспроизведения, имя пользователя, элемент, интеграция или функция останутся доступными постоянно."
           }
         },
         "disclaimers": {
-          "title": "15. Отказ от ответственности",
+          "title": "15. Отказ от Ответственности",
           "paragraphs": {
             "p1": "В пределах, разрешенных законом, Сервис предоставляется в том виде, в котором он доступен. Мы не обещаем бесперебойную работу, безошибочный контент, постоянное сохранение данных или совместимость с каждым устройством, браузером, сетью или сторонним поставщиком.",
             "p2": "Ничто в настоящих Условиях не исключает гарантий, средств правовой защиты или прав потребителей, которые не могут быть исключены по закону."
           }
         },
         "liability": {
-          "title": "16. Ограничение ответственности",
+          "title": "16. Ограничение Ответственности",
           "paragraphs": {
             "p1": "В максимальной степени, разрешенной законом, WavezFM не несет ответственности за косвенные, случайные, специальные, штрафные или косвенные убытки, а также за упущенную выгоду, данные, деловую репутацию, возможности или контент третьих лиц, возникающие в результате использования Сервиса.",
             "p2": "Если ответственность не может быть исключена, совокупная ответственность WavezFM, связанная с Услугой, не будет превышать сумму, которую вы заплатили WavezFM в течение двенадцати месяцев до события, повлекшего за собой претензию. Это ограничение не применяется там, где это запрещено законом."
           }
         },
         "indemnification": {
-          "title": "17. Ответственность по претензиям",
+          "title": "17. Ответственность по Претензиям",
           "paragraphs": {
             "p1": "В той степени, в которой это разрешено законом, вы несете ответственность за убытки и разумные расходы, возникшие в результате незаконного использования вами Сервиса, вашего контента, нарушения вами настоящих Условий или прав другого лица."
           }
         },
         "termination": {
-          "title": "18. Приостановление и прекращение действия",
+          "title": "18. Приостановление и Прекращение Действия",
           "paragraphs": {
             "p1": "Вы можете прекратить использование Сервиса и запросить удаление учетной записи через доступные настройки или поддержку. Возможно, сначала потребуется решить невыполненные платежи, модерацию, юридические вопросы или вопросы безопасности.",
             "p2": "WavezFM может ограничить, приостановить или прекратить доступ в случае нарушений, риска, юридических требований, неплатежей, мошенничества, прекращения обслуживания или защиты пользователей и инфраструктуры. Положения, касающиеся интеллектуальной собственности, платежей, ответственности, споров и необходимого хранения данных, остаются в силе."
           }
         },
         "changes": {
-          "title": "19. Изменения настоящих Условий",
+          "title": "19. Изменения Настоящих Условий",
           "paragraphs": {
             "p1": "Мы можем обновлять настоящие Условия по мере изменения Сервиса или законодательства. Об обновлениях материалов можно объявлять по электронной почте, в уведомлении в приложении или на веб-сайте. Продолжение использования после даты вступления в силу означает принятие, если это разрешено законом; если вы не согласны, прекратите использование Сервиса."
           }
         },
         "law": {
-          "title": "20. Применимое право и споры",
+          "title": "20. Применимое Право и Споры",
           "paragraphs": {
             "p1": "Настоящие Условия регулируются законами, применимыми к деятельности WavezFM, без удаления обязательных прав потребителя или прав на защиту данных, доступных там, где вы живете. Прежде чем подавать претензию, напишите на адрес hi@wavez.fm, чтобы стороны могли попытаться прийти к неформальному урегулированию. Споры будут передаваться в суды, обладающие юрисдикцией в соответствии с действующим законодательством."
           }
         },
         "miscellaneous": {
-          "title": "21. Общие положения",
+          "title": "21. Общие Положения",
           "paragraphs": {
             "p1": "Также применяются следующие положения:"
           },
@@ -10081,19 +10734,19 @@
       "intro": "На этой странице объясняется, какие файлы cookie WavezFM в настоящее время использует, для чего они предназначены и как ваш выбор согласия влияет на файлы cookie предпочтений на сайте.",
       "sections": {
         "essential": {
-          "title": "1. Основные файлы cookie",
+          "title": "1. Основные Файлы Cookie",
           "body": "Некоторые файлы cookie необходимы для входа в систему, обеспечения безопасности, непрерывности сеанса и базовой работы аутентифицированных областей. Эти файлы cookie являются частью работы службы."
         },
         "preferences": {
-          "title": "2. Файлы cookie предпочтений",
+          "title": "2. Файлы Cookie Предпочтений",
           "body": "WavezFM использует языковой файл cookie, чтобы сохранить выбранный вами язык при посещениях и перезагрузках. Другие настройки интерфейса, такие как состояние боковой панели, по-прежнему зависят от вашего согласия."
         },
         "thirdParties": {
-          "title": "3. Провайдеры и интеграции",
+          "title": "3. Провайдеры и Интеграции",
           "body": "Некоторые части платформы могут зависеть от внешних поставщиков аутентификации, хостинга, аудио, видео или безопасности. Для корректной работы этих служб могут потребоваться технические файлы cookie."
         },
         "choices": {
-          "title": "4. Ваш выбор",
+          "title": "4. Ваш Выбор",
           "body": "Если вы отклоните файлы cookie, WavezFM перестанет сохранять несущественные настройки, такие как состояние боковой панели, и удалит те, которыми он может напрямую управлять. Языковой файл cookie по-прежнему может использоваться, чтобы продукт учитывал выбранный вами язык."
         }
       }
@@ -10112,7 +10765,7 @@
     "avatarFrames": "{count} кадров",
     "frameCount": "Количество кадров",
     "addFrames": "Добавить группу",
-    "title": "Общие лимиты комнат",
+    "title": "Общие Лимиты Комнат",
     "hint": "Изменения сразу применяются ко всем комнатам. Уменьшение лимита очереди не удаляет уже ожидающих диджеев.",
     "djQueueLimit": "Вместимость очереди диджеев",
     "crowdAvatarLimit": "Максимум аватаров в зале",
@@ -10124,7 +10777,7 @@
     "botCommandMaxLength": "Максимальная длина личной команды боту"
   },
   "savedBanners": {
-    "title": "Сохранённые баннеры",
+    "title": "Сохранённые Баннеры",
     "hint": "Назовите и сохраните текущий баннер для повторного использования в комнатах.",
     "choose": "Выберите баннер",
     "name": "Название баннера",
@@ -10142,7 +10795,7 @@
     "saveLimits": "Сохранить лимиты"
   },
   "roomAttendanceBadge": {
-    "title": "Значок за присутствие",
+    "title": "Значок за Присутствие",
     "hint": "Выдаёт значок за непрерывное присутствие. Короткие переподключения сохраняют прогресс; время офлайн не учитывается.",
     "badge": "Значок",
     "search": "Поиск значков",
@@ -10168,7 +10821,7 @@
     "error": "Перенос прерван после {count} эмодзи. Можно продолжить."
   },
   "botPrivateCommand": {
-    "title": "Личная команда боту",
+    "title": "Личная Команда Боту",
     "replyFrom": "Ответ от {bot}",
     "you": "Вы",
     "conversation": "Разговор с ботом",
@@ -10181,11 +10834,11 @@
     "sent": "Передано боту. Дождитесь его ответа для подтверждения обработки.",
     "offline": "Бот или ваше подключение к комнате не в сети.",
     "error": "Не удалось отправить. Проверьте разрешения и ограничение длины.",
-    "uncertain": "Подтверждение не получено. Перед повторной отправкой проверьте ответ бота: он мог получить команду."
-  }
-,
+    "uncertain": "Подтверждение не получено. Перед повторной отправкой проверьте ответ бота: он мог получить команду.",
+    "invalidInlineTarget": "Выберите подключённого бота: /bot @имябота команда."
+  },
   "adminRoomEmojis": {
-    "title": "Эмодзи комнаты",
+    "title": "Эмодзи Комнаты",
     "search": "Поиск эмодзи",
     "edit": "Изменить",
     "delete": "Удалить",
@@ -10201,7 +10854,7 @@
   },
   "queueCooldown": {
     "shortTitle": "Пауза",
-    "title": "Пауза для очереди",
+    "title": "Пауза для Очереди",
     "description": "Удаляет пользователя из очереди и запрещает возвращаться до окончания срока. Максимум: 30 дней.",
     "duration": "Длительность (минуты)",
     "minutes": "{minutes} мин",
@@ -10244,39 +10897,39 @@
     "resultCount": "{count, plural, one {# ответ} few {# ответа} many {# ответов} other {# ответа}}",
     "categories": {
       "getting-started": {
-        "title": "Первые шаги",
+        "title": "Первые Шаги",
         "description": "Найдите комнату, слушайте музыку вместе и впервые попробуйте себя в роли диджея."
       },
       "progression": {
-        "title": "XP и награды",
+        "title": "XP и Награды",
         "description": "Разберитесь в уровнях, достижениях, валютах и наградах."
       },
       "profile": {
-        "title": "Профиль и оформление",
+        "title": "Профиль и Оформление",
         "description": "Показывайте значки, меняйте свой образ и управляйте коллекцией."
       },
       "playlists": {
-        "title": "Плейлисты и музыка",
+        "title": "Плейлисты и Музыка",
         "description": "Пополняйте библиотеку и готовьте музыку к своему следующему выступлению."
       },
       "subscription": {
-        "title": "Аккаунты и подписки",
+        "title": "Аккаунты и Подписки",
         "description": "Возможности бесплатного аккаунта, текущие ограничения и преимущества подписки."
       },
       "social": {
-        "title": "Фанаты и сообщества",
+        "title": "Фанаты и Сообщества",
         "description": "Находите людей на одной волне и оставайтесь на связи."
       },
       "rooms-roles": {
-        "title": "Комнаты и роли",
+        "title": "Комнаты и Роли",
         "description": "Создайте своё пространство и узнайте, кому что разрешено."
       },
       "bots": {
-        "title": "Боты и интеграции",
+        "title": "Боты и Интеграции",
         "description": "Настройте автоматизацию в комнате и откройте возможности подключённых сервисов."
       },
       "support": {
-        "title": "Поддержка и безопасность",
+        "title": "Поддержка и Безопасность",
         "description": "Получайте помощь, сообщайте о проблемах и защищайте аккаунт."
       }
     },
@@ -10486,7 +11139,7 @@
       "subscription-benefits": {
         "question": "Какие дополнительные преимущества даёт подписка?",
         "paragraphs": {
-          "p1": "Подписка добавляет преимущества, которые WavezFM предлагает сейчас, например повышенные лимиты аккаунта и доступ к соответствующим премиальным предметам каталога. Сравнение ниже использует текущие настройки. Премиальный доступ не означает, что все платные предметы автоматически становятся вашими.",
+          "p1": "Подписка добавляет преимущества, которые WavezFM предлагает сейчас, например повышенные лимиты аккаунта и доступ к соответствующим предметам каталога для подписчиков. Сравнение ниже использует текущие настройки. Подписка не означает, что все платные предметы автоматически становятся вашими.",
           "p2": "Перед покупкой проверьте тариф, цену, срок и точный список преимуществ в Магазине и в разделе Настройки → Подписка. Бонусы XP, доступ к дополнительным эмодзи и другие преимущества входят в подписку только тогда, когда они явно включены и перечислены."
         },
         "links": {
@@ -10557,6 +11210,17 @@
           "l1": "Настройки конфиденциальности"
         }
       },
+      "custom-emojis": {
+        "question": "Как работают пользовательские эмодзи?",
+        "paragraphs": {
+          "p1": "Пользовательские эмодзи принадлежат определённой комнате. В этой комнате выберите эмодзи в меню или введите его название между двоеточиями, например :wave:.",
+          "p2": "С подпиской, включающей эту возможность, и включённым глобальным доступом к эмодзи можно использовать эмодзи из избранных комнат в других чатах. Сначала добавьте исходную комнату в избранное. Каждая комната может запретить использование эмодзи из других комнат.",
+          "p3": "Нажмите на эмодзи, чтобы узнать, откуда он и можете ли вы его использовать. Если его комната приватная или недоступна, открыть её или использовать её эмодзи может быть невозможно."
+        },
+        "links": {
+          "l1": "Текущие преимущества подписки"
+        }
+      },
       "create-room": {
         "question": "Как создать комнату и управлять ею?",
         "paragraphs": {
@@ -10568,16 +11232,16 @@
         }
       },
       "room-roles": {
-        "question": "Что означают роли Хозяин, Соведущий, Менеджер, Вышибала, R.DJ и VIP?",
+        "question": "Что означают роли Хозяин, Соведущий, Менеджер, Вышибала, Резидент-диджей и VIP?",
         "paragraphs": {
           "p1": "Роли комнаты действуют только в конкретной комнате. Их назначают владельцы и уполномоченные участники команды. Подписка не делает вас участником команды автоматически. Ниже описаны общие роли; каждая комната может менять их названия и права."
         },
         "items": {
-          "i1": "Хозяин: владелец комнаты с наивысшими правами в ней.",
+          "i1": "Хозяин: владелец комнаты с наивысшим уровнем доступа среди ролей комнаты.",
           "i2": "Соведущий: помогает Хозяину управлять комнатой и её командой.",
           "i3": "Менеджер: помогает вести и модерировать комнату в рамках своих прав.",
           "i4": "Вышибала: помогает обеспечивать соблюдение правил чата и комнаты с помощью инструментов модерации.",
-          "i5": "R.DJ (резидентный диджей): роль доверенного диджея, по умолчанию позволяющая входить в закрытую очередь.",
+          "i5": "Резидент-диджей: роль доверенного диджея, по умолчанию позволяющая входить в закрытую очередь.",
           "i6": "VIP: отмеченный участник комнаты; это не общая роль модератора.",
           "i7": "Пользователь: обычный участник. Настройки комнаты всё равно могут ограничивать отдельные действия."
         }
@@ -10585,7 +11249,7 @@
       "platform-roles": {
         "question": "Отличаются ли роли платформы от ролей комнаты?",
         "paragraphs": {
-          "p1": "Да. Администратор, Разработчик и Амбассадор — роли платформы, а Хозяин, Менеджер и похожие роли относятся к комнате. Подписчик обозначает доступ по подписке. Статус Подтверждённый, декоративные и пользовательские роли имеют собственное значение и не дают автоматически всех прав команды. Названия и оформление ролей можно менять."
+          "p1": "Да. Администратор, Разработчик и Амбассадор — роли платформы, а Хозяин, Менеджер и похожие роли относятся к комнате. Для действий в комнате Администраторы и Разработчики имеют доступ уровня Хозяина, а Амбассадоры — не ниже уровня Менеджера, без изменения назначенной роли в комнате. Подписчик обозначает доступ по подписке. Статус Подтверждённый, декоративные и пользовательские роли имеют собственное значение и не дают автоматически всех прав команды. Названия и оформление ролей можно менять."
         }
       },
       "room-rules": {
@@ -10691,6 +11355,29 @@
           "l3": "Политика Использования Файлов Cookie"
         }
       }
+    },
+    "xpLimits": {
+      "title": "Текущие лимиты XP",
+      "unavailable": "Не удалось загрузить текущие лимиты. Попробуйте позже.",
+      "hours": "{hours, number} ч в день",
+      "unlimited": "Без дневного лимита",
+      "sharedAllowance": "Woot и выступления DJ расходуют общую квоту. Она учитывает подходящие действия, а не время, в течение которого комната остаётся открытой.",
+      "disabledLimit": "Дневной лимит отключён. Интервалы и условия получения каждой награды остаются в силе.",
+      "action": "Действие",
+      "baseXp": "Базовый XP",
+      "interval": "Интервал",
+      "dailyMaximum": "Дневной максимум",
+      "woot": "Woot",
+      "dj": "Игра в роли DJ",
+      "xp": "{xp, number} XP",
+      "minutes": "{minutes} мин",
+      "disabledAction": "Без XP",
+      "rewards": "{count, number} наград",
+      "maximumNote": "Каждый максимум рассчитан на использование всей квоты для одного действия. Их нельзя складывать: Woot и выступления расходуют общую квоту. Итоги показывают базовый XP без бонусов.",
+      "globalInterval": "Общий интервал между наградами — {minutes} мин, в том числе при чередовании Woot и DJ.",
+      "djRequirements": "Для DJ: трек длительностью от {duration} мин, воспроизведение {percent}% (минимум {min} мин, требуется не более {max} мин), {woots} Woot и {humans} реальных человека в комнате, включая DJ. Тот же трек снова приносит XP только через {replay} мин.",
+      "otherRewards": "Прослушивание обычных треков, общение и добавление треков в плейлисты не дают XP. Достижения имеют отдельные награды вне квоты. События, подписки и усиления наград могут умножать базовый XP, не увеличивая квоту.",
+      "reset": "Квота обновляется в 00:00 UTC ({time} в Сан-Паулу). После её исчерпания эти действия не приносят XP до обновления; подходящие награды в монетах следуют обычным правилам."
     }
   }
 }

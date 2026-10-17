@@ -45,6 +45,8 @@
   "nameSpaceSettings": {
     "title": "이름의 공백",
     "hint": "가입 및 이름 변경 설정을 별도로 관리합니다. 기존 이름은 유지됩니다.",
+    "loading": "설정을 불러오는 중…",
+    "loadError": "설정을 불러오지 못했습니다. 다시 시도해 주세요.",
     "displayRegistration": "표시 이름: 가입",
     "displayChange": "표시 이름: 변경",
     "usernameRegistration": "사용자 이름: 가입",
@@ -61,11 +63,45 @@
     "embedBlocked": "Playback on external websites is blocked.",
     "embedAllowed": "Playback on external websites is allowed.",
     "embedUnknown": "External playback permission unknown.",
-    "empty": "No countries listed."
+    "empty": "No countries listed.",
+    "title": "YouTube 제한",
+    "retry": "다시 시도",
+    "blockedEverywhere": "모든 국가에서 차단됩니다.",
+    "noRegionRestrictions": "공개된 국가별 제한이 없습니다.",
+    "providerHint": "YouTube 제한은 변경될 수 있습니다. 이 확인은 모든 재생 오류를 다루지 않습니다.",
+    "roomAffected": "영향을 받을 수 있는 사람: {count}",
+    "morePeople": "외 {count}명",
+    "roomNoKnownBlocks": "영향을 받는 사람이 확인되지 않았습니다.",
+    "roomUnverified": "확인되지 않은 사람: {count}. 국가 또는 YouTube 제한을 알 수 없습니다.",
+    "roomEstimateHint": "각 사용자의 현재 연결 IP 주소에서 확인된 국가를 기반으로 한 추정입니다. 연결 국가를 알 수 없는 경우 국가별 제한을 확인할 수 없습니다.",
+    "nextAffected": "차단 · {count}",
+    "nextBlocked": "재생 차단",
+    "nextUnverified": "미확인",
+    "nextHint": "다음 곡의 제한 확인"
   },
   "globalRoomAppearance": {
+    "includedRooms": "Include partner and verified rooms",
+    "includedRoomsHint": "Selected rooms receive the global background and video frame even when their category is excluded.",
+    "addIncludedRoom": "Select room to include",
+    "removeIncludedRoom": "Remove inclusion for {room}",
+    "expiresAt": "End date and time (optional)",
+    "expiresAtHint": "Leave empty for no time limit. At the end, each room returns to its own background and frame. Times use your device time zone.",
+    "clearExpiration": "Remove end date",
+    "excludedRooms": "Manually excluded rooms",
+    "addExcludedRoom": "Add excluded room",
+    "searchRooms": "Search rooms by name, slug or ID",
+    "removeRoom": "Remove {room} from exclusions",
+    "remove": "Remove",
+    "roomError": "Could not load rooms. Saved exclusions have been preserved.",
+    "excludePartnerRooms": "Exclude partner rooms",
+    "excludeVerifiedRooms": "Exclude verified rooms",
+    "exclusionsHint": "Excluded rooms keep their own background and video frame. Save to apply.",
+    "chooseCatalog": "Select from catalog",
+    "searchCatalog": "Search by name or ID",
+    "sourceHint": "Select a catalog item or enter a direct URL. Clear the field to remove it.",
+    "catalogError": "Some catalog items could not be loaded. You can still enter a direct URL.",
     "title": "Global room appearance",
-    "hint": "이미지가 모든 방의 배경과 프레임을 대체합니다. 입력란을 비우면 방 설정으로 복원됩니다. HTTPS URL 또는 /로 시작하는 로컬 경로(예: /room/backgrounds/image.jpg)를 사용하세요. 프레임 중앙은 투명해야 합니다.",
+    "hint": "전역 배경은 관리자가 배경 URL을 설정하지 않은 방에 적용됩니다. 전역 비디오 프레임은 모든 방에 적용됩니다. 입력란을 비우면 방 설정으로 복원됩니다. HTTPS URL 또는 /로 시작하는 로컬 경로(예: /catalog/backgrounds/image.jpg)를 사용하세요. 프레임 중앙은 투명해야 합니다.",
     "backgroundUrl": "Global background",
     "videoFrameUrl": "Global video frame",
     "save": "Save appearance",
@@ -175,13 +211,21 @@
     "color": "이름 및 아이콘 색상",
     "icon": "채팅 아이콘",
     "chatImageUrl": "채팅 이미지 URL",
-    "resetHint": "기본값으로 복원하려면 비워 두세요. 채팅 이미지는 아이콘보다 우선합니다. HTTPS 이미지 URL을 사용하세요.",
+    "iconBackground": "아이콘 배경 표시",
+    "iconBackgroundHint": "채팅 아이콘에 색상 배경과 테두리를 추가합니다. 끄면 아이콘만 표시됩니다.",
+    "resetHint": "기본값으로 복원하려면 비워 두세요. 채팅 이미지는 채팅에서만 사진을 대체합니다. 아이콘은 이름 옆에 표시됩니다. HTTPS 이미지 URL을 사용하세요.",
     "saving": "저장 중…",
     "save": "외형 저장",
     "disabled": "이 방에서는 맞춤 설정이 허용되지 않습니다.",
     "saved": "외형을 저장했습니다.",
     "error": "외형을 불러오거나 저장하지 못했습니다.",
-    "retry": "다시 시도"
+    "retry": "다시 시도",
+    "iconHint": "Tabler 아이콘 이름(예: IconRobot) 또는 이미지의 HTTPS URL을 사용하세요.",
+    "loadError": "외형 설정을 불러오지 못했습니다.",
+    "saveError": "외형 설정을 저장하지 못했습니다. 변경 사항은 그대로 유지됩니다.",
+    "invalidIcon": "Tabler 아이콘 이름 또는 이미지의 HTTPS URL을 사용하세요.",
+    "invalidImageUrl": "사용자 이름이나 비밀번호가 포함되지 않은 이미지의 HTTPS URL을 사용하세요.",
+    "invalidColor": "#38BDF8처럼 6자리 16진수 색상 코드를 사용하세요."
   },
   "roleGrantTabs": {
     "roles": "역할",
@@ -647,10 +691,14 @@
         "diamondsBody": "결제는 Stripe에서 열리며 다이아몬드는 수령인에게 자동으로 전달됩니다.",
         "subscriptionMonthly": "1개월 구독",
         "subscriptionAnnual": "1년 구독",
-        "subscriptionBody": "Checkout은 반복되지 않는 일회성 결제로 Stripe에서 열리고, 결제가 확인되면 구독이 자동으로 적용됩니다.",
+        "subscriptionBody": "자동 갱신 없는 일회성 결제입니다. 결제가 확인되면 선택한 기간이 받는 사람의 현재 만료일에 추가됩니다.",
         "roomSubscription": "{count, plural, one {# 월간 구독 선물} other {# 월간 구독 선물}}",
-        "roomSubscriptionBody": "체크아웃은 반복 없이 일회성 결제로 Stripe에서 시작되며, 최종 수량은 청구 전 방에 있는 적격 활성 인원 수에 따라 자동으로 조정됩니다."
-      }
+        "roomSubscriptionBody": "체크아웃은 반복 없이 일회성 결제로 Stripe에서 시작되며, 최종 수량은 청구 전 방에 있는 적격 활성 인원 수에 따라 자동으로 조정됩니다.",
+        "subscriptionWeekly": "구독 7일",
+        "subscriptionFortnightly": "구독 15일"
+      },
+      "durationLabel": "선물 기간",
+      "durationHint": "일회성 결제입니다. 선택한 기간이 받는 사람의 현재 만료일에 추가되며 자동 갱신되지 않습니다."
     },
     "receivedDialog": {
       "eyebrow": "당신은 선물을 받았습니다",
@@ -679,7 +727,9 @@
       "roomLabel": "방 공지",
       "roomAnnounced": "이 선물은 {room}에서도 발표되었습니다.",
       "roomPrivate": "이 선물은 개인적으로 보내졌습니다.",
-      "close": "닫기"
+      "close": "닫기",
+      "subscriptionDaysQuantity": "구독 {amount}일",
+      "cycleDays": "{amount}일"
     }
   },
   "inventoryGrant": {
@@ -1040,6 +1090,9 @@
       "emptyTitle": "아무도 놀고 있지 않습니다.",
       "externalMediaTrack": "화면의 {provider}",
       "waitingTitle": "아직 재생 중인 항목이 없습니다.",
+      "currentlyPlaying": "현재 재생 중",
+      "playbackPaused": "일시 정지됨",
+      "onScreen": "화면에 표시 중",
       "favorite": "즐겨찾기",
       "verified": "검증된 방",
       "partner": "제휴실",
@@ -1119,6 +1172,19 @@
       }
     },
     "live": {
+      "navigation": {
+        "music": "음악",
+        "room": "방",
+        "details": "방 정보",
+        "tools": "도구",
+        "player": "재생",
+        "more": "더 보기",
+        "shortcuts": "추가 기능",
+        "community": "커뮤니티",
+        "help": "도움말",
+        "moderation": "관리",
+        "updates": "업데이트"
+      },
       "loadError": "지금은 방을 로드할 수 없습니다.",
       "contextLoadError": "지금은 이 방 컨텍스트를 로드할 수 없습니다.",
       "playlistLoadError": "지금은 방 재생목록을 로드할 수 없습니다.",
@@ -1135,10 +1201,9 @@
       },
       "roleError": "지금은 이 방 역할을 업데이트할 수 없습니다.",
       "errorCodes": {
-      "ROOM_AVATAR_ROOM_ONLY": "이 아바타는 {room}에서만 사용할 수 있습니다. 장착하려면 해당 방에 입장하세요. 다른 방에서는 사용할 수 없습니다.",
-      "ROOM_AVATAR_ROLE_REQUIRED": "이 아바타를 사용하려면 {room}에서 {role} 이상의 역할이 필요합니다.",
-      "ROOM_AVATAR_INACTIVE": "이 방 전용 아바타는 현재 사용할 수 없습니다.",
-
+        "ROOM_AVATAR_ROOM_ONLY": "이 아바타는 {room}에서만 사용할 수 있습니다. 장착하려면 해당 방에 입장하세요. 다른 방에서는 사용할 수 없습니다.",
+        "ROOM_AVATAR_ROLE_REQUIRED": "이 아바타를 사용하려면 {room}에서 {role} 이상의 역할이 필요합니다.",
+        "ROOM_AVATAR_INACTIVE": "이 방 전용 아바타는 현재 사용할 수 없습니다.",
         "ROOM_BANNED": "당신은 이 방에 들어갈 수 없습니다.",
         "ROOM_PERMISSION_SEND_CHAT": "이 방에서는 채팅을 할 수 없습니다.",
         "ROOM_PERMISSION_ATTACH_CHAT_MEDIA": "이 방의 채팅에는 이미지나 GIF를 게시할 수 없습니다.",
@@ -1312,16 +1377,31 @@
       "emojiInfo": {
         "dialogLabel": "이모지 {emoji} 세부 정보",
         "openLabel": "{emoji} 정보 보기",
+        "hoverHint": "클릭하여 자세히 보기",
         "standardEmoji": "기본 이모지",
         "standardDescription": "기본 이모지입니다. WavezFM 어디에서나 사용할 수 있습니다.",
         "customDescription": "WavezFM 사용자 지정 이모지입니다.",
         "privateDescription": "이 이모지는 초대 전용이거나 이용할 수 없는 방의 이모지입니다.",
-        "originLabel": "이 이모지의 출처",
+        "originLabel": "이 이모지가 있는 방",
         "openRoom": "{room} 방 열기",
         "privateRoom": "비공개 방",
         "unknownRoom": "WavezFM 방",
         "privateOrigin": "초대 전용 방",
-        "roomOrigin": "WavezFM 방"
+        "roomOrigin": "WavezFM 방",
+        "currentRoomDescription": "이 이모지는 이 방의 이모지입니다. 채팅에 이름을 입력하면 사용할 수 있습니다.",
+        "currentRoomGlobalDescription": "이 이모지는 이 방의 이모지입니다. 외부 이모지를 허용하는 다른 채팅에서도 사용할 수 있습니다.",
+        "currentRoomSubscribeDescription": "이 이모지는 이 방의 이모지입니다. 구독하고 방을 즐겨찾기에 추가하면 다른 채팅에서도 사용할 수 있습니다.",
+        "favoriteRoomDescription": "이 이모지는 즐겨찾는 방 중 하나의 이모지입니다. 해당 방을 열면 사용할 수 있습니다.",
+        "favoriteRoomSubscriberDescription": "이 이모지는 즐겨찾는 방 중 하나의 이모지입니다. 채팅에 이름을 입력하면 사용할 수 있습니다.",
+        "externalRoomDescription": "다른 채팅에서도 이 이모지를 사용하고 싶으신가요? 구독하고 이 방을 즐겨찾기에 추가하세요.",
+        "externalRoomSubscriberDescription": "이 방을 즐겨찾기에 추가하면 다른 채팅에서도 이 이모지를 사용할 수 있습니다.",
+        "restrictedDescription": "이 이모지는 초대 전용이거나 이용할 수 없는 방의 이모지입니다.",
+        "globalDisabledDescription": "이 방에서는 다른 방의 이모지를 사용할 수 없습니다.",
+        "subscribeAction": "구독하기",
+        "favoriteRoomSubscribeDescription": "이 이모지는 즐겨찾는 방 중 하나의 이모지입니다. 구독하면 다른 채팅에서도 사용할 수 있습니다.",
+        "currentRoomFavoriteDescription": "이 이모지는 이 방의 이모지입니다. 방을 즐겨찾기에 추가하면 외부 이모지를 허용하는 다른 채팅에서도 사용할 수 있습니다.",
+        "externalRoomJoinDescription": "이 이모지는 다른 방의 이모지입니다. 해당 방을 열면 사용할 수 있습니다.",
+        "openRoomAction": "방 열기"
       },
       "mediaPreviewTitle": "이미지 미리보기",
       "mediaPreviewOpenOriginal": "원본 열기",
@@ -1334,7 +1414,13 @@
       "externalLinkConfirmCancel": "취소",
       "bot": {
         "label": "로봇",
-        "profileMeta": "룸봇"
+        "profileMeta": "룸봇",
+        "ephemeralLabel": "나에게만 표시",
+        "ephemeralHistoryHint": "이 봇의 비공개 메시지는 채팅 기록에 저장되지 않습니다.",
+        "dismissEphemeral": "닫기",
+        "ephemeralRecipientsLabel": "선택된 수신자에게 표시",
+        "ephemeralPublicLabel": "임시 메시지",
+        "ephemeralPublicHistoryHint": "이 봇의 임시 메시지는 채팅 기록에 저장되지 않습니다."
       },
       "badge": "배지",
       "noBadge": "배지 없음",
@@ -1441,6 +1527,7 @@
       },
       "tools": {
         "title": "방 도구",
+        "adminBackground": "방 배경",
         "linkFilter": "링크 필터",
         "externalMediaAdd": "외부 미디어 추가",
         "externalMediaConfigure": "외부 미디어 편집",
@@ -1483,6 +1570,21 @@
           "clear": "미디어 제거"
         }
       },
+      "adminBackgroundDialog": {
+        "title": "방 배경",
+        "description": "다른 방을 변경하지 않고 이 방의 배경 이미지를 설정합니다.",
+        "urlLabel": "배경 URL",
+        "urlPlaceholder": "https://cdn.wavez.fm/background.webp",
+        "hint": "HTTPS URL 또는 /로 시작하는 로컬 파일 경로를 사용하세요. 이 재정의를 제거하면 방 자체의 배경이나 전역 기본 배경으로 돌아갑니다.",
+        "invalidUrl": "HTTPS URL 또는 /로 시작하는 로컬 파일 경로를 사용하세요.",
+        "save": "배경 저장",
+        "clear": "재정의 제거",
+        "cancel": "취소",
+        "saving": "저장 중...",
+        "success": "이 방의 배경이 업데이트되었습니다.",
+        "error": "이 방의 배경을 업데이트하지 못했습니다.",
+        "previewAlt": "방 배경 미리 보기"
+      },
       "linkFilterDialog": {
         "title": "링크 필터",
         "subtitle": "방에서 모든 링크를 차단할지 아니면 특정 도메인 및 패턴만 차단할지 선택하세요.",
@@ -1504,6 +1606,47 @@
       },
       "linkReviewPending": "링크가 관리자에게 전달되었으며 아직 채팅에 표시되지 않습니다.",
       "settingsPanel": {
+        "ownershipTransfer": {
+          "title": "Transfer room ownership",
+          "description": "Choose the new host for {name} and confirm using the code sent to your email.",
+          "button": "Transfer host",
+          "buttonHint": "Give ownership of this room to another account, with email confirmation.",
+          "consequence": "You will become a cohost and give up ownership of the room.",
+          "benefits": "Benefits and limits tied to the host will follow the new host’s subscription.",
+          "targetLabel": "New host’s username",
+          "targetHint": "Enter the exact @username. Check the account below before requesting a code.",
+          "checkUser": "Check user",
+          "checking": "Checking…",
+          "newHost": "New host",
+          "lookupError": "We couldn’t check that account right now.",
+          "sendCode": "Send email code",
+          "sending": "Sending…",
+          "requestError": "We couldn’t send the code right now.",
+          "emailSent": "We sent a confirmation code to {email}.",
+          "codeLabel": "Email confirmation code",
+          "codeHint": "The code expires in 10 minutes. Sending another code replaces the previous one.",
+          "expired": "This code has expired. Request a new one.",
+          "attemptsRemaining": "{count, plural, one {# attempt remaining} other {# attempts remaining}}",
+          "resend": "Send another code",
+          "resendCountdown": "Resend in {seconds}s",
+          "retryCountdown": "{seconds}초 후 다시 시도",
+          "confirm": "Confirm transfer",
+          "confirming": "Transferring…",
+          "confirmError": "We couldn’t confirm the transfer right now.",
+          "cancel": "Cancel",
+          "success": "@{username} is now the host. You are a cohost.",
+          "errors": {
+            "FORBIDDEN": "Only the current room host can transfer ownership.",
+            "EMAIL_VERIFICATION_REQUIRED": "Verify the email on your account before transferring ownership.",
+            "INVALID_TARGET": "Choose another registered account. Bots, guests and suspended accounts cannot become the host.",
+            "INVALID_CODE": "The confirmation code is incorrect.",
+            "EXPIRED": "This code has expired or has already been used. Request a new one.",
+            "RATE_LIMITED": "Please wait before requesting another code.",
+            "CONFLICT": "The room settings, host or your email changed. Review the current details and request a new code.",
+            "EMAIL_UNAVAILABLE": "Email delivery is temporarily unavailable. Please try again later.",
+            "UNAVAILABLE": "Ownership transfer is temporarily unavailable. Please try again later."
+          }
+        },
         "button": "방 설정",
         "mobileButton": "설정",
         "title": "방 설정",
@@ -1620,7 +1763,7 @@
           "mediaBlockedUrlsHint": "music/video 링크, ID 또는 URL 스니펫에는 한 줄에 하나의 항목을 사용하세요.",
           "mediaBlockedUrlsPlaceholder": "https://youtu.be/...\nyoutube:abc123\nsoundcloud.com/artist/track",
           "mediaBlockedTitles": "차단된 이름 및 아티스트",
-          "mediaBlockedTitlesHint": "제목, 아티스트 또는 미디어 이름 조각에는 한 줄에 하나의 항목을 사용하세요.",
+          "mediaBlockedTitlesHint": "제목/아티스트의 완전한 단어나 문구를 한 줄에 하나씩 또는 쉼표로 구분해 입력하세요. 'bass boost'는 전체 문구가 일치해야 하며 'bass'만으로는 일치하지 않습니다.",
           "mediaBlockedTitlesPlaceholder": "차단된 아티스트\n노래 이름\n금지된 리믹스",
           "bannerUpload": "배너 업로드",
           "bannerUploading": "배너 업로드 중...",
@@ -1628,12 +1771,15 @@
           "bannerUploadSize": "최대 5MB의 이미지를 선택하세요.",
           "bannerUploadInvalid": "이미지가 잘못되었습니다. JPEG, PNG, WebP 또는 GIF를 사용하세요. 배너는 고정됩니다.",
           "bannerUploadUnavailable": "배너 저장소가 아직 구성되지 않았습니다.",
-          "bannerUploadFailed": "배너를 업로드할 수 없습니다. 다시 시도해 주세요."
+          "bannerUploadFailed": "배너를 업로드할 수 없습니다. 다시 시도해 주세요.",
+          "requireLogin": "로그인 필수",
+          "requireLoginHint": "로그인한 사용자만 입장할 수 있습니다. 이 설정을 활성화하면 방에 있는 게스트가 퇴장됩니다.",
+          "guestAccessEnabled": "게스트 접근"
         },
         "mediaBlacklist": {
           "title": "음악 및 비디오 블랙리스트",
           "hint": "URL, ID, 제목 또는 아티스트별로 이 방의 미디어를 차단합니다. 글로벌 블랙리스트는 여전히 적용됩니다.",
-          "helper": "항목은 대소문자를 무시합니다. 이름은 악센트도 무시합니다. 룸에서는 사용자의 재생 목록을 삭제하지 않고 재생 중에 이러한 트랙을 건너뜁니다.",
+          "helper": "이름은 완전한 단어/문구와 일치하며 대소문자, 악센트, 추가 공백을 구분하지 않습니다. URL/ID는 일부 문자열과 일치합니다. 방은 트랙을 건너뛰되 재생목록에서 삭제하지 않습니다.",
           "count": "{count} 항목/entries"
         },
         "appearance": {
@@ -1721,6 +1867,8 @@
           "favoriteRoomGlobalEmojisHint": "비활성화되면 구독자는 이 방에 있는 다른 즐겨찾는 방의 사용자 정의 이모티콘을 사용할 수 없습니다.",
           "messageReactions": "메시지 반응 허용",
           "messageReactionsHint": "비활성화하면 누구도 이 방의 메시지에 대한 반응을 추가하거나 제거할 수 없습니다.",
+          "mutedUsersCanReact": "채팅이 제한된 사용자의 반응 허용",
+          "mutedUsersCanReactHint": "비활성화하면 채팅이 제한된 사용자는 이 방에서 반응을 추가하거나 삭제할 수 없습니다.",
           "livePlaybackXpMode": "실시간 스트리밍 중 XP",
           "livePlaybackXpModeHint": "라이브 XP가 재생 컨트롤러와 함께 유지되는지 아니면 방에서 듣는 모든 사람도 XP를 얻을지 선택합니다.",
           "livePlaybackXpModes": {
@@ -1903,6 +2051,7 @@
           "clearError": "지금은 방 로그를 지울 수 없습니다.",
           "actions": {
             "room_updated": "방 설정이 업데이트되었습니다.",
+            "room_ownership_transferred": "방 소유권이 이전되었습니다",
             "room_chat_history_disabled": "채팅 기록이 비활성화되었습니다.",
             "room_link_filters_updated": "링크 필터가 업데이트되었습니다.",
             "room_word_filters_updated": "단어 필터가 업데이트되었습니다.",
@@ -1967,6 +2116,7 @@
               "maxTrackDurationSeconds": "최대 트랙 기간",
               "allowYouTubeLives": "YouTube 생활",
               "messageReactionsEnabled": "메시지 반응",
+              "mutedUsersCanReact": "채팅이 제한된 사용자의 반응 허용",
               "skipRecentlyPlayedTracksEnabled": "최근 재생된 트랙 건너뛰기",
               "skipRecentlyPlayedTracksWindowMinutes": "최근 재생된 창",
               "allowExternalMediaEmbeds": "외부 미디어 삽입",
@@ -2283,6 +2433,32 @@
         "dismiss": "환영 메시지 숨기기",
         "mediaAlt": "방 환영 미디어"
       },
+      "welcomeMarkdown": {
+        "alignment": "텍스트 정렬",
+        "left": "왼쪽 정렬",
+        "center": "가운데 정렬",
+        "right": "오른쪽 정렬",
+        "helper": "텍스트를 선택하고 버튼으로 서식을 지정하세요. 정렬은 선택한 문단에 적용되며, 선택한 부분이 없으면 메시지 전체에 적용됩니다. 미리보기에서 결과를 확인하세요.",
+        "formatting": "텍스트 서식",
+        "bold": "굵게",
+        "italic": "기울임꼴",
+        "underline": "밑줄",
+        "strike": "취소선",
+        "spoiler": "스포일러 숨기기",
+        "inlineCode": "인라인 코드",
+        "link": "링크",
+        "bulletList": "글머리 기호 목록",
+        "numberedList": "번호 목록",
+        "quote": "인용문",
+        "codeBlock": "코드 블록",
+        "write": "작성",
+        "preview": "미리보기",
+        "previewEmpty": "환영 메시지를 입력하면 미리보기가 표시됩니다.",
+        "textPlaceholder": "텍스트",
+        "linkTextPlaceholder": "링크 텍스트",
+        "codePlaceholder": "코드",
+        "urlPlaceholder": "https://example.com"
+      },
       "welcomeManager": {
         "title": "환영 메시지",
         "subtitle": "참여하는 모든 사람에게 인사할 수 있도록 이 채팅방 상단에 고정된 메모를 설정하세요.",
@@ -2317,6 +2493,7 @@
         "cinema": "시네마 모드로 들어가세요",
         "exitCinema": "시네마 모드 종료",
         "reload": "플레이어 새로고침",
+        "moreActions": "추가 작업",
         "youtubeSyncLabel": "동기화",
         "youtubeSyncHint": "재생은 방과 동기화됩니다. 탐색해도 방의 현재 재생 위치로 돌아갑니다.",
         "externalMediaResume": "비디오 재개",
@@ -2403,7 +2580,13 @@
         "confirmSave": "그랩 확인",
         "confirmRemove": "그랩 제거",
         "duplicate": "이 트랙은 이미 선택한 재생 목록에 있습니다.",
-        "savedToast": "\"{title}\"가 재생목록 {playlist}에 추가되었습니다."
+        "savedToast": "\"{title}\"가 재생목록 {playlist}에 추가되었습니다.",
+        "addPlaylist": "새 플레이리스트 추가",
+        "playlistName": "플레이리스트 이름",
+        "playlistNamePlaceholder": "이름 입력",
+        "createAndGrab": "만들고 저장",
+        "createdRetry": "플레이리스트 {name}을(를) 만들었습니다. 곡을 추가하려면 다시 시도하세요.",
+        "createError": "플레이리스트를 만들 수 없습니다."
       },
       "footer": {
         "emptyPlaylist": "활성 재생목록 없음",
@@ -2630,7 +2813,7 @@
         "replyingTo": "@{user}에게 답장 중",
         "cancelReply": "답장 취소",
         "replyDeleted": "메시지를 사용할 수 없습니다.",
-        "typing": "{user}가 입력 중입니다.",
+        "typing": "{user}가 입력 중입니다...",
         "unreadMessages": "{count, plural, one {# 새 메시지} other {# 새 메시지}}",
         "loadError": "지금은 이 대화를 로드할 수 없습니다.",
         "editError": "지금은 이 귓속말을 수정할 수 없습니다.",
@@ -2643,10 +2826,13 @@
       "replyingToLabel": "@{username}에게 답장 중",
       "composerReconnecting": "다시 연결하는 중...",
       "composerChatLocked": "직원이 채팅을 잠갔습니다.",
+      "composerMuted": "채팅 제한 중 · {remaining} 남음",
       "composerPlaceholder": "메시지 입력…",
       "pastedImage": {
+        "dropToUpload": "놓아서 업로드",
         "spoiler": "스포일러",
         "label": "첨부된 이미지",
+        "gifLabel": "첨부된 GIF",
         "expired": "이 미디어는 만료되었습니다.",
         "attach": "이미지 첨부 또는 GIF",
         "fallbackName": "붙여넣은 이미지",
@@ -2693,13 +2879,15 @@
         "customWithGlobalAccess": "방 및 전역 이모티콘",
         "globalCustom": "좋아하는 글로벌",
         "native": "시스템 이모티콘",
-        "autocomplete": "이모티콘 제안",
+        "autocomplete": "{query} 이모티콘",
         "button": "이모티콘 선택기 열기",
         "searchPlaceholder": "이모티콘 또는 단축 코드 검색",
         "frequentlyUsed": "자주 사용되는",
         "noResults": "이모티콘을 찾을 수 없습니다."
       },
       "gifPicker": {
+        "unavailableTitle": "GIF를 표시할 수 없습니다",
+        "unavailableDescription": "이미지를 불러올 수 없습니다.",
         "title": "GIFs",
         "subtitle": "KLIPY를 검색하고 GIF를 채팅에 추가하세요.",
         "favoritesSubtitle": "저장한 GIFs를 채팅으로 다시 보낼 준비가 되었습니다.",
@@ -2834,25 +3022,25 @@
         "usageDequeue": "사용법: /dequeue @user",
         "usageClearQueue": "사용법: /clearqueue",
         "usageRemoveGhost": "사용법: /removeghost <30m|2h>",
-        "usageMove": "사용법: /move @user <position>",
+        "usageMove": "사용법: /move @user '<position>'",
         "usageSwap": "사용법: /swap @user",
         "usageUnban": "사용법: /unban 사용자 이름",
-        "usageCoins": "사용법: /coins <@user|방|전체> <set|add|remove> <amount>",
-        "usageDiamonds": "사용법: /diamonds <@user|방|전체> <set|add|remove> <amount>",
-        "usageRoomRole": "/roomrole <역할>",
+        "usageCoins": "사용법: /coins '<@user|방|전체>' '<set|add|remove>' '<amount>'",
+        "usageDiamonds": "사용법: /diamonds '<@user|방|전체>' '<set|add|remove>' '<amount>'",
+        "usageRoomRole": "/roomrole '<역할>'",
         "usageGlobalRole": "/globalrole [@user]",
-        "usageXp": "사용법: /xp <@user|방|전체> <set|add|remove> <amount>",
-        "usageSubgift": "사용법: /subgift <@user|room|global> <amount> [--exclude-subscribers] (사용자/global: 1~12개월, 방: 구독 선물 1~100개. 옵션은 방의 구독 선물 또는 전체 사용자 대상 지급에만 적용)",
+        "usageXp": "사용법: /xp '<@user|방|전체>' '<set|add|remove>' '<amount>'",
+        "usageSubgift": "사용법: /subgift '<@user|room|global>' '<amount>' [--exclude-subscribers] (사용자/global: 1~12개월, 방: 구독 선물 1~100개. 옵션은 방의 구독 선물 또는 전체 사용자 대상 지급에만 적용)",
         "usageSystemAlert": "사용법: /systemalert",
         "usageRoomAlert": "사용법: /roomalert",
         "usageAlert": "사용법: /alert @user 또는 /useralert @user",
         "usageGiveaway": "사용법: /giveaway 또는 /sorteio",
-        "usageRenameUser": "사용법: /renameuser @user <display name>",
-        "usageGiveItem": "사용법: /giveitem @user[, @other] <avatar|badge|background|video-frame> <itemId> [expiresAtISO]",
-        "usageGiveRole": "사용법: /giverole @사용자 <역할 slug 또는 이름>",
-        "usageEventBadge": "사용법: /eventbadge <badge> <room> <30m|2h>",
-        "usageEffect": "사용법: /effect <type> [#HEX] [audio:on|off], /effect off 또는 /effect 오디오 <on|off>. 유형: 스트로브, 불꽃놀이, 하트, 색종이 조각, 불꽃, 선배, 비, 연기, 골.",
-        "usageStrobo": "사용법: /effect <type|off>",
+        "usageRenameUser": "사용법: /renameuser @user '<display name>'",
+        "usageGiveItem": "사용법: /giveitem @user[, @other] '<avatar|badge|background|video-frame>' '<itemId>' [expiresAtISO]",
+        "usageGiveRole": "사용법: /giverole @사용자 '<역할 slug 또는 이름>'",
+        "usageEventBadge": "사용법: /eventbadge '<badge>' '<room>' '<30m|2h>'",
+        "usageEffect": "사용법: /effect '<type>' [#HEX] [audio:on|off], /effect off 또는 /effect 오디오 '<on|off>'. 유형: 스트로브, 불꽃놀이, 하트, 색종이 조각, 불꽃, 선배, 비, 연기, 골.",
+        "usageStrobo": "사용법: /effect '<type|off>'",
         "usagePoll": "사용법: /poll 또는 /enquete",
         "usageClear": "사용법: /clear [@user|0-50]",
         "usageClearLocal": "사용법: /clearlocal",
@@ -2865,7 +3053,7 @@
         "usageSlowMode": "사용법: /slowmode <0|off|3s|30s|1m|1h>",
         "usageMinChatLevel": "사용법: /minchatlevel <0-999|off>",
         "usageLinkFilter": "사용법: /linkfilter [on|off]",
-        "usageSpoiler": "사용법: /spoiler <message>",
+        "usageSpoiler": "사용법: /spoiler '<message>'",
         "userNotFound": "방에서는 그 사람을 찾을 수 없었습니다.",
         "userNotFoundGlobal": "해당 사용자를 찾을 수 없습니다.",
         "userLookupError": "지금은 해당 사용자를 열 수 없습니다.",
@@ -2974,10 +3162,10 @@
           "effect": "방에 있는 모든 사람에게 애니메이션 무대 효과를 켭니다.",
           "strobo": "방에 있는 모든 사람을 위해 애니메이션 무대 스트로브를 켜거나 끕니다.",
           "poll": "채팅에 고정된 설문조사를 생성하는 모달을 엽니다.",
-          "bot": "봇 비공개 명령 열기"
+          "bot": "비공개 명령을 보내거나 명령 없이 대화창 열기"
         },
         "usageUnmute": "사용법: /unmute @user",
-        "usageBot": "/bot @bot"
+        "usageBot": "/bot @bot [명령어]"
       },
       "adminSlashDialog": {
         "walletTitle": "{currency} 조정",
@@ -3071,12 +3259,16 @@
       },
       "systemAlertDialog": {
         "appearance": {
+          "iconBeforeTitle": "제목 앞에 아이콘 표시",
           "iconBackgroundEnabled": "아이콘 배경",
           "iconBackgroundHint": "아이콘 배경과 테두리를 표시합니다. 끄면 아이콘만 표시합니다.",
           "heading": "팝업 모양",
+          "headingChat": "채팅 모양",
           "reset": "파란 테마 복원",
           "background": "배경",
+          "backgroundChat": "채팅 배경",
           "border": "테두리",
+          "borderChat": "채팅 테두리",
           "titleColor": "제목 색상",
           "textColor": "메시지 색상",
           "iconColor": "아이콘 색상",
@@ -3094,6 +3286,7 @@
           "right": "오른쪽",
           "iconSize": "아이콘 크기",
           "width": "팝업 너비",
+          "widthChat": "채팅 너비",
           "titleSize": "제목 크기",
           "textSize": "텍스트 크기",
           "preview": "미리보기. 너비가 화면에 맞게 조정됩니다.",
@@ -3112,6 +3305,12 @@
         "systemTitle": "시스템 경고",
         "systemTitlePtBr": "Alerta do Sistema",
         "systemTitleEnUs": "시스템 경고",
+        "roomSystemTitlePtBr": "Alerta do Sistema da Sala",
+        "roomSystemTitleEnUs": "Room System Alert",
+        "userSystemTitlePtBr": "Alerta para Usuário",
+        "userSystemTitleEnUs": "User Alert",
+        "globalSystemTitlePtBr": "Alerta Global do Sistema",
+        "globalSystemTitleEnUs": "Global System Alert",
         "singleMode": "하나의 언어",
         "bilingualMode": "포르투갈어 및 영어",
         "modeHint": "각 사람이 자신의 인터페이스 언어로 경고를 볼 수 있도록 두 가지 언어를 켜십시오.",
@@ -3343,13 +3542,13 @@
       },
       "emojiManager": {
         "title": "방 이모티콘",
-        "subtitle": "이 커뮤니티에 대한 사용자 정의 이모티콘을 추가하고 제거합니다.",
+        "subtitle": "이 방의 이모지 한도는 호스트의 활성 구독에 따라 결정됩니다.",
         "close": "이모티콘 관리자 닫기",
         "empty": "아직 맞춤 이모티콘이 없습니다.",
         "add": "이모티콘 추가",
         "save": "저장",
         "cancel": "취소",
-        "edit": "이름 수정",
+        "edit": "이모지 수정",
         "renamePlaceholder": "새로운 단축 코드",
         "usage": "{count}/{limit}",
         "remaining": "{count} 남음",
@@ -3357,6 +3556,7 @@
         "imagePlaceholder": "https://",
         "helper": "직접 이미지 링크(PNG, JPG, GIF, WEBP, APNG 또는 AVIF)만 허용됩니다.",
         "limitReached": "이 방은 이미 사용자 정의 이모티콘 한도인 {limit}에 도달했습니다.",
+        "overLimit": "이 방에는 이모지가 {count}개 있지만 호스트의 현재 한도는 {limit}개입니다. 기존 이모지는 계속 사용할 수 있습니다. 더 추가하려면 호스트의 구독을 갱신하거나 이모지를 삭제하여 {limit}개 미만으로 줄이세요.",
         "button": "방 이모티콘 관리",
         "error": "지금은 이 방의 그림 이모티콘을 업데이트할 수 없습니다.",
         "created": "방에 이모지를 추가했습니다."
@@ -3386,6 +3586,7 @@
       "mentionTargets": {
         "everyone": "방 전체",
         "djs": "대기열에 있는 DJ들",
+        "staff": "방 스태프",
         "aliases": {
           "everyone": "모두",
           "djs": "디제이",
@@ -3542,6 +3743,7 @@
         "anonymousLabel": "익명으로 기부하기",
         "anonymousHint": "기부 공지에는 귀하의 이름이 표시되지 않습니다.",
         "invalidAmount": "1.00 이상의 유효한 금액을 입력하세요.",
+        "wholeAmountHint": "{currency} 금액은 정수로 입력하세요.",
         "error": "지금은 기부를 시작할 수 없습니다.",
         "checkoutSuccess": "기부가 확인되었습니다. 목표 진행 상황이 자동으로 업데이트됩니다.",
         "checkoutCanceled": "기부금 결제가 취소되었습니다."
@@ -3572,10 +3774,95 @@
       "paymentProviders": {
         "stripe": "Stripe를 통한 카드",
         "mercadoPago": "카드 또는 Mercado Pago를 통한 Pix"
+      },
+      "loginRequired": {
+        "title": "입장하려면 로그인하세요",
+        "description": "이 방에는 WavezFM 계정이 필요합니다. 로그인하거나 계정을 만들어 참여하세요.",
+        "signIn": "로그인 / 계정 만들기",
+        "retry": "다시 확인"
       }
     }
   },
   "app": {
+    "reportUpdates": {
+      "title": "신고자에게 보낼 업데이트",
+      "subtitle": "이 메시지는 신고자에게 공개됩니다. 스태프 내부 메모는 비공개로 유지됩니다.",
+      "tab": "신고자 업데이트",
+      "inbox": "내 신고",
+      "inboxSubtitle": "운영팀에서 보낸 업데이트를 확인하세요.",
+      "noReports": "아직 신고가 없습니다.",
+      "selectReport": "신고를 선택하여 업데이트를 확인하세요.",
+      "reportTitle": "신고 #{id}",
+      "newUpdate": "신고 #{id} 업데이트",
+      "open": "신고 보기",
+      "close": "닫기",
+      "refresh": "새로 고침",
+      "loading": "불러오는 중…",
+      "loadError": "업데이트를 불러오지 못했습니다.",
+      "sendError": "보내지 못했습니다. 작성한 내용은 유지됩니다. 다시 시도하세요.",
+      "empty": "아직 업데이트가 없습니다.",
+      "placeholder": "신고자에게 보낼 업데이트 작성…",
+      "send": "업데이트 보내기",
+      "email": "이메일",
+      "discord": "Discord",
+      "sendEmail": "이메일로 보내기",
+      "sendDiscord": "Discord로 보내기",
+      "emailHint": "신고자의 인증된 이메일을 사용합니다.",
+      "discordHint": "WavezFM 봇을 통해 개인 메시지를 보냅니다.",
+      "inAppAlways": "외부 전송에 실패해도 업데이트는 여기에 저장됩니다.",
+      "saved": "업데이트가 저장되었습니다.",
+      "savedWithFailure": "업데이트는 저장되었지만 외부 전송에 실패했거나 확인되지 않았습니다.",
+      "unavailable": {
+        "notConfigured": "설정되지 않음",
+        "noVerifiedEmail": "인증된 이메일 없음",
+        "notLinked": "Discord 연결 안 됨"
+      },
+      "delivery": {
+        "not_requested": "요청하지 않음",
+        "pending": "확인되지 않음",
+        "sent": "전송됨",
+        "failed": "실패"
+      },
+      "types": {
+        "user": "사용자 신고",
+        "message": "메시지 신고",
+        "sos": "도움 요청"
+      },
+      "statuses": {
+        "open": "진행 중",
+        "resolved": "해결됨"
+      }
+    },
+    "helpChat": {
+      "title": "도움 채팅",
+      "conversation": "대화",
+      "privateHint": "플랫폼 관리자 및 앰배서더와 나누는 비공개 대화입니다.",
+      "inbox": "내 도움 요청",
+      "open": "도움 채팅 열기",
+      "close": "도움 채팅 닫기",
+      "callTitle": "도움 요청 #{id}",
+      "empty": "아직 메시지가 없습니다. 답변을 기다리는 동안 자세한 내용을 추가할 수 있습니다.",
+      "loading": "대화를 불러오는 중…",
+      "loadError": "이 대화를 불러올 수 없습니다.",
+      "retry": "다시 시도",
+      "send": "보내기",
+      "sending": "보내는 중…",
+      "placeholder": "메시지를 입력하세요…",
+      "messageLabel": "메시지",
+      "sendError": "메시지를 보내지 못했습니다. 다시 시도해 주세요.",
+      "resolved": "이 요청은 해결되었습니다. 대화는 읽기 전용입니다.",
+      "statusOpen": "열림",
+      "statusResolved": "해결됨",
+      "loadOlder": "이전 메시지 불러오기",
+      "requester": "요청자",
+      "admin": "관리자",
+      "ambassador": "앰배서더",
+      "newReply": "도움 요청 #{id}에 새 답변이 있습니다",
+      "unread": "읽지 않은 답변",
+      "inboxEmpty": "아직 도움 요청이 없습니다.",
+      "refresh": "새로고침",
+      "deleted": "이 도움 요청은 더 이상 사용할 수 없습니다."
+    },
     "navigationCategories": {
       "access": "접근",
       "playback": "재생 및 대기열",
@@ -3689,7 +3976,6 @@
       "ROOM_AVATAR_ROOM_ONLY": "이 아바타는 {room}에서만 사용할 수 있습니다. 장착하려면 해당 방에 입장하세요. 다른 방에서는 사용할 수 없습니다.",
       "ROOM_AVATAR_ROLE_REQUIRED": "이 아바타를 사용하려면 {room}에서 {role} 이상의 역할이 필요합니다.",
       "ROOM_AVATAR_INACTIVE": "이 방 전용 아바타는 현재 사용할 수 없습니다.",
-
       "IP_BANNED": "관리자가 차단한 IP 주소입니다.",
       "UNAUTHORIZED": "인증이 필요합니다.",
       "KLIPY_QUERY_REQUIRED": "GIF 검색어를 입력하세요.",
@@ -3777,6 +4063,7 @@
       "BADGE_NOT_FOUND": "배지: 찾을 수 없습니다.",
       "INVALID_EVENT_BADGE": "배지: 값을 확인하고 다시 시도하세요.",
       "INVALID_SITEWIDE_GIFT_BADGE": "배지: 값을 확인하고 다시 시도하세요.",
+      "BILLING_UNSUPPORTED_CURRENCY": "이 결제에는 해당 통화를 사용할 수 없습니다.",
       "INVALID_BILLING_PRICE": "청구 가격: 값을 확인하고 다시 시도하세요.",
       "INVALID_EVENT_BADGE_LOOKBACK": "이벤트 배지 보고 기간: 값을 확인하고 다시 시도하세요.",
       "INVALID_EVENT_BADGE_REPORT_WINDOW": "이벤트 배지 보고 기간: 값을 확인하고 다시 시도하세요.",
@@ -3827,6 +4114,8 @@
       "INVALID_GLOBAL_ANNOUNCEMENT_MESSAGE": "공지: 값을 확인하고 다시 시도하세요.",
       "GLOBAL_ANNOUNCEMENT_NOT_FOUND": "공지: 찾을 수 없습니다.",
       "ROOM_NAME_TOO_SHORT": "방 이름: 값을 확인하고 다시 시도하세요.",
+      "INVALID_ROOM_PRIVACY": "방을 비공개 또는 공개로 설정할지 선택하세요.",
+      "ROOM_OWNER_CHANGED": "방 호스트가 변경되었습니다. 방 정보를 새로고침하고 다시 시도하세요.",
       "ROOM_NAME_TOO_LONG": "방 이름: 허용된 제한을 초과했습니다.",
       "ROOM_NAME_LENGTH_INVALID": "방 이름: 값을 확인하고 다시 시도하세요.",
       "ROOM_SLUG_INVALID": "방 주소: 값을 확인하고 다시 시도하세요.",
@@ -3904,6 +4193,8 @@
       "INVALID_SFW_MODE_AUDIO_ENABLED": "SFW 모드의 오디오: 값을 확인하고 다시 시도하세요.",
       "INVALID_LASTFM_SCROBBLING_ENABLED": "지금은 Last.fm 스크롤을 업데이트할 수 없습니다.",
       "INVALID_GIF_FAVORITES": "계정 설정: 값을 확인하고 다시 시도하세요.",
+      "GIF_FAVORITES_RELOAD_REQUIRED": "즐겨찾기 GIF를 변경하기 전에 페이지를 새로고침하세요. 저장된 목록은 유지되었습니다.",
+      "GIF_FAVORITES_LIMIT_REACHED": "즐겨찾기 GIF는 최대 200개까지 저장할 수 있습니다. 새 GIF를 추가하기 전에 하나를 삭제하세요.",
       "ROOM_POLL_CREATE_FAILED": "투표: 지금은 사용할 수 없습니다. 나중에 다시 시도하세요.",
       "GLOBAL_POLL_SERVICE_UNAVAILABLE": "투표: 지금은 사용할 수 없습니다. 나중에 다시 시도하세요.",
       "ROOM_POLL_QUESTION_INVALID": "투표 질문: 값을 확인하고 다시 시도하세요.",
@@ -4151,7 +4442,7 @@
       "STRIPE_NOT_CONFIGURED": "결제가 아직 구성되지 않았습니다.",
       "DIAMOND_QUANTITY_INVALID": "다이아몬드 수량이 잘못되었습니다.",
       "DISPLAY_USERNAME_ALREADY_IN_USE": "이 표시 이름은 이미 사용 중입니다.",
-      "INVALID_DISPLAY_USERNAME": "표시 이름은 3~50자 사이여야 합니다.",
+      "INVALID_DISPLAY_USERNAME": "문자, 숫자, 마침표, 밑줄 또는 하이픈을 사용해 3~50자로 입력하세요. 공백은 허용된 경우에만 사용할 수 있습니다.",
       "INVALID_LEVEL_REWARD_PREVIEW_MAX_LEVEL": "표시되는 레벨 제한은 1에서 500 사이의 정수여야 합니다.",
       "INVALID_MISC_SHOP_ITEMS": "Extras 저장소 구성이 잘못되었습니다.",
       "MISC_SHOP_ITEM_COOLDOWN_ACTIVE": "이 Extra는 아직 재사용 대기 중입니다. {remainingHours}시간 후 다시 시도하세요.",
@@ -4161,6 +4452,18 @@
       "SUBSCRIPTION_CANCEL_NOT_AVAILABLE": "지금은 자동 갱신을 취소할 수 없습니다.",
       "SUBSCRIPTION_RESUME_NOT_AVAILABLE": "지금은 자동 갱신을 재개할 수 없습니다.",
       "SUBSCRIPTION_UPGRADE_NOT_AVAILABLE": "지금은 이 구독을 연간 요금제로 이동할 수 없습니다.",
+      "SUBSCRIPTION_PRICE_MISMATCH": "표시된 가격이 결제 서비스의 가격과 일치하지 않습니다. 결제가 차단되었습니다. 고객 지원에 문의하세요.",
+      "SUBSCRIPTION_UPGRADE_CONFIGURATION_INVALID": "구독 설정을 확인해야 합니다. 요금제를 변경하기 전에 고객 지원에 문의하세요.",
+      "SUBSCRIPTION_UPGRADE_TIME_LIMIT": "연간 요금제로 전환하기 전에 누적된 결제 이용 기간을 확인해야 합니다. 새로운 요금은 청구되지 않았습니다.",
+      "SUBSCRIPTION_UPGRADE_PREVIEW_INVALID": "요금제 변경의 정확한 금액을 확인하지 못했습니다. 확인하기 전에 금액을 새로고침하세요.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_REQUIRED": "요금제 변경을 확인하기 전에 결제 금액을 확인하세요.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_EXPIRED": "금액 확인이 만료되었습니다. 확인하기 전에 금액을 새로고침하세요.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_CHANGED": "금액 또는 구독이 변경되었습니다. 확인하기 전에 최신 금액을 확인하세요.",
+      "SUBSCRIPTION_UPGRADE_QUOTE_NOT_CONFIGURED": "요금제 변경 확인을 일시적으로 사용할 수 없습니다. 고객 지원에 문의하세요.",
+      "SUBSCRIPTION_UPGRADE_IN_PROGRESS": "다른 확인이 이미 진행 중입니다. 기다려 주시고 추가 결제를 하지 마세요.",
+      "SUBSCRIPTION_UPGRADE_LOCK_UNAVAILABLE": "요금제 변경 확인을 일시적으로 사용할 수 없습니다. 나중에 다시 시도하세요.",
+      "SUBSCRIPTION_UPGRADE_LOCK_LOST": "이 확인을 안전하게 계속할 수 없습니다. 다시 시도하기 전에 최신 금액을 확인하세요.",
+      "SUBSCRIPTION_UPGRADE_RESULT_PENDING": "이 확인의 결과가 아직 검증되지 않았습니다. 추가 결제를 하지 마세요. 결과를 확인하려면 고객 지원에 문의하세요.",
       "SUBSCRIPTION_ALREADY_ANNUAL": "귀하의 구독은 이미 연간 구독입니다.",
       "SUBSCRIPTION_MANAGEMENT_NOT_CONFIGURED": "구독 관리가 아직 구성되지 않았습니다.",
       "DIAMOND_CHECKOUT_NOT_CONFIGURED": "다이아몬드 결제가 구성되지 않았습니다.",
@@ -4373,7 +4676,30 @@
       "WS_UNKNOWN_COMMAND": "알 수 없는 명령: {command}.",
       "WS_UNSUPPORTED_VERSION": "이 websocket 프로토콜 버전은 지원되지 않습니다.",
       "CHAT_WORD_FILTER_ENTRY_TOO_LONG": "항목 {entry}의 길이는 {length}자입니다. 항목당 최대 {limit}자입니다.",
-      "CHAT_WORD_FILTER_LIMIT_EXCEEDED": "필터에 항목이 {count}개 있습니다. 최대 {limit}개입니다."
+      "CHAT_WORD_FILTER_LIMIT_EXCEEDED": "필터에 항목이 {count}개 있습니다. 최대 {limit}개입니다.",
+      "ROOM_LOGIN_REQUIRED": "이 방에는 WavezFM 계정이 필요합니다. 로그인하거나 계정을 만들어 참여하세요.",
+      "INVALID_ROOM_GUEST_ACCESS": "활성화 상태: 값을 확인하고 다시 시도하세요.",
+      "STRIPE_BRL_DISABLED": "현재 Stripe를 통한 BRL 결제는 사용할 수 없습니다.",
+      "STRIPE_BRL_PIX_ONLY_SUBSCRIPTION_UNAVAILABLE": "BRL Stripe 결제는 Pix로 제한됩니다. Pix 선불 Premium을 선택하세요. 자동 갱신에는 신용카드가 필요하며 이 설정에서는 사용할 수 없습니다.",
+      "CDN_MEDIA_UNAVAILABLE": "CDN 업로드를 사용할 수 없습니다. 서버의 미디어 저장소 설정을 확인하세요.",
+      "CDN_MEDIA_INVALID_PATH": "최대 6단계까지의 유효한 폴더 경로를 사용하세요.",
+      "CDN_MEDIA_INVALID_NAME": "문자, 숫자, 공백, 하이픈, 마침표 또는 밑줄로 구성된 80자 이하의 이름을 사용하세요.",
+      "CDN_MEDIA_INVALID_IMAGE": "유효한 PNG, JPEG, GIF 또는 WebP 이미지를 사용하세요.",
+      "CDN_MEDIA_INVALID_SCRIPT": "비어 있지 않은 유효한 UTF-8 JavaScript(.js) 파일을 사용하세요.",
+      "CDN_MEDIA_INVALID_FILE": "PNG, JPEG, GIF, WebP 이미지 또는 .js 파일을 선택하세요.",
+      "CDN_MEDIA_TOO_LARGE": "파일이 크기 제한을 초과합니다.",
+      "CDN_MEDIA_BUSY": "다른 업로드를 처리 중입니다. 잠시 후 다시 시도하세요.",
+      "CDN_MEDIA_NOT_FOUND": "파일 또는 폴더가 더 이상 존재하지 않습니다.",
+      "CDN_MEDIA_FOLDER_NOT_EMPTY": "이 폴더의 이름을 바꾸거나 삭제하기 전에 파일과 하위 폴더를 이동하세요.",
+      "CDN_MEDIA_ALREADY_EXISTS": "이 이름의 폴더가 이미 있습니다.",
+      "CDN_MEDIA_STORAGE_FAILED": "CDN 저장소에 접근하지 못했습니다. 잠시 후 다시 시도하세요.",
+      "HISTORY_UNAVAILABLE": "이 오래된 기록에는 안전하게 되돌리는 데 필요한 데이터가 부족합니다.",
+      "IDENTITY_CHANGED": "이 기록 이후 이름이 변경되었습니다. 더 최근 변경을 먼저 되돌려 주세요.",
+      "IDENTITY_ALREADY_IN_USE": "이전 사용자 이름을 다른 계정이 사용하고 있습니다.",
+      "PURCHASE_EFFECT_CHANGED": "구매 후 구매한 권한이 변경되었습니다.",
+      "PURCHASE_NOT_DIAMONDS": "여기서는 다이아몬드로 결제한 구매만 취소할 수 있습니다.",
+      "BILLING_PRICE_CONFIRMATION_REQUIRED": "결제를 확인하기 전에 현재 가격을 새로고침하세요.",
+      "BILLING_PRICE_CHANGED": "가격이 변경되었습니다. 결제를 확인하기 전에 업데이트된 금액을 확인하세요."
     },
     "shop": {
       "eyebrow": "WavezFM Store광고",
@@ -4468,14 +4794,14 @@
       "subscriberBenefitsTitle": "구독에 포함된 혜택",
       "subscriberBenefitsSubtitle": "구독이 활성화된 동안 이용할 수 있는 모든 혜택을 확인하세요.",
       "subscriberBenefitsCount": "{count, plural, one {# 혜택} other {# 혜택}}",
-      "subscriberBenefitPremiumAvatarsTitle": "프리미엄 아바타",
-      "subscriberBenefitPremiumAvatarsDescription": "각 아이템에 다이아몬드를 쓰지 않고 프리미엄 아바타를 사용할 수 있습니다.",
-      "subscriberBenefitPremiumBadgesTitle": "프리미엄 배지",
-      "subscriberBenefitPremiumBadgesDescription": "구독자 전용 프리미엄 배지를 구매하거나 획득할 수 있습니다.",
-      "subscriberBenefitPremiumBackgroundsTitle": "프리미엄 배경",
-      "subscriberBenefitPremiumBackgroundsDescription": "프리미엄 배경으로 내 방을 꾸밀 수 있습니다.",
-      "subscriberBenefitPremiumVideoFramesTitle": "프리미엄 영상 프레임",
-      "subscriberBenefitPremiumVideoFramesDescription": "프리미엄 영상 프레임으로 플레이어 테두리를 꾸밀 수 있습니다.",
+      "subscriberBenefitPremiumAvatarsTitle": "구독자용 아바타",
+      "subscriberBenefitPremiumAvatarsDescription": "각 아이템에 다이아몬드를 쓰지 않고 구독자용 카탈로그의 아바타를 사용할 수 있습니다.",
+      "subscriberBenefitPremiumBadgesTitle": "구독자용 배지",
+      "subscriberBenefitPremiumBadgesDescription": "구독자 전용 배지를 구매하거나 획득할 수 있습니다.",
+      "subscriberBenefitPremiumBackgroundsTitle": "구독자용 배경",
+      "subscriberBenefitPremiumBackgroundsDescription": "구독자용 카탈로그의 배경으로 내 방을 꾸밀 수 있습니다.",
+      "subscriberBenefitPremiumVideoFramesTitle": "구독자용 영상 프레임",
+      "subscriberBenefitPremiumVideoFramesDescription": "구독자용 카탈로그의 영상 프레임으로 플레이어 테두리를 꾸밀 수 있습니다.",
       "subscriberBenefitSubscriptionBadgesTitle": "전용 배지",
       "subscriberBenefitSubscriptionBadgesDescription": "{count, plural, other {구독자가 상점에서 이용할 수 있는 배지가 #개 있습니다.}}",
       "subscriberBenefitPlaylistLimitTitle": "재생목록당 {count, number}곡",
@@ -4549,7 +4875,7 @@
         "usernameInvalid": "공백 없이 문자, 숫자, 점, 밑줄, 하이픈만 사용하세요.",
         "usernameReserved": "해당 사용자 이름은 예약되어 있어 사용할 수 없습니다.",
         "displayNameLabel": "새 표시 이름",
-        "displayNameInvalid": "3~50자를 사용하세요.",
+        "displayNameInvalid": "문자, 숫자, 마침표, 밑줄 또는 하이픈을 사용해 3~50자로 입력하세요. 공백은 허용된 경우에만 사용할 수 있습니다.",
         "instantDelivery": "즉시배송",
         "buying": "구매 중..."
       },
@@ -4561,7 +4887,9 @@
         "previous": "이전 페이지",
         "next": "다음 페이지",
         "pageLabel": "페이지 {page}"
-      }
+      },
+      "subscriptionPricingUnavailable": "현재 가격을 불러오지 못했습니다. 결제 전에 금액을 새로고침하세요.",
+      "subscriptionUpgradeCurrencyNotice": "이 가격은 신규 구독에 적용됩니다. 연간 플랜 전환 시 기존 구독의 통화가 유지됩니다. 확인 전에 정확한 청구 금액을 확인하세요."
     },
     "playlists": {
       "eyebrow": "음악 라이브러리",
@@ -4826,6 +5154,11 @@
       }
     },
     "fans": {
+      "visitRoom": "입장",
+      "pagination": {
+        "previous": "이전 페이지",
+        "next": "다음 페이지"
+      },
       "eyebrow": "소셜 그래프",
       "title": "팬",
       "headerSubtitle": "내 팬, 열성 팬, 내가 팔로우하는 사람들입니다.",
@@ -5450,7 +5783,9 @@
             "captionPrepaid": "{currency}로 일회성 결제. 즉시 활성화되고 현재 종료일에 1개월이 추가됩니다.",
             "cta": "월간 구독",
             "extendCta": "1개월 추가",
-            "giftCta": "매월 선물"
+            "giftCta": "매월 선물",
+            "captionPixPrepaid": "{currency}로 Pix 일회성 결제. 결제 확인 후 Premium 1개월이 추가되며 자동 갱신되지 않습니다.",
+            "pixCta": "Pix로 1개월 구매"
           },
           "annual": {
             "label": "연간",
@@ -5458,19 +5793,36 @@
             "captionPrepaid": "{currency}로 일회성 결제. 즉시 활성화되고 현재 종료일에 1년이 추가됩니다.",
             "cta": "매년 구독하세요",
             "extendCta": "1년 추가",
-            "giftCta": "매년 선물"
+            "giftCta": "매년 선물",
+            "captionPixPrepaid": "{currency}로 Pix 일회성 결제. 결제 확인 후 Premium 1년이 추가되며 자동 갱신되지 않습니다.",
+            "pixCta": "Pix로 1년 구매"
+          },
+          "weekly": {
+            "label": "7일",
+            "caption": "{currency} 일회성 결제입니다. 결제 확인 후 현재 만료일에 7일이 추가됩니다. 자동 갱신되지 않습니다.",
+            "cta": "7일 구매",
+            "extendCta": "7일 추가",
+            "giftCta": "7일 선물하기"
+          },
+          "fortnightly": {
+            "label": "15일",
+            "caption": "{currency} 일회성 결제입니다. 결제 확인 후 현재 만료일에 15일이 추가됩니다. 자동 갱신되지 않습니다.",
+            "cta": "15일 구매",
+            "extendCta": "15일 추가",
+            "giftCta": "15일 선물하기"
           }
         },
         "currencyLabel": "결제 통화",
         "currencyHint": "구독 결제에 사용할 통화를 선택하세요.",
         "paymentProviderLabel": "BRL 결제",
-        "paymentProviderHint": "BRL에서는 Stripe 또는 Mercado Pago를 선택할 수 있습니다. Mercado Pago에서는 구매가 카드로 선불됩니다. 즉시 청구되고 즉시 잠금 해제되며 현재 종료일에 시간이 추가됩니다.",
+        "paymentProviderHint": "BRL에서는 Mercado Pago 또는 Stripe를 선택하세요. Stripe는 자동 갱신 없는 Pix 선불을 제공합니다. 자동 갱신에는 신용카드가 필요합니다.",
         "paymentProviders": {
           "stripe": "Stripe를 통한 정기 카드",
           "mercadoPago": "Mercado Pago를 통한 선불 카드"
         },
         "currencyOptionDescription": "월간 {monthly} • 연간 {annual}",
         "processing": "결제를 여는 중...",
+        "shortPrepaidCheckoutDescription": "선불 구독자 이용권입니다. 자동 갱신 없는 일회성 결제입니다.",
         "checkoutSuccess": "결제가 확인되었습니다. 잠시 후 구독이 자동으로 적용됩니다.",
         "checkoutCanceled": "구독 결제가 취소되었습니다.",
         "checkoutError": "지금은 구독 결제를 시작할 수 없습니다.",
@@ -5496,7 +5848,9 @@
           "descriptions": {
             "mercadoPagoPrepaidSubscription": {
               "monthly": "Mercado Pago 선불 구독(월간)",
-              "annual": "Mercado Pago 선불 구독(연간)"
+              "annual": "Mercado Pago 선불 구독(연간)",
+              "weekly": "Mercado Pago 선불 구독 (7일)",
+              "fortnightly": "Mercado Pago 선불 구독 (15일)"
             },
             "stripeRecurringSubscription": {
               "monthly": "월간 Stripe 반복 구독({currency})",
@@ -5505,7 +5859,13 @@
             "subscriptionCanceled": "자동 갱신이 취소되었습니다.",
             "subscriptionResumed": "자동 갱신이 재개되었습니다.",
             "subscriptionPending": "구독 업데이트 처리 중",
-            "subscriptionGiftSent": "{recipient}님에게 구독을 선물함"
+            "subscriptionGiftSent": "{recipient}님에게 구독을 선물함",
+            "stripePrepaidSubscription": {
+              "monthly": "Stripe 월간 선불 구독 ({currency})",
+              "annual": "Stripe 연간 선불 구독 ({currency})",
+              "weekly": "Stripe 선불 구독 (7일, {currency})",
+              "fortnightly": "Stripe 선불 구독 (15일, {currency})"
+            }
           },
           "status": {
             "paid": "유료",
@@ -5539,7 +5899,7 @@
           "endsToday": "오늘 종료",
           "daysLeft": "{count}일 남음",
           "descriptionRecurring": "{cycle} 구독을 통해 이미 계정의 모든 Premium 혜택이 잠금 해제되었습니다.",
-          "descriptionPrepaid": "귀하의 Premium 액세스는 현재 선불 잔액이 끝날 때까지 활성 상태로 유지됩니다. 신규 Mercado Pago 구매는 현재 종료일에 시간을 추가합니다.",
+          "descriptionPrepaid": "선불 Premium은 만료일까지 유지되며 자동 갱신되지 않습니다. 새 선불 구매는 만료일에 이용 기간을 추가합니다.",
           "descriptionGifted": "귀하의 계정은 현재 기간이 끝날 때까지 선물 구독을 사용하고 있습니다.",
           "stripeManagedHint": "여기에서 자동 갱신을 취소하고 나중에 다시 켠 다음 남은 월별 일수를 잃지 않고 월별에서 연간으로 전환할 수 있습니다.",
           "mercadoPagoManagedHint": "여기에서 자동 갱신을 취소하고 나중에 다시 켜고 월간 갱신에서 연간 갱신으로 전환할 수 있습니다. Mercado Pago에서 다음 청구는 연간 금액을 사용하여 시작됩니다.",
@@ -5551,19 +5911,52 @@
           "resumeSuccess": "자동 갱신이 재개되었습니다.",
           "upgradeCta": "연간으로 이동",
           "upgrading": "연간으로 전환 중...",
-          "upgradeHint": "전환하면 연간 요금제가 지금 시작되고 Stripe는 사용하지 않은 월별 시간에 대해 비례 배분된 크레딧을 적용합니다.",
+          "upgradeHint": "전환하면 현재 요금제의 남은 기간이 유지되고 연간 요금제의 12개월이 추가됩니다.",
           "mercadoPagoUpgradeHint": "전환하면 Mercado Pago가 구독을 연간 요금제로 업데이트합니다. 다음 청구는 연간 금액을 사용하여 시작됩니다.",
-          "upgradeSuccess": "이제 연간 요금제가 활성화되었으며 Stripe는 사용하지 않은 월별 기간에 대해 비례 배분된 크레딧을 적용했습니다.",
+          "upgradeSuccess": "연간 요금제가 활성화되었습니다. 이미 결제한 남은 기간이 유지되고 12개월이 추가되었습니다.",
           "mercadoPagoUpgradeSuccess": "연간 계획이 Mercado Pago에 업데이트되었습니다. 다음 청구에는 연간 금액이 사용됩니다.",
           "upgradeConfirmTitle": "연간 요금제로 전환하시겠습니까?",
-          "upgradeConfirmDescription": "이 변경으로 인해 연간 요금제가 즉시 활성화됩니다. Stripe는 현재 구독 통화로 변경 사항을 즉시 청구하고 월별 요금제에서 사용하지 않은 시간에 대해 비례 배분된 크레딧을 적용합니다.",
+          "upgradeConfirmDescription": "이 변경은 현재 요금제의 남은 기간을 유지하고 12개월을 추가합니다. Stripe는 현재 구독 통화로 연간 요금제 요금을 지금 청구합니다.",
           "mercadoPagoUpgradeConfirmDescription": "이번 변경으로 인해 Mercado Pago 구독이 연간 요금제로 업데이트됩니다. 다음 청구에는 연간 금액이 사용됩니다.",
           "upgradeConfirmAction": "스위치 확인",
           "upgradeConfirmCancel": "돌아가기",
+          "upgradeQuotedDescription": "확인하기 전에 정확한 청구 금액과 이용 날짜를 검토하세요. 연간 요금제는 지금 결제되며 이미 결제한 남은 기간은 유지됩니다. 표시된 금액에는 청구서 조정이 포함되어 있습니다.",
+          "upgradePreviewLoading": "정확한 청구액을 계산하는 중…",
+          "upgradePreviewError": "정확한 금액을 불러오지 못했습니다. 확인하기 전에 다시 시도하세요.",
+          "upgradePreviewRetry": "금액 새로고침",
+          "upgradeAmountDue": "지금 결제할 금액",
+          "upgradeAnnualPrice": "연간 요금제 가격",
+          "upgradeProrationCredit": "월간 요금제 미사용 기간 크레딧",
+          "upgradeNextChargeDate": "다음 결제는 현재 {date}로 예정되어 있습니다. 요금제 업데이트 후 Mercado Pago에서 날짜를 확인합니다.",
+          "upgradeNextCharge": "연간 금액은 다음 결제일에 청구됩니다.",
+          "upgradeQuoteExpired": "이 변경을 확인하기 전에 금액을 새로고침하세요.",
+          "upgradeConfirmQuotedAction": "{amount} 결제 및 확인",
           "manageError": "지금은 구독을 업데이트할 수 없습니다.",
           "purchaseLocked": "구독 활성",
-          "currentPlanCta": "현재 계획"
-        }
+          "currentPlanCta": "현재 계획",
+          "cycleUnknown": "알 수 없음",
+          "upgradeCurrencyNotice": "기존 구독은 {currency}로 청구됩니다. 연간 플랜으로 전환해도 이 통화가 유지됩니다.",
+          "upgradePeriodNotice": "이미 결제한 남은 기간은 할인으로 전환되지 않고 이용 기간으로 유지됩니다. 해당 기간 이후에 연간 요금제의 12개월이 추가됩니다.",
+          "upgradeRemainingAccess": "현재 결제된 이용 기간은 {date}까지 유지됩니다.",
+          "upgradeAccessUntil": "변경 후 이용 기한",
+          "upgradeRenewalDate": "다음 연간 갱신은 {date}에 예정되어 있습니다.",
+          "cycleWeekly": "7일",
+          "cycleFortnightly": "15일 플랜"
+        },
+        "paymentModeLabel": "결제 및 갱신",
+        "paymentModes": {
+          "prepaid": {
+            "label": "Pix 선불",
+            "description": "Pix 일회성 결제입니다. 자동 갱신되지 않습니다."
+          },
+          "recurring": {
+            "label": "신용카드 · 자동 갱신",
+            "description": "플랜 기간마다 신용카드로 자동 결제됩니다."
+          }
+        },
+        "checkoutPrepaidDescription": "Pix로 Premium 이용 기간을 결제하세요. 수동으로 갱신하며 자동 결제되지 않습니다.",
+        "checkoutPrepaidSuccess": "Pix 결제가 확인되었습니다. 선불 Premium이 곧 활성화되며 자동 갱신되지 않습니다.",
+        "checkoutPrepaidPending": "Pix 결제 확인을 기다리는 중입니다. 결제 후 Premium이 활성화되며 자동 갱신되지 않습니다."
       }
     },
     "loadingSession": "세션 로드 중...",
@@ -5857,7 +6250,7 @@
         "saveRoomTitle": "방 저장",
         "saveRoomDescription": "{name}에 대한 변경 사항을 저장하시겠습니까?",
         "deleteRoomTitle": "방 닫기",
-        "deleteRoomDescription": "{name} 방을 닫으시겠습니까? 이 작업은 취소할 수 없습니다.",
+        "deleteRoomDescription": "{name} 방을 닫으시겠습니까? /dashboard에서 사라지고 대중이 접근할 수 없게 됩니다.",
         "warn": "경고",
         "ban": "영구 금지",
         "save": "저장",
@@ -6099,7 +6492,8 @@
           "progression": "진행",
           "subscription": "구독",
           "inventory": "인벤토리",
-          "security": "접속 기록"
+          "security": "접속 기록",
+          "history": "기록"
         },
         "roleSaving": "저장 중...",
         "roleSave": "역할 저장",
@@ -6125,6 +6519,14 @@
           "saveSuccess": "{username}의 맞춤 역할이 업데이트되었습니다.",
           "saveError": "이 사용자의 맞춤 역할을 업데이트할 수 없습니다."
         },
+        "nameAvailability": {
+          "checking": "사용 가능 여부 확인 중…",
+          "available": "사용할 수 있는 이름입니다.",
+          "usernameTaken": "이 사용자 이름은 이미 사용 중입니다.",
+          "displayNameTaken": "이 표시 이름은 이미 사용 중입니다.",
+          "failed": "사용 가능 여부를 확인할 수 없습니다. 다시 시도하세요.",
+          "retry": "다시 확인"
+        },
         "fields": {
           "platformRoles": "글로벌 역할",
           "avatar": "현재 아바타",
@@ -6142,6 +6544,7 @@
           "displayName": "표시 이름",
           "displayNamePlaceholder": "이 사용자가 인터페이스에 표시되는 방식을 설정합니다...",
           "displayNameHint": "이 계정의 기본 @username.로 돌아가려면 비워 두세요.",
+          "displayNameAllowSpecialCharacters": "기호 및 이모지 허용 (관리자 예외)",
           "bio": "바이오",
           "bioPlaceholder": "이 프로필에 대한 짧은 약력을 작성하세요...",
           "bioHint": "약력은 공개 프로필, 개인 프로필, 방 빠른 프로필에 표시됩니다.",
@@ -6246,7 +6649,9 @@
             "none": "사이클 없음",
             "manual": "매뉴얼",
             "monthly": "월간",
-            "annual": "연간"
+            "annual": "연간",
+            "weekly": "7일",
+            "fortnightly": "15일"
           },
           "daysHint": "수동으로 활성화하면 WavezFM는 입력한 일수를 사용하여 구독 만료 시기를 정의합니다.",
           "giftTitle": "무료 구독 선물하기",
@@ -6289,7 +6694,8 @@
               "canceled": "갱신이 취소되었습니다.",
               "resumed": "갱신이 재개되었습니다",
               "pending": "구독 업데이트 보류 중"
-            }
+            },
+            "days": "{count}일"
           },
           "saving": "구독 저장 중...",
           "save": "구독 저장",
@@ -6515,6 +6921,73 @@
           "amountInvalid": "0보다 큰 유효한 금액을 입력하세요.",
           "monthsInvalid": "1~12개월 사이의 값을 입력하세요.",
           "note": "이러한 사이트 전체 선물은 항상 자신의 계정을 건너뛰고 실시간 안정성을 유지하기 위해 일괄적으로 전송됩니다."
+        },
+        "purchaseHistory": {
+          "label": "기록",
+          "names": "이름 변경",
+          "purchases": "다이아몬드 구매",
+          "namesHint": "저장된 사용자 이름과 표시 이름 변경을 확인하고 이전 이름을 안전하게 복원합니다.",
+          "purchasesHint": "다이아몬드 결제를 확인하고 각 구매에 연결된 권한을 취소합니다.",
+          "refresh": "새로 고침",
+          "loading": "기록을 불러오는 중…",
+          "loadError": "기록을 불러오지 못했습니다.",
+          "retry": "다시 시도",
+          "revert": "변경 되돌리기",
+          "revoke": "구매 취소",
+          "reverted": "되돌림 완료",
+          "revoked": "취소됨",
+          "revertedOn": "되돌린 날짜: {date}",
+          "revokedOn": "취소 날짜: {date}",
+          "revertHint": "이 기록에서 변경된 항목을 복원합니다.",
+          "revokeHint": "이 구매의 남은 권한을 제거합니다.",
+          "username": "사용자 이름",
+          "displayUsername": "표시 이름",
+          "emptyValue": "비어 있음",
+          "missingSnapshot": "이 오래된 기록에는 완전한 이름 스냅샷이 없습니다.",
+          "diamondAmount": "다이아몬드 {amount}개",
+          "room": "방: {room}",
+          "refunded": "다이아몬드 {amount}개 환불됨",
+          "emptyNames": "이 사용자의 저장된 이름 변경 기록이 없습니다.",
+          "emptyPurchases": "이 사용자의 다이아몬드 구매 기록이 없습니다.",
+          "previous": "이전",
+          "next": "다음",
+          "page": "페이지 {page}",
+          "confirmRevertTitle": "이 이름 변경을 되돌릴까요?",
+          "confirmRevokeTitle": "이 구매를 취소할까요?",
+          "confirmRevertDescription": "이 기록에 저장된 이전 값을 복원합니다. 현재 이름이 되돌릴 변경 사항과 일치해야 합니다.",
+          "confirmRevokeDescription": "“{name}”의 남은 권한을 제거합니다. 이미 획득한 XP는 제거되지 않습니다.",
+          "processing": "처리 중…",
+          "cancel": "취소",
+          "refundDiamonds": "다이아몬드 환불",
+          "refundHint": "선택 사항입니다. 취소 시 원래 결제한 다이아몬드를 한 번만 돌려줍니다.",
+          "reason": "사유 (선택 사항)",
+          "revertSuccess": "이름 변경을 되돌렸습니다.",
+          "revokeSuccess": "구매를 취소했습니다.",
+          "alreadyProcessed": "이미 완료된 작업입니다. 기록을 새로 고쳤습니다.",
+          "actionError": "작업을 완료하지 못했습니다.",
+          "sources": {
+            "shop": "상점 구매",
+            "admin": "관리자 변경",
+            "revert": "되돌리기",
+            "legacy_admin": "이전 관리자 기록"
+          },
+          "effects": {
+            "inventory": "인벤토리 아이템",
+            "identity": "이름 변경",
+            "xp_boost": "XP 부스트",
+            "room_feature": "방 기능",
+            "unknown": "알 수 없는 효과"
+          },
+          "unavailable": {
+            "generic": "이 기록은 안전하게 되돌릴 수 없습니다.",
+            "HISTORY_SNAPSHOT_MISSING": "이 오래된 기록에는 안전하게 되돌리는 데 필요한 데이터가 부족합니다.",
+            "IDENTITY_CHANGED": "이 기록 이후 이름이 변경되었습니다. 더 최근 변경을 먼저 되돌려 주세요.",
+            "HISTORY_ALREADY_REVERTED": "이 이름 변경은 이미 되돌렸습니다.",
+            "PURCHASE_ALREADY_REVOKED": "이 구매는 이미 취소되었습니다.",
+            "PURCHASE_EFFECT_CHANGED": "구매 후 구매한 권한이 변경되었습니다.",
+            "PURCHASE_EFFECT_MISSING": "구매의 원래 효과가 기록되지 않았습니다.",
+            "IDENTITY_ALREADY_IN_USE": "이전 사용자 이름을 다른 계정이 사용하고 있습니다."
+          }
         }
       },
       "rooms": {
@@ -6530,6 +7003,10 @@
         "partnerBadge": "제휴",
         "partnerHint": "관리자 패널과 방 목록에서 이 방을 파트너로 표시합니다.",
         "logoUrlHint": "룸 상단 바에 표시되는 로고를 변경합니다. http URL 또는 내부 경로를 사용하세요.",
+        "backgroundUrlLabel": "방 배경 URL",
+        "backgroundUrlHint": "이 방에서만 카탈로그 배경보다 우선합니다. 입력란을 비우면 카탈로그 배경으로 돌아갑니다.",
+        "backgroundUrlPlaceholder": "https://example.com/background.webp 또는 /backgrounds/room.webp",
+        "backgroundUrlInvalid": "유효한 HTTPS URL 또는 /로 시작하는 로컬 경로를 입력하세요.",
         "invalidLogoUrl": "유효한 http URL 또는 내부 경로를 사용하세요.",
         "filters": {
           "badgeAll": "모든 방",
@@ -6838,11 +7315,12 @@
           "goalTitleEnUsPlaceholder": "방을 위한 새로운 프로젝터",
           "currency": "통화",
           "localizedCurrency": "언어별 통화",
-          "localizedCurrencyHint": "활성화되면 통화는 사이트 로캘(pt-BR -> BRL 및 en-US -> USD)을 따릅니다. EUR을 원할 경우 수동 통화를 사용하세요.",
-          "localizedCurrencyPreview": "자동 미리보기: pt-BR -> BRL • en-US -> USD",
+          "localizedCurrencyHint": "사이트 언어에 해당하는 통화에 목표가 설정되어 있으면 해당 통화를 사용하고, 그렇지 않으면 사용 가능한 통화를 사용합니다.",
+          "localizedCurrencyPreview": "언어별 우선 통화: pt → BRL · en → USD · cs → CZK · ja → JPY · pl → PLN · ko → KRW · nb → NOK · fr/es/sk → EUR",
           "currencySelection": "통화 선택 허용",
-          "currencySelectionHint": "활성화되면 사람들에게 이 방 목표에 대해 BRL, USD 또는 EUR을 선택할 수 있는 드롭다운이 표시됩니다.",
+          "currencySelectionHint": "목표가 0보다 큰 지원 통화를 선택할 수 있습니다. 그렇지 않으면 목표의 기본 통화를 사용합니다.",
           "currencySelectionSharedHint": "이는 글로벌 환경이며 글로벌 기부 목표에도 영향을 미칩니다.",
+          "targetCurrenciesHint": "받으려는 각 통화의 목표를 설정하세요. 나머지는 비워 두거나 0으로 설정하세요. JPY와 KRW 목표는 정수 금액이어야 합니다.",
           "target": "대상",
           "targetPlaceholder": "150.00",
           "goalDescription": "설명",
@@ -6906,6 +7384,7 @@
         "forms": "양식",
         "privateMessages": "속삭임",
         "emailBlocklist": "등록 블록",
+        "ipBans": "정지된 IP",
         "progression": "진행",
         "giveaways": "경품",
         "events": "이벤트",
@@ -6919,7 +7398,8 @@
         "roleAppearance": "역할 출연",
         "donations": "최근 기부",
         "logs": "로그",
-        "announcements": "경고"
+        "announcements": "경고",
+        "cdnMedia": "CDN 파일"
       },
       "giftHistory": {
         "roomSubgiftSettings": {
@@ -6956,7 +7436,8 @@
         "subscriptionMonths": "구독 {count}개월",
         "subscriptionAnnual": "연간 구독",
         "subscriptionMonthly": "월간 구독",
-        "room": "방: {room}"
+        "room": "방: {room}",
+        "subscriptionDays": "구독 {count}일"
       },
       "giveaways": {
         "subtitle": "커뮤니티 경품을 만들고, 항목을 추적하고, 우승자를 추첨하세요."
@@ -7274,6 +7755,58 @@
           "disabled": "숨겨진"
         }
       },
+      "ipBans": {
+        "actions": "작업",
+        "add": "IP 차단",
+        "addTitle": "IP 주소 차단",
+        "addDescription": "차단을 해제할 때까지 이 IP의 사이트 접근을 차단합니다.",
+        "ipHint": "IPv4 또는 IPv6 주소 하나를 입력하세요.",
+        "optionalReason": "사유 (선택)",
+        "cancel": "취소",
+        "saving": "저장 중...",
+        "invalidIp": "올바른 IPv4 또는 IPv6 주소를 입력하세요.",
+        "addError": "이 IP를 차단하지 못했습니다. 다시 시도하세요.",
+        "added": "IP {ip}을(를) 차단했습니다.",
+        "remove": "차단 해제",
+        "removeTitle": "IP 차단 해제",
+        "removeDescription": "{ip}의 차단을 해제할까요? 계정 정지는 유지됩니다.",
+        "removeError": "IP 차단을 해제하지 못했습니다. 다시 시도하세요.",
+        "removed": "IP {ip}의 차단을 해제했습니다.",
+        "ipOnly": "IP만",
+        "title": "정지된 IP",
+        "subtitle": "만료되거나 해제된 기록을 포함한 사이트 전체 IP 정지 내역입니다.",
+        "searchPlaceholder": "IP 또는 사용자 이름으로 검색...",
+        "searchLabel": "IP 정지 내역 검색",
+        "filterLabel": "상태별 필터",
+        "refresh": "새로고침",
+        "loading": "IP 정지 내역 불러오는 중...",
+        "loadError": "IP 정지 내역을 불러올 수 없습니다.",
+        "empty": "활성 IP 정지가 없습니다.",
+        "emptyFiltered": "이 필터에 해당하는 IP 정지가 없습니다.",
+        "total": "{count, plural, other {기록 #개}}",
+        "ipAddress": "IP 주소",
+        "reason": "사유",
+        "targetUser": "사용자",
+        "bannedBy": "정지한 관리자",
+        "createdAt": "등록 일시",
+        "expiresAt": "만료 일시",
+        "revokedAt": "해제 일시",
+        "status": "상태",
+        "permanent": "영구",
+        "unknownUser": "알 수 없는 사용자",
+        "unknownAdmin": "알 수 없는 관리자",
+        "unknownReason": "기록된 사유 없음",
+        "notAvailable": "정보 없음",
+        "previous": "이전",
+        "next": "다음",
+        "page": "페이지",
+        "states": {
+          "active": "활성",
+          "expired": "만료",
+          "revoked": "해제",
+          "all": "전체"
+        }
+      },
       "emailBlocklist": {
         "title": "차단된 등록 이메일",
         "subtitle": "계정을 생성할 수 없는 도메인을 관리하세요. 목록은 저장하는 즉시 적용됩니다.",
@@ -7436,7 +7969,9 @@
           "monthly": "월간",
           "annual": "연간",
           "manual": "설명서/선물",
-          "unknown": "알 수 없음"
+          "unknown": "알 수 없음",
+          "weekly": "7일",
+          "fortnightly": "15일"
         },
         "renewal": {
           "on": "자동 갱신 날짜",
@@ -7524,7 +8059,7 @@
         "subtitle": "여기에서 결제 재정의를 편집하세요. 필드를 비워두면 재정의가 제거되고 .env 값 또는 기본 제공 기본값으로 대체됩니다.",
         "fallbackChip": "대체 .env/default",
         "stripeTitle": "Stripe 구독",
-        "stripeSubtitle": "USD, BRL, EUR로 월간 및 연간 가격을 관리하세요.",
+        "stripeSubtitle": "USD, BRL, EUR, CZK, JPY, PLN, KRW, NOK로 월간 및 연간 가격을 관리하세요.",
         "monthlyTitle": "월간",
         "annualTitle": "연간",
         "emptyUsesFallback": ".env/default를 사용하려면 비워 두세요.",
@@ -7533,7 +8068,7 @@
         "mercadoPagoMonthlyLabel": "월간(BRL)",
         "mercadoPagoAnnualLabel": "연간(BRL)",
         "diamondsTitle": "다이아몬드",
-        "diamondsSubtitle": "USD, BRL, EUR로 다이아몬드 구매에 사용되는 단가를 조정합니다.",
+        "diamondsSubtitle": "USD, BRL, EUR, CZK, JPY, PLN, KRW, NOK로 다이아몬드 구매에 사용되는 단가를 조정합니다.",
         "currentPrice": "현재: {price}",
         "sourceOverride": "패널",
         "sourceFallback": "대체",
@@ -7549,7 +8084,7 @@
         "subscriptionPromotionTitle": "구독 프로모션",
         "subscriptionPromotionSubtitle": "Stripe 및 Mercado Pago에 대한 할인 창과 할인된 월간 /annual 가격을 설정합니다.",
         "diamondsPromotionTitle": "다이아몬드 프로모션",
-        "diamondsPromotionSubtitle": "할인 창과 할인 단가를 USD, BRL, EUR로 설정하세요.",
+        "diamondsPromotionSubtitle": "지원 통화별 할인 기간과 할인된 단가를 설정하세요.",
         "promotionWindowTitle": "프로모션 창구",
         "promotionWindowHint": "할인을 제거할 때까지 프로모션을 계속 활성화하려면 날짜를 비워 두세요.",
         "promotionStartsAt": "시작 시간",
@@ -7784,6 +8319,7 @@
         "miscShopPriceDiamonds": "다이아몬드 가격",
         "miscShopCoinsCooldownHours": "코인 구매 재사용 대기시간",
         "miscShopRealMoneyPriceHint": "실제 돈의 경우 금액을 센트 단위로 입력하세요. 예: 1990 = $19.90.",
+        "miscShopZeroDecimalRealMoneyPriceHint": "가격은 통화 단위의 100분의 1로 저장됩니다: 100 = 1 {currency}. JPY와 KRW 가격은 정수 금액이어야 합니다.",
         "miscShopNamePtBr": "이름 PT-BR",
         "miscShopNameEnUs": "이름 EN-US",
         "miscShopDescriptionPtBr": "설명 PT-BR",
@@ -7948,20 +8484,35 @@
         "globalDonationGoalNameEnUsPlaceholder": "예: 다음 대규모 업데이트 자금 지원",
         "globalDonationGoalTargetLabel": "목표 금액",
         "globalDonationGoalTargetPlaceholder": "예: 2500.00",
+        "globalDonationGoalTargetCurrenciesHint": "받으려는 각 통화의 목표를 설정하세요. 나머지는 비워 두거나 0으로 설정하세요. JPY와 KRW 목표는 정수 금액이어야 합니다.",
         "globalDonationGoalCurrencyLabel": "통화",
         "globalDonationGoalCurrencyHint": "언어별 통화를 끈 경우 글로벌 목표에 사용하는 단일 통화입니다.",
         "globalDonationGoalLocalizedCurrencyLabel": "언어별 통화",
-        "globalDonationGoalLocalizedCurrencyHint": "활성화되면 통화는 사이트 로캘(pt-BR -> BRL 및 en-US -> USD)을 따릅니다. EUR을 원할 경우 수동 통화를 사용하세요.",
+        "globalDonationGoalLocalizedCurrencyHint": "사이트 언어에 해당하는 통화에 목표가 설정되어 있으면 해당 통화를 사용하고, 그렇지 않으면 사용 가능한 통화를 사용합니다.",
         "donationCurrencySelectionLabel": "통화 선택 허용",
-        "donationCurrencySelectionHint": "활성화되면 사람들이 BRL, USD 또는 EUR을 선택할 수 있도록 기부 입력에 드롭다운이 표시됩니다. 비활성화되면 기부는 목표 기본 통화를 사용합니다.",
+        "donationCurrencySelectionHint": "목표가 0보다 큰 지원 통화를 선택할 수 있습니다. 그렇지 않으면 목표의 기본 통화를 사용합니다.",
         "donationCurrencySelectionEnabledSuccess": "기부 통화 선택이 활성화되었습니다.",
         "donationCurrencySelectionDisabledSuccess": "기부 통화 선택이 비활성화되었습니다.",
         "donationCurrencySelectionSaveError": "기부 통화 선택을 업데이트할 수 없습니다.",
+        "patternList": {
+          "add": "추가",
+          "addLabel": "항목 추가",
+          "searchLabel": "목록 검색",
+          "searchPlaceholder": "단어, 도메인 또는 패턴 검색...",
+          "removeEntry": "{entry} 삭제",
+          "empty": "차단된 항목이 없습니다.",
+          "searchEmpty": "검색과 일치하는 항목이 없습니다.",
+          "range": "총 {total}개 중 {start}–{end}",
+          "bulkToggle": "여러 항목 가져오기",
+          "bulkLabel": "새 항목",
+          "bulkAdd": "목록에 추가",
+          "bulkHint": "한 줄에 항목 하나를 입력하세요. 새 항목은 기존 목록에 추가됩니다. 변경 사항을 적용하려면 저장하세요."
+        },
         "chatBlockedWordPatternsTitle": "글로벌 채팅어 필터",
-        "chatBlockedWordPatternsSubtitle": "모든 방에서 차단해야 하는 단어, 문구 또는 단편을 정의하십시오.",
+        "chatBlockedWordPatternsSubtitle": "모든 방에서 완전한 단어나 문구를 차단합니다.",
         "chatBlockedWordPatternsLabel": "차단된 단어 및 문구",
         "chatBlockedWordPatternsPlaceholder": "스팸\n금지된 단어\n차단된 문구",
-        "chatBlockedWordPatternsHint": "한 줄에 하나의 항목을 사용하거나 쉼표로 구분하여 사용하세요. 일치에서는 대소문자와 악센트를 무시합니다.",
+        "chatBlockedWordPatternsHint": "한 줄에 항목 하나를 입력하거나 쉼표로 구분하세요. 대소문자와 악센트를 무시하고 완전한 단어와 문구를 비교합니다.",
         "chatBlockedWordPatternsHelper": "이 차단은 새 메시지, 편집 내용, 룸 봇이 보낸 메시지에 적용됩니다. 메시지는 게시되지 않으며 보낸 사람에게 자신의 언어로 오류가 표시됩니다.",
         "chatBlockedWordPatternsSave": "단어 필터 저장",
         "chatBlockedWordPatternsSaving": "필터 저장 중...",
@@ -7972,7 +8523,7 @@
         "chatMediaBlockedPatternsSubtitle": "모든 방에서 직접 이미지 및 GIF 링크를 차단하는 전역 패턴을 정의합니다.",
         "chatMediaBlockedPatternsLabel": "차단된 도메인 및 패턴",
         "chatMediaBlockedPatternsPlaceholder": "redgifs.\n포르노허브.\ni.imgur.com/example",
-        "chatMediaBlockedPatternsHint": "한 줄에 하나의 패턴을 사용하세요. 전체 도메인과 부분 링크 조각이 모두 허용됩니다. 이 확인은 채팅으로 전송된 직접 image/GIF 링크에 적용됩니다.",
+        "chatMediaBlockedPatternsHint": "한 줄에 하나의 패턴을 입력하세요. 도메인은 해당 도메인과 하위 도메인을 차단하며, 단어는 전체 단어와 일치합니다. 경로 조각은 /로 시작하세요(예: /unsafe/). 채팅으로 전송된 이미지/GIF 직접 링크에 적용됩니다.",
         "chatMediaBlockedPatternsHelper": "팁: 인라인 미리보기 허용 목록은 아래에서 별도로 구성됩니다. 이 설정은 글로벌 안전 블록을 제어합니다.",
         "chatMediaBlockedPatternsSave": "블랙리스트 저장",
         "chatMediaBlockedPatternsSaving": "블랙리스트 저장 중...",
@@ -7985,7 +8536,7 @@
         "mediaPlaybackBlockedUrlPatternsPlaceholder": "youtube.com/watch?v=abc123\nyoutu.be/abc123\nsoundcloud.com/artist/track",
         "mediaPlaybackBlockedTitlePatternsLabel": "차단된 이름, 제목, 아티스트",
         "mediaPlaybackBlockedTitlePatternsPlaceholder": "노래 이름\n차단된 아티스트\n금지된 제목",
-        "mediaPlaybackBlockedPatternsHint": "한 줄에 하나의 항목을 사용하거나 쉼표로 구분하여 사용하세요. URL은 link/ID 조각과 일치합니다. 이름은 대소문자와 악센트를 무시합니다.",
+        "mediaPlaybackBlockedPatternsHint": "한 줄에 하나씩 또는 쉼표로 구분해 입력하세요. URL/ID는 일부 문자열과, 이름은 완전한 단어/문구와 일치하며 대소문자, 악센트, 추가 공백을 구분하지 않습니다.",
         "mediaPlaybackBlockedPatternsHelper": "이는 미리보기, 재생목록 저장, 가져오기 및 방에서 저장된 이전 트랙을 재생하려고 할 때 건너뛰기에 적용됩니다.",
         "mediaPlaybackRoomBlocklistToggleTitle": "방 도구에서 방별 블랙리스트 허용",
         "mediaPlaybackRoomBlocklistToggleHint": "활성화되면 방 관리 권한이 있는 직원은 전역 블랙리스트 외에도 방별 블랙리스트를 유지 관리할 수 있습니다.",
@@ -8025,7 +8576,7 @@
         "chatHistoryMessageLimitSaving": "저장 한도...",
         "chatHistoryMessageLimitUpdated": "글로벌 채팅 기록 제한이 업데이트되었습니다.",
         "chatHistoryMessageLimitSaveError": "전체 채팅 기록 제한을 업데이트할 수 없습니다.",
-        "globalDonationGoalLocalizedCurrencyPreview": "자동 미리보기: pt-BR -> BRL • en-US -> USD",
+        "globalDonationGoalLocalizedCurrencyPreview": "언어별 우선 통화: pt → BRL · en → USD · cs → CZK · ja → JPY · pl → PLN · ko → KRW · nb → NOK · fr/es/sk → EUR",
         "globalDonationGoalDescriptionLabel": "설명",
         "globalDonationGoalDescriptionPlaceholder": "캠페인의 목적과 지역사회의 자금 지원이 무엇인지 설명하세요.",
         "globalDonationGoalDescriptionPtBrLabel": "설명(pt-BR)",
@@ -8124,7 +8675,7 @@
         "supporterGiftBadgesTitle": "구독 선물이 전송되었습니다.",
         "supporterGiftBadgesSubtitle": "계정이 구성된 구독 선물 전달 금액에 도달하면 가장 적합한 등급이 나타납니다.",
         "supporterSubscriptionBadgesTitle": "구독 기간",
-        "supporterSubscriptionBadgesSubtitle": "배지는 각 유료, 선물 또는 선불 주기가 끝날 때마다 올라갑니다.",
+        "supporterSubscriptionBadgesSubtitle": "사용한 구독 기간 30일을 1개월로 계산합니다. 사용한 7일 및 15일 기간은 합산되며, 구독이 없던 기간과 구매했지만 아직 사용하지 않은 기간은 포함되지 않습니다.",
         "supporterBadgeAddTier": "등급 추가",
         "supporterBadgeThreshold": "목표",
         "supporterBadgeLabel": "이름",
@@ -8682,7 +9233,7 @@
           "name": "이름",
           "namePlaceholder": "네온 일몰",
           "imageUrl": "이미지 URL",
-          "imagePlaceholder": "/room/backgrounds/neon-sunset.png",
+          "imagePlaceholder": "/catalog/backgrounds/neon-sunset.png",
           "category": "카테고리",
           "categoryPlaceholder": "클럽",
           "currency": "통화",
@@ -8739,7 +9290,7 @@
           "name": "이름",
           "namePlaceholder": "클래식 프레임",
           "imageUrl": "이미지 URL",
-          "imagePlaceholder": "/room/video-frames/classic-frame.png",
+          "imagePlaceholder": "/catalog/video-frames/classic-frame.png",
           "category": "카테고리",
           "categoryPlaceholder": "기본값",
           "currency": "통화",
@@ -9216,7 +9767,13 @@
         "clear": "로그 지우기",
         "clearing": "지우는 중...",
         "clearSuccess": "관리 로그가 삭제되었습니다.",
-        "clearError": "지금은 로그를 지울 수 없습니다."
+        "clearError": "지금은 로그를 지울 수 없습니다.",
+        "activityFilter": "활동 필터",
+        "allActivity": "모든 활동",
+        "ambassadorActivity": "BA 활동",
+        "activitySubmitted": "명령 전송됨",
+        "activitySuccess": "완료",
+        "activityFailed": "실패"
       },
       "confirm": {
         "saveStatsTitle": "통계 저장",
@@ -9232,9 +9789,9 @@
         "deleteUserTitle": "계정 삭제",
         "deleteUserDescription": "{username}의 계정을 영구적으로 삭제하시겠습니까? 세션, 재생 목록, 소셜 관계, 소유한 방도 제거됩니다. 영향을 받는 방: {count}.",
         "resetGlobalDonationGoalRaisedTitle": "글로벌 모금액 재설정",
-        "resetGlobalDonationGoalRaisedDescription": "글로벌 기부 목표 모금액을 0으로 설정하시겠습니까? BRL, USD, EUR 합계가 재설정되고 진행률은 0%로 돌아갑니다.",
+        "resetGlobalDonationGoalRaisedDescription": "모든 통화의 모금액과 전체 목표의 진행 상황을 0으로 초기화할까요?",
         "resetRoomDonationGoalRaisedTitle": "방 모금액 재설정",
-        "resetRoomDonationGoalRaisedDescription": "방 목표 {name}에 대해 모금된 금액을 0으로 설정하시겠습니까? BRL, USD, EUR 합계가 재설정되고 진행률은 0%로 돌아갑니다.",
+        "resetRoomDonationGoalRaisedDescription": "{name} 방 목표의 모든 통화 모금액과 진행 상황을 0으로 초기화할까요?",
         "closeRoomTitle": "방 닫기",
         "closeRoomDescription": "{name} 방을 닫으시겠습니까? /dashboard에서 사라지고 대중이 접근할 수 없게 됩니다.",
         "reopenRoomTitle": "방을 다시 열어주세요",
@@ -9289,6 +9846,73 @@
         "pageLabelPrefix": "페이지",
         "next": "다음 페이지",
         "previous": "이전 페이지"
+      },
+      "cdnMedia": {
+        "deletePasswordHint": "Confirm your account password to delete. This action will be recorded.",
+        "search": "Search files and folders in this folder…",
+        "selectPage": "Select page",
+        "selectName": "Select {name}",
+        "selectedCount": "{count} selected (maximum 100)",
+        "clearSelection": "Clear selection",
+        "deleteSelected": "Delete selected",
+        "deletedCount": "Deleted items: {count}.",
+        "deletePartial": "Could not delete {count} items. They remain selected; check the folder contents before retrying.",
+        "deleteBulkHelp": "Delete {count} selected items? Folders and all their contents will be permanently deleted. Existing links will stop working.",
+        "deleteFolderContentsHelp": "This folder and all files and subfolders inside it will be permanently deleted. Existing links will stop working.",
+        "noResults": "No matching files or folders.",
+        "previousPage": "Previous page",
+        "nextPage": "Next page",
+        "pagination": "CDN files pagination",
+        "pageSummary": "{start}–{end} of {total}",
+        "passwordInvalid": "Incorrect password or account without a password. Check it or set a password in settings.",
+        "passwordRateLimited": "Too many attempts. Wait one minute and try again.",
+        "confirmPassword": "Confirm your account password",
+        "legacyPasswordHint": "This existing CDN file may be in use. Confirm your password to edit or delete it. The action will be logged. Accounts without a password must set one in settings.",
+        "subtitle": "이미지와 JavaScript 파일을 업로드하고, 폴더를 정리하고, CDN 직접 링크를 복사하세요.",
+        "folders": "폴더",
+        "files": "파일",
+        "root": "루트",
+        "newFolder": "새 폴더",
+        "refresh": "새로 고침",
+        "loadError": "CDN 파일을 불러오지 못했습니다. 새로고침해 보세요.",
+        "copyError": "링크를 복사하지 못했습니다. 직접 링크를 선택한 후 수동으로 복사하세요.",
+        "uploadError": "{name} 파일을 업로드하지 못했습니다.",
+        "invalidUpload": "{name}: {size} MB 이하의 PNG, JPEG, GIF, WebP 이미지 또는 .js 파일을 선택하세요.",
+        "uploaded": "{count, plural, other {파일 #개를 업로드했습니다.}}",
+        "saved": "변경 사항을 저장했습니다.",
+        "deleted": "삭제했습니다.",
+        "saveError": "변경 사항을 저장하지 못했습니다.",
+        "deleteError": "이 항목을 삭제하지 못했습니다.",
+        "unavailable": "CDN 업로드를 사용할 수 없습니다. 이 탭을 활성화하려면 서버의 미디어 저장소를 설정하세요.",
+        "dropImages": "업로드할 파일을 여기로 드래그하세요",
+        "dropNow": "놓아서 업로드",
+        "uploading": "{total}개 중 {current}번째 업로드 중…",
+        "formats": "PNG, JPEG, GIF, WebP, JS · 파일당 최대 {size} MB",
+        "chooseImages": "파일 선택",
+        "renameFolder": "폴더 이름 변경",
+        "renameFolderName": "{name} 폴더 이름 변경",
+        "delete": "삭제",
+        "deleteName": "{name} 삭제",
+        "directLink": "{name} 직접 링크",
+        "copyLink": "링크 복사",
+        "copied": "복사됨",
+        "editAsset": "파일 이름 변경 또는 이동",
+        "editName": "{name} 편집",
+        "empty": "이 폴더는 비어 있습니다.",
+        "loading": "불러오는 중…",
+        "loadMore": "더 불러오기",
+        "save": "저장",
+        "cancel": "취소",
+        "folderName": "폴더 이름",
+        "emptyFoldersOnly": "빈 폴더만 이름을 변경할 수 있습니다. 먼저 파일을 이동하세요.",
+        "linkChanges": "파일의 이름을 바꾸거나 이동하면 링크가 변경됩니다. 이미 사용 중인 링크를 업데이트하세요.",
+        "fileName": "파일 이름",
+        "destination": "대상 폴더",
+        "destinationHelp": "bots/icons처럼 기존 폴더의 경로를 입력하세요. 루트 폴더를 사용하려면 비워 두세요.",
+        "deleteTitle": "이 항목을 삭제할까요?",
+        "deleteFolderHelp": "빈 폴더만 삭제할 수 있습니다.",
+        "deleteAssetHelp": "이 파일이 삭제됩니다. 직접 링크가 더 이상 작동하지 않습니다.",
+        "readyLinks": "직접 링크가 준비되었습니다"
       }
     },
     "profile": {
@@ -9537,6 +10161,32 @@
         "endsToday": "오늘 종료",
         "daysLeft": "{count, plural, one {# 일 남음} other {# 일 남음}}",
         "planBadge": "{cycle} 계획"
+      },
+      "history": {
+        "count": "구매 {count, number}건",
+        "newestFirst": "최신순",
+        "search": "구매 내역 검색",
+        "refresh": "내역 새로고침",
+        "loadError": "구매 내역을 불러오지 못했습니다.",
+        "retry": "다시 시도",
+        "external": "외부 결제",
+        "free": "무료",
+        "completed": "완료",
+        "currencyUnknown": "통화 기록 없음",
+        "reference": "구매 ID: {id}",
+        "range": "전체 {total}건 중 {start}–{end}건",
+        "noResults": "구매 내역을 찾을 수 없습니다",
+        "noResultsHint": "다른 검색어나 카테고리를 선택해 보세요.",
+        "emptyTitle": "아직 구매 내역이 없습니다",
+        "categories": {
+          "all": "모든 카테고리",
+          "avatar": "아바타",
+          "background": "배경",
+          "badge": "배지",
+          "videoframe": "동영상 프레임",
+          "misc": "기타 아이템",
+          "unknown": "미분류"
+        }
       }
     },
     "progression": {
@@ -9746,7 +10396,8 @@
         "purposes": {
           "title": "6. 당사가 정보를 사용하는 방법",
           "paragraphs": {
-            "p1": "당사는 다음과 같은 목적으로 개인정보를 사용합니다."
+            "p1": "당사는 다음과 같은 목적으로 개인정보를 사용합니다.",
+            "p2": "홍보 메시지를 보내는 경우 hi@wavez.fm으로 연락하여 언제든지 수신을 거부할 수 있습니다. 수신 거부 후에도 서비스, 보안 또는 거래에 필요한 알림은 발송될 수 있습니다."
           },
           "items": {
             "i1": "계정을 생성, 인증, 보호, 복구 및 유지 관리합니다.",
@@ -9755,7 +10406,8 @@
             "i4": "언어, 모양, 접근성, 개인 정보 보호, 콘텐츠 및 알림 기본 설정을 개인화하세요.",
             "i5": "콘텐츠를 조정하고, 규칙을 시행하고, 보고서를 조사하고, 사기, 스팸, 남용 및 무단 액세스를 방지하고, 사용자와 서비스를 보호합니다.",
             "i6": "오류를 진단하고, 성능을 측정하고, 기능을 개발하고, 집계되거나 식별되지 않은 통계를 생성합니다.",
-            "i7": "법률, 규제, 회계, 세금 및 분쟁 해결 의무를 충족하고 합법적인 요청에 응답합니다."
+            "i7": "법률, 규제, 회계, 세금 및 분쟁 해결 의무를 충족하고 합법적인 요청에 응답합니다.",
+            "i8": "이러한 알림을 제공하는 경우, 허용되는 범위에서 이메일 또는 앱 내 알림으로 선택적인 제품 업데이트, 새로운 기능 소식 및 홍보 자료를 보내기 위해."
           }
         },
         "legalBases": {
@@ -9794,7 +10446,8 @@
           "title": "10. 데이터 보존",
           "paragraphs": {
             "p1": "당사는 서비스를 제공하고, 보안 및 조정 기록을 유지하고, 분쟁을 해결하고, 법률, 세금, 회계 또는 규제 의무를 이행하는 데 합리적으로 필요한 기간 동안만 개인 데이터를 보관합니다. 보존 기간은 데이터 유형, 회의실 구성, 계정 상태 및 법적 요구 사항에 따라 다릅니다.",
-            "p2": "계정 삭제 후에도 보존이 필요한 백업, 사기 방지 기록, 거래 기록, 로그 등의 형태로 데이터가 일정 기간 동안 남아 있을 수 있습니다. 공개 콘텐츠는 대화의 무결성을 유지하고 권리를 행사하거나 법률을 준수하는 데 필요한 경우 삭제, 익명화 또는 보관될 수 있습니다."
+            "p2": "계정 삭제 후에도 보존이 필요한 백업, 사기 방지 기록, 거래 기록, 로그 등의 형태로 데이터가 일정 기간 동안 남아 있을 수 있습니다. 공개 콘텐츠는 대화의 무결성을 유지하고 권리를 행사하거나 법률을 준수하는 데 필요한 경우 삭제, 익명화 또는 보관될 수 있습니다.",
+            "p3": "선택적 마케팅에 사용하는 연락처 정보는 해당 연락이 허용되는 동안에만 보관합니다. 수신 거부, 동의 철회 또는 계정 폐쇄 후에는 이 목적으로 사용하지 않습니다. 다만 선택을 존중하거나 법적 의무를 이행하는 데 필요한 최소한의 수신 거부 기록은 필요한 기간 동안 보관할 수 있습니다."
           }
         },
         "security": {
@@ -10181,9 +10834,9 @@
     "sent": "봇에 전달했습니다. 처리 확인은 봇의 답변을 기다려 주세요.",
     "offline": "봇 또는 방 연결이 오프라인입니다.",
     "error": "보내지 못했습니다. 권한과 글자 수 제한을 확인하세요.",
-    "uncertain": "확인이 도착하지 않았습니다. 봇이 이미 받았을 수 있으니 다시 보내기 전에 답변을 확인하세요."
-  }
-,
+    "uncertain": "확인이 도착하지 않았습니다. 봇이 이미 받았을 수 있으니 다시 보내기 전에 답변을 확인하세요.",
+    "invalidInlineTarget": "연결된 봇을 선택하세요: /bot @봇이름 명령어"
+  },
   "adminRoomEmojis": {
     "title": "방 이모지",
     "search": "이모지 검색",
@@ -10327,7 +10980,7 @@
         "question": "시네마 모드와 플레이어 표시 설정은 어떻게 사용하나요?",
         "paragraphs": {
           "p1": "현재 미디어에서 지원하는 경우 플레이어의 시네마 모드 진입 기능으로 영상을 더 크게 볼 수 있고, 시네마 모드 종료로 원래 화면으로 돌아갈 수 있습니다. 영상 숨기기 / 영상 보기는 데스크톱 화면의 영상 표시를 바꿉니다. 영상을 숨기는 기능은 음소거 또는 플레이어 끄기와 별개입니다. 이용할 수 있는 기능은 기기와 현재 미디어에 따라 달라집니다.",
-          "p2": "설정 → 외관에서 무대, 관객, SFW 표시 설정을 변경할 수 있습니다. 소리는 플레이어의 볼륨 및 음소거 기능으로 조절하세요."
+          "p2": "설정 → 외관에서 무대, 관객, 안전한 콘텐츠 표시(SFW) 설정을 변경할 수 있습니다. 소리는 플레이어의 볼륨 및 음소거 기능으로 조절하세요."
         },
         "links": {
           "l1": "외관 설정"
@@ -10486,7 +11139,7 @@
       "subscription-benefits": {
         "question": "구독하면 어떤 추가 혜택을 받나요?",
         "paragraphs": {
-          "p1": "구독하면 계정 한도 확대, 해당 프리미엄 아이템 이용 등 WavezFM에서 현재 제공하는 혜택이 추가됩니다. 아래 비교표는 현재 설정을 반영합니다. 프리미엄 이용 권한이 모든 유료 아이템의 소유권을 자동으로 부여하는 것은 아닙니다.",
+          "p1": "구독하면 계정 한도 확대, 구독자용 카탈로그의 해당 아이템 이용 등 WavezFM에서 현재 제공하는 혜택이 추가됩니다. 아래 비교표는 현재 설정을 반영합니다. 구독자라고 해서 모든 유료 아이템의 소유권을 자동으로 받는 것은 아닙니다.",
           "p2": "구매 전에 상점과 설정 → 구독에서 요금제, 가격, 기간, 정확한 혜택을 확인하세요. XP 보너스, 추가 이모지 이용 권한 등은 명시적으로 활성화되어 목록에 표시된 경우에만 포함됩니다."
         },
         "links": {
@@ -10557,10 +11210,21 @@
           "l1": "개인정보 설정"
         }
       },
+      "custom-emojis": {
+        "question": "사용자 지정 이모지는 어떻게 사용하나요?",
+        "paragraphs": {
+          "p1": "사용자 지정 이모지는 특정 방에 속합니다. 해당 방에서는 이모지 선택기에서 고르거나 :wave:처럼 이름을 콜론으로 감싸 입력하면 사용할 수 있습니다.",
+          "p2": "해당 혜택을 제공하는 구독이 활성화되어 있고 이모지의 전역 사용이 허용된 경우, 즐겨찾는 방의 이모지를 다른 채팅에서도 사용할 수 있습니다. 먼저 원래 방을 즐겨찾기에 추가하세요. 각 방에서는 다른 방의 이모지 사용을 비활성화할 수 있습니다.",
+          "p3": "이모지를 클릭하면 원래 방과 사용 가능 여부를 확인할 수 있습니다. 원래 방이 비공개이거나 이용할 수 없는 경우, 방을 열거나 이모지를 사용하지 못할 수 있습니다."
+        },
+        "links": {
+          "l1": "현재 구독 혜택"
+        }
+      },
       "create-room": {
         "question": "방을 만들고 관리하려면 어떻게 하나요?",
         "paragraphs": {
-          "p1": "탐색에서 방 만들기를 선택하고 방 이름, 설명, 규칙 등 제공되는 옵션을 설정하세요. 계정에는 소유할 수 있는 방 수의 한도가 있습니다. 운영진은 각 역할의 권한에 따라 방을 관리할 수 있으며 일부 설정은 Host 또는 Co-host만 변경할 수 있습니다."
+          "p1": "탐색에서 방 만들기를 선택하고 방 이름, 설명, 규칙 등 제공되는 옵션을 설정하세요. 계정에는 소유할 수 있는 방 수의 한도가 있습니다. 운영진은 각 역할의 권한에 따라 방을 관리할 수 있으며 일부 설정은 호스트 또는 공동 진행자만 변경할 수 있습니다."
         },
         "links": {
           "l1": "방 탐색 및 만들기",
@@ -10568,24 +11232,24 @@
         }
       },
       "room-roles": {
-        "question": "Host, Co-host, Manager, Bouncer, R.DJ, VIP는 무슨 뜻인가요?",
+        "question": "호스트, 공동 진행자, 관리자, 경비원, 상주 DJ, VIP는 무슨 뜻인가요?",
         "paragraphs": {
           "p1": "방 역할은 특정 방 안에서만 적용되며 방 소유자와 권한이 있는 운영진이 부여합니다. 구독한다고 자동으로 운영진이 되지는 않습니다. 아래는 일반적인 역할이며 각 방에서 이름과 권한을 변경할 수 있습니다."
         },
         "items": {
-          "i1": "Host: 방 소유자로, 해당 방의 가장 높은 권한을 갖습니다.",
-          "i2": "Co-host: Host를 도와 방과 운영진을 관리합니다.",
-          "i3": "Manager: 부여된 권한 내에서 방 운영과 관리를 돕습니다.",
-          "i4": "Bouncer: 관리 도구로 채팅과 방 규칙을 지키도록 돕습니다.",
-          "i5": "R.DJ(Resident DJ): 신뢰받는 DJ 역할로, 기본적으로 잠긴 대기열에도 참여할 수 있습니다.",
+          "i1": "호스트: 방 소유자로, 방 역할 중 가장 높은 접근 권한을 갖습니다.",
+          "i2": "공동 진행자: 호스트를 도와 방과 운영진을 관리합니다.",
+          "i3": "관리자: 부여된 권한 내에서 방 운영과 관리를 돕습니다.",
+          "i4": "경비원: 관리 도구로 채팅과 방 규칙을 지키도록 돕습니다.",
+          "i5": "상주 DJ: 신뢰받는 DJ 역할로, 기본적으로 잠긴 대기열에도 참여할 수 있습니다.",
           "i6": "VIP: 방에서 인정받은 멤버입니다. 일반적인 관리 역할은 아닙니다.",
-          "i7": "User: 일반 참여자입니다. 방 설정에 따라 특정 활동이 제한될 수 있습니다."
+          "i7": "사용자: 일반 참여자입니다. 방 설정에 따라 특정 활동이 제한될 수 있습니다."
         }
       },
       "platform-roles": {
         "question": "플랫폼 역할은 방 역할과 다른가요?",
         "paragraphs": {
-          "p1": "네. Admin, Developer, Ambassador는 플랫폼 역할이고 Host, Manager 등은 방 역할입니다. Subscriber는 구독 이용 권한을 나타냅니다. Verified, 꾸미기용 역할, 사용자 지정 역할에는 각각의 의미가 있으며 모든 운영진 권한이 자동으로 주어지는 것은 아닙니다. 역할의 이름과 모습은 변경될 수 있습니다."
+          "p1": "네. 플랫폼 관리자, 개발자, 홍보대사는 플랫폼 역할이고 호스트, 방 관리자 등은 방 역할입니다. 방 내 활동에서는 플랫폼 관리자와 개발자에게 호스트 수준의 접근 권한이, 홍보대사에게 최소한 방 관리자 수준의 접근 권한이 적용됩니다. 방에서 부여받은 역할은 바뀌지 않습니다. 구독자는 구독 이용 권한을 나타냅니다. 인증됨, 꾸미기용 역할, 사용자 지정 역할에는 각각의 의미가 있으며 모든 운영진 권한이 자동으로 주어지는 것은 아닙니다. 역할의 이름과 모습은 변경될 수 있습니다."
         }
       },
       "room-rules": {
@@ -10691,6 +11355,29 @@
           "l3": "쿠키 정책"
         }
       }
+    },
+    "xpLimits": {
+      "title": "현재 XP 제한",
+      "unavailable": "현재 제한을 불러오지 못했습니다. 나중에 다시 시도해 주세요.",
+      "hours": "하루 {hours, number}시간분",
+      "unlimited": "일일 제한 없음",
+      "sharedAllowance": "Woot와 DJ 공연은 같은 한도를 사용합니다. 한도는 보상 대상 활동을 계산하며, 방을 열어 둔 시간이 아닙니다.",
+      "disabledLimit": "일일 제한이 꺼져 있습니다. 각 보상의 간격과 조건은 계속 적용됩니다.",
+      "action": "활동",
+      "baseXp": "기본 XP",
+      "interval": "간격",
+      "dailyMaximum": "일일 최대",
+      "woot": "Woot",
+      "dj": "DJ로 재생",
+      "xp": "{xp, number} XP",
+      "minutes": "{minutes}분",
+      "disabledAction": "XP 없음",
+      "rewards": "보상 {count, number}회",
+      "maximumNote": "각 최대값은 한 활동에 전체 한도를 사용한 경우입니다. 합산할 수 없습니다. Woot와 DJ 공연은 같은 한도를 소모합니다. 합계는 보너스 적용 전 기본 XP입니다.",
+      "globalInterval": "보상 사이의 공통 간격은 {minutes}분입니다. Woot와 DJ를 번갈아 해도 적용됩니다.",
+      "djRequirements": "DJ 조건: 길이 {duration}분 이상의 곡을 {percent}% 재생(최소 {min}분, 필요한 재생 시간은 최대 {max}분), Woot {woots}개, DJ를 포함한 실제 참가자 {humans}명. 같은 곡으로 다시 XP를 받으려면 {replay}분이 지나야 합니다.",
+      "otherRewards": "일반 곡 듣기, 채팅, 재생목록에 곡 추가는 XP를 주지 않습니다. 업적은 한도 밖의 별도 보상을 줍니다. 이벤트, 구독, 부스트는 한도를 늘리지 않고 기본 XP를 배수로 늘릴 수 있습니다.",
+      "reset": "한도는 00:00 UTC(상파울루 {time})에 초기화됩니다. 소진하면 초기화될 때까지 해당 활동에서 XP를 받을 수 없습니다. 대상 코인 보상에는 일반 규칙이 적용됩니다."
     }
   }
 }
